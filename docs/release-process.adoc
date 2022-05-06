@@ -1,0 +1,16 @@
+= Release process
+
+The release process is currently especially supported by local linting, testing and additional pipeline magic. And it's done out of the `main` branch, as we're not using something like gitflow or similar and a `dev` branch at the moment.
+
+== Preparations
+* Doing a link:adr/visual_regression_testing-backstopjs.html[visual regression testing] via `npm run test:visual-regression:test` that ensures no unexpected glitches due to the new release.
+* All git commits get linted via link:adr/linting-git.html[commitlint], so we could easily collect all previous commit messages.
+* Updating link:../CHANGELOG.md[/CHANGELOG.md] out of those commit messages accordingly.
+** In case of any breaking changes we have to update the link:migrationGuide.html[/docs/migrationGuide.adoc] as well.
+* Modifying the release version in the several different occurences within the system as well (mainly used for badges, changelog and link to package):
+** link:../README.md[/README.md]
+** link:getStarted.html[/docs/getStarted.adoc]
+** link:../source/_patterns/04-pages/intro.hbs[/source/_patterns/04-pages/intro.hbs]
+** link:../source/_patterns/04-pages/intro.json[/source/_patterns/04-pages/intro.json]
+** Notice: Please pay attention not to change the value within link:../package.json[/package.json] manually, as we're doing this via a npm script.
+* We've abstracted the final step of creating and publishing a new version (using link:https://docs.npmjs.com/cli/version[`npm version`] and the necessary git tagging, commiting and pushing) with the `npm run release:minor` and `npm run release:patch` scripts.

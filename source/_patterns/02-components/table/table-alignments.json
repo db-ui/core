@@ -1,0 +1,34 @@
+{
+	"alignments": [
+		{
+			"align": "center",
+			"vertical-align": "middle"
+		},
+		{
+			"align": "right",
+			"vertical-align": "bottom"
+		}
+	],
+	"cells": [
+		{
+			"text01": "Value 01 - 01<br>two lines",
+			"text02": "Value 01 - 02"
+		},
+		{
+			"text01": "Value 02 - 01",
+			"text02": "Value 02 - 02"
+		},
+		{
+			"text01": "Value 03 - 01 - longer content",
+			"text02": "Value 03 - 02"
+		},
+		{
+			"text01": "Value 04 - 01",
+			"text02": "Value 04 - 02"
+		},
+		{
+			"text01": "Value 05 - 01",
+			"text02": "Value 05 - 02 - longer content"
+		}
+	]
+}

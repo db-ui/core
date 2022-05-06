@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+@import "toggle.variables";
+
+// adapted by https://danklammer.com/articles/simple-css-toggle-switch/
+
+.elm-toggle {
+	appearance: none;
+
+	width: to-rem(48);
+	height: to-rem(24);
+
+	display: inline-block;
+	// margin-right: $db-spacing-xs;
+
+	position: relative;
+
+	border-radius: to-rem(12);
+	border: none;
+
+	background-color: $db-color-cool-gray-500;
+
+	transition: background-color 0.3s ease;
+	// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
+	@media (prefers-reduced-motion: reduce) {
+		transition-duration: 0.01s !important;
+	}
+
+	// Label positioning
+	& + .elm-label {
+		vertical-align: top;
+	}
+
+	&::before {
+		content: ""; // we could even also add toggled textual content for the switch in the future
+
+		display: block;
+
+		position: absolute;
+		left: #{to-rem(2)};
+		top: #{to-rem(2)};
+
+		width: to-rem(20);
+		height: to-rem(20);
+
+		background-color: $db-color-white;
+
+		border-radius: to-rem(10);
+
+		box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.05),
+			0 1px 5px 0 rgba(0, 0, 0, 0.15);
+
+		transition: border-color, left 0.3s cubic-bezier(0.3, 1.5, 0.7, 1);
+		// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
+		@media (prefers-reduced-motion: reduce) {
+			transition-duration: 0.01s !important;
+		}
+	}
+
+	&:hover {
+		&::before {
+			background-color: #f7f7f7; // TODO: Identify the correct color variable
+		}
+	}
+
+	&:active {
+		&::before {
+			width: to-rem(24);
+			transition: width 0.3s cubic-bezier(0.3, 1.5, 0.7, 1);
+			// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
+			@media (prefers-reduced-motion: reduce) {
+				transition-duration: 0.01s !important;
+			}
+		}
+	}
+
+	&:checked {
+		background-color: $toggle--checked-backgroundColor;
+
+		&::before {
+			left: unset;
+			right: to-rem(2);
+		}
+	}
+
+	&:disabled {
+		&,
+		& + label {
+			opacity: 0.5;
+		}
+	}
+}

@@ -1,0 +1,26 @@
+@import "../../../css/db-ui-core.variables";
+
+$progress---height: to-rem(4) !default;
+$progress-value--backgroundColor: var(
+	--progress-value--backgroundColor
+) !default;
+.elm-progress progress {
+	--progress-value--backgroundColor: #{$db-color-red};
+}
+
+$progress---backgroundColor: #fcfdfd !default;
+
+// Alternative - on dark background
+$progress-onDarkBackground-value-backgroundColor: $db-color-cool-gray-400 !default;
+
+// Circle alternative
+$progress-conic--size: 75 * 0.0625 !default;
+$progress-conic-inner-size: $progress-conic--size - 1.25 !default;
+
+$progress-conic--backgroundColor: #fff !default;
+$progress-conic-inner-backgroundColor: #fdfdfd !default; // TODO: This would need to get replaced by the correct (semantic) color
+// Alternative - on dark background
+$progress-onDarkBackground-conic-inner-backgroundColor: $db-color-cool-gray-700 !default;
+
+$progress-conic--translateX: to-rem(10) !default;
+$progress-conic--translateY: -#{to-rem(65)} !default;

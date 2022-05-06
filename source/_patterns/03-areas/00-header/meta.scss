@@ -1,0 +1,47 @@
+@import "meta.variables";
+
+.rea-meta {
+	display: flex;
+
+	ul,
+	ol {
+		margin: 0;
+		padding: 0;
+	}
+	ul {
+		list-style: none;
+	}
+
+	.rea-header & {
+		margin-top: #{$header-big-link-paddingTop - 0.5625}rem;
+		order: 2;
+
+		.elm-link {
+			padding-bottom: to-rem(9);
+			padding-top: to-rem(9);
+		}
+
+		@media screen and (max-width: 1023px) {
+			margin-top: to-rem(8);
+		}
+	}
+
+	& > .elm-link {
+		&[rel="account"] {
+			@include is-icon-text-replace();
+
+			margin-left: to-rem(4);
+
+			@media screen and (min-width: #{($header-srOnly-linkAccount-breakpoint + 1)}rem) {
+				margin-left: to-rem(8);
+			}
+
+			@media screen and (max-width: #{($header-srOnly-linkAccount-breakpoint)}rem) {
+				@include is-icon-text-replace();
+			}
+		}
+	}
+	.cmp-sitesearch:focus-within ~ .elm-link[rel="account"] {
+		@include is-icon-text-replace();
+	}
+}

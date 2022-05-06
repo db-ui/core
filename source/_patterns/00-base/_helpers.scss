@@ -1,0 +1,32 @@
+@mixin rgba2hex(
+	$cssProperty,
+	$hexValue,
+	$alphaValue,
+	// TODO: This would need to get replaced by the correct (semantic) color
+	$rgbBackground: #fdfdfd
+) {
+	#{$cssProperty}: rgb(
+		(1 - $alphaValue) * red($rgbBackground) + $alphaValue * red($hexValue),
+		(1 - $alphaValue) * green($rgbBackground) + $alphaValue * green($hexValue),
+		(1 - $alphaValue) * blue($rgbBackground) + $alphaValue * blue($hexValue)
+	);
+}
+
+// For using the new "puls" element within the UI, most likely within a pseudo-element
+// Handle with care, as this might change in the near future with the Release 2.0 of the guidelines.
+@mixin DBPuls(
+	$width: 5rem,
+	$margin-top: $width * 0.2,
+	$margin-bottom: $width * 0.35
+) {
+	width: $width;
+	height: 0;
+	background-color: $db-color-red-500;
+	border-top: 3px solid $db-color-red-500;
+	border-bottom: 4px solid $db-color-red-500;
+	border-radius: 5px;
+	content: "";
+	display: block;
+	margin-top: $margin-top;
+	margin-bottom: $margin-bottom;
+}

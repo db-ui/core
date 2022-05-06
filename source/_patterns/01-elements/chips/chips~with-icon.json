@@ -1,0 +1,14 @@
+{
+	"iconVariants": [
+		{
+			"icon": "alert"
+		},
+		{
+			"iconAfter": "account"
+		},
+		{
+			"icon": "alert",
+			"iconAfter": "account"
+		}
+	]
+}

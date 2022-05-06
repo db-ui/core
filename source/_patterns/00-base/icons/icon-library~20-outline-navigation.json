@@ -1,0 +1,66 @@
+{
+	"icon-size": "20",
+	"icon-style": "outline",
+	"icons": [
+		{
+			"icon-glyph": "arrow-back"
+		},
+		{
+			"icon-glyph": "arrow-down"
+		},
+		{
+			"icon-glyph": "arrow-forward"
+		},
+		{
+			"icon-glyph": "arrow-up"
+		},
+		{
+			"icon-glyph": "cancel"
+		},
+		{
+			"icon-glyph": "chevron-left"
+		},
+		{
+			"icon-glyph": "chevron-right"
+		},
+		{
+			"icon-glyph": "close"
+		},
+		{
+			"icon-glyph": "expand-less"
+		},
+		{
+			"icon-glyph": "expand-more"
+		},
+		{
+			"icon-glyph": "fullscreen"
+		},
+		{
+			"icon-glyph": "fullscreen-exit"
+		},
+		{
+			"icon-glyph": "grid-view"
+		},
+		{
+			"icon-glyph": "link"
+		},
+		{
+			"icon-glyph": "link-external"
+		},
+		{
+			"icon-glyph": "list"
+		},
+		{
+			"icon-glyph": "menu"
+		},
+		{
+			"icon-glyph": "more-horizontal"
+		},
+		{
+			"icon-glyph": "more-vertical"
+		},
+		{
+			"icon-glyph": "refresh"
+		}
+	]
+}

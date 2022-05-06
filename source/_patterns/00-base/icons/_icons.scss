@@ -1,0 +1,32 @@
+// @import "icons.variables";
+
+@import "icons.variables";
+@import "icons.helpers";
+@import "icons.custom-properties";
+@import "icons.font-faces";
+@import "icons.placeholder";
+
+[data-icon],
+[data-icon-before] {
+	&::before {
+		--icon-margin-right: #{$icon-content-space};
+		@extend %icon;
+	}
+}
+[data-icon-after] {
+	&::after {
+		--icon-margin-left: #{$icon-content-space};
+		@extend %icon;
+	}
+}
+
+// Providing a mechanism for text replacements
+.is-icon-text-replace {
+	&[data-icon],
+	&[data-icon-before] {
+		@include is-icon-text-replace();
+	}
+	&[data-icon-after] {
+		@include is-icon-text-replace("after");
+	}
+}

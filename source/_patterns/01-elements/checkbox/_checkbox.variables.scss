@@ -1,0 +1,17 @@
+@import "../../00-base/icons/icons.variables";
+@import "../../00-base/icons/icons.helpers";
+@import "../../00-base/colors/colors.variables";
+
+$checkbox---backgroundColor: rgba(255, 255, 255, 0.1) !default;
+$checkbox---borderColor: $db-color-cool-gray-700 !default;
+$checkbox---color: $db-color-cool-gray-700 !default;
+
+$checkbox--checked-backgroundColor: $db-color-cool-gray-700 !default;
+$checkbox--checked-color: #fff !default;
+
+$checkbox-hover-checked-backgroundColor: #52575f !default;
+
+// On dark background
+$checkbox-onDarkBackground--backgroundColor: transparent !default;
+$checkbox-onDarkBackground--borderColor: #fdfdfd !default; // TODO: This would need to get replaced by the correct (semantic) color
+$checkbox-onDarkBackground--color: #fdfdfd !default; // TODO: This would need to get replaced by the correct (semantic) color

@@ -1,0 +1,19 @@
+_WIP_
+
+= Features of DB UI Core
+
+* Semantic HTML/ARIA
+* Accessibility
+** `prefers-reduced-motion` related modifications
+**
+* Testing/Linting
+**
+
+== Backlog
+
+* Support for providing starterkits
+* Dark-mode styling
+* Annotations for the most relevant parts of the patterns
+* Print styles
+* Window High Contrast mode related modifications
+* Testing the pattern attributes and variants via switches and selections

@@ -1,0 +1,57 @@
+// Box sizing
+html {
+	box-sizing: border-box;
+}
+*,
+::before,
+::after {
+	box-sizing: inherit;
+}
+
+// Media
+img,
+embed,
+iframe,
+object,
+video {
+	height: auto;
+	max-width: 100%;
+}
+
+// Iframe
+iframe {
+	border: 0;
+}
+
+// * Individual styles
+// Navigation lists
+nav,
+[role="navigation"] {
+	ol,
+	ul {
+		list-style: none;
+
+		margin: 0;
+		padding: 0;
+	}
+}
+
+// General styles (TODO: most likely move those to DB UI Base)
+:root {
+	--db-focus-outline-offset: 1px;
+	--db-focus-outline-color: #2c95c4;
+}
+
+// Focus styles
+:is(a, button, input, textarea, summary) {
+	--db-focus-outline-size: max(2px, 0.08em);
+
+	&:focus-visible {
+		outline: var(--db-focus-outline-size) var(--db-focus-outline-style, solid)
+			var(--db-focus-outline-color, currentColor);
+		outline-offset: var(
+			--db-focus-outline-offset,
+			var(--db-focus-outline-size)
+		);
+	}
+}

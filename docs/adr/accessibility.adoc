@@ -1,0 +1,61 @@
+*Status of this document: in progress*
+
+An Overview of the European Accessibility Act
+
+The European Accessibility Act sets requirements for a number of products and services such as:
+
+- Ticketing and check-in machines
+- Computers and operating systems
+- Smartphones
+- TV equipment related to digital television services
+- Telephony services and related equipment
+- Banking services
+- Audiovisual media services, such as television broadcast and related consumer equipment
+- e-books
+- e-commerce
+- Services related to air, bus, rail, and waterborne passenger transport
+
+The idea is to encourage companies to integrate accessibility into their development process – not have it be an afterthought.
+
+The EAA defines what needs to be made accessible, but does not state detailed technical solutions for how products and services should be made accessible.
+
+Source: https://ec.europa.eu/social/BlobServlet?docId=14869&langId=en
+
+____
+§ 4 - Behindertengleichstellungsgesetz (BGG)
+
+1. Barrierefrei sind bauliche und sonstige Anlagen, Verkehrsmittel, technische Gebrauchsgegenstände, Systeme der Informationsverarbeitung, akustische und visuelle Informationsquellen und Kommunikationseinrichtungen sowie andere gestaltete Lebensbereiche, wenn sie für Menschen mit Behinderungen in der allgemein üblichen Weise, ohne besondere Erschwernis und grundsätzlich ohne fremde Hilfe auffindbar, zugänglich und nutzbar sind.
+2. Hierbei ist die Nutzung behinderungsbedingt notwendiger Hilfsmittel zulässig.
+____
+____
+§ 1 Ziel und Verantwortung der Träger öffentlicher Gewalt - Behindertengleichstellungsgesetz (BGG)
+3. (3) 1. Die Träger öffentlicher Gewalt sollen darauf hinwirken, dass Einrichtungen, Vereinigungen und juristische Personen des Privatrechts, an denen die Träger öffentlicher Gewalt unmittelbar oder mittelbar ganz oder überwiegend beteiligt sind, die Ziele dieses Gesetzes in angemessener Weise berücksichtigen.
+____
+Source: https://www.buzer.de/s1.htm?a=4&g=BGG
+
+
+More information on the topic:
+
+- link:https://db.de/l18l7b[Accessibility Section in DB Systels Base Wiki (only available internally)]
+- link:https://youtu.be/20SHvU2PKsM[Introduction to Web Accessibility and W3C Standards / on YouTube]
+- link:https://www.youtube.com/watch?v=6mhcgHG8lGo[Accessibility For Everyone - Laura Kalbag / on YouTube]
+- link:https://www.hel.fi/static/liitteet/kanslia/TPR/opas_saavutettavaan_sisaltoon_EN.pdf["Accessible content – Guide for planning and content production" by the Helsinki Design System team]
+
+____
+Der European Accessibility Act - beziehungsweise die entsprechende EU-Richtlinie 2019/882 – regelt daher klar und einfach: Spätestens 2030 müssen alle digitalen Anwendungen wie Smartphones, Computer oder auch Fahrkartenautomaten barrierefrei sein. Und damit endet der Regelungsbedarf nicht: Auch alle Bank- oder Verkehrsdienstleistungen sowie der Onlinehandel müssen barrierefrei gestaltet sein.
+____
+____
+„Wird Barrierefreiheit bereits beim Projektstart berücksichtigt, sind die Kosten mit etwa drei Prozent kalkulierbar. Nachträglich eingebaut steigen die Kosten durchaus bis 30 Prozent“, erläutert Gerald Hofer, Geschäftsführer Operations, und stärkt so den ganzheitlichen Ansatz von Barrierefreiheit.
+____
+
+Source: link:https://db.de/4frphq[DB Planet (not fully accessible)]
+
+For additional information regarding accessibility @ DB you could as well reach out to our specialists at link:mailto:b.digital@deutschebahn.com[b.digital@deutschebahn.com]
+
+////
+	Inspirational sources for this page
+	- https://boltdesignsystem.com/docs/design-principles/accessibility.html
+	- https://sproutsocial.com/seeds/patterns/accessibility/
+	- https://primer.style/design/global/accessibility
+	- https://slack.engineering/how-to-fail-at-accessibility-99bdf3504f19
+////

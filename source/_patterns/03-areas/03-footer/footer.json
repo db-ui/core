@@ -1,0 +1,20 @@
+{
+	"navItems": [
+		{
+			"href": "#",
+			"value": "Datenschutz"
+		},
+		{
+			"href": "#",
+			"value": "Impressum"
+		},
+		{
+			"href": "mailto:enterprise-design-system@deutschebahn.com",
+			"value": "Kontakt"
+		},
+		{
+			"href": "#",
+			"value": "Über uns"
+		}
+	]
+}

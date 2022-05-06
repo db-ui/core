@@ -1,0 +1,10 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"pinDigests": true,
+	"packageRules": [
+		{
+			"matchUpdateTypes": ["minor", "patch"],
+			"automerge": false
+		}
+	]
+}

@@ -1,0 +1,18 @@
+{
+	"icon-size": "20",
+	"icon-style": "filled",
+	"icons": [
+		{
+			"icon-glyph": "call"
+		},
+		{
+			"icon-glyph": "chat"
+		},
+		{
+			"icon-glyph": "conversation"
+		},
+		{
+			"icon-glyph": "feedback"
+		}
+	]
+}

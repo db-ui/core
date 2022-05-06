@@ -1,0 +1,7 @@
+*Status of this document: in progress*
+
+# Multi domain/client capability
+
+_Zugunsten der Skalierung und des Einsatzes über den Bereich Enterprise hinaus soll das System ertüchtigt werden, neben den generellen/globalen auch weitere Assets und Styling-Deklarationen speziell separiert nach den visuellen Ausprägungen aufzunehmen.
+Hier liegt ein besonderes Augenmerk auf der Definition eines generellen Komponenten-Stylings, das sich dann über definierte Variablen unterscheidet.
+In einem ersten Schritt werden nur die Ordner "enterprise" eingeführt, wobei in Zukunft dann auch weitere daneben implementiert werden. Die hauptsächlichen Änderungen mit diesem Merge Request betreffen daher insbesondere das Einführen einer Ebene zur Ablage der Dateien für jedes Pattern, auf der sodann weitere Ordner hinzukommen können._

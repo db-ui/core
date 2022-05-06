@@ -1,0 +1,54 @@
+@import "cards.variables";
+
+.cmp-card {
+	box-shadow: $box-shadow-01, $box-shadow-02;
+
+	border-radius: 8px;
+
+	background-color: #fff;
+
+	& > a {
+		text-decoration: none;
+	}
+
+	figure {
+		margin: $db-spacing-m $db-spacing-m $db-spacing-m $db-spacing-s;
+	}
+
+	// Banner variant
+	&[data-variant="banner"] {
+		figure {
+			display: flex;
+		}
+		figcaption {
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				font-size: to-rem(18);
+
+				&,
+				& ~ p {
+					margin: 0.125rem 0;
+				}
+			}
+			p {
+				font-size: to-rem(14);
+
+				max-width: to-rem(290); // TODO: This would need some rework
+			}
+			margin-left: 1rem;
+		}
+	}
+
+	// Tile variant
+	&[data-variant="tile"] {
+		text-align: center;
+	}
+
+	figcaption {
+		max-width: 60ch;
+	}
+}

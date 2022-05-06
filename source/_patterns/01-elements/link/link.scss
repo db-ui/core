@@ -1,0 +1,67 @@
+@import "../../../css/partials.meta";
+@import "link.variables";
+
+.elm-link {
+	display: inline-block;
+	border-radius: to-rem(4);
+
+	// Link underline
+	text-underline-offset: to-rem(3);
+	text-underline-position: under;
+	@supports (text-underline-offset: 3px) {
+		text-underline-position: auto;
+	}
+
+	&:active {
+		color: initial;
+	}
+
+	// "disabled" links
+	&[aria-disabled="true"] {
+		opacity: $link--disabled-opacity;
+
+		pointer-events: none;
+
+		&::before {
+			color: initial;
+		}
+	}
+
+	// Sizes
+	&%size-Small {
+		&:not(.is-icon-text-replace) {
+			font-size: to-rem(14);
+		}
+		&[rel],
+		&[data-icon],
+		&[data-icon-before] {
+			@include iconMeta(20);
+		}
+		&[data-icon-after]::after {
+			@include iconMeta($size: 20, $position: "after");
+		}
+	}
+
+	&[data-size="small"] {
+		@extend %size-Small;
+	}
+
+	// Define the available icons
+	&[rel="configuration"] {
+		@include icon(glyph(settings), 24, "outline", $partial: $partial);
+	}
+	&[rel="messages"] {
+		@include icon(glyph(chat), 24, "outline", $partial: $partial);
+	}
+	&[rel="account"] {
+		@include icon(glyph(account), 24, "outline", $partial: $partial);
+	}
+	&[rel="configuration"],
+	&[rel="messages"],
+	&[rel="account"] {
+		&::before {
+			// preventing an underlined icon on click
+			display: inline-block;
+		}
+	}
+}

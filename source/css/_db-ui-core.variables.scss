@@ -1,0 +1,29 @@
+// Define the path for both image and font folders
+$icons-path: "../../icons/" !default;
+$images-path: "../../images/" !default;
+$fonts-path: "../../fonts/" !default;
+
+@import "@db-ui/base/build/scss/variables";
+
+// General configurations
+$dbBaseFontSize: 16px;
+$dbBaseFontSizeSass: 0.0625 !default;
+
+$metanavigation-iconOnly--maxWidth: to-rem(656);
+
+// General box-shadow
+// * offset-x | offset-y | blur-radius | (spread-radius) | color
+$box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+$box-shadow-01: 0 0 5px rgba(0, 0, 0, 0.08);
+$box-shadow-02: 0 5px 30px rgba(0, 0, 0, 0.05);
+$box-shadow-01-bottom: 0 2px 5px rgba(0, 0, 0, 0.08);
+$box-shadow-02-bottom: 0 15px 30px rgba(0, 0, 0, 0.05);
+
+// *** z-index ***
+$z-index-rea-header-cmp-mainnavigation-submenu: 70 !default;
+$z-index-rea-header-cmp-language-switcher-li: 40 !default;
+$z-index-cmp-mainnavigation-dropdown: 30 !default;
+$z-index-cmp-overflow-menu-menu: 60 !default;
+$z-index-cmp-overflow-menu-overlay: 50 !default;
+$z-index-rea-header-cmp-sitesearch-focus: 10 !default;
+$z-index-reas-fixed-header-footer: 10 !default;

@@ -1,0 +1,13 @@
+/*
+/*/
+!/dist/
+!CHANGELOG.md
+# TODO: We would like to use /source/ instead of /sources/ in the future, but didn't get to manage the following working correctly
+# !/source/**/*.scss
+!/sources/
+*.demonstration.scss
+*.demonstration.css
+*.demonstration.css.map
+# TODO: For whatever reason this following explicit ignore listing needs to be done
+public/**
+dist/images/db-ui-core_logo.png

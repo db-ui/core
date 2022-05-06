@@ -1,0 +1,8 @@
+{
+	"id": "input06",
+	"placeholder": "Mindestens fünf Zeichen eingeben",
+	"description": "Optionale Beschreibung<br>Zeile zwei",
+	"describedbyid": "input06hint",
+	"value": "",
+	"validation": " minlength=\"5\" required"
+}

@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+@import "../../../css/partials.meta";
+@import "footer.variables";
+@import "../../../css/helpers/functions";
+
+.rea-footer {
+	box-shadow: $footer---boxShadow;
+	margin-top: $footer---marginTop;
+	padding: #{to-rem(21)} #{to-rem(16)};
+
+	color: $db-color-cool-gray-500;
+
+	background-color: $footer---backgroundColor;
+
+	@media screen and (max-width: 767px) {
+		text-align: center;
+	}
+
+	&.has-border {
+		border-top: $footer---borderTop;
+	}
+
+	@include clearfix($partial: $partial);
+}

@@ -1,0 +1,44 @@
+@import "headline.variables";
+
+h1,
+h2,
+h3 {
+	&.elm-headline {
+		font-family: $db-font-family-headline;
+	}
+}
+.elm-headline {
+	margin-bottom: to-rem(16);
+
+	// * TODO: These declarations make sense for the moment, but should get aligned with overall definitions of spacing around elements
+	margin-top: to-rem(24);
+}
+
+h1,
+h2,
+h3 {
+	&.elm-headline {
+		font-weight: 700;
+	}
+}
+h4 {
+	&.elm-headline {
+		font-weight: 400;
+		font-size: $rea-main-h4-font-size; // * TODO: possibly rework variable naming
+	}
+}
+h1 {
+	&.elm-headline {
+		font-size: $rea-main-h1-font-size; // * TODO: possibly rework variable naming
+	}
+}
+h2 {
+	&.elm-headline {
+		font-size: $rea-main-h2-font-size; // * TODO: possibly rework variable naming
+	}
+}
+h3 {
+	&.elm-headline {
+		font-size: $rea-main-h3-font-size; // * TODO: possibly rework variable naming
+	}
+}

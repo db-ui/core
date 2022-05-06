@@ -1,0 +1,27 @@
+{
+	"icon-size": "20",
+	"icon-style": "outline",
+	"icons": [
+		{
+			"icon-glyph": "home"
+		},
+		{
+			"icon-glyph": "map"
+		},
+		{
+			"icon-glyph": "map-stop"
+		},
+		{
+			"icon-glyph": "place"
+		},
+		{
+			"icon-glyph": "set-position"
+		},
+		{
+			"icon-glyph": "trainstation"
+		},
+		{
+			"icon-glyph": "gps"
+		}
+	]
+}

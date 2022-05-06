@@ -1,0 +1,66 @@
+{
+	"variants": [
+		{
+			"label": "Informative",
+			"variant": "informative"
+		},
+		{
+			"label": "Success",
+			"variant": "success"
+		},
+		{
+			"label": "Warning",
+			"variant": "warning"
+		},
+		{
+			"label": "Error",
+			"variant": "error"
+		},
+		{
+			"label": "Gl. 10",
+			"variant": "track"
+		}
+	],
+	"pois": [
+		{
+			"label": "Essen & Trinken",
+			"variant": "poi-essen-trinken"
+		},
+		{
+			"label": "Einkaufen",
+			"variant": "poi-einkaufen"
+		},
+		{
+			"label": "Gesundheit",
+			"variant": "poi-gesundheit"
+		},
+		{
+			"label": "Kunst & Kultur",
+			"variant": "poi-kunst-kultur"
+		},
+		{
+			"label": "Wissenswertes",
+			"variant": "poi-wissenswertes"
+		},
+		{
+			"label": "Freizeit",
+			"variant": "poi-freizeit"
+		},
+		{
+			"label": "Zivile & reli. Einrichtungen",
+			"variant": "poi-zivile-rel-einrichtungen"
+		},
+		{
+			"label": "Dienstleistungen",
+			"variant": "poi-dienstleistungen"
+		},
+		{
+			"label": "DB Services & Einrichtung",
+			"variant": "poi-db-services-einrichtung"
+		},
+		{
+			"label": "Wegeleitung",
+			"variant": "poi-wegeleitung"
+		}
+	]
+}

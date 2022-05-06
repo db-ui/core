@@ -1,0 +1,76 @@
+@import "../../../css/partials.meta";
+@import "notification.variables";
+
+.cmp-notification {
+	// Default style
+	background-color: $notification---backgroundColor;
+	section[data-variant="hovering"] & {
+		background-color: #fff;
+	}
+	padding: #{to-rem(16)}; // TODO: replace by spacing-m variable
+
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1); // Todo: This should most likely get generally setup
+
+	// Alert variant
+	section[data-variant="alert"] & {
+		color: $notification-alert--color;
+	}
+
+	margin-bottom: #{to-rem(16)};
+
+	section[data-variant="hovering"] & {
+		border-radius: #{to-rem(8)};
+		border: 2px solid transparent;
+		padding: #{to-rem(14)} #{to-rem(16)}; // TODO: replace by spacing-m variable
+	}
+
+	// Hide the textual labels regarding each state
+	& > em {
+		@include a11y-visually-hidden($partial: $partial);
+	}
+
+	&[data-type="success"] {
+		background-color: $notification-success--backgroundColor;
+		section[data-variant="hovering"] & {
+			border-color: $notification-success--backgroundColor;
+		}
+	}
+	&[data-type="warning"] {
+		background-color: $notification-warning--backgroundColor;
+		section[data-variant="hovering"] & {
+			border-color: $notification-warning--backgroundColor;
+		}
+	}
+	&[data-type="error"] {
+		background-color: $notification-error--backgroundColor;
+		section[data-variant="hovering"] & {
+			border-color: $notification-error--backgroundColor;
+		}
+	}
+	&[data-type="informative"] {
+		background-color: $notification-informative--backgroundColor;
+		section[data-variant="hovering"] & {
+			border-color: $notification-informative--backgroundColor;
+		}
+	}
+
+	// Leading and trailing icons
+	&[data-icon],
+	&[data-icon-before],
+	&[data-icon-after] {
+		display: flex;
+		align-items: center;
+	}
+	&[data-icon],
+	&[data-icon-before] {
+		&::before {
+			--icon-margin-right: #{to-rem(10)};
+		}
+	}
+	&[data-icon-after] {
+		justify-content: space-between;
+		&::after {
+			--icon-margin-left: #{to-rem(10)};
+		}
+	}
+}

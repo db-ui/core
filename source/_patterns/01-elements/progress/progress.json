@@ -1,0 +1,7 @@
+{
+	"value": "68",
+	"maximalvalue": "100",
+	"unit": "%",
+	"id": "progress-label-01",
+	"type": "loader"
+}

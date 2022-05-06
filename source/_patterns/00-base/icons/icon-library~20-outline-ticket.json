@@ -1,0 +1,57 @@
+{
+	"icon-size": "20",
+	"icon-style": "outline",
+	"icons": [
+		{
+			"icon-glyph": "bahnbonus"
+		},
+		{
+			"icon-glyph": "bahnbonus-card"
+		},
+		{
+			"icon-glyph": "bahncard"
+		},
+		{
+			"icon-glyph": "commuter-ticket"
+		},
+		{
+			"icon-glyph": "komfort-check-in"
+		},
+		{
+			"icon-glyph": "komfort-check-in-check"
+		},
+		{
+			"icon-glyph": "komfort-check-in-circle"
+		},
+		{
+			"icon-glyph": "my-travel"
+		},
+		{
+			"icon-glyph": "outward-journey"
+		},
+		{
+			"icon-glyph": "qr-code"
+		},
+		{
+			"icon-glyph": "return-journey"
+		},
+		{
+			"icon-glyph": "ticket"
+		},
+		{
+			"icon-glyph": "ticket-discount"
+		},
+		{
+			"icon-glyph": "ticket-multiple"
+		},
+		{
+			"icon-glyph": "time-outward-journey"
+		},
+		{
+			"icon-glyph": "time-return-journey"
+		},
+		{
+			"icon-glyph": "timetable"
+		}
+	]
+}

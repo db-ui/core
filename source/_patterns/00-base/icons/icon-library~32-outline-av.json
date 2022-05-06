@@ -1,0 +1,54 @@
+{
+	"icon-size": "32",
+	"icon-style": "outline",
+	"icons": [
+		{
+			"icon-glyph": "fast-backward-10"
+		},
+		{
+			"icon-glyph": "fast-backward-30"
+		},
+		{
+			"icon-glyph": "fast-backward-empty"
+		},
+		{
+			"icon-glyph": "fast-forward-10"
+		},
+		{
+			"icon-glyph": "fast-forward-30"
+		},
+		{
+			"icon-glyph": "fast-forward-empty"
+		},
+		{
+			"icon-glyph": "pause"
+		},
+		{
+			"icon-glyph": "play"
+		},
+		{
+			"icon-glyph": "skip-backward"
+		},
+		{
+			"icon-glyph": "skip-forward"
+		},
+		{
+			"icon-glyph": "stop"
+		},
+		{
+			"icon-glyph": "subtitles"
+		},
+		{
+			"icon-glyph": "volume-down"
+		},
+		{
+			"icon-glyph": "volume-mute"
+		},
+		{
+			"icon-glyph": "volume-off"
+		},
+		{
+			"icon-glyph": "volume-up"
+		}
+	]
+}

@@ -1,0 +1,12 @@
+<details class="{{ patternName }}{{ styleModifier }}"{{#if linkEntries }} role="navigation"{{/if }}{{#if oppositePosition}} data-horizontal-position="opposite"{{/if }}>
+	<summary>{{ summary }}</summary>
+	{{#if linkEntries }}<ul role="group">{{else}}<menu type="toolbar">{{/if }}
+		{{#if linkEntries }}
+		<li>{{> elements-link href="#" value=entry01 }}</li>
+		<li>{{> elements-link href="#" value=entry02 }}</li>
+		{{else}}
+		<li>{{> elements-button type="button" value=entry01 }}</li>
+		<li>{{> elements-button type="button" value=entry02 }}</li>
+		{{/if }}
+	{{#if linkEntries }}</ul>{{else}}</menu>{{/if }}
+</details>

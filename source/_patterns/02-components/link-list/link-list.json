@@ -1,0 +1,16 @@
+{
+	"links": [
+		{
+			"href": "https://www.dbsystel.de/dbsystel/impressum-3712044",
+			"title": "In unserem Impressum können Sie die Betreiberangaben dieser Anwendung einsehen.",
+			"value": "Impressum",
+			"rel": "noopener noreferrer"
+		},
+		{
+			"href": "https://www.dbsystel.de/dbsystel/datenschutzgrundsaetze-3712042",
+			"title": "Wir geben hier weitere Angaben zum Datenschutz dieser Anwendung.",
+			"value": "Datenschutz",
+			"rel": "noopener noreferrer"
+		}
+	]
+}

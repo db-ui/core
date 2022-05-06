@@ -1,0 +1,18 @@
+{
+	"icon-size": "20",
+	"icon-style": "filled",
+	"icons": [
+		{
+			"icon-glyph": "home"
+		},
+		{
+			"icon-glyph": "place"
+		},
+		{
+			"icon-glyph": "gps"
+		},
+		{
+			"icon-glyph": "gps-north"
+		}
+	]
+}

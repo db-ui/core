@@ -1,0 +1,27 @@
+{
+	"width": 640,
+	"height": 360,
+	"sources": [
+		{
+			"src": "../../samples/videos/bienen.360.webm",
+			"type": "video/webm"
+		},
+		{
+			"src": "../../samples/videos/bienen.360.mp4",
+			"type": "video/mp4"
+		}
+	],
+	"subtitles": [
+		{
+			"src": "../../samples/videos/bienen.en.vtt",
+			"srclang": "en",
+			"label": "English"
+		},
+		{
+			"src": "../../samples/videos/bienen.de.vtt",
+			"srclang": "de",
+			"label": "Deutsch"
+		}
+	],
+	"fallback": "<p>Your browser doesn't support HTML5 video. Here is a <a href=\"../../samples/videos/bienen.360.mp4\">link to the video</a> instead.</p>"
+}

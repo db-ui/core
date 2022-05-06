@@ -1,0 +1,12 @@
+.cmp-cards {
+	list-style: none;
+
+	margin: 0;
+	padding: 0;
+
+	@supports (display: grid) {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(to-rem(340), 1fr));
+		grid-gap: to-rem(24);
+	}
+}

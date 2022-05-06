@@ -1,0 +1,4 @@
+*Status of this document: in progress*
+
+As the `details` and `summary` elements have become a standard, but aren't supported in all browsers already, we've chosen a polyfill for their support. Feel free to choose another solution or no polyfill at all depending on your environment and/or requirements.
+

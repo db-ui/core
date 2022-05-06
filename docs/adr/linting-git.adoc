@@ -1,0 +1,5 @@
+*Status of this document: final*
+
+link:https://www.npmjs.com/commitlint[commitlint] (in combination with link:https://www.npmjs.com/husky[husky] for git lifecycle integration) is the de-facto community standard for linting git commit messages. We're using the default stack here as described within our link:../conventions.adoc#user-content-git-commits-conventions[conventions] documentation.
+
+An alternative would have had been https://pre-commit.com/, which is a universal tool. We've mainly decided against it as it doesn't provide any further functionality (regarding our project scope), and even already have had experiences with commitlint without our Web Community.

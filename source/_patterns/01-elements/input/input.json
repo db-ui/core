@@ -1,0 +1,6 @@
+{
+	"type": "text",
+	"placeholder": "Projekt Name",
+	"id": "input01",
+	"label": "Textlabel"
+}

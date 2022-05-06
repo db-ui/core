@@ -1,0 +1,8 @@
+*Status of this document: in progress*
+
+link:https://github.com/xojs/xo[xo] by link:https://github.com/sindresorhus[Sindre Sorhus] is the de-facto community standard for general JavaScript linting, providing an opinionated but configurable ESLint wrapper.
+
+== Defaults to tabs instead of spaces for an 'accessible first' environment
+
+There's clearly no good reason to use spaces over tabs within your code - but a lot that link:http://lea.verou.me/2012/01/why-tabs-are-clearly-superior/[speaks against] it, as link:https://github.com/xojs/xo#space[pointed out by the XO authors] as well, but involves topics link:https://alexandersandberg.com/tabs-for-accessibility/[like accessibility] as well.
+So we've chosen tabs as the standard for indentation as this is its general purpose.

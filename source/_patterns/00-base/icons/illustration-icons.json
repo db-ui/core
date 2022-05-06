@@ -1,0 +1,421 @@
+{
+	"icons": {
+		"Action": [
+			{
+				"icon": "action/db_ic_il_account"
+			},
+			{
+				"icon": "action/db_ic_il_alarm_clock"
+			},
+			{
+				"icon": "action/db_ic_il_ar_icon"
+			},
+			{
+				"icon": "action/db_ic_il_calendar"
+			},
+			{
+				"icon": "action/db_ic_il_christmas"
+			},
+			{
+				"icon": "action/db_ic_il_clock_moving"
+			},
+			{
+				"icon": "action/db_ic_il_compass"
+			},
+			{
+				"icon": "action/db_ic_il_construction_sign"
+			},
+			{
+				"icon": "action/db_ic_il_construction_worker"
+			},
+			{
+				"icon": "action/db_ic_il_db_clock"
+			},
+			{
+				"icon": "action/db_ic_il_diamond"
+			},
+			{
+				"icon": "action/db_ic_il_fokus"
+			},
+			{
+				"icon": "action/db_ic_il_gift"
+			},
+			{
+				"icon": "action/db_ic_il_handshake"
+			},
+			{
+				"icon": "action/db_ic_il_heart"
+			},
+			{
+				"icon": "action/db_ic_il_information"
+			},
+			{
+				"icon": "action/db_ic_il_onlineshop_brand"
+			},
+			{
+				"icon": "action/db_ic_il_onlineshop_feature"
+			},
+			{
+				"icon": "action/db_ic_il_pdf"
+			},
+			{
+				"icon": "action/db_ic_il_printer"
+			},
+			{
+				"icon": "action/db_ic_il_savings"
+			},
+			{
+				"icon": "action/db_ic_il_search"
+			},
+			{
+				"icon": "action/db_ic_il_tips"
+			},
+			{
+				"icon": "action/db_ic_il_trash"
+			}
+		],
+		"Communication": [
+			{
+				"icon": "communication/db_ic_il_broken"
+			},
+			{
+				"icon": "communication/db_ic_il_chat"
+			},
+			{
+				"icon": "communication/db_ic_il_customer_feedback"
+			},
+			{
+				"icon": "communication/db_ic_il_envelope_closed"
+			},
+			{
+				"icon": "communication/db_ic_il_envelope_open"
+			},
+			{
+				"icon": "communication/db_ic_il_error"
+			},
+			{
+				"icon": "communication/db_ic_il_hashtag"
+			},
+			{
+				"icon": "communication/db_ic_il_wifi"
+			}
+		],
+		"Covid 19": [
+			{
+				"icon": "covid_19/db_ic_il_2g_rule"
+			},
+			{
+				"icon": "covid_19/db_ic_il_3g_rule"
+			},
+			{
+				"icon": "covid_19/db_ic_il_distance"
+			},
+			{
+				"icon": "covid_19/db_ic_il_ffp2_mask_with_sign"
+			},
+			{
+				"icon": "covid_19/db_ic_il_ffp2_mask"
+			},
+			{
+				"icon": "covid_19/db_ic_il_handwashing"
+			},
+			{
+				"icon": "covid_19/db_ic_il_no_handshaking"
+			},
+			{
+				"icon": "covid_19/db_ic_il_recovered"
+			},
+			{
+				"icon": "covid_19/db_ic_il_single_entry"
+			},
+			{
+				"icon": "covid_19/db_ic_il_test_antigen"
+			},
+			{
+				"icon": "covid_19/db_ic_il_test_pcr"
+			},
+			{
+				"icon": "covid_19/db_ic_il_vaccinated"
+			}
+		],
+		"Devices": [
+			{
+				"icon": "devices/db_ic_il_laptop"
+			},
+			{
+				"icon": "devices/db_ic_il_smartphone"
+			},
+			{
+				"icon": "devices/db_ic_il_tablet"
+			}
+		],
+		"Entertainment": [
+			{
+				"icon": "entertainment/db_ic_il_der_kleine_ice"
+			},
+			{
+				"icon": "entertainment/db_ic_il_gaming_no_wire"
+			},
+			{
+				"icon": "entertainment/db_ic_il_gaming"
+			},
+			{
+				"icon": "entertainment/db_ic_il_movie"
+			},
+			{
+				"icon": "entertainment/db_ic_il_podcast"
+			},
+			{
+				"icon": "entertainment/db_ic_il_sport"
+			}
+		],
+		"Feature": [
+			{
+				"icon": "feature/db_ic_il_green_energy"
+			},
+			{
+				"icon": "feature/db_ic_il_green"
+			},
+			{
+				"icon": "feature/db_ic_il_mobile_payment"
+			},
+			{
+				"icon": "feature/db_ic_il_nfc_scan"
+			},
+			{
+				"icon": "feature/db_ic_il_whats_schmutzig"
+			}
+		],
+		"Food /db_ic_il_ Drink": [
+			{
+				"icon": "food/db_ic_il_coffee_cup"
+			},
+			{
+				"icon": "food/db_ic_il_restaurant"
+			}
+		],
+		"Maps": [
+			{
+				"icon": "maps/db_ic_il_home"
+			},
+			{
+				"icon": "maps/db_ic_il_location"
+			}
+		],
+		"News": [
+			{
+				"icon": "news/db_ic_il_disruptions"
+			},
+			{
+				"icon": "news/db_ic_il_news"
+			},
+			{
+				"icon": "news/db_ic_il_newsletter"
+			},
+			{
+				"icon": "news/db_ic_il_newspaper"
+			},
+			{
+				"icon": "news/db_ic_il_s_bahn_magazin_muenchen"
+			}
+		],
+		"Station": [
+			{
+				"icon": "station/db_ic_il_db_ticket_shop"
+			},
+			{
+				"icon": "station/db_ic_il_db_ticket_vending_machine"
+			},
+			{
+				"icon": "station/db_ic_il_db_trainstation_with_train"
+			},
+			{
+				"icon": "station/db_ic_il_db_trainstation"
+			},
+			{
+				"icon": "station/db_ic_il_db_travel_center"
+			},
+			{
+				"icon": "station/db_ic_il_db_video_travel_center"
+			},
+			{
+				"icon": "station/db_ic_il_kiosk"
+			},
+			{
+				"icon": "station/db_ic_il_mini_store"
+			}
+		],
+		"Ticket": [
+			{
+				"icon": "ticket/db_ic_il_classic_printout"
+			},
+			{
+				"icon": "ticket/db_ic_il_mobileticket_brand"
+			},
+			{
+				"icon": "ticket/db_ic_il_mobileticket_feature"
+			},
+			{
+				"icon": "ticket/db_ic_il_onlineticket_brand"
+			},
+			{
+				"icon": "ticket/db_ic_il_onlineticket_feature"
+			},
+			{
+				"icon": "ticket/db_ic_il_scan_ticket_printout"
+			},
+			{
+				"icon": "ticket/db_ic_il_show_ticket"
+			},
+			{
+				"icon": "ticket/db_ic_il_tickets"
+			}
+		],
+		"Transportation": [
+			{
+				"icon": "transportation/db_ic_il_airplane_2"
+			},
+			{
+				"icon": "transportation/db_ic_il_airplane"
+			},
+			{
+				"icon": "transportation/db_ic_il_bicycle"
+			},
+			{
+				"icon": "transportation/db_ic_il_bike_trailer"
+			},
+			{
+				"icon": "transportation/db_ic_il_buggy"
+			},
+			{
+				"icon": "transportation/db_ic_il_bus_side_view"
+			},
+			{
+				"icon": "transportation/db_ic_il_call_a_bike"
+			},
+			{
+				"icon": "transportation/db_ic_il_car_side_view"
+			},
+			{
+				"icon": "transportation/db_ic_il_car"
+			},
+			{
+				"icon": "transportation/db_ic_il_commuter_train"
+			},
+			{
+				"icon": "transportation/db_ic_il_electric_scooter"
+			},
+			{
+				"icon": "transportation/db_ic_il_ev_car"
+			},
+			{
+				"icon": "transportation/db_ic_il_ferry"
+			},
+			{
+				"icon": "transportation/db_ic_il_handcart"
+			},
+			{
+				"icon": "transportation/db_ic_il_ice"
+			},
+			{
+				"icon": "transportation/db_ic_il_intercity_train"
+			},
+			{
+				"icon": "transportation/db_ic_il_local_bus"
+			},
+			{
+				"icon": "transportation/db_ic_il_local_train"
+			},
+			{
+				"icon": "transportation/db_ic_il_long_distance_bus"
+			},
+			{
+				"icon": "transportation/db_ic_il_scooter"
+			},
+			{
+				"icon": "transportation/db_ic_il_self_driving_side_view"
+			},
+			{
+				"icon": "transportation/db_ic_il_speedboat"
+			},
+			{
+				"icon": "transportation/db_ic_il_subway"
+			},
+			{
+				"icon": "transportation/db_ic_il_taxi"
+			},
+			{
+				"icon": "transportation/db_ic_il_tram"
+			}
+		],
+		"Travel": [
+			{
+				"icon": "travel/db_ic_il_bear"
+			},
+			{
+				"icon": "travel/db_ic_il_db_comfort_checkin"
+			},
+			{
+				"icon": "travel/db_ic_il_delayed"
+			},
+			{
+				"icon": "travel/db_ic_il_dog"
+			},
+			{
+				"icon": "travel/db_ic_il_id_card"
+			},
+			{
+				"icon": "travel/db_ic_il_itinerary"
+			},
+			{
+				"icon": "travel/db_ic_il_lost_and_found"
+			},
+			{
+				"icon": "travel/db_ic_il_luggage"
+			},
+			{
+				"icon": "travel/db_ic_il_passenger_rights"
+			},
+			{
+				"icon": "travel/db_ic_il_poi_berlin_alternative"
+			},
+			{
+				"icon": "travel/db_ic_il_poi_berlin"
+			},
+			{
+				"icon": "travel/db_ic_il_suitcase"
+			},
+			{
+				"icon": "travel/db_ic_il_timetable"
+			},
+			{
+				"icon": "travel/db_ic_il_advertising_transportation"
+			},
+			{
+				"icon": "travel/db_ic_il_zuginformation"
+			}
+		],
+		"Weather": [
+			{
+				"icon": "weather/db_ic_il_blizzard"
+			},
+			{
+				"icon": "weather/db_ic_il_thunderstorm"
+			}
+		]
+	},
+	"example-bgs": [
+		{
+			"variant": "regular"
+		},
+		{
+			"variant": "turquoise"
+		},
+		{
+			"variant": "red"
+		},
+		{
+			"variant": "cyan"
+		}
+	]
+}

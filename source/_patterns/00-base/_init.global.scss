@@ -1,0 +1,107 @@
+// *! this is an opionionated (especially based on "enhancing" normalize.css) version of minireset.css v0.0.4 | MIT License | github.com/jgthms/minireset.css
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-height: 100vh;
+}
+
+// adapted from https://github.com/jgthms/bulma/blob/0.7.5/sass/base/generic.sass
+html {
+	background-color: #fdfdfd; // TODO: This would need to get replaced by the correct (semantic) color
+	font-size: 16px;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	min-width: 300px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	text-rendering: optimizeLegibility;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+body,
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: $db-font-family-base;
+}
+
+code,
+pre {
+	-moz-osx-font-smoothing: auto;
+	-webkit-font-smoothing: auto;
+}
+
+body {
+	color: $db-color-cool-gray-700;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+// Inline
+a {
+	color: $db-color-cool-gray-700;
+
+	strong {
+		color: currentColor;
+	}
+
+	&:hover {
+		color: #5d616a; // TODO: Identify correct color variable
+	}
+}
+
+code {
+	background-color: #f5f5f5;
+	color: darken($db-color-red, 2%);
+	font-size: 0.875em;
+	font-weight: normal;
+	padding: 0.25em 0.5em 0.25em;
+}
+
+hr {
+	background-color: #f5f5f5;
+	border: none;
+	display: block;
+	height: 2px;
+	margin: 1.5rem 0;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+small {
+	font-size: to-em(14);
+}
+
+// Block
+fieldset {
+	border: none;
+}
+
+pre {
+	-webkit-overflow-scrolling: touch;
+	background-color: #f5f5f5;
+	color: #282d37;
+	font-size: 0.875em;
+	overflow-x: auto;
+	padding: 1.25rem 1.5rem;
+	white-space: pre;
+	word-wrap: normal;
+
+	code {
+		background-color: transparent;
+		color: currentColor;
+		font-size: 1em;
+		padding: 0;
+	}
+}

@@ -1,0 +1,12 @@
+@import "../../../css/helpers/functions";
+@import "../../../css/db-ui-core.variables";
+
+$tabBar-tabSection--backgroundColor: #fdfdfd !default; // TODO: This would need to get replaced by the correct (semantic) color
+
+$tabBar-tab-focus-outline: 1px dotted $db-color-cool-gray-400 !default;
+
+$tabBar-tab-hover-backgroundColor: $db-color-cool-gray-100 !default;
+$tabBar-tab-active-border: #{to-rem(1)} solid $db-color-cool-gray-500 !default;
+
+$tabBar-tabpanel--borderTop: to-rem(1) solid $db-color-cool-gray-500 !default;
+$tabBar-tabpanel--boxShadow: $box-shadow-01-bottom, $box-shadow-02-bottom !default;

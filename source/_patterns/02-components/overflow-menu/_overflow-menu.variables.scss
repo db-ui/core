@@ -1,0 +1,11 @@
+@import "../../../css/helpers/functions";
+@import "../../00-base/icons/icons.variables";
+@import "../../00-base/icons/icons.helpers";
+
+$overflowMenu---borderRadius: 8px !default;
+$overflowMenu---backgroundColor: #fff !default;
+$overflowMenu-item-hover-backgroundColor: $db-color-cool-gray-200 !default;
+$cmp-overflow-menu-icon: glyph(
+	more-vertical
+) !default; // * TODO: possibly rework variable naming
+$overflowMenu-triangle--borderSize: to-rem(13) !default;

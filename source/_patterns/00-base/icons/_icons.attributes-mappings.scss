@@ -1,0 +1,14 @@
+// @import "icons.variables";
+
+// *** Attribute based method ***
+@each $icon-name, $icon-glyph in $icon-glyphs {
+	[data-icon="#{$icon-name}"],
+	[data-icon-before="#{$icon-name}"] {
+		&::before {
+			--icon-glyph: "#{$icon-glyph}";
+		}
+	}
+	[data-icon-after="#{$icon-name}"]::after {
+		--icon-glyph: "#{$icon-glyph}";
+	}
+}

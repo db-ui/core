@@ -1,0 +1,19 @@
+*Status of this document: in progress*
+____
+It should be a virtuous cycle. New ideas should be tried and tested in products. When good ideas prove out, they should be plucked out and included in the design system, so that future products can benefit. The latest solutions awesomely become the new boring.
+____
+
+Source: https://bigmedium.com/ideas/boring-design-systems.html
+
+
+////
+	Inspirational sources for this page
+	- https://gitlab.com/liquid-design/liquid-design-react/blob/master/CONTRIBUTING.md
+	- https://github.com/primer/components/blob/master/CONTRIBUTING.md
+	- https://palette.artsy.net/home/process/
+	- https://github.com/grommet/grommet/blob/master/CONTRIBUTING.md
+	- https://wet-boew.github.io/wet-boew/docs/start-en.html#develop
+	- https://foundation.zurb.com/get-involved/contribute.html
+	- https://github.com/twbs/bootstrap#contributing
+	- https://github.com/material-components/material-components-web/blob/master/CONTRIBUTING.md
+////

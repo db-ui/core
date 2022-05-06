@@ -1,0 +1,16 @@
+# Configuration file for yamllint.
+# It extends the default conf by adjusting some options.
+
+extends: default
+
+rules:
+  line-length:
+    max: 80
+    allow-non-breakable-words: true
+    allow-non-breakable-inline-mappings: true
+  document-start:
+    present: false
+  comments:
+    min-spaces-from-content: 1
+ignore: |
+  .git/

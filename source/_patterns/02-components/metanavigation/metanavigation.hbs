@@ -1,0 +1,15 @@
+<ul class="cmp-metanavigation">
+	{{#unless navItems }}
+	<li>
+		{{> elements-link href='#' value='Einstellungen' rel='configuration' }}
+	</li>
+	<li>
+		{{> elements-link href='#' value='Nachrichten' rel='messages' }}
+	</li>
+	{{/unless }}
+	{{#each navItems }}
+		<li>
+			{{> elements-link }}
+		</li>
+	{{/each }}
+</ul>

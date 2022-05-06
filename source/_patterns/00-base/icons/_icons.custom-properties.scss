@@ -1,0 +1,33 @@
+@import "icons.variables";
+
+// TODO: The following construct was especially meant to enable a branch (EDS & FV) specific result - probably we could refactor this the sooner the later
+[data-icon]:not([data-icon-variant]),
+[data-icon-before]:not([data-icon-variant-before]) {
+	&::before {
+		@extend %defaultIconCustomProperties !optional;
+	}
+}
+
+[data-icon-after]:not([data-icon-variant-after]) {
+	&::after {
+		@extend %defaultIconCustomProperties !optional;
+	}
+}
+
+// DB UX Icons
+@each $icon-style, $icon-sizes in $icon-font-families-personenverkehr {
+	@each $icon-size, $icon-categories in $icon-sizes {
+		[data-icon-variant="#{$icon-size}-#{$icon-style}"],
+		[data-icon-variant-before="#{$icon-size}-#{$icon-style}"] {
+			&[data-icon],
+			&[data-icon-before] {
+				@include iconMeta($icon-size, $icon-style);
+			}
+		}
+		[data-icon-variant-after="#{$icon-size}-#{$icon-style}"] {
+			&[data-icon-after] {
+				@include iconMeta($icon-size, $icon-style, "after");
+			}
+		}
+	}
+}

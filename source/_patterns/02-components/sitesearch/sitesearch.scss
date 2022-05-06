@@ -1,0 +1,85 @@
+@import "../../../css/partials.meta";
+@import "sitesearch.variables";
+
+.cmp-sitesearch {
+	position: relative;
+
+	.elm-input[type="search"] {
+		background-color: $sitesearch-input--backgroundColor; // * TODO: possibly rework variable naming
+		background-image: none;
+		opacity: 0;
+		padding-left: to-em(36);
+		width: 0;
+
+		&:focus,
+		&:not(:placeholder-shown) {
+			opacity: 1;
+			width: to-rem(240);
+
+			& + .elm-label {
+				display: none;
+			}
+
+			& ~ .elm-button {
+				display: initial;
+			}
+		}
+
+		// transition: all 500ms;
+	}
+	.elm-label {
+		@include icon(glyph(search), 24, "outline", $partial: $partial);
+
+		display: inline-block;
+
+		&::before {
+			// TODO: Evaluate on whether this declaration could get moved to the general icon declarations
+			font-size: to-rem(22);
+			vertical-align: top;
+		}
+		.rea-header & {
+			padding-top: to-rem(10);
+		}
+
+		.rea-meta & {
+			@media screen and (max-width: #{$metanavigation-iconOnly--maxWidth}) {
+				@include is-icon-text-replace();
+			}
+		}
+	}
+	.elm-button {
+		@include icon(glyph(search), 24, "outline", $partial: $partial);
+
+		display: none;
+		left: 0;
+		position: absolute;
+		top: to-em(8);
+		visibility: hidden;
+
+		&::before {
+			left: to-rem(4);
+			margin: -9px;
+			padding: 9px;
+			position: absolute;
+			top: -#{to-rem(2)};
+			visibility: visible;
+		}
+	}
+
+	.rea-meta & {
+		margin-right: to-rem(8);
+
+		@media screen and (max-width: #{$sitesearch-form-full-maxWidth}) {
+			// * TODO: possibly rework variable naming
+			&:focus-within {
+				left: to-rem(16);
+				position: absolute;
+				z-index: $z-index-rea-header-cmp-sitesearch-focus;
+
+				.elm-input[type="search"] {
+					width: calc(100vw - #{to-rem(32)});
+				}
+			}
+		}
+	}
+}

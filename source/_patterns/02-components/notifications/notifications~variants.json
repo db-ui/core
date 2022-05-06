@@ -1,0 +1,30 @@
+{
+	"notifications": [
+		{
+			"role": "status",
+			"live": "polite"
+		},
+		{
+			"role": "alert",
+			"live": "assertive",
+			"type": "error"
+		},
+		{
+			"role": "status",
+			"live": "polite",
+			"type": "informative"
+		},
+		{
+			"role": "status",
+			"live": "polite",
+			"type": "success"
+		},
+		{
+			"role": "alert",
+			"live": "assertive",
+			"type": "warning"
+		}
+	],
+	"variant": "alert",
+	"text": "Lorem ipsum dolor sit amet."
+}

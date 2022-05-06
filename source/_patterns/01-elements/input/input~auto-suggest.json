@@ -1,0 +1,17 @@
+{
+	"id": "input09",
+	"value": "Ap",
+	"datalist": true,
+	"datalistItems": [
+		{
+			"text": "Apple",
+			"value": "Apple Computers"
+		},
+		{
+			"text": "Applify"
+		},
+		{
+			"text": "App-Design"
+		}
+	]
+}

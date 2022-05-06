@@ -1,0 +1,49 @@
+{
+	"icon-size": "24",
+	"icon-style": "outline",
+	"default": true,
+	"icons": [
+		{
+			"icon-glyph": "1st-class"
+		},
+		{
+			"icon-glyph": "2nd-class"
+		},
+		{
+			"icon-glyph": "alternative-connection"
+		},
+		{
+			"icon-glyph": "booking"
+		},
+		{
+			"icon-glyph": "capacity-indicator"
+		},
+		{
+			"icon-glyph": "capacity-indicator-fully-booked"
+		},
+		{
+			"icon-glyph": "capacity-indicator-high"
+		},
+		{
+			"icon-glyph": "capacity-indicator-low"
+		},
+		{
+			"icon-glyph": "destination"
+		},
+		{
+			"icon-glyph": "intermediary-stop"
+		},
+		{
+			"icon-glyph": "round-trip"
+		},
+		{
+			"icon-glyph": "single-trip"
+		},
+		{
+			"icon-glyph": "start"
+		},
+		{
+			"icon-glyph": "mixed-class"
+		}
+	]
+}

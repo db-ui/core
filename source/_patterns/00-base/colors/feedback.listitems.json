@@ -1,0 +1,14 @@
+{
+	"listItems": [
+		{
+			"name": "DB Success",
+			"hex": "#508B1B",
+			"scssvariable": "$db-color-success: $db-color-light-green-600"
+		},
+		{
+			"name": "DB Error",
+			"hex": "#EC0016",
+			"scssvariable": "$db-color-error: $db-color-red-500"
+		}
+	]
+}

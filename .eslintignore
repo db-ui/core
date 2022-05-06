@@ -1,0 +1,4 @@
+**/*.plugin.js
+source/fonts/**/sources/
+helpers/test.js
+tests/backstop_data/engine_scripts/

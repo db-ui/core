@@ -1,0 +1,53 @@
+*Status of this document: in progress*
+
+We obviously would like to follow one of the most important paradigms of Web Development - to provide code divided by their different meanings of the technologies:
+
+* HTML for markup and semantically enriching the data
+* CSS for styling
+* JavaScript for functionality
+
+Each one of those is supposed to progressively enhance the previous one.
+____
+I’ve started telling JS devs that semantic html elements are preloaded microframeworks that ship you accessibility and performance plugins.
+____
+Tatiana Mac, Source: https://twitter.com/tatianatmac/status/1152136194794434561?s=11
+
+## Semantic HTML & CSS
+
+Providing meaningful classes is the basis for maintaining an application in the long run - have a look at the following citations and read through the article provided:
+
+> 10. Because the standards recommend it
+> On using the class attribute, HTML5 specs say in 3.2.5.7:
+> "[…] authors are encouraged to use values that describe the nature of the content, rather than values that describe the desired presentation of the content."
+
+> 11. Because styling state is easier
+> Consider this HTML:
+> <a class="padding-left-20 red" href="#"></a>
+> Changing the padding and colour on hover is a difficult task. Try to avoid having to fix self-induced problems like this.
+
+Source: https://maintainablecss.com/chapters/semantics/
+
+> Adding a class attribute doesn’t alter the semantic meaning of your HTML document at all—it’s purely for hooking into your CSS stylesheet. However, it’s still usually a good idea to avoid naming classes based on their appearance. If we chose to name our class .italic, we wouldn’t be able to do much besides make it italic in our CSS without leading to a confusing situation. Using something semantic like .synopsis gives us more freedom for our CSS to customize how that synopsis is displayed.
+
+Source: https://internetingishard.com/html-and-css/css-selectors/#class-naming-conventions
+
+Another nice source for the whole topic is the talk “Conversational Semantics” given by @AaronGustafson at the beyond tellerrand conference this year: https://vimeo.com/373129805
+
+And a good starting guide and easy to follow steps and the concept in general is described in this article, published both on https://css-tricks.com/why-how-and-when-to-use-semantic-html-and-aria/ and https://adamsilver.io/articles/semantic-html-and-aria-explained/
+
+### regular (new) HTML attributes
+
+Did you know that attributes like `hidden`, `disabled`, `open` (e.g. on details/summary HTML elements) or `loading="lazy"` exist? Those (out of which the first two were previously introduced as aria-* attributes) have been further standarized and would now provide both semantic meaning & (accessibility) functionality as well as styling, so we should use them preferably over abstract and meaningless classes like e.g. `.is-hidden` or `.is-disabled`.
+Always have a look at the variety of standard attributes as well as element specific ones first: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes
+
+### aria-attributes
+
+In case that non of the standarized attributes fit your needs for setting the state of an element instead of e.g.  via an abstract class like e.g. "active", try to find a semantic equivalent first, like in this case `[aria-current]` for example, compare to https://gomakethings.com/better-more-accessible-active-link-styling/ and https://tink.uk/using-the-aria-current-attribute/
+
+### Using attributes instead of classes
+
+If none of the previous standard solutions fits your needs, think about whether it makes sense to provide the property for patterns via a `data-*` attribute, instead of a `class`, as this would adapt the way the regular HTML API works itself.
+
+### Structured Data & Microdata
+
+_tbd_

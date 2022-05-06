@@ -1,0 +1,13 @@
+@import "../../00-base/icons/icons.helpers";
+@import "../../00-base/icons/icons.variables";
+@import "../../00-base/colors/colors.variables";
+
+$breadcrumb-divider--icon: "chevron-right" !default;
+$breadcrumb-link-hover-backgroundColor: rgba(
+	$db-color-cool-gray-700,
+	0.03
+) !default;
+$breadcrumb-link-active-backgroundColor: rgba(
+	$db-color-cool-gray-700,
+	0.06
+) !default;

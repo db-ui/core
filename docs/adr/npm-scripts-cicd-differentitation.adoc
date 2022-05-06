@@ -1,0 +1,9 @@
+*Status of this document: in progress*
+
+We need to differentitate in between NPM script execution on localhosts vs. within CI/CD environments. That for we're using link:https://www.npmjs.com/package/is-ci[`is-ci`], which is recommended e.g. by link:https://typicode.github.io/husky/#/?id=with-is-ci[`Husky`].
+
+Other solutions like checking for environment variables directly might fail in different usage contexts (for example Microsoft PowerShell seems to be very specific about the allowed signs within a script):
+
+> (…) most Continuous Integration Servers set a `CI` environment variable. You can use it in your hooks to detect if it's running in a CI.
+
+> `[ -n "$CI" ] && exit 0`

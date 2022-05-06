@@ -1,0 +1,40 @@
+---
+title: Notifications
+state: inreview
+---
+
+## Best practices
+
+Best practice, research insights and examples: <https://gerireid.com/forms.html#notifications>
+
+## Accessibility
+
+Notifications are intended to be small interruptions to your visitors or users, so to help those with screen readers and similar assistive technologies, you should wrap your notifications in an aria-live region. Changes to live regions (such as injecting/updating a notification component) are automatically announced by screen readers without needing to move the user’s focus or otherwise interrupt the user.
+
+Additionally, if you'd like to update existing notifications incrementally, include `aria-atomic="true"` to ensure that the entire notification is always announced as a single (atomic) unit, rather than announcing what was changed (which could lead to problems if you only update part of the notification’s content, or if displaying the same notification content at a later point in time). It's still recommended to remove and add `cmp-notification` components as a whole within the `section`.
+
+Note that the `live` region needs to be present in the markup before the notification is generated or updated. If you dynamically generate both at the same time and inject them into the page, they will generally not be announced by assistive technologies.
+
+You also need to adapt the `role` and `aria-live` level depending on the content. If it’s an important message like an error, use `role="alert"` and `aria-live="assertive"`, otherwise use `role="status"`and `aria-live="polite"` attributes.
+
+Adapted from <https://getbootstrap.com/docs/4.3/components/toasts/>
+
+And we're not using [`aria-relevant="additions"`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-relevant), as the default behaviour is even already what we expect with the default (`additions text`), compare to e.g. <https://medium.com/dev-channel/why-authors-should-avoid-aria-relevant-5d3164fab1e3> and <https://github.com/w3c/aria/issues/712#issuecomment-529848465>
+
+### Live regions
+
+> Live regions are perceivable regions of a web page that are typically updated as a result of an external event when user focus may be elsewhere. These regions are not always updated as a result of a user interaction. This practice has become commonplace with the growing use of Ajax. Examples of live regions include a chat log, stock ticker, or a sport scoring section that updates periodically to reflect game statistics. Since these asynchronous areas are expected to update outside the user's area of focus, assistive technologies such as screen readers have either been unaware of their existence or unable to process them for the user. WAI-ARIA has provided a collection of properties that allow the author to identify these live regions and process them: aria-live, aria-relevant, aria-atomic, and aria-busy.
+
+Source: <https://www.w3.org/TR/wai-aria/#terms>
+
+### Conveying meaning to assistive technologies
+
+> Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (e.g. the visible text), or is included through alternative means, such as additional visibly hidden text.
+
+Source: <https://getbootstrap.com/docs/4.3/components/alerts/>
+
+[inspirational sources for this page]: # "https://www.w3.org/TR/wai-aria-practices-1.1/#alert"
+[inspirational sources for this page]: # "https://getbootstrap.com/docs/4.3/components/alerts/"
+[inspirational sources for this page]: # "https://getbootstrap.com/docs/4.3/components/toasts/"
+[inspirational sources for this page]: # "https://inclusive-components.design/notifications/"
+[inspirational sources for this page]: # "https://open-ui.org/components/toast.research"

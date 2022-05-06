@@ -1,0 +1,99 @@
+@import "tag.variables";
+
+.elm-tag {
+	align-items: center;
+	background-color: $tag---backgroundColor;
+	border-radius: $tag---radius;
+	color: $tag---color;
+	display: inline-flex;
+
+	// Link related styles
+	font-size: to-rem(12);
+	font-weight: initial;
+	height: to-rem(24);
+	justify-content: center;
+	padding-left: to-rem(4);
+	padding-right: to-rem(4);
+	white-space: nowrap;
+	text-transform: capitalize;
+
+	// Sizes
+	&%size-Small {
+		height: to-rem(20);
+	}
+
+	&[data-size="small"] {
+		@extend %size-Small;
+	}
+
+	//*** Variants ***
+	&[data-variant="warning"] {
+		background-color: $db-color-warning-small-font;
+	}
+	&[data-variant="error"] {
+		background-color: $db-color-error-small-font;
+	}
+	&[data-variant="informative"] {
+		background-color: $db-color-informative-small-font;
+	}
+	&[data-variant="success"] {
+		background-color: $db-color-success-small-font;
+	}
+
+	// The "Gleis" additioally gets a bold font weight
+	&[data-variant="track"] {
+		font-weight: 700;
+		background-color: $db-color-blue-700;
+	}
+
+	// POIs
+	&[data-variant="poi-essen-trinken"] {
+		background-color: $db-color-food-drink;
+		color: $db-color-cool-gray-700;
+	}
+	&[data-variant="poi-einkaufen"] {
+		background-color: $db-color-shopping;
+	}
+	&[data-variant="poi-gesundheit"] {
+		background-color: $db-color-health;
+	}
+	&[data-variant="poi-kunst-kultur"] {
+		background-color: $db-color-arts-culture;
+	}
+	&[data-variant="poi-wissenswertes"] {
+		background-color: $db-color-things-to-know;
+	}
+	&[data-variant="poi-freizeit"] {
+		background-color: $db-color-leisure;
+	}
+	&[data-variant="poi-zivile-rel-einrichtungen"] {
+		background-color: $db-color-community-facilities;
+	}
+	&[data-variant="poi-dienstleistungen"] {
+		background-color: $db-color-services;
+		color: $db-color-cool-gray-700;
+	}
+	&[data-variant="poi-db-services-einrichtung"] {
+		background-color: $db-color-db-services-facilities;
+	}
+	&[data-variant="poi-wegeleitung"] {
+		background-color: $db-color-guidance;
+	}
+
+	// Icons
+	&[data-icon],
+	&[data-icon-before] {
+		@include iconMeta(20);
+
+		&::before {
+			--icon-margin-right: #{to-rem(2)};
+		}
+	}
+	&[data-icon-after] {
+		@include iconMeta($size: 20, $position: "after");
+
+		&::after {
+			--icon-margin-left: #{to-rem(2)};
+		}
+	}
+}

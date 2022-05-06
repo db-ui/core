@@ -1,0 +1,10 @@
+{
+	"icon-size": "24",
+	"icon-style": "outline",
+	"default": true,
+	"icons": [
+		{
+			"icon-glyph": "logo"
+		}
+	]
+}

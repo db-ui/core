@@ -1,0 +1,4 @@
+*Status of this document: in progress*
+
+As the `dialog` element has become a standard, but isn't supported in all browsers already, we've chosen a polyfill for its support.
+

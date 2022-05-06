@@ -1,0 +1,45 @@
+[
+	{
+		"options": {
+			"firstPartyHostnames": ["db-ui.github.io"]
+		},
+		"timings": [
+			{
+				"metric": "interactive",
+				"budget": 5000
+			},
+			{
+				"metric": "first-meaningful-paint",
+				"budget": 2000
+			}
+		],
+		"resourceSizes": [
+			{
+				"resourceType": "script",
+				"budget": 100
+			},
+			{
+				"resourceType": "image",
+				"budget": 100
+			},
+			{
+				"resourceType": "third-party",
+				"budget": 200
+			},
+			{
+				"resourceType": "total",
+				"budget": 700
+			}
+		],
+		"resourceCounts": [
+			{
+				"resourceType": "third-party",
+				"budget": 10
+			},
+			{
+				"resourceType": "total",
+				"budget": 30
+			}
+		]
+	}
+]

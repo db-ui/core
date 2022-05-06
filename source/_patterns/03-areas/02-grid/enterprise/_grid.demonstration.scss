@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+@import "grid";
+
+.rea-grid {
+	// Example
+
+	& > div > p.DO-NOT-COPY-THIS-CLASS-example-abstract {
+		background-color: #e1e6eb;
+	}
+}

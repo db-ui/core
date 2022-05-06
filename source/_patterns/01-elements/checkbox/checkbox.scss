@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+@import "../../../css/partials.meta";
+@import "checkbox.variables";
+
+.elm-checkbox {
+	@include icon("\00A0", 24, "outline", $partial: $partial);
+
+	appearance: none;
+	background-color: $checkbox---backgroundColor;
+	border: #{to-rem(1)} solid $checkbox---borderColor;
+	border-radius: 4px;
+	color: $checkbox---color;
+	height: to-rem(24);
+	margin-right: to-em(9);
+	&[type="checkbox"] {
+		vertical-align: top;
+	}
+	width: to-rem(24);
+
+	display: inline-flex;
+	justify-content: center;
+	align-content: center;
+
+	&::before {
+		--icon-font-size: 1.375rem;
+		margin-right: 0;
+	}
+
+	&:checked {
+		background-color: $checkbox--checked-backgroundColor;
+
+		&::before {
+			content: glyph(done);
+			color: $checkbox--checked-color;
+		}
+	}
+
+	&:not(:disabled) {
+		&:hover {
+			background-color: rgba(40, 45, 55, 0.14);
+		}
+		&:checked {
+			&:hover {
+				background-color: $checkbox-hover-checked-backgroundColor;
+			}
+		}
+		&:active {
+			background-color: rgba(40, 45, 55, 0.14);
+		}
+	}
+
+	&:indeterminate {
+		&:before {
+			content: glyph(minus);
+		}
+	}
+
+	&:disabled {
+		&,
+		& + label {
+			opacity: 0.5;
+		}
+	}
+}

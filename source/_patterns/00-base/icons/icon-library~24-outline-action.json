@@ -1,0 +1,154 @@
+{
+	"icon-size": "24",
+	"icon-style": "outline",
+	"default": true,
+	"icons": [
+		{
+			"icon-glyph": "account"
+		},
+		{
+			"icon-glyph": "add"
+		},
+		{
+			"icon-glyph": "add-circle"
+		},
+		{
+			"icon-glyph": "alarm"
+		},
+		{
+			"icon-glyph": "alarm-add"
+		},
+		{
+			"icon-glyph": "alert"
+		},
+		{
+			"icon-glyph": "alert-off"
+		},
+		{
+			"icon-glyph": "calendar"
+		},
+		{
+			"icon-glyph": "check-circle"
+		},
+		{
+			"icon-glyph": "credit-card"
+		},
+		{
+			"icon-glyph": "delete"
+		},
+		{
+			"icon-glyph": "discount"
+		},
+		{
+			"icon-glyph": "document"
+		},
+		{
+			"icon-glyph": "done"
+		},
+		{
+			"icon-glyph": "download"
+		},
+		{
+			"icon-glyph": "edit"
+		},
+		{
+			"icon-glyph": "filter"
+		},
+		{
+			"icon-glyph": "generic-card"
+		},
+		{
+			"icon-glyph": "giftcard"
+		},
+		{
+			"icon-glyph": "heart"
+		},
+		{
+			"icon-glyph": "help"
+		},
+		{
+			"icon-glyph": "info"
+		},
+		{
+			"icon-glyph": "legal"
+		},
+		{
+			"icon-glyph": "log-out"
+		},
+		{
+			"icon-glyph": "minus"
+		},
+		{
+			"icon-glyph": "print"
+		},
+		{
+			"icon-glyph": "remove"
+		},
+		{
+			"icon-glyph": "schedule"
+		},
+		{
+			"icon-glyph": "search"
+		},
+		{
+			"icon-glyph": "send"
+		},
+		{
+			"icon-glyph": "settings"
+		},
+		{
+			"icon-glyph": "share"
+		},
+		{
+			"icon-glyph": "shopping-bag"
+		},
+		{
+			"icon-glyph": "shopping-basket"
+		},
+		{
+			"icon-glyph": "shopping-cart"
+		},
+		{
+			"icon-glyph": "star"
+		},
+		{
+			"icon-glyph": "swap-horizontal"
+		},
+		{
+			"icon-glyph": "swap-vertical"
+		},
+		{
+			"icon-glyph": "upload"
+		},
+		{
+			"icon-glyph": "visibility"
+		},
+		{
+			"icon-glyph": "visibility-off"
+		},
+		{
+			"icon-glyph": "website"
+		},
+		{
+			"icon-glyph": "zoom-in"
+		},
+		{
+			"icon-glyph": "zoom-out"
+		},
+		{
+			"icon-glyph": "duplicate"
+		},
+		{
+			"icon-glyph": "lock-close"
+		},
+		{
+			"icon-glyph": "lock-open"
+		},
+		{
+			"icon-glyph": "shopping-basket-disabled"
+		},
+		{
+			"icon-glyph": "shopping-cart-disabled"
+		}
+	]
+}

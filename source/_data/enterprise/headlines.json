@@ -1,0 +1,20 @@
+{
+	"headlines": [
+		{
+			"type": "1",
+			"text": "Headline 1"
+		},
+		{
+			"type": "2",
+			"text": "Headline 2"
+		},
+		{
+			"type": "3",
+			"text": "Headline 3"
+		},
+		{
+			"type": "4",
+			"text": "Headline 4"
+		}
+	]
+}

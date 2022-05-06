@@ -1,0 +1,85 @@
+@import "helpers/functions";
+@import "db-ui-core.variables";
+@import "@db-ui/base/build/scss/variables";
+@import "../_patterns/01-elements/headline/headline";
+$fonts-path: "../fonts/";
+@import "../_patterns/00-base/type/fonts";
+
+/* project specific declarations */
+body,
+[class|="pl"] {
+	font-family: $db-font-family-base;
+}
+pl-header {
+	font-size: to-rem(15.49191);
+}
+pl-logo {
+	align-self: flex-start !important; // shame.css
+}
+.pl-c-viewport-modal-wrapper,
+pl-iframe {
+	background-color: $db-color-cool-gray-100 !important; // shame.css
+}
+
+// Intro page
+.tpl-intro {
+	main section {
+		padding: 1rem 3rem 0;
+		@media screen and (min-width: 1156px) {
+			padding: 1rem calc(50vw - 530px) 0;
+		}
+
+		// Splitted Intro Page
+		&:nth-of-type(2) {
+			background-color: $db-color-cool-gray-100;
+			padding-bottom: 2.5rem;
+		}
+	}
+
+	// Citation
+	.intro-quotation {
+		text-align: right;
+
+		&,
+		& blockquote {
+			margin: 0;
+		}
+
+		blockquote {
+			font-size: to-rem(24);
+			font-weight: 700;
+
+			&::before {
+				content: "\201E";
+			}
+			&::after {
+				content: "\201D";
+			}
+		}
+		figcaption {
+			cite {
+				font-style: normal;
+			}
+		}
+	}
+}
+
+.pl-c-category__description {
+	max-width: 55em !important;
+}
+.tpl-intro [src^="../../images/db-ui-"] {
+	float: left;
+	margin-top: to-rem(28);
+	margin-right: to-rem(4);
+}
+
+.pl-c-typeahead__input {
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+}
+
+.pl-c-category__title,
+.pl-c-pattern__title {
+	@extend .elm-headline;
+}

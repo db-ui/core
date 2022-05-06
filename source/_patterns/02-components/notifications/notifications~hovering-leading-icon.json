@@ -1,0 +1,12 @@
+{
+	"notifications": [
+		{
+			"role": "alert",
+			"live": "assertive",
+			"type": "informative",
+			"icon-before": "account"
+		}
+	],
+	"variant": "hovering",
+	"text": "Lorem ipsum dolor sit amet."
+}

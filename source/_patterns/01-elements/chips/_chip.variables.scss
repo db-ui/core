@@ -1,0 +1,10 @@
+@import "../../../css/helpers/functions";
+@import "../../00-base/icons/icons.variables";
+@import "../../00-base/icons/icons.helpers";
+
+$chip---radius: to-rem(4) !default;
+
+$chip-hover--backgroundColor: rgba($db-color-cool-gray-700, 0.03) !default;
+$chip-selected--backgroundColor: $db-color-cool-gray-700 !default;
+$chip-checked--color: $db-color-white !default;
+// $chip---color: $db-color-white !default;

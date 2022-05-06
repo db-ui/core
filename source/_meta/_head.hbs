@@ -1,0 +1,43 @@
+<!doctype html>
+<html class="{{ htmlClass }}" lang="{{ htmlLang }}">
+
+<head>
+	<meta charset="utf-8">
+	<title>{{ pageTitle }}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+	<script>document.documentElement.className = 'js ' + document.documentElement.className.replace(/\bno-js\b/, '')</script>
+
+	<!-- see https://htmlhead.dev/ for a description of what could get listed within your pages HEAD section //-->
+
+	{{! <link rel="manifest" href="../../site.webmanifest"> }}
+	{{! <link rel="apple-touch-icon" href="../../images/db_logo.svg"> }}
+
+	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
+	<link rel="stylesheet" href="../../css/{{ domain }}/db-ui-core.css?{{ cacheBuster }}" media="all">
+	
+	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?{{ cacheBuster }}" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?{{ cacheBuster }}" media="all">
+	<link rel="stylesheet" href="../../css/{{ domain }}/db-ui-core.demonstration.css?{{ cacheBuster }}" media="all">
+
+	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+	{{{ patternLabHead }}}
+	<!-- End Pattern Lab -->
+
+	{{! This script isn't necessary at the moment
+	<script src="../../js/head.min.js"></script> }}
+
+	<!-- Google's "Create good meta descriptions" / https://support.google.com/webmasters/answer/35624?hl=en#meta-descriptions
+documentation has useful tips on creating an effective description. //-->
+	<meta name="Description" content="Put your description here.">
+
+	<!-- You can add the theme-color meta extension in the <head> of your pages to suggest the color that browsers and OSes should use if they customize the display of individual pages in their UIs with varying colors.
+			more information: https://html.spec.whatwg.org/multipage/semantics.html#meta-theme-color -->
+	<meta name="theme-color" content="#f01414">
+
+	<!-- iframe resizing script for pattern previews -->
+	<script src="../../js/iframeresizer.contentwindow.min.js"></script>
+</head>
+
+<body class="{{ bodyClass }}">

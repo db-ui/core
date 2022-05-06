@@ -1,0 +1,8 @@
+*Status of this document: in progress*
+
+> The Element Timing API enables monitoring when developer-specified image elements or groups of text nodes are displayed on screen. The way text nodes are grouped is described below.
+
+Source and more information: https://github.com/WICG/element-timing
+
+We'd like to measure the user experience regarding our application specific KPIs which involves some first paints on the screen and some more in-depth insights into relevant first elements loading like e.g. the DB logo.
+That for you could set the attribute `elementtiming` with a specific, unique wording included, that would result in a marker within your toolstack in case that you're using modern performance measurement techniques.

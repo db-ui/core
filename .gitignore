@@ -1,0 +1,16 @@
+.DS_Store
+/sources
+node_modules
+npm-debug.log
+public/
+.history
+.idea
+dependencyGraph.json
+source/_meta/_*head.mustache
+source/_meta/_*foot.mustache
+source/_meta/_00-head.hbs
+source/_meta/_01-foot.hbs
+dist/
+source/js/*.min.js*
+tests/backstop_data/html_report/
+tests/backstop_data/bitmaps_test/

@@ -1,0 +1,28 @@
+@mixin cmp-table-zebra($zebra-color) {
+	tr:nth-child(odd) {
+		background-color: $zebra-color;
+		// TODO: This might get replaced by another effect
+		backdrop-filter: blur(4px);
+	}
+}
+
+// Responsive row and colum hiding
+@mixin cmp-table-hide-col($col, $max-width) {
+	thead th,
+	tbody td {
+		@media screen and (max-width: $max-width) {
+			&:nth-child(#{$col}) {
+				display: none;
+			}
+		}
+	}
+}
+@mixin cmp-table-hide-row($row, $max-width) {
+	tbody tr {
+		@media screen and (max-width: $max-width) {
+			&:nth-child(#{$row}) {
+				display: none;
+			}
+		}
+	}
+}

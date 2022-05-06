@@ -1,0 +1,16 @@
+{
+	"sizes": [
+		{
+			"size": "small",
+			"label": "Small"
+		},
+		{
+			"size": "regular",
+			"label": "Regular (default, data-size attribute is optional)"
+		},
+		{
+			"size": "large",
+			"label": "Large"
+		}
+	]
+}

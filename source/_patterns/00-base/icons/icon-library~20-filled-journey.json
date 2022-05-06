@@ -1,0 +1,21 @@
+{
+	"icon-size": "20",
+	"icon-style": "filled",
+	"icons": [
+		{
+			"icon-glyph": "capacity-indicator"
+		},
+		{
+			"icon-glyph": "capacity-indicator-fully-booked"
+		},
+		{
+			"icon-glyph": "capacity-indicator-high"
+		},
+		{
+			"icon-glyph": "capacity-indicator-low"
+		},
+		{
+			"icon-glyph": "destination"
+		}
+	]
+}

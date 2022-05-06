@@ -1,0 +1,90 @@
+= ADR Versionierung
+
+[cols="s,",width="50%"]
+|=====================
+| Status | ENTSCHIEDEN
+| Beteiligte | Maximilian Franzke, Waldemar Schäfer
+| Datum | 2021-11-17
+|=====================
+
+== Entscheidung mit Begründung
+
+Variante D, da diese unter den aktuellen Gegebenheiten am einfachsten und ohne Seiteneffekte umzusetzen ist, und von allen Varianten die Anforderungen am Besten erfüllt.
+
+== Problembeschreibung und Kontext
+
+Mit den DB UI Produkten implementieren wir fachliche Vorgaben (durch Guideline Dokumente), die in unterschiedlichen Versionen veröffentlicht werden, z. B. 1.6 (derzeit) und 2.0 (in Arbeit).
+Da die Konsumenten nicht sofort umstellen werden, muss DB UI mehrere fachliche Versionen gleichzeitig unterstützen.
+Bis jetzt wurde DB UI nach dem Prinzip der link:https://gitversion.net/docs/reference/intro-to-semver[semantischen Versionierung] versioniert. Aktuell hat DB UI die Version 1.2.6.
+
+Wie können wir mehrere fachliche Versionen in DB UI unterstützen, ohne dabei auf die "semantische Versionierung" zu verzichten?
+
+== Rahmenbedingungen und Entscheidungskriterien
+
+Annahmen:
+
+* Die Versionen werden bis ca. 24 Monate gleichzeitig supportet.
+* Wir wollen nur die letzen zwei fachlichen Versionen unterstützen
+* Ein Major Release mit technischen Breaking Changes ist in dieser Zeit +++<del>+++sehr+++</del>+++ eher unwahrscheinlich.
+
+Fakten:
+
+* npm nutzt semantische Versionierung in der `package.json`.
+** `^1.32.0` würde alle Minor Versionen automatisch hochzählen, aber nicht die Major -> `1.mm.pp`
+** `~1.32.0` würde alle Patch Versionen automatisch hochzählen, aber nicht die Minor -> `1.34.pp`
+
+==  Alternativen
+
+[upperalpha]
+. Major Version = fachliche Version Major Version
+* Pro
+** sehr einfach und intuitiv
+* Contra
+** ab dem ersten techn. Major Release laufen die Versionen auseinander (wohl vernachlässigbar)
+
+. Vierstellige Version mit `Generation.Major.Minor.Patch`
+* Pro
+** sehr einfach und intuitiv
+** technische und fachliche Releases können gut abgebildet werden
+* Contra
+** Konsumenten können kein Semantic Versioning nutzen, bzw. sie müssen bei der Versiondefinition in `package.json` statt `^` vielmehr `~` nutzen, um die Minor Versionen automatisch zu konsumieren, was vom Standard abweicht.
+
+. getrennte Artefakte -> `@db-ui/db-ui-core: 1.4.2`, `@db-ui/core: 1.4.2` / gemeinsames, bestehendes Repository
+* pro
+** erfüllt die Anforderungen
+* contra
+** erhöhte Komplexität in CI/CD
+** innerhalb eines Repositories wäre die Vergabe verschiedener Git Tags (entsprechen Versionsnummer) nicht möglich; bedingt daher wohl ein neues Repository, was aber mit eigenen Problemen einhergeht
+** Wie auch aus dem Bereich Open Source immer mal wieder erlebt: Nutzer könnten ggf. gar nicht mitbekommen, dass es ein neues Paket gibt, weil sie hierzu weder über reguläre NPM Updates, noch Software wie `renovate` in Kenntnis gesetzt werden, und ggf. auch unsere Informationen nicht mitbekommen.
+
+. getrennte Artefakte -> `@db-ui/db-ui-core: 1.4.2`, `@db-ui/core: 1.4.2` / getrennte Repositories
+* pro
+** erfüllt die Anforderungen
+* contra
+** Wie auch aus dem Bereich Open Source immer mal wieder erlebt: Nutzer könnten ggf. gar nicht mitbekommen, dass es ein neues Paket gibt, weil sie hierzu weder über reguläre NPM Updates, noch Software wie `renovate` in Kenntnis gesetzt werden, und ggf. auch unsere Informationen nicht mitbekommen.
+*** Mitigation: Viel Kommunikation, auch im bestehenden `@db-ui/db-ui-core` Projekt und auf allen Kanälen
+
+. beide Versionen in einem Artefakt mit Unterordnern
+* pro
+** erfüllt die Anforderungen
+** keine Anpassung in der CI/CD
+* contra
+** die Umstellung auf die Unterordner ist ein Breaking Change
+** Artifakt wird immer größer
+** nicht intuitiv bei der Benutzung
+** Umstellung in der Struktur des Codes
+
+
+== Konsequenzen
+
+erst nach der Entscheidung
+
+== Vorgehensweise
+
+- Exportieren des „bestehenden“ Repos
+- Importieren in ein neues „DB UI Core - Legacy“ Gitlab Projekt (https://db.de/4cwtyn/, nur intern erreichbar), aus dem ab jetzt die Version 1 des DB UI Core gespeist wird (npm: `@db-ui/db-ui-core`, als auch die im Repo angegebene interne Preview-URL)
+- Ändern des Packages im „bestehenden“ Gitlab Projekt auf „@db-ui/core“ sowie Deployment auf Gitlab Pages (nun auf [GitHub.com Pages](https://db-ui.github.io/core/))
+
+== Links
+
+link:https://gitversion.net/docs/reference/intro-to-semver[semantische Versionierung]

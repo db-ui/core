@@ -1,0 +1,34 @@
+{
+	"icon-size": "24",
+	"icon-style": "outline",
+	"default": true,
+	"icons": [
+		{
+			"icon-glyph": "aisle"
+		},
+		{
+			"icon-glyph": "elderly"
+		},
+		{
+			"icon-glyph": "handicapped"
+		},
+		{
+			"icon-glyph": "table"
+		},
+		{
+			"icon-glyph": "window"
+		},
+		{
+			"icon-glyph": "childrens-compartment"
+		},
+		{
+			"icon-glyph": "parent-child-compartment"
+		},
+		{
+			"icon-glyph": "quiet-zone"
+		},
+		{
+			"icon-glyph": "seat-priority"
+		}
+	]
+}

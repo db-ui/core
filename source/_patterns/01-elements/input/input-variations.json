@@ -1,0 +1,23 @@
+{
+	"variations": [
+		{
+			"variant": "semitransparent",
+			"id": "input16"
+		},
+		{
+			"variant": "white",
+			"id": "input17"
+		},
+		{
+			"variant": "solid",
+			"id": "input18"
+		},
+		{
+			"variant": "outline",
+			"id": "input19"
+		}
+	],
+	"type": "text",
+	"placeholder": "Projekt Name",
+	"label": "Textlabel"
+}

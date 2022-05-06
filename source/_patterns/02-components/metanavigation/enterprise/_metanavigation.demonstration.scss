@@ -1,0 +1,14 @@
+@import "../../../00-base/icons/icons.helpers";
+
+// We're changing this via a demonstration SCSS file here, but within a real project it's obviously the variable $metanavigation-iconOnly--maxWidth that could get changed for that instead
+.cmp-metanavigation {
+	li {
+		.elm-link {
+			.rea-header & {
+				@media screen and (max-width: to-rem(1296)) {
+					@include is-icon-text-replace();
+				}
+			}
+		}
+	}
+}

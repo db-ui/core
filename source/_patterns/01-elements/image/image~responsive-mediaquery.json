@@ -1,0 +1,12 @@
+{
+	"sources": [
+		{
+			"srcset": "../../samples/images/alexander-bagno-iILbjYtkyG0-unsplash.1128x759.jpg",
+			"media": "(min-width: 1100px)"
+		},
+		{
+			"srcset": "../../samples/images/alexander-bagno-iILbjYtkyG0-unsplash.752x506.jpg",
+			"media": "(min-width: 700px)"
+		}
+	]
+}

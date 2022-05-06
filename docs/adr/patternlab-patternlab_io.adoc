@@ -1,0 +1,24 @@
+*Status of this document: in progress*
+
+# Patternlab.io - Node Edition als Visual Styleguide Tool
+
+Datum: 2019-04-08
+
+## Status
+
+Done & im Einsatz
+
+## Kontext
+
+Für die Ablage und Anzeige der von uns im Rahmen der technischen Umsetzung der Enterprise Web UI-Component Library entwickelten Patterns werden das von Brad Frost und Kollegen entwickelte Tool link:https://patternlab.io/[Patternlab] nutzen.
+
+Das Tool kann sodann auch in zu bereitzustellenden Starterkits zum Einsatz kommen und eine Entkoppelung und Flexibilisierung der Arbeitabläufe innerhalb der Projekte zwischen den jeweiligen Development-Kompetenzen sowie eine Flexibilisierung von harten Abhängigkeiten (durch die Entkopplung der Systeme) unterstützen.
+Des Weiteren wird dadurch ein Rapid Prototyping sowie ein Frontend-Testing und "Treeshaking" für CSS ermöglicht.
+
+## Entscheidung
+
+Das Tool wird eingesetzt - und dennoch ist auch der Projekteinsatz unserer Library bzw. deren Konsumieren ohne den Einsatz von Patternlab im jeweiligen Projekt zu ermöglichen.
+
+## Beteiligte
+
+Maximilian Franzke

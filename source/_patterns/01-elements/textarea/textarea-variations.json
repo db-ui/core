@@ -1,0 +1,26 @@
+{
+	"variations": [
+		{
+			"variant": "semitransparent",
+			"id": "textarea16",
+			"describedbyid": "textarea16hint"
+		},
+		{
+			"variant": "white",
+			"id": "textarea17",
+			"describedbyid": "textarea17hint"
+		},
+		{
+			"variant": "solid",
+			"id": "textarea18",
+			"describedbyid": "textarea17hint"
+		},
+		{
+			"variant": "outline",
+			"id": "textarea19",
+			"describedbyid": "textarea19hint"
+		}
+	],
+	"placeholder": "Projekt Name",
+	"label": "Textlabel"
+}

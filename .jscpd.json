@@ -1,0 +1,17 @@
+{
+	"ignore": [
+		"**/node_modules/**",
+		"**/source/_patterns/00-base/colors/**",
+		"**/source/fonts/**",
+		"**/source/images/**",
+		"**/source/_patterns/**/*~*.json",
+		"**/source/_patterns/04-pages/**",
+		"**/source/pattern-template/*",
+		"**/source/samples/**",
+		"**/*.plugin.js",
+		"**/tests/backstop_data/bitmaps_reference/**",
+		"**/public/**",
+		"**/dist/**",
+		"**/sources/**"
+	]
+}

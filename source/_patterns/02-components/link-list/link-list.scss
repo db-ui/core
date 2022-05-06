@@ -1,0 +1,31 @@
+@import "../../../css/partials.meta";
+@import "link-list.variables";
+
+.cmp-link-list {
+	list-style: none;
+
+	padding-left: 0;
+
+	li {
+		.elm-link {
+			@include icon(glyph(chevron-right), $partial: $partial);
+
+			font-weight: 700;
+			text-decoration: none;
+
+			&:hover,
+			&:active {
+				text-decoration: underline;
+			}
+
+			&::before {
+				color: $db-color-red;
+				display: inline-block;
+				font-size: to-rem(12);
+				font-weight: 700;
+				margin-top: -#{to-rem(2)};
+				vertical-align: middle;
+			}
+		}
+	}
+}

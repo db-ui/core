@@ -1,0 +1,22 @@
+{
+	"icon-size": "24",
+	"icon-style": "outline",
+	"default": true,
+	"icons": [
+		{
+			"icon-glyph": "wc"
+		},
+		{
+			"icon-glyph": "wc-men"
+		},
+		{
+			"icon-glyph": "wc-sign"
+		},
+		{
+			"icon-glyph": "wc-woman"
+		},
+		{
+			"icon-glyph": "restricted-mobility-toilet"
+		}
+	]
+}

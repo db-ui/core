@@ -1,0 +1,12 @@
+{
+	"icon-size": "20",
+	"icon-style": "filled",
+	"icons": [
+		{
+			"icon-glyph": "error"
+		},
+		{
+			"icon-glyph": "error-triangle"
+		}
+	]
+}

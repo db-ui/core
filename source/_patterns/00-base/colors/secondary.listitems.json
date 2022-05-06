@@ -1,0 +1,524 @@
+{
+	"listItems": [
+		{
+			"name": "DB Yellow 100",
+			"hex": "#FFFFDC",
+			"scssvariable": "$db-color-yellow-100"
+		},
+		{
+			"name": "DB Yellow 200",
+			"hex": "#FFFFAF",
+			"scssvariable": "$db-color-yellow-200"
+		},
+		{
+			"name": "DB Yellow 300",
+			"hex": "#FFF876",
+			"scssvariable": "$db-color-yellow-300"
+		},
+		{
+			"name": "DB Yellow 400",
+			"hex": "#FFF000",
+			"scssvariable": "$db-color-yellow-400"
+		},
+		{
+			"name": "DB Yellow 500",
+			"hex": "#FFD800",
+			"scssvariable": "$db-color-yellow-500"
+		},
+		{
+			"name": "DB Yellow 600",
+			"hex": "#FFBB00",
+			"scssvariable": "$db-color-yellow-600"
+		},
+		{
+			"name": "DB Yellow 700",
+			"hex": "#FF9B00",
+			"scssvariable": "$db-color-yellow-700"
+		},
+		{
+			"name": "DB Yellow 800",
+			"hex": "#FF7A00",
+			"scssvariable": "$db-color-yellow-800"
+		},
+		{
+			"name": "DB Orange 100",
+			"hex": "#FFF4D8",
+			"scssvariable": "$db-color-orange-100"
+		},
+		{
+			"name": "DB Orange 200",
+			"hex": "#FCE3B4",
+			"scssvariable": "$db-color-orange-200"
+		},
+		{
+			"name": "DB Orange 300",
+			"hex": "#FACA7F",
+			"scssvariable": "$db-color-orange-300"
+		},
+		{
+			"name": "DB Orange 400",
+			"hex": "#F8AB37",
+			"scssvariable": "$db-color-orange-400"
+		},
+		{
+			"name": "DB Orange 500",
+			"hex": "#F39200",
+			"scssvariable": "$db-color-orange-500"
+		},
+		{
+			"name": "DB Orange 600",
+			"hex": "#D77B00",
+			"scssvariable": "$db-color-orange-600"
+		},
+		{
+			"name": "DB Orange 700",
+			"hex": "#C05E00",
+			"scssvariable": "$db-color-orange-700"
+		},
+		{
+			"name": "DB Orange 800",
+			"hex": "#A24800",
+			"scssvariable": "$db-color-orange-800"
+		},
+		{
+			"name": "DB Red 100",
+			"hex": "#fEE6E6",
+			"scssvariable": "$db-color-red-100"
+		},
+		{
+			"name": "DB Red 200",
+			"hex": "#FCC8C3",
+			"scssvariable": "$db-color-red-200"
+		},
+		{
+			"name": "DB Red 300",
+			"hex": "#FA9090",
+			"scssvariable": "$db-color-red-300"
+		},
+		{
+			"name": "DB Red 400",
+			"hex": "#F75056",
+			"scssvariable": "$db-color-red-400"
+		},
+		{
+			"name": "DB Red 500",
+			"hex": "#EC0016",
+			"scssvariable": "$db-color-red-500"
+		},
+		{
+			"name": "DB Red 600",
+			"hex": "#C50014",
+			"scssvariable": "$db-color-red-600"
+		},
+		{
+			"name": "DB Red 700",
+			"hex": "#9B000E",
+			"scssvariable": "$db-color-red-700"
+		},
+		{
+			"name": "DB Red 800",
+			"hex": "#740009",
+			"scssvariable": "$db-color-red-800"
+		},
+		{
+			"name": "DB Burgundy 100",
+			"hex": "#F4E8ED",
+			"scssvariable": "$db-color-burgundy-100"
+		},
+		{
+			"name": "DB Burgundy 200",
+			"hex": "#EDCBD6",
+			"scssvariable": "$db-color-burgundy-200"
+		},
+		{
+			"name": "DB Burgundy 300",
+			"hex": "#DA9AA8",
+			"scssvariable": "$db-color-burgundy-300"
+		},
+		{
+			"name": "DB Burgundy 400",
+			"hex": "#C0687B",
+			"scssvariable": "$db-color-burgundy-400"
+		},
+		{
+			"name": "DB Burgundy 500",
+			"hex": "#A9455D",
+			"scssvariable": "$db-color-burgundy-500"
+		},
+		{
+			"name": "DB Burgundy 600",
+			"hex": "#8C2E46",
+			"scssvariable": "$db-color-burgundy-600"
+		},
+		{
+			"name": "DB Burgundy 700",
+			"hex": "#641E32",
+			"scssvariable": "$db-color-burgundy-700"
+		},
+		{
+			"name": "DB Burgundy 800",
+			"hex": "#4D0820",
+			"scssvariable": "$db-color-burgundy-800"
+		},
+		{
+			"name": "DB Pink 100",
+			"hex": "#FDEEF8",
+			"scssvariable": "$db-color-pink-100"
+		},
+		{
+			"name": "DB Pink 200",
+			"hex": "#F9D2E5",
+			"scssvariable": "$db-color-pink-200"
+		},
+		{
+			"name": "DB Pink 300",
+			"hex": "#F4AECE",
+			"scssvariable": "$db-color-pink-300"
+		},
+		{
+			"name": "DB Pink 400",
+			"hex": "#EE7BAE",
+			"scssvariable": "$db-color-pink-400"
+		},
+		{
+			"name": "DB Pink 500",
+			"hex": "#E93E8F",
+			"scssvariable": "$db-color-pink-500"
+		},
+		{
+			"name": "DB Pink 600",
+			"hex": "#DB0078",
+			"scssvariable": "$db-color-pink-600"
+		},
+		{
+			"name": "DB Pink 700",
+			"hex": "#B80065",
+			"scssvariable": "$db-color-pink-700"
+		},
+		{
+			"name": "DB Pink 800",
+			"hex": "#970052",
+			"scssvariable": "$db-color-pink-800"
+		},
+		{
+			"name": "DB Violett 100",
+			"hex": "#F4EEFA",
+			"scssvariable": "$db-color-violett-100"
+		},
+		{
+			"name": "DB Violett 200",
+			"hex": "#E0CDE4",
+			"scssvariable": "$db-color-violett-200"
+		},
+		{
+			"name": "DB Violett 300",
+			"hex": "#C2A1C7",
+			"scssvariable": "$db-color-violett-300"
+		},
+		{
+			"name": "DB Violett 400",
+			"hex": "#9A6CA6",
+			"scssvariable": "$db-color-violett-400"
+		},
+		{
+			"name": "DB Violett 500",
+			"hex": "#814997",
+			"scssvariable": "$db-color-violett-500"
+		},
+		{
+			"name": "DB Violett 600",
+			"hex": "#6E368C",
+			"scssvariable": "$db-color-violett-600"
+		},
+		{
+			"name": "DB Violett 700",
+			"hex": "#581D70",
+			"scssvariable": "$db-color-violett-700"
+		},
+		{
+			"name": "DB Violett 800",
+			"hex": "#421857",
+			"scssvariable": "$db-color-violett-800"
+		},
+		{
+			"name": "DB Blue 100",
+			"hex": "#E0EFFB",
+			"scssvariable": "$db-color-blue-100"
+		},
+		{
+			"name": "DB Blue 200",
+			"hex": "#B4D5F6",
+			"scssvariable": "$db-color-blue-200"
+		},
+		{
+			"name": "DB Blue 300",
+			"hex": "#73AEF4",
+			"scssvariable": "$db-color-blue-300"
+		},
+		{
+			"name": "DB Blue 400",
+			"hex": "#347DE0",
+			"scssvariable": "$db-color-blue-400"
+		},
+		{
+			"name": "DB Blue 500",
+			"hex": "#1455C0",
+			"scssvariable": "$db-color-blue-500"
+		},
+		{
+			"name": "DB Blue 600",
+			"hex": "#0C3992",
+			"scssvariable": "$db-color-blue-600"
+		},
+		{
+			"name": "DB Blue 700",
+			"hex": "#0A1E6E",
+			"scssvariable": "$db-color-blue-700"
+		},
+		{
+			"name": "DB Blue 800",
+			"hex": "#061350",
+			"scssvariable": "$db-color-blue-800"
+		},
+		{
+			"name": "DB Cyan 100",
+			"hex": "#E5FAFF",
+			"scssvariable": "$db-color-cyan-100"
+		},
+		{
+			"name": "DB Cyan 200",
+			"hex": "#BBE6F8",
+			"scssvariable": "$db-color-cyan-200"
+		},
+		{
+			"name": "DB Cyan 300",
+			"hex": "#84CFEF",
+			"scssvariable": "$db-color-cyan-300"
+		},
+		{
+			"name": "DB Cyan 400",
+			"hex": "#55B9E6",
+			"scssvariable": "$db-color-cyan-400"
+		},
+		{
+			"name": "DB Cyan 500",
+			"hex": "#309FD1",
+			"scssvariable": "$db-color-cyan-500"
+		},
+		{
+			"name": "DB Cyan 600",
+			"hex": "#0087B9",
+			"scssvariable": "$db-color-cyan-600"
+		},
+		{
+			"name": "DB Cyan 700",
+			"hex": "#006A96",
+			"scssvariable": "$db-color-cyan-700"
+		},
+		{
+			"name": "DB Cyan 800",
+			"hex": "#004B6D",
+			"scssvariable": "$db-color-cyan-800"
+		},
+		{
+			"name": "DB Turquoise 100",
+			"hex": "#E3F5F4",
+			"scssvariable": "$db-color-turquoise-100"
+		},
+		{
+			"name": "DB Turquoise 200",
+			"hex": "#BEE2E5",
+			"scssvariable": "$db-color-turquoise-200"
+		},
+		{
+			"name": "DB Turquoise 300",
+			"hex": "#83CACA",
+			"scssvariable": "$db-color-turquoise-300"
+		},
+		{
+			"name": "DB Turquoise 400",
+			"hex": "#3CB5AE",
+			"scssvariable": "$db-color-turquoise-400"
+		},
+		{
+			"name": "DB Turquoise 500",
+			"hex": "#00A099",
+			"scssvariable": "$db-color-turquoise-500"
+		},
+		{
+			"name": "DB Turquoise 600",
+			"hex": "#008984",
+			"scssvariable": "$db-color-turquoise-600"
+		},
+		{
+			"name": "DB Turquoise 700",
+			"hex": "#006E6B",
+			"scssvariable": "$db-color-turquoise-700"
+		},
+		{
+			"name": "DB Turquoise 800",
+			"hex": "#005752",
+			"scssvariable": "$db-color-turquoise-800"
+		},
+		{
+			"name": "DB Green 100",
+			"hex": "#E2f3E5",
+			"scssvariable": "$db-color-green-100"
+		},
+		{
+			"name": "DB Green 200",
+			"hex": "#BDDBB9",
+			"scssvariable": "$db-color-green-200"
+		},
+		{
+			"name": "DB Green 300",
+			"hex": "#8CBC80",
+			"scssvariable": "$db-color-green-300"
+		},
+		{
+			"name": "DB Green 400",
+			"hex": "#66A558",
+			"scssvariable": "$db-color-green-400"
+		},
+		{
+			"name": "DB Green 500",
+			"hex": "#408335",
+			"scssvariable": "$db-color-green-500"
+		},
+		{
+			"name": "DB Green 600",
+			"hex": "#2A7230",
+			"scssvariable": "$db-color-green-600"
+		},
+		{
+			"name": "DB Green 700",
+			"hex": "#165C27",
+			"scssvariable": "$db-color-green-700"
+		},
+		{
+			"name": "DB Green 800",
+			"hex": "#154A26",
+			"scssvariable": "$db-color-green-800"
+		},
+		{
+			"name": "DB Light Green 100",
+			"hex": "#EBF7DD",
+			"scssvariable": "$db-color-light-green-100"
+		},
+		{
+			"name": "DB Light Green 200",
+			"hex": "#C9EB9E",
+			"scssvariable": "$db-color-light-green-200"
+		},
+		{
+			"name": "DB Light Green 300",
+			"hex": "#9FD45F",
+			"scssvariable": "$db-color-light-green-300"
+		},
+		{
+			"name": "DB Light Green 400",
+			"hex": "#78BE14",
+			"scssvariable": "$db-color-light-green-400"
+		},
+		{
+			"name": "DB Light Green 500",
+			"hex": "#63A615",
+			"scssvariable": "$db-color-light-green-500"
+		},
+		{
+			"name": "DB Light Green 600",
+			"hex": "#508B1B",
+			"scssvariable": "$db-color-light-green-600"
+		},
+		{
+			"name": "DB Light Green 700",
+			"hex": "#44741A",
+			"scssvariable": "$db-color-light-green-700"
+		},
+		{
+			"name": "DB Light Green 800",
+			"hex": "#375F15",
+			"scssvariable": "$db-color-light-green-800"
+		},
+		{
+			"name": "DB Warm Gray 100",
+			"hex": "#F5F4F1",
+			"scssvariable": "$db-color-warm-gray-100"
+		},
+		{
+			"name": "DB Warm Gray 200",
+			"hex": "#DDDED6",
+			"scssvariable": "$db-color-warm-gray-200"
+		},
+		{
+			"name": "DB Warm Gray 300",
+			"hex": "#BCBBB2",
+			"scssvariable": "$db-color-warm-gray-300"
+		},
+		{
+			"name": "DB Warm Gray 400",
+			"hex": "#9C9A8E",
+			"scssvariable": "$db-color-warm-gray-400"
+		},
+		{
+			"name": "DB Warm Gray 500",
+			"hex": "#858379",
+			"scssvariable": "$db-color-warm-gray-500"
+		},
+		{
+			"name": "DB Warm Gray 600",
+			"hex": "#747067",
+			"scssvariable": "$db-color-warm-gray-600"
+		},
+		{
+			"name": "DB Warm Gray 700",
+			"hex": "#4F4B41",
+			"scssvariable": "$db-color-warm-gray-700"
+		},
+		{
+			"name": "DB Warm Gray 800",
+			"hex": "#38342F",
+			"scssvariable": "$db-color-warm-gray-800"
+		},
+		{
+			"name": "DB Cool Gray 100",
+			"hex": "#F0F3F5",
+			"scssvariable": "$db-color-cool-gray-100"
+		},
+		{
+			"name": "DB Cool Gray 200",
+			"hex": "#D7DCE1",
+			"scssvariable": "$db-color-cool-gray-200"
+		},
+		{
+			"name": "DB Cool Gray 300",
+			"hex": "#AFB4BB",
+			"scssvariable": "$db-color-cool-gray-300"
+		},
+		{
+			"name": "DB Cool Gray 400",
+			"hex": "#878C96",
+			"scssvariable": "$db-color-cool-gray-400"
+		},
+		{
+			"name": "DB Cool Gray 500",
+			"hex": "#646973",
+			"scssvariable": "$db-color-cool-gray-500"
+		},
+		{
+			"name": "DB Cool Gray 600",
+			"hex": "#3C414B",
+			"scssvariable": "$db-color-cool-gray-600"
+		},
+		{
+			"name": "DB Cool Gray 700",
+			"hex": "#282D37",
+			"scssvariable": "$db-color-cool-gray-700"
+		},
+		{
+			"name": "DB Cool Gray 800",
+			"hex": "#131821",
+			"scssvariable": "$db-color-cool-gray-800"
+		}
+	]
+}

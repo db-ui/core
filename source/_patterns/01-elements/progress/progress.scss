@@ -1,0 +1,124 @@
+@import "progress.variables";
+
+.elm-progress {
+	progress {
+		appearance: none;
+		background-color: $progress---backgroundColor;
+		border: none;
+		box-shadow: $box-shadow-01, $box-shadow-02;
+		height: $progress---height;
+		vertical-align: middle;
+
+		// Coloring the progress bar for the regular progress element
+		&::-webkit-progress-bar {
+			background-color: $progress---backgroundColor;
+		}
+		&::-webkit-progress-value {
+			background-color: $progress-value--backgroundColor; // * TODO: possibly rework variable naming
+		}
+		&::-moz-progress-bar {
+			background-color: $progress-value--backgroundColor; // * TODO: possibly rework variable naming
+		}
+		&::-ms-fill {
+			background-color: $progress-value--backgroundColor; // * TODO: possibly rework variable naming
+			border: none;
+		}
+		&:not([style^="--progress-conic:"]) {
+			&::-webkit-progress-value {
+				border-radius: 12px;
+			}
+			&::-moz-progress-bar {
+				border-radius: 12px;
+			}
+			&::-ms-fill {
+				border-radius: 12px;
+			}
+		}
+
+		// Styling the special indeterminate state
+		&:indeterminate {
+			animation-duration: 2.1s;
+			@media (prefers-reduced-motion: reduce) {
+				animation-duration: 15s;
+			}
+			animation-iteration-count: infinite;
+			animation-name: elmProgressMoveIndeterminate;
+			animation-timing-function: linear;
+			animation-timing-function: cubic-bezier(0.65, 0.815, 0.735, 0.395);
+			background-color: $progress---backgroundColor;
+			background-image: linear-gradient(
+				to right,
+				$db-color-red 100%,
+				$progress---backgroundColor 100%
+			);
+			background-position: top left;
+			background-repeat: no-repeat;
+			background-size: 150% 150%;
+
+			&::-webkit-progress-bar {
+				background-color: transparent;
+			}
+			&::-moz-progress-bar {
+				background-color: transparent;
+			}
+		}
+
+		// Transforming the element to the conic circle
+		&[style^="--progress-conic:"] {
+			@supports (background: conic-gradient(#000, #fff)) {
+				--fill: calc(var(--progress-conic) * 1%);
+
+				background: conic-gradient(
+					$progress-value--backgroundColor var(--fill),
+					$progress-conic--backgroundColor 0
+				); // * TODO: possibly rework variable naming
+
+				border: 0;
+				border-radius: 50%;
+				height: #{$progress-conic--size}rem; // * TODO: possibly rework variable naming
+				width: #{$progress-conic--size}rem; // * TODO: possibly rework variable naming
+
+				// * hides all pseudo elements on Webkit
+				&::-webkit-progress-inner-element,
+				&::-webkit-progress-bar,
+				&::-webkit-progress-value {
+					display: none;
+				}
+				&::-moz-progress-bar {
+					background: none;
+				}
+
+				& + output {
+					align-items: center;
+					background: $progress-conic-inner-backgroundColor; // * TODO: possibly rework variable naming
+					border-radius: 50%;
+					box-shadow: inset $box-shadow-01, inset $box-shadow-02;
+					display: block;
+					display: flex;
+					height: #{$progress-conic-inner-size}rem;
+					justify-content: center;
+					position: absolute;
+					transform: translate(
+						$progress-conic--translateX,
+						$progress-conic--translateY
+					);
+					width: #{$progress-conic-inner-size}rem;
+				}
+			}
+		}
+	}
+}
+@keyframes elmProgressMoveIndeterminate {
+	0% {
+		background-position: (-35%) 0;
+		background-size: 35% 100%;
+	}
+	60% {
+		background-position: 101% 0;
+		background-size: 65% 100%;
+	}
+	100% {
+		background-position: 101% 0;
+		background-size: 1% 100%;
+	}
+}

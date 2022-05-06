@@ -1,0 +1,12 @@
+{{! TODO: evaluate on the correct role and aria-label in here }}
+<ul class="cmp-language-switcher" role="listbox">
+	<li role="option">
+		{{> elements-link href='#' hreflang='en' value='EN' title='English language' rel='alternate' }}
+	</li>
+	<li role="option" aria-selected="true">
+		{{> elements-link href='#' hreflang='de' value='DE' title='Deutsche Sprache' rel='bookmark' }}
+	</li>
+	<li role="option">
+		{{> elements-link href='#' hreflang='fr' value='FR' title='Langue française' rel='alternate' }}
+	</li>
+</ul>

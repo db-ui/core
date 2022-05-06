@@ -1,0 +1,16 @@
+{
+	"icon-size": "24",
+	"icon-style": "outline",
+	"default": true,
+	"icons": [
+		{
+			"icon-glyph": "coffee-cup"
+		},
+		{
+			"icon-glyph": "drink"
+		},
+		{
+			"icon-glyph": "restaurant"
+		}
+	]
+}

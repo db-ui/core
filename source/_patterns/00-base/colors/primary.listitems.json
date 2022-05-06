@@ -1,0 +1,19 @@
+{
+	"listItems": [
+		{
+			"name": "DB Red",
+			"hex": "#ec0016",
+			"scssvariable": "$db-color-red"
+		},
+		{
+			"name": "DB White",
+			"hex": "#FFFFFF",
+			"scssvariable": "$db-color-white"
+		},
+		{
+			"name": "DB Black",
+			"hex": "#000000",
+			"scssvariable": "$db-color-black"
+		}
+	]
+}

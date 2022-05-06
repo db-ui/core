@@ -1,0 +1,71 @@
+{
+	"menuItems": [
+		{
+			"href": "#",
+			"value": "Startseite",
+			"rel": "index",
+			"current": "page",
+			"menuSubItems": [
+				{
+					"href": "#",
+					"value": "Submenu 01",
+					"rel": "index",
+					"menuSubSubItems": [
+						{
+							"href": "#",
+							"value": "Sub 01 Sub 01",
+							"rel": "index"
+						},
+						{
+							"href": "#",
+							"value": "Sub 01 Sub 02",
+							"rel": "offers"
+						},
+						{
+							"href": "#",
+							"value": "Sub 01 Sub 03",
+							"rel": "news"
+						}
+					]
+				},
+				{
+					"href": "#",
+					"value": "Submenu 02",
+					"rel": "offers",
+					"menuSubSubItems": [
+						{
+							"href": "#",
+							"value": "Sub 02 Sub 01",
+							"rel": "index"
+						},
+						{
+							"href": "#",
+							"value": "Sub 02 Sub 02",
+							"rel": "offers"
+						},
+						{
+							"href": "#",
+							"value": "Sub 02 Sub 03",
+							"rel": "news"
+						}
+					]
+				},
+				{
+					"href": "#",
+					"value": "Submenu 03",
+					"rel": "news"
+				}
+			]
+		},
+		{
+			"href": "#",
+			"value": "Aufträge",
+			"rel": "offers"
+		},
+		{
+			"href": "#",
+			"value": "News",
+			"rel": "news"
+		}
+	]
+}

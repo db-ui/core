@@ -1,0 +1,38 @@
+// General body construct of header, main and footer
+// TODO: We would obviously like to enhance this via CSS grid later on
+body {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+
+// Fixed header & footer
+// Probably this is not the perfect spot for those declarations and we should introduce a general body tag related CSS file later on
+// TODO: We should definitly support a11y by only conditionally introducing this (e.g. landscape with a minimum height), compare to https://twitter.com/click2carney/status/1170728170342907904?s=11
+body.has-fixed-header .rea-header,
+body.has-fixed-footer .rea-footer {
+	position: fixed;
+	width: 100%;
+	z-index: $z-index-reas-fixed-header-footer;
+}
+body.has-fixed-header {
+	// TODO: using some outsourced global declarations for the headers dimensions (height, padding and margins)
+	padding-top: to-rem(95);
+	.rea-header {
+		top: 0;
+	}
+
+	@media screen and (max-width: 1023px) {
+		padding-top: to-rem(80);
+	}
+}
+body.has-fixed-footer {
+	// TODO: using some outsourced global declarations for the footers dimensions (height, padding and margins)
+	padding-bottom: to-rem(88);
+	.rea-footer {
+		bottom: 0;
+	}
+
+	@media screen and (max-width: 1023px) {
+		padding-bottom: to-rem(94);
+	}
+}

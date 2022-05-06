@@ -1,0 +1,6 @@
+*Status of this document: in progress*
+
+** Alternatives
+* link:https://www.npmjs.com/package/html-validate[html-validate]
+
+* link:https://www.npmjs.com/package/htmlhint[htmlhint]

@@ -1,0 +1,11 @@
+*Status of this document: in progress*
+
+link:https://prettier.io/[Prettier] by link:https://github.com/vjeux[Christopher Chedeau] is the de-facto community standard for (opinionated) code formatting web development source code of all kinds and by that ensuring code conventions.
+
+The community is providing a lot of editor/IDE support, a lot of languages are being supported and you could start right away as it works out of the box.
+
+== Defaults to tabs instead of spaces for an 'accessible first' environment
+
+There's clearly no good reason to use spaces over tabs within your code - but a lot that link:http://lea.verou.me/2012/01/why-tabs-are-clearly-superior/[speaks against] it, as link:https://github.com/xojs/xo#space[pointed out by the XO authors] as well, but involves topics link:https://alexandersandberg.com/tabs-for-accessibility/[like accessibility] as well.
+So we've chosen tabs as the standard for indentation as this is its general purpose.
+see also: https://twitter.com/_developit/status/968347230716547075

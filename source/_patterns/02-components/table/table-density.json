@@ -1,0 +1,13 @@
+{
+	"densities": [
+		{
+			"density": "small"
+		},
+		{
+			"density": "regular"
+		},
+		{
+			"density": "large"
+		}
+	]
+}

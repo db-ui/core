@@ -1,0 +1,1549 @@
+{
+	"id": "backstop_default",
+	"viewports": [
+		{
+			"label": "phone - portrait",
+			"width": 320,
+			"height": 480
+		},
+		{
+			"label": "phone - landscape",
+			"width": 480,
+			"height": 320
+		},
+		{
+			"label": "tablet - portrait",
+			"width": 1024,
+			"height": 768
+		},
+		{
+			"label": "tablet - landscape",
+			"width": 768,
+			"height": 1024
+		},
+		{
+			"label": "13 Zoll Macbook",
+			"width": 1440,
+			"height": 900
+		}
+	],
+	"// onBeforeScript": "puppet/onBefore.js",
+	"// onReadyScript": "puppet/onReady.js",
+	"scenarios": [
+		{
+			"label": "Marketingportal Brand Colors - Primary",
+			"url": "http://127.0.0.1:8080/patterns/base-colors-primary/base-colors-primary.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-colors-primary/base-colors-primary.rendered.html"
+		},
+		{
+			"label": "Marketingportal Brand Colors - Secondary",
+			"url": "http://127.0.0.1:8080/patterns/base-colors-secondary/base-colors-secondary.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-colors-secondary/base-colors-secondary.rendered.html"
+		},
+		{
+			"label": "Marketingportal Brand Colors - Feedback",
+			"url": "http://127.0.0.1:8080/patterns/base-colors-feedback/base-colors-feedback.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-colors-feedback/base-colors-feedback.rendered.html"
+		},
+		{
+			"label": "Marketingportal Brand Colors - POI",
+			"url": "http://127.0.0.1:8080/patterns/base-colors-poi/base-colors-poi.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-colors-poi/base-colors-poi.rendered.html"
+		},
+		{
+			"label": "Marketingportal Brand Colors - Transport",
+			"url": "http://127.0.0.1:8080/patterns/base-colors-transportation/base-colors-transportation.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-colors-transportation/base-colors-transportation.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Filled 20 Action",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-20-filled-action/base-icons-icon-library-20-filled-action.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-20-filled-action/base-icons-icon-library-20-filled-action.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Filled 20 AV",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-20-filled-av/base-icons-icon-library-20-filled-av.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-20-filled-av/base-icons-icon-library-20-filled-av.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Filled 20 Communication",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-20-filled-communication/base-icons-icon-library-20-filled-communication.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-20-filled-communication/base-icons-icon-library-20-filled-communication.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Filled 20 Feature",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-20-filled-feature/base-icons-icon-library-20-filled-feature.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-20-filled-feature/base-icons-icon-library-20-filled-feature.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Filled 20 Food",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-20-filled-food/base-icons-icon-library-20-filled-food.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-20-filled-food/base-icons-icon-library-20-filled-food.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Filled 20 Journey",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-20-filled-journey/base-icons-icon-library-20-filled-journey.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-20-filled-journey/base-icons-icon-library-20-filled-journey.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Filled 20 Maps",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-20-filled-maps/base-icons-icon-library-20-filled-maps.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-20-filled-maps/base-icons-icon-library-20-filled-maps.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Filled 20 Navigation",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-20-filled-navigation/base-icons-icon-library-20-filled-navigation.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-20-filled-navigation/base-icons-icon-library-20-filled-navigation.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Filled 20 Notification",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-20-filled-notification/base-icons-icon-library-20-filled-notification.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-20-filled-notification/base-icons-icon-library-20-filled-notification.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Filled 20 Ticket",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-20-filled-ticket/base-icons-icon-library-20-filled-ticket.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-20-filled-ticket/base-icons-icon-library-20-filled-ticket.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 20 Action",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-20-outline-action/base-icons-icon-library-20-outline-action.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-20-outline-action/base-icons-icon-library-20-outline-action.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 20 AV",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-20-outline-av/base-icons-icon-library-20-outline-av.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-20-outline-av/base-icons-icon-library-20-outline-av.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 20 Brand",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-20-outline-brand/base-icons-icon-library-20-outline-brand.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-20-outline-brand/base-icons-icon-library-20-outline-brand.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 20 Communication",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-20-outline-communication/base-icons-icon-library-20-outline-communication.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-20-outline-communication/base-icons-icon-library-20-outline-communication.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 20 Covid 19",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-20-outline-covid-19/base-icons-icon-library-20-outline-covid-19.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-20-outline-covid-19/base-icons-icon-library-20-outline-covid-19.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 20 Facilities",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-20-outline-facilities/base-icons-icon-library-20-outline-facilities.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-20-outline-facilities/base-icons-icon-library-20-outline-facilities.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 20 Feature",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-20-outline-feature/base-icons-icon-library-20-outline-feature.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-20-outline-feature/base-icons-icon-library-20-outline-feature.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 20 Food",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-20-outline-food/base-icons-icon-library-20-outline-food.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-20-outline-food/base-icons-icon-library-20-outline-food.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 20 Journey",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-20-outline-journey/base-icons-icon-library-20-outline-journey.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-20-outline-journey/base-icons-icon-library-20-outline-journey.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 20 Maps",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-20-outline-maps/base-icons-icon-library-20-outline-maps.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-20-outline-maps/base-icons-icon-library-20-outline-maps.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 20 Navigation",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-20-outline-navigation/base-icons-icon-library-20-outline-navigation.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-20-outline-navigation/base-icons-icon-library-20-outline-navigation.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 20 Notification",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-20-outline-notification/base-icons-icon-library-20-outline-notification.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-20-outline-notification/base-icons-icon-library-20-outline-notification.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 20 Seat",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-20-outline-seat/base-icons-icon-library-20-outline-seat.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-20-outline-seat/base-icons-icon-library-20-outline-seat.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 20 Ticket",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-20-outline-ticket/base-icons-icon-library-20-outline-ticket.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-20-outline-ticket/base-icons-icon-library-20-outline-ticket.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 20 Transportation",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-20-outline-transportation/base-icons-icon-library-20-outline-transportation.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-20-outline-transportation/base-icons-icon-library-20-outline-transportation.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Filled 24 Action",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-24-filled-action/base-icons-icon-library-24-filled-action.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-24-filled-action/base-icons-icon-library-24-filled-action.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Filled 24 AV",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-24-filled-av/base-icons-icon-library-24-filled-av.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-24-filled-av/base-icons-icon-library-24-filled-av.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Filled 24 Journey",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-24-filled-journey/base-icons-icon-library-24-filled-journey.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-24-filled-journey/base-icons-icon-library-24-filled-journey.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Filled 24 Navigation",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-24-filled-navigation/base-icons-icon-library-24-filled-navigation.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-24-filled-navigation/base-icons-icon-library-24-filled-navigation.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 24 Action",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-24-outline-action/base-icons-icon-library-24-outline-action.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-24-outline-action/base-icons-icon-library-24-outline-action.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 24 AV",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-24-outline-av/base-icons-icon-library-24-outline-av.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-24-outline-av/base-icons-icon-library-24-outline-av.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 24 Brand",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-24-outline-brand/base-icons-icon-library-24-outline-brand.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-24-outline-brand/base-icons-icon-library-24-outline-brand.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 24 Communication",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-24-outline-communication/base-icons-icon-library-24-outline-communication.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-24-outline-communication/base-icons-icon-library-24-outline-communication.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 24 Covid 19",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-24-outline-covid-19/base-icons-icon-library-24-outline-covid-19.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-24-outline-covid-19/base-icons-icon-library-24-outline-covid-19.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 24 Facilities",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-24-outline-facilities/base-icons-icon-library-24-outline-facilities.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-24-outline-facilities/base-icons-icon-library-24-outline-facilities.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 24 Feature",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-24-outline-feature/base-icons-icon-library-24-outline-feature.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-24-outline-feature/base-icons-icon-library-24-outline-feature.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 24 Food",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-24-outline-food/base-icons-icon-library-24-outline-food.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-24-outline-food/base-icons-icon-library-24-outline-food.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 24 Journey",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-24-outline-journey/base-icons-icon-library-24-outline-journey.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-24-outline-journey/base-icons-icon-library-24-outline-journey.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 24 Maps",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-24-outline-maps/base-icons-icon-library-24-outline-maps.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-24-outline-maps/base-icons-icon-library-24-outline-maps.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Filled 24 Maps",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-24-filled-maps/base-icons-icon-library-24-filled-maps.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-24-filled-maps/base-icons-icon-library-24-filled-maps.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 24 Navigation",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-24-outline-navigation/base-icons-icon-library-24-outline-navigation.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-24-outline-navigation/base-icons-icon-library-24-outline-navigation.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 24 Notification",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-24-outline-notification/base-icons-icon-library-24-outline-notification.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-24-outline-notification/base-icons-icon-library-24-outline-notification.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 24 Seat",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-24-outline-seat/base-icons-icon-library-24-outline-seat.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-24-outline-seat/base-icons-icon-library-24-outline-seat.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 24 Ticket",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-24-outline-ticket/base-icons-icon-library-24-outline-ticket.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-24-outline-ticket/base-icons-icon-library-24-outline-ticket.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 24 Transportation",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-24-outline-transportation/base-icons-icon-library-24-outline-transportation.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-24-outline-transportation/base-icons-icon-library-24-outline-transportation.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Filled 32 Action",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-32-filled-action/base-icons-icon-library-32-filled-action.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-32-filled-action/base-icons-icon-library-32-filled-action.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Filled 32 AV",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-32-filled-av/base-icons-icon-library-32-filled-av.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-32-filled-av/base-icons-icon-library-32-filled-av.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Filled 32 Brand",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-32-outline-brand/base-icons-icon-library-32-outline-brand.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-32-outline-brand/base-icons-icon-library-32-outline-brand.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Filled 32 Navigation",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-32-filled-navigation/base-icons-icon-library-32-filled-navigation.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-32-filled-navigation/base-icons-icon-library-32-filled-navigation.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 32 Action",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-32-outline-action/base-icons-icon-library-32-outline-action.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-32-outline-action/base-icons-icon-library-32-outline-action.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 32 AV",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-32-outline-av/base-icons-icon-library-32-outline-av.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-32-outline-av/base-icons-icon-library-32-outline-av.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 32 Communication",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-32-outline-communication/base-icons-icon-library-32-outline-communication.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-32-outline-communication/base-icons-icon-library-32-outline-communication.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 32 Covid 19",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-32-outline-covid-19/base-icons-icon-library-32-outline-covid-19.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-32-outline-covid-19/base-icons-icon-library-32-outline-covid-19.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 32 Facilities",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-32-outline-facilities/base-icons-icon-library-32-outline-facilities.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-32-outline-facilities/base-icons-icon-library-32-outline-facilities.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 32 Feature",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-32-outline-feature/base-icons-icon-library-32-outline-feature.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-32-outline-feature/base-icons-icon-library-32-outline-feature.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 32 Food",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-32-outline-food/base-icons-icon-library-32-outline-food.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-32-outline-food/base-icons-icon-library-32-outline-food.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 32 Journey",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-32-outline-journey/base-icons-icon-library-32-outline-journey.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-32-outline-journey/base-icons-icon-library-32-outline-journey.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 32 Maps",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-32-outline-maps/base-icons-icon-library-32-outline-maps.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-32-outline-maps/base-icons-icon-library-32-outline-maps.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Filled 32 Maps",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-32-filled-maps/base-icons-icon-library-32-filled-maps.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-32-filled-maps/base-icons-icon-library-32-filled-maps.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 32 Navigation",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-32-outline-navigation/base-icons-icon-library-32-outline-navigation.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-32-outline-navigation/base-icons-icon-library-32-outline-navigation.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 32 Notification",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-32-outline-notification/base-icons-icon-library-32-outline-notification.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-32-outline-notification/base-icons-icon-library-32-outline-notification.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 32 Seat",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-32-outline-seat/base-icons-icon-library-32-outline-seat.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-32-outline-seat/base-icons-icon-library-32-outline-seat.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 32 Ticket",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-32-outline-ticket/base-icons-icon-library-32-outline-ticket.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-32-outline-ticket/base-icons-icon-library-32-outline-ticket.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 32 Transportation",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-32-outline-transportation/base-icons-icon-library-32-outline-transportation.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-32-outline-transportation/base-icons-icon-library-32-outline-transportation.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Filled 48 AV",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-48-filled-av/base-icons-icon-library-48-filled-av.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-48-filled-av/base-icons-icon-library-48-filled-av.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 48 AV",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-48-outline-av/base-icons-icon-library-48-outline-av.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-48-outline-av/base-icons-icon-library-48-outline-av.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Filled 64 AV",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-64-filled-av/base-icons-icon-library-64-filled-av.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-64-filled-av/base-icons-icon-library-64-filled-av.rendered.html"
+		},
+		{
+			"label": "Icon Library Personenverkehr Outline 64 AV",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-icon-library-64-outline-av/base-icons-icon-library-64-outline-av.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-icon-library-64-outline-av/base-icons-icon-library-64-outline-av.rendered.html"
+		},
+		{
+			"label": "Illustration Icons",
+			"url": "http://127.0.0.1:8080/patterns/base-icons-illustration-icons/base-icons-illustration-icons.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons-illustration-icons/base-icons-illustration-icons.rendered.html"
+		},
+		{
+			"label": "Fonts",
+			"url": "http://127.0.0.1:8080/patterns/base-type-fonts/base-type-fonts.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-type-fonts/base-type-fonts.rendered.html"
+		},
+		{
+			"label": "Highlight Colors 1st Priority",
+			"url": "http://127.0.0.1:8080/patterns/base-type-highlight-colors-1st-priority/base-type-highlight-colors-1st-priority.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-type-highlight-colors-1st-priority/base-type-highlight-colors-1st-priority.rendered.html"
+		},
+		{
+			"label": "Highlight Colors 2nd Priority",
+			"url": "http://127.0.0.1:8080/patterns/base-type-highlight-colors-2nd-priority/base-type-highlight-colors-2nd-priority.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-type-highlight-colors-2nd-priority/base-type-highlight-colors-2nd-priority.rendered.html"
+		},
+		{
+			"label": "Highlight Colors Neutral",
+			"url": "http://127.0.0.1:8080/patterns/base-type-highlight-colors-neutral/base-type-highlight-colors-neutral.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-type-highlight-colors-neutral/base-type-highlight-colors-neutral.rendered.html"
+		},
+		{
+			"label": "Highlight Colors Positive",
+			"url": "http://127.0.0.1:8080/patterns/base-type-highlight-colors-positive/base-type-highlight-colors-positive.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/base-type-highlight-colors-positive/base-type-highlight-colors-positive.rendered.html"
+		},
+		{
+			"label": "Button",
+			"url": "http://127.0.0.1:8080/patterns/elements-buttons-00-button/elements-buttons-00-button.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-00-button/elements-buttons-00-button.rendered.html"
+		},
+		{
+			"label": "Button - hovered",
+			"url": "http://127.0.0.1:8080/patterns/elements-buttons-00-button/elements-buttons-00-button.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-00-button/elements-buttons-00-button.rendered.html",
+			"hoverSelector": ".elm-button",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Button Brand Primary",
+			"url": "http://127.0.0.1:8080/patterns/elements-buttons-01-button-brand-primary/elements-buttons-01-button-brand-primary.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-01-button-brand-primary/elements-buttons-01-button-brand-primary.rendered.html"
+		},
+		{
+			"label": "Button Brand Primary - hovered",
+			"url": "http://127.0.0.1:8080/patterns/elements-buttons-01-button-brand-primary/elements-buttons-01-button-brand-primary.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-01-button-brand-primary/elements-buttons-01-button-brand-primary.rendered.html",
+			"hoverSelectors": [
+				"p:nth-of-type(1) .elm-button:nth-of-type(1)",
+				"p:nth-of-type(1) .elm-button:nth-of-type(2)",
+				"p:nth-of-type(2) .elm-button:nth-of-type(1)",
+				"p:nth-of-type(2) .elm-button:nth-of-type(2)",
+				"p:nth-of-type(3) .elm-button:nth-of-type(1)",
+				"p:nth-of-type(3) .elm-button:nth-of-type(2)"
+			],
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Button Primary",
+			"url": "http://127.0.0.1:8080/patterns/elements-buttons-03-button-primary/elements-buttons-03-button-primary.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-03-button-primary/elements-buttons-03-button-primary.rendered.html"
+		},
+		{
+			"label": "Button Primary - hovered",
+			"url": "http://127.0.0.1:8080/patterns/elements-buttons-03-button-primary/elements-buttons-03-button-primary.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-03-button-primary/elements-buttons-03-button-primary.rendered.html",
+			"hoverSelectors": [
+				"p:nth-of-type(1) .elm-button:nth-of-type(1)",
+				"p:nth-of-type(1) .elm-button:nth-of-type(2)",
+				"p:nth-of-type(2) .elm-button:nth-of-type(1)",
+				"p:nth-of-type(2) .elm-button:nth-of-type(2)",
+				"p:nth-of-type(3) .elm-button:nth-of-type(1)",
+				"p:nth-of-type(3) .elm-button:nth-of-type(2)"
+			],
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Button Secondary Outline",
+			"url": "http://127.0.0.1:8080/patterns/elements-buttons-04-button-secondary-outline/elements-buttons-04-button-secondary-outline.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-04-button-secondary-outline/elements-buttons-04-button-secondary-outline.rendered.html"
+		},
+		{
+			"label": "Button Secondary Outline - hovered",
+			"url": "http://127.0.0.1:8080/patterns/elements-buttons-04-button-secondary-outline/elements-buttons-04-button-secondary-outline.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-04-button-secondary-outline/elements-buttons-04-button-secondary-outline.rendered.html",
+			"hoverSelectors": [
+				"p:nth-of-type(1) .elm-button:nth-of-type(1)",
+				"p:nth-of-type(1) .elm-button:nth-of-type(2)",
+				"p:nth-of-type(2) .elm-button:nth-of-type(1)",
+				"p:nth-of-type(2) .elm-button:nth-of-type(2)",
+				"p:nth-of-type(3) .elm-button:nth-of-type(1)",
+				"p:nth-of-type(3) .elm-button:nth-of-type(2)"
+			],
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Button Secondary Solid",
+			"url": "http://127.0.0.1:8080/patterns/elements-buttons-05-button-secondary-solid/elements-buttons-05-button-secondary-solid.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-05-button-secondary-solid/elements-buttons-05-button-secondary-solid.rendered.html"
+		},
+		{
+			"label": "Button Secondary Solid - hovered",
+			"url": "http://127.0.0.1:8080/patterns/elements-buttons-05-button-secondary-solid/elements-buttons-05-button-secondary-solid.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-05-button-secondary-solid/elements-buttons-05-button-secondary-solid.rendered.html",
+			"hoverSelectors": [
+				"p:nth-of-type(1) .elm-button:nth-of-type(1)",
+				"p:nth-of-type(1) .elm-button:nth-of-type(2)"
+			],
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Button Tertiary",
+			"url": "http://127.0.0.1:8080/patterns/elements-buttons-06-button-tertiary-plain/elements-buttons-06-button-tertiary-plain.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-06-button-tertiary-plain/elements-buttons-06-button-tertiary-plain.rendered.html"
+		},
+		{
+			"label": "Button Tertiary - hovered",
+			"url": "http://127.0.0.1:8080/patterns/elements-buttons-06-button-tertiary-plain/elements-buttons-06-button-tertiary-plain.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-06-button-tertiary-plain/elements-buttons-06-button-tertiary-plain.rendered.html",
+			"hoverSelectors": [
+				"p:nth-of-type(1) .elm-button:nth-of-type(1)",
+				"p:nth-of-type(1) .elm-button:nth-of-type(2)",
+				"p:nth-of-type(2) .elm-button:nth-of-type(1)",
+				"p:nth-of-type(2) .elm-button:nth-of-type(2)"
+			],
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Button Sizes",
+			"url": "http://127.0.0.1:8080/patterns/elements-buttons-09-button-sizes/elements-buttons-09-button-sizes.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-09-button-sizes/elements-buttons-09-button-sizes.rendered.html"
+		},
+		{
+			"label": "Checkbox",
+			"url": "http://127.0.0.1:8080/patterns/elements-checkbox-checkbox/elements-checkbox-checkbox.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-checkbox-checkbox/elements-checkbox-checkbox.rendered.html"
+		},
+		{
+			"label": "Checkbox Checked",
+			"url": "http://127.0.0.1:8080/patterns/elements-checkbox-checkbox-checked/elements-checkbox-checkbox-checked.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-checkbox-checkbox-checked/elements-checkbox-checkbox-checked.rendered.html"
+		},
+		{
+			"label": "Checkbox Disabled",
+			"url": "http://127.0.0.1:8080/patterns/elements-checkbox-checkbox-disabled/elements-checkbox-checkbox-disabled.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-checkbox-checkbox-disabled/elements-checkbox-checkbox-disabled.rendered.html"
+		},
+		{
+			"label": "Checkbox Disabled Checked",
+			"url": "http://127.0.0.1:8080/patterns/elements-checkbox-checkbox-disabled-checked/elements-checkbox-checkbox-disabled-checked.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-checkbox-checkbox-disabled-checked/elements-checkbox-checkbox-disabled-checked.rendered.html"
+		},
+		{
+			"label": "Checkbox Indeterminate",
+			"url": "http://127.0.0.1:8080/patterns/elements-checkbox-checkbox-indeterminate/elements-checkbox-checkbox-indeterminate.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-checkbox-checkbox-indeterminate/elements-checkbox-checkbox-indeterminate.rendered.html"
+		},
+		{
+			"label": "Checkbox Indeterminate Checked",
+			"url": "http://127.0.0.1:8080/patterns/elements-checkbox-checkbox-on-dark-background-indeterminate/elements-checkbox-checkbox-on-dark-background-indeterminate.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-checkbox-checkbox-on-dark-background-indeterminate/elements-checkbox-checkbox-on-dark-background-indeterminate.rendered.html"
+		},
+		{
+			"label": "Checkbox On Dark Background Checked",
+			"url": "http://127.0.0.1:8080/patterns/elements-checkbox-checkbox-on-dark-background-checked/elements-checkbox-checkbox-on-dark-background-checked.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-checkbox-checkbox-on-dark-background-checked/elements-checkbox-checkbox-on-dark-background-checked.rendered.html"
+		},
+		{
+			"label": "Checkbox On Dark Background Disabled",
+			"url": "http://127.0.0.1:8080/patterns/elements-checkbox-checkbox-on-dark-background-disabled/elements-checkbox-checkbox-on-dark-background-disabled.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-checkbox-checkbox-on-dark-background-disabled/elements-checkbox-checkbox-on-dark-background-disabled.rendered.html"
+		},
+		{
+			"label": "Checkbox On Dark Background Disabled Checked",
+			"url": "http://127.0.0.1:8080/patterns/elements-checkbox-checkbox-on-dark-background-disabled-checked/elements-checkbox-checkbox-on-dark-background-disabled-checked.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-checkbox-checkbox-on-dark-background-disabled-checked/elements-checkbox-checkbox-on-dark-background-disabled-checked.rendered.html"
+		},
+		{
+			"label": "Image",
+			"url": "http://127.0.0.1:8080/patterns/elements-image-image/elements-image-image.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-image-image/elements-image-image.rendered.html"
+		},
+		{
+			"label": "Image - AVIF",
+			"url": "http://127.0.0.1:8080/patterns/elements-image-image-avif/elements-image-image-avif.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-image-image-avif/elements-image-image-avif.rendered.html"
+		},
+		{
+			"label": "Image - Lazy Loading",
+			"url": "http://127.0.0.1:8080/patterns/elements-image-image-lazy-loading/elements-image-image-lazy-loading.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-image-image-lazy-loading/elements-image-image-lazy-loading.rendered.html"
+		},
+		{
+			"label": "Image - Responsive And Pixel Density",
+			"url": "http://127.0.0.1:8080/patterns/elements-image-image-responsive-density/elements-image-image-responsive-density.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-image-image-responsive-density/elements-image-image-responsive-density.rendered.html"
+		},
+		{
+			"label": "Image - Responsive Mediaquery",
+			"url": "http://127.0.0.1:8080/patterns/elements-image-image-responsive-mediaquery/elements-image-image-responsive-mediaquery.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-image-image-responsive-mediaquery/elements-image-image-responsive-mediaquery.rendered.html"
+		},
+		{
+			"label": "Image - WebP",
+			"url": "http://127.0.0.1:8080/patterns/elements-image-image-webp/elements-image-image-webp.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-image-image-webp/elements-image-image-webp.rendered.html"
+		},
+		{
+			"label": "Image - With Caption",
+			"url": "http://127.0.0.1:8080/patterns/elements-image-image-with-caption/elements-image-image-with-caption.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-image-image-with-caption/elements-image-image-with-caption.rendered.html"
+		},
+		{
+			"label": "Input",
+			"url": "http://127.0.0.1:8080/patterns/elements-input-input-variations/elements-input-input-variations.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input-input-variations/elements-input-input-variations.rendered.html"
+		},
+		{
+			"label": "Input - hovered",
+			"url": "http://127.0.0.1:8080/patterns/elements-input-input-variations/elements-input-input-variations.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input-input-variations/elements-input-input-variations.rendered.html",
+			"hoverSelector": ".elm-input",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Input - focused",
+			"url": "http://127.0.0.1:8080/patterns/elements-input-input-variations/elements-input-input-variations.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input-input-variations/elements-input-input-variations.rendered.html",
+			"clickSelector": ".elm-input",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Input Auto Suggest",
+			"url": "http://127.0.0.1:8080/patterns/elements-input-input-auto-suggest/elements-input-input-auto-suggest.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input-input-auto-suggest/elements-input-input-auto-suggest.rendered.html"
+		},
+		{
+			"label": "Input type Date",
+			"url": "http://127.0.0.1:8080/patterns/elements-input-input-date/elements-input-input-date.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input-input-date/elements-input-input-date.rendered.html"
+		},
+		{
+			"label": "Input type Date focused",
+			"url": "http://127.0.0.1:8080/patterns/elements-input-input-date/elements-input-input-date.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input-input-date/elements-input-input-date.rendered.html",
+			"clickSelector": ".elm-input[type=date]",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Input type Datetime-local",
+			"url": "http://127.0.0.1:8080/patterns/elements-input-input-datetime-local/elements-input-input-datetime-local.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input-input-datetime-local/elements-input-input-datetime-local.rendered.html"
+		},
+		{
+			"label": "Input type Datetime-local focused",
+			"url": "http://127.0.0.1:8080/patterns/elements-input-input-datetime-local/elements-input-input-datetime-local.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input-input-datetime-local/elements-input-input-datetime-local.rendered.html",
+			"clickSelector": ".elm-input[type=datetime-local]",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Input Description",
+			"url": "http://127.0.0.1:8080/patterns/elements-input-input-description/elements-input-input-description.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input-input-description/elements-input-input-description.rendered.html"
+		},
+		{
+			"label": "Input Disabled",
+			"url": "http://127.0.0.1:8080/patterns/elements-input-input-disabled/elements-input-input-disabled.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input-input-disabled/elements-input-input-disabled.rendered.html"
+		},
+		{
+			"label": "Input Filled",
+			"url": "http://127.0.0.1:8080/patterns/elements-input-input-filled/elements-input-input-filled.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input-input-filled/elements-input-input-filled.rendered.html"
+		},
+		{
+			"label": "Input Valid",
+			"url": "http://127.0.0.1:8080/patterns/elements-input-input-valid/elements-input-input-valid.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input-input-valid/elements-input-input-valid.rendered.html"
+		},
+		{
+			"label": "Input Invalid",
+			"url": "http://127.0.0.1:8080/patterns/elements-input-input-invalid/elements-input-input-invalid.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input-input-invalid/elements-input-input-invalid.rendered.html"
+		},
+		{
+			"label": "Input Invalid by HTML attribute",
+			"url": "http://127.0.0.1:8080/patterns/elements-input-input-invalid-attribute/elements-input-input-invalid-attribute.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input-input-invalid-attribute/elements-input-input-invalid-attribute.rendered.html"
+		},
+		{
+			"label": "Input type month",
+			"url": "http://127.0.0.1:8080/patterns/elements-input-input-month/elements-input-input-month.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input-input-month/elements-input-input-month.rendered.html"
+		},
+		{
+			"label": "Input type month focused",
+			"url": "http://127.0.0.1:8080/patterns/elements-input-input-month/elements-input-input-month.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input-input-month/elements-input-input-month.rendered.html",
+			"clickSelector": ".elm-input[type=month]",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Input Search",
+			"url": "http://127.0.0.1:8080/patterns/elements-input-input-search/elements-input-input-search.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input-input-search/elements-input-input-search.rendered.html"
+		},
+		{
+			"label": "Input Search - hovered",
+			"url": "http://127.0.0.1:8080/patterns/elements-input-input-search/elements-input-input-search.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input-input-search/elements-input-input-search.rendered.html",
+			"hoverSelector": ".elm-input",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Input Search - focused",
+			"url": "http://127.0.0.1:8080/patterns/elements-input-input-search/elements-input-input-search.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input-input-search/elements-input-input-search.rendered.html",
+			"clickSelector": ".elm-input",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Input Search Filled",
+			"url": "http://127.0.0.1:8080/patterns/elements-input-input-search-filled/elements-input-input-search-filled.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input-input-search-filled/elements-input-input-search-filled.rendered.html"
+		},
+		{
+			"label": "Input type time",
+			"url": "http://127.0.0.1:8080/patterns/elements-input-input-time/elements-input-input-time.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input-input-time/elements-input-input-time.rendered.html"
+		},
+		{
+			"label": "Input type time focused",
+			"url": "http://127.0.0.1:8080/patterns/elements-input-input-time/elements-input-input-time.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input-input-time/elements-input-input-time.rendered.html",
+			"clickSelector": ".elm-input[type=time]",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Input type week",
+			"url": "http://127.0.0.1:8080/patterns/elements-input-input-week/elements-input-input-week.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input-input-week/elements-input-input-week.rendered.html"
+		},
+		{
+			"label": "Input type week focused",
+			"url": "http://127.0.0.1:8080/patterns/elements-input-input-week/elements-input-input-week.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input-input-week/elements-input-input-week.rendered.html",
+			"clickSelector": ".elm-input[type=week]",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Link",
+			"url": "http://127.0.0.1:8080/patterns/elements-link-links/elements-link-links.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-link-links/elements-link-links.rendered.html"
+		},
+		{
+			"label": "Link - hovered",
+			"url": "http://127.0.0.1:8080/patterns/elements-link-links/elements-link-links.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-link-links/elements-link-links.rendered.html",
+			"hoverSelectors": [
+				"p:nth-of-type(1) .elm-link",
+				"p:nth-of-type(2) .elm-link",
+				"p:nth-of-type(3) .elm-link",
+				"p:nth-of-type(4) .elm-link",
+				"p:nth-of-type(5) .elm-link",
+				"p:nth-of-type(6) .elm-link"
+			],
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Link - clicked",
+			"url": "http://127.0.0.1:8080/patterns/elements-link-links/elements-link-links.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-link-links/elements-link-links.rendered.html",
+			"clickSelectors": [
+				"p:nth-of-type(1) .elm-link",
+				"p:nth-of-type(2) .elm-link",
+				"p:nth-of-type(3) .elm-link",
+				"p:nth-of-type(4) .elm-link",
+				"p:nth-of-type(5) .elm-link",
+				"p:nth-of-type(6) .elm-link"
+			],
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Links small",
+			"url": "http://127.0.0.1:8080/patterns/elements-link-links-small/elements-link-links-small.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-link-links-small/elements-link-links-small.rendered.html"
+		},
+		{
+			"label": "Links small - hovered",
+			"url": "http://127.0.0.1:8080/patterns/elements-link-links-small/elements-link-links-small.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-link-links-small/elements-link-links-small.rendered.html",
+			"hoverSelectors": [
+				"p:nth-of-type(1) .elm-link",
+				"p:nth-of-type(2) .elm-link",
+				"p:nth-of-type(3) .elm-link",
+				"p:nth-of-type(4) .elm-link"
+			],
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Links small - clicked",
+			"url": "http://127.0.0.1:8080/patterns/elements-link-links-small/elements-link-links-small.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-link-links-small/elements-link-links-small.rendered.html",
+			"clickSelectors": [
+				"p:nth-of-type(1) .elm-link",
+				"p:nth-of-type(2) .elm-link",
+				"p:nth-of-type(3) .elm-link",
+				"p:nth-of-type(4) .elm-link"
+			],
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Progress",
+			"url": "http://127.0.0.1:8080/patterns/elements-progress-progress/elements-progress-progress.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-progress-progress/elements-progress-progress.rendered.html"
+		},
+		{
+			"label": "Progress circle",
+			"url": "http://127.0.0.1:8080/patterns/elements-progress-progress-circular-loader/elements-progress-progress-circular-loader.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-progress-progress-circular-loader/elements-progress-progress-circular-loader.rendered.html"
+		},
+		{
+			"label": "Progress circle - on dark background",
+			"url": "http://127.0.0.1:8080/patterns/elements-progress-progress-circular-loader-dark-background/elements-progress-progress-circular-loader-dark-background.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-progress-progress-circular-loader-dark-background/elements-progress-progress-circular-loader-dark-background.rendered.html"
+		},
+		{
+			"label": "Progress Dark Background",
+			"url": "http://127.0.0.1:8080/patterns/elements-progress-progress-dark-background/elements-progress-progress-dark-background.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-progress-progress-dark-background/elements-progress-progress-dark-background.rendered.html"
+		},
+		{
+			"label": "Progress Indeterminate",
+			"url": "http://127.0.0.1:8080/patterns/elements-progress-progress-linear-spinner-indeterminate/elements-progress-progress-linear-spinner-indeterminate.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-progress-progress-linear-spinner-indeterminate/elements-progress-progress-linear-spinner-indeterminate.rendered.html"
+		},
+		{
+			"label": "Radio",
+			"url": "http://127.0.0.1:8080/patterns/elements-radio-radio/elements-radio-radio.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-radio-radio/elements-radio-radio.rendered.html"
+		},
+		{
+			"label": "Radio Checked",
+			"url": "http://127.0.0.1:8080/patterns/elements-radio-radio-checked/elements-radio-radio-checked.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-radio-radio-checked/elements-radio-radio-checked.rendered.html"
+		},
+		{
+			"label": "Radio Disabled",
+			"url": "http://127.0.0.1:8080/patterns/elements-radio-radio-disabled/elements-radio-radio-disabled.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-radio-radio-disabled/elements-radio-radio-disabled.rendered.html"
+		},
+		{
+			"label": "Radio Disabled Checked",
+			"url": "http://127.0.0.1:8080/patterns/elements-radio-radio-disabled-checked/elements-radio-radio-disabled-checked.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-radio-radio-disabled-checked/elements-radio-radio-disabled-checked.rendered.html"
+		},
+		{
+			"label": "Select",
+			"url": "http://127.0.0.1:8080/patterns/elements-select-select-variations/elements-select-select-variations.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-select-select-variations/elements-select-select-variations.rendered.html"
+		},
+		{
+			"label": "Select - clicked",
+			"url": "http://127.0.0.1:8080/patterns/elements-select-select-variations/elements-select-select-variations.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-select-select-variations/elements-select-select-variations.rendered.html",
+			"clickSelector": ".elm-select",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Select multiple",
+			"url": "http://127.0.0.1:8080/patterns/elements-select-select-variations-multiple/elements-select-select-variations-multiple.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-select-select-variations-multiple/elements-select-select-variations-multiple.rendered.html"
+		},
+		{
+			"label": "Select multiple - clicked",
+			"url": "http://127.0.0.1:8080/patterns/elements-select-select-variations-multiple/elements-select-select-variations-multiple.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-select-select-variations-multiple/elements-select-select-variations-multiple.rendered.html",
+			"clickSelector": ".elm-select",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Select optgroups",
+			"url": "http://127.0.0.1:8080/patterns/elements-select-select-variations-optgroups/elements-select-select-variations-optgroups.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-select-select-variations-optgroups/elements-select-select-variations-optgroups.rendered.html"
+		},
+		{
+			"label": "Select optgroups - clicked",
+			"url": "http://127.0.0.1:8080/patterns/elements-select-select-variations-optgroups/elements-select-select-variations-optgroups.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-select-select-variations-optgroups/elements-select-select-variations-optgroups.rendered.html",
+			"clickSelector": ".elm-select",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Tags",
+			"url": "http://127.0.0.1:8080/patterns/elements-tags-tags/elements-tags-tags.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-tags-tags/elements-tags-tags.rendered.html"
+		},
+		{
+			"label": "Tags small",
+			"url": "http://127.0.0.1:8080/patterns/elements-tags-tags-small/elements-tags-tags-small.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-tags-tags-small/elements-tags-tags-small.rendered.html"
+		},
+		{
+			"label": "Tags - with icon",
+			"url": "http://127.0.0.1:8080/patterns/elements-tags-tags-with-icon/elements-tags-tags-with-icon.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-tags-tags-with-icon/elements-tags-tags-with-icon.rendered.html"
+		},
+		{
+			"label": "Filter Chips",
+			"url": "http://127.0.0.1:8080/patterns/elements-chips-chips/elements-chips-chips.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-chips-chips/elements-chips-chips.rendered.html"
+		},
+		{
+			"label": "Filter Chips - hovered",
+			"url": "http://127.0.0.1:8080/patterns/elements-chips-chips/elements-chips-chips.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-chips-chips/elements-chips-chips.rendered.html",
+			"hoverSelector": ".elm-chip + label",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Filter Chips - selected",
+			"url": "http://127.0.0.1:8080/patterns/elements-chips-chips/elements-chips-chips.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-chips-chips/elements-chips-chips.rendered.html",
+			"clickSelector": ".elm-chip + label",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Selection Chips",
+			"url": "http://127.0.0.1:8080/patterns/elements-chips-chips-type-selection/elements-chips-chips-type-selection.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-chips-chips-type-selection/elements-chips-chips-type-selection.rendered.html"
+		},
+		{
+			"label": "Selection Chips - hovered",
+			"url": "http://127.0.0.1:8080/patterns/elements-chips-chips-type-selection/elements-chips-chips-type-selection.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-chips-chips-type-selection/elements-chips-chips-type-selection.rendered.html",
+			"hoverSelector": ".elm-chip + label",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Selection Chips - selected",
+			"url": "http://127.0.0.1:8080/patterns/elements-chips-chips-type-selection/elements-chips-chips-type-selection.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-chips-chips-type-selection/elements-chips-chips-type-selection.rendered.html",
+			"clickSelector": ".elm-chip + label",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Chips with icon",
+			"url": "http://127.0.0.1:8080/patterns/elements-chips-chips-with-icon/elements-chips-chips-with-icon.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-chips-chips-with-icon/elements-chips-chips-with-icon.rendered.html"
+		},
+		{
+			"label": "Chips with icon - hovered",
+			"url": "http://127.0.0.1:8080/patterns/elements-chips-chips-with-icon/elements-chips-chips-with-icon.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-chips-chips-with-icon/elements-chips-chips-with-icon.rendered.html",
+			"hoverSelector": ".elm-chip + label",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Chips with icon - selected",
+			"url": "http://127.0.0.1:8080/patterns/elements-chips-chips-with-icon/elements-chips-chips-with-icon.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-chips-chips-with-icon/elements-chips-chips-with-icon.rendered.html",
+			"clickSelector": ".elm-chip + label",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Chips disabled",
+			"url": "http://127.0.0.1:8080/patterns/elements-chips-chips-disabled/elements-chips-chips-disabled.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-chips-chips-disabled/elements-chips-chips-disabled.rendered.html"
+		},
+		{
+			"label": "Textarea",
+			"url": "http://127.0.0.1:8080/patterns/elements-textarea-textarea-variations/elements-textarea-textarea-variations.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-textarea-textarea-variations/elements-textarea-textarea-variations.rendered.html"
+		},
+		{
+			"label": "Textarea - hovered",
+			"url": "http://127.0.0.1:8080/patterns/elements-textarea-textarea-variations/elements-textarea-textarea-variations.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-textarea-textarea-variations/elements-textarea-textarea-variations.rendered.html",
+			"hoverSelector": ".elm-textarea",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Textarea - focused",
+			"url": "http://127.0.0.1:8080/patterns/elements-textarea-textarea-variations/elements-textarea-textarea-variations.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-textarea-textarea-variations/elements-textarea-textarea-variations.rendered.html",
+			"clickSelector": ".elm-textarea",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Textarea with description",
+			"url": "http://127.0.0.1:8080/patterns/elements-textarea-textarea-description/elements-textarea-textarea-description.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-textarea-textarea-description/elements-textarea-textarea-description.rendered.html"
+		},
+		{
+			"label": "Textarea Disabled",
+			"url": "http://127.0.0.1:8080/patterns/elements-textarea-textarea-disabled/elements-textarea-textarea-disabled.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-textarea-textarea-disabled/elements-textarea-textarea-disabled.rendered.html"
+		},
+		{
+			"label": "Textarea Filled",
+			"url": "http://127.0.0.1:8080/patterns/elements-textarea-textarea-filled/elements-textarea-textarea-filled.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-textarea-textarea-filled/elements-textarea-textarea-filled.rendered.html"
+		},
+		{
+			"label": "Textarea Invalid",
+			"url": "http://127.0.0.1:8080/patterns/elements-textarea-textarea-invalid/elements-textarea-textarea-invalid.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-textarea-textarea-invalid/elements-textarea-textarea-invalid.rendered.html"
+		},
+		{
+			"label": "Textarea Invalid by HTML attribute",
+			"url": "http://127.0.0.1:8080/patterns/elements-textarea-textarea-invalid-attribute/elements-textarea-textarea-invalid-attribute.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-textarea-textarea-invalid-attribute/elements-textarea-textarea-invalid-attribute.rendered.html"
+		},
+		{
+			"label": "Textarea Valid",
+			"url": "http://127.0.0.1:8080/patterns/elements-textarea-textarea-valid/elements-textarea-textarea-valid.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-textarea-textarea-valid/elements-textarea-textarea-valid.rendered.html"
+		},
+		{
+			"label": "Toggle",
+			"url": "http://127.0.0.1:8080/patterns/elements-toggle-toggle/elements-toggle-toggle.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-toggle-toggle/elements-toggle-toggle.rendered.html"
+		},
+		{
+			"label": "Toggle - clicked",
+			"url": "http://127.0.0.1:8080/patterns/elements-toggle-toggle/elements-toggle-toggle.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-toggle-toggle/elements-toggle-toggle.rendered.html",
+			"clickSelector": ".elm-toggle",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Toggle Disabled",
+			"url": "http://127.0.0.1:8080/patterns/elements-toggle-toggle-disabled/elements-toggle-toggle-disabled.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-toggle-toggle-disabled/elements-toggle-toggle-disabled.rendered.html"
+		},
+		{
+			"label": "Toggle On",
+			"url": "http://127.0.0.1:8080/patterns/elements-toggle-toggle-on/elements-toggle-toggle-on.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-toggle-toggle-on/elements-toggle-toggle-on.rendered.html"
+		},
+		{
+			"label": "Toggle On Disabled",
+			"url": "http://127.0.0.1:8080/patterns/elements-toggle-toggle-on-disabled/elements-toggle-toggle-on-disabled.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-toggle-toggle-on-disabled/elements-toggle-toggle-on-disabled.rendered.html"
+		},
+		{
+			"label": "Breadcrumb",
+			"url": "http://127.0.0.1:8080/patterns/components-breadcrumb-breadcrumb/components-breadcrumb-breadcrumb.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-breadcrumb-breadcrumb/components-breadcrumb-breadcrumb.rendered.html"
+		},
+		{
+			"label": "Breadcrumb - links hovered",
+			"url": "http://127.0.0.1:8080/patterns/components-breadcrumb-breadcrumb/components-breadcrumb-breadcrumb.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-breadcrumb-breadcrumb/components-breadcrumb-breadcrumb.rendered.html",
+			"hoverSelectors": [
+				".cmp-breadcrumb li:nth-of-type(1) .elm-link",
+				".cmp-breadcrumb li:nth-of-type(2) .elm-link",
+				".cmp-breadcrumb li:nth-of-type(3) .elm-link",
+				".cmp-breadcrumb li:nth-of-type(4) .elm-link",
+				".cmp-breadcrumb li:nth-of-type(5) .elm-link",
+				".cmp-breadcrumb li:nth-of-type(6) .elm-link"
+			],
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Cards",
+			"url": "http://127.0.0.1:8080/patterns/components-cards-cards-banner/components-cards-cards-banner.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-cards-cards-banner/components-cards-cards-banner.rendered.html"
+		},
+		{
+			"label": "Dialoge",
+			"url": "http://127.0.0.1:8080/patterns/components-dialog-dialog/components-dialog-dialog.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-dialog-dialog/components-dialog-dialog.rendered.html",
+			"clickSelector": ".elm-link[href='#dialog01']",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Dialoge - Buttons end",
+			"url": "http://127.0.0.1:8080/patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html",
+			"clickSelector": ".elm-link[href='#dialog02']",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Dropdown",
+			"url": "http://127.0.0.1:8080/patterns/components-dropdown-dropdown/components-dropdown-dropdown.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-dropdown-dropdown/components-dropdown-dropdown.rendered.html"
+		},
+		{
+			"label": "Dropdown - hovered",
+			"url": "http://127.0.0.1:8080/patterns/components-dropdown-dropdown/components-dropdown-dropdown.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-dropdown-dropdown/components-dropdown-dropdown.rendered.html",
+			"hoverSelector": ".cmp-dropdown summary",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Dropdown - clicked",
+			"url": "http://127.0.0.1:8080/patterns/components-dropdown-dropdown/components-dropdown-dropdown.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-dropdown-dropdown/components-dropdown-dropdown.rendered.html",
+			"clickSelector": ".cmp-dropdown summary",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Dropdown / opposite position",
+			"url": "http://127.0.0.1:8080/patterns/components-dropdown-dropdown-opposite-position/components-dropdown-dropdown-opposite-position.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-dropdown-dropdown-opposite-position/components-dropdown-dropdown-opposite-position.rendered.html"
+		},
+		{
+			"label": "Dropdown / opposite position - hovered",
+			"url": "http://127.0.0.1:8080/patterns/components-dropdown-dropdown-opposite-position/components-dropdown-dropdown-opposite-position.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-dropdown-dropdown-opposite-position/components-dropdown-dropdown-opposite-position.rendered.html",
+			"hoverSelector": ".cmp-dropdown summary",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Dropdown / opposite position - clicked",
+			"url": "http://127.0.0.1:8080/patterns/components-dropdown-dropdown-opposite-position/components-dropdown-dropdown-opposite-position.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-dropdown-dropdown-opposite-position/components-dropdown-dropdown-opposite-position.rendered.html",
+			"clickSelector": ".cmp-dropdown summary",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Accordion",
+			"url": "http://127.0.0.1:8080/patterns/components-accordion-accordion/components-accordion-accordion.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-accordion-accordion/components-accordion-accordion.rendered.html"
+		},
+		{
+			"label": "Accordion hovered",
+			"url": "http://127.0.0.1:8080/patterns/components-accordion-accordion/components-accordion-accordion.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-accordion-accordion/components-accordion-accordion.rendered.html",
+			"hoverSelector": ".cmp-accordion summary",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Accordion clicked",
+			"url": "http://127.0.0.1:8080/patterns/components-accordion-accordion/components-accordion-accordion.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-accordion-accordion/components-accordion-accordion.rendered.html",
+			"clickSelector": ".cmp-accordion summary",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Accordion - High emphasis",
+			"url": "http://127.0.0.1:8080/patterns/components-accordion-accordion-high-emphasis/components-accordion-accordion-high-emphasis.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-accordion-accordion-high-emphasis/components-accordion-accordion-high-emphasis.rendered.html"
+		},
+		{
+			"label": "Accordion - High emphasis hovered",
+			"url": "http://127.0.0.1:8080/patterns/components-accordion-accordion-high-emphasis/components-accordion-accordion-high-emphasis.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-accordion-accordion-high-emphasis/components-accordion-accordion-high-emphasis.rendered.html",
+			"hoverSelector": ".cmp-accordion summary",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Accordion – High emphasis clicked",
+			"url": "http://127.0.0.1:8080/patterns/components-accordion-accordion-high-emphasis/components-accordion-accordion-high-emphasis.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-accordion-accordion-high-emphasis/components-accordion-accordion-high-emphasis.rendered.html",
+			"clickSelector": ".cmp-accordion summary",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Accordion - Sizes",
+			"url": "http://127.0.0.1:8080/patterns/components-accordion-accordion-sizes/components-accordion-accordion-sizes.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-accordion-accordion-sizes/components-accordion-accordion-sizes.rendered.html"
+		},
+		{
+			"label": "Accordion - Sizes hovered",
+			"url": "http://127.0.0.1:8080/patterns/components-accordion-accordion-sizes/components-accordion-accordion-sizes.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-accordion-accordion-sizes/components-accordion-accordion-sizes.rendered.html",
+			"hoverSelector": ".cmp-accordion summary",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Accordion - Sizes clicked",
+			"url": "http://127.0.0.1:8080/patterns/components-accordion-accordion-sizes/components-accordion-accordion-sizes.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-accordion-accordion-sizes/components-accordion-accordion-sizes.rendered.html",
+			"clickSelector": ".cmp-accordion summary",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Language Switcher",
+			"url": "http://127.0.0.1:8080/patterns/components-language-switcher-language-switcher/components-language-switcher-language-switcher.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-language-switcher-language-switcher/components-language-switcher-language-switcher.rendered.html"
+		},
+		{
+			"label": "Language Switcher - hovered",
+			"url": "http://127.0.0.1:8080/patterns/components-language-switcher-language-switcher/components-language-switcher-language-switcher.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-language-switcher-language-switcher/components-language-switcher-language-switcher.rendered.html",
+			"hoverSelector": ".cmp-language-switcher",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Link list",
+			"url": "http://127.0.0.1:8080/patterns/components-link-list-link-list/components-link-list-link-list.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-link-list-link-list/components-link-list-link-list.rendered.html"
+		},
+		{
+			"label": "Mainnavigation",
+			"url": "http://127.0.0.1:8080/patterns/components-mainnavigation-mainnavigation/components-mainnavigation-mainnavigation.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core-legacy/patterns/components-mainnavigation-mainnavigation/components-mainnavigation-mainnavigation.rendered.html"
+		},
+		{
+			"label": "Mainnavigation - links hovered (bigger viewports)",
+			"url": "http://127.0.0.1:8080/patterns/components-mainnavigation-mainnavigation/components-mainnavigation-mainnavigation.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core-legacy/patterns/components-mainnavigation-mainnavigation/components-mainnavigation-mainnavigation.rendered.html",
+			"hoverSelectors": [
+				".cmp-mainnavigation li:nth-of-type(1) .elm-link",
+				".cmp-mainnavigation li:nth-of-type(2) .elm-link",
+				".cmp-mainnavigation li:nth-of-type(3) .elm-link"
+			],
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js",
+			"viewports": [
+				{
+					"label": "tablet - portrait",
+					"width": 1024,
+					"height": 768
+				},
+				{
+					"label": "13 Zoll Macbook",
+					"width": 1440,
+					"height": 900
+				}
+			]
+		},
+		{
+			"label": "Metanavigation",
+			"url": "http://127.0.0.1:8080/patterns/components-metanavigation-metanavigation/components-metanavigation-metanavigation.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core-legacy/patterns/components-metanavigation-metanavigation/components-metanavigation-metanavigation.rendered.html"
+		},
+		{
+			"label": "Metanavigation - links hovered",
+			"url": "http://127.0.0.1:8080/patterns/components-metanavigation-metanavigation/components-metanavigation-metanavigation.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core-legacy/patterns/components-metanavigation-metanavigation/components-metanavigation-metanavigation.rendered.html",
+			"hoverSelectors": [
+				".cmp-metanavigation li:nth-of-type(1) .elm-link",
+				".cmp-metanavigation li:nth-of-type(2) .elm-link"
+			],
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Notifications",
+			"url": "http://127.0.0.1:8080/patterns/components-notifications-notifications-variants/components-notifications-notifications-variants.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-notifications-notifications-variants/components-notifications-notifications-variants.rendered.html"
+		},
+		{
+			"label": "Notification hovering",
+			"url": "http://127.0.0.1:8080/patterns/components-notifications-notifications-hovering/components-notifications-notifications-hovering.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-notifications-notifications-hovering/components-notifications-notifications-hovering.rendered.html"
+		},
+		{
+			"label": "Notification leading icon",
+			"url": "http://127.0.0.1:8080/patterns/components-notifications-notifications-hovering-leading-icon/components-notifications-notifications-hovering-leading-icon.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-notifications-notifications-hovering-leading-icon/components-notifications-notifications-hovering-leading-icon.rendered.html"
+		},
+		{
+			"label": "Notification trailing icon",
+			"url": "http://127.0.0.1:8080/patterns/components-notifications-notifications-hovering-trailing-icon/components-notifications-notifications-hovering-trailing-icon.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-notifications-notifications-hovering-trailing-icon/components-notifications-notifications-hovering-trailing-icon.rendered.html"
+		},
+		{
+			"label": "Overflow Menu",
+			"url": "http://127.0.0.1:8080/patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html"
+		},
+		{
+			"label": "Overflow Menu - hovered",
+			"url": "http://127.0.0.1:8080/patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html",
+			"hoverSelector": ".cmp-overflow-menu summary",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Overflow Menu - clicked",
+			"url": "http://127.0.0.1:8080/patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html",
+			"clickSelector": ".cmp-overflow-menu summary",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Overflow Menu - Navigation",
+			"url": "http://127.0.0.1:8080/patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html"
+		},
+		{
+			"label": "Overflow Menu - Navigation - hovered",
+			"url": "http://127.0.0.1:8080/patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html",
+			"hoverSelector": ".cmp-overflow-menu summary",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Overflow Menu - Navigation - clicked",
+			"url": "http://127.0.0.1:8080/patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html",
+			"clickSelector": ".cmp-overflow-menu summary",
+			"postInteractionWait": 1000
+		},
+		{
+			"label": "Overflow Menu - Navigation / opposite position",
+			"url": "http://127.0.0.1:8080/patterns/components-overflow-menu-overflow-menu-navigation-opposite-position/components-overflow-menu-overflow-menu-navigation-opposite-position.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-overflow-menu-overflow-menu-navigation-opposite-position/components-overflow-menu-overflow-menu-navigation-opposite-position.rendered.html"
+		},
+		{
+			"label": "Overflow Menu - Navigation / opposite position - hovered",
+			"url": "http://127.0.0.1:8080/patterns/components-overflow-menu-overflow-menu-navigation-opposite-position/components-overflow-menu-overflow-menu-navigation-opposite-position.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-overflow-menu-overflow-menu-navigation-opposite-position/components-overflow-menu-overflow-menu-navigation-opposite-position.rendered.html",
+			"hoverSelector": ".cmp-overflow-menu summary",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Overflow Menu / opposite position",
+			"url": "http://127.0.0.1:8080/patterns/components-overflow-menu-overflow-menu-opposite-position/components-overflow-menu-overflow-menu-opposite-position.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-overflow-menu-overflow-menu-opposite-position/components-overflow-menu-overflow-menu-opposite-position.rendered.html"
+		},
+		{
+			"label": "Overflow Menu / opposite position - hovered",
+			"url": "http://127.0.0.1:8080/patterns/components-overflow-menu-overflow-menu-opposite-position/components-overflow-menu-overflow-menu-opposite-position.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-overflow-menu-overflow-menu-opposite-position/components-overflow-menu-overflow-menu-opposite-position.rendered.html",
+			"hoverSelector": ".cmp-overflow-menu summary",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Overflow Menu / opposite position - clicked",
+			"url": "http://127.0.0.1:8080/patterns/components-overflow-menu-overflow-menu-opposite-position/components-overflow-menu-overflow-menu-opposite-position.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-overflow-menu-overflow-menu-opposite-position/components-overflow-menu-overflow-menu-opposite-position.rendered.html",
+			"clickSelector": ".cmp-overflow-menu summary",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Overflow Menu - Navigation / opposite position",
+			"url": "http://127.0.0.1:8080/patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html"
+		},
+		{
+			"label": "Overflow Menu - Navigation / opposite position - hovered",
+			"url": "http://127.0.0.1:8080/patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html",
+			"hoverSelector": ".cmp-overflow-menu summary",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Overflow Menu - Navigation / opposite position - clicked",
+			"url": "http://127.0.0.1:8080/patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html",
+			"clickSelector": ".cmp-overflow-menu summary",
+			"postInteractionWait": 1000
+		},
+		{
+			"label": "Pagination",
+			"url": "http://127.0.0.1:8080/patterns/components-pagination-pagination/components-pagination-pagination.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-pagination-pagination/components-pagination-pagination.rendered.html"
+		},
+		{
+			"label": "Pagination - links hovered",
+			"url": "http://127.0.0.1:8080/patterns/components-pagination-pagination/components-pagination-pagination.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-pagination-pagination/components-pagination-pagination.rendered.html",
+			"hoverSelectors": [
+				".cmp-pagination li:nth-of-type(1) .elm-link",
+				".cmp-pagination li:nth-of-type(2) .elm-link",
+				".cmp-pagination li:nth-of-type(3) .elm-link",
+				".cmp-pagination li:nth-of-type(4) .elm-link",
+				".cmp-pagination li:nth-of-type(6) .elm-link"
+			],
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Side Navi",
+			"url": "http://127.0.0.1:8080/patterns/components-sidenavi-sidenavi/components-sidenavi-sidenavi.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core-legacy/patterns/components-sidenavi-sidenavi/components-sidenavi-sidenavi.rendered.html"
+		},
+		{
+			"label": "Side Navi - links hovered",
+			"url": "http://127.0.0.1:8080/patterns/components-sidenavi-sidenavi/components-sidenavi-sidenavi.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core-legacy/patterns/components-sidenavi-sidenavi/components-sidenavi-sidenavi.rendered.html",
+			"hoverSelectors": [
+				".cmp-sidenavi li:nth-of-type(1) .elm-link",
+				".cmp-sidenavi li:nth-of-type(2) .elm-link",
+				".cmp-sidenavi li:nth-of-type(3) .elm-link",
+				".cmp-sidenavi li:nth-of-type(4) .elm-link",
+				".cmp-sidenavi li:nth-of-type(5) .elm-link",
+				".cmp-sidenavi li:nth-of-type(6) .elm-link"
+			],
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Tab Bar",
+			"url": "http://127.0.0.1:8080/patterns/components-tab-bar-tab-bar/components-tab-bar-tab-bar.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-tab-bar-tab-bar/components-tab-bar-tab-bar.rendered.html"
+		},
+		{
+			"label": "Tab Bar - hovered",
+			"url": "http://127.0.0.1:8080/patterns/components-tab-bar-tab-bar/components-tab-bar-tab-bar.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-tab-bar-tab-bar/components-tab-bar-tab-bar.rendered.html",
+			"hoverSelectors": [
+				".cmp-tab-bar > label:nth-of-type(1)",
+				".cmp-tab-bar > label:nth-of-type(2)",
+				".cmp-tab-bar > label:nth-of-type(3)",
+				".cmp-tab-bar > label:nth-of-type(4)",
+				".cmp-tab-bar > label:nth-of-type(5)"
+			],
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Table",
+			"url": "http://127.0.0.1:8080/patterns/components-table-table/components-table-table.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-table-table/components-table-table.rendered.html"
+		},
+		{
+			"label": "Table Row Title",
+			"url": "http://127.0.0.1:8080/patterns/components-table-table-row-title/components-table-table-row-title.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-table-table-row-title/components-table-table-row-title.rendered.html"
+		},
+		{
+			"label": "Table rows zebra",
+			"url": "http://127.0.0.1:8080/patterns/components-table-table-rows-zebra/components-table-table-rows-zebra.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-table-table-rows-zebra/components-table-table-rows-zebra.rendered.html"
+		},
+		{
+			"label": "Table border around",
+			"url": "http://127.0.0.1:8080/patterns/components-table-table-border-around/components-table-table-border-around.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-table-table-border-around/components-table-table-border-around.rendered.html"
+		},
+		{
+			"label": "Table border horizontal",
+			"url": "http://127.0.0.1:8080/patterns/components-table-table-border-horizontal/components-table-table-border-horizontal.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-table-table-border-horizontal/components-table-table-border-horizontal.rendered.html"
+		},
+		{
+			"label": "Table density",
+			"url": "http://127.0.0.1:8080/patterns/components-table-table-density/components-table-table-density.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-table-table-density/components-table-table-density.rendered.html"
+		},
+		{
+			"label": "Table font size",
+			"url": "http://127.0.0.1:8080/patterns/components-table-table-font-size/components-table-table-font-size.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-table-table-font-size/components-table-table-font-size.rendered.html"
+		},
+		{
+			"label": "Table icons",
+			"url": "http://127.0.0.1:8080/patterns/components-table-table-icons/components-table-table-icons.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-table-table-icons/components-table-table-icons.rendered.html"
+		},
+		{
+			"label": "Table sticky header",
+			"url": "http://127.0.0.1:8080/patterns/components-table-table-sticky-header/components-table-table-sticky-header.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-table-table-sticky-header/components-table-table-sticky-header.rendered.html"
+		},
+		{
+			"label": "Header",
+			"url": "http://127.0.0.1:8080/patterns/areas-header-header/areas-header-header.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/areas-header-header/areas-header-header.rendered.html"
+		},
+		{
+			"label": "Header Loggedin",
+			"url": "http://127.0.0.1:8080/patterns/areas-header-header-loggedin/areas-header-header-loggedin.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/areas-header-header-loggedin/areas-header-header-loggedin.rendered.html"
+		},
+		{
+			"label": "Meta",
+			"url": "http://127.0.0.1:8080/patterns/areas-header-meta/areas-header-meta.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/areas-header-meta/areas-header-meta.rendered.html"
+		},
+		{
+			"label": "Grid",
+			"url": "http://127.0.0.1:8080/patterns/areas-grid-grid/areas-grid-grid.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/areas-grid-grid/areas-grid-grid.rendered.html"
+		},
+		{
+			"label": "Footer",
+			"url": "http://127.0.0.1:8080/patterns/areas-footer-footer/areas-footer-footer.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/areas-footer-footer/areas-footer-footer.rendered.html"
+		}
+	],
+	"paths": {
+		"bitmaps_reference": "./tests/backstop_data/bitmaps_reference",
+		"bitmaps_test": "./tests/backstop_data/bitmaps_test",
+		"engine_scripts": "./tests/backstop_data/engine_scripts",
+		"html_report": "./tests/backstop_data/html_report",
+		"ci_report": "./tests/backstop_data/ci_report"
+	},
+	"report": ["browser"],
+	"engine": "puppeteer",
+	"engineOptions": {
+		"browser": "chromium",
+		"args": ["--no-sandbox"]
+	},
+	"asyncCaptureLimit": 5,
+	"asyncCompareLimit": 100,
+	"debug": false,
+	"debugWindow": false
+}

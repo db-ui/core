@@ -1,0 +1,21 @@
+*Status of this document: in progress*
+
+In general we'd like to provide a robust, simple, mostly accessible and consumable Frontend framework, following web standards for future compatibility best usage within upcoming innovations.
+
+That for we'd like to follow these principles:
+* Divide markup (HTML) from styling (CSS) from functionality (JavaScript)
+** Prevent to integrate framework specific markup & CSS annotations
+** Setting up the layout via link:https://maintainablecss.com/chapters/semantics/[(semanticly) declarative and non-descriptive selectors)] instead of "visual helper" classes
+** LEAN code in all of those technologies leads to less complexity, enables maintainability and performance aspects as well
+* Provide the least JavaScript we're capable of in this software layer
+** The JavaScript provided in the "popular" frameworks is often both much too simple as well as highly opinionated, with little possibility for extensions or customizations
+** Doesn't necessarily work nicely with the frameworks we're using
+** So we'd like to provide components as Web Components in the near future
+
+On how design systems are build up in other organisations, there has been a survey lately which includes some very interesting findings that we could use for our work, strategy and processes: https://designsystemssurvey.seesparkbox.com/2019/
+
+////
+	Inspirational sources for this page
+	- https://designsystemssurvey.seesparkbox.com/2019/
+	- https://designsystemsrepo.com/design-systems/
+////

@@ -1,0 +1,43 @@
+.DO-NOT-COPY-THIS-CLASS-example-icon-list {
+	&,
+	ul {
+		list-style: none;
+
+		padding-left: 0;
+	}
+
+	& > li {
+		display: flex;
+	}
+
+	&.icons-illustration {
+		ul {
+			color: $db-color-cool-gray-700;
+
+			li {
+				display: inline-block;
+
+				margin: to-rem(4);
+				padding: to-rem(32);
+				border-radius: 4px;
+
+				color: $db-color-cool-gray-700;
+
+				&.DO-NOT-COPY-THIS-CLASS-example-bg-variants-turquoise {
+					background-color: $db-color-turquoise-400;
+				}
+				&.DO-NOT-COPY-THIS-CLASS-example-bg-variants-red {
+					background-color: $db-color-red-500;
+
+					--db-icon-color: #fff;
+					--db-icon-pulse-color: #fff;
+				}
+				&.DO-NOT-COPY-THIS-CLASS-example-bg-variants-cyan {
+					background-color: $db-color-cyan-200;
+
+					--db-icon-pulse-color: currentColor;
+				}
+			}
+		}
+	}
+}

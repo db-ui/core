@@ -1,0 +1,100 @@
+@import "../../../css/partials.meta";
+@import "language-switcher.variables";
+
+.cmp-language-switcher {
+	position: relative;
+
+	list-style: none;
+
+	margin-right: to-rem(16);
+
+	&:hover,
+	&:focus {
+		li {
+			&:not([aria-selected]) {
+				visibility: visible;
+			}
+			&[aria-selected="true"] {
+				color: $db-color-red-500;
+			}
+		}
+	}
+
+	li {
+		background-color: #fdfdfd; // TODO: This would need to get replaced by the correct (semantic) color
+
+		position: absolute;
+
+		top: to-rem(26);
+		.rea-header & {
+			top: to-rem(55);
+			@media screen and (min-width: 1024px) {
+				top: to-rem(56);
+			}
+
+			// TODO: This is an enhancement for more languages, but obviously doesn't scale that nicely and would need some rework
+			&:not([aria-selected="true"]) ~ li:not([aria-selected="true"]) {
+				top: to-rem(108);
+			}
+
+			z-index: $z-index-rea-header-cmp-language-switcher-li; // * TODO: possibly rework variable naming
+		}
+
+		.elm-link {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		&:not([aria-selected]) {
+			visibility: hidden;
+
+			.elm-link {
+				padding-top: to-rem(15);
+				padding-bottom: to-rem(15);
+				padding-right: to-rem(34);
+
+				&:hover,
+				&:focus {
+					background-color: $db-color-cool-gray-200;
+				}
+			}
+		}
+
+		&[aria-selected] {
+			.elm-link {
+				&:hover {
+					color: $db-color-red-500;
+				}
+
+				&::after {
+					float: right;
+
+					margin-left: to-rem(5);
+				}
+
+				@include icon(
+					glyph(expand-more),
+					24,
+					"outline",
+					"after",
+					$partial: $partial
+				);
+
+				padding-bottom: to-rem(22);
+			}
+
+			position: initial;
+		}
+
+		.elm-link {
+			display: inline-block;
+
+			padding-left: to-rem(18);
+
+			&:hover,
+			&:focus {
+				color: initial;
+			}
+		}
+	}
+}

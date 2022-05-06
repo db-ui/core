@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+.rea-grid {
+	// adapted from https://github.com/jgthms/bulma/blob/0.7.5/sass/grid/columns.sass
+	margin-left: -0.625rem;
+	margin-right: -0.625rem;
+	margin-top: -0.625rem;
+
+	@media screen and (min-width: 769px), print {
+		display: flex;
+	}
+
+	// TODO: We would probably need to recheck on this declaration regarding compabitility
+	flex-wrap: wrap;
+
+	& > div,
+	& > area,
+	& > section,
+	& > li {
+		display: block;
+		flex-basis: 0;
+		flex-grow: 1;
+		flex-shrink: 1;
+		padding: 0.625rem;
+
+		@media screen and (max-width: #{$column-gap-max-width-smaller-breakpoint}) {
+			padding: $column-gap-max-width-smaller-padding;
+		}
+	}
+
+	&:last-child {
+		margin-bottom: -0.625rem;
+	}
+
+	&:not(:last-child) {
+		margin-bottom: calc(1.5rem - 0.625rem);
+	}
+
+	// TODO: This should probably get migrated to CSS variables
+	@media screen and (max-width: #{$column-gap-max-width-smaller-breakpoint}) {
+		margin-left: -$column-gap-max-width-smaller-padding;
+		margin-right: -$column-gap-max-width-smaller-padding;
+		margin-top: -$column-gap-max-width-smaller-padding;
+
+		&:last-child {
+			margin-bottom: -$column-gap-max-width-smaller-padding;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: calc(
+				#{to-rem(24)} - #{$column-gap-max-width-smaller-padding}
+			);
+		}
+	}
+
+	// grid columns
+	%is-four-fifths {
+		flex: none;
+		width: 80%;
+	}
+	%is-three-quarters {
+		flex: none;
+		width: 75%;
+	}
+	%is-two-thirds {
+		flex: none;
+		width: 66.6666%;
+	}
+	%is-three-fifths {
+		flex: none;
+		width: 60%;
+	}
+	%is-half {
+		flex: none;
+		width: 50%;
+	}
+	%is-two-fifths {
+		flex: none;
+		width: 40%;
+	}
+	%is-one-third {
+		flex: none;
+		width: 33.3333%;
+	}
+	%is-one-quarter {
+		flex: none;
+		width: 25%;
+	}
+	%is-one-fifth {
+		flex: none;
+		width: 20%;
+	}
+
+	[data-type="four-fifths"] {
+		@extend %is-four-fifths;
+	}
+	[data-type="three-quarters"] {
+		@extend %is-three-quarters;
+	}
+	[data-type="two-thirds"] {
+		@extend %is-two-thirds;
+	}
+	[data-type="three-fifths"] {
+		@extend %is-three-fifths;
+	}
+	[data-type="half"] {
+		@extend %is-half;
+	}
+	[data-type="two-fifths"] {
+		@extend %is-two-fifths;
+	}
+	[data-type="one-third"] {
+		@extend %is-one-third;
+	}
+	[data-type="one-quarter"] {
+		@extend %is-one-quarter;
+	}
+	[data-type="one-fifth"] {
+		@extend %is-one-fifth;
+	}
+}

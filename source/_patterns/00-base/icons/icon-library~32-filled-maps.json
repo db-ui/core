@@ -1,0 +1,12 @@
+{
+	"icon-size": "32",
+	"icon-style": "filled",
+	"icons": [
+		{
+			"icon-glyph": "gps"
+		},
+		{
+			"icon-glyph": "gps-north"
+		}
+	]
+}

@@ -1,0 +1,140 @@
+@import "../../../css/partials.meta";
+@import "overflow-menu.variables";
+
+.cmp-overflow-menu {
+	position: relative;
+	display: inline-block;
+
+	color: #2d333f; // TODO: replace by correct color
+
+	&:not(.is-account) {
+		summary {
+			@include is-icon-text-replace();
+		}
+	}
+	summary {
+		@include icon($cmp-overflow-menu-icon, 20, "outline", $partial: $partial);
+
+		display: inline-block;
+
+		&::before {
+			display: inline-block;
+			padding: to-rem(9) to-rem(12);
+			transform: translateX(-#{to-rem(2)});
+		}
+
+		&:hover,
+		&:focus {
+			&::before {
+				background-color: $db-color-cool-gray-200;
+			}
+		}
+
+		&::-webkit-details-marker {
+			display: none;
+		}
+		// … and using some other declaration for mozilla firefox
+		&:first-of-type {
+			list-style-type: none;
+		}
+	}
+
+	// Menu list
+	menu,
+	ul {
+		filter: drop-shadow($box-shadow);
+		margin-block-start: 1rem;
+		padding-left: 0;
+		position: absolute;
+		width: min-content;
+		z-index: $z-index-cmp-overflow-menu-menu;
+
+		border-radius: $overflowMenu---borderRadius;
+
+		background-color: $overflowMenu---backgroundColor;
+
+		// Little triangle on the overlay
+		&::before {
+			border-bottom: $overflowMenu-triangle--borderSize solid
+				$overflowMenu---backgroundColor;
+			border-left: $overflowMenu-triangle--borderSize solid transparent;
+			border-right: $overflowMenu-triangle--borderSize solid transparent;
+			content: "";
+			height: 0;
+			position: absolute;
+			transform: translate(to-rem(12), -#{to-rem(13)});
+			width: 0;
+		}
+
+		li {
+			button,
+			a {
+				background-color: $overflowMenu---backgroundColor;
+				display: block;
+				padding: to-rem(16) to-rem(32) to-rem(16) to-rem(16); // TODO: replace by correct spacings
+
+				font-weight: 400;
+
+				text-decoration: none;
+
+				border-radius: unset;
+
+				&:hover,
+				&:focus {
+					background-color: $overflowMenu-item-hover-backgroundColor;
+					color: inherit;
+				}
+			}
+			&:first-child {
+				button,
+				a {
+					border-top-left-radius: $overflowMenu---borderRadius;
+					border-top-right-radius: $overflowMenu---borderRadius;
+				}
+			}
+			&:last-child {
+				button,
+				a {
+					border-bottom-left-radius: $overflowMenu---borderRadius;
+					border-bottom-right-radius: $overflowMenu---borderRadius;
+				}
+			}
+		}
+	}
+	&[data-horizontal-position="opposite"] {
+		menu,
+		ul {
+			right: 0;
+
+			&::before {
+				right: 0;
+				transform: translate(-#{to-rem(12)}, -#{to-rem(13)});
+			}
+		}
+	}
+	menu {
+		list-style-type: ""; // Disable list style type, but prevent postcss-list-style-safari-fix transformation
+
+		li {
+			overflow-x: hidden;
+		}
+
+		button {
+			line-height: inherit;
+			text-align: left;
+			width: 100%;
+		}
+	}
+
+	// Achieving a full viewport clickarea for closing the overflow menu
+	&[open] summary::after {
+		content: "\00A0";
+		display: inline-block;
+		height: 100vh;
+		left: 0;
+		position: fixed;
+		top: 0;
+		width: 100vw;
+		z-index: $z-index-cmp-overflow-menu-overlay;
+	}
+}

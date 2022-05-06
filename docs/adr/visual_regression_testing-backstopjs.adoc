@@ -1,0 +1,10 @@
+*Status of this document: in progress*
+
+After an link:https://db.de/v63dxv[evaluation (only available internally)] we've decided to use BackstopJS for local testing previous to commiting / providing a new release.
+
+The software is taking reference screenshots (currently from the https://db-ui.github.io/core/ environment) for each pattern individually and compares them with screenshots being made on the local environment during the "test-visual-regression-test" npm script is running.
+
+The tests itself aren't included in the npm test script, as they are both long-running and ressource-hungry, and thatfor shouldn't get executed within the pipeline (at the moment), as they are mainly meant to get executed by the developer through their work.
+The files are being stored within the "tests/" folder, which includes both the config as well as screenshots in a subfolder.
+
+BackstopJS is using Chrome Headless to render the tests, which is perfectly in sync with our upcoming link:browser_support.adoc[browser strategy]. And BackstopJS as well supports simple simulated user interactions like hover and click, which we'd like to test as well depending on defined styles for those.

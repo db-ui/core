@@ -1,0 +1,103 @@
+@import "../../../css/partials.meta";
+@import "accordion.variables";
+
+.cmp-accordion {
+	border-bottom: 1px solid $db-color-cool-gray-200;
+	padding-left: var(--db-accordion---paddingLeft);
+	padding-right: $accordion---paddingRight;
+	--db-accordion---paddingLeft: #{to-rem($accordion---paddingLeft)};
+
+	summary {
+		@include icon(glyph(chevron-right), 24, "outline", $partial: $partial);
+
+		height: to-rem(48);
+		display: flex;
+		align-items: center;
+		// Negating the padding left for moving the element into that direction with the same measures
+		transform: translateX(calc(var(--db-accordion---paddingLeft) * -1));
+		width: calc(
+			100% + var(--db-accordion---paddingLeft) + #{$accordion---paddingRight}
+		);
+
+		// Replace existing marker with an icon from the library
+		&::-webkit-details-marker {
+			display: none;
+		}
+		// … and using some other declaration for Mozilla Firefox
+		&:first-of-type {
+			list-style-type: none;
+		}
+
+		// Icon horizontal space
+		&::before {
+			--icon-margin-left: #{to-rem(14)};
+			--icon-margin-right: #{to-rem(8)};
+		}
+
+		& + p {
+			margin-top: 0;
+		}
+	}
+	// TODO: This might get simplified in the future with @nest
+	&[open] > summary {
+		&::before {
+			content: glyph(expand-less);
+		}
+	}
+
+	// Emphasis
+	&%emphasis-High {
+		// Calculate especially depending on the icons sizes difference
+		--db-accordion---paddingLeft: #{to-rem($accordion---paddingLeft + 8)};
+
+		summary {
+			font-weight: 700;
+			height: to-rem(56);
+
+			&::before {
+				--icon-font-size: #{to-rem(32)};
+			}
+		}
+	}
+
+	&[data-emphasis="high"] {
+		@extend %emphasis-High;
+	}
+
+	// Sizes
+	&%size-Small {
+		// Calculate dependending on the icons sizes and margins difference
+		--db-accordion---paddingLeft: #{to-rem($accordion---paddingLeft - 12)};
+
+		summary {
+			height: to-rem(40);
+			font-size: to-rem(14);
+
+			&::before {
+				--icon-font-size: #{to-rem(20)};
+				--icon-margin-left: #{to-rem(6)};
+				--icon-margin-right: #{to-rem(6)};
+			}
+		}
+	}
+	&%size-Large {
+		// Calculate especially depending on the icons sizes difference
+		--db-accordion---paddingLeft: #{to-rem($accordion---paddingLeft + 8)};
+
+		summary {
+			height: to-rem(64);
+			font-size: to-rem(20);
+
+			&::before {
+				--icon-font-size: #{to-rem(32)};
+			}
+		}
+	}
+
+	&[data-size="small"] {
+		@extend %size-Small;
+	}
+	&[data-size="large"] {
+		@extend %size-Large;
+	}
+}

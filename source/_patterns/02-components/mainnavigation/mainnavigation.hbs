@@ -1,0 +1,29 @@
+<nav class="cmp-mainnavigation" id="mainnavigation{{styleguide-demo-mainnavigation-suffix}}">
+	<input type="checkbox" id="toggle_mainnavigation{{styleguide-demo-mainnavigation-suffix}}">
+	<label for="toggle_mainnavigation{{styleguide-demo-mainnavigation-suffix}}" title="Toggle main navigation" class="is-site-name">{{ sitename }}</label>
+	<ul>
+		{{#each menuItems }}
+		<li{{#if menuSubItems }} aria-haspopup="true"{{/if }}>
+			{{> elements-link }}
+
+			{{#if menuSubItems }}
+			<ul>
+				{{#each menuSubItems }}
+					<li{{#if menuSubSubItems }} aria-haspopup="true"{{/if }}>
+						{{> elements-link }}
+
+						{{#if menuSubSubItems }}
+							<ul>
+								{{#each menuSubSubItems }}
+									<li>{{> elements-link }}</li>
+								{{/each }}
+							</ul>
+						{{/if }}
+					</li>
+				{{/each }}
+			</ul>
+			{{/if }}
+		</li>
+		{{/each }}
+	</ul>
+</nav>

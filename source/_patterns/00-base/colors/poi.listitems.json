@@ -1,0 +1,54 @@
+{
+	"listItems": [
+		{
+			"name": "food & drink",
+			"hex": "#f39200",
+			"scssvariable": "$db-color-food-drink: $db-color-orange-500"
+		},
+		{
+			"name": "health",
+			"hex": "#a9455d",
+			"scssvariable": "$db-color-health: $db-color-burgundy-500"
+		},
+		{
+			"name": "things to know",
+			"hex": "#858379",
+			"scssvariable": "$db-color-things-to-know: $db-color-warm-gray-500"
+		},
+		{
+			"name": "community facilities",
+			"hex": "#00a099",
+			"scssvariable": "$db-color-community-facilities: $db-color-turquoise-500"
+		},
+		{
+			"name": "DB services & facilities",
+			"hex": "#0c3992",
+			"scssvariable": "$db-color-db-services-facilities: $db-color-blue-600"
+		},
+		{
+			"name": "shopping",
+			"hex": "#814997",
+			"scssvariable": "$db-color-shopping: $db-color-violett-500"
+		},
+		{
+			"name": "arts & culture",
+			"hex": "#e93e8f",
+			"scssvariable": "$db-color-arts-culture: $db-color-pink-500"
+		},
+		{
+			"name": "leisure",
+			"hex": "#408335",
+			"scssvariable": "$db-color-leisure: $db-color-green-500"
+		},
+		{
+			"name": "services",
+			"hex": "#309fd1",
+			"scssvariable": "$db-color-services: $db-color-cyan-500"
+		},
+		{
+			"name": "guidance",
+			"hex": "#3c414b",
+			"scssvariable": "$db-color-guidance: $db-color-cool-gray-600"
+		}
+	]
+}

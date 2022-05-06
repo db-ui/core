@@ -1,0 +1,14 @@
+*.plugin.js
+*.min.css
+source/fonts/**/sources/
+source/pattern-template/
+sources/
+tests/
+public/
+dist/
+.vscode
+.idea
+dependencyGraph.json
+source/js/*.min.js*
+package-lock.json
+*.hbs

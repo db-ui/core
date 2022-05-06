@@ -1,0 +1,38 @@
+*Status of this document: in progress*
+
+We've partly been asked why we wouldn't have used one of all of the other existing Frontend frameworks and libraries, like e.g. Foundation or Bootstrap.
+
+In general all of those solutions are fine - but they are a) solving some other problem, b) aren't meeting the requirements of a stable basis for being used in a professional environment (like e.g. accessibility, performance and maintainability) and c) are mostly overloaded by expectations that they couldn't fulfill at all.
+
+## Why you won't need a framework
+
+Those frameworks mainly provide a holistic stack of elements and patterns with the need to only tweak some variables or similar configurations, solving the problem of missing creative ressources or concepts in other projects or their total absence. So their approach additionally needs to serve a lot of different constellations and purposes, which produces overhead and results in inconsistency and mistakes.
+As we're having an existing specification which is being developed ongoingly as well, there's no need for an either opinionated or easified framework.
+
+Historically they even also helped to circumvent the different browser inconsistencies. But as those are both shrinking and you'll need flexibility to provide an individual solution to your specific problem in the end, those monolithic frameworks don't do the trick any more.
+
+Have a look at the following article for information on this topic: https://dev.to/teamxenox/do-we-really-need-a-css-framework-4ma6
+
+### Not our process
+
+Even if we would consider using one of those frameworks, the process would be giving everbody a headache from the very beginning:
+
+* Identifiying the difference of our specifications to the defintions within the framework
+* Identify the possibilities and options to overwrite or reconfigure those aspects
+* Fill in all of those variables
+* Do some more overwrites for non-existing configurations (urg!)
+* Introduce new patterns based on those basic styles (with potentially further overwrites)
+* Ensuring the testing aspects of all of those individual developments
+
+Especially all of the necessary individual developments are blocking the aspects which are only remaining after all regarding "community tested code" and extensibility.
+
+### Helpers
+
+The frameworks have a broad range of mechanisms to differentiate in between the possible variants for styling. Some are clearly developing into a semantic direction, but still include styling descriptive "helper classes" - others are mainly based on the latter.
+There are link:semantics.adoc[pretty good reasons] why you wouldn't want to relate on styling based classes at all, but define your HTML and it's naming strictly in a semantic manner, and with minimal overhead in case of code of all types.
+
+### Bootstraps spread
+
+Some might say that e.g. Bootstrap is one of the most used frameworks out there. So is WordPress for "CMS". Or PHP as a language for server on the web. But while all of those are still valid solutions, they wouldn't necessarily be the solution for every problem out there. And all of those solutions are only used to some extend in professional Web Development, as we've confirmed during a research specifically for Bootstrap.
+
+Bootstraps popularity is mainly based as it's widely included in simple themes and provides you with the possibility to include a heavily (by its owners) optinionated styling system with specific logic on how things work and how the configurations are inheriting from each other. For doing professional, scaling, individual Frontend development, this is a … pain in the bucket, as we've validated by talking to a lot of colleagues and gained insights into how other web worker and companies are rolling due to conferences and other alignments.

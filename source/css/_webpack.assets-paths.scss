@@ -1,0 +1,4 @@
+// If this library is used as an npm dependency, and the source files should be included rather than css, this corrects the paths.
+$icons-path: "~@db-ui/core/dist/icons/";
+$images-path: "~@db-ui/core/dist/images/";
+$fonts-path: "~@db-ui/core/dist/fonts/";

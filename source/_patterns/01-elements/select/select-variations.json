@@ -1,0 +1,24 @@
+{
+	"variations": [
+		{
+			"variant": "semitransparent",
+			"id": "select01",
+			"label": "Select label"
+		},
+		{
+			"variant": "white",
+			"id": "select02",
+			"label": "Select label"
+		},
+		{
+			"variant": "solid",
+			"id": "select03",
+			"label": "Select label"
+		},
+		{
+			"variant": "outline",
+			"id": "select04",
+			"label": "Select label"
+		}
+	]
+}

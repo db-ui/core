@@ -1,0 +1,28 @@
+{
+	"icon-size": "24",
+	"icon-style": "outline",
+	"default": true,
+	"icons": [
+		{
+			"icon-glyph": "entry-aid"
+		},
+		{
+			"icon-glyph": "luggage-rack"
+		},
+		{
+			"icon-glyph": "medical"
+		},
+		{
+			"icon-glyph": "power-outlet"
+		},
+		{
+			"icon-glyph": "buggy"
+		},
+		{
+			"icon-glyph": "standing-room"
+		},
+		{
+			"icon-glyph": "air-condition"
+		}
+	]
+}

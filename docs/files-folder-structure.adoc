@@ -1,0 +1,56 @@
+## Files and folder structure
+
+patternlab system structure files and folders are formatted in italic. Most common aspects like `package.json` are being left out.
+
+* `docs`: including relevant documentation as well as ADRs
+* `_helpers_`: storing handlebars helper scripts
+* `_public_`: for the _patternlab_ system exports
+* `scripts`: internally used scripts for maintenance tasks
+* `_source_`: contains all of our individual pattern related files
+** `__annotations_`: possible annotations to the patterns
+** `__data_`: contains global data that could get retrieved within the pattern files
+** `__meta_`: beginning and end (head and foot) code of the pattern files
+** `__patterns_`: contains all of our pattern related files (HTML/hbs, CSS/SCSS, minimal JavaScript). The concept behind the structure is to have all of those technologies stored next to each other in an intuitive folder structure.
+*** `00-base`: Including global styles and "design tokens"
+*** `01-elements`: Simplest pattern type
+*** `02-components`: Grouped elements into components
+*** `03-areas`: Possibility to provide styles that should overwrite elements or components styles based on this context level
+*** `04-pages`: We'd like to provide further (example) pages in the near future, like e.g. an imprint or login
+*** `00-global.md`: Intro page for the patternlab system
+** `_css_`: Skeleton SCSS files that are including the SCSS files within the __patterns_ subfolders
+*** `_pattern-scaffolding.css_`: _patternlab_ system related file for styling the Patternlab UI
+*** `_pattern-scaffolding-project-specific.css_`: individual styles for the _patternlab_ UI
+** `fonts`: Including the relevant Webfonts and Iconfonts, as well as their sources
+** `_images_`: Providing some relevant image files:
+*** `appicons`: Possible app icon files
+*** `icons`: All of the icons as SVG files as well (recommended`: use the Icon Webfont)
+*** `samples`: sample image files
+** `_js_`: target folder for babels JS build process
+** `pattern-template`: Template files to get used by the /scripts/create-component.sh script for creating new components
+* `tests`: BackstopJS testing tools related files (configuration and reference files)
+* `.browserslistrc`: Standard file to including a list of browsers to support, used by e.g. PostCSS
+* `.ecrc`: Configuration file (mainly for excludes for now) for the linter link:https://github.com/editorconfig-checker/editorconfig-checker[`editorconfig-checker`] on code conventions defined by `.editorconfig`, which is brought to us via `super-linter`
+* `.editorconfig`: Including code conventions
+* `.eslintignore`: Files to exclude from eslinting (like e.g. `xo` as well)
+* `.gitattributes`: Including code conventions (EOL)
+* `.gitignore`: Handling files that wouldn't need to get included on git commits
+* `.htmlvalidate.json`: Configuration file for our link:adr/linting-html.adoc[HTML linting via html-validate]
+* `.huskyrc`: Handling git lifecycle tasks (in this case linting previous to a git commit)
+* `.jscpd.json`: Configuration file (mainly for ignores for now) for the linter link:https://github.com/kucherenko/jscpd/[`jscpd`], which is brought to us via `super-linter`
+* `.lighthouse-budget.json`: Configuration file for link:https://web.dev/use-lighthouse-for-performance-budgets/[storing Google Lighthouse performance budgets]
+* `.markdownlintignore`: files and folders to get ignored by Markdownlinter
+* `.markdownlintrc`: Configuring all the relevant rules for markdown linting / https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md
+* `.npmignore`: Handling files that wouldn't need to get included within the NPM package
+* `.pa11yci`: Configuration file for the accessibility testing tool
+* `.postcssrc`: Configuration file for the PostCSS CSS "pastprocessing" tool
+* `.prettierignore`: files and folders to ignore by link:adr/code_style_formatter-prettier.html[_prettier.io_ code formatter]: link:https://prettier.io/docs/en/ignore.html
+* `.prettierrc.json`: link:adr/code_style_formatter-prettier.html[_prettier.io_ code formatter] options configuration file: link:https://prettier.io/docs/en/configuration.html
+* `.stylelintignore`: Ignore file for our link:adr/linting-stylelint.html[_stylelint_ CSS/SCSS/SASS code linter]
+* `.stylelintrc.json`: Configuration file for our link:adr/linting-stylelint.html[_stylelint_ CSS/SCSS/SASS code linter]
+* `.xo-config.json`: Configuration file for our link:adr/linting-xo.html[_xo_ JavaScript code linter]
+* `.yamllint.yml`: yamllint link:https://yamllint.readthedocs.io/en/stable/configuration.html[configuration file]
+* `.commitlintrc.json`: Configuration file for the commitlint tool
+* `_dependencyGraph.json_ (optional)`: This file gets generated as cache/temp file by the _patternlab_ system for persisting the pattern stucture
+* `Dockerfile`: relevant for our CI/CD process
+* `_*.patternlab-config.json_`: These files contain the relevant _patternlab_ system configurations
+* `renovate.json`: Renovate config file

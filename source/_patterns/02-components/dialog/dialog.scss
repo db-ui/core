@@ -1,0 +1,109 @@
+@use "dialog-polyfill/dist/dialog-polyfill.css";
+@import "../../../css/partials.meta";
+@import "dialog.variables";
+
+.cmp-dialog {
+	border: 0;
+	border-radius: 8px;
+	max-width: 90vw;
+
+	padding: to-rem(16); // TODO: replace by general spacing variables
+	@media screen and (min-width: 768px) {
+		// TODO: replace by correct general breakpoint variables
+		padding: to-rem(24); // TODO: replace by general spacing variables
+	}
+
+	font-size: to-rem(14);
+
+	color: $db-color-cool-gray-700;
+
+	// Display the dialog fixed within the middle of the screen (actually some overwrites for the dialog-polyfill CSS)
+	position: fixed;
+	top: 50%;
+	transform: translate(0, -50%);
+	margin-top: 0;
+	// Defining the backdrop colors
+
+	// * native
+	&::backdrop {
+		background-color: $dialog-backdrop--backgroundColor;
+	}
+
+	// * polyfill
+	& + .backdrop {
+		background-color: $dialog-backdrop--backgroundColor;
+	}
+
+	// Display the modal via CSS as a no-javascript fallback
+	&:target {
+		.no-js & {
+			display: initial;
+		}
+	}
+
+	header {
+		color: $db-color-cool-gray-800;
+
+		transform: translateY(-#{to-rem(9)});
+
+		.elm-headline {
+			font-weight: 700;
+			// Remove the headlines margin-top, as we're in a dialog that has a padding on it's own
+			margin-top: 0;
+			margin-right: to-rem(24);
+			margin-bottom: to-rem(6);
+
+			font-size: to-rem(18);
+			line-height: to-rem(
+				24
+			); // TODO: Check whether this is a settting that should be more global
+			@media screen and (min-width: 768px) {
+				// TODO: replace by correct general breakpoint variables
+				font-size: to-rem(24);
+				line-height: to-rem(
+					28
+				); // TODO: Check whether this is a settting that should be more global
+			}
+
+			text-align: center;
+		}
+
+		.elm-link {
+			&.is-close {
+				@include icon(glyph(close), 24, "outline", $partial: $partial);
+				@include is-icon-text-replace();
+
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+		}
+	}
+
+	main {
+		p {
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+
+	footer {
+		margin-top: to-rem(18);
+		display: flex;
+
+		.elm-button {
+			& + .elm-button {
+				margin-left: to-rem(16); // TODO: Replace by spacing variable
+			}
+		}
+		&[data-alignment="end"] {
+			justify-content: flex-end;
+		}
+		&:not([data-alignment="end"]) {
+			.elm-button {
+				flex-grow: 1;
+			}
+		}
+	}
+}

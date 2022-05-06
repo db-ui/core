@@ -1,0 +1,84 @@
+{
+	"listItems": [
+		{
+			"name": "ICE",
+			"hex": "#282d37",
+			"scssvariable": "$db-color-ice: $db-color-cool-gray-700"
+		},
+		{
+			"name": "IC",
+			"hex": "#646973",
+			"scssvariable": "$db-color-ic: $db-color-cool-gray-500"
+		},
+		{
+			"name": "EC",
+			"hex": "#646973",
+			"scssvariable": "$db-color-ec: $db-color-cool-gray-500"
+		},
+		{
+			"name": "RE",
+			"hex": "#878c96",
+			"scssvariable": "$db-color-re: $db-color-cool-gray-400"
+		},
+		{
+			"name": "RB",
+			"hex": "#afb4bb",
+			"scssvariable": "$db-color-rb: $db-color-cool-gray-300"
+		},
+		{
+			"name": "S-Bahn",
+			"hex": "#2a7230",
+			"scssvariable": "$db-color-s-bahn: $db-color-green-600"
+		},
+		{
+			"name": "U-Bahn",
+			"hex": "#1455c0",
+			"scssvariable": "$db-color-u-bahn: $db-color-blue-500"
+		},
+		{
+			"name": "Tram",
+			"hex": "#a9455d",
+			"scssvariable": "$db-color-tram: $db-color-burgundy-500"
+		},
+		{
+			"name": "Intercity Bus",
+			"hex": "#e93e8f",
+			"scssvariable": "$db-color-intercity-bus: $db-color-pink-500"
+		},
+		{
+			"name": "Bus",
+			"hex": "#814997",
+			"scssvariable": "$db-color-bus: $db-color-violett-500"
+		},
+		{
+			"name": "ship",
+			"hex": "#309fd1",
+			"scssvariable": "$db-color-ship: $db-color-cyan-500"
+		},
+		{
+			"name": "plane",
+			"hex": "#00a099",
+			"scssvariable": "$db-color-plane: $db-color-turquoise-500"
+		},
+		{
+			"name": "taxi",
+			"hex": "#ffd800",
+			"scssvariable": "$db-color-taxi: $db-color-yellow-500"
+		},
+		{
+			"name": "carsharing",
+			"hex": "#f39200",
+			"scssvariable": "$db-color-carsharing: $db-color-orange-500"
+		},
+		{
+			"name": "bikesharing",
+			"hex": "#63a615",
+			"scssvariable": "$db-color-bikesharing: $db-color-light-green-500"
+		},
+		{
+			"name": "walking",
+			"hex": "#d7dce1",
+			"scssvariable": "$db-color-walking: $db-color-cool-gray-200"
+		}
+	]
+}

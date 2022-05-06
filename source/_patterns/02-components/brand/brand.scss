@@ -1,0 +1,33 @@
+@import "brand.variables";
+
+.cmp-brand {
+	.elm-image {
+		&.is-logo {
+			float: left;
+			margin-top: -#{to-rem(2)};
+		}
+	}
+
+	.rea-header & {
+		padding-top: to-rem(18);
+		@media screen and (min-width: 1024px) {
+			padding-top: $rea-header-cmp-brand-padding-top; // * TODO: possibly rework variable naming
+
+			.is-site-name {
+				&::before {
+					// * TODO: introduce is-icon as a mixin and change the following declarations afterwards
+					content: none !important;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 1023px) {
+		.cmp-mainnavigation ~ & {
+			.rea-header & {
+				.is-site-name {
+					display: none;
+				}
+			}
+		}
+	}
+}

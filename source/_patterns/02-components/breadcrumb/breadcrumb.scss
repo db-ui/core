@@ -1,0 +1,64 @@
+@import "../../../css/partials.meta";
+@import "breadcrumb.variables";
+
+.cmp-breadcrumb {
+	color: $db-color-cool-gray-500;
+	font-size: to-rem(12);
+
+	a {
+		color: inherit;
+	}
+
+	ol {
+		display: flex;
+
+		& > * {
+			align-items: center;
+			display: inline-flex;
+			margin-right: to-rem(3);
+
+			[aria-current="location"],
+			[aria-current="page"] {
+				font-size: to-rem(14);
+				color: $db-color-cool-gray-700;
+			}
+
+			.elm-link {
+				text-decoration: none;
+
+				padding: to-rem(1) to-rem(3) to-rem(1) to-rem(4);
+
+				border-radius: to-rem(4);
+
+				&:hover {
+					background-color: $breadcrumb-link-hover-backgroundColor;
+				}
+				&:active {
+					background-color: $breadcrumb-link-active-backgroundColor;
+				}
+			}
+
+			&:first-child {
+				@include icon(glyph(home), $size: 20, $partial: $partial);
+				&::before {
+					--icon-margin-right: #{to-rem(3)};
+				}
+			}
+
+			&:not(:first-child) {
+				@include icon(
+					glyph($breadcrumb-divider--icon),
+					$size: 20,
+					$partial: $partial
+				);
+
+				&::before {
+					--icon-font-size: #{to-rem(14)};
+					--icon-margin-right: 0;
+					--icon-margin-left: -#{to-rem(2)};
+					color: $db-color-cool-gray-400;
+				}
+			}
+		}
+	}
+}

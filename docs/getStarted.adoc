@@ -1,0 +1,200 @@
+# Get started as Application Developer
+
+## Purpose
+
+You are an Application Developer and you want to use DB UI Core in your own application.
+
+## Options
+
+There are multiple options how to use DB UI Core:
+
+* Manually copy the artifacs to your project
+* Use npm package
+
+## How to use
+Download DB UI Core to get the compiled CSS (and the small parts of JavaScript), source code, or include it with npm package manager (repository on _npmjs.com_ or _yarn_).
+
+### Use _npmjs.com_ or _yarn_ (npm package, recommended)
+In case you'd like to use DB UI Core as a dependency in your (frontend) build process and you even also care about handling DB UI Core as a dependency (e.g. for updates etc.), you need to install it as a dependency to your project and then link it within your HTML (CSS file) or within your SCSS.
+Please have a look into the link:docs/getStarted.adoc[Docs / Get Started] for detailed instructions.
+
+```bash
+npm i -save @db-ui/core
+```
+
+### Download or CDN references
+
+You could as well download all of the files that you would elsewhere retrieve via the node package directly or reference them from a CDN, as provided by the several different services listed e.g. at https://yarnpkg.com/package/@db-ui/core
+
+[source,bash]
+----
+npm i --save @db-ui/core
+----
+
+This should add a new entry to your `package.json` file:
+[source,json]
+----
+"dependencies": {
+	…
+	"@db-ui/core": "^x.y.z"
+}
+----
+
+* You will find the relevant files at `node_modules/@db-ui/core`
+
+* Copy the relevant files to your app or link them. Most of the build tools support automatic copying.
+
+#### Via HTML stylesheet include
+
+[source,html]
+----
+<link rel="stylesheet" href="<PATH>/enterprise/db-ui-core.css" type="text/css">
+----
+
+#### Via SCSS import
+
+[source,scss]
+----
+@import "@db-ui/core/sources/css/enterprise/db-ui-core";
+----
+
+Please keep in mind, that you would need to set your `include path` also known as `load path` depending on your setup for the sass compiler to find the correct `node_modules` folder, e.g. like the following (this is similar to how other frameworks and libraries like link:https://github.com/twbs/bootstrap-npm-starter/blob/main/package.json#L18[Bootstrap] are handling this):
+
+#### link:https://npmjs.com/sass[`sass` compiler]
+
+[source,json]
+----
+{
+	"scripts": {
+    	"css-compile": "sass --load-path=node_modules style.scss:style.css",
+	}
+}
+----
+
+#### link:https://npmjs.com/node-sass[`node-sass` Compiler]
+
+[source,json]
+----
+{
+	"scripts": {
+    	"css-compile": "node-sass --include-path node_modules style.scss -o assets/css/",
+	}
+}
+----
+
+## Example: how to use DB UI Core in Angular
+
+First install npm package as described above.
+Now you can choose if you want to use compiled css files or sass files.
+
+TIP: We recommend to import the scss files as in case of angular, the angular cli will optimize, compress and convert all assets automatically during the build process.
+
+Independently you need to add to `angular.json` a new line to assets like this:
+
+[source,json]
+----
+"assets": [
+	"src/favicon.ico",
+	"src/assets",
+	"src/site.webmanifest",
+	{ "glob": "**/*", "input": "node_modules/@db-ui/core/dist", "output": "." }
+],
+"stylePreprocessorOptions": {
+    "includePaths": [
+        "node_modules/"
+    ]
+}
+----
+
+It will copy on *npm build* the content of *core/dist* folder to *dist* folder in the angular app, that is deployed on *ng serve* and will give you access to assets like images, icons, etc. exported by DB UI Core. Don't forget to add it to any necessary configuration part included, like e.g. `projects.PROJECTNAME.architect.build.options` as well as `projects.PROJECTNAME.architect.test.options`
+
+### Use scss files:
+
+You can use the overall scss file or pick the relevant parts.
+E.g. you can import the overall scss files to your `src/styles.scss` by adding the following imports based on your bundler in use.
+
+#### Webpack based bundlers (e.g. Angular or Vue CLI)
+
+[source,scss]
+----
+@import "@db-ui/core/sources/css/webpack.assets-paths";
+@import "@db-ui/core/sources/css/enterprise/db-ui-core";
+----
+
+Please keep in mind, that you would need to set your include path within the `angular.json` configuration file, like this:
+
+[source,json]
+----
+"stylePreprocessorOptions": {
+    "includePaths": [
+        "node_modules/"
+    ]
+}
+----
+
+Or within your `vue.config.js` (for Vue 2 or 3 CLI):
+
+[source,json]
+----
+module.exports = {
+  (...)
+  css: {
+    loaderOptions: {
+      sass: {
+        sassOptions: {
+          includePaths: [path.resolve(__dirname, "node_modules")],
+        },
+      },
+    },
+  },
+};
+----
+
+#### Rollup based bundlers (e.g. Vue with Vite)
+
+For Rollup based bundlers like Vite or Parcel we're providing the following SCSS endpoint:
+
+[source,scss]
+----
+@import "@db-ui/core/sources/css/rollup.assets-paths";
+@import "@db-ui/core/sources/css/enterprise/db-ui-core";
+----
+
+
+### Use css files:
+
+If you want to use the compiled CSS directly, you can refence the css files in your index.html like this:
+
+[source,html]
+----
+<link rel="stylesheet" href="css/enterprise/db-ui-core.css" type="text/css">
+----
+
+## Documentation
+
+Please find our Architectural Decision Records within the link:adr/[adr subfolder].
+
+We're documenting our work via AsciiDoc files: http://asciidoc.org/ / https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/
+
+## JavaScript polyfill necessary for Microsoft Internet Explorer 11 and Edge version 12 till 14
+
+In general we're using CSS variables / CSS Custom Properties which would need a polyfill for Microsoft Internet Explorer 11 and Edge version 12 till 14 support like link:https://github.com/nuxodin/ie11CustomProperties[ie11CustomProperties].
+
+
+////
+	Inspirational sources for this page
+	- https://boltdesignsystem.com/docs/getting-started/index.html
+	- https://liquid.merck.design/ & https://docs.merck.design/?selectedKind=Intro&selectedStory=Quick%20Start
+	- https://primer.style/components
+	- https://palette.artsy.net/home/getting-started/
+	- https://github.com/grommet/grommet
+	- https://sap.github.io/ui5-webcomponents/playground/
+	- https://foundation.zurb.com/develop/getting-started.html
+	- https://bulma.io/documentation/overview/start/
+	- https://getbootstrap.com/docs/4.3/getting-started/introduction/
+	- https://material.io/develop/web/docs/getting-started/
+	- https://csslayout.io/patterns/
+	- https://github.com/adobe/spectrum-css
+	- https://github.com/telekom/scale/
+	- https://designsystemsrepo.com/design-systems/
+////

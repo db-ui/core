@@ -1,0 +1,17 @@
+// Define the path for both image and font folders
+$icons-path: "../icons/" !default;
+$images-path: "../images/" !default;
+$fonts-path: "../fonts/" !default;
+
+// General variables by DB UI Base
+@import "@db-ui/base/build/css/variables";
+
+@import "../_patterns/00-base/colors/colors";
+@import "../_patterns/00-base/type/fonts";
+@import "../_patterns/00-base/icons/icons.variables";
+@import "../_patterns/00-base/icons/icons.font-faces";
+
+:root {
+	--db_ic_search_24: url(#{$icons-path}functional/images/action/db_ic_search_24.svg);
+	--db_ic_expand_more_20: url(#{$icons-path}functional/images/navigation/db_ic_expand_more_20.svg);
+}

@@ -1,0 +1,13 @@
+@import "../../../css/db-ui-core.variables";
+
+$cmp-table-cell-height-36: to-rem(4) !default; // 36px cell height
+$table-cell-height52-paddingVertical: to-rem(14) !default; // 52px cell height
+$table-cell-height68-paddingVertical: to-rem(22) !default; // 68px cell height
+
+$table-line--borderColor: $db-color-cool-gray-200 !default;
+
+$table-row-zebra-color: rgba($db-color-cool-gray-700, 0.07) !default;
+
+$table-densitySmall--padding: $db-spacing-s !default;
+$table-densityRegular--padding: $db-spacing-sm !default;
+$table-densityLarge--padding: $db-spacing-m !default;

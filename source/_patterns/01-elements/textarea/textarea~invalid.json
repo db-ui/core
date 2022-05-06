@@ -1,0 +1,6 @@
+{
+	"id": "textarea05",
+	"value": "Inpu",
+	"validation": " minlength=\"5\" required",
+	"describedbyid": "textarea05hint"
+}
