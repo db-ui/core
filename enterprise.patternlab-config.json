@@ -57,6 +57,7 @@
 			"iframeResizer.contentWindow.min.js": "node_modules/iframe-resizer/js/iframeResizer.contentWindow.min.js",
 			"details-element-polyfill.js": "node_modules/details-element-polyfill/dist/details-element-polyfill.js",
 			"dialog-polyfill.js": "node_modules/dialog-polyfill/dist/dialog-polyfill.js",
+			"dialog-polyfill.css": "node_modules/dialog-polyfill/dist/dialog-polyfill.css",
 			"sitemap": "./source/sitemap.xml"
 		},
 		"public": {
@@ -74,6 +75,7 @@
 			"iframeResizer.contentWindow.min.js": "public/js/iframeResizer.contentWindow.min.js",
 			"details-element-polyfill.js": "public/js/details-element-polyfill.js",
 			"dialog-polyfill.js": "public/js/dialog-polyfill.js",
+			"dialog-polyfill.css": "public/css/dialog-polyfill.css",
 			"sitemap": "public/sitemap.xml"
 		}
 	},
