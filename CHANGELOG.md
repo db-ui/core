@@ -90,4 +90,15 @@ In general we've introduced the possibility to control variants and configuratio
 - `DB UI Base` to be an optional config, as it wouldn't get installed and people might want to use the SASS source files for compilation
 - A lot of elements and components got their new styling: buttons, checkbox, headlines, input, links, progress, radio, select, textarea, toggle switch, breadcrumb, cards, dialog, dropdown, links, notification, overflow menu, pagination, table
 - **BREAKING CHANGE** Expander: This component got renamed to "Accordion" and could include one or more content elements
+- **BREAKING CHANGE** / Polyfills: As both [`details`/`summary`](https://caniuse.com/details) and [`dialog`](https://caniuse.com/dialog) elements reached great support in modern browsers these days, we're only including those for demo purposes from now on, but not as regular `dependencies` any more.
+- The DB Webfonts files have been updated
+- refactor: removing last `bulma` remains. While this is still a great framework, our codebase is now mature enough to even also work without it. [!350]
 - The DB Webfonts files have been updated -->
+
+## [2.0.0-42] - 2022-05-06
+
+### Fixed
+
+#### Package consumption
+
+- Integrating the `dialog-polyfill` CSS only for demo purposes [#288], but not including it in the CSS anymore
