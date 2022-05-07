@@ -1,7 +1,9 @@
 ## Files and folder structure
 
-patternlab system structure files and folders are formatted in italic. Most common aspects like `package.json` are being left out.
+link:https://patternlab.io/[pattern lab] system structure files and folders are formatted in italic. Most common aspects like `package.json` are being left out.
 
+* `.husky`: Storing the Git lifecycle scripts / hooks like e.g. regarding [commit message linting](adr/linting-git.adoc) or pre-commit code formatting via link:adr/code_style_formatter-prettier.adoc[prettier] supported by link:https://www.npmjs.com/package/husky[husky]
+* `.vscode`: Providing Microsoft Visual Studio Code IDE configurations, currently recommended extensions
 * `docs`: including relevant documentation as well as ADRs
 * `_helpers_`: storing handlebars helper scripts
 * `_public_`: for the _patternlab_ system exports
@@ -18,17 +20,22 @@ patternlab system structure files and folders are formatted in italic. Most comm
 *** `04-pages`: We'd like to provide further (example) pages in the near future, like e.g. an imprint or login
 *** `00-global.md`: Intro page for the patternlab system
 ** `_css_`: Skeleton SCSS files that are including the SCSS files within the __patterns_ subfolders
-*** `_pattern-scaffolding.css_`: _patternlab_ system related file for styling the Patternlab UI
-*** `_pattern-scaffolding-project-specific.css_`: individual styles for the _patternlab_ UI
-** `fonts`: Including the relevant Webfonts and Iconfonts, as well as their sources
+*** `helpers`: Providing some global SCSS helpers that are supporting common use cases
+*** `_db-ui-core.variables.scss`: Including global variables for DB UI Core that is only being handled as a SCSS partial
+*** `_rollup.assets-paths.scss` & `_webpack.assets-paths.scss`: Include either one of those in your SCSS file depending if and which bundler you're using in your setup before you `@import "db-ui-core";`; we're adapting the paths to assets in here differentiated by the different bundlers formats
+*** `db-ui-core.general.scss`: Providing some general global styles (especially) for DB UI Elements to be included in every Web Component and thatfor is actually meant to get exported during build as `db-ui-core.general.css`
+*** `db-ui-core.vars.scss`: Providing global variables (especially) for DB UI Elements that is actually meant to get exported during build as `db-ui-core.vars.css`
+*** `_pattern-scaffolding.css_`: _patternlab_ system related file for styling the _pattern lab_ UI
+*** `_pattern-scaffolding-project-specific.scss_`: individual styles for the _pattern lab_ UI
+** `fonts`: Including the relevant Webfonts, as well as their sources
 ** `_images_`: Providing some relevant image files:
 *** `appicons`: Possible app icon files
-*** `icons`: All of the icons as SVG files as well (recommended`: use the Icon Webfont)
-*** `samples`: sample image files
 ** `_js_`: target folder for babels JS build process
 ** `pattern-template`: Template files to get used by the /scripts/create-component.sh script for creating new components
+** `samples`: sample image and video files
 * `tests`: BackstopJS testing tools related files (configuration and reference files)
 * `.browserslistrc`: Standard file to including a list of browsers to support, used by e.g. PostCSS
+* `.commitlintrc.json`: Configuration file for the commitlint tool
 * `.ecrc`: Configuration file (mainly for excludes for now) for the linter link:https://github.com/editorconfig-checker/editorconfig-checker[`editorconfig-checker`] on code conventions defined by `.editorconfig`, which is brought to us via `super-linter`
 * `.editorconfig`: Including code conventions
 * `.eslintignore`: Files to exclude from eslinting (like e.g. `xo` as well)
@@ -39,8 +46,9 @@ patternlab system structure files and folders are formatted in italic. Most comm
 * `.jscpd.json`: Configuration file (mainly for ignores for now) for the linter link:https://github.com/kucherenko/jscpd/[`jscpd`], which is brought to us via `super-linter`
 * `.lighthouse-budget.json`: Configuration file for link:https://web.dev/use-lighthouse-for-performance-budgets/[storing Google Lighthouse performance budgets]
 * `.markdownlintignore`: files and folders to get ignored by Markdownlinter
-* `.markdownlintrc`: Configuring all the relevant rules for markdown linting / https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md
+* `.markdownlintrc.json`: Configuring all the relevant rules for markdown linting / https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md
 * `.npmignore`: Handling files that wouldn't need to get included within the NPM package
+* `.nvmrc`: Currently used node version as a configuration for the [Node Version Manager](https://github.com/nvm-sh/nvm)
 * `.pa11yci`: Configuration file for the accessibility testing tool
 * `.postcssrc`: Configuration file for the PostCSS CSS "pastprocessing" tool
 * `.prettierignore`: files and folders to ignore by link:adr/code_style_formatter-prettier.html[_prettier.io_ code formatter]: link:https://prettier.io/docs/en/ignore.html
@@ -49,7 +57,6 @@ patternlab system structure files and folders are formatted in italic. Most comm
 * `.stylelintrc.json`: Configuration file for our link:adr/linting-stylelint.html[_stylelint_ CSS/SCSS/SASS code linter]
 * `.xo-config.json`: Configuration file for our link:adr/linting-xo.html[_xo_ JavaScript code linter]
 * `.yamllint.yml`: yamllint link:https://yamllint.readthedocs.io/en/stable/configuration.html[configuration file]
-* `.commitlintrc.json`: Configuration file for the commitlint tool
 * `_dependencyGraph.json_ (optional)`: This file gets generated as cache/temp file by the _patternlab_ system for persisting the pattern stucture
 * `Dockerfile`: relevant for our CI/CD process
 * `_*.patternlab-config.json_`: These files contain the relevant _patternlab_ system configurations
