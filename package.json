@@ -2,9 +2,9 @@
   "name": "@db-ui/core",
   "version": "2.0.0-42",
   "description": "",
-  "style": "dist/css/enterprise/db-ui-core.css",
-  "sass": "source/css/enterprise/db-ui-core.scss",
-  "main": "dist/js/main.min.js",
+  "style": "./dist/css/enterprise/db-ui-core.css",
+  "sass": "./sources/css/enterprise/db-ui-core.scss",
+  "browser": "./dist/js/main.min.js",
   "bugs": {
     "url": "https://github.com/db-ui/core/issues"
   },
