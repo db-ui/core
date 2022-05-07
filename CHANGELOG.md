@@ -95,6 +95,16 @@ In general we've introduced the possibility to control variants and configuratio
 - refactor: removing last `bulma` remains. While this is still a great framework, our codebase is now mature enough to even also work without it. [!350]
 - The DB Webfonts files have been updated -->
 
+## [2.0.0-43] - 2022-05-07
+
+### Changed
+
+#### Package consumption
+
+- updated files & folders documentation
+- removed undocumented and obsolete component `Toasts`, that is included in the new DB Design System as `Notification` component anyhow
+- further optimized the general projects files definitions within `package.json`
+
 ## [2.0.0-42] - 2022-05-06
 
 ### Fixed
