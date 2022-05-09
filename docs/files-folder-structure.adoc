@@ -3,6 +3,7 @@
 link:https://patternlab.io/[pattern lab] system structure files and folders are formatted in italic. Most common aspects like `package.json` are being left out.
 
 * `.husky`: Storing the Git lifecycle scripts / hooks like e.g. regarding [commit message linting](adr/linting-git.adoc) or pre-commit code formatting via link:adr/code_style_formatter-prettier.adoc[prettier] supported by link:https://www.npmjs.com/package/husky[husky]
+* `.nojekyll`: Preventing the `jekyll` build by GitHub Pages, as we're building our files with our setup (mainly `pattern lab`, `scss` and `babel`)
 * `.vscode`: Providing Microsoft Visual Studio Code IDE configurations, currently recommended extensions
 * `docs`: including relevant documentation as well as ADRs
 * `_helpers_`: storing handlebars helper scripts
