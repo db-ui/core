@@ -1,6 +1,6 @@
 <!-- markdownlint-configure-file { "MD013": false } -->
 
-<img src="source/samples/images/header_image_0.guetzli.jpg" width="1012" height="337" alt="" srcset="source/samples/images/header_image_0.guetzli.2x.jpg 2x, source/samples/images/header_image_0.guetzli.3x.jpg 3x" style="width:100%;height:auto">
+<img src="source/samples/images/header_image_0.guetzli.jpg" alt="" srcset="source/samples/images/header_image_0.guetzli.2x.jpg 2x, source/samples/images/header_image_0.guetzli.3x.jpg 3x"> <!-- width="830" height="276" //-->
 
 # DB UI Core
 
