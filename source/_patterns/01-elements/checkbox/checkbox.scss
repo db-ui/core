@@ -61,4 +61,8 @@
 			opacity: 0.5;
 		}
 	}
+
+	& + label {
+		margin-left: $db-spacing-xs;
+	}
 }

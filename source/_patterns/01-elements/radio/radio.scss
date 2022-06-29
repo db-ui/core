@@ -52,7 +52,7 @@
 	// }
 
 	& + label {
-		margin-left: to-em(4);
+		margin-left: $db-spacing-xs;
 	}
 
 	&:disabled {
