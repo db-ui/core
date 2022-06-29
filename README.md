@@ -33,6 +33,7 @@ DB UI Core provides robust HTML UI components, reusable visual styles, and power
 - [Getting started](docs/getStarted.adoc)
 - [GitHub - DB UI Core](https://github.com/db-ui/core/)
 - [Hosted version of DB UI Core living styleguide](https://db.de/db-ui)
+- [Migrating guide from version 1 of DB UI Core to version 2](docs/migrationGuide.adoc#user-content-db-ui-core-2-0-0-migration-guide)
 
 ## Core principals
 
@@ -106,6 +107,25 @@ Please mind the [conventions for git commits](/docs/conventions.adoc#user-conten
 
 This is only the first version of our framework and we really want your feedback - either within the <a href="https://db.de/krnm74" target="_blank" rel="noopener noreferrer">DB UI Channel by Web Dev Community in Microsoft Teams (only available DB internally)</a>, or directly at [enterprise-design-system@deutschebahn.com](mailto:enterprise-design-system@deutschebahn.com). <!-- markdownlint-disable MD033 -->
 We're particularly keen to add as many examples to the behaviours as possible, to further clarify them.
+
+## FAQ
+
+### Our `scss` / `sass` build doesn't work any more after migrating from version 1 of DB UI Core.
+
+In case that you're retrieving any errors like the following, please check for whether you've [provided the location of your `node_modules` folders path to your sass compiler](docs/migrationGuide.adoc#user-content-db-ui-core-2-0-0-migration-guide):
+
+```
+./src/styles.scss - Error: Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):
+ModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+SassError: Can't find stylesheet to import.
+╷
+│ @use "@csstools/normalize.css/normalize.css";
+│ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+╵
+node_modules\@db-ui\core\sources\css\enterprise\db-ui-core.scss 7:1 @import
+node_modules\@db-ui\core\sources\css\enterprise\db-ui-core-include.scss 4:9 @import
+src\styles.scss 5:9 root stylesheet
+```
 
 ## Deutsche Bahn brand
 
