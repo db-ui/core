@@ -12,8 +12,6 @@ Regarding BREAKING CHANGES in between, please have a look into [the migration gu
 
 And we're still hosting the `CHANGELOG` for any changes up until version 2.0.0 within our internal Git: <https://db.de/lwfv2o> (you need to be logged in to our Deutsche Bahn VPN for these informations)
 
-## [Unreleased]
-
 <!-- ## [2.0.0] - 2022-XX-XX
 
 This part includes all of the changes from `@db-ui/db-ui-core@1.x` to `@db-ui/core@2.0.0` – this summarizes the changes out of the previous prereleases, and is especially only including the relevant aspects for consumers of our package (so we've left out the DB UI Core contributors relevant aspects).
@@ -80,6 +78,27 @@ In general we've introduced the possibility to control variants and configuratio
 - The DB Webfonts files have been updated
 - refactor: removing last `bulma` remains. While this is still a great framework, our codebase is now mature enough to even also work without it. [!350]
 - The DB Webfonts files have been updated -->
+
+## [Unreleased]
+
+### Added
+
+#### Package consumption
+
+- Further hints regarding SCSS consumption (especially on migrating from DB UI Core version 1 to 2)
+
+### Changed
+
+#### Package consumption
+
+- Hardening the font size calculation functions
+
+### Fixed
+
+#### Package consumption
+
+- Checkbox & Radio: Incorrect space in between these elements and their labels
+- Ensuring correct execution of SCSS functions, that would elsewhere get rendered to the CSS output directly
 
 ## [2.0.0-43] - 2022-05-07
 
