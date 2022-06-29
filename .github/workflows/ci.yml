@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: 16
 
-      - name: 📥 Download deps
+      - name: 📥 Download dependencies
         uses: bahmutov/npm-install@v1
 
       - name: 👩‍🍳 Everything but the kitchen sink
