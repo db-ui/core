@@ -14,20 +14,6 @@ And we're still hosting the `CHANGELOG` for any changes up until version 2.0.0 w
 
 ## [Unreleased]
 
-### Added
-
-- Support for providing starterkits
-- Dark-mode styling
-- Ongoing: prefers-reduced-motion related modifications
-- Annotations for the most relevant parts of the patterns
-- Print styles
-
-### Changed
-
-- Ongoing updates regarding [DB Design System UX Guide + Standards](https://marketingportal.extranet.deutschebahn.com/de/ui-komponenten)
-- Ongoing: Evaluating on accessibility and adding necessary declarations as well as semantics
-- style(icons): further optimized the icon styling (regarding bold styling and size)
-
 <!-- ## [2.0.0] - 2022-XX-XX
 
 This part includes all of the changes from `@db-ui/db-ui-core@1.x` to `@db-ui/core@2.0.0` – this summarizes the changes out of the previous prereleases, and is especially only including the relevant aspects for consumers of our package (so we've left out the DB UI Core contributors relevant aspects).
