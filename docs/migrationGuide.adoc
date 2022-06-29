@@ -10,7 +10,7 @@ Especially the following aspects have changed through the various different rele
 
 ==== Compiler
 
-Please note that we've switched from the deprecated link:https://www.npmjs.com/package/node-sass[`node-sass`] compiler to its successor link:https://www.npmjs.com/package/sass[`sass`]. As `sass` doesn't support the tilde (`~`) reference to your `node_modules` folder out of the box and there even also doesn't seem to be a general solution out there, we've removed that one, so that in case you're using our SCSS sources directly, you would need to provide your `node_modules` folder as a load path or include path (e.g. ` --load-path=node_modules` on the `sass` CLI usage).
+Please note that we've switched from the deprecated link:https://www.npmjs.com/package/node-sass[`node-sass`] compiler to its successor link:https://www.npmjs.com/package/sass[`sass`]. As `sass` doesn't support the tilde (`~`) reference to your `node_modules` folder out of the box and there even also doesn't seem to be a general solution out there, we've removed that one, so that in case you're using our SCSS sources directly, you would need to provide your `node_modules` folder as a load path or include path (e.g. `--load-path=node_modules` on the `sass` CLI usage).
 
 Additionally we've deprecated the `@db-ui/core/sources/css/enterprise/db-ui-core-include` SCSS endpoint – please either `@import` the file `@db-ui/core/sources/css/rollup.assets-paths` or `@db-ui/core/sources/css/webpack.assets-paths` depending on your bundler, previous to `@import`ing `@db-ui/core/sources/css/enterprise/db-ui-core` directly from now on.
 
