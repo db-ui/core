@@ -1,8 +1,14 @@
 @import "../../../css/db-ui-core.variables";
 
-$cmp-table-cell-height-36: to-rem(4) !default; // 36px cell height
-$table-cell-height52-paddingVertical: to-rem(14) !default; // 52px cell height
-$table-cell-height68-paddingVertical: to-rem(22) !default; // 68px cell height
+$cmp-table-cell-height-36: to-rem(
+	$pxValue: 4
+) !default; // 36px cell height
+$table-cell-height52-paddingVertical: to-rem(
+	$pxValue: 14
+) !default; // 52px cell height
+$table-cell-height68-paddingVertical: to-rem(
+	$pxValue: 22
+) !default; // 68px cell height
 
 $table-line--borderColor: $db-color-cool-gray-200 !default;
 

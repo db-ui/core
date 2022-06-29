@@ -10,7 +10,7 @@
 						&::before {
 							--icon-font-family: "#{"icons-" + $icon-size + "-" + $icon-domain + "-" + $icon-style}",
 								"missing-icons" !important;
-							--icon-font-size: #{to-rem($icon-size)};
+							--icon-font-size: #{to-rem($pxValue: $icon-size)};
 						}
 					}
 				}
@@ -19,7 +19,7 @@
 						&::after {
 							--icon-font-family: "#{"icons-" + $icon-size + $icon-domain + "-" + "-" + $icon-style}",
 								"missing-icons" !important;
-							--icon-font-size: #{to-rem($icon-size)};
+							--icon-font-size: #{to-rem($pxValue: $icon-size)};
 						}
 					}
 				}
@@ -32,7 +32,7 @@
 					&::before {
 						--icon-font-family: "#{"icons-" + $icon-domain + "-" + $icon-style}",
 							"missing-icons" !important;
-						--icon-font-size: #{to-rem(16)};
+						--icon-font-size: #{to-rem($pxValue: 16)};
 					}
 				}
 			}
@@ -41,7 +41,7 @@
 					&::after {
 						--icon-font-family: "#{"icons-" + $icon-domain + "-" + $icon-style}",
 							"missing-icons" !important;
-						--icon-font-size: #{to-rem(16)};
+						--icon-font-size: #{to-rem($pxValue: 16)};
 					}
 				}
 			}

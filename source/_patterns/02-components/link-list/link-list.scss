@@ -21,9 +21,9 @@
 			&::before {
 				color: $db-color-red;
 				display: inline-block;
-				font-size: to-rem(12);
+				font-size: to-rem($pxValue: 12);
 				font-weight: 700;
-				margin-top: -#{to-rem(2)};
+				margin-top: -#{to-rem($pxValue: 2)};
 				vertical-align: middle;
 			}
 		}

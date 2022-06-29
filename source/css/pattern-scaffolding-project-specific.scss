@@ -11,7 +11,7 @@ body,
 	font-family: $db-font-family-base;
 }
 pl-header {
-	font-size: to-rem(15.49191);
+	font-size: to-rem($pxValue: 15.49191);
 }
 pl-logo {
 	align-self: flex-start !important; // shame.css
@@ -46,7 +46,7 @@ pl-iframe {
 		}
 
 		blockquote {
-			font-size: to-rem(24);
+			font-size: to-rem($pxValue: 24);
 			font-weight: 700;
 
 			&::before {
@@ -69,8 +69,8 @@ pl-iframe {
 }
 .tpl-intro [src^="../../images/db-ui-"] {
 	float: left;
-	margin-top: to-rem(28);
-	margin-right: to-rem(4);
+	margin-top: to-rem($pxValue: 28);
+	margin-right: to-rem($pxValue: 4);
 }
 
 .pl-c-typeahead__input {

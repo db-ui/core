@@ -3,7 +3,7 @@
 
 .cmp-pagination {
 	color: $db-color-cool-gray-700;
-	font-size: to-rem(14);
+	font-size: to-rem($pxValue: 14);
 
 	user-select: none;
 
@@ -22,8 +22,8 @@
 		align-items: center;
 	}
 	li {
-		width: to-rem(36);
-		height: to-rem(36);
+		width: to-rem($pxValue: 36);
+		height: to-rem($pxValue: 36);
 	}
 
 	.elm-link {
@@ -39,10 +39,10 @@
 			vertical-align: bottom;
 		}
 		&[rel="prev"]::before {
-			margin-left: to-rem(11);
+			margin-left: to-rem($pxValue: 11);
 		}
 		&[rel="next"]::before {
-			margin-right: to-rem(11);
+			margin-right: to-rem($pxValue: 11);
 		}
 
 		&[rel="prev"] {

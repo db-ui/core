@@ -5,7 +5,7 @@
 	[id^="elements-progress-"][id*="-dark-background"] & {
 		background-color: $Background;
 		color: $LightBG;
-		padding: to-rem(16);
+		padding: to-rem($pxValue: 16);
 	}
 }
 

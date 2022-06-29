@@ -5,7 +5,7 @@
 	li {
 		.elm-link {
 			.rea-header & {
-				@media screen and (max-width: to-rem(1296)) {
+				@media screen and (max-width: to-rem($pxValue: 1296)) {
 					@include is-icon-text-replace();
 				}
 			}

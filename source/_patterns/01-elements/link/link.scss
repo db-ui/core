@@ -3,10 +3,10 @@
 
 .elm-link {
 	display: inline-block;
-	border-radius: to-rem(4);
+	border-radius: to-rem($pxValue: 4);
 
 	// Link underline
-	text-underline-offset: to-rem(3);
+	text-underline-offset: to-rem($pxValue: 3);
 	text-underline-position: under;
 	@supports (text-underline-offset: 3px) {
 		text-underline-position: auto;
@@ -30,7 +30,7 @@
 	// Sizes
 	&%size-Small {
 		&:not(.is-icon-text-replace) {
-			font-size: to-rem(14);
+			font-size: to-rem($pxValue: 14);
 		}
 		&[rel],
 		&[data-icon],

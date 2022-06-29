@@ -8,13 +8,13 @@
 	// * the basic, unchecked style
 	display: inline-block;
 
-	width: to-em(20);
-	height: to-em(20);
+	width: to-em($pxValue: 20);
+	height: to-em($pxValue: 20);
 	&[type="radio"] {
 		vertical-align: sub;
 	}
-	border-radius: to-em(16);
-	border: to-rem(1) solid $radio---border;
+	border-radius: to-em($pxValue: 16);
+	border: to-rem($pxValue: 1) solid $radio---border;
 
 	background-color: rgba(255, 255, 255, 0.1);
 
@@ -24,7 +24,7 @@
 		transition-duration: 0.01s !important;
 	}
 
-	font-size: to-rem(16);
+	font-size: to-rem($pxValue: 16);
 
 	&:hover {
 		background-color: rgba(40, 45, 55, 0.14);
@@ -36,7 +36,7 @@
 	&:checked,
 	&:invalid,
 	&[aria-invalid="true"] {
-		border-width: to-em(6);
+		border-width: to-em($pxValue: 6);
 	}
 	// * the invalid style using the :invalid pseudo class (and [aria-invalid="true"] equivalent, see #136 and #141)
 	&:invalid,
@@ -46,9 +46,9 @@
 	// * TODO: never forget focus styling
 	// &:focus::after {
 	// content: "\0020\2190";
-	// font-size: to-em(24);
+	// font-size: to-em($pxValue: 24);
 	// line-height: 1;
-	// vertical-align: -(to-em(2));
+	// vertical-align: -(to-em($pxValue: 2));
 	// }
 
 	& + label {

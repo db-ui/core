@@ -1,6 +1,8 @@
 @import "../../../css/db-ui-core.variables";
 
-$progress---height: to-rem(4) !default;
+$progress---height: to-rem(
+	$pxValue: 4
+) !default;
 $progress-value--backgroundColor: var(
 	--progress-value--backgroundColor
 ) !default;
@@ -22,5 +24,9 @@ $progress-conic-inner-backgroundColor: #fdfdfd !default; // TODO: This would nee
 // Alternative - on dark background
 $progress-onDarkBackground-conic-inner-backgroundColor: $db-color-cool-gray-700 !default;
 
-$progress-conic--translateX: to-rem(10) !default;
-$progress-conic--translateY: -#{to-rem(65)} !default;
+$progress-conic--translateX: to-rem(
+	$pxValue: 10
+) !default;
+$progress-conic--translateY: -#{to-rem(
+		$pxValue: 65
+	)} !default;

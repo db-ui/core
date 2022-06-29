@@ -7,7 +7,7 @@
 	section[data-variant="hovering"] & {
 		background-color: #fff;
 	}
-	padding: #{to-rem(16)}; // TODO: replace by spacing-m variable
+	padding: #{to-rem($pxValue: 16)}; // TODO: replace by spacing-m variable
 
 	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1); // Todo: This should most likely get generally setup
 
@@ -16,12 +16,12 @@
 		color: $notification-alert--color;
 	}
 
-	margin-bottom: #{to-rem(16)};
+	margin-bottom: #{to-rem($pxValue: 16)};
 
 	section[data-variant="hovering"] & {
-		border-radius: #{to-rem(8)};
+		border-radius: #{to-rem($pxValue: 8)};
 		border: 2px solid transparent;
-		padding: #{to-rem(14)} #{to-rem(16)}; // TODO: replace by spacing-m variable
+		padding: #{to-rem($pxValue: 14)} #{to-rem($pxValue: 16)}; // TODO: replace by spacing-m variable
 	}
 
 	// Hide the textual labels regarding each state
@@ -64,13 +64,13 @@
 	&[data-icon],
 	&[data-icon-before] {
 		&::before {
-			--icon-margin-right: #{to-rem(10)};
+			--icon-margin-right: #{to-rem($pxValue: 10)};
 		}
 	}
 	&[data-icon-after] {
 		justify-content: space-between;
 		&::after {
-			--icon-margin-left: #{to-rem(10)};
+			--icon-margin-left: #{to-rem($pxValue: 10)};
 		}
 	}
 }

@@ -4,12 +4,12 @@
 	.elm-image {
 		&.is-logo {
 			float: left;
-			margin-top: -#{to-rem(2)};
+			margin-top: -#{to-rem($pxValue: 2)};
 		}
 	}
 
 	.rea-header & {
-		padding-top: to-rem(18);
+		padding-top: to-rem($pxValue: 18);
 		@media screen and (min-width: 1024px) {
 			padding-top: $rea-header-cmp-brand-padding-top; // * TODO: possibly rework variable naming
 

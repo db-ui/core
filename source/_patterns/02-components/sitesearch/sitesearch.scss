@@ -8,13 +8,13 @@
 		background-color: $sitesearch-input--backgroundColor; // * TODO: possibly rework variable naming
 		background-image: none;
 		opacity: 0;
-		padding-left: to-em(36);
+		padding-left: to-em($pxValue: 36);
 		width: 0;
 
 		&:focus,
 		&:not(:placeholder-shown) {
 			opacity: 1;
-			width: to-rem(240);
+			width: to-rem($pxValue: 240);
 
 			& + .elm-label {
 				display: none;
@@ -34,11 +34,11 @@
 
 		&::before {
 			// TODO: Evaluate on whether this declaration could get moved to the general icon declarations
-			font-size: to-rem(22);
+			font-size: to-rem($pxValue: 22);
 			vertical-align: top;
 		}
 		.rea-header & {
-			padding-top: to-rem(10);
+			padding-top: to-rem($pxValue: 10);
 		}
 
 		.rea-meta & {
@@ -53,31 +53,31 @@
 		display: none;
 		left: 0;
 		position: absolute;
-		top: to-em(8);
+		top: to-em($pxValue: 8);
 		visibility: hidden;
 
 		&::before {
-			left: to-rem(4);
+			left: to-rem($pxValue: 4);
 			margin: -9px;
 			padding: 9px;
 			position: absolute;
-			top: -#{to-rem(2)};
+			top: -#{to-rem($pxValue: 2)};
 			visibility: visible;
 		}
 	}
 
 	.rea-meta & {
-		margin-right: to-rem(8);
+		margin-right: to-rem($pxValue: 8);
 
 		@media screen and (max-width: #{$sitesearch-form-full-maxWidth}) {
 			// * TODO: possibly rework variable naming
 			&:focus-within {
-				left: to-rem(16);
+				left: to-rem($pxValue: 16);
 				position: absolute;
 				z-index: $z-index-rea-header-cmp-sitesearch-focus;
 
 				.elm-input[type="search"] {
-					width: calc(100vw - #{to-rem(32)});
+					width: calc(100vw - #{to-rem($pxValue: 32)});
 				}
 			}
 		}

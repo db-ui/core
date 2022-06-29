@@ -4,7 +4,9 @@
 
 $button---color: #fff !default;
 
-$button---minHeight: to-rem(44) !default;
+$button---minHeight: to-rem(
+	$pxValue: 44
+) !default;
 
 // Background colors
 $button-brand-primary--backgroundColor: $db-color-red-500 !default;

@@ -10,15 +10,15 @@
 	margin-bottom: $header---marginBottom;
 
 	// TODO: all of the header declarations need to get realigned and most likely need to get set up via flexbox for simplification
-	min-height: to-rem(79);
-	padding-left: to-rem(16);
-	padding-right: to-rem(16);
+	min-height: to-rem($pxValue: 79);
+	padding-left: to-rem($pxValue: 16);
+	padding-right: to-rem($pxValue: 16);
 
 	.elm-link {
 		display: inline-block;
 	}
 	@media screen and (max-width: 1023px) {
-		min-height: to-rem(64);
+		min-height: to-rem($pxValue: 64);
 		border-bottom: $header---borderBottom;
 	}
 

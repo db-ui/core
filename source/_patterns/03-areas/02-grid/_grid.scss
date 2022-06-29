@@ -48,7 +48,7 @@
 
 		&:not(:last-child) {
 			margin-bottom: calc(
-				#{to-rem(24)} - #{$column-gap-max-width-smaller-padding}
+				#{to-rem($pxValue: 24)} - #{$column-gap-max-width-smaller-padding}
 			);
 		}
 	}

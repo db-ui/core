@@ -1,3 +1,7 @@
-$column-gap: to-rem(10) !default;
+$column-gap: to-rem(
+	$pxValue: 10
+) !default;
 $column-gap-max-width-smaller-breakpoint: 1199px !default;
-$column-gap-max-width-smaller-padding: to-rem(6) !default;
+$column-gap-max-width-smaller-padding: to-rem(
+	$pxValue: 6
+) !default;

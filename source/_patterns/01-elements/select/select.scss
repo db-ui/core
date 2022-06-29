@@ -4,7 +4,7 @@
 
 .elm-select {
 	appearance: none;
-	font-size: to-rem(16);
+	font-size: to-rem($pxValue: 16);
 	// For IE
 	&::-ms-expand {
 		display: none;
@@ -23,10 +23,10 @@
 			--db_ic_expand_more_20,
 			url(#{$icons-path}functional/images/navigation/db_ic_expand_more_20.svg)
 		);
-		background-position: right to-rem(11) center;
+		background-position: right to-rem($pxValue: 11) center;
 		background-repeat: no-repeat;
-		height: to-rem(44);
-		padding: to-rem(20) to-rem(42) 0 $db-spacing-m;
+		height: to-rem($pxValue: 44);
+		padding: to-rem($pxValue: 20) to-rem($pxValue: 42) 0 $db-spacing-m;
 
 		// Floating labels
 		& + .elm-label {
@@ -43,8 +43,8 @@
 		&[aria-invalid="true"] {
 			& + .elm-label {
 				color: $select-floatingLabel--color;
-				font-size: to-rem(16);
-				transform: translate($db-spacing-m, -#{to-rem(35)});
+				font-size: to-rem($pxValue: 16);
+				transform: translate($db-spacing-m, -#{to-rem($pxValue: 35)});
 			}
 		}
 	}
@@ -66,9 +66,9 @@
 	// Floating labels
 	& + .elm-label {
 		display: block;
-		font-size: to-rem(12);
-		margin-bottom: -#{to-rem(18)};
-		transform: translate($db-spacing-m, -#{to-rem(41)});
+		font-size: to-rem($pxValue: 12);
+		margin-bottom: -#{to-rem($pxValue: 18)};
+		transform: translate($db-spacing-m, -#{to-rem($pxValue: 41)});
 		transition: opacity, transform 150ms;
 		// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
 		@media (prefers-reduced-motion: reduce) {
@@ -76,9 +76,9 @@
 		}
 	}
 	&[multiple] {
-		margin-top: to-rem(16);
+		margin-top: to-rem($pxValue: 16);
 		& + .elm-label {
-			transform: translate($db-spacing-m, -#{to-rem(100)});
+			transform: translate($db-spacing-m, -#{to-rem($pxValue: 100)});
 		}
 	}
 

@@ -19,8 +19,8 @@
 
 		&::before {
 			display: inline-block;
-			padding: to-rem(9) to-rem(12);
-			transform: translateX(-#{to-rem(2)});
+			padding: to-rem($pxValue: 9) to-rem($pxValue: 12);
+			transform: translateX(-#{to-rem($pxValue: 2)});
 		}
 
 		&:hover,
@@ -62,7 +62,7 @@
 			content: "";
 			height: 0;
 			position: absolute;
-			transform: translate(to-rem(12), -#{to-rem(13)});
+			transform: translate(to-rem($pxValue: 12), -#{to-rem($pxValue: 13)});
 			width: 0;
 		}
 
@@ -71,7 +71,8 @@
 			a {
 				background-color: $overflowMenu---backgroundColor;
 				display: block;
-				padding: to-rem(16) to-rem(32) to-rem(16) to-rem(16); // TODO: replace by correct spacings
+				padding: to-rem($pxValue: 16) to-rem($pxValue: 32) to-rem($pxValue: 16)
+					to-rem($pxValue: 16); // TODO: replace by correct spacings
 
 				font-weight: 400;
 
@@ -108,7 +109,10 @@
 
 			&::before {
 				right: 0;
-				transform: translate(-#{to-rem(12)}, -#{to-rem(13)});
+				transform: translate(
+					-#{to-rem($pxValue: 12)},
+					-#{to-rem($pxValue: 13)}
+				);
 			}
 		}
 	}

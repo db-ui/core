@@ -7,7 +7,7 @@
 	[id^="elements-checkbox-on-dark-background"] & {
 		background-color: $Background;
 		color: $LightBG;
-		padding: to-rem(16);
+		padding: to-rem($pxValue: 16);
 
 		.elm-checkbox {
 			background-color: $checkbox-onDarkBackground--backgroundColor;

@@ -6,18 +6,20 @@ $header-big-link-paddingTop: 32 * 0.0625 !default;
 
 // * reduced height
 // $header-big-link-paddingTop: 19*0.0625 !default;
-$rea-header-elm-link-padding-bottom-big: to-rem(19) !default;
+$rea-header-elm-link-padding-bottom-big: to-rem(
+	$pxValue: 19
+) !default;
 
 // * reduced height
-// $rea-header-elm-link-padding-bottom-big: to-rem(11) !default;
+// $rea-header-elm-link-padding-bottom-big: to-rem($pxValue: 11) !default;
 
 $mainnavigation---position: relative !default;
 // $mainnavigation---position: absolute !default; // underneath
 $mainnavigation---position-top: 0 !default;
-// $mainnavigation---position-top: to-rem(79) !default; // underneath
+// $mainnavigation---position-top: to-rem($pxValue: 79) !default; // underneath
 $mainnavigation-link--borderPosition: "bottom" !default;
 // $mainnavigation-link--borderPosition: "top" !default; // underneath
 $mainnavigation-link--paddingTop: #{$header-big-link-paddingTop}rem !default;
-// $mainnavigation-link--paddingTop: to-rem(11) !default; // underneath
+// $mainnavigation-link--paddingTop: to-rem($pxValue: 11) !default; // underneath
 $mainnavigation-link--paddingBottom: $rea-header-elm-link-padding-bottom-big !default;
-// $mainnavigation-link--paddingBottom: to-rem(11) !default; // underneath
+// $mainnavigation-link--paddingBottom: to-rem($pxValue: 11) !default; // underneath

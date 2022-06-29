@@ -8,18 +8,18 @@
 	display: inline-flex;
 
 	// Link related styles
-	font-size: to-rem(12);
+	font-size: to-rem($pxValue: 12);
 	font-weight: initial;
-	height: to-rem(24);
+	height: to-rem($pxValue: 24);
 	justify-content: center;
-	padding-left: to-rem(4);
-	padding-right: to-rem(4);
+	padding-left: to-rem($pxValue: 4);
+	padding-right: to-rem($pxValue: 4);
 	white-space: nowrap;
 	text-transform: capitalize;
 
 	// Sizes
 	&%size-Small {
-		height: to-rem(20);
+		height: to-rem($pxValue: 20);
 	}
 
 	&[data-size="small"] {
@@ -86,14 +86,14 @@
 		@include iconMeta(20);
 
 		&::before {
-			--icon-margin-right: #{to-rem(2)};
+			--icon-margin-right: #{to-rem($pxValue: 2)};
 		}
 	}
 	&[data-icon-after] {
 		@include iconMeta($size: 20, $position: "after");
 
 		&::after {
-			--icon-margin-left: #{to-rem(2)};
+			--icon-margin-left: #{to-rem($pxValue: 2)};
 		}
 	}
 }

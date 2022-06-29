@@ -16,23 +16,23 @@ body.has-fixed-footer .rea-footer {
 }
 body.has-fixed-header {
 	// TODO: using some outsourced global declarations for the headers dimensions (height, padding and margins)
-	padding-top: to-rem(95);
+	padding-top: to-rem($pxValue: 95);
 	.rea-header {
 		top: 0;
 	}
 
 	@media screen and (max-width: 1023px) {
-		padding-top: to-rem(80);
+		padding-top: to-rem($pxValue: 80);
 	}
 }
 body.has-fixed-footer {
 	// TODO: using some outsourced global declarations for the footers dimensions (height, padding and margins)
-	padding-bottom: to-rem(88);
+	padding-bottom: to-rem($pxValue: 88);
 	.rea-footer {
 		bottom: 0;
 	}
 
 	@media screen and (max-width: 1023px) {
-		padding-bottom: to-rem(94);
+		padding-bottom: to-rem($pxValue: 94);
 	}
 }

@@ -5,16 +5,16 @@
 .elm-button {
 	border: 1px solid transparent;
 	border-radius: 4px;
-	padding: to-rem(7) to-rem(16);
+	padding: to-rem($pxValue: 7) to-rem($pxValue: 16);
 
 	&[data-icon],
 	&[data-icon-before] {
-		padding-left: to-rem(14);
+		padding-left: to-rem($pxValue: 14);
 	}
 	&[data-icon-after] {
-		padding-right: to-rem(14);
+		padding-right: to-rem($pxValue: 14);
 	}
-	font-size: to-rem(16);
+	font-size: to-rem($pxValue: 16);
 	min-height: $button---minHeight;
 	// Square icon only buttons
 	&.is-icon-text-replace {
@@ -132,9 +132,9 @@
 
 	// Sizes
 	&%size-Small {
-		min-height: to-rem(36);
+		min-height: to-rem($pxValue: 36);
 		&:not(.is-icon-text-replace) {
-			font-size: to-rem(14);
+			font-size: to-rem($pxValue: 14);
 		}
 		&[data-icon],
 		&[data-icon-before] {
@@ -145,17 +145,17 @@
 		}
 		// Square icon only buttons
 		&.is-icon-text-replace {
-			width: to-rem(36);
+			width: to-rem($pxValue: 36);
 		}
 	}
 	&%size-Large {
-		min-height: to-rem(52);
+		min-height: to-rem($pxValue: 52);
 		&:not(.is-icon-text-replace) {
-			font-size: to-rem(20);
+			font-size: to-rem($pxValue: 20);
 		}
 		// Square icon only buttons
 		&.is-icon-text-replace {
-			width: to-rem(52);
+			width: to-rem($pxValue: 52);
 		}
 	}
 

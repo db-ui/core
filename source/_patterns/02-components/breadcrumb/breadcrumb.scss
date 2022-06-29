@@ -3,7 +3,7 @@
 
 .cmp-breadcrumb {
 	color: $db-color-cool-gray-500;
-	font-size: to-rem(12);
+	font-size: to-rem($pxValue: 12);
 
 	a {
 		color: inherit;
@@ -15,20 +15,21 @@
 		& > * {
 			align-items: center;
 			display: inline-flex;
-			margin-right: to-rem(3);
+			margin-right: to-rem($pxValue: 3);
 
 			[aria-current="location"],
 			[aria-current="page"] {
-				font-size: to-rem(14);
+				font-size: to-rem($pxValue: 14);
 				color: $db-color-cool-gray-700;
 			}
 
 			.elm-link {
 				text-decoration: none;
 
-				padding: to-rem(1) to-rem(3) to-rem(1) to-rem(4);
+				padding: to-rem($pxValue: 1) to-rem($pxValue: 3) to-rem($pxValue: 1)
+					to-rem($pxValue: 4);
 
-				border-radius: to-rem(4);
+				border-radius: to-rem($pxValue: 4);
 
 				&:hover {
 					background-color: $breadcrumb-link-hover-backgroundColor;
@@ -41,7 +42,7 @@
 			&:first-child {
 				@include icon(glyph(home), $size: 20, $partial: $partial);
 				&::before {
-					--icon-margin-right: #{to-rem(3)};
+					--icon-margin-right: #{to-rem($pxValue: 3)};
 				}
 			}
 
@@ -53,9 +54,9 @@
 				);
 
 				&::before {
-					--icon-font-size: #{to-rem(14)};
+					--icon-font-size: #{to-rem($pxValue: 14)};
 					--icon-margin-right: 0;
-					--icon-margin-left: -#{to-rem(2)};
+					--icon-margin-left: -#{to-rem($pxValue: 2)};
 					color: $db-color-cool-gray-400;
 				}
 			}

@@ -23,10 +23,10 @@
 
 	// Description styles
 	& ~ .description {
-		font-size: to-rem(14);
+		font-size: to-rem($pxValue: 14);
 		color: $db-color-cool-gray-500;
 
-		padding: to-rem(6) to-rem(10);
+		padding: to-rem($pxValue: 6) to-rem($pxValue: 10);
 	}
 }
 

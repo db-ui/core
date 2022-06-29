@@ -3,4 +3,6 @@
 @import "../../00-base/icons/icons.helpers";
 
 $accordion---paddingLeft: 46 !default;
-$accordion---paddingRight: to-rem(16) !default;
+$accordion---paddingRight: to-rem(
+	$pxValue: 16
+) !default;

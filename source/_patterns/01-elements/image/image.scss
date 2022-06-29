@@ -3,7 +3,7 @@
 .elm-image {
 	&.is-logo {
 		height: auto;
-		margin: 0.2rem #{to-rem(16)} 0.2rem 0;
+		margin: 0.2rem #{to-rem($pxValue: 16)} 0.2rem 0;
 		max-width: $image-logo--maxwidth;
 
 		.cmp-brand & {

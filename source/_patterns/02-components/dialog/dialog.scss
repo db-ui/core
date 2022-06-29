@@ -6,13 +6,13 @@
 	border-radius: 8px;
 	max-width: 90vw;
 
-	padding: to-rem(16); // TODO: replace by general spacing variables
+	padding: to-rem($pxValue: 16); // TODO: replace by general spacing variables
 	@media screen and (min-width: 768px) {
 		// TODO: replace by correct general breakpoint variables
-		padding: to-rem(24); // TODO: replace by general spacing variables
+		padding: to-rem($pxValue: 24); // TODO: replace by general spacing variables
 	}
 
-	font-size: to-rem(14);
+	font-size: to-rem($pxValue: 14);
 
 	color: $db-color-cool-gray-700;
 
@@ -43,24 +43,24 @@
 	header {
 		color: $db-color-cool-gray-800;
 
-		transform: translateY(-#{to-rem(9)});
+		transform: translateY(-#{to-rem($pxValue: 9)});
 
 		.elm-headline {
 			font-weight: 700;
 			// Remove the headlines margin-top, as we're in a dialog that has a padding on it's own
 			margin-top: 0;
-			margin-right: to-rem(24);
-			margin-bottom: to-rem(6);
+			margin-right: to-rem($pxValue: 24);
+			margin-bottom: to-rem($pxValue: 6);
 
-			font-size: to-rem(18);
+			font-size: to-rem($pxValue: 18);
 			line-height: to-rem(
-				24
+				$pxValue: 24
 			); // TODO: Check whether this is a settting that should be more global
 			@media screen and (min-width: 768px) {
 				// TODO: replace by correct general breakpoint variables
-				font-size: to-rem(24);
+				font-size: to-rem($pxValue: 24);
 				line-height: to-rem(
-					28
+					$pxValue: 28
 				); // TODO: Check whether this is a settting that should be more global
 			}
 
@@ -88,12 +88,12 @@
 	}
 
 	footer {
-		margin-top: to-rem(18);
+		margin-top: to-rem($pxValue: 18);
 		display: flex;
 
 		.elm-button {
 			& + .elm-button {
-				margin-left: to-rem(16); // TODO: Replace by spacing variable
+				margin-left: to-rem($pxValue: 16); // TODO: Replace by spacing variable
 			}
 		}
 		&[data-alignment="end"] {

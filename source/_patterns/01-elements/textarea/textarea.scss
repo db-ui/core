@@ -11,16 +11,16 @@
 		@extend %form-element-semitransparent;
 	}
 
-	font-size: to-rem(16);
-	line-height: to-rem(24);
+	font-size: to-rem($pxValue: 16);
+	line-height: to-rem($pxValue: 24);
 
 	display: block;
 
 	width: 100%;
 	max-width: 100%;
-	height: to-rem(44);
+	height: to-rem($pxValue: 44);
 
-	padding: to-rem(6) to-rem(10);
+	padding: to-rem($pxValue: 6) to-rem($pxValue: 10);
 
 	resize: vertical;
 
@@ -30,8 +30,8 @@
 	// justify-content: flex-start;
 
 	&:not([rows]) {
-		max-height: to-rem(600);
-		min-height: to-rem(120);
+		max-height: to-rem($pxValue: 600);
+		min-height: to-rem($pxValue: 120);
 	}
 	&[rows] {
 		height: initial;
@@ -81,15 +81,15 @@
 		// amount of signs output
 		float: right;
 
-		margin-top: to-rem(12);
+		margin-top: to-rem($pxValue: 12);
 
 		// Description styles
 		// TODO: This probably still needs to get further changed to a general "hint" pattern or similar
 		&,
 		& + .description {
-			font-size: to-rem(14);
+			font-size: to-rem($pxValue: 14);
 			color: $db-color-cool-gray-500;
-			padding: to-rem(6) to-rem(10);
+			padding: to-rem($pxValue: 6) to-rem($pxValue: 10);
 		}
 	}
 

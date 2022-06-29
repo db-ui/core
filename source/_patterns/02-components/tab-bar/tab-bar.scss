@@ -19,10 +19,10 @@
 			border-top-right-radius: 4px;
 			cursor: pointer;
 			display: inline-block;
-			margin-left: to-rem(8);
-			padding: #{to-rem(5)} #{to-rem(32)};
+			margin-left: to-rem($pxValue: 8);
+			padding: #{to-rem($pxValue: 5)} #{to-rem($pxValue: 32)};
 			&:first-of-type {
-				margin-left: to-rem(16);
+				margin-left: to-rem($pxValue: 16);
 			}
 			position: relative;
 			z-index: 1;
@@ -55,8 +55,8 @@
 				border: $tabBar-tab-active-border;
 				border-bottom: none;
 				font-weight: 700;
-				padding-top: to-rem(3);
-				transform: translateY(to-rem(1));
+				padding-top: to-rem($pxValue: 3);
+				transform: translateY(to-rem($pxValue: 1));
 
 				& + section[role="tabpanel"] {
 					display: initial;
@@ -71,6 +71,6 @@
 		display: none;
 		flex-basis: 100%;
 		order: 1;
-		padding: to-rem(46) to-rem(50);
+		padding: to-rem($pxValue: 46) to-rem($pxValue: 50);
 	}
 }

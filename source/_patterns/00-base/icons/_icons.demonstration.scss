@@ -17,8 +17,8 @@
 			li {
 				display: inline-block;
 
-				margin: to-rem(4);
-				padding: to-rem(32);
+				margin: to-rem($pxValue: 4);
+				padding: to-rem($pxValue: 32);
 				border-radius: 4px;
 
 				color: $db-color-cool-gray-700;

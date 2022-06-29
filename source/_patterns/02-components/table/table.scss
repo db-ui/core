@@ -16,13 +16,13 @@
 
 	caption {
 		font-weight: 700;
-		padding: #{to-rem(16)} #{to-rem(12)};
+		padding: #{to-rem($pxValue: 16)} #{to-rem($pxValue: 12)};
 		text-align: left;
 	}
 
 	thead {
-		border-bottom: to-rem(1) solid $db-color-cool-gray-700;
-		border-top: to-rem(1) solid $db-color-cool-gray-700;
+		border-bottom: to-rem($pxValue: 1) solid $db-color-cool-gray-700;
+		border-top: to-rem($pxValue: 1) solid $db-color-cool-gray-700;
 
 		th {
 			color: $db-color-cool-gray-500;
@@ -48,7 +48,7 @@
 	}
 
 	tbody {
-		border-bottom: to-rem(1) solid $db-color-cool-gray-700;
+		border-bottom: to-rem($pxValue: 1) solid $db-color-cool-gray-700;
 
 		th:first-child {
 			border-right: 1px solid $db-color-warm-gray-700;

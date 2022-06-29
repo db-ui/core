@@ -8,15 +8,14 @@
 
 	appearance: none;
 	background-color: $checkbox---backgroundColor;
-	border: #{to-rem(1)} solid $checkbox---borderColor;
+	border: #{to-rem($pxValue: 1)} solid $checkbox---borderColor;
 	border-radius: 4px;
 	color: $checkbox---color;
-	height: to-rem(24);
-	margin-right: to-em(9);
+	height: to-rem($pxValue: 24);
 	&[type="checkbox"] {
 		vertical-align: top;
 	}
-	width: to-rem(24);
+	width: to-rem($pxValue: 24);
 
 	display: inline-flex;
 	justify-content: center;

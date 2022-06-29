@@ -5,12 +5,12 @@
 	border-bottom: 1px solid $db-color-cool-gray-200;
 	padding-left: var(--db-accordion---paddingLeft);
 	padding-right: $accordion---paddingRight;
-	--db-accordion---paddingLeft: #{to-rem($accordion---paddingLeft)};
+	--db-accordion---paddingLeft: #{to-rem($pxValue: $accordion---paddingLeft)};
 
 	summary {
 		@include icon(glyph(chevron-right), 24, "outline", $partial: $partial);
 
-		height: to-rem(48);
+		height: to-rem($pxValue: 48);
 		display: flex;
 		align-items: center;
 		// Negating the padding left for moving the element into that direction with the same measures
@@ -30,8 +30,8 @@
 
 		// Icon horizontal space
 		&::before {
-			--icon-margin-left: #{to-rem(14)};
-			--icon-margin-right: #{to-rem(8)};
+			--icon-margin-left: #{to-rem($pxValue: 14)};
+			--icon-margin-right: #{to-rem($pxValue: 8)};
 		}
 
 		& + p {
@@ -48,14 +48,16 @@
 	// Emphasis
 	&%emphasis-High {
 		// Calculate especially depending on the icons sizes difference
-		--db-accordion---paddingLeft: #{to-rem($accordion---paddingLeft + 8)};
+		--db-accordion---paddingLeft: #{to-rem(
+				$pxValue: $accordion---paddingLeft + 8
+			)};
 
 		summary {
 			font-weight: 700;
-			height: to-rem(56);
+			height: to-rem($pxValue: 56);
 
 			&::before {
-				--icon-font-size: #{to-rem(32)};
+				--icon-font-size: #{to-rem($pxValue: 32)};
 			}
 		}
 	}
@@ -67,29 +69,33 @@
 	// Sizes
 	&%size-Small {
 		// Calculate dependending on the icons sizes and margins difference
-		--db-accordion---paddingLeft: #{to-rem($accordion---paddingLeft - 12)};
+		--db-accordion---paddingLeft: #{to-rem(
+				$pxValue: $accordion---paddingLeft - 12
+			)};
 
 		summary {
-			height: to-rem(40);
-			font-size: to-rem(14);
+			height: to-rem($pxValue: 40);
+			font-size: to-rem($pxValue: 14);
 
 			&::before {
-				--icon-font-size: #{to-rem(20)};
-				--icon-margin-left: #{to-rem(6)};
-				--icon-margin-right: #{to-rem(6)};
+				--icon-font-size: #{to-rem($pxValue: 20)};
+				--icon-margin-left: #{to-rem($pxValue: 6)};
+				--icon-margin-right: #{to-rem($pxValue: 6)};
 			}
 		}
 	}
 	&%size-Large {
 		// Calculate especially depending on the icons sizes difference
-		--db-accordion---paddingLeft: #{to-rem($accordion---paddingLeft + 8)};
+		--db-accordion---paddingLeft: #{to-rem(
+				$pxValue: $accordion---paddingLeft + 8
+			)};
 
 		summary {
-			height: to-rem(64);
-			font-size: to-rem(20);
+			height: to-rem($pxValue: 64);
+			font-size: to-rem($pxValue: 20);
 
 			&::before {
-				--icon-font-size: #{to-rem(32)};
+				--icon-font-size: #{to-rem($pxValue: 32)};
 			}
 		}
 	}

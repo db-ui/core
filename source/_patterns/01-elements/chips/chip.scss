@@ -8,11 +8,11 @@
 		display: inline-flex;
 
 		// Link related styles
-		font-size: to-rem(14);
-		height: to-rem(28);
+		font-size: to-rem($pxValue: 14);
+		height: to-rem($pxValue: 28);
 		justify-content: center;
-		padding-left: to-rem(7);
-		padding-right: to-rem(7);
+		padding-left: to-rem($pxValue: 7);
+		padding-right: to-rem($pxValue: 7);
 		white-space: nowrap;
 		text-decoration: none;
 		text-transform: capitalize;

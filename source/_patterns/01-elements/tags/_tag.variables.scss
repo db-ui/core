@@ -2,7 +2,9 @@
 @import "../../00-base/icons/icons.variables";
 @import "../../00-base/icons/icons.helpers";
 
-$tag---radius: to-rem(4) !default;
+$tag---radius: to-rem(
+	$pxValue: 4
+) !default;
 
 $tag---backgroundColor: $db-color-cool-gray-700 !default;
 $tag---color: $db-color-white !default;

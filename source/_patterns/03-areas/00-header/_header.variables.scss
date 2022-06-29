@@ -6,8 +6,12 @@ $header---boxShadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1),
 
 $header---backgroundColor: #fdfdfd !default; // TODO: This would need to get replaced by the correct (semantic) color
 
-$header---borderBottom: #{to-rem(1)} solid $db-color-warm-gray-400 !default;
+$header---borderBottom: #{to-rem(
+		$pxValue: 1
+	)} solid $db-color-warm-gray-400 !default;
 
-$header---marginBottom: to-rem(16) !default;
+$header---marginBottom: to-rem(
+	$pxValue: 16
+) !default;
 
 $header---backgroundColor: #fdfdfd !default; // TODO: This would need to get replaced by the correct (semantic) color

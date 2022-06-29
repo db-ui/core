@@ -8,7 +8,7 @@
 ) {
 	&::#{$position} {
 		--icon-font-family: "#{"icons-" + $size + "-" + $style}", "missing-icons" !important;
-		--icon-font-size: #{to-rem($size)};
+		--icon-font-size: #{to-rem($pxValue: $size)};
 
 		@if $position == "before" {
 			--icon-margin-right: #{$icon-content-space};
@@ -90,6 +90,6 @@
 @mixin iconMeta($size: $icon-size, $style: $icon-style, $position: "before") {
 	&::#{$position} {
 		--icon-font-family: "#{"icons-" + $size + "-" + $style}", "missing-icons" !important;
-		--icon-font-size: #{to-rem($size)};
+		--icon-font-size: #{to-rem($pxValue: $size)};
 	}
 }

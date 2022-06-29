@@ -10,7 +10,7 @@
 		// TODO: check for the correct color code
 		color: $sidenavi-link--color; // * TODO: possibly rework variable naming
 		display: block;
-		padding: to-rem(20) to-rem(16);
+		padding: to-rem($pxValue: 20) to-rem($pxValue: 16);
 		text-decoration: none;
 
 		// We need to reset the general border-radius here
@@ -32,7 +32,7 @@
 		}
 
 		&[rel] {
-			padding-left: to-rem(21);
+			padding-left: to-rem($pxValue: 21);
 		}
 		&[rel="index"] {
 			@include icon(glyph(home), 32, "outline", $partial: $partial);

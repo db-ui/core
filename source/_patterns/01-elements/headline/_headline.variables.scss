@@ -1,14 +1,14 @@
 @import "../../../css/helpers/functions";
 
 $rea-main-h1-font-size: to-rem(
-	36
+	$pxValue: 36
 ) !default; // * TODO: possibly rework variable naming
 $rea-main-h2-font-size: to-rem(
-	24
+	$pxValue: 24
 ) !default; // * TODO: possibly rework variable naming
 $rea-main-h3-font-size: to-rem(
-	20
+	$pxValue: 20
 ) !default; // * TODO: possibly rework variable naming
 $rea-main-h4-font-size: to-rem(
-	18
+	$pxValue: 18
 ) !default; // * TODO: possibly rework variable naming
