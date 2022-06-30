@@ -81,6 +81,8 @@ In general we've introduced the possibility to control variants and configuratio
 
 ## [Unreleased]
 
+## [2.0.0-44] - 2022-06-30
+
 ### Added
 
 #### Package consumption
