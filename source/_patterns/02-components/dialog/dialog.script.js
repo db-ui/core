@@ -24,7 +24,8 @@
 			} else if (
 				link.hash &&
 				document.querySelector(link.hash) &&
-				document.querySelector(link.hash).tagName.toLowerCase() === 'dialog'
+				document.querySelector(link.hash).tagName.toLowerCase() ===
+					'dialog'
 			) {
 				type = 'dialog';
 				dialog = document.querySelector(link.hash);
