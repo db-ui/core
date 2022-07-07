@@ -30,10 +30,11 @@ DB UI Core provides robust HTML UI components, reusable visual styles, and power
 
 ## <abbr title="too long; didn't read">tl;dr</abbr>: "too long" Danny replied
 
-- [Getting started](docs/getStarted.adoc)
-- [GitHub - DB UI Core](https://github.com/db-ui/core/)
-- [Hosted version of DB UI Core living styleguide](https://db.de/db-ui)
-- [Migrating guide from version 1 of DB UI Core to version 2](docs/migrationGuide.adoc#user-content-db-ui-core-2-0-0-migration-guide)
+-   [Getting started](docs/getStarted.adoc)
+-   [GitHub - DB UI Core](https://github.com/db-ui/core/)
+-   [Hosted version of DB UI Core living styleguide](https://db.de/db-ui)
+-   Recommended for JavaScript application development: [DB UI Elements](https://db-ui.github.io/elements/)
+-   [Migrating guide from version 1 of DB UI Core to version 2](docs/migrationGuide.adoc#user-content-db-ui-core-2-0-0-migration-guide)
 
 ## Core principals
 
@@ -61,12 +62,12 @@ As [DB Design System](https://marketingportal.extranet.deutschebahn.com/de/ui-ko
 
 Additionally we'll provide some more information over time regrading the whole ecosystem:
 
-- [DB Design System UX Guides + Standards documentation within the DB Marketingportal (german)](https://marketingportal.extranet.deutschebahn.com/de/ui-komponenten)
-- [Confluence / Base Wiki - "Technische Umsetzung des Enterprise UI Design Systems" (german, only available internally)](https://db.de/pu8moh)
-- [Confluence - Web UI Component Library (only available internally)](https://db.de/1tyr73)
-- [Changelog](https://github.com/db-ui/core/blob/main/CHANGELOG.md)
-- [Architectural Decision Records](https://github.com/db-ui/core/tree/main/docs/adr)
-- [DB UI Core 1.x Gitlab repository (only accessible internally)](https://db.de/4cwtyn/)
+-   [DB Design System UX Guides + Standards documentation within the DB Marketingportal (german)](https://marketingportal.extranet.deutschebahn.com/de/ui-komponenten)
+-   [Confluence / Base Wiki - "Technische Umsetzung des Enterprise UI Design Systems" (german, only available internally)](https://db.de/pu8moh)
+-   [Confluence - Web UI Component Library (only available internally)](https://db.de/1tyr73)
+-   [Changelog](https://github.com/db-ui/core/blob/main/CHANGELOG.md)
+-   [Architectural Decision Records](https://github.com/db-ui/core/tree/main/docs/adr)
+-   [DB UI Core 1.x Gitlab repository (only accessible internally)](https://db.de/4cwtyn/)
 
 ## Things to keep in mind
 

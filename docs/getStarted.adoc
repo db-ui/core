@@ -1,8 +1,8 @@
-# Get started as Application Developer
+# Getting started as a Web Developer
 
 ## Purpose
 
-You are an Application Developer and you want to use DB UI Core in your own application.
+You're a Web Developer and you want to use DB UI Core in your own application. Especially for JavaScript application development, we're recommending to have a look at link:https://db-ui.github.io/elements/[DB UI Elements] instead.
 
 ## Options
 
