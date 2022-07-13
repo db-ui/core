@@ -9,13 +9,13 @@
 [data-icon],
 [data-icon-before] {
 	&::before {
-		--icon-margin-right: #{$icon-content-space};
+		margin-inline-end: var(--icon-margin-after, #{$icon-content-space});
 		@extend %icon;
 	}
 }
 [data-icon-after] {
 	&::after {
-		--icon-margin-left: #{$icon-content-space};
+		margin-inline-start: var(--icon-margin-before, #{$icon-content-space});
 		@extend %icon;
 	}
 }

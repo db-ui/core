@@ -80,6 +80,15 @@ In general we've introduced the possibility to control variants and configuratio
 - The DB Webfonts files have been updated -->
 
 ## [Unreleased]
+## [2.0.0-46] - 2022-07-13
+
+### Changed
+
+#### Package consumption
+
+-   **BREAKING CHANGE** / Icons: Changed undocumented CSS Variables `--icon-margin-left` and `--icon-margin-right` to `--icon-margin-before` and `--icon-margin-after`
+-   refactor: icon margins
+
 ## [2.0.0-45] - 2022-07-07
 
 ### Fixed

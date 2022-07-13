@@ -55,6 +55,8 @@ The already deprecated enterprise specific as well as the seperate transporation
 
 And we've moved all icon assets from `dist/images/icons` to `dist/icons` and even a better subfolder structure in there, and as well retrieving those by [DB UI Base](https://db-ui.github.io/base/?p=viewall-icons-all) package, path `node_modules/@db-ui/base/build/assets/icons/`.
 
+If you've used the undocumented `--icon-margin-left` and `--icon-margin-right` CSS Variables: They now became `--icon-margin-before` and `--icon-margin-after` for easier i18n.
+
 === Buttons
 
 Some variants have changed or been removed:

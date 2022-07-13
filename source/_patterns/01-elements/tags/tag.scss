@@ -86,14 +86,14 @@
 		@include iconMeta(20);
 
 		&::before {
-			--icon-margin-right: #{to-rem($pxValue: 2)};
+			--icon-margin-after: #{to-rem($pxValue: 2)};
 		}
 	}
 	&[data-icon-after] {
 		@include iconMeta($size: 20, $position: "after");
 
 		&::after {
-			--icon-margin-left: #{to-rem($pxValue: 2)};
+			--icon-margin-before: #{to-rem($pxValue: 2)};
 		}
 	}
 }
