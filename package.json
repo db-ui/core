@@ -1,6 +1,6 @@
 {
   "name": "@db-ui/core",
-  "version": "2.0.0-45",
+  "version": "2.0.0-46",
   "description": "Technical Frontend implementation of the DB UX Design System.",
   "style": "./dist/css/enterprise/db-ui-core.css",
   "sass": "./sources/css/enterprise/db-ui-core.scss",
