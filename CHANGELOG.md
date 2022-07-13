@@ -69,7 +69,7 @@ In general we've introduced the possibility to control variants and configuratio
   - And in case you're referencing those directly as SVG files, you need to change the select from the icon specific name to the id `#icon`.
   - As well as change the CSS variable names to control the line and pulse color within the icons from `--iconColor` to `--db-icon-color` and from `--iconPulseColor` to `--db-icon-pulse-color`.
 - **BREAKING CHANGE:** `source/_patterns/01-elements/link/link.scss` has been renamed to `source/_patterns/01-elements/link/_links.scss` - you most likely haven't included this file directly, but the file within the `enterprise` subdirectory, so this shouldn't be relevant for most of you
-- **BREAKING CHANGE:** The stateful `tag` types (`a.elm-tag` and `input.elm-tag`) have been moved to a new pattern, as defined within the DB Design System UX Guides + Standards specification: `chips` (see [the migration guide](docs/migrationGuide.adoc))
+- **BREAKING CHANGE:** The stateful `tag` types (`a.elm-tag` and `input.elm-tag`) have been moved to a new pattern, as defined within the DB UX Design System specification: `chips` (see [the migration guide](docs/migrationGuide.adoc))
 - Introduced SCSS variable `$icons-path` in addition to `$images-path` and `$fonts-path`, as we might need to differentiate here
 - `DB UI Base` to be an optional config, as it wouldn't get installed and people might want to use the SASS source files for compilation
 - A lot of elements and components got their new styling: buttons, checkbox, headlines, input, links, progress, radio, select, textarea, toggle switch, breadcrumb, cards, dialog, dropdown, links, notification, overflow menu, pagination, table
@@ -116,7 +116,7 @@ In general we've introduced the possibility to control variants and configuratio
 #### Package consumption
 
 -   updated files & folders documentation
--   removed undocumented and obsolete component `Toasts`, that is included in the new DB Design System as `Notification` component anyhow
+-   removed undocumented and obsolete component `Toasts`, that is included in the new DB UX Design System as `Notification` component anyhow
 -   further optimized the general projects files definitions within `package.json`
 
 ## [2.0.0-42] - 2022-05-06

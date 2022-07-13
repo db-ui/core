@@ -102,12 +102,12 @@ The previous version of the EDS guidelines only included a rudimentary defined c
 
 === Tags
 
-The stateful tag types (`a.elm-tag` and `input.elm-tag`) have been moved to a new pattern, as defined within the DB Design System UX Guides + Standards specification: `chips`
+The stateful tag types (`a.elm-tag` and `input.elm-tag`) have been moved to a new pattern, as defined within the DB UX Design System specification: `chips`
 
 Please use this one instead either for the `Filter Chips` or `Selection/Auswahl Chips` types defined in the specificiation.
 
 == DB UI Core 2.0.0-0 Migration Guide
 
-- We've renamed our package to `@db-ui/core`. The old version will still get maintained, but `@db-ui/core` includes our work regarding the DB Design System UX Guides + Standards styles, and is thatfor the successor.
+- We've renamed our package to `@db-ui/core`. The old version will still get maintained, but `@db-ui/core` includes our work regarding the DB UX Design System styles, and is thatfor the successor.
 
 And we're still hosting the `CHANGELOG` for any changes up until version 2.0.0 within our internal Git: <https://db.de/lwfv2o> (you need to be logged in to our Deutsche Bahn VPN for these informations)
