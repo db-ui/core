@@ -9,7 +9,7 @@
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 [![@db-ui/core on Npmjs](https://img.shields.io/npm/v/@db-ui/core.svg?color=rgb%28237%2C%2028%2C%2036%29 "npm version")](https://npmjs.com/package/@db-ui/core "DB UI Core – on NPM")
-![Based on DB Design System UX Guides + Standards](https://img.shields.io/badge/Based%20on-DB%20Design%20System%20UX%20Guides%20%2B%20Standards-d7dce1.svg)
+![Based on DB UX Design System guidelines](https://img.shields.io/badge/Based%20on-DB%20Design%20System%20UX%20Guides%20%2B%20Standards-d7dce1.svg)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](CODE-OF-CONDUCT.md)
 
@@ -30,16 +30,17 @@ DB UI Core provides robust HTML UI components, reusable visual styles, and power
 
 ## <abbr title="too long; didn't read">tl;dr</abbr>: "too long" Danny replied
 
-- [Getting started](docs/getStarted.adoc)
-- [GitHub - DB UI Core](https://github.com/db-ui/core/)
-- [Hosted version of DB UI Core living styleguide](https://db.de/db-ui)
-- [Migrating guide from version 1 of DB UI Core to version 2](docs/migrationGuide.adoc#user-content-db-ui-core-2-0-0-migration-guide)
+-   [Getting started](docs/getStarted.adoc)
+-   [GitHub - DB UI Core](https://github.com/db-ui/core/)
+-   [Hosted version of DB UI Core living styleguide](https://db.de/db-ui)
+-   Recommended for JavaScript application development: [DB UI Elements](https://db-ui.github.io/elements/)
+-   [Migrating guide from version 1 of DB UI Core to version 2](docs/migrationGuide.adoc#user-content-db-ui-core-2-0-0-migration-guide)
 
 ## Core principals
 
 ### Consistent & Compliant
 
-DB UI Core is based on the [DB Design System](https://marketingportal.extranet.deutschebahn.com/de/ui-komponenten), that are the guidelines for any Personenverkehr Customer and Deutsche Bahn Enterprise website and web applications.
+DB UI Core is based on the [DB UX Design System](https://marketingportal.extranet.deutschebahn.com/de/ui-komponenten), that are the guidelines for any Personenverkehr Customer and Deutsche Bahn Enterprise website and web applications.
 
 ### Accessible
 
@@ -55,18 +56,18 @@ DB UI Core is decoupled from the JavaScript layer, to implement the patterns in 
 
 ### Evergreen
 
-As [DB Design System](https://marketingportal.extranet.deutschebahn.com/de/ui-komponenten) evolves, so does DB UI Core, meaning apps only need to keep their DB UI Core package updated to ensure the latest look and feel.
+As [DB UX Design System](https://marketingportal.extranet.deutschebahn.com/de/ui-komponenten) evolves, so does DB UI Core, meaning apps only need to keep their DB UI Core package updated to ensure the latest look and feel.
 
 ## More information
 
 Additionally we'll provide some more information over time regrading the whole ecosystem:
 
-- [DB Design System UX Guides + Standards documentation within the DB Marketingportal (german)](https://marketingportal.extranet.deutschebahn.com/de/ui-komponenten)
-- [Confluence / Base Wiki - "Technische Umsetzung des Enterprise UI Design Systems" (german, only available internally)](https://db.de/pu8moh)
-- [Confluence - Web UI Component Library (only available internally)](https://db.de/1tyr73)
-- [Changelog](https://github.com/db-ui/core/blob/main/CHANGELOG.md)
-- [Architectural Decision Records](https://github.com/db-ui/core/tree/main/docs/adr)
-- [DB UI Core 1.x Gitlab repository (only accessible internally)](https://db.de/4cwtyn/)
+-   [DB UX Design System documentation within the DB Marketingportal (german)](https://marketingportal.extranet.deutschebahn.com/de/ui-komponenten)
+-   [Confluence / Base Wiki - "Technische Umsetzung des Enterprise UI Design Systems" (german, only available internally)](https://db.de/pu8moh)
+-   [Confluence - Web UI Component Library (only available internally)](https://db.de/1tyr73)
+-   [Changelog](https://github.com/db-ui/core/blob/main/CHANGELOG.md)
+-   [Architectural Decision Records](https://github.com/db-ui/core/tree/main/docs/adr)
+-   [DB UI Core 1.x Gitlab repository (only accessible internally)](https://db.de/4cwtyn/)
 
 ## Things to keep in mind
 
@@ -105,7 +106,7 @@ Please mind the [conventions for git commits](/docs/conventions.adoc#user-conten
 
 <!-- markdownlint-disable MD033 -->
 
-This is only the first version of our framework and we really want your feedback - either within the <a href="https://db.de/krnm74" target="_blank" rel="noopener noreferrer">DB UI Channel by Web Dev Community in Microsoft Teams (only available DB internally)</a>, or directly at [enterprise-design-system@deutschebahn.com](mailto:enterprise-design-system@deutschebahn.com). <!-- markdownlint-disable MD033 -->
+This is only the first version of our framework and we really want your feedback - either within the <a href="https://db.de/krnm74" target="_blank" rel="noopener noreferrer">DB UI Channel by Web Dev Community in Microsoft Teams (only available DB internally)</a>, or directly at [db-ux-designsystem@deutschebahn.com](mailto:db-ux-designsystem@deutschebahn.com). <!-- markdownlint-disable MD033 -->
 We're particularly keen to add as many examples to the behaviours as possible, to further clarify them.
 
 ## FAQ

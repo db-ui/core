@@ -5,7 +5,7 @@
 .elm-button {
 	border: 1px solid transparent;
 	border-radius: 4px;
-	padding: to-rem($pxValue: 7) to-rem($pxValue: 16);
+	padding: to-rem($pxValue: 8) to-rem($pxValue: 16);
 
 	&[data-icon],
 	&[data-icon-before] {
@@ -38,7 +38,6 @@
 
 	&%variant-brand-primary,
 	&%variant-primary {
-		box-shadow: 0 0 0 1px transparent;
 		color: $button---color;
 	}
 
@@ -77,7 +76,7 @@
 
 	&%variant-secondaryOutline {
 		background-color: transparent;
-		box-shadow: 0 0 0 1px $db-color-cool-gray-700;
+		border-color: $db-color-cool-gray-700;
 		color: $db-color-cool-gray-700;
 
 		// TODO: This might get replaced by another effect

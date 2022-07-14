@@ -7,14 +7,18 @@
 	$partial: false
 ) {
 	&::#{$position} {
-		--icon-font-family: "#{"icons-" + $size + "-" + $style}", "missing-icons" !important;
+		--icon-font-family: "#{"icons-" + $size + "-" + $style}",
+			"missing-icons" !important;
 		--icon-font-size: #{to-rem($pxValue: $size)};
 
 		@if $position == "before" {
-			--icon-margin-right: #{$icon-content-space};
+			margin-inline-end: var(--icon-margin-after, #{$icon-content-space});
 		}
 		@if $position == "after" {
-			--icon-margin-left: #{$icon-content-space};
+			margin-inline-start: var(
+				--icon-margin-before,
+				#{$icon-content-space}
+			);
 		}
 
 		@if $glyph != "" {
@@ -39,9 +43,6 @@
 			line-height: 1;
 
 			display: inline-block;
-
-			margin-right: var(--icon-margin-right);
-			margin-left: var(--icon-margin-left);
 
 			// * Better Font Rendering ===========
 			-webkit-font-smoothing: antialiased;
@@ -72,11 +73,11 @@
 
 	@if $position == "before" {
 		&::before {
-			--icon-margin-right: 0;
+			--icon-margin-after: 0;
 		}
 	} @else {
 		&::after {
-			--icon-margin-left: 0;
+			--icon-margin-before: 0;
 		}
 	}
 }
@@ -89,7 +90,8 @@
 // Icon meta data mixin
 @mixin iconMeta($size: $icon-size, $style: $icon-style, $position: "before") {
 	&::#{$position} {
-		--icon-font-family: "#{"icons-" + $size + "-" + $style}", "missing-icons" !important;
+		--icon-font-family: "#{"icons-" + $size + "-" + $style}",
+			"missing-icons" !important;
 		--icon-font-size: #{to-rem($pxValue: $size)};
 	}
 }

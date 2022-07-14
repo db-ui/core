@@ -64,13 +64,13 @@
 	&[data-icon],
 	&[data-icon-before] {
 		&::before {
-			--icon-margin-right: #{to-rem($pxValue: 10)};
+			--icon-margin-after: #{to-rem($pxValue: 10)};
 		}
 	}
 	&[data-icon-after] {
 		justify-content: space-between;
 		&::after {
-			--icon-margin-left: #{to-rem($pxValue: 10)};
+			--icon-margin-before: #{to-rem($pxValue: 10)};
 		}
 	}
 }

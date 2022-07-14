@@ -30,8 +30,8 @@
 
 		// Icon horizontal space
 		&::before {
-			--icon-margin-left: #{to-rem($pxValue: 14)};
-			--icon-margin-right: #{to-rem($pxValue: 8)};
+			margin-left: #{to-rem($pxValue: 14)};
+			--icon-margin-after: #{to-rem($pxValue: 8)};
 		}
 
 		& + p {
@@ -79,8 +79,8 @@
 
 			&::before {
 				--icon-font-size: #{to-rem($pxValue: 20)};
-				--icon-margin-left: #{to-rem($pxValue: 6)};
-				--icon-margin-right: #{to-rem($pxValue: 6)};
+				margin-left: #{to-rem($pxValue: 6)};
+				--icon-margin-after: #{to-rem($pxValue: 6)};
 			}
 		}
 	}
