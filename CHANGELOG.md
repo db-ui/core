@@ -86,8 +86,8 @@ In general we've introduced the possibility to control variants and configuratio
 
 #### Package consumption
 
--   **BREAKING CHANGE** / Icons: Changed undocumented CSS Variables `--icon-margin-left` and `--icon-margin-right` to `--icon-margin-before` and `--icon-margin-after`
--   refactor: icon margins
+- **BREAKING CHANGE** / Icons: Changed undocumented CSS Variables `--icon-margin-left` and `--icon-margin-right` to `--icon-margin-before` and `--icon-margin-after`
+- refactor: icon margins
 
 ## [2.0.0-45] - 2022-07-07
 
@@ -95,7 +95,7 @@ In general we've introduced the possibility to control variants and configuratio
 
 #### Package consumption
 
--   Button border styling
+- Button border styling
 
 ## [2.0.0-44] - 2022-06-30
 
@@ -103,20 +103,20 @@ In general we've introduced the possibility to control variants and configuratio
 
 #### Package consumption
 
--   Further hints regarding SCSS consumption (especially on migrating from DB UI Core version 1 to 2)
+- Further hints regarding SCSS consumption (especially on migrating from DB UI Core version 1 to 2)
 
 ### Changed
 
 #### Package consumption
 
--   Hardening the font size calculation functions
+- Hardening the font size calculation functions
 
 ### Fixed
 
 #### Package consumption
 
--   Checkbox & Radio: Incorrect space in between these elements and their labels
--   Ensuring correct execution of SCSS functions, that would elsewhere get rendered to the CSS output directly
+- Checkbox & Radio: Incorrect space in between these elements and their labels
+- Ensuring correct execution of SCSS functions, that would elsewhere get rendered to the CSS output directly
 
 ## [2.0.0-43] - 2022-05-07
 
@@ -124,9 +124,9 @@ In general we've introduced the possibility to control variants and configuratio
 
 #### Package consumption
 
--   updated files & folders documentation
--   removed undocumented and obsolete component `Toasts`, that is included in the new DB UX Design System as `Notification` component anyhow
--   further optimized the general projects files definitions within `package.json`
+- updated files & folders documentation
+- removed undocumented and obsolete component `Toasts`, that is included in the new DB UX Design System as `Notification` component anyhow
+- further optimized the general projects files definitions within `package.json`
 
 ## [2.0.0-42] - 2022-05-06
 
@@ -134,4 +134,4 @@ In general we've introduced the possibility to control variants and configuratio
 
 #### Package consumption
 
--   Integrating the `dialog-polyfill` CSS only for demo purposes [#288], but not including it in the CSS anymore
+- Integrating the `dialog-polyfill` CSS only for demo purposes [#288], but not including it in the CSS anymore
