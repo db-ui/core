@@ -3,7 +3,7 @@ name: GitHub Pages
 on:
   push:
     branches:
-      - feat/basic-github-action-ci # Set a branch name to trigger deployment
+      - main # Set a branch name to trigger deployment
 
 jobs:
   deploy:
@@ -18,7 +18,7 @@ jobs:
         run: npm run build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/feat/basic-github-action-ci' }}
+        if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
