@@ -1,0 +1,6 @@
+{{#each sizes }}
+	<h2>{{ label }}</h2>
+	<p>
+		{{> components-accordion size=size summary=@root.summary details=@root.details }}
+	</p>
+{{/each }}

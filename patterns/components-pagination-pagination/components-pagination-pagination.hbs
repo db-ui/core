@@ -1,0 +1,12 @@
+{{! TODO: evaluate on the correct role and aria-label in here - there's a duplicate currently with both label and labelledby (prefered) }}
+<nav class="cmp-pagination" role="navigation" aria-label="pagination" aria-labelledby="headline01">
+	{{> elements-headline type='2' text='Pagination' id='headline01' }}
+	<ol>
+		<li>{{> elements-link value='Previous' title='Goto previous page' rel='prev' disabled='true' }}</li>
+		<li>{{> elements-link value='1' current='page' }}</li>
+		<li>{{> elements-link value='2' label='Goto page 2' }}</li>
+		<li>{{> elements-link value='3' label='Goto page 3' }}</li>
+		<li>&hellip;</li>
+		<li>{{> elements-link value='Next' title='Goto next page' rel='next' }}</li>
+	</ol>
+</nav>

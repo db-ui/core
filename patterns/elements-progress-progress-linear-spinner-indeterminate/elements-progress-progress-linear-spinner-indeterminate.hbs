@@ -1,0 +1,5 @@
+<div class="elm-progress">
+	<progress {{#if value}}value="{{ value }}" {{#if maximalvalue }} max="{{ maximalvalue }}" {{/if}}{{#if conic}}
+		style="--progress-conic: {{ value }}" {{/if}}{{/if}} id="{{ id }}"{{#if type}} data-type="{{type}}"{{/if }}></progress>
+	{{#if_eq type 'loader'}}{{#if value}}<output for="{{ id }}">{{ value }}{{ unit }}</output>{{/if}}{{/if_eq}}
+</div>
