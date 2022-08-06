@@ -6,7 +6,6 @@
 		appearance: none;
 		background-color: $progress---backgroundColor;
 		border: none;
-		box-shadow: $box-shadow-01, $box-shadow-02;
 		height: $progress---height;
 		vertical-align: middle;
 
@@ -93,7 +92,6 @@
 					align-items: center;
 					background: $progress-conic-inner-backgroundColor; // * TODO: possibly rework variable naming
 					border-radius: 50%;
-					box-shadow: inset $box-shadow-01, inset $box-shadow-02;
 					display: block;
 					display: flex;
 					height: #{$progress-conic-inner-size}rem;

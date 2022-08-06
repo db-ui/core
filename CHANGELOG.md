@@ -80,6 +80,14 @@ In general we've introduced the possibility to control variants and configuratio
 - The DB Webfonts files have been updated -->
 
 ## [Unreleased]
+## [2.0.0-48] - 2022-08-05
+
+### Fixed
+
+#### Package consumption
+
+- Spinner: Removed obsolete box-shadow
+
 ## [2.0.0-47] - 2022-07-15
 
 ### Fixed
