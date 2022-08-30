@@ -80,6 +80,11 @@ In general we've introduced the possibility to control variants and configuratio
 - The DB Webfonts files have been updated -->
 
 ## [Unreleased]
+
+## [2.0.0-49] - 2022-08-30
+
+- Loading Indicator: introduced new Loadingindicator (Circular Loading Spinner)
+
 ## [2.0.0-48] - 2022-08-05
 
 ### Fixed
