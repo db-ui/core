@@ -12,6 +12,6 @@ $fonts-path: "../fonts/" !default;
 @import "../_patterns/00-base/icons/icons.font-faces";
 
 :root {
-	--db_ic_search_24: url(#{$icons-path}functional/images/action/db_ic_search_24.svg);
-	--db_ic_expand_more_20: url(#{$icons-path}functional/images/navigation/db_ic_expand_more_20.svg);
+	--db-ic-search-24: url(#{$icons-path}functional/images/action/db_ic_search_24.svg);
+	--db-ic-expand-more-20: url(#{$icons-path}functional/images/navigation/db_ic_expand_more_20.svg);
 }
