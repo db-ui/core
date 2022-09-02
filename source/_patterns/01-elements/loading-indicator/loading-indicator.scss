@@ -13,7 +13,8 @@
 		@if $size == s or $size == xs {
 			$stroke-width: 2px;
 		}
-		.#{$prefix}loadingindicator--size-#{$size} {
+		//.#{$prefix}loadingindicator--size-#{$size} {
+		&%size-#{$size} {
 			--loadingindicator--stroke-width: #{math.div(
 					44px,
 					map-get($db-spinner-sizes, $size)
@@ -26,11 +27,29 @@
 	}
 }
 
-@include loadingindicator--sizes("elm-");
-
 .elm-loadingindicator {
 	color: $db-color-red-500;
 	animation: loadingindicator-rotate 3s linear infinite;
+
+	@include loadingindicator--sizes("elm-");
+
+	@extend %size-m; // default
+
+	&[data-size="xs"] {
+		@extend %size-xs;
+	}
+	&[data-size="s"] {
+		@extend %size-s;
+	}
+	&[data-size="m"] {
+		@extend %size-m;
+	}
+	&[data-size="l"] {
+		@extend %size-l;
+	}
+	&[data-size="xl"] {
+		@extend %size-xl;
+	}
 }
 
 .elm-loadingindicator__circle {
