@@ -81,7 +81,7 @@ In general we've introduced the possibility to control variants and configuratio
 
 ## [Unreleased]
 
-## [2.0.0-49] - 2022-08-30
+### Added
 
 - Loading Indicator: introduced new Loadingindicator (Circular Loading Spinner)
 
