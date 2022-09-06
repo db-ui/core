@@ -20,7 +20,7 @@
 		}
 
 		background-image: var(
-			--db_ic_expand_more_20,
+			--db-ic-expand-more-20,
 			url(#{$icons-path}functional/images/navigation/db_ic_expand_more_20.svg)
 		);
 		background-position: right to-rem($pxValue: 11) center;

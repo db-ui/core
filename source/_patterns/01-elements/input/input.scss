@@ -136,7 +136,7 @@
 
 	&[type="search"] {
 		background: var(
-				--db_ic_search_24,
+				--db-ic-search-24,
 				url(#{$icons-path}functional/images/action/db_ic_search_24.svg)
 			)
 			no-repeat to-rem($pxValue: 6) to-rem($pxValue: 12);
