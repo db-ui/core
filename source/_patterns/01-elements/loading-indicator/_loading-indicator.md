@@ -1,6 +1,6 @@
 ---
 title: loading
-state: inevaluation
+state: inprogress
 ---
 
 Progress spinners (loading indicators) show the user that a longer-lasting action is being carried out.  
