@@ -23,7 +23,17 @@ Extend one of the size placeholders in case that you don't want the default (med
 
 #### HTML attribute
 
-You could set the different button sizes via the `data-size` attribute, the default is "medium" and is in that case optional.
+You could set the different button sizes via the `data-size` attribute, the default is "medium" and in that case is optional.
+
+### Width
+
+#### SCSS (recommended)
+
+Extend the width placeholders in case that you don't want the default (content-length sized): `%width-Full`
+
+#### HTML attribute
+
+You could differentiate the button width via the `data-width` attribute, choose value "full" for a button taking the whole containers width; the default is "auto" and in that case is optional.
 
 ## Usability
 
