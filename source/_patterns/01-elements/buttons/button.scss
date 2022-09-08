@@ -50,7 +50,7 @@
 			}
 		}
 		&:active {
-			background-color: #cc0013; // TODO: replace by correct color variable
+			background-color: #b30010; // TODO: replace by correct color variable
 		}
 	}
 
@@ -79,10 +79,6 @@
 				// TODO: This could probably get simplified later on e.g. via CSS variables
 				background-color: $button-secondary-hover-backgroundColor;
 			}
-		}
-		&:disabled {
-			background-color: transparent;
-			color: $db-color-cool-gray-700;
 		}
 		&:active {
 			background-color: $button-secondary-active-backgroundColor;
@@ -113,9 +109,6 @@
 				// TODO: This could probably get simplified later on e.g. via CSS variables
 				background-color: $button-secondary-hover-backgroundColor;
 			}
-		}
-		&:disabled {
-			background-color: transparent; // shame.css
 		}
 		&:active {
 			background-color: $button-secondary-active-backgroundColor;
@@ -176,8 +169,6 @@
 	}
 
 	&:disabled {
-		background-color: $db-color-cool-gray-200;
-		color: $db-color-cool-gray-700;
-		opacity: 0.5;
+		opacity: 0.25;
 	}
 }
