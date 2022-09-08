@@ -73,9 +73,6 @@
 		border-color: $db-color-cool-gray-700;
 		color: $db-color-cool-gray-700;
 
-		// TODO: This might get replaced by another effect
-		backdrop-filter: blur(4px);
-
 		&:not(:disabled) {
 			&:hover {
 				// TODO: This could probably get simplified later on e.g. via CSS variables
