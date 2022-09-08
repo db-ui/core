@@ -9,7 +9,7 @@ state: inreview
 
 #### SCSS (recommended)
 
-Extend one of the size placeholders in case that you don't want the default (regular): `%size-Small` or `%size-Large`
+Extend one of the size SCSS placeholders in case that you don't want the default (regular): `%size-Small` or `%size-Large`
 
 #### HTML attribute
 
