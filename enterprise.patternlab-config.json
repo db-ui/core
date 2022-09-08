@@ -80,7 +80,12 @@
 		}
 	},
 	"patternExtension": "hbs",
-	"patternStateCascade": ["inevaluation", "inprogress", "inreview", "complete"],
+	"patternStateCascade": [
+		"inevaluation",
+		"inprogress",
+		"inreview",
+		"complete"
+	],
 	"patternExportAll": false,
 	"patternExportDirectory": "pattern_exports",
 	"patternExportPatternPartials": [],
@@ -140,6 +145,10 @@
 					"after": []
 				}
 			}
+		},
+		"plugin-node-wrappable": {
+			"enabled": true,
+			"initialized": false
 		}
 	}
 }
