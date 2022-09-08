@@ -9,7 +9,7 @@ state: complete
 
 #### SCSS (recommended)
 
-Extend one of the variant placeholders: `%variant-primary`, `%variant-secondary` or `%variant-tertiary`
+Extend one of the variant placeholders: `%variant-secondary-inverted`, `%variant-secondary` or `%variant-tertiary`
 
 #### HTML attribute
 

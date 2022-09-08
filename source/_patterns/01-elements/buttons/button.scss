@@ -34,12 +34,12 @@
 	}*/
 
 	&%variant-brand-primary,
-	&%variant-primary {
+	&%variant-secondary-inverted {
 		color: $button---color;
 	}
 
 	&%variant-brand-primary,
-	&%variant-primary {
+	&%variant-secondary-inverted {
 		font-weight: 700;
 	}
 
@@ -57,13 +57,13 @@
 		}
 	}
 
-	&%variant-primary {
-		background-color: $button-primary--backgroundColor;
+	&%variant-secondary-inverted {
+		background-color: $button-secondaryInverted--backgroundColor;
 
 		&:not(:disabled) {
 			&:hover {
 				// TODO: This could probably get simplified later on e.g. via CSS variables
-				background-color: $button-primary-hover-backgroundColor;
+				background-color: $button-secondaryInverted-hover-backgroundColor;
 			}
 		}
 		&:active {
@@ -166,8 +166,8 @@
 	&[data-variant="brand-primary"] {
 		@extend %variant-brand-primary;
 	}
-	&[data-variant="primary"] {
-		@extend %variant-primary;
+	&[data-variant="secondary-inverted"] {
+		@extend %variant-secondary-inverted;
 	}
 	&[data-variant="secondary-outline"] {
 		@extend %variant-secondaryOutline;

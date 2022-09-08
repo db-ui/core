@@ -85,7 +85,7 @@
 		"http://127.0.0.1:8080/patterns/base-type-highlight-colors-positive/base-type-highlight-colors-positive.rendered.html",
 		"http://127.0.0.1:8080/patterns/elements-buttons-00-button/elements-buttons-00-button.rendered.html",
 		"http://127.0.0.1:8080/patterns/elements-buttons-01-button-brand-primary/elements-buttons-01-button-brand-primary.rendered.html",
-		"http://127.0.0.1:8080/patterns/elements-buttons-03-button-primary/elements-buttons-03-button-primary.rendered.html",
+		"http://127.0.0.1:8080/patterns/elements-buttons-03-button-secondary-inverted/elements-buttons-03-button-secondary-inverted.rendered.html",
 		"http://127.0.0.1:8080/patterns/elements-buttons-04-button-secondary-outline/elements-buttons-04-button-secondary-outline.rendered.html",
 		"http://127.0.0.1:8080/patterns/elements-buttons-05-button-secondary-solid/elements-buttons-05-button-secondary-solid.rendered.html",
 		"http://127.0.0.1:8080/patterns/elements-buttons-06-button-tertiary-plain/elements-buttons-06-button-tertiary-plain.rendered.html",
