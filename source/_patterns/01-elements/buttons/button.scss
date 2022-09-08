@@ -108,7 +108,7 @@
 		}
 	}
 
-	&%variant-tertiaryPlain {
+	&%variant-ghost {
 		color: $db-color-cool-gray-700;
 		border: 2px solid transparent;
 		background-color: transparent; // shame.css
@@ -175,8 +175,8 @@
 	&[data-variant="secondary-solid"] {
 		@extend %variant-secondarySolid;
 	}
-	&[data-variant="tertiary-plain"] {
-		@extend %variant-tertiaryPlain;
+	&[data-variant="ghost"] {
+		@extend %variant-ghost;
 	}
 
 	&:disabled {
