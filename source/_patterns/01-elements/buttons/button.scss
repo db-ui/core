@@ -5,7 +5,7 @@
 .elm-button {
 	border: 1px solid transparent;
 	border-radius: 4px;
-	padding: to-rem($pxValue: 8) to-rem($pxValue: 16);
+	padding: to-rem($pxValue: 7) to-rem($pxValue: 16);
 
 	font-weight: 700;
 
@@ -116,8 +116,29 @@
 	}
 
 	// Sizes
+	&%size-XSmall {
+		min-height: to-rem($pxValue: 28);
+		padding: to-rem($pxValue: 3) to-rem($pxValue: 8);
+
+		&:not(.is-icon-text-replace) {
+			font-size: to-rem($pxValue: 12);
+		}
+		&[data-icon],
+		&[data-icon-before] {
+			@include iconMeta(20);
+		}
+		&[data-icon-after] {
+			@include iconMeta($size: 20, $position: "after");
+		}
+		// Square icon only buttons
+		&.is-icon-text-replace {
+			width: to-rem($pxValue: 28);
+		}
+	}
 	&%size-Small {
-		min-height: to-rem($pxValue: 36);
+		min-height: to-rem($pxValue: 32);
+		padding: to-rem($pxValue: 5) to-rem($pxValue: 12);
+
 		&:not(.is-icon-text-replace) {
 			font-size: to-rem($pxValue: 14);
 		}
@@ -134,16 +155,16 @@
 		}
 	}
 	&%size-Large {
-		min-height: to-rem($pxValue: 52);
-		&:not(.is-icon-text-replace) {
-			font-size: to-rem($pxValue: 20);
-		}
+		min-height: to-rem($pxValue: 48);
 		// Square icon only buttons
 		&.is-icon-text-replace {
 			width: to-rem($pxValue: 52);
 		}
 	}
 
+	&[data-size="xsmall"] {
+		@extend %size-XSmall;
+	}
 	&[data-size="small"] {
 		@extend %size-Small;
 	}

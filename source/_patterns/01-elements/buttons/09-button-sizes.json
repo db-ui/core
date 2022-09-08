@@ -1,6 +1,10 @@
 {
 	"sizes": [
 		{
+			"size": "xsmall",
+			"label": "XSmall"
+		},
+		{
 			"size": "small",
 			"label": "Small"
 		},
