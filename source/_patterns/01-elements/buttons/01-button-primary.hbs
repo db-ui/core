@@ -1,0 +1,17 @@
+{{!-- TODO: let's not use those modifier classes, but inherit their meaning via CSS correctly and introduce sample classes for the styleguide --}}
+<p>
+	{{> elements-button variant='primary' value='Primary' icon='add'}}
+	{{> elements-button variant='primary' value='Primary' disabled='true' icon='add' }}
+</p>
+<p>
+	{{> elements-button variant='primary' value='Primary with right icon' icon-after='add'}}
+	{{> elements-button variant='primary' value='Primary with right icon(disabled)' disabled='true' icon-after='add' }}
+</p>
+<p>
+	{{> elements-button variant='primary' value='Primary without icon' }}
+	{{> elements-button variant='primary' value='Primary without icon (disabled)' disabled='true' }}
+</p>
+<p>
+	{{> elements-button variant='primary' title='Check' value='Primary displaying only the icon' icon='done' styleModifier='is-icon-text-replace' }}
+	{{> elements-button variant='primary' title='Check' value='Primary displaying only the icon' disabled='true' icon='done' styleModifier='is-icon-text-replace' }}
+</p>

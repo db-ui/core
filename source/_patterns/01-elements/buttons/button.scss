@@ -33,23 +33,23 @@
 		filter: brightness(75%);
 	}*/
 
-	&%variant-brand-primary,
+	&%variant-primary,
 	&%variant-secondary-inverted {
 		color: $button---color;
 	}
 
-	&%variant-brand-primary,
+	&%variant-primary,
 	&%variant-secondary-inverted {
 		font-weight: 700;
 	}
 
-	&%variant-brand-primary {
-		background-color: $button-brand-primary--backgroundColor;
+	&%variant-primary {
+		background-color: $button-primary--backgroundColor;
 
 		&:not(:disabled) {
 			&:hover {
 				// TODO: This could probably get simplified later on e.g. via CSS variables
-				background-color: $button-brand-primary-hover-backgroundColor;
+				background-color: $button-primary-hover-backgroundColor;
 			}
 		}
 		&:active {
@@ -163,8 +163,8 @@
 	}
 
 	// Providing the variants as HTML attributes as well
-	&[data-variant="brand-primary"] {
-		@extend %variant-brand-primary;
+	&[data-variant="primary"] {
+		@extend %variant-primary;
 	}
 	&[data-variant="secondary-inverted"] {
 		@extend %variant-secondary-inverted;

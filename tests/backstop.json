@@ -439,14 +439,14 @@
 			"onReadyScript": "puppet/clickAndHoverHelper.js"
 		},
 		{
-			"label": "Button Brand Primary",
-			"url": "http://127.0.0.1:8080/patterns/elements-buttons-01-button-brand-primary/elements-buttons-01-button-brand-primary.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-01-button-brand-primary/elements-buttons-01-button-brand-primary.rendered.html"
+			"label": "Button Primary",
+			"url": "http://127.0.0.1:8080/patterns/elements-buttons-01-button-primary/elements-buttons-01-button-primary.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-01-button-primary/elements-buttons-01-button-primary.rendered.html"
 		},
 		{
-			"label": "Button Brand Primary - hovered",
-			"url": "http://127.0.0.1:8080/patterns/elements-buttons-01-button-brand-primary/elements-buttons-01-button-brand-primary.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-01-button-brand-primary/elements-buttons-01-button-brand-primary.rendered.html",
+			"label": "Button Primary - hovered",
+			"url": "http://127.0.0.1:8080/patterns/elements-buttons-01-button-primary/elements-buttons-01-button-primary.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-01-button-primary/elements-buttons-01-button-primary.rendered.html",
 			"hoverSelectors": [
 				"p:nth-of-type(1) .elm-button:nth-of-type(1)",
 				"p:nth-of-type(1) .elm-button:nth-of-type(2)",
