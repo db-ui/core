@@ -71,7 +71,7 @@
 		}
 	}
 
-	&%variant-secondaryOutline {
+	&%variant-secondary {
 		background-color: transparent;
 		border-color: $db-color-cool-gray-700;
 		color: $db-color-cool-gray-700;
@@ -82,7 +82,7 @@
 		&:not(:disabled) {
 			&:hover {
 				// TODO: This could probably get simplified later on e.g. via CSS variables
-				background-color: $button-secondaryOutline-hover-backgroundColor;
+				background-color: $button-secondary-hover-backgroundColor;
 			}
 		}
 		&:disabled {
@@ -90,7 +90,7 @@
 			color: $db-color-cool-gray-700;
 		}
 		&:active {
-			background-color: $button-secondaryOutline-active-backgroundColor;
+			background-color: $button-secondary-active-backgroundColor;
 		}
 	}
 
@@ -115,14 +115,14 @@
 		&:not(:disabled) {
 			&:hover {
 				// TODO: This could probably get simplified later on e.g. via CSS variables
-				background-color: $button-secondaryOutline-hover-backgroundColor;
+				background-color: $button-secondary-hover-backgroundColor;
 			}
 		}
 		&:disabled {
 			background-color: transparent; // shame.css
 		}
 		&:active {
-			background-color: $button-secondaryOutline-active-backgroundColor;
+			background-color: $button-secondary-active-backgroundColor;
 		}
 	}
 
@@ -169,8 +169,8 @@
 	&[data-variant="secondary-inverted"] {
 		@extend %variant-secondary-inverted;
 	}
-	&[data-variant="secondary-outline"] {
-		@extend %variant-secondaryOutline;
+	&[data-variant="secondary"] {
+		@extend %variant-secondary;
 	}
 	&[data-variant="tertiary"] {
 		@extend %variant-tertiary;

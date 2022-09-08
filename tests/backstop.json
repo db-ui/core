@@ -479,14 +479,14 @@
 			"onReadyScript": "puppet/clickAndHoverHelper.js"
 		},
 		{
-			"label": "Button Secondary Outline",
-			"url": "http://127.0.0.1:8080/patterns/elements-buttons-04-button-secondary-outline/elements-buttons-04-button-secondary-outline.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-04-button-secondary-outline/elements-buttons-04-button-secondary-outline.rendered.html"
+			"label": "Button Secondary",
+			"url": "http://127.0.0.1:8080/patterns/elements-buttons-04-button-secondary/elements-buttons-04-button-secondary.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-04-button-secondary/elements-buttons-04-button-secondary.rendered.html"
 		},
 		{
-			"label": "Button Secondary Outline - hovered",
-			"url": "http://127.0.0.1:8080/patterns/elements-buttons-04-button-secondary-outline/elements-buttons-04-button-secondary-outline.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-04-button-secondary-outline/elements-buttons-04-button-secondary-outline.rendered.html",
+			"label": "Button Secondary - hovered",
+			"url": "http://127.0.0.1:8080/patterns/elements-buttons-04-button-secondary/elements-buttons-04-button-secondary.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-04-button-secondary/elements-buttons-04-button-secondary.rendered.html",
 			"hoverSelectors": [
 				"p:nth-of-type(1) .elm-button:nth-of-type(1)",
 				"p:nth-of-type(1) .elm-button:nth-of-type(2)",
