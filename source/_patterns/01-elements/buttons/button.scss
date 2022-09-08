@@ -25,6 +25,9 @@
 		width: $button---minHeight;
 	}
 
+	// Changing background-color on hover should be animated by a transition
+	transition: background-color 0.3s cubic-bezier(0.15, 0, 0.45, 1);
+
 	// Centering the content vertically and horizontally
 	align-items: center;
 	display: inline-flex;
