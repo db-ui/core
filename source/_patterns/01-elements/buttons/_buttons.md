@@ -19,11 +19,11 @@ You could set the different button variants via the `data-variant` attribute.
 
 #### SCSS (recommended)
 
-Extend one of the size placeholders in case that you don't want the default (regular): `%size-Small` or `%size-Large`
+Extend one of the size placeholders in case that you don't want the default (medium): `%size-Small` or `%size-Large`
 
 #### HTML attribute
 
-You could set the different button sizes via the `data-size` attribute, the default is "regular" and is in that case optional.
+You could set the different button sizes via the `data-size` attribute, the default is "medium" and is in that case optional.
 
 ## Usability
 

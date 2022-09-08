@@ -5,8 +5,8 @@
 			"label": "Small"
 		},
 		{
-			"size": "regular",
-			"label": "Regular (default, data-size attribute is optional)"
+			"size": "medium",
+			"label": "Medium (default, data-size attribute is optional)"
 		},
 		{
 			"size": "large",
