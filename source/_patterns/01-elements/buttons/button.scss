@@ -52,7 +52,7 @@
 			}
 		}
 		&:active {
-			background-color: #b30010; // TODO: replace by correct color variable
+			background-color: $button-primary-active-backgroundColor; // TODO: replace by correct color variable
 		}
 	}
 
@@ -67,7 +67,7 @@
 			}
 		}
 		&:active {
-			background-color: #363c4a;
+			background-color: $button-secondaryInverted-active-backgroundColor;
 		}
 	}
 
@@ -109,11 +109,11 @@
 		&:not(:disabled) {
 			&:hover {
 				// TODO: This could probably get simplified later on e.g. via CSS variables
-				background-color: $button-secondary-hover-backgroundColor;
+				background-color: $button-ghost-hover-backgroundColor;
 			}
 		}
 		&:active {
-			background-color: $button-secondary-active-backgroundColor;
+			background-color: $button-ghost-active-backgroundColor;
 		}
 	}
 
