@@ -94,17 +94,17 @@
 		}
 	}
 
-	&%variant-secondarySolid {
+	&%variant-tertiary {
 		color: $db-color-cool-gray-700;
-		background-color: $button-secondarySolid--backgroundColor;
+		background-color: $button-tertiary--backgroundColor;
 		&:not(:disabled) {
 			&:hover {
 				// TODO: This could probably get simplified later on e.g. via CSS variables
-				background-color: $button-secondarySolid-hover-backgroundColor;
+				background-color: $button-tertiary-hover-backgroundColor;
 			}
 		}
 		&:active {
-			background-color: $button-secondarySolid-active-backgroundColor;
+			background-color: $button-tertiary-active-backgroundColor;
 		}
 	}
 
@@ -172,8 +172,8 @@
 	&[data-variant="secondary-outline"] {
 		@extend %variant-secondaryOutline;
 	}
-	&[data-variant="secondary-solid"] {
-		@extend %variant-secondarySolid;
+	&[data-variant="tertiary"] {
+		@extend %variant-tertiary;
 	}
 	&[data-variant="ghost"] {
 		@extend %variant-ghost;

@@ -499,14 +499,14 @@
 			"onReadyScript": "puppet/clickAndHoverHelper.js"
 		},
 		{
-			"label": "Button Secondary Solid",
-			"url": "http://127.0.0.1:8080/patterns/elements-buttons-05-button-secondary-solid/elements-buttons-05-button-secondary-solid.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-05-button-secondary-solid/elements-buttons-05-button-secondary-solid.rendered.html"
+			"label": "Button Tertiary",
+			"url": "http://127.0.0.1:8080/patterns/elements-buttons-05-button-tertiary/elements-buttons-05-button-tertiary.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-05-button-tertiary/elements-buttons-05-button-tertiary.rendered.html"
 		},
 		{
-			"label": "Button Secondary Solid - hovered",
-			"url": "http://127.0.0.1:8080/patterns/elements-buttons-05-button-secondary-solid/elements-buttons-05-button-secondary-solid.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-05-button-secondary-solid/elements-buttons-05-button-secondary-solid.rendered.html",
+			"label": "Button Tertiary - hovered",
+			"url": "http://127.0.0.1:8080/patterns/elements-buttons-05-button-tertiary/elements-buttons-05-button-tertiary.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-05-button-tertiary/elements-buttons-05-button-tertiary.rendered.html",
 			"hoverSelectors": [
 				"p:nth-of-type(1) .elm-button:nth-of-type(1)",
 				"p:nth-of-type(1) .elm-button:nth-of-type(2)"
