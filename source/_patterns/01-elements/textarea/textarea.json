@@ -1,6 +1,5 @@
 {
 	"placeholder": "Projekt Name",
-	"describedbyid": "textarea01hint",
 	"id": "textarea01",
 	"label": "Textlabel",
 	"maxlength": "200"

@@ -2,23 +2,19 @@
 	"variations": [
 		{
 			"variant": "semitransparent",
-			"id": "textarea16",
-			"describedbyid": "textarea16hint"
+			"id": "textarea16"
 		},
 		{
 			"variant": "white",
-			"id": "textarea17",
-			"describedbyid": "textarea17hint"
+			"id": "textarea17"
 		},
 		{
 			"variant": "solid",
-			"id": "textarea18",
-			"describedbyid": "textarea17hint"
+			"id": "textarea18"
 		},
 		{
 			"variant": "outline",
-			"id": "textarea19",
-			"describedbyid": "textarea19hint"
+			"id": "textarea19"
 		}
 	],
 	"placeholder": "Projekt Name",
