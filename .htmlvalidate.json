@@ -6,6 +6,6 @@
 		"require-sri": ["error", { "target": "crossorigin" }],
 		"no-trailing-whitespace": ["off"],
 		"doctype-style": ["off"],
-		"element-name": ["error", { "whitelist": ["dialog"] }],
+		"element-name": ["error", { "whitelist": ["dialog"] }]
 	}
 }
