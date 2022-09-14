@@ -17,6 +17,6 @@ then
      exit 1
    fi
 else
-  echo "Your tag has to start with 'v-'"
+  echo "Your tag has to start with 'v'"
   exit 1
 fi
