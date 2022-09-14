@@ -1,0 +1,40 @@
+name: Test and publish to package registries after new GitHub release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  init:
+    uses: ./.github/workflows/00-init.yml
+
+  get-publish-version:
+    uses: ./.github/workflows/01-get-publish-version.yml
+    needs: [init]
+
+  lint:
+    uses: ./.github/workflows/01-lint.yml
+    needs: [init]
+
+  test:
+    uses: ./.github/workflows/01-test.yml
+    needs: [init]
+
+  build:
+    uses: ./.github/workflows/01-build.yml
+    needs: [init]
+
+  publishpackages:
+    uses: ./.github/workflows/03-publish-packages.yml
+    needs: [build, get-publish-version]
+    secrets: inherit
+    with:
+      release: ${{ needs.get-publish-version.outputs.release }}
+      preRelease: ${{ needs.get-publish-version.outputs.preRelease }}
+      version: ${{ needs.get-publish-version.outputs.version }}
+
+  changeloglatest:
+    uses: ./.github/workflows/03-changelog.yml
+    needs: [publishpackages, get-publish-version]
+    with:
+      version: ${{ needs.get-publish-version.outputs.version }}
