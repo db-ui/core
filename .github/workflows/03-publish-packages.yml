@@ -29,14 +29,14 @@ jobs:
       - name: 🔄 Init Cache
         uses: ./.github/actions/npm-cache
 
-      - name: ➡ Get Package theme
-        id: getPkgTheme
-        run: |
-          if [[ $DBUI_THEME != 'default' ]]; then
-            echo "::set-output name=pkgTheme::-$DBUI_THEME"
-          else
-            echo "::set-output name=pkgTheme::"
-          fi
+      - name: ⬇️Download package build
+        uses: actions/download-artifact@v3
+        with:
+          name: package
+          path: ./
+
+      - name: Display structure of downloaded files
+        run: ls -R
 
       - name: 📰 Publish to NPM Registries
         run: |
