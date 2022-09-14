@@ -54,9 +54,3 @@ jobs:
         with:
           name: package-core
           path: db-ui-core-${{ inputs.version }}.tgz
-
-      - name: 💀 Killing me softly
-        uses: ./.github/actions/cancel-workflow
-        if: failure()
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
