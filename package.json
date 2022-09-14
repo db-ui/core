@@ -46,8 +46,7 @@
     "stylelint-check": "stylelint-config-prettier-check",
     "release:pre": "np prerelease --any-branch --tag next",
     "release": "np",
-    "prepare": "node -e \"try { require('husky').install() } catch (e) {}\"",
-    "version": "npm run build"
+    "prepare": "node -e \"try { require('husky').install() } catch (e) {}\""
   },
   "keywords": [],
   "author": {
