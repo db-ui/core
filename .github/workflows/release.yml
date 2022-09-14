@@ -32,9 +32,3 @@ jobs:
       release: ${{ needs.get-publish-version.outputs.release }}
       preRelease: ${{ needs.get-publish-version.outputs.preRelease }}
       version: ${{ needs.get-publish-version.outputs.version }}
-
-  changeloglatest:
-    uses: ./.github/workflows/03-changelog.yml
-    needs: [publishpackages, get-publish-version]
-    with:
-      version: ${{ needs.get-publish-version.outputs.version }}
