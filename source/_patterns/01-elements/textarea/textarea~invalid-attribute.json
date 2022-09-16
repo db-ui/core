@@ -2,6 +2,5 @@
 	"id": "textarea06",
 	"value": "Inpu",
 	"validation": " minlength=\"5\"",
-	"aria-invalid": "true",
-	"describedbyid": "textarea06hint"
+	"aria-invalid": "true"
 }

@@ -18,4 +18,4 @@ Extend the size placeholder in case that you don't want the default (regular): `
 
 #### HTML attribute
 
-You could set the different button sizes via the `data-size` attribute, the default is "regular" and is in that case optional.
+You could set the different button sizes via the `data-size` attribute, the default is "regular" and in that case is optional.

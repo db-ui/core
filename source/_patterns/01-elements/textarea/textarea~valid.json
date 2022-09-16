@@ -1,6 +1,5 @@
 {
 	"id": "textarea04",
 	"value": "Valid input",
-	"validation": " minlength=\"3\" required",
-	"describedbyid": "textarea04hint"
+	"validation": " minlength=\"3\" required"
 }
