@@ -1,6 +1,10 @@
 {
 	"sizes": [
 		{
+			"size": "xxsmall",
+			"label": "XXSmall"
+		},
+		{
 			"size": "xsmall",
 			"label": "XSmall"
 		},
@@ -15,6 +19,10 @@
 		{
 			"size": "large",
 			"label": "Large"
+		},
+		{
+			"size": "xlarge",
+			"label": "XLarge"
 		}
 	]
 }

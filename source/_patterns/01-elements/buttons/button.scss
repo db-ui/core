@@ -121,8 +121,33 @@
 	}
 
 	// Sizes
+	&%size-XXSmall {
+		$height: 20;
+		$icon-size: 16;
+
+		min-height: to-rem($pxValue: $height);
+		padding: to-rem($pxValue: 1) to-rem($pxValue: 4);
+
+		&:not(.is-icon-text-replace) {
+			font-size: to-rem($pxValue: 12);
+		}
+		&[data-icon],
+		&[data-icon-before] {
+			@include iconMeta($icon-size);
+		}
+		&[data-icon-after] {
+			@include iconMeta($size: $icon-size, $position: "after");
+		}
+		// Square icon only buttons
+		&.is-icon-text-replace {
+			width: to-rem($pxValue: $height);
+		}
+	}
 	&%size-XSmall {
-		min-height: to-rem($pxValue: 28);
+		$height: 24;
+		$icon-size: 16;
+
+		min-height: to-rem($pxValue: $height);
 		padding: to-rem($pxValue: 3) to-rem($pxValue: 8);
 
 		&:not(.is-icon-text-replace) {
@@ -130,51 +155,73 @@
 		}
 		&[data-icon],
 		&[data-icon-before] {
-			@include iconMeta(20);
+			@include iconMeta($icon-size);
 		}
 		&[data-icon-after] {
-			@include iconMeta($size: 20, $position: "after");
+			@include iconMeta($size: $icon-size, $position: "after");
 		}
 		// Square icon only buttons
 		&.is-icon-text-replace {
-			width: to-rem($pxValue: 28);
+			width: to-rem($pxValue: $height);
 		}
 	}
 	&%size-Small {
-		min-height: to-rem($pxValue: 32);
-		padding: to-rem($pxValue: 5) to-rem($pxValue: 12);
+		$height: 32;
+		$icon-size: 16;
+
+		min-height: to-rem($pxValue: $height);
+		padding: to-rem($pxValue: 6) to-rem($pxValue: 12);
 
 		&:not(.is-icon-text-replace) {
 			font-size: to-rem($pxValue: 14);
 		}
 		&[data-icon],
 		&[data-icon-before] {
-			@include iconMeta(20);
+			@include iconMeta($icon-size);
 		}
 		&[data-icon-after] {
-			@include iconMeta($size: 20, $position: "after");
+			@include iconMeta($size: $icon-size, $position: "after");
 		}
 		// Square icon only buttons
 		&.is-icon-text-replace {
-			width: to-rem($pxValue: 36);
+			width: to-rem($pxValue: $height);
 		}
 	}
 	&%size-Large {
-		min-height: to-rem($pxValue: 48);
+		$height: 48;
+
+		min-height: to-rem($pxValue: $height);
+		padding: to-rem($pxValue: 12) to-rem($pxValue: 24);
 		// Square icon only buttons
 		&.is-icon-text-replace {
-			width: to-rem($pxValue: 52);
+			width: to-rem($pxValue: $height);
+		}
+	}
+	&%size-XLarge {
+		$height: 64;
+
+		min-height: to-rem($pxValue: $height);
+		padding: to-rem($pxValue: 20) to-rem($pxValue: 24);
+		// Square icon only buttons
+		&.is-icon-text-replace {
+			width: to-rem($pxValue: $height);
 		}
 	}
 
 	&[data-size="xsmall"] {
 		@extend %size-XSmall;
 	}
+	&[data-size="xxsmall"] {
+		@extend %size-XXSmall;
+	}
 	&[data-size="small"] {
 		@extend %size-Small;
 	}
 	&[data-size="large"] {
 		@extend %size-Large;
+	}
+	&[data-size="xlarge"] {
+		@extend %size-XLarge;
 	}
 
 	// Width
