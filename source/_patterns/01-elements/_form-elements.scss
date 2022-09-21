@@ -1,5 +1,7 @@
 @import "../../css/helpers/functions";
+/* stylelint-disable scss/at-import-partial-extension */
 @import "form-elements.variables";
+/* stylelint-enable scss/at-import-partial-extension */
 
 %form-element {
 	border-radius: 4px;

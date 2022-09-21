@@ -1,7 +1,9 @@
 @charset "utf-8";
 
+/* stylelint-disable scss/at-import-partial-extension */
 @import "checkbox.variables";
 @import "../checkbox.variables";
+/* stylelint-enable scss/at-import-partial-extension */
 
 .pl-js-pattern-example {
 	[id^="elements-checkbox-on-dark-background"] & {

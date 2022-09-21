@@ -1,5 +1,7 @@
 @import "../../../css/helpers/functions";
+/* stylelint-disable scss/at-import-partial-extension */
 @import "cards.variables";
+/* stylelint-enable scss/at-import-partial-extension */
 
 .cmp-card {
 	box-shadow: $box-shadow-01, $box-shadow-02;

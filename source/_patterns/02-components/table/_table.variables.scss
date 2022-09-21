@@ -1,4 +1,6 @@
+/* stylelint-disable scss/at-import-partial-extension */
 @import "../../../css/db-ui-core.variables";
+/* stylelint-enable scss/at-import-partial-extension */
 
 $cmp-table-cell-height-36: to-rem(
 	$pxValue: 4

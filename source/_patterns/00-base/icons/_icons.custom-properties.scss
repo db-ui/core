@@ -1,4 +1,6 @@
+/* stylelint-disable scss/at-import-partial-extension */
 @import "icons.variables";
+/* stylelint-enable scss/at-import-partial-extension */
 
 // TODO: The following construct was especially meant to enable a branch (EDS & FV) specific result - probably we could refactor this the sooner the later
 [data-icon]:not([data-icon-variant]),

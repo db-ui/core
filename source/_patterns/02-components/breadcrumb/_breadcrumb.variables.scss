@@ -1,6 +1,8 @@
+/* stylelint-disable scss/at-import-partial-extension */
 @import "../../00-base/icons/icons.helpers";
 @import "../../00-base/icons/icons.variables";
 @import "../../00-base/colors/colors.variables";
+/* stylelint-enable scss/at-import-partial-extension */
 
 $breadcrumb-divider--icon: "chevron-right" !default;
 $breadcrumb-link-hover-backgroundColor: rgba(

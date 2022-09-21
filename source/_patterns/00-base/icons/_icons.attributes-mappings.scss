@@ -1,4 +1,6 @@
+/* stylelint-disable scss/at-import-partial-extension */
 // @import "icons.variables";
+/* stylelint-enable scss/at-import-partial-extension */
 
 // *** Attribute based method ***
 @each $icon-name, $icon-glyph in $icon-glyphs {

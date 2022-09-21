@@ -1,6 +1,8 @@
+/* stylelint-disable scss/at-import-partial-extension */
 @import "select.variables";
 @import "../form-elements";
 @import "../../../css/db-ui-core.variables";
+/* stylelint-enable scss/at-import-partial-extension */
 
 .elm-select {
 	appearance: none;

@@ -1,3 +1,5 @@
 $icons-path: "../../../../icons/" !default;
+/* stylelint-disable scss/at-import-partial-extension */
 @import "../../../00-base/colors/enterprise/colors.variables";
 @import "../../../../css/enterprise/db-ui-core.variables";
+/* stylelint-enable scss/at-import-partial-extension */

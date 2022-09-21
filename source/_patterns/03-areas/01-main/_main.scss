@@ -4,7 +4,9 @@
 
 @import "../../../css/helpers/clearfix";
 
+/* stylelint-disable scss/at-import-partial-extension */
 @import "main.variables";
+/* stylelint-enable scss/at-import-partial-extension */
 
 .rea-main {
 	// adapted from https://github.com/jgthms/bulma/blob/0.7.5/sass/elements/container.sass

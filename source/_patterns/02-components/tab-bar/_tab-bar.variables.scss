@@ -1,5 +1,7 @@
 @import "../../../css/helpers/functions";
+/* stylelint-disable scss/at-import-partial-extension */
 @import "../../../css/db-ui-core.variables";
+/* stylelint-enable scss/at-import-partial-extension */
 
 $tabBar-tabSection--backgroundColor: #fdfdfd !default; // TODO: This would need to get replaced by the correct (semantic) color
 

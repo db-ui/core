@@ -9,9 +9,11 @@ $partial: false;
 @import "../helpers/functions";
 @import "../../_patterns/00-base/helpers";
 
+/* stylelint-disable scss/at-import-partial-extension */
 @import "db-ui-core.variables";
 
 @import "../../_patterns/00-base/init.global";
+/* stylelint-enable scss/at-import-partial-extension */
 @import "../../_patterns/00-base/init";
 
 // Importing helpers

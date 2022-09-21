@@ -1,5 +1,7 @@
 @import "../../../css/helpers/functions";
+/* stylelint-disable scss/at-import-partial-extension */
 @import "progress.variables";
+/* stylelint-enable scss/at-import-partial-extension */
 
 .elm-progress {
 	progress {

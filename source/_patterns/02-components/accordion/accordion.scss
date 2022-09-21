@@ -1,5 +1,7 @@
+/* stylelint-disable scss/at-import-partial-extension */
 @import "../../../css/partials.meta";
 @import "accordion.variables";
+/* stylelint-enable scss/at-import-partial-extension */
 
 .cmp-accordion {
 	border-bottom: 1px solid $db-color-cool-gray-200;

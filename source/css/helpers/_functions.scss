@@ -1,4 +1,6 @@
+/* stylelint-disable scss/at-import-partial-extension */
 @import "../db-ui-core.variables";
+/* stylelint-enable scss/at-import-partial-extension */
 
 @function to-rem($pxValue) {
 	@return #{$pxValue * $dbBaseFontSizeSass}rem;

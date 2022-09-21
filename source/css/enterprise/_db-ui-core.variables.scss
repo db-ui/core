@@ -1,4 +1,6 @@
 $domain: "enterprise";
 
 @import "../helpers/functions";
+/* stylelint-disable scss/at-import-partial-extension */
 @import "../../_patterns/00-base/colors/enterprise/colors.variables";
+/* stylelint-enable scss/at-import-partial-extension */
