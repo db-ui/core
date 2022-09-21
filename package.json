@@ -1,6 +1,6 @@
 {
   "name": "@db-ui/core",
-  "version": "2.0.0-48",
+  "version": "0.0.0",
   "description": "Technical Frontend implementation of the DB UX Design System.",
   "style": "./dist/css/enterprise/db-ui-core.css",
   "sass": "./sources/css/enterprise/db-ui-core.scss",
@@ -43,10 +43,7 @@
     "build": "npm run clean && npm-run-all css-deploy js-deploy pl:build:* --parallel copy-assets copy-scss-sources",
     "start": "npm-run-all --parallel pl:serve:enterprise css-watch js-watch",
     "stylelint-check": "stylelint-config-prettier-check",
-    "release:pre": "np prerelease --any-branch --tag next",
-    "release": "np",
-    "prepare": "node -e \"try { require('husky').install() } catch (e) {}\"",
-    "version": "npm run build"
+    "prepare": "node -e \"try { require('husky').install() } catch (e) {}\""
   },
   "keywords": [],
   "author": {
@@ -80,7 +77,6 @@
     "husky": "^7.0.4",
     "iframe-resizer": "^4.3.2",
     "nodemon": "^2.0.15",
-    "np": "^7.6.0",
     "npm-run-all": "^4.1.5",
     "pa11y-ci": "^3.0.1",
     "postcss": "^8.4.12",

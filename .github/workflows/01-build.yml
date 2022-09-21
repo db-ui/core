@@ -17,8 +17,16 @@ jobs:
       - name: 🍼 Create pages build
         run: npm run build
 
-      - name: ⬆️Upload build
+      - name: ⬆️Upload page build
         uses: actions/upload-artifact@v3
         with:
           name: build
           path: public
+
+      - name: ⬆️Upload package build
+        uses: actions/upload-artifact@v3
+        with:
+          name: package
+          path: |
+            dist/
+            sources/
