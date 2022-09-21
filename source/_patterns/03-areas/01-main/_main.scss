@@ -9,6 +9,12 @@
 /* stylelint-enable scss/at-import-partial-extension */
 
 .rea-main {
+	@include clearfix();
+
+	padding: to-rem($pxValue: 16);
+
+	background-color: $main---backgroundColor;
+
 	// adapted from https://github.com/jgthms/bulma/blob/0.7.5/sass/elements/container.sass
 	margin: 0 auto;
 	position: relative;
@@ -25,10 +31,4 @@
 		max-width: 1344px;
 		width: 1344px;
 	}
-
-	padding: to-rem($pxValue: 16);
-
-	background-color: $main---backgroundColor;
-
-	@include clearfix();
 }
