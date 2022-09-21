@@ -22,7 +22,6 @@ $icon-font-families: (
 	// 	)
 	// )
 ) !default;
-
 $icon-glyphs-enterprise: (
 	// "attachment": "\1F4CE",
 	// "build": "\1f527",
@@ -84,5 +83,4 @@ $icon-glyphs-enterprise: (
 	// "upload-cloud": "\e923",
 	// "watch": "\1f552"
 );
-
-$icon-glyphs: map-merge($icon-glyphs-enterprise, $icon-glyphs-personenverkehr);
+$icon-glyphs: map.merge($icon-glyphs-enterprise, $icon-glyphs-personenverkehr);

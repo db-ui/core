@@ -7,8 +7,8 @@
 		@if $icon-font-sizes {
 			@each $icon-size in $icon-font-sizes {
 				@font-face {
-					$icon-font-family: "icons-" + $icon-size + "-" + $icon-domain + "-" +
-						$icon-style;
+					$icon-font-family: "icons-" + $icon-size + "-" +
+						$icon-domain + "-" + $icon-style;
 
 					font-family: $icon-font-family;
 					src: url("#{$icons-path}functional/fonts/#{$icon-font-family}.woff2?4r2095")

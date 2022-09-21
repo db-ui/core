@@ -4,5 +4,8 @@
 		"stylelint-config-sass-guidelines",
 		"@wemake-services/stylelint-config-scss",
 		"stylelint-config-prettier"
-	]
+	],
+	"rules": {
+		"order/properties-alphabetical-order": null
+	}
 }
