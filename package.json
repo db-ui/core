@@ -92,7 +92,7 @@
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-sass-guidelines": "^9.0.1",
     "stylelint-config-standard-scss": "^3.0.0",
-    "xo": "^0.48.0"
+    "xo": "^0.52.3"
   },
   "repository": {
     "type": "git",
@@ -102,5 +102,8 @@
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
-  "homepage": "https://db-ui.github.io/core/"
+  "homepage": "https://db-ui.github.io/core/",
+  "overrides": {
+    "terser": "5.14.2"
+  }
 }
