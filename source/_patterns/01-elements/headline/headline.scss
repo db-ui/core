@@ -1,4 +1,4 @@
-@import "headline.variables";
+@import 'headline.variables';
 
 h1,
 h2,
@@ -18,27 +18,31 @@ h1,
 h2,
 h3 {
 	&.elm-headline {
-		font-weight: 700;
+		font-weight: 900;
+	}
+}
+h1 {
+	&.elm-headline {
+		font-size: $rea-main-h1-font-size; // * TODO: possibly rework variable naming
+		line-height: 1.11em;
+	}
+}
+h2 {
+	&.elm-headline {
+		font-size: $rea-main-h2-font-size; // * TODO: possibly rework variable naming
+		line-height: 1.17em;
+	}
+}
+h3 {
+	&.elm-headline {
+		font-size: $rea-main-h3-font-size; // * TODO: possibly rework variable naming
+		line-height: 1.2em;
 	}
 }
 h4 {
 	&.elm-headline {
 		font-weight: 400;
 		font-size: $rea-main-h4-font-size; // * TODO: possibly rework variable naming
-	}
-}
-h1 {
-	&.elm-headline {
-		font-size: $rea-main-h1-font-size; // * TODO: possibly rework variable naming
-	}
-}
-h2 {
-	&.elm-headline {
-		font-size: $rea-main-h2-font-size; // * TODO: possibly rework variable naming
-	}
-}
-h3 {
-	&.elm-headline {
-		font-size: $rea-main-h3-font-size; // * TODO: possibly rework variable naming
+		line-height: 1.33;
 	}
 }
