@@ -4,4 +4,4 @@
 . "$(dirname "$0")/_/husky.sh"
 
 npx --yes pretty-quick --staged
-node ./scripts/check-commit-mail.js
+node ./scripts/check-commit-mail.mjs
