@@ -25,18 +25,30 @@ h1 {
 	&.elm-headline {
 		font-size: $rea-main-h1-font-size; // * TODO: possibly rework variable naming
 		line-height: 1.11em;
+		@media screen and (max-width: 767px) {
+			font-size: $rea-main-h1-font-size-small; // * TODO: possibly rework variable naming
+			line-height: 1.14;
+		}
 	}
 }
 h2 {
 	&.elm-headline {
 		font-size: $rea-main-h2-font-size; // * TODO: possibly rework variable naming
 		line-height: 1.17em;
+		@media screen and (max-width: 767px) {
+			font-size: $rea-main-h2-font-size-small; // * TODO: possibly rework variable naming
+			line-height: 1.2;
+		}
 	}
 }
 h3 {
 	&.elm-headline {
 		font-size: $rea-main-h3-font-size; // * TODO: possibly rework variable naming
 		line-height: 1.2em;
+		@media screen and (max-width: 767px) {
+			font-size: $rea-main-h3-font-size-small; // * TODO: possibly rework variable naming
+			line-height: 1.33;
+		}
 	}
 }
 h4 {
@@ -44,5 +56,9 @@ h4 {
 		font-weight: 400;
 		font-size: $rea-main-h4-font-size; // * TODO: possibly rework variable naming
 		line-height: 1.33;
+		@media screen and (max-width: 767px) {
+			font-size: $rea-main-h4-font-size-small; // * TODO: possibly rework variable naming
+			line-height: 1.25;
+		}
 	}
 }
