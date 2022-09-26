@@ -1,21 +1,21 @@
 // Font files
 // font weights according to https://developer.mozilla.org/de/docs/Web/CSS/font-weight
 $font-families: (
-	"DB Screen Head Light": (
-		"font-family": "DB Screen Head",
-		"font-filename": "dbscreenhead-light",
+	'DB Screen Head Light': (
+		'font-family': 'DB Screen Head',
+		'font-filename': 'dbscreenhead-light',
 		// light font weight
-		"font-weight": 300,
-		"font-style": normal,
-		"font-local": true
+		'font-weight': 300,
+		'font-style': normal,
+		'font-local': true
 	),
-	"DB Screen Head Black": (
-		"font-family": "DB Screen Head",
-		"font-filename": "dbscreenhead-black",
+	'DB Screen Head Black': (
+		'font-family': 'DB Screen Head',
+		'font-filename': 'dbscreenhead-black',
 		// black/"bold" font weight
-		"font-weight": 700,
-		"font-style": normal,
-		"font-local": true
+		'font-weight': 900,
+		'font-style': normal,
+		'font-local': true
 	),
 	// "DB Screen Sans Digital Regular": (
 	// 	"font-family": "DB Screen Sans Digital Regular",
@@ -24,20 +24,20 @@ $font-families: (
 	// 	"font-weight": 400,
 	// 	"font-style": normal
 	// ),
-	"DB Screen Sans Regular":
+	'DB Screen Sans Regular':
 		(
-			"font-family": "DB Screen Sans",
-			"font-filename": "dbscreensans-regular",
+			'font-family': 'DB Screen Sans',
+			'font-filename': 'dbscreensans-regular',
 			// normal font weight
-			"font-weight": 400,
-			"font-style": normal,
-			"font-local": true
+			'font-weight': 400,
+			'font-style': normal,
+			'font-local': true
 		),
-	"DB Screen Sans Bold": (
-		"font-family": "DB Screen Sans",
-		"font-filename": "dbscreensans-bold",
+	'DB Screen Sans Bold': (
+		'font-family': 'DB Screen Sans',
+		'font-filename': 'dbscreensans-bold',
 		// bold font weight
-		"font-weight": 700,
-		"font-style": normal
+		'font-weight': 700,
+		'font-style': normal
 	)
 ) !default;
