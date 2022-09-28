@@ -14,3 +14,5 @@ dist/
 source/js/*.min.js*
 tests/backstop_data/html_report/
 tests/backstop_data/bitmaps_test/
+
+.env

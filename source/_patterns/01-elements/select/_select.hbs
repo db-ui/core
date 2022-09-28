@@ -1,6 +1,9 @@
-<select class="elm-select {{ styleModifier }}" name="{{ id }}" id="{{ id }}" {{#if disabled}} disabled{{/if }}{{#if
-	multiple}} multiple{{/if }}{{#unless multiple}} required{{/unless}}{{#if aria-invalid }}
-	aria-invalid="{{ aria-invalid }}" {{/if }}
+<select class="elm-select {{ styleModifier }}"
+	{{#if id }} name="{{ id }}" id="{{ id }}"{{/if }}
+	{{#if disabled}} disabled{{/if }}
+	{{#if multiple}} multiple{{/if }}
+	{{#unless multiple}} required{{/unless}}
+	{{#if aria-invalid }} aria-invalid="{{ aria-invalid }}" {{/if }}
 	{{#if variant}} data-variant="{{variant}}"{{/if }}>
 	{{#if optgroup}}<optgroup label="Devices">{{else}}{{#unless multiple}}<option></option>{{/unless}}{{/if }}
 		<option value="Row 1">Smartphone</option>

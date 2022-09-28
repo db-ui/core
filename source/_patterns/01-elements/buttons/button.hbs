@@ -3,7 +3,7 @@
 	{{#if size }} data-size="{{ size }}"{{/if }}
 	{{#if width }} data-width="{{ width }}"{{/if }}
 	title="{{ title }}"
-	type="{{ buttontype }}"
+	type="{{#if buttontype }}{{ buttontype }}{{else}}button{{/if }}"
 	{{#if role }} role="{{ role }}"{{/if }}
 	{{#if disabled }} disabled{{/if }}
 	{{#if icon}} data-icon="{{ icon }}"{{/if}}

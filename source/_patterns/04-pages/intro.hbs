@@ -1,4 +1,4 @@
-<main role="main">
+<main>
 
 	<section>
 		{{> elements-image src="../../images/db-ui-core_logo.png" alt="" width="48" height="48" }}
@@ -35,16 +35,15 @@
 		{{> elements-headline type='2' text='How to use' }}
 		<p>For using DB UI Core, you need to install it as a dependency to your project and then link it within your HTML / CSS.<br>
 		Please have a look into the <a href='https://github.com/db-ui/core/tree/main/docs/getStarted.adoc' target='_blank' rel='noopener noreferrer'>Docs / Get Started(docs)</a> for detailed instructions.<br>
-		In case that you're developing a JavaScript application, please have a look at <a href="https://db-ui.github.io/elements/">DB UI Elements</a>, that's based on DB UI Core and provides Web Components for easier integration into this tech context.</p>
+		In case that you're developing a JavaScript application, please have a look at <a href="https://db-ui.github.io/elements/" target="_blank">DB UI Elements</a>, that's based on DB UI Core and provides Web Components for easier integration into this tech context.</p>
 
 		{{> elements-headline type='2' text='More information' }}
-		<p>Additionally we'll provide some more information over time regrading the whole ecosystem:
-			{{> components-link-list }}
-			{{! TODO: Introduce these links:
-					How to contribute
-					List of contributers
-				}}
-		</p>
+		<p>Additionally we'll provide some more information over time regrading the whole ecosystem:</p>
+		{{> components-link-list }}
+		{{! TODO: Introduce these links:
+				How to contribute
+				List of contributers
+			}}
 		{{> elements-headline type='2' text='Give us your feedback!' }}
 		<p>This is only the beta version of our framework and we really want your feedback - either within the {{> elements-link href="https://db.de/krnm74" value="DB UI Channel by Web Dev Community in Microsoft Teams (only available DB internally)" target="_blank" rel="noopener noreferrer" }}, or directly at {{> elements-link href="mailto:db-ux-designsystem@deutschebahn.com" value="db-ux-designsystem@deutschebahn.com" }}.<br>
 		We're particularly keen to add as many examples to the behaviours as possible, to further clarify them.</p>
