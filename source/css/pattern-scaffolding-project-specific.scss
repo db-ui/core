@@ -83,3 +83,17 @@ pl-iframe {
 .pl-c-pattern__title {
 	@extend .elm-headline;
 }
+
+// Related to https://github.com/db-ui/base/pull/6
+.sg-swatch {
+	height: initial;
+	min-height: 6em;
+	padding: 4px;
+	display: flex;
+	border: black dashed 1px;
+
+	.sg-label {
+		font-size: 80%;
+		margin: auto;
+	}
+}
