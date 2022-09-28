@@ -62,7 +62,7 @@
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
     "@mfranzke/plugin-node-uiextension": "^1.0.0",
-    "@pattern-lab/cli": "^5.16.2",
+    "@pattern-lab/cli": "^5.17.0",
     "@pattern-lab/core": "^5.17.0",
     "@pattern-lab/engine-handlebars": "^5.16.4",
     "@pattern-lab/starterkit-handlebars-demo": "^5.16.2",
