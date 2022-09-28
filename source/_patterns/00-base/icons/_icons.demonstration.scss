@@ -6,38 +6,74 @@
 		padding-left: 0;
 	}
 
+	&.functional {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		.DO-NOT-COPY-THIS-CLASS-example-bg-variants-regular,
+		.DO-NOT-COPY-THIS-CLASS-example-bg-variants-dark {
+			min-width: 250px;
+		}
+		.DO-NOT-COPY-THIS-CLASS-example-bg-variants-regular {
+			ul {
+				justify-content: flex-end;
+			}
+		}
+	}
+
 	& > li {
 		display: flex;
 	}
 
-	&.icons-illustration {
+	&.icons {
 		ul {
 			color: $db-color-cool-gray-700;
+		}
 
-			li {
-				display: inline-block;
+		li {
+			display: inline-block;
 
-				margin: to-rem($pxValue: 4);
-				padding: to-rem($pxValue: 32);
-				border-radius: 4px;
+			margin: to-rem(4);
+			padding: 1rem 0.25rem;
+			border-radius: 4px;
 
-				color: $db-color-cool-gray-700;
+			color: $db-color-cool-gray-700;
 
-				&.DO-NOT-COPY-THIS-CLASS-example-bg-variants-turquoise {
-					background-color: $db-color-turquoise-400;
-				}
-				&.DO-NOT-COPY-THIS-CLASS-example-bg-variants-red {
-					background-color: $db-color-red-500;
+			&.DO-NOT-COPY-THIS-CLASS-example-bg-variants-turquoise {
+				background-color: $db-color-turquoise-400;
+			}
+			&.DO-NOT-COPY-THIS-CLASS-example-bg-variants-red {
+				background-color: $db-color-red-500;
 
-					--db-icon-color: #fff;
-					--db-icon-pulse-color: #fff;
-				}
-				&.DO-NOT-COPY-THIS-CLASS-example-bg-variants-cyan {
-					background-color: $db-color-cyan-200;
+				--db-icon-color: #fff;
+				--db-icon-pulse-color: #fff;
+			}
+			&.DO-NOT-COPY-THIS-CLASS-example-bg-variants-cyan {
+				background-color: $db-color-cyan-200;
 
-					--db-icon-pulse-color: currentColor;
+				--db-icon-pulse-color: currentColor;
+			}
+			&.DO-NOT-COPY-THIS-CLASS-example-bg-variants-dark {
+				background-color: #272d37; // TODO: richtige Farbvariable raus suchen
+
+				--db-icon-color: #fff;
+
+				li {
+					color: #fff;
 				}
 			}
+		}
+	}
+	&.illustrative {
+		li {
+			padding: to-rem(32);
+		}
+	}
+	&.functional {
+		ul {
+			display: flex;
+			align-items: center;
 		}
 	}
 }

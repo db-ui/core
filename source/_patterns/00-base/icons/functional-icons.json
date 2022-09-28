@@ -1,0 +1,10 @@
+{
+	"example-bgs": [
+		{
+			"variant": "regular"
+		},
+		{
+			"variant": "dark"
+		}
+	]
+}

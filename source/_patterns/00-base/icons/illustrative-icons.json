@@ -1,0 +1,492 @@
+{
+	"illustrative-icons": [
+		{
+			"category": "action",
+			"label": "Action",
+			"icons": [
+				{
+					"icon": "account"
+				},
+				{
+					"icon": "alarm_clock"
+				},
+				{
+					"icon": "ar_icon"
+				},
+				{
+					"icon": "calendar"
+				},
+				{
+					"icon": "christmas"
+				},
+				{
+					"icon": "clock_moving"
+				},
+				{
+					"icon": "compass"
+				},
+				{
+					"icon": "construction_sign"
+				},
+				{
+					"icon": "construction_worker"
+				},
+				{
+					"icon": "db_clock"
+				},
+				{
+					"icon": "diamond"
+				},
+				{
+					"icon": "fokus"
+				},
+				{
+					"icon": "gift"
+				},
+				{
+					"icon": "handshake"
+				},
+				{
+					"icon": "heart"
+				},
+				{
+					"icon": "information"
+				},
+				{
+					"icon": "onlineshop_brand"
+				},
+				{
+					"icon": "onlineshop_feature"
+				},
+				{
+					"icon": "pdf"
+				},
+				{
+					"icon": "printer"
+				},
+				{
+					"icon": "savings"
+				},
+				{
+					"icon": "search"
+				},
+				{
+					"icon": "tips"
+				},
+				{
+					"icon": "trash"
+				}
+			]
+		},
+		{
+			"category": "communication",
+			"label": "Communication",
+			"icons": [
+				{
+					"icon": "broken"
+				},
+				{
+					"icon": "chat"
+				},
+				{
+					"icon": "customer_feedback"
+				},
+				{
+					"icon": "envelope_closed"
+				},
+				{
+					"icon": "envelope_open"
+				},
+				{
+					"icon": "error"
+				},
+				{
+					"icon": "hashtag"
+				},
+				{
+					"icon": "wifi"
+				}
+			]
+		},
+		{
+			"category": "covid_19",
+			"label": "Covid 19",
+			"icons": [
+				{
+					"icon": "2g_rule"
+				},
+				{
+					"icon": "3g_rule"
+				},
+				{
+					"icon": "distance"
+				},
+				{
+					"icon": "ffp2_mask_with_sign"
+				},
+				{
+					"icon": "ffp2_mask"
+				},
+				{
+					"icon": "handwashing"
+				},
+				{
+					"icon": "no_handshaking"
+				},
+				{
+					"icon": "recovered"
+				},
+				{
+					"icon": "single_entry"
+				},
+				{
+					"icon": "test_antigen"
+				},
+				{
+					"icon": "test_pcr"
+				},
+				{
+					"icon": "vaccinated"
+				}
+			]
+		},
+		{
+			"category": "devices",
+			"label": "Devices",
+			"icons": [
+				{
+					"icon": "laptop"
+				},
+				{
+					"icon": "smartphone"
+				},
+				{
+					"icon": "tablet"
+				},
+				{
+					"icon": "usb_3.0"
+				},
+				{
+					"icon": "usb_c"
+				}
+			]
+		},
+		{
+			"category": "entertainment",
+			"label": "Entertainment",
+			"icons": [
+				{
+					"icon": "der_kleine_ice"
+				},
+				{
+					"icon": "gaming_no_wire"
+				},
+				{
+					"icon": "gaming"
+				},
+				{
+					"icon": "movie"
+				},
+				{
+					"icon": "podcast"
+				},
+				{
+					"icon": "sport"
+				}
+			]
+		},
+		{
+			"category": "feature",
+			"label": "Feature",
+			"icons": [
+				{
+					"icon": "cyber_security"
+				},
+				{
+					"icon": "green_energy"
+				},
+				{
+					"icon": "green"
+				},
+				{
+					"icon": "hydrogen"
+				},
+				{
+					"icon": "mobile_payment"
+				},
+				{
+					"icon": "nfc_scan"
+				},
+				{
+					"icon": "whats_schmutzig"
+				}
+			]
+		},
+		{
+			"category": "food",
+			"label": "Food / Drink",
+			"icons": [
+				{
+					"icon": "coffee_cup"
+				},
+				{
+					"icon": "restaurant"
+				}
+			]
+		},
+		{
+			"category": "maps",
+			"label": "Maps",
+			"icons": [
+				{
+					"icon": "home"
+				},
+				{
+					"icon": "location"
+				}
+			]
+		},
+		{
+			"category": "news",
+			"label": "News",
+			"icons": [
+				{
+					"icon": "disruptions"
+				},
+				{
+					"icon": "news"
+				},
+				{
+					"icon": "newsletter"
+				},
+				{
+					"icon": "newspaper"
+				},
+				{
+					"icon": "s-bahn_magazin_muenchen"
+				}
+			]
+		},
+		{
+			"category": "station",
+			"label": "Station",
+			"icons": [
+				{
+					"icon": "db_ticket_shop"
+				},
+				{
+					"icon": "db_ticket_vending_machine"
+				},
+				{
+					"icon": "db_trainstation_with_train"
+				},
+				{
+					"icon": "db_trainstation"
+				},
+				{
+					"icon": "db_travel_center"
+				},
+				{
+					"icon": "db_video_travel_center"
+				},
+				{
+					"icon": "kiosk"
+				},
+				{
+					"icon": "mini_store"
+				}
+			]
+		},
+		{
+			"category": "ticket",
+			"label": "Ticket",
+			"icons": [
+				{
+					"icon": "classic_printout"
+				},
+				{
+					"icon": "mobileticket_brand"
+				},
+				{
+					"icon": "mobileticket_feature"
+				},
+				{
+					"icon": "onlineticket_brand"
+				},
+				{
+					"icon": "onlineticket_feature"
+				},
+				{
+					"icon": "scan_ticket_printout"
+				},
+				{
+					"icon": "show_ticket"
+				},
+				{
+					"icon": "tickets"
+				}
+			]
+		},
+		{
+			"category": "transportation",
+			"label": "Transportation",
+			"icons": [
+				{
+					"icon": "airplane_2"
+				},
+				{
+					"icon": "airplane"
+				},
+				{
+					"icon": "bicycle"
+				},
+				{
+					"icon": "bike_trailer"
+				},
+				{
+					"icon": "buggy"
+				},
+				{
+					"icon": "bus_side_view"
+				},
+				{
+					"icon": "call_a_bike"
+				},
+				{
+					"icon": "car_side_view"
+				},
+				{
+					"icon": "car"
+				},
+				{
+					"icon": "commuter_train"
+				},
+				{
+					"icon": "electric_scooter"
+				},
+				{
+					"icon": "ev-car"
+				},
+				{
+					"icon": "ferry"
+				},
+				{
+					"icon": "handcart"
+				},
+				{
+					"icon": "ice"
+				},
+				{
+					"icon": "intercity_train"
+				},
+				{
+					"icon": "local_bus"
+				},
+				{
+					"icon": "local_train"
+				},
+				{
+					"icon": "long_distance_bus"
+				},
+				{
+					"icon": "scooter"
+				},
+				{
+					"icon": "self-driving_side_view"
+				},
+				{
+					"icon": "speedboat"
+				},
+				{
+					"icon": "subway"
+				},
+				{
+					"icon": "taxi"
+				},
+				{
+					"icon": "tram"
+				}
+			]
+		},
+		{
+			"category": "travel",
+			"label": "Travel",
+			"icons": [
+				{
+					"icon": "bear"
+				},
+				{
+					"icon": "db_comfort_checkin"
+				},
+				{
+					"icon": "delayed"
+				},
+				{
+					"icon": "departure_board"
+				},
+				{
+					"icon": "dog"
+				},
+				{
+					"icon": "id_card"
+				},
+				{
+					"icon": "itinerary"
+				},
+				{
+					"icon": "lost_and_found"
+				},
+				{
+					"icon": "luggage"
+				},
+				{
+					"icon": "passenger_rights"
+				},
+				{
+					"icon": "poi_berlin_alternative"
+				},
+				{
+					"icon": "poi_berlin"
+				},
+				{
+					"icon": "suitcase"
+				},
+				{
+					"icon": "timetable"
+				},
+				{
+					"icon": "transportation_advertising"
+				},
+				{
+					"icon": "zuginformation"
+				}
+			]
+		},
+		{
+			"category": "weather",
+			"label": "Weather",
+			"icons": [
+				{
+					"icon": "blizzard"
+				},
+				{
+					"icon": "thunderstorm"
+				}
+			]
+		}
+	],
+	"example-bgs": [
+		{
+			"variant": "regular"
+		},
+		{
+			"variant": "turquoise"
+		},
+		{
+			"variant": "red"
+		},
+		{
+			"variant": "cyan"
+		}
+	]
+}
