@@ -4,3 +4,5 @@
 . "$(dirname "$0")/_/husky.sh"
 
 npx --yes pretty-quick --staged
+npm run lint
+node ./scripts/check-commit-mail.mjs

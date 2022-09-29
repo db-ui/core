@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-SEMVER_VERSION=$(npx find-versions-cli "$TAG")
+SEMVER_VERSION=$(npx --no find-versions-cli "$TAG")
 if [[ $RELEASE == "true" ]]
 then
   if [[ $SEMVER_VERSION == *-* ]]
