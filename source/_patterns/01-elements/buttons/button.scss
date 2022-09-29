@@ -26,7 +26,8 @@
 	}
 
 	// Changing background-color on hover should be animated by a transition
-	transition: background-color var(--db-transition-color);
+	transition: background-color
+		var(--db-transition-color, #{$db-transition-color});
 
 	// Centering the content vertically and horizontally
 	align-items: center;
