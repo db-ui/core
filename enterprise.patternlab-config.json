@@ -72,7 +72,7 @@
 			"css": "public/css",
 			"icons": "public/icons",
 			"samples": "public/samples",
-			"iframeResizer.contentWindow.min.js": "public/js/iframeResizer.contentWindow.min.js",
+			"iframeResizer.contentWindow.min.js": "public/js/iframeresizer.contentwindow.min.js",
 			"details-element-polyfill.js": "public/js/details-element-polyfill.js",
 			"dialog-polyfill.js": "public/js/dialog-polyfill.js",
 			"dialog-polyfill.css": "public/css/dialog-polyfill.css",
@@ -80,7 +80,12 @@
 		}
 	},
 	"patternExtension": "hbs",
-	"patternStateCascade": ["inevaluation", "inprogress", "inreview", "complete"],
+	"patternStateCascade": [
+		"inevaluation",
+		"inprogress",
+		"inreview",
+		"complete"
+	],
 	"patternExportAll": false,
 	"patternExportDirectory": "pattern_exports",
 	"patternExportPatternPartials": [],
