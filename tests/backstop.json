@@ -831,31 +831,10 @@
 			"onReadyScript": "puppet/clickAndHoverHelper.js"
 		},
 		{
-			"label": "Loading indicator Size XS",
-			"url": "http://127.0.0.1:8080/patterns/elements-loading-indicator-loading-indicator-size-XS/elements-loading-indicator-loading-indicator-size-XS.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-loading-indicator-loading-indicator-size-XS/elements-loading-indicator-loading-indicator-size-XS.rendered.html"
+			"label": "Loading indicator",
+			"url": "http://127.0.0.1:8080/patterns/elements-loading-indicator/index.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-loading-indicator/index.html"
 		},
-		{
-			"label": "Loading indicator Size S",
-			"url": "http://127.0.0.1:8080/patterns/elements-loading-indicator-loading-indicator-size-s/elements-loading-indicator-loading-indicator-size-s.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-loading-indicator-loading-indicator-size-s/elements-loading-indicator-loading-indicator-size-s.rendered.html"
-		},
-		{
-			"label": "Loading indicator Size M",
-			"url": "http://127.0.0.1:8080/patterns/elements-loading-indicator-loading-indicator-size-m/elements-loading-indicator-loading-indicator-size-m.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-loading-indicator-loading-indicator-size-m/elements-loading-indicator-loading-indicator-size-m.rendered.html"
-		},
-		{
-			"label": "Loading indicator Size L",
-			"url": "http://127.0.0.1:8080/patterns/elements-loading-indicator-loading-indicator-size-l/elements-loading-indicator-loading-indicator-size-l.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-loading-indicator-loading-indicator-size-l/elements-loading-indicator-loading-indicator-size-l.rendered.html"
-		},
-		{
-			"label": "Loading indicator Size XL",
-			"url": "http://127.0.0.1:8080/patterns/elements-loading-indicator-loading-indicator-size-xl/elements-loading-indicator-loading-indicator-size-xl.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-loading-indicator-loading-indicator-size-xl/elements-loading-indicator-loading-indicator-size-xl.rendered.html"
-		},
-
 		{
 			"label": "Progress",
 			"url": "http://127.0.0.1:8080/patterns/elements-progress-progress/elements-progress-progress.rendered.html",
