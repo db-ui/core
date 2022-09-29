@@ -124,7 +124,9 @@
 	// Sizes
 	&%size-XXSmall {
 		$height: 20;
-		$icon-size: 16;
+		// $icon-size: 16;
+		// TODO: remove this dirty hack after we've got the correct 16px icons
+		$icon-size: 20;
 
 		min-height: to-rem($pxValue: $height);
 		padding: to-rem($pxValue: 1) to-rem($pxValue: 4);
@@ -135,9 +137,17 @@
 		&[data-icon],
 		&[data-icon-before] {
 			@include iconMeta($icon-size);
+			// TODO: remove this dirty hack after we've got the correct 16px icons
+			&:before {
+				font-size: to-rem($pxValue: 16);
+			}
 		}
 		&[data-icon-after] {
 			@include iconMeta($size: $icon-size, $position: "after");
+			// TODO: remove this dirty hack after we've got the correct 16px icons
+			&:after {
+				font-size: to-rem($pxValue: 16);
+			}
 		}
 		// Square icon only buttons
 		&.is-icon-text-replace {
@@ -146,7 +156,9 @@
 	}
 	&%size-XSmall {
 		$height: 24;
-		$icon-size: 16;
+		// $icon-size: 16;
+		// TODO: remove this dirty hack after we've got the correct 16px icons
+		$icon-size: 20;
 
 		min-height: to-rem($pxValue: $height);
 		padding: to-rem($pxValue: 3) to-rem($pxValue: 8);
@@ -157,9 +169,17 @@
 		&[data-icon],
 		&[data-icon-before] {
 			@include iconMeta($icon-size);
+			// TODO: remove this dirty hack after we've got the correct 16px icons
+			&:before {
+				font-size: to-rem($pxValue: 16);
+			}
 		}
 		&[data-icon-after] {
 			@include iconMeta($size: $icon-size, $position: "after");
+			// TODO: remove this dirty hack after we've got the correct 16px icons
+			&:after {
+				font-size: to-rem($pxValue: 16);
+			}
 		}
 		// Square icon only buttons
 		&.is-icon-text-replace {
@@ -168,7 +188,9 @@
 	}
 	&%size-Small {
 		$height: 32;
-		$icon-size: 16;
+		// $icon-size: 16;
+		// TODO: remove this dirty hack after we've got the correct 16px icons
+		$icon-size: 20;
 
 		min-height: to-rem($pxValue: $height);
 		padding: to-rem($pxValue: 6) to-rem($pxValue: 12);
@@ -179,9 +201,17 @@
 		&[data-icon],
 		&[data-icon-before] {
 			@include iconMeta($icon-size);
+			// TODO: remove this dirty hack after we've got the correct 16px icons
+			&:before {
+				font-size: to-rem($pxValue: 16);
+			}
 		}
 		&[data-icon-after] {
 			@include iconMeta($size: $icon-size, $position: "after");
+			// TODO: remove this dirty hack after we've got the correct 16px icons
+			&:after {
+				font-size: to-rem($pxValue: 16);
+			}
 		}
 		// Square icon only buttons
 		&.is-icon-text-replace {
