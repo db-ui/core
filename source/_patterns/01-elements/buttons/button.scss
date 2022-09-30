@@ -284,4 +284,19 @@
 	&:disabled {
 		opacity: 0.25;
 	}
+
+	// States (currently only "loading")
+	&[data-state="loading"] {
+		@include is-icon-text-replace();
+
+		&::before {
+			content: " ";
+		}
+	}
+
+	// Including a loading indicator
+	--loadingIndicator---color: currentColor;
+	&[data-state="loading"] {
+		font-size: 0;
+	}
 }

@@ -7,6 +7,8 @@
 	{{#if role }} role="{{ role }}"{{/if }}
 	{{#if disabled }} disabled{{/if }}
 	{{#if icon}} data-icon="{{ icon }}"{{/if}}
-	{{#if icon-after}} data-icon-after="{{ icon-after }}"{{/if}}>
+	{{#if icon-after}} data-icon-after="{{ icon-after }}"{{/if}}
+	{{#if state}} data-state="{{ state }}"{{/if}}>
 	{{{ value }}}
+	{{#if_eq state "loading" }}{{> elements-loading-indicator size="xs" }}{{/if_eq }}
 </button>
