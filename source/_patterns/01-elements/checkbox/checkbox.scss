@@ -4,18 +4,25 @@
 @import "checkbox.variables";
 
 .elm-checkbox {
-	@include icon("\00A0", 24, "outline", $partial: $partial);
+	// $checkbox-size: 16;
+	// TODO: Replace this ugly hack as soon as we've got this as an icon font as well
+	$checkbox-size: 20;
+	&:before {
+		font-size: 16px;
+	}
+
+	@include icon("\00A0", $checkbox-size, "outline", $partial: $partial);
 
 	appearance: none;
 	background-color: $checkbox---backgroundColor;
 	border: #{to-rem($pxValue: 1)} solid $checkbox---borderColor;
-	border-radius: 4px;
+	border-radius: 2.5px;
 	color: $checkbox---color;
-	height: to-rem($pxValue: 24);
+	height: to-rem($pxValue: $checkbox-size);
 	&[type="checkbox"] {
-		vertical-align: top;
+		vertical-align: middle;
 	}
-	width: to-rem($pxValue: 24);
+	width: to-rem($pxValue: $checkbox-size);
 
 	display: inline-flex;
 	justify-content: center;
@@ -64,5 +71,43 @@
 
 	& + label {
 		margin-left: $db-spacing-xs;
+
+		font-size: to-rem($pxValue: 12);
+	}
+
+	// Sizes
+	&%size-Small {
+		$checkbox-size: 16;
+		// TODO: Replace this ugly hack as soon as we've got this as an icon font as well
+		&:before {
+			font-size: 16px;
+		}
+
+		height: to-rem($pxValue: $checkbox-size);
+		width: to-rem($pxValue: $checkbox-size);
+		// TODO: Replace this ugly hack as soon as we've got this as an icon font as well
+		// @include iconMeta($checkbox-size);
+		@include iconMeta(20);
+	}
+	&%size-Large {
+		$checkbox-size: 24;
+		&:before {
+			font-size: 24px;
+		}
+
+		height: to-rem($pxValue: $checkbox-size);
+		width: to-rem($pxValue: $checkbox-size);
+		@include iconMeta($checkbox-size);
+
+		& + label {
+			font-size: to-rem($pxValue: 16);
+		}
+	}
+
+	&[data-size="small"] {
+		@extend %size-Small;
+	}
+	&[data-size="large"] {
+		@extend %size-Large;
 	}
 }

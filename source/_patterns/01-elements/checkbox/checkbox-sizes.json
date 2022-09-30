@@ -1,0 +1,18 @@
+{
+	"sizes": [
+		{
+			"size": "small",
+			"label": "Small"
+		},
+		{
+			"size": "medium",
+			"label": "Medium (default, data-size attribute is optional)"
+		},
+		{
+			"size": "large",
+			"label": "Large"
+		}
+	],
+	"id": "checkbox05",
+	"label": "Checkbox"
+}
