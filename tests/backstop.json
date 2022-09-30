@@ -427,115 +427,16 @@
 		},
 		{
 			"label": "Button",
-			"url": "http://127.0.0.1:8080/patterns/elements-buttons-00-button/elements-buttons-00-button.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-00-button/elements-buttons-00-button.rendered.html"
+			"url": "http://127.0.0.1:8080/patterns/elements-buttons/index.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons/index.html"
 		},
 		{
 			"label": "Button - hovered",
-			"url": "http://127.0.0.1:8080/patterns/elements-buttons-00-button/elements-buttons-00-button.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-00-button/elements-buttons-00-button.rendered.html",
+			"url": "http://127.0.0.1:8080/patterns/elements-buttons/index.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons/index.html",
 			"hoverSelector": ".elm-button",
 			"postInteractionWait": 1000,
 			"onReadyScript": "puppet/clickAndHoverHelper.js"
-		},
-		{
-			"label": "Button Primary",
-			"url": "http://127.0.0.1:8080/patterns/elements-buttons-01-button-primary/elements-buttons-01-button-primary.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-01-button-primary/elements-buttons-01-button-primary.rendered.html"
-		},
-		{
-			"label": "Button Primary - hovered",
-			"url": "http://127.0.0.1:8080/patterns/elements-buttons-01-button-primary/elements-buttons-01-button-primary.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-01-button-primary/elements-buttons-01-button-primary.rendered.html",
-			"hoverSelectors": [
-				"p:nth-of-type(1) .elm-button:nth-of-type(1)",
-				"p:nth-of-type(1) .elm-button:nth-of-type(2)",
-				"p:nth-of-type(2) .elm-button:nth-of-type(1)",
-				"p:nth-of-type(2) .elm-button:nth-of-type(2)",
-				"p:nth-of-type(3) .elm-button:nth-of-type(1)",
-				"p:nth-of-type(3) .elm-button:nth-of-type(2)"
-			],
-			"postInteractionWait": 1000,
-			"onReadyScript": "puppet/clickAndHoverHelper.js"
-		},
-		{
-			"label": "Button Secondary Inverted",
-			"url": "http://127.0.0.1:8080/patterns/elements-buttons-03-button-secondary-inverted/elements-buttons-03-button-secondary-inverted.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-03-button-secondary-inverted/elements-buttons-03-button-secondary-inverted.rendered.html"
-		},
-		{
-			"label": "Button Secondary Inverted - hovered",
-			"url": "http://127.0.0.1:8080/patterns/elements-buttons-03-button-secondary-inverted/elements-buttons-03-button-secondary-inverted.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-03-button-secondary-inverted/elements-buttons-03-button-secondary-inverted.rendered.html",
-			"hoverSelectors": [
-				"p:nth-of-type(1) .elm-button:nth-of-type(1)",
-				"p:nth-of-type(1) .elm-button:nth-of-type(2)",
-				"p:nth-of-type(2) .elm-button:nth-of-type(1)",
-				"p:nth-of-type(2) .elm-button:nth-of-type(2)",
-				"p:nth-of-type(3) .elm-button:nth-of-type(1)",
-				"p:nth-of-type(3) .elm-button:nth-of-type(2)"
-			],
-			"postInteractionWait": 1000,
-			"onReadyScript": "puppet/clickAndHoverHelper.js"
-		},
-		{
-			"label": "Button Secondary",
-			"url": "http://127.0.0.1:8080/patterns/elements-buttons-04-button-secondary/elements-buttons-04-button-secondary.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-04-button-secondary/elements-buttons-04-button-secondary.rendered.html"
-		},
-		{
-			"label": "Button Secondary - hovered",
-			"url": "http://127.0.0.1:8080/patterns/elements-buttons-04-button-secondary/elements-buttons-04-button-secondary.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-04-button-secondary/elements-buttons-04-button-secondary.rendered.html",
-			"hoverSelectors": [
-				"p:nth-of-type(1) .elm-button:nth-of-type(1)",
-				"p:nth-of-type(1) .elm-button:nth-of-type(2)",
-				"p:nth-of-type(2) .elm-button:nth-of-type(1)",
-				"p:nth-of-type(2) .elm-button:nth-of-type(2)",
-				"p:nth-of-type(3) .elm-button:nth-of-type(1)",
-				"p:nth-of-type(3) .elm-button:nth-of-type(2)"
-			],
-			"postInteractionWait": 1000,
-			"onReadyScript": "puppet/clickAndHoverHelper.js"
-		},
-		{
-			"label": "Button Tertiary",
-			"url": "http://127.0.0.1:8080/patterns/elements-buttons-05-button-tertiary/elements-buttons-05-button-tertiary.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-05-button-tertiary/elements-buttons-05-button-tertiary.rendered.html"
-		},
-		{
-			"label": "Button Tertiary - hovered",
-			"url": "http://127.0.0.1:8080/patterns/elements-buttons-05-button-tertiary/elements-buttons-05-button-tertiary.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-05-button-tertiary/elements-buttons-05-button-tertiary.rendered.html",
-			"hoverSelectors": [
-				"p:nth-of-type(1) .elm-button:nth-of-type(1)",
-				"p:nth-of-type(1) .elm-button:nth-of-type(2)"
-			],
-			"postInteractionWait": 1000,
-			"onReadyScript": "puppet/clickAndHoverHelper.js"
-		},
-		{
-			"label": "Button Ghost",
-			"url": "http://127.0.0.1:8080/patterns/elements-buttons-06-button-ghost/elements-buttons-06-button-ghost.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-06-button-ghost/elements-buttons-06-button-ghost.rendered.html"
-		},
-		{
-			"label": "Button Ghost - hovered",
-			"url": "http://127.0.0.1:8080/patterns/elements-buttons-06-button-ghost/elements-buttons-06-button-ghost.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-06-button-ghost/elements-buttons-06-button-ghost.rendered.html",
-			"hoverSelectors": [
-				"p:nth-of-type(1) .elm-button:nth-of-type(1)",
-				"p:nth-of-type(1) .elm-button:nth-of-type(2)",
-				"p:nth-of-type(2) .elm-button:nth-of-type(1)",
-				"p:nth-of-type(2) .elm-button:nth-of-type(2)"
-			],
-			"postInteractionWait": 1000,
-			"onReadyScript": "puppet/clickAndHoverHelper.js"
-		},
-		{
-			"label": "Button Sizes",
-			"url": "http://127.0.0.1:8080/patterns/elements-buttons-09-button-sizes/elements-buttons-09-button-sizes.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-buttons-09-button-sizes/elements-buttons-09-button-sizes.rendered.html"
 		},
 		{
 			"label": "Checkbox",
