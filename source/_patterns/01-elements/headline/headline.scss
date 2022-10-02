@@ -17,30 +17,42 @@ h3 {
 }
 h1 {
 	&.elm-headline {
-		font-size: $rea-main-h1-font-size; // * TODO: possibly rework variable naming
-		line-height: 1.11;
+		font-size: to-rem(
+			$pxValue: $rea-main-h1-font-size
+		); // * TODO: possibly rework variable naming
+		line-height: 40 / $rea-main-h1-font-size;
 		@media screen and (max-width: 767px) {
-			font-size: $rea-main-h1-font-size-small; // * TODO: possibly rework variable naming
+			font-size: to-rem(
+				$pxValue: $rea-main-h1-font-size-small
+			); // * TODO: possibly rework variable naming
 			line-height: 1.14;
 		}
 	}
 }
 h2 {
 	&.elm-headline {
-		font-size: $rea-main-h2-font-size; // * TODO: possibly rework variable naming
-		line-height: 1.17;
+		font-size: to-rem(
+			$pxValue: $rea-main-h2-font-size
+		); // * TODO: possibly rework variable naming
+		line-height: 28 / $rea-main-h2-font-size;
 		@media screen and (max-width: 767px) {
-			font-size: $rea-main-h2-font-size-small; // * TODO: possibly rework variable naming
+			font-size: to-rem(
+				$pxValue: $rea-main-h2-font-size-small
+			); // * TODO: possibly rework variable naming
 			line-height: 1.2;
 		}
 	}
 }
 h3 {
 	&.elm-headline {
-		font-size: $rea-main-h3-font-size; // * TODO: possibly rework variable naming
-		line-height: 1.2;
+		font-size: to-rem(
+			$pxValue: $rea-main-h3-font-size
+		); // * TODO: possibly rework variable naming
+		line-height: 24 / $rea-main-h3-font-size;
 		@media screen and (max-width: 767px) {
-			font-size: $rea-main-h3-font-size-small; // * TODO: possibly rework variable naming
+			font-size: to-rem(
+				$pxValue: $rea-main-h3-font-size-small
+			); // * TODO: possibly rework variable naming
 			line-height: 1.33;
 		}
 	}
@@ -48,10 +60,14 @@ h3 {
 h4 {
 	&.elm-headline {
 		font-weight: 400;
-		font-size: $rea-main-h4-font-size; // * TODO: possibly rework variable naming
-		line-height: 1.33;
+		font-size: to-rem(
+			$pxValue: $rea-main-h4-font-size
+		); // * TODO: possibly rework variable naming
+		line-height: 24 / $rea-main-h4-font-size;
 		@media screen and (max-width: 767px) {
-			font-size: $rea-main-h4-font-size-small; // * TODO: possibly rework variable naming
+			font-size: to-rem(
+				$pxValue: $rea-main-h4-font-size-small
+			); // * TODO: possibly rework variable naming
 			line-height: 1.25;
 		}
 	}
