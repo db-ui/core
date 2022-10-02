@@ -1,3 +1,4 @@
+@use "sass:math";
 @import "headline.variables";
 
 .elm-headline {
@@ -20,7 +21,7 @@ h1 {
 		font-size: to-rem(
 			$pxValue: $rea-main-h1-font-size
 		); // * TODO: possibly rework variable naming
-		line-height: 40 / $rea-main-h1-font-size;
+		line-height: math.div(40, $rea-main-h1-font-size);
 		@media screen and (max-width: 767px) {
 			font-size: to-rem(
 				$pxValue: $rea-main-h1-font-size-small
@@ -34,7 +35,7 @@ h2 {
 		font-size: to-rem(
 			$pxValue: $rea-main-h2-font-size
 		); // * TODO: possibly rework variable naming
-		line-height: 28 / $rea-main-h2-font-size;
+		line-height: math.div(28, $rea-main-h2-font-size);
 		@media screen and (max-width: 767px) {
 			font-size: to-rem(
 				$pxValue: $rea-main-h2-font-size-small
@@ -48,7 +49,7 @@ h3 {
 		font-size: to-rem(
 			$pxValue: $rea-main-h3-font-size
 		); // * TODO: possibly rework variable naming
-		line-height: 24 / $rea-main-h3-font-size;
+		line-height: math.div(24, $rea-main-h3-font-size);
 		@media screen and (max-width: 767px) {
 			font-size: to-rem(
 				$pxValue: $rea-main-h3-font-size-small
@@ -63,7 +64,7 @@ h4 {
 		font-size: to-rem(
 			$pxValue: $rea-main-h4-font-size
 		); // * TODO: possibly rework variable naming
-		line-height: 24 / $rea-main-h4-font-size;
+		line-height: math.div(24, $rea-main-h4-font-size);
 		@media screen and (max-width: 767px) {
 			font-size: to-rem(
 				$pxValue: $rea-main-h4-font-size-small
