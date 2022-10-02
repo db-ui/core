@@ -18,7 +18,7 @@ h3 {
 h1 {
 	&.elm-headline {
 		font-size: $rea-main-h1-font-size; // * TODO: possibly rework variable naming
-		line-height: 1.11em;
+		line-height: 1.11;
 		@media screen and (max-width: 767px) {
 			font-size: $rea-main-h1-font-size-small; // * TODO: possibly rework variable naming
 			line-height: 1.14;
@@ -28,7 +28,7 @@ h1 {
 h2 {
 	&.elm-headline {
 		font-size: $rea-main-h2-font-size; // * TODO: possibly rework variable naming
-		line-height: 1.17em;
+		line-height: 1.17;
 		@media screen and (max-width: 767px) {
 			font-size: $rea-main-h2-font-size-small; // * TODO: possibly rework variable naming
 			line-height: 1.2;
@@ -38,7 +38,7 @@ h2 {
 h3 {
 	&.elm-headline {
 		font-size: $rea-main-h3-font-size; // * TODO: possibly rework variable naming
-		line-height: 1.2em;
+		line-height: 1.2;
 		@media screen and (max-width: 767px) {
 			font-size: $rea-main-h3-font-size-small; // * TODO: possibly rework variable naming
 			line-height: 1.33;
