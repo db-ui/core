@@ -69,7 +69,7 @@
     "@pattern-lab/uikit-workshop": "^5.17.0",
     "@wemake-services/stylelint-config-scss": "^1.0.0",
     "autoprefixer": "^10.4.12",
-    "backstopjs": "^6.1.1",
+    "backstopjs": "^6.1.3",
     "cpr": "^3.0.1",
     "details-element-polyfill": "^2.4.0",
     "dialog-polyfill": "^0.5.6",
