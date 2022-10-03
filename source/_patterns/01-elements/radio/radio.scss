@@ -64,6 +64,14 @@
 		}
 	}
 
+	&:required {
+		& + label {
+			&::after {
+				content: " *";
+			}
+		}
+	}
+
 	// Sizes
 	&%size-Small {
 		width: to-em($pxValue: 16);

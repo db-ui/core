@@ -7,5 +7,6 @@
 	{{#if disabled}} disabled{{/if }}
 	value="{{ value }}"
 	{{#if size }} data-size="{{ size }}"{{/if }}
+	{{#if required }} required{{/if }}
 	{{#if describedbyid }} aria-describedby="{{ describedbyid }}"{{/if }}>
 <label class="elm-label" for="{{ id }}{{#if size }}-{{ size }}{{/if }}">{{ label }}</label>
