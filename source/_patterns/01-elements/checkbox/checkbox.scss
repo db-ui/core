@@ -8,15 +8,15 @@
 	// TODO: Replace this ugly hack as soon as we've got this as an icon font as well
 	$checkbox-size: 20;
 	&:before {
-		font-size: 16px;
+		font-size: 18px;
 	}
 
 	@include icon("\00A0", $checkbox-size, "outline", $partial: $partial);
 
 	appearance: none;
 	background-color: $checkbox---backgroundColor;
-	border: #{to-rem($pxValue: 1)} solid $checkbox---borderColor;
-	border-radius: 2.5px;
+	border: 1px solid $checkbox---borderColor;
+	border-radius: 3px;
 	color: $checkbox---color;
 	height: to-rem($pxValue: $checkbox-size);
 	&[type="checkbox"] {
@@ -52,7 +52,7 @@
 			}
 		}
 		&:active {
-			background-color: rgba(40, 45, 55, 0.14);
+			background-color: rgba(0, 0, 0, 0.24);
 		}
 	}
 
@@ -65,7 +65,7 @@
 	&:disabled {
 		&,
 		& + label {
-			opacity: 0.5;
+			opacity: 0.25;
 		}
 	}
 
@@ -80,7 +80,7 @@
 		$checkbox-size: 16;
 		// TODO: Replace this ugly hack as soon as we've got this as an icon font as well
 		&:before {
-			font-size: 16px;
+			font-size: 14px;
 		}
 
 		height: to-rem($pxValue: $checkbox-size);
