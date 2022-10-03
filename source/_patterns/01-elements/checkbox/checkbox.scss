@@ -110,4 +110,12 @@
 	&[data-size="large"] {
 		@extend %size-Large;
 	}
+
+	&:required {
+		& + label {
+			&::after {
+				content: " *";
+			}
+		}
+	}
 }
