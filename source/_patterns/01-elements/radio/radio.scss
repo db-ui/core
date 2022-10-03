@@ -14,7 +14,7 @@
 		vertical-align: middle;
 	}
 	border-radius: to-em($pxValue: 16);
-	border: to-rem($pxValue: 1) solid $radio---border;
+	border: 1px solid $radio---border;
 
 	background-color: rgba(255, 255, 255, 0.1);
 
@@ -27,10 +27,10 @@
 	font-size: to-rem($pxValue: 16);
 
 	&:hover {
-		background-color: rgba(40, 45, 55, 0.14);
+		background-color: rgba(0, 0, 0, 0.12);
 	}
 	&:active {
-		background-color: rgba(40, 45, 55, 0.3);
+		background-color: rgba(0, 0, 0, 0.24);
 	}
 
 	&:checked,
@@ -60,7 +60,7 @@
 	&:disabled {
 		&,
 		& + label {
-			opacity: 0.5;
+			opacity: 0.25;
 		}
 	}
 
