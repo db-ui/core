@@ -862,23 +862,18 @@
 		},
 		{
 			"label": "Radio",
-			"url": "http://127.0.0.1:8080/patterns/elements-radio-radio/elements-radio-radio.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-radio-radio/elements-radio-radio.rendered.html"
+			"url": "http://127.0.0.1:8080/patterns/elements-radio/index.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-radio/index.html"
 		},
 		{
-			"label": "Radio Checked",
-			"url": "http://127.0.0.1:8080/patterns/elements-radio-radio-checked/elements-radio-radio-checked.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-radio-radio-checked/elements-radio-radio-checked.rendered.html"
-		},
-		{
-			"label": "Radio Disabled",
-			"url": "http://127.0.0.1:8080/patterns/elements-radio-radio-disabled/elements-radio-radio-disabled.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-radio-radio-disabled/elements-radio-radio-disabled.rendered.html"
-		},
-		{
-			"label": "Radio Disabled Checked",
-			"url": "http://127.0.0.1:8080/patterns/elements-radio-radio-disabled-checked/elements-radio-radio-disabled-checked.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-radio-radio-disabled-checked/elements-radio-radio-disabled-checked.rendered.html"
+			"label": "Radio - hovered",
+			"url": "http://127.0.0.1:8080/patterns/elements-radio/index.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-radio/index.html",
+			"hoverSelectors": [
+				".elm-radio"
+			],
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
 		},
 		{
 			"label": "Select",
