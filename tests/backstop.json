@@ -539,48 +539,18 @@
 		},
 		{
 			"label": "Checkbox",
-			"url": "http://127.0.0.1:8080/patterns/elements-checkbox-checkbox/elements-checkbox-checkbox.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-checkbox-checkbox/elements-checkbox-checkbox.rendered.html"
+			"url": "http://127.0.0.1:8080/patterns/elements-checkbox/index.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-checkbox/index.html"
 		},
 		{
-			"label": "Checkbox Checked",
-			"url": "http://127.0.0.1:8080/patterns/elements-checkbox-checkbox-checked/elements-checkbox-checkbox-checked.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-checkbox-checkbox-checked/elements-checkbox-checkbox-checked.rendered.html"
-		},
-		{
-			"label": "Checkbox Disabled",
-			"url": "http://127.0.0.1:8080/patterns/elements-checkbox-checkbox-disabled/elements-checkbox-checkbox-disabled.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-checkbox-checkbox-disabled/elements-checkbox-checkbox-disabled.rendered.html"
-		},
-		{
-			"label": "Checkbox Disabled Checked",
-			"url": "http://127.0.0.1:8080/patterns/elements-checkbox-checkbox-disabled-checked/elements-checkbox-checkbox-disabled-checked.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-checkbox-checkbox-disabled-checked/elements-checkbox-checkbox-disabled-checked.rendered.html"
-		},
-		{
-			"label": "Checkbox Indeterminate",
-			"url": "http://127.0.0.1:8080/patterns/elements-checkbox-checkbox-indeterminate/elements-checkbox-checkbox-indeterminate.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-checkbox-checkbox-indeterminate/elements-checkbox-checkbox-indeterminate.rendered.html"
-		},
-		{
-			"label": "Checkbox Indeterminate Checked",
-			"url": "http://127.0.0.1:8080/patterns/elements-checkbox-checkbox-on-dark-background-indeterminate/elements-checkbox-checkbox-on-dark-background-indeterminate.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-checkbox-checkbox-on-dark-background-indeterminate/elements-checkbox-checkbox-on-dark-background-indeterminate.rendered.html"
-		},
-		{
-			"label": "Checkbox On Dark Background Checked",
-			"url": "http://127.0.0.1:8080/patterns/elements-checkbox-checkbox-on-dark-background-checked/elements-checkbox-checkbox-on-dark-background-checked.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-checkbox-checkbox-on-dark-background-checked/elements-checkbox-checkbox-on-dark-background-checked.rendered.html"
-		},
-		{
-			"label": "Checkbox On Dark Background Disabled",
-			"url": "http://127.0.0.1:8080/patterns/elements-checkbox-checkbox-on-dark-background-disabled/elements-checkbox-checkbox-on-dark-background-disabled.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-checkbox-checkbox-on-dark-background-disabled/elements-checkbox-checkbox-on-dark-background-disabled.rendered.html"
-		},
-		{
-			"label": "Checkbox On Dark Background Disabled Checked",
-			"url": "http://127.0.0.1:8080/patterns/elements-checkbox-checkbox-on-dark-background-disabled-checked/elements-checkbox-checkbox-on-dark-background-disabled-checked.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-checkbox-checkbox-on-dark-background-disabled-checked/elements-checkbox-checkbox-on-dark-background-disabled-checked.rendered.html"
+			"label": "Checkbox - hovered",
+			"url": "http://127.0.0.1:8080/patterns/elements-checkbox/index.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-checkbox/index.html",
+			"hoverSelectors": [
+				".elm-checkbox"
+			],
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
 		},
 		{
 			"label": "Image",
