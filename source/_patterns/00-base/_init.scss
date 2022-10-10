@@ -58,7 +58,7 @@ nav,
 }
 
 // List style / https://marketingportal.extranet.deutschebahn.com/de/brandguide/typografie-1#8e0be060-c2f5-42a1-abbc-6b050845d73c~paragraph--image_link
-ul {
+:where(ul) {
 	list-style-type: "\2022"+ "   ";
 
 	li::marker {
