@@ -32,6 +32,7 @@ jobs:
             const head = '${{ inputs.head }}';
             const base = '${{ inputs.base }}';
             return await script({github, context}, head, base)
+            
       - name: 🤖 Enable auto-merge for auto-update
         run: |
           if [[ $PR_URL != false ]];
