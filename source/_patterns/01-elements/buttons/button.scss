@@ -157,7 +157,7 @@
 	&%size-XSmall {
 		$height: 24;
 		// $icon-size: 16;
-		// TODO: remove this dirty hack after we've got the correct 16px icons
+		// TODO: replace this dirty hack after we've got the correct 16px icons / replace 20 by 16
 		$icon-size: 20;
 
 		min-height: to-rem($pxValue: $height);
@@ -189,7 +189,7 @@
 	&%size-Small {
 		$height: 32;
 		// $icon-size: 16;
-		// TODO: remove this dirty hack after we've got the correct 16px icons
+		// TODO: replace this dirty hack after we've got the correct 16px icons / replace 20 by 16
 		$icon-size: 20;
 
 		min-height: to-rem($pxValue: $height);
