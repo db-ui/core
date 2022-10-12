@@ -3,3 +3,141 @@ $icons-path: "../../../icons/" !default;
 @use "@db-ui/base/build/scss/helpers/functions" as *;
 
 $input---color: $db-colors-secondary-enabled !default;
+
+$db-input-sizes: (
+	"xs": 24px,
+	"s": 32px,
+	"m": 40px,
+	"l": 48px,
+	"xl": 64px
+);
+
+$db-input-font-sizes: (
+	"xs": 12,
+	"s": 12,
+	"m": 14,
+	"l": 16,
+	"xl": 20
+);
+
+$db-input-lineheight: (
+	"xs":
+		to-rem(
+			$pxValue: 18
+		),
+	"s":
+		to-rem(
+			$pxValue: 18
+		),
+	"m":
+		to-rem(
+			$pxValue: 21
+		),
+	"l":
+		to-rem(
+			$pxValue: 24
+		),
+	"xl":
+		to-rem(
+			$pxValue: 30
+		)
+);
+
+@mixin input--sizes() {
+	@each $size in (xl l m s xs) {
+		// $stroke-width: 3px;
+		// @if $size == s or $size == xs {
+		// 	$stroke-width: 2px;
+		// }
+		//.#{$prefix}loadingindicator--size-#{$size} {
+		// &%size-#{$size} {
+
+		$padding-top: to-rem(
+			$pxValue: 16
+		);
+		$padding-right: $db-spacing-s;
+		$padding-left: $db-spacing-s;
+		$padding-bottom: calc($db-spacing-s - 4px);
+
+		@if $size == s or $size == xs {
+			$padding-top: 0.5rem;
+			$padding-bottom: 0.5rem;
+		}
+
+		&%size-#{$size} {
+			font-size: to-rem($pxValue: map-get($db-input-font-sizes, $size));
+			line-height: map-get($db-input-lineheight, $size);
+			height: map-get($db-input-sizes, $size);
+
+			padding: $db-spacing-s $db-spacing-s;
+			//&:not(:placeholder-shown) {
+			padding-top: $padding-top;
+			padding-bottom: $padding-bottom;
+
+			&::placeholder {
+				font-size: to-rem(
+					$pxValue: map-get($db-input-font-sizes, $size)
+				);
+			}
+		}
+	}
+}
+
+// TODO rename
+@mixin input-label-size($size) {
+	$transformScale: 1.2;
+
+	@if $size == xs {
+		$transformScale: 0.8;
+	}
+
+	@if $size == xl {
+		$transformScale: 1.35;
+	}
+
+	font-size: to-rem($pxValue: map-get($db-input-font-sizes, $size));
+	transform: translate(
+		$db-spacing-s,
+		-#{to-rem(
+				$pxValue:
+					calc(map-get($db-input-font-sizes, $size) * $transformScale) +
+					map-get($db-input-font-sizes, $size)
+			)}
+	);
+}
+
+// TODO rename
+@mixin input-label-translation($size) {
+	@if $size == xs or $size == s {
+		transition: opacity 0.08s, transform 0.15s;
+		opacity: 0;
+		//transform: translate($db-spacing-s, -#{to-rem($pxValue: calc(map-get($db-input-font-sizes, $size) * 1.2) + map-get($db-input-font-sizes, $size))}) scale(0.7);
+	}
+	@if $size != xs and $size != s {
+		$transformScale: 2.9;
+
+		@if $size == xl {
+			$transformScale: 3.1;
+		}
+
+		transition: transform
+			0.25s
+			cubic-bezier(
+				0.075,
+				0.82,
+				0.165,
+				1
+			); // TODO replace with transistion function
+		transform: translate(
+				$db-spacing-s,
+				-#{to-rem(
+						$pxValue:
+							calc(
+								map-get($db-input-font-sizes, $size) *
+									$transformScale
+							)
+					)}
+			)
+			scale(0.7);
+	}
+}

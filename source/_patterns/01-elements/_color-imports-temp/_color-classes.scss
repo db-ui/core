@@ -1,0 +1,648 @@
+/**
+* NEUTRAL - Utility Classes          
+**/
+
+.db-bg-neutral-0 {    
+    @extend %db-bg-neutral-0; 
+
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-bg-neutral-0-ia;
+    }
+
+    a {
+         @extend %db-bg-neutral-0-text-ia;
+    }
+
+    .db-weak {
+        @extend %weak;
+
+        &-ia,
+        &[data-variant="ia"],
+        a {
+             @extend %weak-ia;
+        }
+    }
+}
+
+.db-bg-neutral-1 {    
+    @extend %db-bg-neutral-1; 
+
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-bg-neutral-1-ia;
+    }
+
+    a {
+         @extend %db-bg-neutral-1-text-ia;
+    }
+
+    .db-weak {
+        @extend %weak;
+
+        &-ia,
+        &[data-variant="ia"],
+        a {
+             @extend %weak-ia;
+        }
+    }
+}
+
+.db-bg-neutral-2 {    
+    @extend %db-bg-neutral-2; 
+
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-bg-neutral-2-ia;
+    }
+
+    a {
+         @extend %db-bg-neutral-2-text-ia;
+    }
+
+    .db-weak {
+        @extend %weak;
+
+        &-ia,
+        &[data-variant="ia"],
+        a {
+             @extend %weak-ia;
+        }
+    }
+}
+
+.db-bg-neutral-3 {    
+    @extend %db-bg-neutral-3; 
+
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-bg-neutral-3-ia;
+    }
+
+    a {
+         @extend %db-bg-neutral-3-text-ia;
+    }
+
+    .db-weak {
+        @extend %weak;
+
+        &-ia,
+        &[data-variant="ia"],
+        a {
+             @extend %weak-ia;
+        }
+    }
+}
+
+.db-bg-neutral-4 {    
+    @extend %db-bg-neutral-4; 
+
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-bg-neutral-4-ia;
+    }
+
+    a {
+         @extend %db-bg-neutral-4-text-ia;
+    }
+
+    .db-weak {
+        @extend %weak;
+
+        &-ia,
+        &[data-variant="ia"],
+        a {
+             @extend %weak-ia;
+        }
+    }
+}
+
+.db-bg-neutral-5 {    
+    @extend %db-bg-neutral-5; 
+
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-bg-neutral-5-ia;
+    }
+
+    a {
+         @extend %db-bg-neutral-5-text-ia;
+    }
+
+    .db-weak {
+        @extend %weak;
+
+        &-ia,
+        &[data-variant="ia"],
+        a {
+             @extend %weak-ia;
+        }
+    }
+}
+
+.db-bg-neutral-6 {    
+    @extend %db-bg-neutral-6; 
+
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-bg-neutral-6-ia;
+    }
+
+    a {
+         @extend %db-bg-neutral-6-text-ia;
+    }
+
+    .db-weak {
+        @extend %weak;
+
+        &-ia,
+        &[data-variant="ia"],
+        a {
+             @extend %weak-ia;
+        }
+    }
+}
+
+.db-bg-neutral-transparent-full {    
+    @extend %db-bg-neutral-transparent-full; 
+
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-bg-neutral-transparent-full-ia;
+    }
+
+    a {
+         @extend %db-bg-neutral-transparent-full-text-ia;
+    }
+
+    .db-weak {
+        @extend %weak;
+
+        &-ia,
+        &[data-variant="ia"],
+        a {
+             @extend %weak-ia;
+        }
+    }
+}
+
+.db-bg-neutral-transparent-semi {    
+    @extend %db-bg-neutral-transparent-semi; 
+
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-bg-neutral-transparent-semi-ia;
+    }
+
+    a {
+         @extend %db-bg-neutral-transparent-semi-text-ia;
+    }
+
+    .db-weak {
+        @extend %weak;
+
+        &-ia,
+        &[data-variant="ia"],
+        a {
+             @extend %weak-ia;
+        }
+    }
+}
+/**
+* PRIMARY - Utility Classes          
+**/
+
+.db-text-primary {
+    @extend %db-text-primary;
+        
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-text-primary-ia;
+    }
+
+    a {
+        @extend %db-text-primary-ia;
+    }
+}
+.db-bg-primary {
+    @extend %db-bg-primary;
+        
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-bg-primary-ia;
+    }
+
+    a {
+        @extend %db-bg-primary-text-ia;
+    }
+}
+.db-bg-primary-light {    
+    @extend %db-bg-primary-light; 
+
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-bg-primary-light-ia;
+    }
+
+    a {
+         @extend %db-bg-primary-light-text-ia;
+    }
+
+    .db-weak {
+        @extend %weak;
+
+        &-ia,
+        &[data-variant="ia"],
+        a {
+             @extend %weak-ia;
+        }
+    }
+}
+
+.db-bg-primary-transparent-semi {    
+    @extend %db-bg-primary-transparent-semi; 
+
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-bg-primary-transparent-semi-ia;
+    }
+
+    a {
+         @extend %db-bg-primary-transparent-semi-text-ia;
+    }
+
+    .db-weak {
+        @extend %weak;
+
+        &-ia,
+        &[data-variant="ia"],
+        a {
+             @extend %weak-ia;
+        }
+    }
+}
+/**
+* CRITICAL - Utility Classes          
+**/
+
+.db-text-critical {
+    @extend %db-text-critical;
+        
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-text-critical-ia;
+    }
+
+    a {
+        @extend %db-text-critical-ia;
+    }
+}
+.db-bg-critical {
+    @extend %db-bg-critical;
+        
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-bg-critical-ia;
+    }
+
+    a {
+        @extend %db-bg-critical-text-ia;
+    }
+}
+.db-bg-critical-transparent-semi {    
+    @extend %db-bg-critical-transparent-semi; 
+
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-bg-critical-transparent-semi-ia;
+    }
+
+    a {
+         @extend %db-bg-critical-transparent-semi-text-ia;
+    }
+
+    .db-weak {
+        @extend %weak;
+
+        &-ia,
+        &[data-variant="ia"],
+        a {
+             @extend %weak-ia;
+        }
+    }
+}
+
+.db-bg-critical-light {    
+    @extend %db-bg-critical-light; 
+
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-bg-critical-light-ia;
+    }
+
+    a {
+         @extend %db-bg-critical-light-text-ia;
+    }
+
+    .db-weak {
+        @extend %weak;
+
+        &-ia,
+        &[data-variant="ia"],
+        a {
+             @extend %weak-ia;
+        }
+    }
+}
+/**
+* SECONDARY - Utility Classes          
+**/
+
+.db-text-secondary {
+    @extend %db-text-secondary;
+        
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-text-secondary-ia;
+    }
+
+    a {
+        @extend %db-text-secondary-ia;
+    }
+}
+.db-bg-secondary {
+    @extend %db-bg-secondary;
+        
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-bg-secondary-ia;
+    }
+
+    a {
+        @extend %db-bg-secondary-text-ia;
+    }
+}
+.db-bg-secondary-transparent-semi {    
+    @extend %db-bg-secondary-transparent-semi; 
+
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-bg-secondary-transparent-semi-ia;
+    }
+
+    a {
+         @extend %db-bg-secondary-transparent-semi-text-ia;
+    }
+
+    .db-weak {
+        @extend %weak;
+
+        &-ia,
+        &[data-variant="ia"],
+        a {
+             @extend %weak-ia;
+        }
+    }
+}
+
+.db-bg-secondary-light {    
+    @extend %db-bg-secondary-light; 
+
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-bg-secondary-light-ia;
+    }
+
+    a {
+         @extend %db-bg-secondary-light-text-ia;
+    }
+
+    .db-weak {
+        @extend %weak;
+
+        &-ia,
+        &[data-variant="ia"],
+        a {
+             @extend %weak-ia;
+        }
+    }
+}
+/**
+* SUCCESS - Utility Classes          
+**/
+
+.db-text-success {
+    @extend %db-text-success;
+        
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-text-success-ia;
+    }
+
+    a {
+        @extend %db-text-success-ia;
+    }
+}
+.db-bg-success {
+    @extend %db-bg-success;
+        
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-bg-success-ia;
+    }
+
+    a {
+        @extend %db-bg-success-text-ia;
+    }
+}
+.db-bg-success-light {    
+    @extend %db-bg-success-light; 
+
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-bg-success-light-ia;
+    }
+
+    a {
+         @extend %db-bg-success-light-text-ia;
+    }
+
+    .db-weak {
+        @extend %weak;
+
+        &-ia,
+        &[data-variant="ia"],
+        a {
+             @extend %weak-ia;
+        }
+    }
+}
+
+.db-bg-success-transparent-semi {    
+    @extend %db-bg-success-transparent-semi; 
+
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-bg-success-transparent-semi-ia;
+    }
+
+    a {
+         @extend %db-bg-success-transparent-semi-text-ia;
+    }
+
+    .db-weak {
+        @extend %weak;
+
+        &-ia,
+        &[data-variant="ia"],
+        a {
+             @extend %weak-ia;
+        }
+    }
+}
+/**
+* WARNING - Utility Classes          
+**/
+
+.db-text-warning {
+    @extend %db-text-warning;
+        
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-text-warning-ia;
+    }
+
+    a {
+        @extend %db-text-warning-ia;
+    }
+}
+.db-bg-warning {
+    @extend %db-bg-warning;
+        
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-bg-warning-ia;
+    }
+
+    a {
+        @extend %db-bg-warning-text-ia;
+    }
+}
+.db-bg-warning-transparent-semi {    
+    @extend %db-bg-warning-transparent-semi; 
+
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-bg-warning-transparent-semi-ia;
+    }
+
+    a {
+         @extend %db-bg-warning-transparent-semi-text-ia;
+    }
+
+    .db-weak {
+        @extend %weak;
+
+        &-ia,
+        &[data-variant="ia"],
+        a {
+             @extend %weak-ia;
+        }
+    }
+}
+
+.db-bg-warning-light {    
+    @extend %db-bg-warning-light; 
+
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-bg-warning-light-ia;
+    }
+
+    a {
+         @extend %db-bg-warning-light-text-ia;
+    }
+
+    .db-weak {
+        @extend %weak;
+
+        &-ia,
+        &[data-variant="ia"],
+        a {
+             @extend %weak-ia;
+        }
+    }
+}
+/**
+* INFORMATION - Utility Classes          
+**/
+
+.db-text-information {
+    @extend %db-text-information;
+        
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-text-information-ia;
+    }
+
+    a {
+        @extend %db-text-information-ia;
+    }
+}
+.db-bg-information {
+    @extend %db-bg-information;
+        
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-bg-information-ia;
+    }
+
+    a {
+        @extend %db-bg-information-text-ia;
+    }
+}
+.db-bg-information-light {    
+    @extend %db-bg-information-light; 
+
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-bg-information-light-ia;
+    }
+
+    a {
+         @extend %db-bg-information-light-text-ia;
+    }
+
+    .db-weak {
+        @extend %weak;
+
+        &-ia,
+        &[data-variant="ia"],
+        a {
+             @extend %weak-ia;
+        }
+    }
+}
+
+.db-bg-information-transparent-semi {    
+    @extend %db-bg-information-transparent-semi; 
+
+    &-ia,
+    &[data-variant="ia"] {
+        @extend %db-bg-information-transparent-semi-ia;
+    }
+
+    a {
+         @extend %db-bg-information-transparent-semi-text-ia;
+    }
+
+    .db-weak {
+        @extend %weak;
+
+        &-ia,
+        &[data-variant="ia"],
+        a {
+             @extend %weak-ia;
+        }
+    }
+}

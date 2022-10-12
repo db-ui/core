@@ -1,0 +1,114 @@
+
+// Do not edit directly
+// Generated on Tue Nov 01 2022 11:52:16 GMT+0100 (Mitteleuropäische Normalzeit)
+
+.db-scaling-normal{
+	--db-sizing-xs: #{$db-sizing-normal-xs};
+	--db-sizing-sm: #{$db-sizing-normal-s};
+	--db-sizing-md: #{$db-sizing-normal-m};
+	--db-sizing-lg: #{$db-sizing-normal-l};
+
+	--db-spacing-fixed-3xs: #{$db-spacing-fixed-normal-3xs};
+	--db-spacing-fixed-2xs: #{$db-spacing-fixed-normal-2xs};
+	--db-spacing-fixed-xs: #{$db-spacing-fixed-normal-xs};
+	--db-spacing-fixed-sm: #{$db-spacing-fixed-normal-s};
+	--db-spacing-fixed-md: #{$db-spacing-fixed-normal-m};
+	--db-spacing-fixed-lg: #{$db-spacing-fixed-normal-l};
+	--db-spacing-fixed-xl: #{$db-spacing-fixed-normal-xl};
+
+	--db-spacing-responsive-xs: #{$db-spacing-responsive-normal-mobile-xs};
+	--db-spacing-responsive-sm: #{$db-spacing-responsive-normal-mobile-s};
+	--db-spacing-responsive-md: #{$db-spacing-responsive-normal-mobile-m};
+	--db-spacing-responsive-lg: #{$db-spacing-responsive-normal-mobile-l};
+	--db-spacing-responsive-xl: #{$db-spacing-responsive-normal-mobile-xl};
+
+	@media only screen and (min-width: $db-screens-md) {
+		--db-spacing-responsive-xs: #{$db-spacing-responsive-normal-tablet-xs};
+		--db-spacing-responsive-sm: #{$db-spacing-responsive-normal-tablet-s};
+		--db-spacing-responsive-md: #{$db-spacing-responsive-normal-tablet-m};
+		--db-spacing-responsive-lg: #{$db-spacing-responsive-normal-tablet-l};
+		--db-spacing-responsive-xl: #{$db-spacing-responsive-normal-tablet-xl};
+	}
+
+	@media only screen and (min-width: $db-screens-lg) {
+		--db-spacing-responsive-xs: #{$db-spacing-responsive-normal-desktop-xs};
+		--db-spacing-responsive-sm: #{$db-spacing-responsive-normal-desktop-s};
+		--db-spacing-responsive-md: #{$db-spacing-responsive-normal-desktop-m};
+		--db-spacing-responsive-lg: #{$db-spacing-responsive-normal-desktop-l};
+		--db-spacing-responsive-xl: #{$db-spacing-responsive-normal-desktop-xl};
+	}
+}
+
+.db-scaling-functional{
+	--db-sizing-xs: #{$db-sizing-functional-xs};
+	--db-sizing-sm: #{$db-sizing-functional-s};
+	--db-sizing-md: #{$db-sizing-functional-m};
+	--db-sizing-lg: #{$db-sizing-functional-l};
+
+	--db-spacing-fixed-3xs: #{$db-spacing-fixed-functional-3xs};
+	--db-spacing-fixed-2xs: #{$db-spacing-fixed-functional-2xs};
+	--db-spacing-fixed-xs: #{$db-spacing-fixed-functional-xs};
+	--db-spacing-fixed-sm: #{$db-spacing-fixed-functional-s};
+	--db-spacing-fixed-md: #{$db-spacing-fixed-functional-m};
+	--db-spacing-fixed-lg: #{$db-spacing-fixed-functional-l};
+	--db-spacing-fixed-xl: #{$db-spacing-fixed-functional-xl};
+
+	--db-spacing-responsive-xs: #{$db-spacing-responsive-functional-mobile-xs};
+	--db-spacing-responsive-sm: #{$db-spacing-responsive-functional-mobile-s};
+	--db-spacing-responsive-md: #{$db-spacing-responsive-functional-mobile-m};
+	--db-spacing-responsive-lg: #{$db-spacing-responsive-functional-mobile-l};
+	--db-spacing-responsive-xl: #{$db-spacing-responsive-functional-mobile-xl};
+
+	@media only screen and (min-width: $db-screens-md) {
+		--db-spacing-responsive-xs: #{$db-spacing-responsive-functional-tablet-xs};
+		--db-spacing-responsive-sm: #{$db-spacing-responsive-functional-tablet-s};
+		--db-spacing-responsive-md: #{$db-spacing-responsive-functional-tablet-m};
+		--db-spacing-responsive-lg: #{$db-spacing-responsive-functional-tablet-l};
+		--db-spacing-responsive-xl: #{$db-spacing-responsive-functional-tablet-xl};
+	}
+
+	@media only screen and (min-width: $db-screens-lg) {
+		--db-spacing-responsive-xs: #{$db-spacing-responsive-functional-desktop-xs};
+		--db-spacing-responsive-sm: #{$db-spacing-responsive-functional-desktop-s};
+		--db-spacing-responsive-md: #{$db-spacing-responsive-functional-desktop-m};
+		--db-spacing-responsive-lg: #{$db-spacing-responsive-functional-desktop-l};
+		--db-spacing-responsive-xl: #{$db-spacing-responsive-functional-desktop-xl};
+	}
+}
+
+.db-scaling-expressive{
+	--db-sizing-xs: #{$db-sizing-expressive-xs};
+	--db-sizing-sm: #{$db-sizing-expressive-s};
+	--db-sizing-md: #{$db-sizing-expressive-m};
+	--db-sizing-lg: #{$db-sizing-expressive-l};
+
+	--db-spacing-fixed-3xs: #{$db-spacing-fixed-expressive-3xs};
+	--db-spacing-fixed-2xs: #{$db-spacing-fixed-expressive-2xs};
+	--db-spacing-fixed-xs: #{$db-spacing-fixed-expressive-xs};
+	--db-spacing-fixed-sm: #{$db-spacing-fixed-expressive-s};
+	--db-spacing-fixed-md: #{$db-spacing-fixed-expressive-m};
+	--db-spacing-fixed-lg: #{$db-spacing-fixed-expressive-l};
+	--db-spacing-fixed-xl: #{$db-spacing-fixed-expressive-xl};
+
+	--db-spacing-responsive-xs: #{$db-spacing-responsive-expressive-mobile-xs};
+	--db-spacing-responsive-sm: #{$db-spacing-responsive-expressive-mobile-s};
+	--db-spacing-responsive-md: #{$db-spacing-responsive-expressive-mobile-m};
+	--db-spacing-responsive-lg: #{$db-spacing-responsive-expressive-mobile-l};
+	--db-spacing-responsive-xl: #{$db-spacing-responsive-expressive-mobile-xl};
+
+	@media only screen and (min-width: $db-screens-md) {
+		--db-spacing-responsive-xs: #{$db-spacing-responsive-expressive-tablet-xs};
+		--db-spacing-responsive-sm: #{$db-spacing-responsive-expressive-tablet-s};
+		--db-spacing-responsive-md: #{$db-spacing-responsive-expressive-tablet-m};
+		--db-spacing-responsive-lg: #{$db-spacing-responsive-expressive-tablet-l};
+		--db-spacing-responsive-xl: #{$db-spacing-responsive-expressive-tablet-xl};
+	}
+
+	@media only screen and (min-width: $db-screens-lg) {
+		--db-spacing-responsive-xs: #{$db-spacing-responsive-expressive-desktop-xs};
+		--db-spacing-responsive-sm: #{$db-spacing-responsive-expressive-desktop-s};
+		--db-spacing-responsive-md: #{$db-spacing-responsive-expressive-desktop-m};
+		--db-spacing-responsive-lg: #{$db-spacing-responsive-expressive-desktop-l};
+		--db-spacing-responsive-xl: #{$db-spacing-responsive-expressive-desktop-xl};
+	}
+}
