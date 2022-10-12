@@ -10,7 +10,7 @@
 	summary {
 		@include icon(glyph(chevron-right), 24, "outline", $partial: $partial);
 
-		height: to-rem($pxValue: 48);
+		padding-block: $db-spacing-sm;
 		display: flex;
 		align-items: center;
 		// Negating the padding left for moving the element into that direction with the same measures
@@ -74,7 +74,8 @@
 			)};
 
 		summary {
-			height: to-rem($pxValue: 40);
+			// ToDo: This needs to get replaced by the correct variable
+			padding-block: 0.59375rem;
 			font-size: to-rem($pxValue: 14);
 
 			&::before {
@@ -91,7 +92,7 @@
 			)};
 
 		summary {
-			height: to-rem($pxValue: 64);
+			padding-block: $db-spacing-m;
 			font-size: to-rem($pxValue: 20);
 
 			&::before {
