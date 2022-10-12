@@ -1,0 +1,98 @@
+// Icon SCSS mixin
+@mixin icon(
+	$glyph: "",
+	$size: $icon-size,
+	$style: $icon-style,
+	$position: "before",
+	$partial: false
+) {
+	&::#{$position} {
+		--icon-font-family: "#{"icons-" + $size + "-" + $style}",
+			"missing-icons" !important;
+		--icon-font-size: #{to-rem($pxValue: $size)};
+
+		@if $position == "before" {
+			margin-inline-end: var(--icon-margin-after, #{$icon-content-space});
+		}
+		@if $position == "after" {
+			margin-inline-start: var(
+				--icon-margin-before,
+				#{$icon-content-space}
+			);
+		}
+
+		@if $glyph != "" {
+			--icon-glyph: "#{$glyph}";
+		}
+		@if $partial {
+			/*** icon - partial ***/
+			// * use !important to prevent issues with browser extensions that change fonts
+			font-family: var(--icon-font-family) !important;
+
+			font-size: var(--icon-font-size);
+
+			vertical-align: middle;
+
+			content: var(--icon-glyph);
+
+			font-style: normal;
+			font-weight: normal; // CSS variables fallback
+			font-weight: var(--icon-font-weight, normal);
+			font-variant: normal;
+			text-transform: none;
+			line-height: 1;
+
+			display: inline-block;
+
+			// * Better Font Rendering ===========
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+
+			// Hiding icon from screenreaders
+			@supports (content: ""/"") {
+				content: var(--icon-glyph) / ""; // https://www.w3.org/TR/css-content-3/#alt
+			}
+			-webkit-alt: "";
+			alt: "";
+			speak: none;
+			@media aural {
+				content: none;
+			}
+			@media speech {
+				content: none;
+			}
+		} @else {
+			// 🤷‍♂️
+			@extend %icon !optional;
+		}
+	}
+}
+
+// SCSS mixin for elements that text should get hidden in favour of only displaying the included icon
+@mixin is-icon-text-replace($position: "before") {
+	font-size: 0;
+
+	@if $position == "before" {
+		&::before {
+			--icon-margin-after: 0;
+		}
+	} @else {
+		&::after {
+			--icon-margin-before: 0;
+		}
+	}
+}
+
+// Icon glyph mixin
+@function glyph($glyph) {
+	@return map-get($icon-glyphs, $glyph);
+}
+
+// Icon meta data mixin
+@mixin iconMeta($size: $icon-size, $style: $icon-style, $position: "before") {
+	&::#{$position} {
+		--icon-font-family: "#{"icons-" + $size + "-" + $style}",
+			"missing-icons" !important;
+		--icon-font-size: #{to-rem($pxValue: $size)};
+	}
+}

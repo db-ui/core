@@ -1,5 +1,5 @@
 @use "@db-ui/base/build/scss/variables" as *;
 @use "@db-ui/base/build/scss/icon/icons.helpers" as *;
 
-$link--disabled-opacity: 0.4 !default;
-$link-reaMain--color: $db-colors-information-enabled !default;
+$link--disabled-opacity: 0.25 !default;
+$link-reaMain--color: $db-color-cyan-600 !default;

@@ -6,18 +6,19 @@
 @import "link.variables";
 
 .elm-link {
-	border-radius: to-rem($pxValue: 4);
 	display: inline-block;
+	border-radius: to-rem($pxValue: 6);
 
 	// Link underline
-	text-underline-offset: to-rem($pxValue: 3);
+	text-underline-offset: to-rem($pxValue: 1);
 	text-underline-position: under;
+	text-decoration-thickness: to-rem($pxValue: 1);
 	@supports (text-underline-offset: 3px) {
 		text-underline-position: auto;
 	}
 
 	&:active {
-		color: initial;
+		font-size: to-em($pxValue: 14);
 	}
 
 	// "disabled" links
@@ -30,47 +31,40 @@
 			color: initial;
 		}
 	}
+	&[data-variant="internal"] {
+		@include icon(glyph(link), 20, "outline", "after");
+	}
+	&[data-variant="external"] {
+		@include icon(glyph(link-external), 20, "outline", "after");
+	}
 
+	&[data-variant="internal"],
+	&[data-variant="external"] {
+		color: #282d37;
+		&::after {
+			margin-top: -3px;
+			--icon-margin-before: #{to-rem($pxValue: 4)};
+		}
+		&:focus-visible {
+			outline-offset: -1px;
+			padding: 0 2px 0 2px;
+		}
+	}
 	// Sizes
 	&%size-Small {
 		&:not(.is-icon-text-replace) {
-			font-size: to-rem($pxValue: 14);
+			font-size: to-em($pxValue: 12);
 		}
-
-		&[rel],
-		&[data-icon],
-		&[data-icon-before] {
-			@include icon-meta(20);
-		}
-
-		&[data-icon-after]::after {
-			@include icon-meta($size: 20, $position: "after");
+		&:active {
+			font-size: to-em($pxValue: 10);
 		}
 	}
 
 	&[data-size="small"] {
+		color: #42464f;
 		@extend %size-Small;
-	}
-
-	// Define the available icons
-	&[rel="configuration"] {
-		@include icon(glyph(settings), 24, "outline", $partial: $partial);
-	}
-
-	&[rel="messages"] {
-		@include icon(glyph(chat), 24, "outline", $partial: $partial);
-	}
-
-	&[rel="account"] {
-		@include icon(glyph(account), 24, "outline", $partial: $partial);
-	}
-
-	&[rel="configuration"],
-	&[rel="messages"],
-	&[rel="account"] {
-		&::before {
-			// preventing an underlined icon on click
-			display: inline-block;
+		&::after {
+			--icon-font-size: #{to-rem($pxValue: 16)};
 		}
 	}
 }
