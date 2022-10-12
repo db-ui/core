@@ -1,0 +1,79 @@
+@import "variables";
+@import "font-faces";
+@import "typography-placeholder";
+@import "scaling-placeholder";
+
+:root {
+	@extend %db-scaling-normal;
+
+	$db-sizing-xs: var(--db-sizing-xs);
+	$db-sizing-sm: var(--db-sizing-sm);
+	$db-sizing-md: var(--db-sizing-md);
+	$db-sizing-lg: var(--db-sizing-lg);
+
+	$db-spacing-fixed-3xs: var(--db-spacing-fixed-3xs);
+	$db-spacing-fixed-2xs: var(--db-spacing-fixed-2xs);
+	$db-spacing-fixed-xs: var(--db-db-spacing-fixed-xs);
+	$db-spacing-fixed-sm: var(--db-db-spacing-fixed-sm);
+	$db-spacing-fixed-md: var(--db-spacing-fixed-md);
+	$db-spacing-fixed-lg: var(--db-spacing-fixed-lg);
+	$db-spacing-fixed-xl: var(--db-spacing-fixed-xl);
+
+	$db-spacing-responsive-xs: var(--db-spacing-responsive-xs);
+	$db-spacing-responsive-sm: var(--db-spacing-responsive-sm);
+	$db-spacing-responsive-md: var(--db-spacing-responsive-md);
+	$db-spacing-responsive-lg: var(--db-spacing-responsive-lg);
+	$db-spacing-responsive-xl: var(--db-spacing-responsive-xl);
+
+	font-family: $db-font-family-sans;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: $db-font-family-head;
+	}
+}
+
+@mixin styles($styles...) {
+	@for $i from 0 to length($styles) {
+		%db-ui-#{nth($styles, $i + 1)},
+		.db-ui-#{nth($styles, $i + 1)} {
+			@extend %db-scaling-#{nth($styles, $i + 1)};
+
+			@extend %db-#{nth($styles, $i + 1)}-body-md;
+
+			small {
+				@extend %db-#{nth($styles, $i + 1)}-body-sm;
+			}
+
+			h1 {
+				@extend %db-#{nth($styles, $i + 1)}-headline-xl;
+			}
+
+			h2 {
+				@extend %db-#{nth($styles, $i + 1)}-headline-lg;
+			}
+
+			h3 {
+				@extend %db-#{nth($styles, $i + 1)}-headline-md;
+			}
+
+			h4 {
+				@extend %db-#{nth($styles, $i + 1)}-headline-sm;
+			}
+
+			h5 {
+				@extend %db-#{nth($styles, $i + 1)}-headline-xs;
+			}
+
+			h6 {
+				@extend %db-#{nth($styles, $i + 1)}-headline-2xs;
+			}
+		}
+	}
+}
+
+@include styles("expressive", "normal", "functional");
