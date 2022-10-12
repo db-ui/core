@@ -1,0 +1,27 @@
+{
+	"sizes": [
+		{
+			"size": "xs",
+			"label": "Small"
+		},
+		{
+			"size": "s",
+			"label": "Small"
+		},
+		{
+			"size": "m",
+			"label": "Medium (default, data-size attribute is optional)"
+		},
+		{
+			"size": "l",
+			"label": "Large"
+		},
+		{
+			"size": "xl",
+			"label": "Extra Large"
+		}
+	],
+	"type": "text",
+	"placeholder": "z.B. DB User",
+	"label": "Textlabel"
+}

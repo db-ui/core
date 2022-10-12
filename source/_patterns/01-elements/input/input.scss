@@ -6,19 +6,63 @@
 .elm-input {
 	@extend %form-element;
 
-	font-size: to-rem($pxValue: 16);
-	line-height: to-rem($pxValue: 24);
+	// font-size: to-rem($pxValue: 16);
+	// line-height: to-rem($pxValue: 24);
+
+	@include input--sizes();
+	@extend %size-m; // default
 
 	color: $input---color;
 
 	width: 100%;
 	max-width: 100%;
-	height: to-rem($pxValue: 44);
+	//height: to-rem($pxValue: 40);
 
-	padding: $db-spacing-s $db-spacing-m;
-	&:not(:placeholder-shown) {
-		padding-top: to-rem($pxValue: 16);
-		padding-bottom: 0;
+	// padding: $db-spacing-s $db-spacing-m;
+	//&:not(:placeholder-shown) {
+	// padding-top: to-rem($pxValue: 16);
+	// padding-bottom: 0;
+	//}
+
+	// ### Size variations
+	&[data-size="xs"] {
+		@extend %size-xs;
+
+		& + .elm-label {
+			@include input-label-size(xs);
+		}
+	}
+
+	&[data-size="s"] {
+		@extend %size-s;
+
+		& + .elm-label {
+			@include input-label-size(s);
+		}
+	}
+
+	&[data-size="m"] {
+		@extend %size-m;
+
+		& + .elm-label {
+			@include input-label-size(m);
+		}
+	}
+
+	&[data-size="l"] {
+		@extend %size-l;
+
+		& + .elm-label {
+			@include input-label-size(l);
+		}
+	}
+
+	&[data-size="xl"] {
+		@extend %size-xl;
+
+		& + .elm-label {
+			@include input-label-size(xl);
+		}
 	}
 
 	// * TODO: to get evaluated
@@ -29,9 +73,27 @@
 
 	// TODO: Evaluate whether those could get moved to ../_form-elements.scss
 	&:focus,
-	&:hover {
+	&:not(:placeholder-shown) {
 		&:not(:disabled) {
-			--formElement---borderColor: #{$db-color-cool-gray-400};
+			&[data-size="xs"] + .elm-label {
+				@include input-label-translation(xs);
+			}
+
+			&[data-size="s"] + .elm-label {
+				@include input-label-translation(s);
+			}
+
+			&[data-size="m"] + .elm-label {
+				@include input-label-translation(m);
+			}
+
+			&[data-size="l"] + .elm-label {
+				@include input-label-translation(l);
+			}
+
+			&[data-size="xl"] + .elm-label {
+				@include input-label-translation(xl);
+			}
 		}
 	}
 
@@ -72,35 +134,44 @@
 			// position: absolute;
 			// left: calc(#{to-em($pxValue: 10)} - 1px);
 
-			transition: opacity, transform 250ms;
+			// transition: opacity, transform 250ms;
 			// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
 			@media (prefers-reduced-motion: reduce) {
 				transition-duration: 0.01s !important;
 			}
 		}
 		& + .elm-label {
-			transform: translate($db-spacing-m, -#{to-rem($pxValue: 41)});
-			font-size: to-rem($pxValue: 12);
+			// font-size: to-rem($pxValue: 14);
 			display: block;
-
+			pointer-events: none;
+			transform-origin: left;
 			color: $db-color-cool-gray-500;
 
-			margin-bottom: -#{to-rem($pxValue: 18)};
+			// transform: translate($db-spacing-s, -#{to-rem($pxValue: 16 + 14)});
+			// margin-bottom: -#{to-rem($pxValue: 18)};
 
 			& + .description {
 				margin-top: 0;
 			}
 		}
-		&[placeholder] {
-			&:placeholder-shown {
-				& + label {
-					opacity: 0;
-				}
-			}
-		}
+		// &[placeholder] {
+		// 	&:placeholder-shown {
+		// 		& + label {
+		// 			// opacity: 0;
+		// 		}
+		// 	}
+		// }
 
 		&::placeholder {
 			color: $db-color-cool-gray-500;
+			opacity: 0;
+			//font-size: to-rem($pxValue: 14);
+		}
+
+		&:focus {
+			&::placeholder {
+				opacity: 0.5;
+			}
 		}
 
 		// TODO: Evaluate whether those could get moved to ../_form-elements.scss

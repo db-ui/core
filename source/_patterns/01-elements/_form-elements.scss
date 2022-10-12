@@ -3,12 +3,16 @@
 
 %form-element {
 	border-radius: 4px;
+	border: none;
 
 	color: $form-elements-color;
 
 	caret-color: $db-color-red-500;
 
-	--formElement---borderTopColor: var(--formElement---borderColor, transparent);
+	--formElement---borderTopColor: var(
+		--formElement---borderColor,
+		transparent
+	);
 	--formElement---borderRightColor: var(
 		--formElement---borderColor,
 		transparent
@@ -35,48 +39,48 @@
 // Semitransparent
 %form-element-semitransparent {
 	background-color: $form-elements-semitransparent-background-color;
-	border-top: $form-elements---borderTop;
-	border-right: $form-elements---borderRight;
-	border-bottom: $form-elements---borderBottom;
-	border-left: $form-elements---borderLeft;
-	border-top-color: transparent;
-	border-right-color: transparent;
-	border-left-color: transparent;
-	--formElement---borderColor: #{$form-elements-semitransparent-border-bottom-color};
+	// border-top: $form-elements---borderTop;
+	// border-right: $form-elements---borderRight;
+	// border-bottom: $form-elements---borderBottom;
+	// border-left: $form-elements---borderLeft;
+	// border-top-color: transparent;
+	// border-right-color: transparent;
+	// border-left-color: transparent;
+	// --formElement---borderColor: #{$form-elements-semitransparent-border-bottom-color};
 }
 
 // White
 %form-element-white {
 	background-color: $form-elements-white-background-color;
-	border-top: $form-elements---borderTop;
-	border-right: $form-elements---borderRight;
-	border-bottom: $form-elements---borderBottom;
-	border-left: $form-elements---borderLeft;
-	border-top-color: transparent;
-	border-right-color: transparent;
-	border-left-color: transparent;
-	--formElement---borderColor: #{$form-elements-white-border-bottom-color};
+	// border-top: $form-elements---borderTop;
+	// border-right: $form-elements---borderRight;
+	// border-bottom: $form-elements---borderBottom;
+	// border-left: $form-elements---borderLeft;
+	// border-top-color: transparent;
+	// border-right-color: transparent;
+	// border-left-color: transparent;
+	// --formElement---borderColor: #{$form-elements-white-border-bottom-color};
 }
 
 // Solid
 %form-element-solid {
 	background-color: $form-elements-solid-background-color;
-	border-top: $form-elements---borderTop;
-	border-right: $form-elements---borderRight;
-	border-bottom: $form-elements---borderBottom;
-	border-left: $form-elements---borderLeft;
-	border-top-color: transparent;
-	border-right-color: transparent;
-	border-left-color: transparent;
-	--formElement---borderColor: #{$form-elements-solid-border-bottom-color};
+	// border-top: $form-elements---borderTop;
+	// border-right: $form-elements---borderRight;
+	// border-bottom: $form-elements---borderBottom;
+	// border-left: $form-elements---borderLeft;
+	// border-top-color: transparent;
+	// border-right-color: transparent;
+	// border-left-color: transparent;
+	// --formElement---borderColor: #{$form-elements-solid-border-bottom-color};
 }
 
 // Outline
 %form-element-outline {
 	background-color: transparent;
-	border-top: $form-elements---borderTop;
-	border-right: $form-elements---borderRight;
-	border-bottom: $form-elements---borderBottom;
-	border-left: $form-elements---borderLeft;
-	--formElement---borderColor: #{$form-elements-outline-border-color};
+	// border-top: $form-elements---borderTop;
+	// border-right: $form-elements---borderRight;
+	// border-bottom: $form-elements---borderBottom;
+	// border-left: $form-elements---borderLeft;
+	// --formElement---borderColor: #{$form-elements-outline-border-color};
 }
