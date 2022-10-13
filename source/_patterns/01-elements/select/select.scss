@@ -89,9 +89,11 @@
 
 	option {
 		&:not(:disabled):hover {
+			// TODO: We need to replace this by its correct color variable
 			background-color: #d7dce1;
 		}
 		&:checked {
+			// TODO: We need to replace this by its correct color variable
 			background-color: #d7dce1;
 		}
 	}
