@@ -30,13 +30,13 @@ jobs:
       - name: ⬇ Download build
         uses: ./.github/actions/download-tar-artifact
         with:
-          name: dist
+          name: assets
           path: dist
 
       - name: ⬇ Download sources
         uses: ./.github/actions/download-tar-artifact
         with:
-          name: sources
+          name: css-sources
           path: sources
 
       - name: 📰 Publish to NPM Registries

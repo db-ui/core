@@ -20,13 +20,13 @@ jobs:
       - name: ⬆ Upload dist
         uses: ./.github/actions/upload-tar-artifact
         with:
-          name: dist
+          name: assets
           path: dist
 
       - name: ⬆ Upload sources
         uses: ./.github/actions/upload-tar-artifact
         with:
-          name: sources
+          name: css-sources
           path: sources
 
       - name: ⬆ Upload out
