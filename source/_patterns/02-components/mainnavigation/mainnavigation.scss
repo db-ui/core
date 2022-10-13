@@ -119,6 +119,7 @@
 
 					&:hover,
 					&:focus {
+						// TODO: We need to replace this by its correct color variable
 						border-#{$mainnavigation-link--borderPosition}-color: #d7dce1;
 					}
 
@@ -235,6 +236,7 @@
 			.elm-link {
 				&:hover,
 				&:focus {
+					// TODO: We need to replace this by its correct color variable
 					background-color: #d7dce1;
 					color: initial;
 				}
