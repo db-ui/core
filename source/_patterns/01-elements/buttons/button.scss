@@ -180,6 +180,7 @@
 	}
 
 	&:disabled {
+		// TODO: We need to replace this by its correct color variable
 		background-color: #d7dce1;
 		color: $db-colors-secondary-enabled;
 		opacity: 0.5;
