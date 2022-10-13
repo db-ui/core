@@ -2,6 +2,7 @@
 @import "accordion.variables";
 
 .cmp-accordion {
+	// TODO: We need to replace this by its correct color variable
 	border-bottom: 1px solid #d7dce1;
 	padding-left: var(--db-accordion---paddingLeft);
 	padding-right: $accordion---paddingRight;
