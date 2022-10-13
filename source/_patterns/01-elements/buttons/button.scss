@@ -3,28 +3,28 @@
 @import "button.variables";
 
 .elm-button {
+	// Centering the content vertically and horizontally
+	align-items: center;
 	border: 1px solid transparent;
 	border-radius: 4px;
+	display: inline-flex;
+	font-size: to-rem($pxValue: 16);
+	justify-content: center;
+	min-height: $button---minHeight;
 	padding: to-rem($pxValue: 8) to-rem($pxValue: 16);
 
 	&[data-icon],
 	&[data-icon-before] {
 		padding-left: to-rem($pxValue: 14);
 	}
+
 	&[data-icon-after] {
 		padding-right: to-rem($pxValue: 14);
 	}
-	font-size: to-rem($pxValue: 16);
-	min-height: $button---minHeight;
 	// Square icon only buttons
 	&.is-icon-text-replace {
 		width: $button---minHeight;
 	}
-
-	// Centering the content vertically and horizontally
-	align-items: center;
-	display: inline-flex;
-	justify-content: center;
 
 	/*&:focus {
 		border-color: #fff;
@@ -52,6 +52,7 @@
 				background-color: $button-brand-primary-hover-backgroundColor;
 			}
 		}
+
 		&:active {
 			background-color: #cc0013; // TODO: replace by correct color variable
 		}
@@ -66,18 +67,18 @@
 				background-color: $button-primary-hover-backgroundColor;
 			}
 		}
+
 		&:active {
 			background-color: #363c4a;
 		}
 	}
 
 	&%variant-secondaryOutline {
+		// TODO: This might get replaced by another effect
+		backdrop-filter: blur(4px);
 		background-color: transparent;
 		border-color: $db-color-cool-gray-700;
 		color: $db-color-cool-gray-700;
-
-		// TODO: This might get replaced by another effect
-		backdrop-filter: blur(4px);
 
 		&:not(:disabled) {
 			&:hover {
@@ -85,42 +86,49 @@
 				background-color: $button-secondaryOutline-hover-backgroundColor;
 			}
 		}
+
 		&:disabled {
 			background-color: transparent;
 			color: $db-color-cool-gray-700;
 		}
+
 		&:active {
 			background-color: $button-secondaryOutline-active-backgroundColor;
 		}
 	}
 
 	&%variant-secondarySolid {
-		color: $db-color-cool-gray-700;
 		background-color: $button-secondarySolid--backgroundColor;
+		color: $db-color-cool-gray-700;
+
 		&:not(:disabled) {
 			&:hover {
 				// TODO: This could probably get simplified later on e.g. via CSS variables
 				background-color: $button-secondarySolid-hover-backgroundColor;
 			}
 		}
+
 		&:active {
 			background-color: $button-secondarySolid-active-backgroundColor;
 		}
 	}
 
 	&%variant-tertiaryPlain {
-		color: $db-color-cool-gray-700;
-		border: 2px solid transparent;
 		background-color: transparent; // shame.css
+		border: 2px solid transparent;
+		color: $db-color-cool-gray-700;
+
 		&:not(:disabled) {
 			&:hover {
 				// TODO: This could probably get simplified later on e.g. via CSS variables
 				background-color: $button-secondaryOutline-hover-backgroundColor;
 			}
 		}
+
 		&:disabled {
 			background-color: transparent; // shame.css
 		}
+
 		&:active {
 			background-color: $button-secondaryOutline-active-backgroundColor;
 		}
@@ -129,13 +137,16 @@
 	// Sizes
 	&%size-Small {
 		min-height: to-rem($pxValue: 36);
+
 		&:not(.is-icon-text-replace) {
 			font-size: to-rem($pxValue: 14);
 		}
+
 		&[data-icon],
 		&[data-icon-before] {
 			@include iconMeta(20);
 		}
+
 		&[data-icon-after] {
 			@include iconMeta($size: 20, $position: "after");
 		}
@@ -144,8 +155,10 @@
 			width: to-rem($pxValue: 36);
 		}
 	}
+
 	&%size-Large {
 		min-height: to-rem($pxValue: 52);
+
 		&:not(.is-icon-text-replace) {
 			font-size: to-rem($pxValue: 20);
 		}
@@ -158,6 +171,7 @@
 	&[data-size="small"] {
 		@extend %size-Small;
 	}
+
 	&[data-size="large"] {
 		@extend %size-Large;
 	}
@@ -166,15 +180,19 @@
 	&[data-variant="brand-primary"] {
 		@extend %variant-brand-primary;
 	}
+
 	&[data-variant="primary"] {
 		@extend %variant-primary;
 	}
+
 	&[data-variant="secondary-outline"] {
 		@extend %variant-secondaryOutline;
 	}
+
 	&[data-variant="secondary-solid"] {
 		@extend %variant-secondarySolid;
 	}
+
 	&[data-variant="tertiary-plain"] {
 		@extend %variant-tertiaryPlain;
 	}

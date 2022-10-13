@@ -1,9 +1,0 @@
-{
-	"envs": ["browser"],
-	"prettier": true,
-	"esnext": false,
-	"rules": {
-		"one-var": 0,
-		"no-use-before-define": 0
-	}
-}

@@ -1,4 +1,4 @@
-<!-- markdownlint-configure-file { "MD013": false } -->
+<!-- markdownlint-configure-file { "MD013": false, "MD041":false } -->
 
 <img src="source/samples/images/header_image_0.guetzli.jpg" alt="" srcset="source/samples/images/header_image_0.guetzli.2x.jpg 2x, source/samples/images/header_image_0.guetzli.3x.jpg 3x"> <!-- width="830" height="276" //-->
 
@@ -28,7 +28,7 @@ DB UI Core provides robust HTML UI components, reusable visual styles, and power
 </figure>
 <!-- markdownlint-enable MD033 MD010 -->
 
-## <abbr title="too long; didn't read">tl;dr</abbr>: "too long" Danny replied
+## tl;dr: "too long" Danny replied
 
 - [Getting started](docs/getStarted.adoc)
 - [GitHub - DB UI Core](https://github.com/db-ui/core/)
@@ -115,7 +115,7 @@ We're particularly keen to add as many examples to the behaviours as possible, t
 
 In case that you're retrieving any errors like the following, please check for whether you've [provided the location of your `node_modules` folders path to your sass compiler](docs/migrationGuide.adoc#user-content-db-ui-core-2-0-0-migration-guide):
 
-```
+```shell
 ./src/styles.scss - Error: Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):
 ModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
 SassError: Can't find stylesheet to import.

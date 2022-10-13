@@ -1,10 +1,18 @@
 name: Default push workflow
 
-on: [push]
+on:
+  push:
+    branches:
+      - "**"
+    tags:
+      - "!**"
 
 jobs:
   init:
     uses: ./.github/workflows/00-init.yml
+
+  scan-secrets:
+    uses: ./.github/workflows/00-scan-secrets.yml
 
   lint:
     uses: ./.github/workflows/01-lint.yml
@@ -19,8 +27,6 @@ jobs:
     needs: [init]
 
   deploy:
-    if: contains( github.ref, 'main')
     uses: ./.github/workflows/02-deploy-gh-pages.yml
-    # TODO: we need the following after we've added the preview branch deployments
-    # if: ${{ github.actor != 'dependabot[bot]' }}
+    if: ${{ github.actor != 'dependabot[bot]' }}
     needs: [lint, test, build]

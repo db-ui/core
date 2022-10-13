@@ -17,16 +17,26 @@ jobs:
       - name: 🍼 Create pages build
         run: npm run build
 
-      - name: ⬆️Upload page build
-        uses: actions/upload-artifact@v3
+      - name: ⬆ Upload dist
+        uses: ./.github/actions/upload-tar-artifact
         with:
-          name: build
-          path: public
+          name: dist
+          path: dist
 
-      - name: ⬆️Upload package build
-        uses: actions/upload-artifact@v3
+      - name: ⬆ Upload sources
+        uses: ./.github/actions/upload-tar-artifact
         with:
-          name: package
-          path: |
-            dist/
-            sources/
+          name: sources
+          path: sources
+
+      - name: ⬆ Upload out
+        uses: ./.github/actions/upload-tar-artifact
+        with:
+          name: patternlab
+          path: out
+
+      - name: 💀 Killing me softly
+        uses: ./.github/actions/cancel-workflow
+        if: failure()
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}

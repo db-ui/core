@@ -1,1 +1,3 @@
 source/fonts/**/sources
+sources/**
+**/*.demonstration.scss

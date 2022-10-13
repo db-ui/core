@@ -25,25 +25,23 @@
 			--icon-glyph: "#{$glyph}";
 		}
 		@if $partial {
+			content: var(--icon-glyph);
+			display: inline-block;
 			/*** icon - partial ***/
 			// * use !important to prevent issues with browser extensions that change fonts
 			font-family: var(--icon-font-family) !important;
 
 			font-size: var(--icon-font-size);
-
-			vertical-align: middle;
-
-			content: var(--icon-glyph);
-
 			font-style: normal;
+			font-variant: normal;
+
 			font-weight: normal; // CSS variables fallback
 			font-weight: var(--icon-font-weight, normal);
-			font-variant: normal;
-			text-transform: none;
 			line-height: 1;
+			text-transform: none;
+			vertical-align: middle;
 
-			display: inline-block;
-
+			/* stylelint-disable */
 			// * Better Font Rendering ===========
 			-webkit-font-smoothing: antialiased;
 			-moz-osx-font-smoothing: grayscale;
