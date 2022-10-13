@@ -1,0 +1,35 @@
+{{! TODO: This would need to get enhanced later on by the additional possible attributes }}
+{{#if selection}}
+	<input
+		class="elm-chip"
+		type="radio"
+		id="chip-single-{{ variant }}{{ id-suffix }}"
+		name="{{ name }}"
+		data-type="selection"
+		{{#if disabled }} disabled{{/if }}>
+	<label
+		for="chip-single-{{ variant }}{{ id-suffix }}"
+		role="button"
+		{{#if variant }} data-variant="{{ variant }}"{{/if }}
+		{{#if icon }} data-icon="{{ icon }}"{{/if }}
+		{{#if iconAfter }} data-icon-after="{{ iconAfter }}"{{/if }}
+		tabindex="0"
+		aria-hidden="true"
+		>{{ label }}</label>
+{{else}}
+	<input
+		class="elm-chip"
+		type="checkbox"
+		id="chip-multiple-{{ variant }}{{ id-suffix }}"
+		data-type="filter"
+		{{#if disabled }} disabled{{/if }}>
+	<label
+		for="chip-multiple-{{ variant }}{{ id-suffix }}"
+		role="button"
+		{{#if variant }} data-variant="{{ variant }}"{{/if }}
+		{{#if icon }} data-icon="{{ icon }}"{{/if }}
+		{{#if iconAfter }} data-icon-after="{{ iconAfter }}"{{/if }}
+		tabindex="0"
+		aria-hidden="true"
+		>{{ label }}</label>
+{{/if }}
