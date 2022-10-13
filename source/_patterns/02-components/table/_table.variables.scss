@@ -10,6 +10,7 @@ $table-cell-height68-paddingVertical: to-rem(
 	$pxValue: 22
 ) !default; // 68px cell height
 
+// TODO: We need to replace this by its correct color variable
 $table-line--borderColor: #d7dce1 !default;
 
 $table-row-zebra-color: rgba($db-colors-secondary-enabled, 0.07) !default;
