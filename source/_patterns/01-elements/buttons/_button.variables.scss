@@ -10,13 +10,18 @@ $button---minHeight: to-rem(
 
 // Background colors
 $button-brand-primary--backgroundColor: $db-colors-primary-enabled !default;
+// TODO: We need to replace this by its correct color variable
 $button-brand-primary-hover-backgroundColor: #db0016;
 
 $button-primary--backgroundColor: $db-colors-secondary-enabled !default;
+// TODO: We need to replace this by its correct color variable
 $button-primary-hover-backgroundColor: #2f3541;
 
+// TODO: We need to replace this by its correct color variable
 $button-secondarySolid--backgroundColor: #d7dce1 !default;
+// TODO: We need to replace this by its correct color variable
 $button-secondarySolid-hover-backgroundColor: #cdd4da !default;
+// TODO: We need to replace this by its correct color variable
 $button-secondarySolid-active-backgroundColor: #c5ccd3 !default;
 
 $button-secondaryOutline-hover-backgroundColor: rgba(
