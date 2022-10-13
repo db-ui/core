@@ -6,9 +6,12 @@
 
 	color: $form-elements-color;
 
-	caret-color: $db-color-red-500;
+	caret-color: $db-colors-primary-enabled;
 
-	--formElement---borderTopColor: var(--formElement---borderColor, transparent);
+	--formElement---borderTopColor: var(
+		--formElement---borderColor,
+		transparent
+	);
 	--formElement---borderRightColor: var(
 		--formElement---borderColor,
 		transparent
@@ -25,7 +28,7 @@
 	// Description styles
 	& ~ .description {
 		font-size: to-rem($pxValue: 14);
-		color: $db-color-cool-gray-500;
+		color: $db-colors-secondary-enabled;
 
 		padding: to-rem($pxValue: 6) to-rem($pxValue: 10);
 	}

@@ -2,7 +2,7 @@
 @import "sidenavi.variables";
 
 .cmp-sidenavi {
-	background-color: $db-color-cool-gray-600;
+	background-color: $db-colors-secondary-enabled;
 	box-shadow: $box-shadow-01, $box-shadow-02;
 	display: inline-block;
 
@@ -51,7 +51,12 @@
 		}
 		// TODO: This needs to get the icon from the new iconset
 		&[rel="cloud"] {
-			@include icon(glyph(cloud), 32, "enterprise-outline", $partial: $partial);
+			@include icon(
+				glyph(cloud),
+				32,
+				"enterprise-outline",
+				$partial: $partial
+			);
 		}
 		&[rel="calendar"] {
 			@include icon(glyph(calendar), 32, "outline", $partial: $partial);

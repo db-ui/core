@@ -2,8 +2,8 @@
 @import "../../00-base/icons/icons.variables";
 @import "../../00-base/icons/icons.helpers";
 
-$sidenavi-link--color: $db-color-cool-gray-200 !default;
-$sidenavi-linkCurrent-hover-color: $db-color-cool-gray-600 !default;
+$sidenavi-link--color: #d7dce1 !default;
+$sidenavi-linkCurrent-hover-color: $db-colors-secondary-enabled !default;
 
-$sidenavi-link-hover-backgroundColor: $db-color-cool-gray-300 !default;
-$sidenavi-linkcurrent--backgroundColor: $db-color-cool-gray-200 !default;
+$sidenavi-link-hover-backgroundColor: $db-colors-secondary-enabled !default;
+$sidenavi-linkcurrent--backgroundColor: #d7dce1 !default;

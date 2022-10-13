@@ -8,7 +8,7 @@ $fonts-path: "../fonts/";
 /* project specific declarations */
 body,
 [class|="pl"] {
-	font-family: $db-font-family-base;
+	font-family: $db-font-family-sans;
 }
 pl-header {
 	font-size: to-rem($pxValue: 15.49191);
@@ -18,7 +18,7 @@ pl-logo {
 }
 .pl-c-viewport-modal-wrapper,
 pl-iframe {
-	background-color: $db-color-cool-gray-100 !important; // shame.css
+	background-color: $db-colors-secondary-enabled !important; // shame.css
 }
 
 // Intro page
@@ -31,7 +31,7 @@ pl-iframe {
 
 		// Splitted Intro Page
 		&:nth-of-type(2) {
-			background-color: $db-color-cool-gray-100;
+			background-color: $db-colors-secondary-enabled;
 			padding-bottom: 2.5rem;
 		}
 	}

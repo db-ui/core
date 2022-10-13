@@ -2,7 +2,7 @@
 @import "accordion.variables";
 
 .cmp-accordion {
-	border-bottom: 1px solid $db-color-cool-gray-200;
+	border-bottom: 1px solid #d7dce1;
 	padding-left: var(--db-accordion---paddingLeft);
 	padding-right: $accordion---paddingRight;
 	--db-accordion---paddingLeft: #{to-rem($pxValue: $accordion---paddingLeft)};
@@ -10,7 +10,7 @@
 	summary {
 		@include icon(glyph(chevron-right), 24, "outline", $partial: $partial);
 
-		padding-block: $db-spacing-sm;
+		padding-block: $db-spacing-1;
 		display: flex;
 		align-items: center;
 		// Negating the padding left for moving the element into that direction with the same measures
@@ -92,7 +92,7 @@
 			)};
 
 		summary {
-			padding-block: $db-spacing-m;
+			padding-block: $db-spacing-2;
 			font-size: to-rem($pxValue: 20);
 
 			&::before {

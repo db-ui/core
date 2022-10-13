@@ -41,7 +41,7 @@
 	&:focus,
 	&:hover {
 		&:not(:disabled) {
-			--formElement---borderColor: #{$db-color-cool-gray-400};
+			--formElement---borderColor: #{$db-colors-secondary-enabled};
 		}
 	}
 
@@ -60,20 +60,20 @@
 	&:required,
 	&:focus {
 		&:valid:not([aria-invalid]) {
-			--formElement---borderColor: #{$db-color-green-600};
+			--formElement---borderColor: #{$db-colors-success-enabled};
 		}
 		&:invalid {
 			&:not(:placeholder-shown) {
-				--formElement---borderColor: #{$db-color-red-500};
+				--formElement---borderColor: #{$db-colors-primary-enabled};
 
 				& ~ .description {
-					color: $db-color-red-500;
+					color: $db-colors-primary-enabled;
 				}
 			}
 		}
 	}
 	&[aria-invalid="true"] {
-		--formElement---borderColor: #{$db-color-red-500};
+		--formElement---borderColor: #{$db-colors-primary-enabled};
 	}
 
 	// TODO: Evaluate whether those could get moved to ../_form-elements.scss
@@ -88,7 +88,7 @@
 		&,
 		& + .description {
 			font-size: to-rem($pxValue: 14);
-			color: $db-color-cool-gray-500;
+			color: $db-colors-secondary-enabled;
 			padding: to-rem($pxValue: 6) to-rem($pxValue: 10);
 		}
 	}

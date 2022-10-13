@@ -12,7 +12,7 @@
 
 	&.icons-illustration {
 		ul {
-			color: $db-color-cool-gray-700;
+			color: $db-colors-secondary-enabled;
 
 			li {
 				display: inline-block;
@@ -21,19 +21,16 @@
 				padding: to-rem($pxValue: 32);
 				border-radius: 4px;
 
-				color: $db-color-cool-gray-700;
+				color: $db-colors-secondary-enabled;
 
-				&.DO-NOT-COPY-THIS-CLASS-example-bg-variants-turquoise {
-					background-color: $db-color-turquoise-400;
-				}
 				&.DO-NOT-COPY-THIS-CLASS-example-bg-variants-red {
-					background-color: $db-color-red-500;
+					background-color: $db-colors-primary-enabled;
 
 					--db-icon-color: #fff;
 					--db-icon-pulse-color: #fff;
 				}
 				&.DO-NOT-COPY-THIS-CLASS-example-bg-variants-cyan {
-					background-color: $db-color-cyan-200;
+					background-color: $db-colors-information-enabled;
 
 					--db-icon-pulse-color: currentColor;
 				}

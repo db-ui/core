@@ -40,7 +40,7 @@
 
 		background-color: #fdfdfd; // TODO: This would need to get replaced by the correct (semantic) color
 
-		border-bottom: 1px solid $db-color-warm-gray-100;
+		border-bottom: 1px solid $db-colors-secondary-enabled;
 
 		@include icon(glyph(menu), 24, "outline", $partial: $partial);
 		@include icon(glyph(close), 24, "outline", "after", $partial: $partial);
@@ -64,7 +64,7 @@
 
 		width: 100vw;
 
-		background-color: $db-color-cool-gray-600;
+		background-color: $db-colors-secondary-enabled;
 
 		& > input[type="checkbox"][id]:not(:checked) {
 			// Hiding the cross on collapsed navigation
@@ -111,18 +111,19 @@
 			& > .elm-link,
 			& > * > .elm-link {
 				@media screen and (min-width: 1024px) {
-					padding: $mainnavigation-link--paddingTop to-rem($pxValue: 26)
-						$mainnavigation-link--paddingBottom;
+					padding: $mainnavigation-link--paddingTop
+						to-rem($pxValue: 26) $mainnavigation-link--paddingBottom;
 
-					border-#{$mainnavigation-link--borderPosition}: 4px solid transparent;
+					border-#{$mainnavigation-link--borderPosition}: 4px solid
+						transparent;
 
 					&:hover,
 					&:focus {
-						border-#{$mainnavigation-link--borderPosition}-color: $db-color-cool-gray-200;
+						border-#{$mainnavigation-link--borderPosition}-color: #d7dce1;
 					}
 
 					&[aria-current="page"] {
-						border-#{$mainnavigation-link--borderPosition}-color: $db-color-red-500;
+						border-#{$mainnavigation-link--borderPosition}-color: $db-colors-primary-enabled;
 					}
 				}
 			}
@@ -184,11 +185,11 @@
 		@media screen and (max-width: 1023px) {
 			color: #fdfdfd; // TODO: This would need to get replaced by the correct (semantic) color
 
-			background-color: $db-color-cool-gray-600;
+			background-color: $db-colors-secondary-enabled;
 
 			&:hover {
-				background-color: $db-color-cool-gray-300;
-				color: $db-color-cool-gray-800;
+				background-color: $db-colors-secondary-enabled;
+				color: $db-colors-secondary-enabled;
 
 				& > a {
 					font-weight: 700;
@@ -234,7 +235,7 @@
 			.elm-link {
 				&:hover,
 				&:focus {
-					background-color: $db-color-cool-gray-200;
+					background-color: #d7dce1;
 					color: initial;
 				}
 

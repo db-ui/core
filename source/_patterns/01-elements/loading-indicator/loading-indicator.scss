@@ -28,7 +28,7 @@
 }
 
 .elm-loadingindicator {
-	color: $db-color-red-500;
+	color: $db-colors-primary-enabled;
 	animation: loadingindicator-rotate 3s linear infinite;
 
 	@include loadingindicator--sizes("elm-");

@@ -11,14 +11,14 @@
 	height: to-rem($pxValue: 24);
 
 	display: inline-block;
-	// margin-right: $db-spacing-xs;
+	// margin-right: $db-spacing-0-5;
 
 	position: relative;
 
 	border-radius: to-rem($pxValue: 12);
 	border: none;
 
-	background-color: $db-color-cool-gray-500;
+	background-color: $db-colors-secondary-enabled;
 
 	transition: background-color 0.3s ease;
 	// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
@@ -43,7 +43,7 @@
 		width: to-rem($pxValue: 20);
 		height: to-rem($pxValue: 20);
 
-		background-color: $db-color-white;
+		background-color: #ffffff;
 
 		border-radius: to-rem($pxValue: 10);
 

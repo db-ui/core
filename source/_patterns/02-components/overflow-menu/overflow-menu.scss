@@ -13,7 +13,12 @@
 		}
 	}
 	summary {
-		@include icon($cmp-overflow-menu-icon, 20, "outline", $partial: $partial);
+		@include icon(
+			$cmp-overflow-menu-icon,
+			20,
+			"outline",
+			$partial: $partial
+		);
 
 		display: inline-block;
 
@@ -26,7 +31,7 @@
 		&:hover,
 		&:focus {
 			&::before {
-				background-color: $db-color-cool-gray-200;
+				background-color: #d7dce1;
 			}
 		}
 
@@ -62,7 +67,10 @@
 			content: "";
 			height: 0;
 			position: absolute;
-			transform: translate(to-rem($pxValue: 12), -#{to-rem($pxValue: 13)});
+			transform: translate(
+				to-rem($pxValue: 12),
+				-#{to-rem($pxValue: 13)}
+			);
 			width: 0;
 		}
 
@@ -71,8 +79,8 @@
 			a {
 				background-color: $overflowMenu---backgroundColor;
 				display: block;
-				padding: to-rem($pxValue: 16) to-rem($pxValue: 32) to-rem($pxValue: 16)
-					to-rem($pxValue: 16); // TODO: replace by correct spacings
+				padding: to-rem($pxValue: 16) to-rem($pxValue: 32)
+					to-rem($pxValue: 16) to-rem($pxValue: 16); // TODO: replace by correct spacings
 
 				font-weight: 400;
 

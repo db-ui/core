@@ -42,7 +42,7 @@
 		}
 		&:disabled {
 			& + label[role="tab"] {
-				color: $db-color-cool-gray-400;
+				color: $db-colors-secondary-enabled;
 				&:hover,
 				&:focus {
 					background-color: unset;

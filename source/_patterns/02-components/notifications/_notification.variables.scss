@@ -2,9 +2,9 @@
 
 $notification-alert--color: #fff !default;
 
-$notification-success--backgroundColor: $db-color-success !default;
-$notification-warning--backgroundColor: $db-color-warning !default;
-$notification-error--backgroundColor: $db-color-error !default;
-$notification-informative--backgroundColor: $db-color-informative !default;
+$notification-success--backgroundColor: $db-colors-success-enabled !default;
+$notification-warning--backgroundColor: $db-colors-warning-enabled !default;
+$notification-error--backgroundColor: $db-colors-critical-enabled !default;
+$notification-informative--backgroundColor: $db-colors-information-enabled !default;
 
-$notification---backgroundColor: $db-color-cool-gray-700 !default;
+$notification---backgroundColor: $db-colors-secondary-enabled !default;

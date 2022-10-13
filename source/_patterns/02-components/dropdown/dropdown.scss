@@ -10,7 +10,7 @@
 			@include icon(glyph(account), 24, "outline", $partial: $partial);
 			&:hover {
 				&::before {
-					color: $db-color-red-500;
+					color: $db-colors-primary-enabled;
 				}
 			}
 

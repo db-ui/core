@@ -28,56 +28,16 @@
 
 	//*** Variants ***
 	&[data-variant="warning"] {
-		background-color: $db-color-warning-small-font;
+		background-color: $db-colors-warning-enabled;
 	}
 	&[data-variant="error"] {
-		background-color: $db-color-error-small-font;
+		background-color: $db-colors-critical-enabled;
 	}
 	&[data-variant="informative"] {
-		background-color: $db-color-informative-small-font;
+		background-color: $db-colors-information-enabled;
 	}
 	&[data-variant="success"] {
-		background-color: $db-color-success-small-font;
-	}
-
-	// The "Gleis" additioally gets a bold font weight
-	&[data-variant="track"] {
-		font-weight: 700;
-		background-color: $db-color-blue-700;
-	}
-
-	// POIs
-	&[data-variant="poi-essen-trinken"] {
-		background-color: $db-color-food-drink;
-		color: $db-color-cool-gray-700;
-	}
-	&[data-variant="poi-einkaufen"] {
-		background-color: $db-color-shopping;
-	}
-	&[data-variant="poi-gesundheit"] {
-		background-color: $db-color-health;
-	}
-	&[data-variant="poi-kunst-kultur"] {
-		background-color: $db-color-arts-culture;
-	}
-	&[data-variant="poi-wissenswertes"] {
-		background-color: $db-color-things-to-know;
-	}
-	&[data-variant="poi-freizeit"] {
-		background-color: $db-color-leisure;
-	}
-	&[data-variant="poi-zivile-rel-einrichtungen"] {
-		background-color: $db-color-community-facilities;
-	}
-	&[data-variant="poi-dienstleistungen"] {
-		background-color: $db-color-services;
-		color: $db-color-cool-gray-700;
-	}
-	&[data-variant="poi-db-services-einrichtung"] {
-		background-color: $db-color-db-services-facilities;
-	}
-	&[data-variant="poi-wegeleitung"] {
-		background-color: $db-color-guidance;
+		background-color: $db-colors-success-enabled;
 	}
 
 	// Icons
