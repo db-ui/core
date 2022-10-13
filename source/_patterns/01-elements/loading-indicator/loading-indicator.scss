@@ -28,30 +28,30 @@
 }
 
 .elm-loadingindicator {
-	@extend %size-m; // default
+	@extend %size-m !optional; // default
 
 	@include loadingindicator--sizes("elm-");
 	animation: loadingindicator-rotate 3s linear infinite;
 	color: $db-color-red-500;
 
 	&[data-size="xs"] {
-		@extend %size-xs;
+		@extend %size-xs !optional;
 	}
 
 	&[data-size="s"] {
-		@extend %size-s;
+		@extend %size-s !optional;
 	}
 
 	&[data-size="m"] {
-		@extend %size-m;
+		@extend %size-m !optional;
 	}
 
 	&[data-size="l"] {
-		@extend %size-l;
+		@extend %size-l !optional;
 	}
 
 	&[data-size="xl"] {
-		@extend %size-xl;
+		@extend %size-xl !optional;
 	}
 }
 
