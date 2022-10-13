@@ -104,8 +104,5 @@
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
-  "homepage": "https://db-ui.github.io/core/",
-  "overrides": {
-    "terser": "5.14.2"
-  }
+  "homepage": "https://db-ui.github.io/core/"
 }
