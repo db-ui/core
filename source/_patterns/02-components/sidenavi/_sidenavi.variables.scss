@@ -2,8 +2,10 @@
 @import "../../00-base/icons/icons.variables";
 @import "../../00-base/icons/icons.helpers";
 
+// TODO: We need to replace this by its correct color variable
 $sidenavi-link--color: #d7dce1 !default;
 $sidenavi-linkCurrent-hover-color: $db-colors-secondary-enabled !default;
 
 $sidenavi-link-hover-backgroundColor: $db-colors-secondary-enabled !default;
+// TODO: We need to replace this by its correct color variable
 $sidenavi-linkcurrent--backgroundColor: #d7dce1 !default;
