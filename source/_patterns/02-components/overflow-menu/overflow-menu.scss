@@ -31,6 +31,7 @@
 		&:hover,
 		&:focus {
 			&::before {
+				// TODO: We need to replace this by its correct color variable
 				background-color: #d7dce1;
 			}
 		}
