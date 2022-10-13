@@ -1,3 +1,4 @@
 source/fonts/**/sources
 sources/**
 **/*.demonstration.scss
+source/pattern-template/_pattern-template.scss
