@@ -2,17 +2,17 @@
 @import "accordion.variables";
 
 .cmp-accordion {
+	--db-accordion---paddingLeft: #{to-rem($pxValue: $accordion---paddingLeft)};
 	border-bottom: 1px solid $db-color-cool-gray-200;
 	padding-left: var(--db-accordion---paddingLeft);
 	padding-right: $accordion---paddingRight;
-	--db-accordion---paddingLeft: #{to-rem($pxValue: $accordion---paddingLeft)};
 
 	summary {
 		@include icon(glyph(chevron-right), 24, "outline", $partial: $partial);
+		align-items: center;
+		display: flex;
 
 		padding-block: $db-spacing-sm;
-		display: flex;
-		align-items: center;
 		// Negating the padding left for moving the element into that direction with the same measures
 		transform: translateX(calc(var(--db-accordion---paddingLeft) * -1));
 		width: calc(
@@ -30,8 +30,8 @@
 
 		// Icon horizontal space
 		&::before {
-			margin-left: #{to-rem($pxValue: 14)};
 			--icon-margin-after: #{to-rem($pxValue: 8)};
+			margin-left: #{to-rem($pxValue: 14)};
 		}
 
 		& + p {
@@ -74,17 +74,18 @@
 			)};
 
 		summary {
+			font-size: to-rem($pxValue: 14);
 			// ToDo: This needs to get replaced by the correct variable
 			padding-block: 0.59375rem;
-			font-size: to-rem($pxValue: 14);
 
 			&::before {
 				--icon-font-size: #{to-rem($pxValue: 20)};
-				margin-left: #{to-rem($pxValue: 6)};
 				--icon-margin-after: #{to-rem($pxValue: 6)};
+				margin-left: #{to-rem($pxValue: 6)};
 			}
 		}
 	}
+
 	&%size-Large {
 		// Calculate especially depending on the icons sizes difference
 		--db-accordion---paddingLeft: #{to-rem(
@@ -92,8 +93,8 @@
 			)};
 
 		summary {
-			padding-block: $db-spacing-m;
 			font-size: to-rem($pxValue: 20);
+			padding-block: $db-spacing-m;
 
 			&::before {
 				--icon-font-size: #{to-rem($pxValue: 32)};
@@ -104,6 +105,7 @@
 	&[data-size="small"] {
 		@extend %size-Small;
 	}
+
 	&[data-size="large"] {
 		@extend %size-Large;
 	}
