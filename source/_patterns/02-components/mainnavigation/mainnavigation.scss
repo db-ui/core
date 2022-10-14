@@ -12,12 +12,11 @@
 
 	// The links shouldn't get an underline as text-decoration
 	.elm-link {
-		text-decoration: none;
-		display: inline-block;
-		color: inherit;
-
 		// We need to reset the general border-radius here
 		border-radius: initial;
+		color: inherit;
+		display: inline-block;
+		text-decoration: none;
 	}
 
 	// Navigation toggle elements
@@ -34,37 +33,36 @@
 	}
 
 	& > label[for] {
-		padding: to-rem($pxValue: 8) to-rem($pxValue: 22) to-rem($pxValue: 10);
-
-		display: block;
+		@include icon(glyph(menu), 24, "outline", $partial: $partial);
+		@include icon(glyph(close), 24, "outline", "after", $partial: $partial);
 
 		background-color: #fdfdfd; // TODO: This would need to get replaced by the correct (semantic) color
 
 		border-bottom: 1px solid $db-color-warm-gray-100;
 
-		@include icon(glyph(menu), 24, "outline", $partial: $partial);
-		@include icon(glyph(close), 24, "outline", "after", $partial: $partial);
+		display: block;
+		padding: to-rem($pxValue: 8) to-rem($pxValue: 22) to-rem($pxValue: 10);
 
 		&::before {
 			margin-right: to-rem($pxValue: 16);
 		}
+
 		&::after {
-			transform: translateY(to-rem($pxValue: 2));
 			position: absolute;
 			right: to-rem($pxValue: 16);
+			transform: translateY(to-rem($pxValue: 2));
 		}
 	}
 
 	// Displaying the main navigation as an top to bottom overlay on smaller viewports
 	@media screen and (max-width: 1023px) {
+		background-color: $db-color-cool-gray-600;
+		left: 0;
 		position: absolute;
 		top: to-rem($pxValue: 64);
-		left: 0;
-		z-index: $z-index-cmp-mainnavigation-dropdown; // * TODO: possibly rework variable naming
 
 		width: 100vw;
-
-		background-color: $db-color-cool-gray-600;
+		z-index: $z-index-cmp-mainnavigation-dropdown; // * TODO: possibly rework variable naming
 
 		& > input[type="checkbox"][id]:not(:checked) {
 			// Hiding the cross on collapsed navigation
@@ -87,12 +85,11 @@
 	// Multiple level navigation
 	ul ul {
 		@media screen and (min-width: 1024px) {
-			visibility: hidden;
+			box-shadow: $box-shadow-01, $box-shadow-02;
 			position: absolute;
+			visibility: hidden;
 
 			z-index: $z-index-rea-header-cmp-mainnavigation-submenu;
-
-			box-shadow: $box-shadow-01, $box-shadow-02;
 		}
 
 		@media screen and (max-width: 1023px) {
@@ -111,10 +108,11 @@
 			& > .elm-link,
 			& > * > .elm-link {
 				@media screen and (min-width: 1024px) {
-					padding: $mainnavigation-link--paddingTop to-rem($pxValue: 26)
-						$mainnavigation-link--paddingBottom;
+					padding: $mainnavigation-link--paddingTop
+						to-rem($pxValue: 26) $mainnavigation-link--paddingBottom;
 
-					border-#{$mainnavigation-link--borderPosition}: 4px solid transparent;
+					border-#{$mainnavigation-link--borderPosition}: 4px solid
+						transparent;
 
 					&:hover,
 					&:focus {
@@ -130,25 +128,24 @@
 			// From second level
 			ul {
 				@media screen and (min-width: 1024px) {
-					min-width: 100%;
-
 					left: 0;
+					min-width: 100%;
 					top: to-rem($pxValue: 79);
 
 					// From third level
 					ul {
 						left: 100%;
-						transform: translateY(-#{to-rem($pxValue: 53)});
 						top: auto;
+						transform: translateY(-#{to-rem($pxValue: 53)});
 					}
 
 					.elm-link {
-						padding-left: to-rem($pxValue: 18);
-						padding-right: to-rem($pxValue: 18);
+						align-items: center;
+						display: flex;
 
 						min-height: to-rem($pxValue: 53);
-						display: flex;
-						align-items: center;
+						padding-left: to-rem($pxValue: 18);
+						padding-right: to-rem($pxValue: 18);
 					}
 				}
 
@@ -181,10 +178,39 @@
 	li {
 		display: block;
 
-		@media screen and (max-width: 1023px) {
-			color: #fdfdfd; // TODO: This would need to get replaced by the correct (semantic) color
+		// lower levels
+		position: relative;
+		// Icon for menu
+		// TODO: this could probably get simplified with a media query polyfill and moved back to the previous section
+		&[aria-haspopup="true"] {
+			@include icon(
+				glyph(chevron-right),
+				24,
+				"outline",
+				"after",
+				$partial: $partial
+			);
 
+			&::after {
+				position: absolute;
+				right: 1rem;
+				top: to-rem($pxValue: 9);
+			}
+		}
+
+		&:hover {
+			& > ul,
+			& > * > ul {
+				visibility: visible;
+				@media screen and (max-width: 1023px) {
+					display: initial;
+				}
+			}
+		}
+
+		@media screen and (max-width: 1023px) {
 			background-color: $db-color-cool-gray-600;
+			color: #fdfdfd; // TODO: This would need to get replaced by the correct (semantic) color
 
 			&:hover {
 				background-color: $db-color-cool-gray-300;
@@ -197,30 +223,14 @@
 
 			.elm-link {
 				color: inherit;
+				padding-bottom: to-rem($pxValue: 8);
 
 				padding-left: to-rem($pxValue: 22);
 				padding-top: to-rem($pxValue: 8);
-				padding-bottom: to-rem($pxValue: 8);
 			}
 
 			&[aria-haspopup="true"] {
 				position: relative;
-			}
-		}
-		// Icon for menu
-		// TODO: this could probably get simplified with a media query polyfill and moved back to the previous section
-		&[aria-haspopup="true"] {
-			@include icon(
-				glyph(chevron-right),
-				24,
-				"outline",
-				"after",
-				$partial: $partial
-			);
-			&::after {
-				top: to-rem($pxValue: 9);
-				position: absolute;
-				right: 1rem;
 			}
 		}
 		@media screen and (min-width: 1024px) {
@@ -240,18 +250,6 @@
 
 				&[aria-current="page"] {
 					font-weight: 700;
-				}
-			}
-		}
-
-		// lower levels
-		position: relative;
-		&:hover {
-			& > ul,
-			& > * > ul {
-				visibility: visible;
-				@media screen and (max-width: 1023px) {
-					display: initial;
 				}
 			}
 		}

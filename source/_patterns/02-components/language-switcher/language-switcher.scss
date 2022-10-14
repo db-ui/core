@@ -2,11 +2,10 @@
 @import "language-switcher.variables";
 
 .cmp-language-switcher {
-	position: relative;
-
 	list-style: none;
 
 	margin-right: to-rem($pxValue: 16);
+	position: relative;
 
 	&:hover,
 	&:focus {
@@ -14,6 +13,7 @@
 			&:not([aria-selected]) {
 				visibility: visible;
 			}
+
 			&[aria-selected="true"] {
 				color: $db-color-red-500;
 			}
@@ -26,18 +26,19 @@
 		position: absolute;
 
 		top: to-rem($pxValue: 26);
+
 		.rea-header & {
 			top: to-rem($pxValue: 55);
-			@media screen and (min-width: 1024px) {
-				top: to-rem($pxValue: 56);
-			}
+
+			z-index: $z-index-rea-header-cmp-language-switcher-li; // * TODO: possibly rework variable naming
 
 			// TODO: This is an enhancement for more languages, but obviously doesn't scale that nicely and would need some rework
 			&:not([aria-selected="true"]) ~ li:not([aria-selected="true"]) {
 				top: to-rem($pxValue: 108);
 			}
-
-			z-index: $z-index-rea-header-cmp-language-switcher-li; // * TODO: possibly rework variable naming
+			@media screen and (min-width: 1024px) {
+				top: to-rem($pxValue: 56);
+			}
 		}
 
 		.elm-link {
@@ -49,9 +50,9 @@
 			visibility: hidden;
 
 			.elm-link {
-				padding-top: to-rem($pxValue: 15);
 				padding-bottom: to-rem($pxValue: 15);
 				padding-right: to-rem($pxValue: 34);
+				padding-top: to-rem($pxValue: 15);
 
 				&:hover,
 				&:focus {
@@ -61,17 +62,9 @@
 		}
 
 		&[aria-selected] {
+			position: initial;
+
 			.elm-link {
-				&:hover {
-					color: $db-color-red-500;
-				}
-
-				&::after {
-					float: right;
-
-					margin-left: to-rem($pxValue: 5);
-				}
-
 				@include icon(
 					glyph(expand-more),
 					24,
@@ -81,9 +74,17 @@
 				);
 
 				padding-bottom: to-rem($pxValue: 22);
-			}
 
-			position: initial;
+				&:hover {
+					color: $db-color-red-500;
+				}
+
+				&::after {
+					float: right;
+
+					margin-left: to-rem($pxValue: 5);
+				}
+			}
 		}
 
 		.elm-link {

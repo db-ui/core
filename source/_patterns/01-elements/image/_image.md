@@ -18,7 +18,7 @@ For more information have a look at those articles and the standard/proposal:
 
 ## Image formats
 
-### JPEG (AVIF and WebP as progressive enhancement) for photographs etc.
+### JPEG (AVIF and WebP as progressive enhancement) for photographs etc
 
 > Photographs typically fare well with lossy compression (depending on the encoder's configuration). This makes `JPEG` and `WebP` good choices for photographs, with `JPEG` being more compatible but `WebP` perhaps offering better compression. To maximize quality and minimize download time, consider providing both using a fallback with `WebP` as the first choice and `JPEG` as the second. Otherwise, `JPEG` is the safe choice for compatibility.
 
