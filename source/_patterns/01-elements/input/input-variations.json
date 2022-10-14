@@ -1,20 +1,24 @@
 {
 	"variations": [
 		{
-			"variant": "semitransparent",
-			"id": "input16"
+			"variant": "error",
+			"message": "Error Message",
+			"description": "Error Message Description"
 		},
 		{
-			"variant": "white",
-			"id": "input17"
+			"variant": "warning",
+			"message": "Warning Message",
+			"description": "Warning Message Description"
 		},
 		{
-			"variant": "solid",
-			"id": "input18"
+			"variant": "success",
+			"message": "Success Message",
+			"description": "Success Message Description"
 		},
 		{
-			"variant": "outline",
-			"id": "input19"
+			"variant": "warning",
+			"message": "Warning",
+			"description": "Warning Message Description"
 		}
 	],
 	"type": "text",

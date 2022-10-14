@@ -2,6 +2,9 @@ $icons-path: "../../../icons/" !default;
 @use "@db-ui/base/build/scss/variables" as *;
 @use "@db-ui/base/build/scss/helpers/functions" as *;
 
+@import "../../00-base/icons/icons.variables";
+@import "../../00-base/icons/icons.helpers";
+
 $input---color: $db-colors-secondary-enabled !default;
 
 $db-input-sizes: (
@@ -79,16 +82,22 @@ $db-input-lineheight: (
 					$pxValue: map-get($db-input-font-sizes, $size)
 				);
 			}
+
+			& ~ .description {
+				font-size: to-rem(
+					$pxValue: map-get($db-input-font-sizes, $size)
+				);
+			}
 		}
 	}
 }
 
 // TODO rename
 @mixin input-label-size($size) {
-	$transformScale: 1.2;
+	$transformScale: 1.1;
 
 	@if $size == xs {
-		$transformScale: 0.8;
+		$transformScale: 0.75;
 	}
 
 	@if $size == xl {
@@ -117,7 +126,7 @@ $db-input-lineheight: (
 		$transformScale: 2.9;
 
 		@if $size == xl {
-			$transformScale: 3.1;
+			$transformScale: 3.2;
 		}
 
 		transition: transform
