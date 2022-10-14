@@ -7,38 +7,41 @@
 
 	color: $form-elements-color;
 
-	caret-color: $db-color-red-500;
+	//	caret-color: $db-color-red-500;
 
-	--formElement---borderTopColor: var(
-		--formElement---borderColor,
-		transparent
-	);
-	--formElement---borderRightColor: var(
-		--formElement---borderColor,
-		transparent
-	);
-	--formElement---borderBottomColor: var(
-		--formElement---borderColor,
-		#{$form-elements-semitransparent-border-bottom-color}
-	);
-	--formElement---borderLeftColor: var(
-		--formElement---borderColor,
-		transparent
-	);
+	// --formElement---borderTopColor: var(
+	// 	--formElement---borderColor,
+	// 	transparent
+	// );
+	// --formElement---borderRightColor: var(
+	// 	--formElement---borderColor,
+	// 	transparent
+	// );
+	// --formElement---borderBottomColor: var(
+	// 	--formElement---borderColor,
+	// 	#{$form-elements-semitransparent-border-bottom-color}
+	// );
+	// --formElement---borderLeftColor: var(
+	// 	--formElement---borderColor,
+	// 	transparent
+	// );
 
 	// Description styles
 	& ~ .description {
-		font-size: to-rem($pxValue: 14);
-		color: $db-color-cool-gray-500;
+		// font-size: to-rem($pxValue: 14);
+		// color: $db-color-cool-gray-500;
 
-		padding: to-rem($pxValue: 6) to-rem($pxValue: 10);
+		padding: to-rem($pxValue: 6) 0.5rem;
 	}
 }
 
 // ### Style variations
 // Semitransparent
 %form-element-semitransparent {
-	background-color: $form-elements-semitransparent-background-color;
+	//background-color: $form-elements-semitransparent-background-color;
+
+	@extend %db-bg-neutral-transparent-semi;
+
 	// border-top: $form-elements---borderTop;
 	// border-right: $form-elements---borderRight;
 	// border-bottom: $form-elements---borderBottom;
@@ -51,7 +54,7 @@
 
 // White
 %form-element-white {
-	background-color: $form-elements-white-background-color;
+	// background-color: $form-elements-white-background-color;
 	// border-top: $form-elements---borderTop;
 	// border-right: $form-elements---borderRight;
 	// border-bottom: $form-elements---borderBottom;
@@ -64,7 +67,7 @@
 
 // Solid
 %form-element-solid {
-	background-color: $form-elements-solid-background-color;
+	// background-color: $form-elements-solid-background-color;
 	// border-top: $form-elements---borderTop;
 	// border-right: $form-elements---borderRight;
 	// border-bottom: $form-elements---borderBottom;
