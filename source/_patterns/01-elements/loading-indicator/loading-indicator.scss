@@ -33,6 +33,7 @@
 	/* stylelint-disable */
 	@include loadingindicator--sizes("elm-");
 	@extend %size-m; // default
+	/* stylelint-enable */
 
 	&[data-size="xs"] {
 		@extend %size-xs;
