@@ -1,4 +1,5 @@
 @import "metanavigation.variables";
+
 .cmp-metanavigation {
 	display: flex;
 	list-style: none;
@@ -9,6 +10,7 @@
 	li {
 		padding-left: to-rem($pxValue: 8);
 		padding-right: to-rem($pxValue: 8);
+
 		.rea-footer & {
 			padding-left: to-rem($pxValue: 6);
 			padding-right: to-rem($pxValue: 6);
@@ -29,8 +31,8 @@
 	}
 
 	.rea-footer & {
-		justify-content: center;
 		flex-wrap: wrap;
+		justify-content: center;
 
 		@media screen and (max-width: 767px) {
 			margin-bottom: 1rem;

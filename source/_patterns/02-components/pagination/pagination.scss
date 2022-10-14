@@ -17,30 +17,32 @@
 
 	li,
 	.elm-link {
+		align-items: center;
 		display: inline-flex;
 		justify-content: center;
-		align-items: center;
 	}
+
 	li {
-		width: to-rem($pxValue: 36);
 		height: to-rem($pxValue: 36);
+		width: to-rem($pxValue: 36);
 	}
 
 	.elm-link {
-		width: 100%;
-		height: 100%;
-
 		color: inherit;
+		height: 100%;
 		text-decoration: none;
+		width: 100%;
 
 		&[rel="prev"],
 		&[rel="next"] {
 			padding: 0;
 			vertical-align: bottom;
 		}
+
 		&[rel="prev"]::before {
 			margin-left: to-rem($pxValue: 11);
 		}
+
 		&[rel="next"]::before {
 			margin-right: to-rem($pxValue: 11);
 		}
@@ -49,6 +51,7 @@
 			@include icon(glyph(chevron-left), $partial: $partial);
 			@include is-icon-text-replace();
 		}
+
 		&[rel="next"] {
 			@include icon(glyph(chevron-right), $partial: $partial);
 			@include is-icon-text-replace();

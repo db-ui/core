@@ -14,9 +14,11 @@ body.has-fixed-footer .rea-footer {
 	width: 100%;
 	z-index: $z-index-reas-fixed-header-footer;
 }
+
 body.has-fixed-header {
 	// TODO: using some outsourced global declarations for the headers dimensions (height, padding and margins)
 	padding-top: to-rem($pxValue: 95);
+
 	.rea-header {
 		top: 0;
 	}
@@ -25,9 +27,11 @@ body.has-fixed-header {
 		padding-top: to-rem($pxValue: 80);
 	}
 }
+
 body.has-fixed-footer {
 	// TODO: using some outsourced global declarations for the footers dimensions (height, padding and margins)
 	padding-bottom: to-rem($pxValue: 88);
+
 	.rea-footer {
 		bottom: 0;
 	}
