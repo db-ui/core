@@ -38,16 +38,18 @@ nav,
 
 // General styles (TODO: most likely move those to DB UI Base)
 :root {
-	--db-focus-outline-offset: 1px;
+	--db-focus-outline-offset: 0px;
 	--db-focus-outline-color: #2c95c4;
 }
 
 // Focus styles
 :is(a, button, input, textarea, summary) {
 	--db-focus-outline-size: max(2px, 0.08em);
+	transition: outline 0.06s;
 
 	&:focus-visible {
-		outline: var(--db-focus-outline-size) var(--db-focus-outline-style, solid)
+		outline: var(--db-focus-outline-size)
+			var(--db-focus-outline-style, solid)
 			var(--db-focus-outline-color, currentColor);
 		outline-offset: var(
 			--db-focus-outline-offset,
