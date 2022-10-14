@@ -3,13 +3,12 @@
 @import "button.variables";
 
 .elm-button {
-	// Centering the content vertically and horizontally
-	align-items: center;
+	align-items: center; // Centering the content vertically and horizontally
 	border: 1px solid transparent;
 	border-radius: 4px;
-	display: inline-flex;
+	display: inline-flex; // Centering the content vertically and horizontally
 	font-size: to-rem($pxValue: 16);
-	justify-content: center;
+	justify-content: center; // Centering the content vertically and horizontally
 	min-height: $button---minHeight;
 	padding: to-rem($pxValue: 8) to-rem($pxValue: 16);
 
