@@ -26,9 +26,10 @@ DB UI Core provides robust HTML UI components, reusable visual styles, and power
 	<cite>We’re not designing pages anymore. We’re designing systems of components.</cite>
 	<figcaption><a href="https://bradfrost.com/blog/post/bdconf-stephen-hay-presents-responsive-design-workflow/" target="_blank" rel="noopener noreferrer">Stephen Hay</a>. <a href="https://vimeo.com/67476280" title="Brad Frosts at beyond tellerrand conference regarding Atomic Design" target="_blank" rel="noopener noreferrer">Citated in a talk by Brad Frost at beyond tellerrand conference.</a></figcaption>
 </figure>
-<!-- markdownlint-enable MD033 MD010 -->
 
-## tl;dr: "too long" Danny replied
+## <abbr title="too long; didn't read">tl;dr</abbr>: "too long" Danny replied
+
+<!-- markdownlint-enable MD033 MD010 -->
 
 - [Getting started](docs/getStarted.adoc)
 - [GitHub - DB UI Core](https://github.com/db-ui/core/)
