@@ -1,8 +1,8 @@
 {{#each illustrative-icons }}
 	<h5>{{ label }}</h5>
-	<ul class="DO-NOT-COPY-THIS-CLASS-example-icon-list icons illustrative">
+	<ol class="DO-NOT-COPY-THIS-CLASS-example-icon-list icons illustrative">
 		{{#each icons }}<li>
-			<ul>
+			<ol>
 				{{#each @root.example-bgs }}
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-{{ variant }}">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
@@ -10,7 +10,7 @@
 						</svg>
 					</li>
 				{{/each }}
-			</ul>
+			</ol>
 		</li>{{/each }}
-	</ul>
+	</ol>
 {{/each }}

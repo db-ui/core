@@ -1,6 +1,6 @@
 .DO-NOT-COPY-THIS-CLASS-example-icon-list {
 	&,
-	ul {
+	ol {
 		list-style: none;
 
 		padding-left: 0;
@@ -17,8 +17,29 @@
 		}
 
 		.DO-NOT-COPY-THIS-CLASS-example-bg-variants-regular {
-			ul {
+			ol {
 				justify-content: flex-end;
+			}
+		}
+
+		details {
+			summary {
+				cursor: pointer;
+
+				// Replace existing marker with an icon from the library
+				&::-webkit-details-marker {
+					display: none;
+				}
+				// … and using some other declaration for Mozilla Firefox
+				&:first-of-type {
+					list-style-type: none;
+				}
+			}
+
+			ul {
+				li {
+					display: list-item;
+				}
 			}
 		}
 	}
@@ -28,7 +49,7 @@
 	}
 
 	&.icons {
-		ul {
+		ol {
 			color: $db-color-cool-gray-700;
 		}
 
@@ -74,7 +95,7 @@
 	}
 
 	&.functional {
-		ul {
+		ol {
 			align-items: center;
 			display: flex;
 		}

@@ -1,21 +1,27 @@
 {{#if default}}<p>Please keep in mind that it's optional to set the variant combination of size ({{ @root.icon-size }}) and style ({{ @root.icon-style }}) as this is defined as the default.<br>In case that you'll need another default in your project, you could overwrite the defaults by modifying the <code>$icon-size</code> and <code>$icon-style</code> SCSS variables.</p>{{/if }}
-<ul class="DO-NOT-COPY-THIS-CLASS-example-icon-list icons functional">
+<ol class="DO-NOT-COPY-THIS-CLASS-example-icon-list icons functional">
 	{{#each icons }}<li>
-		<ul>
-			{{#each @root.example-bgs }}
-				<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-{{ variant }}">
-					<ul>
-						{{#each ../variants }}
-						<li data-icon="{{ ../../icon }}" data-icon-variant="{{ size }}-{{#if style }}{{ style }}{{else}}outline{{/if }}">
-							{{!-- <ul>
-								<li>SCSS: {{#if @root.default}}<code>@include icon(glyph({{ icon-glyph }}))</code> or {{/if }}<code>@include icon(glyph({{ icon-glyph }}), {{ @root.icon-size }}, "{{ @root.icon-style }}")</code></li>
-								<li>HTML: {{#if @root.default}}<code>data-icon="{{ icon-glyph }}"</code> or {{/if }}<code>data-icon="{{ icon-glyph }}" data-icon-variant="{{ @root.icon-size }}-{{ @root.icon-style }}"</code></li>
-							</ul> --}}
+		<details>
+			<summary>
+				<ol>
+					{{#each @root.example-bgs }}
+						<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-{{ variant }}">
+							<ol>
+								{{#each ../variants }}
+								<li data-icon="{{ ../../icon }}" data-icon-variant="{{ size }}-{{#if style }}{{ style }}{{else}}outline{{/if }}">
+
+								</li>
+								{{/each }}
+							</ol>
 						</li>
-						{{/each }}
-					</ul>
-				</li>
-			{{/each }}
-		</ul>
+					{{/each }}
+				</ol>
+			</summary>
+			<h4>{{ icon }}</h4>
+			<ul>
+				<li>SCSS: <code>@include icon(glyph({{ icon }}))</code></li>
+				<li>HTML: <code>data-icon="{{ icon }}"</code></li>
+			</ul>
+		</details>
 	</li>{{/each }}
-</ul>
+</ol>
