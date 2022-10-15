@@ -1,6 +1,8 @@
 @charset "utf-8";
 
 .rea-grid {
+	// TODO: We would probably need to recheck on this declaration regarding compabitility
+	flex-wrap: wrap;
 	// adapted from https://github.com/jgthms/bulma/blob/0.7.5/sass/grid/columns.sass
 	margin-left: -0.625rem;
 	margin-right: -0.625rem;
@@ -9,9 +11,6 @@
 	@media screen and (min-width: 769px), print {
 		display: flex;
 	}
-
-	// TODO: We would probably need to recheck on this declaration regarding compabitility
-	flex-wrap: wrap;
 
 	& > div,
 	& > area,
@@ -94,27 +93,35 @@
 	[data-type="four-fifths"] {
 		@extend %is-four-fifths;
 	}
+
 	[data-type="three-quarters"] {
 		@extend %is-three-quarters;
 	}
+
 	[data-type="two-thirds"] {
 		@extend %is-two-thirds;
 	}
+
 	[data-type="three-fifths"] {
 		@extend %is-three-fifths;
 	}
+
 	[data-type="half"] {
 		@extend %is-half;
 	}
+
 	[data-type="two-fifths"] {
 		@extend %is-two-fifths;
 	}
+
 	[data-type="one-third"] {
 		@extend %is-one-third;
 	}
+
 	[data-type="one-quarter"] {
 		@extend %is-one-quarter;
 	}
+
 	[data-type="one-fifth"] {
 		@extend %is-one-fifth;
 	}

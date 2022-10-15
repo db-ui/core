@@ -5,21 +5,20 @@
 @import "footer.variables";
 
 .rea-footer {
-	box-shadow: $footer---boxShadow;
-	margin-top: $footer---marginTop;
-	padding: #{to-rem($pxValue: 21)} #{to-rem($pxValue: 16)};
-
-	color: $db-color-cool-gray-500;
+	@include clearfix($partial: $partial);
 
 	background-color: $footer---backgroundColor;
+	box-shadow: $footer---boxShadow;
 
-	@media screen and (max-width: 767px) {
-		text-align: center;
-	}
+	color: $db-color-cool-gray-500;
+	margin-top: $footer---marginTop;
+	padding: #{to-rem($pxValue: 21)} #{to-rem($pxValue: 16)};
 
 	&.has-border {
 		border-top: $footer---borderTop;
 	}
 
-	@include clearfix($partial: $partial);
+	@media screen and (max-width: 767px) {
+		text-align: center;
+	}
 }

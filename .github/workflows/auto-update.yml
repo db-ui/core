@@ -9,7 +9,7 @@ jobs:
   auto-update:
     strategy:
       matrix:
-        update: [{ head: "main", base: "v3" }]
+        update: [{ head: "main", base: "dbux-3" }]
     uses: ./.github/workflows/99-auto-update-pr.yml
     with:
       head: ${{ matrix.update.head }}

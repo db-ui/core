@@ -2,13 +2,10 @@
 @import "form-elements.variables";
 
 %form-element {
-	border-radius: 4px;
-
-	color: $form-elements-color;
-
-	caret-color: $db-color-red-500;
-
-	--formElement---borderTopColor: var(--formElement---borderColor, transparent);
+	--formElement---borderTopColor: var(
+		--formElement---borderColor,
+		transparent
+	);
 	--formElement---borderRightColor: var(
 		--formElement---borderColor,
 		transparent
@@ -21,11 +18,16 @@
 		--formElement---borderColor,
 		transparent
 	);
+	border-radius: 4px;
+
+	caret-color: $db-color-red-500;
+
+	color: $form-elements-color;
 
 	// Description styles
 	& ~ .description {
-		font-size: to-rem($pxValue: 14);
 		color: $db-color-cool-gray-500;
+		font-size: to-rem($pxValue: 14);
 
 		padding: to-rem($pxValue: 6) to-rem($pxValue: 10);
 	}
@@ -34,49 +36,49 @@
 // ### Style variations
 // Semitransparent
 %form-element-semitransparent {
+	--formElement---borderColor: #{$form-elements-semitransparent-border-bottom-color};
 	background-color: $form-elements-semitransparent-background-color;
-	border-top: $form-elements---borderTop;
-	border-right: $form-elements---borderRight;
 	border-bottom: $form-elements---borderBottom;
 	border-left: $form-elements---borderLeft;
-	border-top-color: transparent;
-	border-right-color: transparent;
 	border-left-color: transparent;
-	--formElement---borderColor: #{$form-elements-semitransparent-border-bottom-color};
+	border-right: $form-elements---borderRight;
+	border-right-color: transparent;
+	border-top: $form-elements---borderTop;
+	border-top-color: transparent;
 }
 
 // White
 %form-element-white {
+	--formElement---borderColor: #{$form-elements-white-border-bottom-color};
 	background-color: $form-elements-white-background-color;
-	border-top: $form-elements---borderTop;
-	border-right: $form-elements---borderRight;
 	border-bottom: $form-elements---borderBottom;
 	border-left: $form-elements---borderLeft;
-	border-top-color: transparent;
-	border-right-color: transparent;
 	border-left-color: transparent;
-	--formElement---borderColor: #{$form-elements-white-border-bottom-color};
+	border-right: $form-elements---borderRight;
+	border-right-color: transparent;
+	border-top: $form-elements---borderTop;
+	border-top-color: transparent;
 }
 
 // Solid
 %form-element-solid {
+	--formElement---borderColor: #{$form-elements-solid-border-bottom-color};
 	background-color: $form-elements-solid-background-color;
-	border-top: $form-elements---borderTop;
-	border-right: $form-elements---borderRight;
 	border-bottom: $form-elements---borderBottom;
 	border-left: $form-elements---borderLeft;
-	border-top-color: transparent;
-	border-right-color: transparent;
 	border-left-color: transparent;
-	--formElement---borderColor: #{$form-elements-solid-border-bottom-color};
+	border-right: $form-elements---borderRight;
+	border-right-color: transparent;
+	border-top: $form-elements---borderTop;
+	border-top-color: transparent;
 }
 
 // Outline
 %form-element-outline {
+	--formElement---borderColor: #{$form-elements-outline-border-color};
 	background-color: transparent;
-	border-top: $form-elements---borderTop;
-	border-right: $form-elements---borderRight;
 	border-bottom: $form-elements---borderBottom;
 	border-left: $form-elements---borderLeft;
-	--formElement---borderColor: #{$form-elements-outline-border-color};
+	border-right: $form-elements---borderRight;
+	border-top: $form-elements---borderTop;
 }

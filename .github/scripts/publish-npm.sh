@@ -13,17 +13,19 @@ fi
 echo "🛠 Forge all packages version numbers"
 echo "which package version ?: $VALID_SEMVER_VERSION"
 
-npm version --no-git-tag-version "$VALID_SEMVER_VERSION" 
+npm version --no-git-tag-version "$VALID_SEMVER_VERSION"
 
 echo "📦 Create packages"
-npm pack --quiet 
+npm pack --quiet
 
 TAG="latest"
-if [[ $PRE_RELEASE == 'true' ]]; then
+if [[ "$GITHUB_COMMITISH" =~ dbux-[0-9]+ ]];then
+  TAG=$GITHUB_COMMITISH
+elif [[ $PRE_RELEASE == 'true' ]]; then
   TAG="next"
 fi
 
-echo "📰 Publish Package to Registry with tag: $TAG)"
+echo "📰 Publish Package to Registry with tag: $TAG"
 for REGISTRY in 'GITHUB' 'NPM'
 do
   echo "🔒 Authenticate $REGISTRY NPM Registry"
