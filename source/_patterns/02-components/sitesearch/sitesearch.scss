@@ -27,6 +27,7 @@
 
 		// transition: all 500ms;
 	}
+
 	.elm-label {
 		@include icon(glyph(search), 24, "outline", $partial: $partial);
 
@@ -37,6 +38,7 @@
 			font-size: to-rem($pxValue: 22);
 			vertical-align: top;
 		}
+
 		.rea-header & {
 			padding-top: to-rem($pxValue: 10);
 		}
@@ -47,6 +49,7 @@
 			}
 		}
 	}
+
 	.elm-button {
 		@include icon(glyph(search), 24, "outline", $partial: $partial);
 

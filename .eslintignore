@@ -2,3 +2,6 @@
 source/fonts/**/sources/
 helpers/test.js
 tests/backstop_data/engine_scripts/
+out/**
+dist/**
+**/*.min.js
