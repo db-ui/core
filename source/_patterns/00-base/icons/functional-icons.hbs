@@ -1,4 +1,4 @@
-{{#if default}}<p>Please keep in mind that it's optional to set the variant combination of size ({{ @root.icon-size }}) and style ({{ @root.icon-style }}) as this is defined as the default.<br>In case that you'll need another default in your project, you could overwrite the defaults by modifying the <code>$icon-size</code> and <code>$icon-style</code> SCSS variables.</p>{{/if }}
+{{#unless icons}}<p>Please keep in mind that it's optional to set the variant combination of size ({{ icon-size }}) and style ({{ icon-style }}) as these are defined as default.<br>In case that you'll need another default in your project, you could overwrite the defaults by overwriting the <code>$icon-size</code> and <code>$icon-style</code> SCSS variables.</p>{{/unless }}
 <ol class="DO-NOT-COPY-THIS-CLASS-example-icon-list icons functional">
 	{{#each icons }}<li>
 		<details>
