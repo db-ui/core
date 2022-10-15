@@ -1,8 +1,18 @@
 {
 	"extends": [
-		"stylelint-config-standard-scss",
 		"stylelint-config-sass-guidelines",
-		"@wemake-services/stylelint-config-scss",
 		"stylelint-config-prettier"
-	]
+	],
+	"rules": {
+		"selector-no-qualifying-type": null,
+		"selector-class-pattern": null,
+		"scss/dollar-variable-pattern": null,
+		"scss/selector-no-redundant-nesting-selector": null,
+		"max-nesting-depth": null,
+		"selector-max-compound-selectors": null,
+		"scss/at-extend-no-missing-placeholder": null,
+		"declaration-property-value-disallowed-list": null,
+		"scss/percent-placeholder-pattern": null,
+		"scss/at-mixin-pattern": null
+	}
 }

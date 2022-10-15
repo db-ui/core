@@ -491,6 +491,11 @@
 			"onReadyScript": "puppet/clickAndHoverHelper.js"
 		},
 		{
+			"label": "Loading indicator",
+			"url": "http://127.0.0.1:8080/patterns/elements-loading-indicator/index.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-loading-indicator/index.html"
+		},
+		{
 			"label": "Progress",
 			"url": "http://127.0.0.1:8080/patterns/elements-progress-progress/elements-progress-progress.rendered.html",
 			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-progress-progress/elements-progress-progress.rendered.html"

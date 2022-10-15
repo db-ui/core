@@ -2,6 +2,7 @@
 html {
 	box-sizing: border-box;
 }
+
 *,
 ::before,
 ::after {
@@ -47,7 +48,8 @@ nav,
 	--db-focus-outline-size: max(2px, 0.08em);
 
 	&:focus-visible {
-		outline: var(--db-focus-outline-size) var(--db-focus-outline-style, solid)
+		outline: var(--db-focus-outline-size)
+			var(--db-focus-outline-style, solid)
 			var(--db-focus-outline-color, currentColor);
 		outline-offset: var(
 			--db-focus-outline-offset,
