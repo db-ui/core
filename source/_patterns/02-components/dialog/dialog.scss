@@ -4,25 +4,25 @@
 .cmp-dialog {
 	border: 0;
 	border-radius: 8px;
+
+	color: $db-colors-secondary-enabled;
+
+	font-size: to-rem($pxValue: 14);
+	margin-top: 0;
 	max-width: 90vw;
 
 	padding: to-rem($pxValue: 16); // TODO: replace by general spacing variables
+
+	// Display the dialog fixed within the middle of the screen (actually some overwrites for the dialog-polyfill CSS)
+	position: fixed;
+	top: 50%;
+	transform: translate(0, -50%);
 	@media screen and (min-width: 768px) {
 		// TODO: replace by correct general breakpoint variables
 		padding: to-rem(
 			$pxValue: 24
 		); // TODO: replace by general spacing variables
 	}
-
-	font-size: to-rem($pxValue: 14);
-
-	color: $db-colors-secondary-enabled;
-
-	// Display the dialog fixed within the middle of the screen (actually some overwrites for the dialog-polyfill CSS)
-	position: fixed;
-	top: 50%;
-	transform: translate(0, -50%);
-	margin-top: 0;
 	// Defining the backdrop colors
 
 	// * native
@@ -48,16 +48,17 @@
 		transform: translateY(-#{to-rem($pxValue: 9)});
 
 		.elm-headline {
-			font-weight: 700;
-			// Remove the headlines margin-top, as we're in a dialog that has a padding on it's own
-			margin-top: 0;
-			margin-right: to-rem($pxValue: 24);
-			margin-bottom: to-rem($pxValue: 6);
-
 			font-size: to-rem($pxValue: 18);
+			font-weight: 700;
 			line-height: to-rem(
 				$pxValue: 24
 			); // TODO: Check whether this is a settting that should be more global
+			margin-bottom: to-rem($pxValue: 6);
+			margin-right: to-rem($pxValue: 24);
+			// Remove the headlines margin-top, as we're in a dialog that has a padding on it's own
+			margin-top: 0;
+
+			text-align: center;
 			@media screen and (min-width: 768px) {
 				// TODO: replace by correct general breakpoint variables
 				font-size: to-rem($pxValue: 24);
@@ -65,8 +66,6 @@
 					$pxValue: 28
 				); // TODO: Check whether this is a settting that should be more global
 			}
-
-			text-align: center;
 		}
 
 		.elm-link {
@@ -90,8 +89,8 @@
 	}
 
 	footer {
-		margin-top: to-rem($pxValue: 18);
 		display: flex;
+		margin-top: to-rem($pxValue: 18);
 
 		.elm-button {
 			& + .elm-button {
@@ -100,9 +99,11 @@
 				); // TODO: Replace by spacing variable
 			}
 		}
+
 		&[data-alignment="end"] {
 			justify-content: flex-end;
 		}
+
 		&:not([data-alignment="end"]) {
 			.elm-button {
 				flex-grow: 1;

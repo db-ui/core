@@ -2,16 +2,16 @@
 @import "overflow-menu.variables";
 
 .cmp-overflow-menu {
-	position: relative;
-	display: inline-block;
-
 	color: #2d333f; // TODO: replace by correct color
+	display: inline-block;
+	position: relative;
 
 	&:not(.is-account) {
 		summary {
 			@include is-icon-text-replace();
 		}
 	}
+
 	summary {
 		@include icon(
 			$cmp-overflow-menu-icon,
@@ -48,16 +48,15 @@
 	// Menu list
 	menu,
 	ul {
+		background-color: $overflowMenu---backgroundColor;
+
+		border-radius: $overflowMenu---borderRadius;
 		filter: drop-shadow($box-shadow);
 		margin-block-start: 1rem;
 		padding-left: 0;
 		position: absolute;
 		width: min-content;
 		z-index: $z-index-cmp-overflow-menu-menu;
-
-		border-radius: $overflowMenu---borderRadius;
-
-		background-color: $overflowMenu---backgroundColor;
 
 		// Little triangle on the overlay
 		&::before {
@@ -79,15 +78,15 @@
 			button,
 			a {
 				background-color: $overflowMenu---backgroundColor;
+
+				border-radius: unset;
 				display: block;
+
+				font-weight: 400;
 				padding: to-rem($pxValue: 16) to-rem($pxValue: 32)
 					to-rem($pxValue: 16) to-rem($pxValue: 16); // TODO: replace by correct spacings
 
-				font-weight: 400;
-
 				text-decoration: none;
-
-				border-radius: unset;
 
 				&:hover,
 				&:focus {
@@ -95,6 +94,7 @@
 					color: inherit;
 				}
 			}
+
 			&:first-child {
 				button,
 				a {
@@ -102,6 +102,7 @@
 					border-top-right-radius: $overflowMenu---borderRadius;
 				}
 			}
+
 			&:last-child {
 				button,
 				a {
@@ -111,6 +112,7 @@
 			}
 		}
 	}
+
 	&[data-horizontal-position="opposite"] {
 		menu,
 		ul {
@@ -125,6 +127,7 @@
 			}
 		}
 	}
+
 	menu {
 		list-style-type: ""; // Disable list style type, but prevent postcss-list-style-safari-fix transformation
 

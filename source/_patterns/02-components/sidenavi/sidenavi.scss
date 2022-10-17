@@ -7,14 +7,13 @@
 	display: inline-block;
 
 	.elm-link {
+		// We need to reset the general border-radius here
+		border-radius: initial;
 		// TODO: check for the correct color code
 		color: $sidenavi-link--color; // * TODO: possibly rework variable naming
 		display: block;
 		padding: to-rem($pxValue: 20) to-rem($pxValue: 16);
 		text-decoration: none;
-
-		// We need to reset the general border-radius here
-		border-radius: initial;
 
 		&:hover,
 		&:focus,
@@ -26,6 +25,7 @@
 		&:focus {
 			background-color: $sidenavi-link-hover-backgroundColor; // * TODO: possibly rework variable naming
 		}
+
 		&[aria-current="page"] {
 			background-color: $sidenavi-linkcurrent--backgroundColor; // * TODO: possibly rework variable naming
 			font-weight: 700;
@@ -34,9 +34,11 @@
 		&[rel] {
 			padding-left: to-rem($pxValue: 21);
 		}
+
 		&[rel="index"] {
 			@include icon(glyph(home), 32, "outline", $partial: $partial);
 		}
+
 		&[rel="documents"] {
 			@include icon(glyph(document), 32, "outline", $partial: $partial);
 		}
@@ -58,9 +60,11 @@
 				$partial: $partial
 			);
 		}
+
 		&[rel="calendar"] {
 			@include icon(glyph(calendar), 32, "outline", $partial: $partial);
 		}
+
 		&[rel="help"] {
 			@include icon(glyph(help), 32, "outline", $partial: $partial);
 		}

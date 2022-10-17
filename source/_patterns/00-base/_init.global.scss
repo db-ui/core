@@ -19,7 +19,7 @@ html {
 	overflow-x: hidden;
 	overflow-y: scroll;
 	text-rendering: optimizeLegibility;
-	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
 	text-size-adjust: 100%;
 }
 
@@ -63,7 +63,7 @@ code {
 	color: darken($db-colors-primary-enabled, 2%);
 	font-size: 0.875em;
 	font-weight: normal;
-	padding: 0.25em 0.5em 0.25em;
+	padding: 0.25em 0.5em;
 }
 
 hr {
@@ -89,10 +89,10 @@ fieldset {
 }
 
 pre {
-	-webkit-overflow-scrolling: touch;
 	background-color: #f5f5f5;
 	color: #282d37;
 	font-size: 0.875em;
+	-webkit-overflow-scrolling: touch;
 	overflow-x: auto;
 	padding: 1.25rem 1.5rem;
 	white-space: pre;

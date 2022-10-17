@@ -6,6 +6,7 @@ $progress---height: to-rem(
 $progress-value--backgroundColor: var(
 	--progress-value--backgroundColor
 ) !default;
+
 .elm-progress progress {
 	--progress-value--backgroundColor: #{$db-colors-primary-enabled};
 }

@@ -3,14 +3,13 @@
 @import "../../../css/db-ui-core.variables";
 
 .elm-select {
+	@extend %form-element;
 	appearance: none;
 	font-size: to-rem($pxValue: 16);
 	// For IE
 	&::-ms-expand {
 		display: none;
 	}
-
-	@extend %form-element;
 
 	// Style the regular (non-multiple) select elements
 	&:not([multiple]) {
@@ -53,12 +52,15 @@
 	&[data-variant="semitransparent"] {
 		@extend %form-element-semitransparent;
 	}
+
 	&[data-variant="white"] {
 		@extend %form-element-white;
 	}
+
 	&[data-variant="solid"] {
 		@extend %form-element-solid;
 	}
+
 	&[data-variant="outline"] {
 		@extend %form-element-outline;
 	}
@@ -75,8 +77,10 @@
 			transition-duration: 0.01s !important;
 		}
 	}
+
 	&[multiple] {
 		margin-top: to-rem($pxValue: 16);
+
 		& + .elm-label {
 			transform: translate($db-spacing-2, -#{to-rem($pxValue: 100)});
 		}
@@ -92,6 +96,7 @@
 			// TODO: We need to replace this by its correct color variable
 			background-color: #d7dce1;
 		}
+
 		&:checked {
 			// TODO: We need to replace this by its correct color variable
 			background-color: #d7dce1;

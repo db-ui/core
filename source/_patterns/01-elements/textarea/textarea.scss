@@ -11,18 +11,18 @@
 		@extend %form-element-semitransparent;
 	}
 
-	font-size: to-rem($pxValue: 16);
-	line-height: to-rem($pxValue: 24);
-
 	display: block;
 
-	width: 100%;
-	max-width: 100%;
+	font-size: to-rem($pxValue: 16);
 	height: to-rem($pxValue: 44);
+	line-height: to-rem($pxValue: 24);
+	max-width: 100%;
 
 	padding: to-rem($pxValue: 6) to-rem($pxValue: 10);
 
 	resize: vertical;
+
+	width: 100%;
 
 	// * to be evaluated
 	// display: inline-flex;
@@ -33,6 +33,7 @@
 		max-height: to-rem($pxValue: 600);
 		min-height: to-rem($pxValue: 120);
 	}
+
 	&[rows] {
 		height: initial;
 	}
@@ -62,6 +63,7 @@
 		&:valid:not([aria-invalid]) {
 			--formElement---borderColor: #{$db-colors-success-enabled};
 		}
+
 		&:invalid {
 			&:not(:placeholder-shown) {
 				--formElement---borderColor: #{$db-colors-primary-enabled};
@@ -72,6 +74,7 @@
 			}
 		}
 	}
+
 	&[aria-invalid="true"] {
 		--formElement---borderColor: #{$db-colors-primary-enabled};
 	}
@@ -87,8 +90,8 @@
 		// TODO: This probably still needs to get further changed to a general "hint" pattern or similar
 		&,
 		& + .description {
-			font-size: to-rem($pxValue: 14);
 			color: $db-colors-secondary-enabled;
+			font-size: to-rem($pxValue: 14);
 			padding: to-rem($pxValue: 6) to-rem($pxValue: 10);
 		}
 	}
@@ -97,12 +100,15 @@
 	&[data-variant="semitransparent"] {
 		@extend %form-element-semitransparent;
 	}
+
 	&[data-variant="white"] {
 		@extend %form-element-white;
 	}
+
 	&[data-variant="solid"] {
 		@extend %form-element-solid;
 	}
+
 	&[data-variant="outline"] {
 		@extend %form-element-outline;
 	}

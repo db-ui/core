@@ -28,14 +28,16 @@ Use the following SCSS mixin for setting an icon:
 ```scss
 // schema
 @mixin icon(
-	$glyph: "",
-	$size: $icon-size,
-	$style: $icon-style,
-	$position: "before"
+  $glyph: "",
+  $size: $icon-size,
+  $style: $icon-style,
+  $position: "before"
 );
 
 // example
-@include icon(glyph(account), 20, "outline");
+span.with-an-icon {
+  @include icon(glyph(account), 20, "outline");
+}
 ```
 
 As both `$icon-size` and `$icon-style` are available to get configured with default values, and `$position` is only a variant (explained in the next paragraph) only the first one is really mandatory.
@@ -76,11 +78,11 @@ If you'd like to include the icon after the content/text, use the HTML attribute
 
 ```html
 <a
-	href="#"
-	data-icon-after="alarm"
-	data-icon-variant-after="24-outline"
-	class="elm-link"
-	>Alarm</a
+  href="#"
+  data-icon-after="alarm"
+  data-icon-variant-after="24-outline"
+  class="elm-link"
+  >Alarm</a
 >
 ```
 

@@ -15,24 +15,23 @@
 			color: $db-colors-secondary-enabled;
 
 			li {
+				border-radius: 4px;
+
+				color: $db-colors-secondary-enabled;
 				display: inline-block;
 
 				margin: to-rem($pxValue: 4);
 				padding: to-rem($pxValue: 32);
-				border-radius: 4px;
-
-				color: $db-colors-secondary-enabled;
 
 				&.DO-NOT-COPY-THIS-CLASS-example-bg-variants-red {
-					background-color: $db-colors-primary-enabled;
-
 					--db-icon-color: #fff;
 					--db-icon-pulse-color: #fff;
+					background-color: $db-colors-primary-enabled;
 				}
-				&.DO-NOT-COPY-THIS-CLASS-example-bg-variants-cyan {
-					background-color: $db-colors-information-enabled;
 
+				&.DO-NOT-COPY-THIS-CLASS-example-bg-variants-cyan {
 					--db-icon-pulse-color: currentColor;
+					background-color: $db-colors-information-enabled;
 				}
 			}
 		}

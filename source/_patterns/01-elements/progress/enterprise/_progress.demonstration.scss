@@ -17,9 +17,11 @@
 			&::-webkit-progress-value {
 				--progress-value--backgroundColor: #{$progress-onDarkBackground-value-backgroundColor};
 			}
+
 			&::-moz-progress-bar {
 				--progress-value--backgroundColor: #{$progress-onDarkBackground-value-backgroundColor};
 			}
+
 			&::-ms-fill {
 				--progress-value--backgroundColor: #{$progress-onDarkBackground-value-backgroundColor};
 			}

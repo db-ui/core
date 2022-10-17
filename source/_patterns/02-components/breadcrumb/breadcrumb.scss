@@ -19,21 +19,21 @@
 
 			[aria-current="location"],
 			[aria-current="page"] {
-				font-size: to-rem($pxValue: 14);
 				color: $db-colors-secondary-enabled;
+				font-size: to-rem($pxValue: 14);
 			}
 
 			.elm-link {
-				text-decoration: none;
+				border-radius: to-rem($pxValue: 4);
 
 				padding: to-rem($pxValue: 1) to-rem($pxValue: 3)
 					to-rem($pxValue: 1) to-rem($pxValue: 4);
-
-				border-radius: to-rem($pxValue: 4);
+				text-decoration: none;
 
 				&:hover {
 					background-color: $breadcrumb-link-hover-backgroundColor;
 				}
+
 				&:active {
 					background-color: $breadcrumb-link-active-backgroundColor;
 				}
@@ -41,6 +41,7 @@
 
 			&:first-child {
 				@include icon(glyph(home), $size: 20, $partial: $partial);
+
 				&::before {
 					--icon-margin-after: #{to-rem($pxValue: 3)};
 				}
@@ -56,8 +57,8 @@
 				&::before {
 					--icon-font-size: #{to-rem($pxValue: 14)};
 					--icon-margin-after: 0;
-					margin-left: -#{to-rem($pxValue: 2)};
 					color: $db-colors-secondary-enabled;
+					margin-left: -#{to-rem($pxValue: 2)};
 				}
 			}
 		}
