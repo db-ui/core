@@ -92,11 +92,11 @@ pl-iframe {
 
 // Related to https://github.com/db-ui/base/pull/6
 .sg-swatch {
+	border: #000 dashed 1px;
+	display: flex;
 	height: initial;
 	min-height: 6em;
 	padding: 4px;
-	display: flex;
-	border: black dashed 1px;
 
 	.sg-label {
 		font-size: 80%;

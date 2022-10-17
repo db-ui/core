@@ -1,6 +1,14 @@
 @use "sass:math";
 @import "headline.variables";
 
+h1,
+h2,
+h3 {
+	&.elm-headline {
+		font-family: $db-font-family-head;
+	}
+}
+
 .elm-headline {
 	margin-bottom: to-rem($pxValue: 16);
 
