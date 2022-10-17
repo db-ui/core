@@ -28,9 +28,10 @@
 }
 
 .elm-loadingindicator {
+	/* stylelint-disable */
+	@include loadingindicator--sizes("elm-");
 	@extend %size-m; // default
 
-	@include loadingindicator--sizes("elm-");
 	animation: loadingindicator-rotate 3s linear infinite;
 	color: $db-colors-primary-enabled;
 
