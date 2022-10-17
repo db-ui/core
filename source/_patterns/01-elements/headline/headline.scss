@@ -61,12 +61,13 @@ h3 {
 		}
 	}
 }
+
 h4 {
 	&.elm-headline {
-		font-weight: 400;
 		font-size: to-rem(
 			$pxValue: $rea-main-h4-font-size
 		); // * TODO: possibly rework variable naming
+		font-weight: 400;
 		line-height: math.div(24, $rea-main-h4-font-size);
 		@media screen and (max-width: 767px) {
 			font-size: to-rem(
