@@ -2,7 +2,9 @@
 
 # Changelog
 
-All notable changes to this project will be documented in this file.
+From now on we'll only document our changes within the [repositories releases page](https://github.com/db-ui/core/releases).
+
+~~All notable changes to this project will be documented in this file.~~
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -12,7 +14,7 @@ Regarding BREAKING CHANGES in between, please have a look into [the migration gu
 
 And we're still hosting the `CHANGELOG` for any changes up until version 2.0.0 within our internal Git: <https://db.de/lwfv2o> (you need to be logged in to our Deutsche Bahn VPN for these informations)
 
-<!-- ## [2.0.0] - 2022-XX-XX
+## [2.0.0] - 2022-10-14
 
 This part includes all of the changes from `@db-ui/db-ui-core@1.x` to `@db-ui/core@2.0.0` – this summarizes the changes out of the previous prereleases, and is especially only including the relevant aspects for consumers of our package (so we've left out the DB UI Core contributors relevant aspects).
 
@@ -77,13 +79,7 @@ In general we've introduced the possibility to control variants and configuratio
 - **BREAKING CHANGE** / Polyfills: As both [`details`/`summary`](https://caniuse.com/details) and [`dialog`](https://caniuse.com/dialog) elements reached great support in modern browsers these days, we're only including those for demo purposes from now on, but not as regular `dependencies` any more.
 - The DB Webfonts files have been updated
 - refactor: removing last `bulma` remains. While this is still a great framework, our codebase is now mature enough to even also work without it. [!350]
-- The DB Webfonts files have been updated -->
-
-## [Unreleased]
-
-### Added
-
-- Loading Indicator: introduced new Loadingindicator (Circular Loading Spinner)
+- The DB Webfonts files have been updated
 
 ## [2.0.0-48] - 2022-08-05
 
