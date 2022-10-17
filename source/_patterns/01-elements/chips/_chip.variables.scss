@@ -6,7 +6,7 @@ $chip---radius: to-rem(
 	$pxValue: 4
 ) !default;
 
-$chip-hover--backgroundColor: rgba($db-color-cool-gray-700, 0.03) !default;
-$chip-selected--backgroundColor: $db-color-cool-gray-700 !default;
-$chip-checked--color: $db-color-white !default;
-// $chip---color: $db-color-white !default;
+// TODO: Check for the this needs to $db-colors-secondary-on-hover instead
+$chip-hover--backgroundColor: rgba($db-colors-secondary-enabled, 0.03) !default;
+$chip-selected--backgroundColor: $db-colors-secondary-enabled !default;
+$chip-checked--color: $db-colors-secondary-on-enabled !default;

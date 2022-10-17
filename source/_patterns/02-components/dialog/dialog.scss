@@ -5,7 +5,7 @@
 	border: 0;
 	border-radius: 8px;
 
-	color: $db-color-cool-gray-700;
+	color: $db-colors-secondary-enabled;
 
 	font-size: to-rem($pxValue: 14);
 	margin-top: 0;
@@ -43,7 +43,7 @@
 	}
 
 	header {
-		color: $db-color-cool-gray-800;
+		color: $db-colors-secondary-enabled;
 
 		transform: translateY(-#{to-rem($pxValue: 9)});
 

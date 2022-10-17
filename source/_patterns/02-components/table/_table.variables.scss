@@ -10,10 +10,11 @@ $table-cell-height68-paddingVertical: to-rem(
 	$pxValue: 22
 ) !default; // 68px cell height
 
-$table-line--borderColor: $db-color-cool-gray-200 !default;
+// TODO: We need to replace this by its correct color variable
+$table-line--borderColor: #d7dce1 !default;
 
-$table-row-zebra-color: rgba($db-color-cool-gray-700, 0.07) !default;
+$table-row-zebra-color: rgba($db-colors-secondary-enabled, 0.07) !default;
 
-$table-densitySmall--padding: $db-spacing-s !default;
-$table-densityRegular--padding: $db-spacing-sm !default;
-$table-densityLarge--padding: $db-spacing-m !default;
+$table-densitySmall--padding: $db-spacing-1 !default;
+$table-densityRegular--padding: $db-spacing-1 !default;
+$table-densityLarge--padding: $db-spacing-2 !default;

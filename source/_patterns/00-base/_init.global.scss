@@ -29,7 +29,7 @@ input,
 optgroup,
 select,
 textarea {
-	font-family: $db-font-family-base;
+	font-family: $db-font-family-sans;
 }
 
 code,
@@ -39,7 +39,7 @@ pre {
 }
 
 body {
-	color: $db-color-cool-gray-700;
+	color: $db-colors-secondary-enabled;
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
@@ -47,7 +47,7 @@ body {
 
 // Inline
 a {
-	color: $db-color-cool-gray-700;
+	color: $db-colors-secondary-enabled;
 
 	strong {
 		color: currentColor;
@@ -60,7 +60,7 @@ a {
 
 code {
 	background-color: #f5f5f5;
-	color: darken($db-color-red, 2%);
+	color: darken($db-colors-primary-enabled, 2%);
 	font-size: 0.875em;
 	font-weight: normal;
 	padding: 0.25em 0.5em;
