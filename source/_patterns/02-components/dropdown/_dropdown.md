@@ -4,7 +4,7 @@ title: Dropdown (within the header area)
 
 This component is mainly meant to get used within the header section. If you're looking for a similar one within the content section, please refer to the `overflow menu` component.
 
-## Variation to display the overflow menu on the opposite side
+## Variation to display the dropdown on the opposite side
 
 This component expected to be placed at the end of the header regularly and thatfor opens the overlay to its opposite side (to the right on left-to-right reading direction). If you'd like to change this behaviour e.g. to implement some kind of a collision mechanism (most likely with JavaScript) and flip the overlays orientation to the opposite side, you could use the following attribute to configure this orientation change, compare to the examples below as well:
 
