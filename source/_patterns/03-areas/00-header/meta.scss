@@ -10,6 +10,7 @@
 		margin: 0;
 		padding: 0;
 	}
+
 	ul {
 		list-style: none;
 	}
@@ -43,6 +44,7 @@
 			}
 		}
 	}
+
 	.cmp-sitesearch:focus-within ~ .elm-link[rel="account"] {
 		@include is-icon-text-replace();
 	}

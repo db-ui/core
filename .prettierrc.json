@@ -1,3 +1,17 @@
 {
-	"trailingComma": "none"
+	"trailingComma": "none",
+	"overrides": [
+		{
+			"files": "**/*.js",
+			"options": {
+				"singleQuote": true
+			}
+		},
+		{
+			"files": "**/*.mjs",
+			"options": {
+				"singleQuote": true
+			}
+		}
+	]
 }

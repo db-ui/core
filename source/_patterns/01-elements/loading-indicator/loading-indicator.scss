@@ -1,0 +1,90 @@
+@charset "utf-8";
+@use "sass:math";
+
+@import "loading-indicator.variables";
+
+.elm-loadingindicator {
+	display: block;
+}
+
+@mixin loadingindicator--sizes($prefix) {
+	@each $size in (xl l m s xs) {
+		$stroke-width: 3px;
+		@if $size == s or $size == xs {
+			$stroke-width: 2px;
+		}
+		//.#{$prefix}loadingindicator--size-#{$size} {
+		&%size-#{$size} {
+			--loadingindicator--stroke-width: #{math.div(
+					44px,
+					map-get($db-spinner-sizes, $size)
+				) *
+				$stroke-width};
+			--loadingindicator--r: 19px;
+			height: map-get($db-spinner-sizes, $size);
+			width: map-get($db-spinner-sizes, $size);
+		}
+	}
+}
+
+.elm-loadingindicator {
+	animation: loadingindicator-rotate 3s linear infinite;
+	color: $db-color-red-500;
+	/* stylelint-disable */
+	@include loadingindicator--sizes("elm-");
+	@extend %size-m; // default
+	/* stylelint-enable */
+
+	&[data-size="xs"] {
+		@extend %size-xs;
+	}
+
+	&[data-size="s"] {
+		@extend %size-s;
+	}
+
+	&[data-size="m"] {
+		@extend %size-m;
+	}
+
+	&[data-size="l"] {
+		@extend %size-l;
+	}
+
+	&[data-size="xl"] {
+		@extend %size-xl;
+	}
+}
+
+.elm-loadingindicator__circle {
+	animation: loadingindicator-stroke 1.5s ease-in-out infinite;
+	r: var(--loadingindicator--r);
+	stroke: currentcolor;
+	stroke-dasharray: 1, 200;
+	stroke-dashoffset: 0;
+	stroke-linecap: round;
+	stroke-width: var(--loadingindicator--stroke-width);
+}
+
+@keyframes loadingindicator-rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes loadingindicator-stroke {
+	0% {
+		stroke-dasharray: 1, 200;
+		stroke-dashoffset: 0;
+	}
+
+	50% {
+		stroke-dasharray: 96, 200;
+		stroke-dashoffset: -32;
+	}
+
+	100% {
+		stroke-dasharray: 96, 200;
+		stroke-dashoffset: -124;
+	}
+}

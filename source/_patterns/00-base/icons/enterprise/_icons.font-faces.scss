@@ -10,28 +10,27 @@
 					$icon-font-family: "icons-" + $icon-size + "-" +
 						$icon-domain + "-" + $icon-style;
 
+					font-display: block;
+
 					font-family: $icon-font-family;
+					font-style: normal;
+					font-weight: normal;
 					src: url("#{$icons-path}functional/fonts/#{$icon-font-family}.woff2?4r2095")
 							format("woff2"),
 						url("#{$icons-path}functional/fonts/#{$icon-font-family}.woff?4r2095")
 							format("woff");
-					font-weight: normal;
-					font-style: normal;
-
-					font-display: block;
 				}
 			}
 		} @else {
 			@font-face {
+				font-display: block;
 				font-family: $icon-style;
+				font-style: normal;
+				font-weight: normal;
 				src: url("#{$icons-path}functional/fonts/#{$icon-style}.woff2?4r2095")
 						format("woff2"),
 					url("#{$icons-path}functional/fonts/#{$icon-style}.woff?4r2095")
 						format("woff");
-				font-weight: normal;
-				font-style: normal;
-
-				font-display: block;
 			}
 		}
 	}

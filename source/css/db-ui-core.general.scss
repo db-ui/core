@@ -3,6 +3,7 @@
 /* stylelint-enable scss/at-import-partial-extension */
 @import "@csstools/normalize.css/normalize";
 @import "../_patterns/00-base/init";
+@import "fonts.general";
 
 /* TODO: We most likely need to rework this */
 body,
@@ -11,9 +12,5 @@ button,
 input,
 select,
 textarea {
-	font-family: $db-font-family-base;
-	color: $db-color-cool-gray-700;
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 1.5;
+	@extend %general-fonts;
 }

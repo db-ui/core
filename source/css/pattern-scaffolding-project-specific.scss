@@ -12,12 +12,15 @@ body,
 [class|="pl"] {
 	font-family: $db-font-family-base;
 }
+
 pl-header {
 	font-size: to-rem($pxValue: 15.49191);
 }
+
 pl-logo {
 	align-self: flex-start !important; // shame.css
 }
+
 .pl-c-viewport-modal-wrapper,
 pl-iframe {
 	background-color: $db-color-cool-gray-100 !important; // shame.css
@@ -54,10 +57,12 @@ pl-iframe {
 			&::before {
 				content: "\201E";
 			}
+
 			&::after {
 				content: "\201D";
 			}
 		}
+
 		figcaption {
 			cite {
 				font-style: normal;
@@ -69,16 +74,17 @@ pl-iframe {
 .pl-c-category__description {
 	max-width: 55em !important;
 }
+
 .tpl-intro [src^="../../images/db-ui-"] {
 	float: left;
-	margin-top: to-rem($pxValue: 28);
 	margin-right: to-rem($pxValue: 4);
+	margin-top: to-rem($pxValue: 28);
 }
 
 .pl-c-typeahead__input {
-	border-top: 0;
 	border-left: 0;
 	border-right: 0;
+	border-top: 0;
 }
 
 .pl-c-category__title,

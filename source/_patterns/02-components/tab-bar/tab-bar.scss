@@ -23,11 +23,12 @@
 			display: inline-block;
 			margin-left: to-rem($pxValue: 8);
 			padding: #{to-rem($pxValue: 5)} #{to-rem($pxValue: 32)};
+			position: relative;
+			z-index: 1;
+
 			&:first-of-type {
 				margin-left: to-rem($pxValue: 16);
 			}
-			position: relative;
-			z-index: 1;
 		}
 
 		&:focus + label {
@@ -42,9 +43,11 @@
 				}
 			}
 		}
+
 		&:disabled {
 			& + label[role="tab"] {
 				color: $db-color-cool-gray-400;
+
 				&:hover,
 				&:focus {
 					background-color: unset;

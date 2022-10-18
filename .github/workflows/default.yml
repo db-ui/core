@@ -1,10 +1,19 @@
 name: Default push workflow
 
-on: [push]
+on:
+  push:
+    branches:
+      - "**"
+    tags:
+      - "!**"
 
 jobs:
   init:
     uses: ./.github/workflows/00-init.yml
+
+  scan-secrets:
+    if: github.owner == 'db-ui'
+    uses: ./.github/workflows/00-scan-secrets.yml
 
   lint:
     uses: ./.github/workflows/01-lint.yml
@@ -19,6 +28,6 @@ jobs:
     needs: [init]
 
   deploy:
-    if: contains( github.ref, 'main')
     uses: ./.github/workflows/02-deploy-gh-pages.yml
+    if: ${{ github.actor != 'dependabot[bot]' && github.owner == 'db-ui' }}
     needs: [lint, test, build]

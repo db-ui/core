@@ -4,8 +4,8 @@
 /* stylelint-enable scss/at-import-partial-extension */
 
 .elm-link {
-	display: inline-block;
 	border-radius: to-rem($pxValue: 4);
+	display: inline-block;
 
 	// Link underline
 	text-underline-offset: to-rem($pxValue: 3);
@@ -34,11 +34,13 @@
 		&:not(.is-icon-text-replace) {
 			font-size: to-rem($pxValue: 14);
 		}
+
 		&[rel],
 		&[data-icon],
 		&[data-icon-before] {
 			@include iconMeta(20);
 		}
+
 		&[data-icon-after]::after {
 			@include iconMeta($size: 20, $position: "after");
 		}
@@ -52,12 +54,15 @@
 	&[rel="configuration"] {
 		@include icon(glyph(settings), 24, "outline", $partial: $partial);
 	}
+
 	&[rel="messages"] {
 		@include icon(glyph(chat), 24, "outline", $partial: $partial);
 	}
+
 	&[rel="account"] {
 		@include icon(glyph(account), 24, "outline", $partial: $partial);
 	}
+
 	&[rel="configuration"],
 	&[rel="messages"],
 	&[rel="account"] {

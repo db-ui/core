@@ -6,23 +6,23 @@
 .cmp-notification {
 	// Default style
 	background-color: $notification---backgroundColor;
+
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1); // Todo: This should most likely get generally setup
+
+	margin-bottom: #{to-rem($pxValue: 16)};
+	padding: #{to-rem($pxValue: 16)}; // TODO: replace by spacing-m variable
 	section[data-variant="hovering"] & {
 		background-color: #fff;
 	}
-	padding: #{to-rem($pxValue: 16)}; // TODO: replace by spacing-m variable
-
-	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1); // Todo: This should most likely get generally setup
 
 	// Alert variant
 	section[data-variant="alert"] & {
 		color: $notification-alert--color;
 	}
 
-	margin-bottom: #{to-rem($pxValue: 16)};
-
 	section[data-variant="hovering"] & {
-		border-radius: #{to-rem($pxValue: 8)};
 		border: 2px solid transparent;
+		border-radius: #{to-rem($pxValue: 8)};
 		padding: #{to-rem($pxValue: 14)} #{to-rem($pxValue: 16)}; // TODO: replace by spacing-m variable
 	}
 
@@ -33,24 +33,31 @@
 
 	&[data-type="success"] {
 		background-color: $notification-success--backgroundColor;
+
 		section[data-variant="hovering"] & {
 			border-color: $notification-success--backgroundColor;
 		}
 	}
+
 	&[data-type="warning"] {
 		background-color: $notification-warning--backgroundColor;
+
 		section[data-variant="hovering"] & {
 			border-color: $notification-warning--backgroundColor;
 		}
 	}
+
 	&[data-type="error"] {
 		background-color: $notification-error--backgroundColor;
+
 		section[data-variant="hovering"] & {
 			border-color: $notification-error--backgroundColor;
 		}
 	}
+
 	&[data-type="informative"] {
 		background-color: $notification-informative--backgroundColor;
+
 		section[data-variant="hovering"] & {
 			border-color: $notification-informative--backgroundColor;
 		}
@@ -60,17 +67,20 @@
 	&[data-icon],
 	&[data-icon-before],
 	&[data-icon-after] {
-		display: flex;
 		align-items: center;
+		display: flex;
 	}
+
 	&[data-icon],
 	&[data-icon-before] {
 		&::before {
 			--icon-margin-after: #{to-rem($pxValue: 10)};
 		}
 	}
+
 	&[data-icon-after] {
 		justify-content: space-between;
+
 		&::after {
 			--icon-margin-before: #{to-rem($pxValue: 10)};
 		}

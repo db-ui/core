@@ -10,6 +10,12 @@
 		}
 	}
 
+	a {
+		color: inherit;
+		// Deactivate underline on site name being made clickable by added to the link as well
+		text-decoration: none;
+	}
+
 	.rea-header & {
 		padding-top: to-rem($pxValue: 18);
 		@media screen and (min-width: 1024px) {

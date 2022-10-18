@@ -11,12 +11,11 @@
 .rea-main {
 	@include clearfix();
 
-	padding: to-rem($pxValue: 16);
-
 	background-color: $main---backgroundColor;
-
 	// adapted from https://github.com/jgthms/bulma/blob/0.7.5/sass/elements/container.sass
 	margin: 0 auto;
+
+	padding: to-rem($pxValue: 16);
 	position: relative;
 
 	@media screen and (min-width: 1088px) {

@@ -7,30 +7,28 @@
 .elm-radio {
 	appearance: none;
 
+	background-color: rgba(255, 255, 255, 0.1);
+	border: to-rem($pxValue: 1) solid $radio---border;
+	border-radius: to-em($pxValue: 16);
+
 	// * the basic, unchecked style
 	display: inline-block;
 
-	width: to-em($pxValue: 20);
+	font-size: to-rem($pxValue: 16);
 	height: to-em($pxValue: 20);
+
+	transition: border-width 0.5s ease;
+
+	width: to-em($pxValue: 20);
+
 	&[type="radio"] {
 		vertical-align: sub;
 	}
-	border-radius: to-em($pxValue: 16);
-	border: to-rem($pxValue: 1) solid $radio---border;
-
-	background-color: rgba(255, 255, 255, 0.1);
-
-	transition: border-width 0.5s ease;
-	// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
-	@media (prefers-reduced-motion: reduce) {
-		transition-duration: 0.01s !important;
-	}
-
-	font-size: to-rem($pxValue: 16);
 
 	&:hover {
 		background-color: rgba(40, 45, 55, 0.14);
 	}
+
 	&:active {
 		background-color: rgba(40, 45, 55, 0.3);
 	}
@@ -62,5 +60,9 @@
 		& + label {
 			opacity: 0.5;
 		}
+	}
+	// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
+	@media (prefers-reduced-motion: reduce) {
+		transition-duration: 0.01s !important;
 	}
 }

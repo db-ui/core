@@ -12,6 +12,7 @@
 		"http://127.0.0.1:8080/patterns/elements-image/index.html",
 		"http://127.0.0.1:8080/patterns/elements-input/index.html",
 		"http://127.0.0.1:8080/patterns/elements-link/index.html",
+		"http://127.0.0.1:8080/patterns/elements-loading-indicator/index.html",
 		"http://127.0.0.1:8080/patterns/elements-progress/index.html",
 		"http://127.0.0.1:8080/patterns/elements-radio/index.html",
 		"http://127.0.0.1:8080/patterns/elements-select/index.html",

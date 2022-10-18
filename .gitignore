@@ -3,6 +3,7 @@
 node_modules
 npm-debug.log
 public/
+out/
 .history
 .idea
 dependencyGraph.json
@@ -14,3 +15,5 @@ dist/
 source/js/*.min.js*
 tests/backstop_data/html_report/
 tests/backstop_data/bitmaps_test/
+
+.env

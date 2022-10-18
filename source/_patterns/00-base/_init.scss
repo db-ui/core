@@ -2,6 +2,7 @@
 html {
 	box-sizing: border-box;
 }
+
 *,
 ::before,
 ::after {
@@ -47,11 +48,21 @@ nav,
 	--db-focus-outline-size: max(2px, 0.08em);
 
 	&:focus-visible {
-		outline: var(--db-focus-outline-size) var(--db-focus-outline-style, solid)
+		outline: var(--db-focus-outline-size)
+			var(--db-focus-outline-style, solid)
 			var(--db-focus-outline-color, currentColor);
 		outline-offset: var(
 			--db-focus-outline-offset,
 			var(--db-focus-outline-size)
 		);
+	}
+}
+
+// List style / https://marketingportal.extranet.deutschebahn.com/de/brandguide/typografie-1#8e0be060-c2f5-42a1-abbc-6b050845d73c~paragraph--image_link
+:where(ul) {
+	list-style-type: "\2022"+ "   ";
+
+	li::marker {
+		color: $db-color-red-500;
 	}
 }
