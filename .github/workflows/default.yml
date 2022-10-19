@@ -5,7 +5,7 @@ on:
   push:
     branches:
       - 'main'
-      - 'v3'
+      - 'dbux-3'
 
 jobs:
   init:
