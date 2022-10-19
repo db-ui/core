@@ -1,11 +1,11 @@
 name: Default push workflow
 
 on:
+  pull_request:
   push:
     branches:
-      - "**"
-    tags:
-      - "!**"
+      - 'main'
+      - 'v3'
 
 jobs:
   init:
