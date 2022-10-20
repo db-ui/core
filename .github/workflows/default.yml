@@ -1,11 +1,11 @@
 name: Default push workflow
 
 on:
+  pull_request:
   push:
     branches:
-      - "**"
-    tags:
-      - "!**"
+      - "main"
+      - "dbux-3"
 
 jobs:
   init:
@@ -26,7 +26,7 @@ jobs:
   build:
     uses: ./.github/workflows/01-build.yml
     needs: [init]
-    
+
   checks-done:
     runs-on: ubuntu-latest
     steps:
