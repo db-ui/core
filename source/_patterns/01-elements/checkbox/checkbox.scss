@@ -7,26 +7,29 @@
 	// $checkbox-size: 16;
 	// TODO: Replace this ugly hack as soon as we've got this as an icon font as well
 	$checkbox-size: 20;
-	&:before {
-		font-size: 18px;
-	}
 
 	@include icon("\00A0", $checkbox-size, "outline", $partial: $partial);
+	align-content: center;
 
 	appearance: none;
 	background-color: $checkbox---backgroundColor;
 	border: 1px solid $checkbox---borderColor;
 	border-radius: 3px;
 	color: $checkbox---color;
+
+	display: inline-flex;
 	height: to-rem($pxValue: $checkbox-size);
+	justify-content: center;
+	width: to-rem($pxValue: $checkbox-size);
+
+	// TODO: Replace this ugly hack as soon as we've got this as an icon font as well
+	&::before {
+		font-size: 18px;
+	}
+
 	&[type="checkbox"] {
 		vertical-align: middle;
 	}
-	width: to-rem($pxValue: $checkbox-size);
-
-	display: inline-flex;
-	justify-content: center;
-	align-content: center;
 
 	&::before {
 		--icon-font-size: 1.375rem;
@@ -72,34 +75,35 @@
 	}
 
 	& + label {
-		margin-left: $db-spacing-0-5;
-
 		font-size: to-rem($pxValue: 12);
+		margin-left: $db-spacing-0-5;
 	}
 
 	// Sizes
 	&%size-Small {
 		$checkbox-size: 16;
 		// TODO: Replace this ugly hack as soon as we've got this as an icon font as well
-		&:before {
-			font-size: 14px;
-		}
+		// @include iconMeta($checkbox-size);
+		@include iconMeta(20);
 
 		height: to-rem($pxValue: $checkbox-size);
 		width: to-rem($pxValue: $checkbox-size);
 		// TODO: Replace this ugly hack as soon as we've got this as an icon font as well
-		// @include iconMeta($checkbox-size);
-		@include iconMeta(20);
+		&::before {
+			font-size: 14px;
+		}
 	}
+
 	&%size-Large {
 		$checkbox-size: 24;
-		&:before {
-			font-size: 24px;
-		}
+		@include iconMeta($checkbox-size);
 
 		height: to-rem($pxValue: $checkbox-size);
 		width: to-rem($pxValue: $checkbox-size);
-		@include iconMeta($checkbox-size);
+
+		&::before {
+			font-size: 24px;
+		}
 
 		& + label {
 			font-size: to-rem($pxValue: 16);
@@ -109,6 +113,7 @@
 	&[data-size="small"] {
 		@extend %size-Small;
 	}
+
 	&[data-size="large"] {
 		@extend %size-Large;
 	}
