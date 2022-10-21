@@ -22,11 +22,11 @@
 	}
 
 	thead {
-		border-bottom: to-rem($pxValue: 1) solid $db-color-cool-gray-700;
-		border-top: to-rem($pxValue: 1) solid $db-color-cool-gray-700;
+		border-bottom: to-rem($pxValue: 1) solid $db-colors-secondary-enabled;
+		border-top: to-rem($pxValue: 1) solid $db-colors-secondary-enabled;
 
 		th {
-			color: $db-color-cool-gray-500;
+			color: $db-colors-secondary-enabled;
 		}
 	}
 
@@ -43,16 +43,19 @@
 		vertical-align: inherit;
 
 		&:hover {
-			overflow: auto;
 			resize: horizontal;
+
+			&:not(:has(.cmp-overflow-menu)) {
+				overflow: auto;
+			}
 		}
 	}
 
 	tbody {
-		border-bottom: to-rem($pxValue: 1) solid $db-color-cool-gray-700;
+		border-bottom: to-rem($pxValue: 1) solid $db-colors-secondary-enabled;
 
 		th:first-child {
-			border-right: 1px solid $db-color-warm-gray-700;
+			border-right: 1px solid $db-colors-secondary-enabled;
 		}
 	}
 
@@ -65,9 +68,11 @@
 		&%align-left {
 			text-align: left;
 		}
+
 		&%align-center {
 			text-align: center;
 		}
+
 		&%align-right {
 			text-align: right;
 		}
@@ -75,9 +80,11 @@
 		&[data-align="left"] {
 			@extend %align-left;
 		}
+
 		&[data-align="center"] {
 			@extend %align-center;
 		}
+
 		&[data-align="right"] {
 			@extend %align-right;
 		}
@@ -85,9 +92,11 @@
 		&%vertical-align-top {
 			vertical-align: top;
 		}
+
 		&%vertical-align-middle {
 			vertical-align: middle;
 		}
+
 		&%vertical-align-bottom {
 			vertical-align: bottom;
 		}
@@ -95,9 +104,11 @@
 		&[data-vertical-align="top"] {
 			@extend %vertical-align-top;
 		}
+
 		&[data-vertical-align="middle"] {
 			@extend %vertical-align-middle;
 		}
+
 		&[data-vertical-align="bottom"] {
 			@extend %vertical-align-bottom;
 		}
@@ -115,6 +126,7 @@
 			}
 		}
 	}
+
 	&[data-border="around"] {
 		tbody {
 			th,
@@ -142,6 +154,7 @@
 			padding: $table-densitySmall--padding;
 		}
 	}
+
 	&[data-density="large"] {
 		th,
 		td {
@@ -153,10 +166,9 @@
 	&[data-sticky="header"] {
 		thead,
 		tbody th {
+			background-color: #fff;
 			position: sticky;
 			top: -1px;
-
-			background-color: #fff;
 		}
 	}
 }

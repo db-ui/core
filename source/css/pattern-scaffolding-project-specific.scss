@@ -8,17 +8,20 @@ $fonts-path: "../fonts/";
 /* project specific declarations */
 body,
 [class|="pl"] {
-	font-family: $db-font-family-base;
+	font-family: $db-font-family-sans;
 }
+
 pl-header {
 	font-size: to-rem($pxValue: 15.49191);
 }
+
 pl-logo {
 	align-self: flex-start !important; // shame.css
 }
+
 .pl-c-viewport-modal-wrapper,
 pl-iframe {
-	background-color: $db-color-cool-gray-100 !important; // shame.css
+	background-color: $db-colors-secondary-enabled !important; // shame.css
 }
 
 // Intro page
@@ -31,7 +34,7 @@ pl-iframe {
 
 		// Splitted Intro Page
 		&:nth-of-type(2) {
-			background-color: $db-color-cool-gray-100;
+			background-color: $db-colors-secondary-enabled;
 			padding-bottom: 2.5rem;
 		}
 	}
@@ -52,10 +55,12 @@ pl-iframe {
 			&::before {
 				content: "\201E";
 			}
+
 			&::after {
 				content: "\201D";
 			}
 		}
+
 		figcaption {
 			cite {
 				font-style: normal;
@@ -67,16 +72,17 @@ pl-iframe {
 .pl-c-category__description {
 	max-width: 55em !important;
 }
+
 .tpl-intro [src^="../../images/db-ui-"] {
 	float: left;
-	margin-top: to-rem($pxValue: 28);
 	margin-right: to-rem($pxValue: 4);
+	margin-top: to-rem($pxValue: 28);
 }
 
 .pl-c-typeahead__input {
-	border-top: 0;
 	border-left: 0;
 	border-right: 0;
+	border-top: 0;
 }
 
 .pl-c-category__title,
@@ -86,11 +92,11 @@ pl-iframe {
 
 // Related to https://github.com/db-ui/base/pull/6
 .sg-swatch {
+	border: #000 dashed 1px;
+	display: flex;
 	height: initial;
 	min-height: 6em;
 	padding: 4px;
-	display: flex;
-	border: black dashed 1px;
 
 	.sg-label {
 		font-size: 80%;

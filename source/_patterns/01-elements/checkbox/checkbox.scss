@@ -37,8 +37,8 @@
 		background-color: $checkbox--checked-backgroundColor;
 
 		&::before {
-			content: glyph(done);
 			color: $checkbox--checked-color;
+			content: glyph(done);
 		}
 	}
 
@@ -46,18 +46,20 @@
 		&:hover {
 			background-color: rgba(40, 45, 55, 0.14);
 		}
+
 		&:checked {
 			&:hover {
 				background-color: $checkbox-hover-checked-backgroundColor;
 			}
 		}
+
 		&:active {
 			background-color: rgba(0, 0, 0, 0.24);
 		}
 	}
 
 	&:indeterminate {
-		&:before {
+		&::before {
 			content: glyph(minus);
 		}
 	}
@@ -70,7 +72,7 @@
 	}
 
 	& + label {
-		margin-left: $db-spacing-xs;
+		margin-left: $db-spacing-0-5;
 
 		font-size: to-rem($pxValue: 12);
 	}

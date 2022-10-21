@@ -6,19 +6,20 @@
 .elm-input {
 	@extend %form-element;
 
-	font-size: to-rem($pxValue: 16);
-	line-height: to-rem($pxValue: 24);
-
 	color: $input---color;
 
-	width: 100%;
-	max-width: 100%;
+	font-size: to-rem($pxValue: 16);
 	height: to-rem($pxValue: 44);
+	line-height: to-rem($pxValue: 24);
+	max-width: 100%;
 
-	padding: $db-spacing-s $db-spacing-m;
+	padding: $db-spacing-1 $db-spacing-2;
+
+	width: 100%;
+
 	&:not(:placeholder-shown) {
-		padding-top: to-rem($pxValue: 16);
 		padding-bottom: 0;
+		padding-top: to-rem($pxValue: 16);
 	}
 
 	// * TODO: to get evaluated
@@ -31,7 +32,7 @@
 	&:focus,
 	&:hover {
 		&:not(:disabled) {
-			--formElement---borderColor: #{$db-color-cool-gray-400};
+			--formElement---borderColor: #{$db-colors-secondary-enabled};
 		}
 	}
 
@@ -78,19 +79,20 @@
 				transition-duration: 0.01s !important;
 			}
 		}
-		& + .elm-label {
-			transform: translate($db-spacing-m, -#{to-rem($pxValue: 41)});
-			font-size: to-rem($pxValue: 12);
-			display: block;
 
-			color: $db-color-cool-gray-500;
+		& + .elm-label {
+			color: $db-colors-secondary-enabled;
+			display: block;
+			font-size: to-rem($pxValue: 12);
 
 			margin-bottom: -#{to-rem($pxValue: 18)};
+			transform: translate($db-spacing-2, -#{to-rem($pxValue: 41)});
 
 			& + .description {
 				margin-top: 0;
 			}
 		}
+
 		&[placeholder] {
 			&:placeholder-shown {
 				& + label {
@@ -100,35 +102,40 @@
 		}
 
 		&::placeholder {
-			color: $db-color-cool-gray-500;
+			color: $db-colors-secondary-enabled;
 		}
 
 		// TODO: Evaluate whether those could get moved to ../_form-elements.scss
 		// Validation
 		&:required {
 			&:valid:not([aria-invalid]) {
-				--formElement---borderColor: #{$db-color-green-600};
+				--formElement---borderColor: #{$db-colors-success-enabled};
 			}
+
 			&:invalid {
 				&:not(:placeholder-shown) {
-					--formElement---borderColor: #{$db-color-red-500};
+					--formElement---borderColor: #{$db-colors-primary-enabled};
 				}
 			}
 		}
+
 		&[aria-invalid="true"] {
-			--formElement---borderColor: #{$db-color-red-500};
+			--formElement---borderColor: #{$db-colors-primary-enabled};
 		}
 
 		// ### Style variations
 		&[data-variant="semitransparent"] {
 			@extend %form-element-semitransparent;
 		}
+
 		&[data-variant="white"] {
 			@extend %form-element-white;
 		}
+
 		&[data-variant="solid"] {
 			@extend %form-element-solid;
 		}
+
 		&[data-variant="outline"] {
 			@extend %form-element-outline;
 		}

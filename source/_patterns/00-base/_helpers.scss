@@ -7,7 +7,8 @@
 ) {
 	#{$cssProperty}: rgb(
 		(1 - $alphaValue) * red($rgbBackground) + $alphaValue * red($hexValue),
-		(1 - $alphaValue) * green($rgbBackground) + $alphaValue * green($hexValue),
+		(1 - $alphaValue) * green($rgbBackground) + $alphaValue *
+			green($hexValue),
 		(1 - $alphaValue) * blue($rgbBackground) + $alphaValue * blue($hexValue)
 	);
 }
@@ -19,14 +20,17 @@
 	$margin-top: $width * 0.2,
 	$margin-bottom: $width * 0.35
 ) {
-	width: $width;
-	height: 0;
-	background-color: $db-color-red-500;
-	border-top: 3px solid $db-color-red-500;
-	border-bottom: 4px solid $db-color-red-500;
+	background-color: $db-colors-primary-enabled;
+	border-bottom: 4px solid $db-colors-primary-enabled;
 	border-radius: 5px;
+	border-top: 3px solid $db-colors-primary-enabled;
+	border-top: 3px solid $db-color-red-500;
 	content: "";
 	display: block;
-	margin-top: $margin-top;
+	height: 0;
+	height: 0;
 	margin-bottom: $margin-bottom;
+	margin-top: $margin-top;
+	width: $width;
+	width: $width;
 }

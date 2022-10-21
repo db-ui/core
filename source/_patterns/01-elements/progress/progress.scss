@@ -13,23 +13,29 @@
 		&::-webkit-progress-bar {
 			background-color: $progress---backgroundColor;
 		}
+
 		&::-webkit-progress-value {
 			background-color: $progress-value--backgroundColor; // * TODO: possibly rework variable naming
 		}
+
 		&::-moz-progress-bar {
 			background-color: $progress-value--backgroundColor; // * TODO: possibly rework variable naming
 		}
+
 		&::-ms-fill {
 			background-color: $progress-value--backgroundColor; // * TODO: possibly rework variable naming
 			border: none;
 		}
+
 		&:not([style^="--progress-conic:"]) {
 			&::-webkit-progress-value {
 				border-radius: 12px;
 			}
+
 			&::-moz-progress-bar {
 				border-radius: 12px;
 			}
+
 			&::-ms-fill {
 				border-radius: 12px;
 			}
@@ -38,9 +44,6 @@
 		// Styling the special indeterminate state
 		&:indeterminate {
 			animation-duration: 2.1s;
-			@media (prefers-reduced-motion: reduce) {
-				animation-duration: 15s;
-			}
 			animation-iteration-count: infinite;
 			animation-name: elmProgressMoveIndeterminate;
 			animation-timing-function: linear;
@@ -48,16 +51,20 @@
 			background-color: $progress---backgroundColor;
 			background-image: linear-gradient(
 				to right,
-				$db-color-red 100%,
+				$db-colors-primary-enabled 100%,
 				$progress---backgroundColor 100%
 			);
 			background-position: top left;
 			background-repeat: no-repeat;
 			background-size: 150% 150%;
+			@media (prefers-reduced-motion: reduce) {
+				animation-duration: 15s;
+			}
 
 			&::-webkit-progress-bar {
 				background-color: transparent;
 			}
+
 			&::-moz-progress-bar {
 				background-color: transparent;
 			}
@@ -84,6 +91,7 @@
 				&::-webkit-progress-value {
 					display: none;
 				}
+
 				&::-moz-progress-bar {
 					background: none;
 				}
@@ -112,10 +120,12 @@
 		background-position: (-35%) 0;
 		background-size: 35% 100%;
 	}
+
 	60% {
 		background-position: 101% 0;
 		background-size: 65% 100%;
 	}
+
 	100% {
 		background-position: 101% 0;
 		background-size: 1% 100%;

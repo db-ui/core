@@ -2,18 +2,17 @@
 @import "cards.variables";
 
 .cmp-card {
-	box-shadow: $box-shadow-01, $box-shadow-02;
+	background-color: #fff;
 
 	border-radius: 8px;
-
-	background-color: #fff;
+	box-shadow: $box-shadow-01, $box-shadow-02;
 
 	& > a {
 		text-decoration: none;
 	}
 
 	figure {
-		margin: $db-spacing-m $db-spacing-m $db-spacing-m $db-spacing-s;
+		margin: $db-spacing-2 $db-spacing-2 $db-spacing-2 $db-spacing-1;
 	}
 
 	// Banner variant
@@ -21,7 +20,10 @@
 		figure {
 			display: flex;
 		}
+
 		figcaption {
+			margin-left: 1rem;
+
 			h1,
 			h2,
 			h3,
@@ -35,12 +37,14 @@
 					margin: 0.125rem 0;
 				}
 			}
+
 			p {
 				font-size: to-rem($pxValue: 14);
 
-				max-width: to-rem($pxValue: 290); // TODO: This would need some rework
+				max-width: to-rem(
+					$pxValue: 290
+				); // TODO: This would need some rework
 			}
-			margin-left: 1rem;
 		}
 	}
 
