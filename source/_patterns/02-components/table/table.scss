@@ -43,8 +43,11 @@
 		vertical-align: inherit;
 
 		&:hover {
-			overflow: auto;
 			resize: horizontal;
+
+			&:not(:has(.cmp-overflow-menu)) {
+				overflow: auto;
+			}
 		}
 	}
 
