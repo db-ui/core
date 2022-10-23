@@ -43,8 +43,11 @@
 		vertical-align: inherit;
 
 		&:hover {
-			overflow: auto;
 			resize: horizontal;
+
+			&:not(:has(.cmp-overflow-menu)) {
+				overflow: auto;
+			}
 		}
 	}
 
@@ -65,9 +68,11 @@
 		&%align-left {
 			text-align: left;
 		}
+
 		&%align-center {
 			text-align: center;
 		}
+
 		&%align-right {
 			text-align: right;
 		}
@@ -75,9 +80,11 @@
 		&[data-align="left"] {
 			@extend %align-left;
 		}
+
 		&[data-align="center"] {
 			@extend %align-center;
 		}
+
 		&[data-align="right"] {
 			@extend %align-right;
 		}
@@ -85,9 +92,11 @@
 		&%vertical-align-top {
 			vertical-align: top;
 		}
+
 		&%vertical-align-middle {
 			vertical-align: middle;
 		}
+
 		&%vertical-align-bottom {
 			vertical-align: bottom;
 		}
@@ -95,9 +104,11 @@
 		&[data-vertical-align="top"] {
 			@extend %vertical-align-top;
 		}
+
 		&[data-vertical-align="middle"] {
 			@extend %vertical-align-middle;
 		}
+
 		&[data-vertical-align="bottom"] {
 			@extend %vertical-align-bottom;
 		}
@@ -115,6 +126,7 @@
 			}
 		}
 	}
+
 	&[data-border="around"] {
 		tbody {
 			th,
@@ -142,6 +154,7 @@
 			padding: $table-densitySmall--padding;
 		}
 	}
+
 	&[data-density="large"] {
 		th,
 		td {
@@ -153,10 +166,9 @@
 	&[data-sticky="header"] {
 		thead,
 		tbody th {
+			background-color: #fff;
 			position: sticky;
 			top: -1px;
-
-			background-color: #fff;
 		}
 	}
 }

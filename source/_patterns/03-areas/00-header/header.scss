@@ -3,6 +3,7 @@
 @import "../../../css/helpers/functions";
 
 .rea-header {
+	@include clearfix($partial: $partial);
 	background-color: $header---backgroundColor;
 	box-shadow: $header---boxShadow;
 	display: flex;
@@ -18,9 +19,7 @@
 		display: inline-block;
 	}
 	@media screen and (max-width: 1023px) {
-		min-height: to-rem($pxValue: 64);
 		border-bottom: $header---borderBottom;
+		min-height: to-rem($pxValue: 64);
 	}
-
-	@include clearfix($partial: $partial);
 }

@@ -61,7 +61,7 @@ Further argumentations:
 
 ### "Hand" cursor / pointer
 
-We don't use the "hand" cursor / pointer for our buttons, as this is reserved for links even only; for more information have a look at articles like <https://medium.com/simple-human/buttons-shouldnt-have-a-hand-cursor-b11e99ca374b> and <https://hiddedevries.nl/en/blog/2016-08-06-some-pointers-on-default-cursors> or people who though this through like <https://ux.stackexchange.com/questions/105024/why-dont-button-html-elements-have-a-css-cursor-pointer-by-default#105027> or <https://github.com/necolas/normalize.css/issues/371#issuecomment-60072171> and the UI guidelines from Apple, Microsoft, Google, etc.
+We don't use the "hand" cursor / pointer for our buttons, as this is reserved for links even only; for more information have a look at articles like <https://medium.com/simple-human/buttons-shouldnt-have-a-hand-cursor-b11e99ca374b> and <https://hiddedevries.nl/en/blog/2016-08-06-some-pointers-on-default-cursors> or people who thought this through like <https://ux.stackexchange.com/questions/105024/why-dont-button-html-elements-have-a-css-cursor-pointer-by-default#105027> or <https://github.com/necolas/normalize.css/issues/371#issuecomment-60072171> and the UI guidelines from Apple, Microsoft, Google, etc.
 
 [Microsoft’s design guides](https://docs.microsoft.com/de-de/windows/win32/uxguide/inter-mouse) talk about weak affordance:
 

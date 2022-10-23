@@ -1,4 +1,4 @@
-<details class="{{ patternName }}{{ styleModifier }}"{{#if linkEntries }} role="navigation"{{/if }}{{#if oppositePosition}} data-horizontal-position="opposite"{{/if }}>
+<details class="{{#if patternName }}{{ patternName }}{{else}}cmp-overflow-menu{{/if }}{{ styleModifier }}"{{#if linkEntries }} role="navigation"{{/if }}{{#if oppositePosition}} data-horizontal-position="opposite"{{/if }}>
 	<summary>{{ summary }}</summary>
 	{{#if linkEntries }}<ul role="group">{{else}}<menu type="toolbar">{{/if }}
 		{{#if linkEntries }}

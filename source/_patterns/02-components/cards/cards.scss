@@ -8,10 +8,10 @@
 
 	@supports (display: grid) {
 		display: grid;
+		grid-gap: to-rem($pxValue: 24);
 		grid-template-columns: repeat(
 			auto-fill,
 			minmax(to-rem($pxValue: 340), 1fr)
 		);
-		grid-gap: to-rem($pxValue: 24);
 	}
 }

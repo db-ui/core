@@ -3,22 +3,22 @@
 		{
 			"variant": "semitransparent",
 			"id": "select01",
-			"label": "Select label"
+			"label": "Devices"
 		},
 		{
 			"variant": "white",
 			"id": "select02",
-			"label": "Select label"
+			"label": "Devices"
 		},
 		{
 			"variant": "solid",
 			"id": "select03",
-			"label": "Select label"
+			"label": "Devices"
 		},
 		{
 			"variant": "outline",
 			"id": "select04",
-			"label": "Select label"
+			"label": "Devices"
 		}
 	]
 }

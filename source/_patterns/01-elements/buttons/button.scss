@@ -3,36 +3,38 @@
 @import "button.variables";
 
 .elm-button {
+	// Including a loading indicator
+	--loadingIndicator---color: currentColor;
+	align-items: center; // Centering the content vertically and horizontally
+
+	// Centering the content vertically and horizontally
+	align-items: center;
 	border: 1px solid transparent;
 	border-radius: 4px;
-	padding: to-rem($pxValue: 7) to-rem($pxValue: 16);
+	display: inline-flex;
 
 	font-weight: 700;
+	justify-content: center;
+	padding: to-rem($pxValue: 7) to-rem($pxValue: 16);
 
 	text-align: center;
-
-	&[data-icon],
-	&[data-icon-before] {
-		padding-left: to-rem($pxValue: 14);
-	}
-	&[data-icon-after] {
-		padding-right: to-rem($pxValue: 14);
-	}
-	font-size: to-rem($pxValue: 16);
-	min-height: $button---minHeight;
-	// Square icon only buttons
-	&.is-icon-text-replace {
-		width: $button---minHeight;
-	}
 
 	// Changing background-color on hover should be animated by a transition
 	transition: background-color
 		var(--db-transition-color, #{$db-transition-color});
 
-	// Centering the content vertically and horizontally
-	align-items: center;
-	display: inline-flex;
-	justify-content: center;
+	&[data-icon],
+	&[data-icon-before] {
+		padding-left: to-rem($pxValue: 14);
+	}
+
+	&[data-icon-after] {
+		padding-right: to-rem($pxValue: 14);
+	}
+	// Square icon only buttons
+	&.is-icon-text-replace {
+		width: $button---minHeight;
+	}
 
 	/*&:focus {
 		border-color: #fff;
@@ -55,6 +57,7 @@
 				background-color: $button-primary-hover-backgroundColor;
 			}
 		}
+
 		&:active {
 			background-color: $button-primary-active-backgroundColor; // TODO: replace by correct color variable
 		}
@@ -70,6 +73,7 @@
 				background-color: $button-secondaryInverted-hover-backgroundColor;
 			}
 		}
+
 		&:active {
 			background-color: $button-secondaryInverted-active-backgroundColor;
 		}
@@ -86,36 +90,43 @@
 				background-color: $button-secondary-hover-backgroundColor;
 			}
 		}
+
 		&:active {
 			background-color: $button-secondary-active-backgroundColor;
 		}
 	}
 
 	&%variant-tertiary {
+		background-color: $button-tertiary--backgroundColor;
 		// TODO: replace by the correct variable afterwards
 		color: #0e1013;
-		background-color: $button-tertiary--backgroundColor;
+
 		&:not(:disabled) {
 			&:hover {
 				// TODO: This could probably get simplified later on e.g. via CSS variables
 				background-color: $button-tertiary-hover-backgroundColor;
 			}
 		}
+
 		&:active {
 			background-color: $button-tertiary-active-backgroundColor;
 		}
 	}
 
 	&%variant-ghost {
-		color: $db-color-cool-gray-700;
-		border: 2px solid transparent;
 		background-color: transparent; // shame.css
+		border: 2px solid transparent;
+		border: 2px solid transparent;
+		color: $db-color-cool-gray-700;
+		color: $db-color-cool-gray-700;
+
 		&:not(:disabled) {
 			&:hover {
 				// TODO: This could probably get simplified later on e.g. via CSS variables
 				background-color: $button-ghost-hover-backgroundColor;
 			}
 		}
+
 		&:active {
 			background-color: $button-ghost-active-backgroundColor;
 		}
@@ -134,18 +145,20 @@
 		&:not(.is-icon-text-replace) {
 			font-size: to-rem($pxValue: 12);
 		}
+
 		&[data-icon],
 		&[data-icon-before] {
 			@include iconMeta($icon-size);
 			// TODO: remove this dirty hack after we've got the correct 16px icons
-			&:before {
+			&::before {
 				font-size: to-rem($pxValue: 16);
 			}
 		}
+
 		&[data-icon-after] {
 			@include iconMeta($size: $icon-size, $position: "after");
 			// TODO: remove this dirty hack after we've got the correct 16px icons
-			&:after {
+			&::after {
 				font-size: to-rem($pxValue: 16);
 			}
 		}
@@ -154,6 +167,7 @@
 			width: to-rem($pxValue: $height);
 		}
 	}
+
 	&%size-XSmall {
 		$height: 24;
 		// $icon-size: 16;
@@ -166,18 +180,20 @@
 		&:not(.is-icon-text-replace) {
 			font-size: to-rem($pxValue: 12);
 		}
+
 		&[data-icon],
 		&[data-icon-before] {
 			@include iconMeta($icon-size);
 			// TODO: remove this dirty hack after we've got the correct 16px icons
-			&:before {
+			&::before {
 				font-size: to-rem($pxValue: 16);
 			}
 		}
+
 		&[data-icon-after] {
 			@include iconMeta($size: $icon-size, $position: "after");
 			// TODO: remove this dirty hack after we've got the correct 16px icons
-			&:after {
+			&::after {
 				font-size: to-rem($pxValue: 16);
 			}
 		}
@@ -186,6 +202,7 @@
 			width: to-rem($pxValue: $height);
 		}
 	}
+
 	&%size-Small {
 		$height: 32;
 		// $icon-size: 16;
@@ -198,18 +215,20 @@
 		&:not(.is-icon-text-replace) {
 			font-size: to-rem($pxValue: 14);
 		}
+
 		&[data-icon],
 		&[data-icon-before] {
 			@include iconMeta($icon-size);
 			// TODO: remove this dirty hack after we've got the correct 16px icons
-			&:before {
+			&::before {
 				font-size: to-rem($pxValue: 16);
 			}
 		}
+
 		&[data-icon-after] {
 			@include iconMeta($size: $icon-size, $position: "after");
 			// TODO: remove this dirty hack after we've got the correct 16px icons
-			&:after {
+			&::after {
 				font-size: to-rem($pxValue: 16);
 			}
 		}
@@ -218,6 +237,7 @@
 			width: to-rem($pxValue: $height);
 		}
 	}
+
 	&%size-Large {
 		$height: 48;
 
@@ -228,6 +248,7 @@
 			width: to-rem($pxValue: $height);
 		}
 	}
+
 	&%size-XLarge {
 		$height: 64;
 
@@ -242,15 +263,19 @@
 	&[data-size="xsmall"] {
 		@extend %size-XSmall;
 	}
+
 	&[data-size="xxsmall"] {
 		@extend %size-XXSmall;
 	}
+
 	&[data-size="small"] {
 		@extend %size-Small;
 	}
+
 	&[data-size="large"] {
 		@extend %size-Large;
 	}
+
 	&[data-size="xlarge"] {
 		@extend %size-XLarge;
 	}
@@ -268,15 +293,19 @@
 	&[data-variant="primary"] {
 		@extend %variant-primary;
 	}
+
 	&[data-variant="secondary-inverted"] {
 		@extend %variant-secondary-inverted;
 	}
+
 	&[data-variant="secondary"] {
 		@extend %variant-secondary;
 	}
+
 	&[data-variant="tertiary"] {
 		@extend %variant-tertiary;
 	}
+
 	&[data-variant="ghost"] {
 		@extend %variant-ghost;
 	}
@@ -294,8 +323,6 @@
 		}
 	}
 
-	// Including a loading indicator
-	--loadingIndicator---color: currentColor;
 	&[data-state="loading"] {
 		font-size: 0;
 	}
