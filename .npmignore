@@ -10,4 +10,5 @@
 *.demonstration.css.map
 # TODO: For whatever reason this following explicit ignore listing needs to be done
 public/**
+out/**
 dist/images/db-ui-core_logo.png

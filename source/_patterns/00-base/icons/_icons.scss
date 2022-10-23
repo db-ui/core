@@ -9,14 +9,15 @@
 [data-icon],
 [data-icon-before] {
 	&::before {
-		margin-inline-end: var(--icon-margin-after, #{$icon-content-space});
 		@extend %icon;
+		margin-inline-end: var(--icon-margin-after, #{$icon-content-space});
 	}
 }
+
 [data-icon-after] {
 	&::after {
-		margin-inline-start: var(--icon-margin-before, #{$icon-content-space});
 		@extend %icon;
+		margin-inline-start: var(--icon-margin-before, #{$icon-content-space});
 	}
 }
 
@@ -26,6 +27,7 @@
 	&[data-icon-before] {
 		@include is-icon-text-replace();
 	}
+
 	&[data-icon-after] {
 		@include is-icon-text-replace("after");
 	}

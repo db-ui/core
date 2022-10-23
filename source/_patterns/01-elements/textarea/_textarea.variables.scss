@@ -1,6 +1,6 @@
 @import "../../../css/helpers/functions";
 
-$textarea---color: $db-color-cool-gray-600 !default;
+$textarea---color: $db-colors-secondary-enabled !default;
 
 // * Form styling 01
 $textarea---backgroundColor: transparent !default;
@@ -8,11 +8,3 @@ $textarea---borderTop: 1px solid var(--textarea---borderColor) !default;
 $textarea---borderRight: 1px solid var(--textarea---borderColor) !default;
 $textarea---borderBottom: 1px solid var(--textarea---borderColor) !default;
 $textarea---borderLeft: 1px solid var(--textarea---borderColor) !default;
-
-// * Form styling 02
-// $textarea---backgroundColor: $db-color-warm-gray-100 !default;
-// $textarea---borderColor: transparent !default;
-
-// * Form styling 03
-// $textarea---backgroundColor: #fdfdfd !default; // TODO: This would need to get replaced by the correct (semantic) color
-// $textarea---borderColor: transparent !default;

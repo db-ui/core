@@ -3,21 +3,25 @@
 
 .pl-js-pattern-example {
 	[id^="elements-progress-"][id*="-dark-background"] & {
-		background-color: $Background;
-		color: $LightBG;
+		background-color: $db-colors-secondary-enabled;
+		color: $db-colors-secondary-on-enabled;
 		padding: to-rem($pxValue: 16);
 	}
 }
 
 .elm-progress {
-	[id^="elements-progress-"][id*="-dark-background"] .pl-js-pattern-example & {
+	[id^="elements-progress-"][id*="-dark-background"]
+		.pl-js-pattern-example
+		& {
 		progress {
 			&::-webkit-progress-value {
 				--progress-value--backgroundColor: #{$progress-onDarkBackground-value-backgroundColor};
 			}
+
 			&::-moz-progress-bar {
 				--progress-value--backgroundColor: #{$progress-onDarkBackground-value-backgroundColor};
 			}
+
 			&::-ms-fill {
 				--progress-value--backgroundColor: #{$progress-onDarkBackground-value-backgroundColor};
 			}

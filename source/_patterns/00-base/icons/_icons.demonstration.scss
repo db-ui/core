@@ -12,30 +12,26 @@
 
 	&.icons-illustration {
 		ul {
-			color: $db-color-cool-gray-700;
+			color: $db-colors-secondary-enabled;
 
 			li {
+				border-radius: 4px;
+
+				color: $db-colors-secondary-enabled;
 				display: inline-block;
 
 				margin: to-rem($pxValue: 4);
 				padding: to-rem($pxValue: 32);
-				border-radius: 4px;
 
-				color: $db-color-cool-gray-700;
-
-				&.DO-NOT-COPY-THIS-CLASS-example-bg-variants-turquoise {
-					background-color: $db-color-turquoise-400;
-				}
 				&.DO-NOT-COPY-THIS-CLASS-example-bg-variants-red {
-					background-color: $db-color-red-500;
-
 					--db-icon-color: #fff;
 					--db-icon-pulse-color: #fff;
+					background-color: $db-colors-primary-enabled;
 				}
-				&.DO-NOT-COPY-THIS-CLASS-example-bg-variants-cyan {
-					background-color: $db-color-cyan-200;
 
+				&.DO-NOT-COPY-THIS-CLASS-example-bg-variants-cyan {
 					--db-icon-pulse-color: currentColor;
+					background-color: $db-colors-information-enabled;
 				}
 			}
 		}

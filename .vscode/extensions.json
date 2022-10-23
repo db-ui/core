@@ -1,6 +1,7 @@
 {
 	"recommendations": [
 		"editorconfig.editorconfig",
-		"henrynguyen5-vsc.vsc-nvm"
+		"henrynguyen5-vsc.vsc-nvm",
+		"streetsidesoftware.code-spell-checker"
 	]
 }

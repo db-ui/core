@@ -20,8 +20,6 @@ jobs:
   publish:
     name: Publish latest package versions to GitHub Packages
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
     steps:
       - name: ⬇ Checkout repo
         uses: actions/checkout@v3
@@ -29,11 +27,17 @@ jobs:
       - name: 🔄 Init Cache
         uses: ./.github/actions/npm-cache
 
-      - name: ⬇️Download package build
-        uses: actions/download-artifact@v3
+      - name: ⬇ Download build
+        uses: ./.github/actions/download-tar-artifact
         with:
-          name: package
-          path: ./
+          name: assets
+          path: dist
+
+      - name: ⬇ Download sources
+        uses: ./.github/actions/download-tar-artifact
+        with:
+          name: css-sources
+          path: sources
 
       - name: 📰 Publish to NPM Registries
         run: |
@@ -43,10 +47,11 @@ jobs:
           RELEASE: ${{ inputs.release }}
           PRE_RELEASE: ${{ inputs.preRelease }}
           VALID_SEMVER_VERSION: ${{ inputs.version }}
+          GITHUB_COMMITISH: ${{ github.event.release.target_commitish }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GPR_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: ⬆ Upload Package Artifact db-uicore
+      - name: ⬆ Upload Package Artifact db-ui-core
         uses: ./.github/actions/upload-tar-artifact
         with:
           name: package-core

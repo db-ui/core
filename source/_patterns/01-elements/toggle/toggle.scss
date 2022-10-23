@@ -7,20 +7,20 @@
 .elm-toggle {
 	appearance: none;
 
-	width: to-rem($pxValue: 48);
-	height: to-rem($pxValue: 24);
+	background-color: $db-colors-secondary-enabled;
+	border: none;
+
+	border-radius: to-rem($pxValue: 12);
 
 	display: inline-block;
-	// margin-right: $db-spacing-xs;
+	height: to-rem($pxValue: 24);
+	// margin-right: $db-spacing-0-5;
 
 	position: relative;
 
-	border-radius: to-rem($pxValue: 12);
-	border: none;
-
-	background-color: $db-color-cool-gray-500;
-
 	transition: background-color 0.3s ease;
+
+	width: to-rem($pxValue: 48);
 	// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
 	@media (prefers-reduced-motion: reduce) {
 		transition-duration: 0.01s !important;
@@ -32,25 +32,24 @@
 	}
 
 	&::before {
-		content: ""; // we could even also add toggled textual content for the switch in the future
-
-		display: block;
-
-		position: absolute;
-		left: #{to-rem($pxValue: 2)};
-		top: #{to-rem($pxValue: 2)};
-
-		width: to-rem($pxValue: 20);
-		height: to-rem($pxValue: 20);
-
-		background-color: $db-color-white;
+		background-color: $db-colors-neutral-bg-0-enabled;
 
 		border-radius: to-rem($pxValue: 10);
 
 		box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.05),
 			0 1px 5px 0 rgba(0, 0, 0, 0.15);
+		content: ""; // we could even also add toggled textual content for the switch in the future
+
+		display: block;
+		height: to-rem($pxValue: 20);
+		left: #{to-rem($pxValue: 2)};
+
+		position: absolute;
+		top: #{to-rem($pxValue: 2)};
 
 		transition: border-color, left 0.3s cubic-bezier(0.3, 1.5, 0.7, 1);
+
+		width: to-rem($pxValue: 20);
 		// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
 		@media (prefers-reduced-motion: reduce) {
 			transition-duration: 0.01s !important;
@@ -65,8 +64,8 @@
 
 	&:active {
 		&::before {
-			width: to-rem($pxValue: 24);
 			transition: width 0.3s cubic-bezier(0.3, 1.5, 0.7, 1);
+			width: to-rem($pxValue: 24);
 			// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
 			@media (prefers-reduced-motion: reduce) {
 				transition-duration: 0.01s !important;
