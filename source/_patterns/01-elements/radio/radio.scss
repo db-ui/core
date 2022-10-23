@@ -6,14 +6,22 @@
 	appearance: none;
 
 	background-color: rgba(255, 255, 255, 0.1);
+
+	background-color: rgba(255, 255, 255, 0.1);
 	border: to-rem($pxValue: 1) solid $radio---border;
+	border: 1px solid $radio---border;
+	border-radius: to-em($pxValue: 16);
 	border-radius: to-em($pxValue: 16);
 
 	// * the basic, unchecked style
 	display: inline-block;
 
 	font-size: to-rem($pxValue: 16);
+
+	font-size: to-rem($pxValue: 16);
 	height: to-em($pxValue: 20);
+
+	transition: border-width 0.5s ease;
 
 	transition: border-width 0.5s ease;
 
@@ -22,18 +30,6 @@
 	&[type="radio"] {
 		vertical-align: middle;
 	}
-	border-radius: to-em($pxValue: 16);
-	border: 1px solid $radio---border;
-
-	background-color: rgba(255, 255, 255, 0.1);
-
-	transition: border-width 0.5s ease;
-	// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
-	@media (prefers-reduced-motion: reduce) {
-		transition-duration: 0.01s !important;
-	}
-
-	font-size: to-rem($pxValue: 16);
 
 	&:hover {
 		background-color: rgba(0, 0, 0, 0.12);
@@ -62,9 +58,8 @@
 	// }
 
 	& + label {
-		margin-left: $db-spacing-0-5;
-
 		font-size: to-rem($pxValue: 12);
+		margin-left: $db-spacing-0-5;
 	}
 
 	&:disabled {
@@ -84,28 +79,32 @@
 
 	// Sizes
 	&%size-Small {
-		width: to-em($pxValue: 16);
-		height: to-em($pxValue: 16);
-
 		border-width: to-em($pxValue: 4);
+		height: to-em($pxValue: 16);
+		width: to-em($pxValue: 16);
 	}
+
 	&%size-Large {
-		width: to-em($pxValue: 24);
+		border-width: to-em($pxValue: 7);
 		height: to-em($pxValue: 24);
+
+		vertical-align: bottom;
+		width: to-em($pxValue: 24);
 
 		& + label {
 			font-size: to-rem($pxValue: 16);
 		}
-
-		border-width: to-em($pxValue: 7);
-
-		vertical-align: bottom;
 	}
 
 	&[data-size="small"] {
 		@extend %size-Small;
 	}
+
 	&[data-size="large"] {
 		@extend %size-Large;
+	}
+	// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
+	@media (prefers-reduced-motion: reduce) {
+		transition-duration: 0.01s !important;
 	}
 }
