@@ -174,7 +174,7 @@ If you want to use the compiled CSS directly, you can refence the css files in y
 
 ## Example 2: how to use DB UI Core in Create React app
 
-Create React App offers only limited access to the configuration of the production build. While it uses Webpack under the hood, the WebPack configuration is not exposed to the user. 
+Create React App offers only limited access to the configuration of the production build. While it uses webpack under the hood, the webpack configuration is not exposed to the user. 
 For manage your CRA to work with SASS include Path you have to update or create your .env file:
 
 ----
