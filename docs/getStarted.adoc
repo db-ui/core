@@ -58,6 +58,8 @@ This should add a new entry to your `package.json` file:
 @import "@db-ui/core/sources/css/enterprise/db-ui-core";
 ----
 
+### SCSS: `node_modules include path / load path
+
 Please keep in mind, that you would need to set your `include path` also known as `load path` depending on your setup for the sass compiler to find the correct `node_modules` folder, e.g. like the following (this is similar to how other frameworks and libraries like link:https://github.com/twbs/bootstrap-npm-starter/blob/main/package.json#L18[Bootstrap] are handling this):
 
 #### link:https://npmjs.com/sass[`sass` compiler]
