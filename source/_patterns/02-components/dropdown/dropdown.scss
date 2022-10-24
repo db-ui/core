@@ -1,6 +1,7 @@
 @import "../../../css/partials.meta";
 @import "../overflow-menu/overflow-menu";
 @import "dropdown.variables";
+
 .cmp-dropdown {
 	@extend .cmp-overflow-menu;
 
@@ -8,6 +9,7 @@
 	&.is-account {
 		summary {
 			@include icon(glyph(account), 24, "outline", $partial: $partial);
+
 			&:hover {
 				&::before {
 					color: $db-color-red-500;
@@ -20,18 +22,19 @@
 			}
 		}
 	}
+
 	menu,
 	ul {
+		background-color: $overflowMenu---backgroundColor;
 		margin-block-start: initial;
 		right: 0;
 		transform: translateY(0.875rem);
-
-		background-color: $overflowMenu---backgroundColor;
 
 		&::before {
 			content: none;
 		}
 	}
+
 	&[data-horizontal-position="opposite"] {
 		menu,
 		ul {
