@@ -22,5 +22,6 @@ jobs:
     uses: ./.github/workflows/99-dependency-review.yml
 
   labeler:
-    if: github.repository == 'db-ui/core'
+    # TODO: Integrate a working condition for forks to work correctly
+    # if: github.repository == 'db-ui/core'
     uses: ./.github/workflows/99-labeler.yml
