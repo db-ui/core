@@ -12,8 +12,7 @@ jobs:
     uses: ./.github/workflows/00-init.yml
 
   scan-secrets:
-    # TODO: Integrate a working condition for forks to work correctly
-    # if: github.repository == 'db-ui/core'
+    if: ${{ github.event.pull_request.head.repo.owner.login == 'db-ui' }}
     uses: ./.github/workflows/00-scan-secrets.yml
 
   lint:
@@ -37,7 +36,5 @@ jobs:
 
   deploy:
     uses: ./.github/workflows/02-deploy-gh-pages.yml
-    # TODO: Integrate a working condition for forks to work correctly
-    # && github.repository == 'db-ui/core'
-    if: ${{ github.actor != 'dependabot[bot]' }}
+    if: ${{ github.actor != 'dependabot[bot]' && github.event.pull_request.head.repo.owner.login == 'db-ui' }}
     needs: [lint, test, build]
