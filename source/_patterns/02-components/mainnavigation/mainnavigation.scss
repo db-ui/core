@@ -36,7 +36,7 @@
 		@include icon(glyph(menu), 24, "outline", $partial: $partial);
 		@include icon(glyph(close), 24, "outline", "after", $partial: $partial);
 
-		background-color: #fdfdfd; // TODO: This would need to get replaced by the correct (semantic) color
+		background-color: $header---backgroundColor; // TODO: This would need to get replaced by the correct (semantic) color
 
 		border-bottom: 1px solid $db-color-warm-gray-100;
 
@@ -79,7 +79,7 @@
 	}
 
 	ul {
-		background-color: #fff;
+		background-color: $header---backgroundColor;
 	}
 
 	// Multiple level navigation
