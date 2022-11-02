@@ -12,3 +12,7 @@ select,
 textarea {
 	@extend %general-fonts;
 }
+
+body {
+	@extend %db-ui-normal;
+}
