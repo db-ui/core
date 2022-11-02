@@ -47,6 +47,7 @@
 
 		transform: translateY(-#{to-rem($pxValue: 9)});
 
+		// TODO use base typography placeholder for headlines
 		.elm-headline {
 			font-size: to-rem($pxValue: 18);
 			font-weight: 700;

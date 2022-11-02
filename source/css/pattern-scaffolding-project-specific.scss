@@ -1,7 +1,6 @@
 @import "helpers/functions";
 @import "db-ui-core.variables";
 @import "@db-ui/base/build/scss/db-ui-base";
-@import "../_patterns/01-elements/headline/headline";
 $fonts-path: "../fonts/";
 @import "../_patterns/00-base/type/fonts";
 
@@ -83,11 +82,6 @@ pl-iframe {
 	border-left: 0;
 	border-right: 0;
 	border-top: 0;
-}
-
-.pl-c-category__title,
-.pl-c-pattern__title {
-	//@extend .elm-headline;
 }
 
 // Related to https://github.com/db-ui/base/pull/6
