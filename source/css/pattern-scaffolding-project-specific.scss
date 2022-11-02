@@ -1,6 +1,6 @@
 @import "helpers/functions";
 @import "db-ui-core.variables";
-@import "@db-ui/base/build/scss/variables";
+@import "@db-ui/base/build/scss/db-ui-base";
 @import "../_patterns/01-elements/headline/headline";
 $fonts-path: "../fonts/";
 @import "../_patterns/00-base/type/fonts";
@@ -34,7 +34,7 @@ pl-iframe {
 
 		// Splitted Intro Page
 		&:nth-of-type(2) {
-			background-color: $db-colors-secondary-enabled;
+			background-color: $db-colors-neutral-bg-2-enabled;
 			padding-bottom: 2.5rem;
 		}
 	}
@@ -87,7 +87,7 @@ pl-iframe {
 
 .pl-c-category__title,
 .pl-c-pattern__title {
-	@extend .elm-headline;
+	//@extend .elm-headline;
 }
 
 // Related to https://github.com/db-ui/base/pull/6
