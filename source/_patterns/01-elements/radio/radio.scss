@@ -30,6 +30,7 @@
 		border-width: to-em($pxValue: 6);
 	}
 	// * the invalid style using the :invalid pseudo class (and [aria-invalid="true"] equivalent, see #136 and #141)
+	// TODO: We need to set the correct styling / color here after alignment
 	&:invalid,
 	&[aria-invalid="true"] {
 		border-color: #c13e34;
