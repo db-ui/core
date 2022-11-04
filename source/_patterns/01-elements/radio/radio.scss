@@ -3,10 +3,10 @@
 @import "radio.variables";
 
 .elm-radio {
+	@extend %db-bg-neutral-transparent-full-ia;
+
 	appearance: none;
 
-	// TODO: How to proceed with --neutral-background-transparent-full-enabled ?
-	// background-color: rgba(255, 255, 255, 0.1);
 	aspect-ratio: 1;
 
 	border: 1px solid $radio---border;
@@ -22,14 +22,6 @@
 
 	&[type="radio"] {
 		vertical-align: middle;
-	}
-
-	&:hover {
-		background-color: rgba(0, 0, 0, 0.12);
-	}
-
-	&:active {
-		background-color: rgba(0, 0, 0, 0.24);
 	}
 
 	&:checked,
