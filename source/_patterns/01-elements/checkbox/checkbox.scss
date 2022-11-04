@@ -6,7 +6,7 @@
 .elm-checkbox {
 	// $checkbox-size: 16;
 	// TODO: Replace this ugly hack as soon as we've got this as an icon font as well
-	$checkbox-size: 20;
+	$checkbox-size: 24;
 
 	@include icon("\00A0", $checkbox-size, "outline", $partial: $partial);
 	align-content: center;
@@ -26,7 +26,7 @@
 
 	// TODO: Replace this ugly hack as soon as we've got this as an icon font as well
 	&::before {
-		font-size: 18px;
+		font-size: 20px;
 	}
 
 	&[type="checkbox"] {
@@ -97,27 +97,8 @@
 		}
 	}
 
-	&%size-Large {
-		$checkbox-size: 24;
-		@include iconMeta($checkbox-size);
-
-		height: to-rem($pxValue: $checkbox-size);
-
-		&::before {
-			font-size: 24px;
-		}
-
-		& + label {
-			font-size: to-rem($pxValue: 16);
-		}
-	}
-
 	&[data-size="small"] {
 		@extend %size-Small;
-	}
-
-	&[data-size="large"] {
-		@extend %size-Large;
 	}
 
 	&:required {
