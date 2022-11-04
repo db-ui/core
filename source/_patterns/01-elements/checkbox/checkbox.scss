@@ -12,6 +12,9 @@
 	align-content: center;
 
 	appearance: none;
+
+	aspect-ratio: 1;
+
 	background-color: $checkbox---backgroundColor;
 	border: 1px solid $checkbox---borderColor;
 	border-radius: 3px;
@@ -20,7 +23,6 @@
 	display: inline-flex;
 	height: to-rem($pxValue: $checkbox-size);
 	justify-content: center;
-	width: to-rem($pxValue: $checkbox-size);
 
 	// TODO: Replace this ugly hack as soon as we've got this as an icon font as well
 	&::before {
@@ -87,7 +89,6 @@
 		@include iconMeta(20);
 
 		height: to-rem($pxValue: $checkbox-size);
-		width: to-rem($pxValue: $checkbox-size);
 		// TODO: Replace this ugly hack as soon as we've got this as an icon font as well
 		&::before {
 			font-size: 14px;
@@ -99,7 +100,6 @@
 		@include iconMeta($checkbox-size);
 
 		height: to-rem($pxValue: $checkbox-size);
-		width: to-rem($pxValue: $checkbox-size);
 
 		&::before {
 			font-size: 24px;
