@@ -64,6 +64,6 @@ nav,
 	list-style-type: "\2022"+ "   ";
 
 	li::marker {
-		color: $db-color-red-500;
+		color: $db-colors-primary-enabled;
 	}
 }

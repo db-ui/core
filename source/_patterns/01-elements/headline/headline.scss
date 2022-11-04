@@ -12,7 +12,8 @@ h1,
 h2,
 h3 {
 	&.elm-headline {
-		font-family: $db-font-family-headline;
+		// TODO: We need to check whether to define headline styles on the HTML tag or DB UI component level
+		// font-family: $db-font-family-headline;
 		font-weight: 900;
 	}
 }
