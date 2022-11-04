@@ -20,8 +20,6 @@
 
 	transition: border-width 0.5s ease;
 
-	width: to-em($pxValue: 20);
-
 	&[type="radio"] {
 		vertical-align: middle;
 	}
@@ -76,7 +74,6 @@
 	&%size-Small {
 		border-width: to-em($pxValue: 4);
 		height: to-em($pxValue: 16);
-		width: to-em($pxValue: 16);
 	}
 
 	&%size-Large {
@@ -84,7 +81,6 @@
 		height: to-em($pxValue: 24);
 
 		vertical-align: bottom;
-		width: to-em($pxValue: 24);
 
 		& + label {
 			font-size: to-rem($pxValue: 16);
