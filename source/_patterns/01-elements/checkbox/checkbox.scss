@@ -63,6 +63,8 @@
 		}
 	}
 
+	// TODO: We need to set the correct styling / color for invalid
+
 	&:indeterminate {
 		&::before {
 			content: glyph(minus);
