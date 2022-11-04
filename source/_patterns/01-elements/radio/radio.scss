@@ -16,7 +16,7 @@
 	display: inline-block;
 
 	font-size: to-rem($pxValue: 16);
-	height: to-em($pxValue: 20);
+	height: to-em($pxValue: 24);
 
 	transition: border-width 0.5s ease;
 
@@ -66,27 +66,13 @@
 	// Sizes
 	&%size-Small {
 		border-width: to-em($pxValue: 4);
-		height: to-em($pxValue: 16);
-	}
-
-	&%size-Large {
-		border-width: to-em($pxValue: 7);
-		height: to-em($pxValue: 24);
-
-		vertical-align: bottom;
-
-		& + label {
-			font-size: to-rem($pxValue: 16);
-		}
+		height: to-em($pxValue: 20);
 	}
 
 	&[data-size="small"] {
 		@extend %size-Small;
 	}
 
-	&[data-size="large"] {
-		@extend %size-Large;
-	}
 	// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
 	@media (prefers-reduced-motion: reduce) {
 		transition-duration: 0.01s !important;

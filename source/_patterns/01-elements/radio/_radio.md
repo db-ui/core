@@ -9,7 +9,7 @@ state: inevaluation
 
 #### SCSS (recommended)
 
-Extend one of the size SCSS placeholders in case that you don't want the default (medium): `%size-Small` or `%size-Large`
+Extend the size SCSS placeholder in case that you don't want the default (medium): `%size-Small`
 
 #### HTML attribute
 
