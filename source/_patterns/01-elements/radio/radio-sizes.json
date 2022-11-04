@@ -7,10 +7,6 @@
 		{
 			"size": "medium",
 			"label": "Medium (default, data-size attribute is optional)"
-		},
-		{
-			"size": "large",
-			"label": "Large"
 		}
 	],
 	"id": "radio07",

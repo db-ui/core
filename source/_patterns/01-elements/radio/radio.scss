@@ -21,7 +21,7 @@
 	transition: border-width 0.5s ease;
 
 	&[type="radio"] {
-		vertical-align: middle;
+		vertical-align: top;
 	}
 
 	&:checked,
@@ -44,7 +44,6 @@
 	// }
 
 	& + label {
-		font-size: to-rem($pxValue: 12);
 		margin-left: $db-spacing-0-5;
 	}
 
@@ -67,6 +66,12 @@
 	&%size-Small {
 		border-width: to-em($pxValue: 4);
 		height: to-em($pxValue: 20);
+
+		vertical-align: sub;
+
+		& + label {
+			font-size: to-rem($pxValue: 14);
+		}
 	}
 
 	&[data-size="small"] {
