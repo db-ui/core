@@ -5,23 +5,17 @@
 .elm-radio {
 	appearance: none;
 
-	background-color: rgba(255, 255, 255, 0.1);
+	// TODO: How to proceed with --neutral-background-transparent-full-enabled ?
+	// background-color: rgba(255, 255, 255, 0.1);
 
-	background-color: rgba(255, 255, 255, 0.1);
-	border: to-rem($pxValue: 1) solid $radio---border;
 	border: 1px solid $radio---border;
-	border-radius: to-em($pxValue: 16);
 	border-radius: to-em($pxValue: 16);
 
 	// * the basic, unchecked style
 	display: inline-block;
 
 	font-size: to-rem($pxValue: 16);
-
-	font-size: to-rem($pxValue: 16);
 	height: to-em($pxValue: 20);
-
-	transition: border-width 0.5s ease;
 
 	transition: border-width 0.5s ease;
 
