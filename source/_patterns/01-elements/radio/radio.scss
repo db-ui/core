@@ -66,7 +66,7 @@
 	&:required {
 		& + label {
 			&::after {
-				content: " *";
+				content: "*";
 			}
 		}
 	}
