@@ -31,7 +31,8 @@
 		&:hover,
 		&:focus {
 			&::before {
-				background-color: $db-color-cool-gray-200;
+				// TODO: We need to replace this by its correct color variable
+				background-color: #d7dce1;
 			}
 		}
 

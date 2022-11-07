@@ -3,7 +3,7 @@
 .elm-chip {
 	& + label {
 		align-items: center;
-		border: solid 1px $db-color-cool-gray-400;
+		border: solid 1px $db-colors-secondary-enabled;
 		border-radius: $chip---radius;
 		display: inline-flex;
 
@@ -43,23 +43,24 @@
 
 			//*** Variants ***
 			&[data-variant="warning"] {
-				background-color: $db-color-warning;
+				background-color: $db-colors-warning-enabled;
 			}
 
 			&[data-variant="error"] {
-				background-color: $db-color-error;
+				background-color: $db-colors-critical-enabled;
 			}
 
 			&[data-variant="informative"] {
-				background-color: $db-color-informative;
+				background-color: $db-colors-information-enabled;
 			}
 
 			&[data-variant="success"] {
-				background-color: $db-color-success;
+				background-color: $db-colors-success-enabled;
 			}
 
 			// POIs
-			&[data-variant="poi-essen-trinken"] {
+			// TODO: enable this with color-extension
+			/*&[data-variant="poi-essen-trinken"] {
 				background-color: $db-color-food-drink;
 				color: $db-color-cool-gray-700;
 			}
@@ -99,7 +100,8 @@
 
 			&[data-variant="poi-wegeleitung"] {
 				background-color: $db-color-guidance;
-			}
+				background-color: $db-colors-success-enabled;
+			}*/
 		}
 	}
 

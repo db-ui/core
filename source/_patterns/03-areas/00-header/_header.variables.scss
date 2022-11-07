@@ -8,10 +8,8 @@ $header---backgroundColor: #fdfdfd !default; // TODO: This would need to get rep
 
 $header---borderBottom: #{to-rem(
 		$pxValue: 1
-	)} solid $db-color-warm-gray-400 !default;
+	)} solid $db-colors-secondary-enabled !default;
 
 $header---marginBottom: to-rem(
 	$pxValue: 16
 ) !default;
-
-$header---backgroundColor: #fdfdfd !default; // TODO: This would need to get replaced by the correct (semantic) color

@@ -51,7 +51,7 @@
 			background-color: $progress---backgroundColor;
 			background-image: linear-gradient(
 				to right,
-				$db-color-red 100%,
+				$db-colors-primary-enabled 100%,
 				$progress---backgroundColor 100%
 			);
 			background-position: top left;

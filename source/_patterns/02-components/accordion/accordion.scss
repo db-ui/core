@@ -3,7 +3,8 @@
 
 .cmp-accordion {
 	--db-accordion---paddingLeft: #{to-rem($pxValue: $accordion---paddingLeft)};
-	border-bottom: 1px solid $db-color-cool-gray-200;
+	// TODO: We need to replace this by its correct color variable
+	border-bottom: 1px solid #d7dce1;
 	padding-left: var(--db-accordion---paddingLeft);
 	padding-right: $accordion---paddingRight;
 
@@ -12,7 +13,7 @@
 		align-items: center;
 		display: flex;
 
-		padding-block: $db-spacing-sm;
+		padding-block: db-spacing-fixed-normal-xs;
 		// Negating the padding left for moving the element into that direction with the same measures
 		transform: translateX(calc(var(--db-accordion---paddingLeft) * -1));
 		width: calc(
@@ -94,7 +95,7 @@
 
 		summary {
 			font-size: to-rem($pxValue: 20);
-			padding-block: $db-spacing-m;
+			padding-block: $db-spacing-fixed-normal-m;
 
 			&::before {
 				--icon-font-size: #{to-rem($pxValue: 32)};

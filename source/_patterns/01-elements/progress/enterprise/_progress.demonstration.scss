@@ -3,8 +3,8 @@
 
 .pl-js-pattern-example {
 	[id^="elements-progress-"][id*="-dark-background"] & {
-		background-color: $Background;
-		color: $LightBG;
+		background-color: $db-colors-secondary-enabled;
+		color: $db-colors-secondary-on-enabled;
 		padding: to-rem($pxValue: 16);
 	}
 }

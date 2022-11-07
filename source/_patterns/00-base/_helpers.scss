@@ -20,14 +20,16 @@
 	$margin-top: $width * 0.2,
 	$margin-bottom: $width * 0.35
 ) {
-	background-color: $db-color-red-500;
-	border-bottom: 4px solid $db-color-red-500;
+	background-color: $db-colors-primary-enabled;
+	border-bottom: 4px solid $db-colors-primary-enabled;
 	border-radius: 5px;
-	border-top: 3px solid $db-color-red-500;
+	border-top: 3px solid $db-colors-primary-enabled;
 	content: "";
 	display: block;
 	height: 0;
+	height: 0;
 	margin-bottom: $margin-bottom;
 	margin-top: $margin-top;
+	width: $width;
 	width: $width;
 }

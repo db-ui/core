@@ -3,7 +3,7 @@ $icons-path: "../../icons/" !default;
 $images-path: "../../images/" !default;
 $fonts-path: "../../fonts/" !default;
 
-@import "@db-ui/base/build/scss/variables";
+@import "@db-ui/base/build/scss/db-ui-base";
 
 // General configurations
 $dbBaseFontSize: 16px;

@@ -4,10 +4,10 @@
 
 $breadcrumb-divider--icon: "chevron-right" !default;
 $breadcrumb-link-hover-backgroundColor: rgba(
-	$db-color-cool-gray-700,
+	$db-colors-secondary-enabled,
 	0.03
 ) !default;
 $breadcrumb-link-active-backgroundColor: rgba(
-	$db-color-cool-gray-700,
+	$db-colors-secondary-enabled,
 	0.06
 ) !default;

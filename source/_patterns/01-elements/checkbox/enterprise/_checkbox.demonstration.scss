@@ -5,8 +5,8 @@
 
 .pl-js-pattern-example {
 	[id^="elements-checkbox-on-dark-background"] & {
-		background-color: $Background;
-		color: $LightBG;
+		background-color: $db-colors-secondary-enabled;
+		color: $db-colors-secondary-on-enabled;
 		padding: to-rem($pxValue: 16);
 
 		.elm-checkbox {

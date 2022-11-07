@@ -7,33 +7,3 @@ $button---color: #fff !default;
 $button---minHeight: to-rem(
 	$pxValue: 40
 ) !default;
-
-// Background colors
-$button-primary--backgroundColor: $db-color-red-500 !default;
-$button-primary-hover-backgroundColor: #cf0013 !default;
-$button-primary-active-backgroundColor: #b30010 !default;
-
-$button-secondaryInverted--backgroundColor: transparent !default;
-$button-secondaryInverted-hover-backgroundColor: rgba(
-	255,
-	255,
-	255,
-	0.08
-) !default;
-$button-secondaryInverted-active-backgroundColor: rgba(
-	255,
-	255,
-	255,
-	0.16
-) !default;
-
-$button-tertiary--backgroundColor: rgba(0, 0, 0, 0.04) !default;
-$button-tertiary-hover-backgroundColor: rgba(0, 0, 0, 0.12) !default;
-$button-tertiary-active-backgroundColor: rgba(0, 0, 0, 0.24) !default;
-
-$button-secondary--backgroundColor: transparent !default;
-$button-secondary-hover-backgroundColor: rgba(0, 0, 0, 0.12) !default;
-$button-secondary-active-backgroundColor: rgba(0, 0, 0, 0.24) !default;
-
-$button-ghost-hover-backgroundColor: rgba(0, 0, 0, 0.08) !default;
-$button-ghost-active-backgroundColor: rgba(0, 0, 0, 0.16) !default;

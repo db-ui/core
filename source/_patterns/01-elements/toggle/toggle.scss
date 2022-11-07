@@ -7,14 +7,14 @@
 .elm-toggle {
 	appearance: none;
 
-	background-color: $db-color-cool-gray-500;
+	background-color: $db-colors-secondary-enabled;
 	border: none;
 
 	border-radius: to-rem($pxValue: 12);
 
 	display: inline-block;
 	height: to-rem($pxValue: 24);
-	// margin-right: $db-spacing-xs;
+	// margin-right: $db-spacing-0-5;
 
 	position: relative;
 
@@ -32,7 +32,7 @@
 	}
 
 	&::before {
-		background-color: $db-color-white;
+		background-color: $db-colors-neutral-bg-0-enabled;
 
 		border-radius: to-rem($pxValue: 10);
 
