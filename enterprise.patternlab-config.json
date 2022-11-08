@@ -145,10 +145,6 @@
 					"after": []
 				}
 			}
-		},
-		"plugin-node-wrappable": {
-			"enabled": true,
-			"initialized": false
 		}
 	}
 }
