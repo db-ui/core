@@ -1,28 +1,12 @@
 {
 	"sizes": [
 		{
-			"size": "xxsmall",
-			"label": "XXSmall"
-		},
-		{
-			"size": "xsmall",
-			"label": "XSmall"
-		},
-		{
 			"size": "small",
 			"label": "Small"
 		},
 		{
 			"size": "medium",
 			"label": "Medium (default, data-size attribute is optional)"
-		},
-		{
-			"size": "large",
-			"label": "Large"
-		},
-		{
-			"size": "xlarge",
-			"label": "XLarge"
 		}
 	]
 }

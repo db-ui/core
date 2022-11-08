@@ -131,81 +131,9 @@
 	}
 
 	// Sizes
-	&%size-XXSmall {
-		$height: 20;
-		// $icon-size: 16;
-		// TODO: remove this dirty hack after we've got the correct 16px icons
-		$icon-size: 20;
-
-		min-height: to-rem($pxValue: $height);
-		padding: to-rem($pxValue: 1) to-rem($pxValue: 4);
-
-		&:not(.is-icon-text-replace) {
-			font-size: to-rem($pxValue: 12);
-		}
-
-		&[data-icon],
-		&[data-icon-before] {
-			@include iconMeta($icon-size);
-			// TODO: remove this dirty hack after we've got the correct 16px icons
-			&::before {
-				font-size: to-rem($pxValue: 16);
-			}
-		}
-
-		&[data-icon-after] {
-			@include iconMeta($size: $icon-size, $position: "after");
-			// TODO: remove this dirty hack after we've got the correct 16px icons
-			&::after {
-				font-size: to-rem($pxValue: 16);
-			}
-		}
-		// Square icon only buttons
-		&.is-icon-text-replace {
-			width: to-rem($pxValue: $height);
-		}
-	}
-
-	&%size-XSmall {
-		$height: 24;
-		// $icon-size: 16;
-		// TODO: replace this dirty hack after we've got the correct 16px icons / replace 20 by 16
-		$icon-size: 20;
-
-		min-height: to-rem($pxValue: $height);
-		padding: to-rem($pxValue: 3) to-rem($pxValue: 8);
-
-		&:not(.is-icon-text-replace) {
-			font-size: to-rem($pxValue: 12);
-		}
-
-		&[data-icon],
-		&[data-icon-before] {
-			@include iconMeta($icon-size);
-			// TODO: remove this dirty hack after we've got the correct 16px icons
-			&::before {
-				font-size: to-rem($pxValue: 16);
-			}
-		}
-
-		&[data-icon-after] {
-			@include iconMeta($size: $icon-size, $position: "after");
-			// TODO: remove this dirty hack after we've got the correct 16px icons
-			&::after {
-				font-size: to-rem($pxValue: 16);
-			}
-		}
-		// Square icon only buttons
-		&.is-icon-text-replace {
-			width: to-rem($pxValue: $height);
-		}
-	}
-
 	&%size-Small {
 		$height: 32;
-		// $icon-size: 16;
-		// TODO: replace this dirty hack after we've got the correct 16px icons / replace 20 by 16
-		$icon-size: 20;
+		$icon-size: 16;
 
 		min-height: to-rem($pxValue: $height);
 		padding: to-rem($pxValue: 6) to-rem($pxValue: 12);
@@ -217,65 +145,20 @@
 		&[data-icon],
 		&[data-icon-before] {
 			@include iconMeta($icon-size);
-			// TODO: remove this dirty hack after we've got the correct 16px icons
-			&::before {
-				font-size: to-rem($pxValue: 16);
-			}
 		}
 
 		&[data-icon-after] {
 			@include iconMeta($size: $icon-size, $position: "after");
-			// TODO: remove this dirty hack after we've got the correct 16px icons
-			&::after {
-				font-size: to-rem($pxValue: 16);
-			}
 		}
+
 		// Square icon only buttons
 		&.is-icon-text-replace {
 			width: to-rem($pxValue: $height);
 		}
-	}
-
-	&%size-Large {
-		$height: 48;
-
-		min-height: to-rem($pxValue: $height);
-		padding: to-rem($pxValue: 12) to-rem($pxValue: 24);
-		// Square icon only buttons
-		&.is-icon-text-replace {
-			width: to-rem($pxValue: $height);
-		}
-	}
-
-	&%size-XLarge {
-		$height: 64;
-
-		min-height: to-rem($pxValue: $height);
-		padding: to-rem($pxValue: 20) to-rem($pxValue: 24);
-		// Square icon only buttons
-		&.is-icon-text-replace {
-			width: to-rem($pxValue: $height);
-		}
-	}
-
-	&[data-size="xsmall"] {
-		@extend %size-XSmall;
-	}
-
-	&[data-size="xxsmall"] {
-		@extend %size-XXSmall;
 	}
 
 	&[data-size="small"] {
 		@extend %size-Small;
-	}
-
-	&[data-size="large"] {
-		@extend %size-Large;
-	}
-
-	&[data-size="xlarge"] {
-		@extend %size-XLarge;
 	}
 
 	// Width
