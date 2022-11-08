@@ -28,22 +28,23 @@
 
 	//*** Variants ***
 	&[data-variant="warning"] {
-		background-color: $db-color-warning-small-font;
+		background-color: $db-colors-warning-enabled;
 	}
 
 	&[data-variant="error"] {
-		background-color: $db-color-error-small-font;
+		background-color: $db-colors-critical-enabled;
 	}
 
 	&[data-variant="informative"] {
-		background-color: $db-color-informative-small-font;
+		background-color: $db-colors-information-enabled;
 	}
 
 	&[data-variant="success"] {
-		background-color: $db-color-success-small-font;
+		background-color: $db-colors-success-enabled;
 	}
 
-	// The "Gleis" additioally gets a bold font weight
+	// TODO: enable this with color-extension
+	/*	// The "Gleis" additioally gets a bold font weight
 	&[data-variant="track"] {
 		background-color: $db-color-blue-700;
 		font-weight: 700;
@@ -90,7 +91,8 @@
 
 	&[data-variant="poi-wegeleitung"] {
 		background-color: $db-color-guidance;
-	}
+		background-color: $db-colors-success-enabled;
+	}*/
 
 	// Icons
 	&[data-icon],

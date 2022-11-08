@@ -15,7 +15,7 @@
 			}
 
 			&[aria-selected="true"] {
-				color: $db-color-red-500;
+				color: $db-colors-primary-enabled;
 			}
 		}
 	}
@@ -34,7 +34,23 @@
 
 			// TODO: This is an enhancement for more languages, but obviously doesn't scale that nicely and would need some rework
 			&:not([aria-selected="true"]) ~ li:not([aria-selected="true"]) {
-				top: to-rem($pxValue: 108);
+				top: to-rem($pxValue: 54 * 2);
+
+				& ~ li:not([aria-selected="true"]) {
+					top: to-rem($pxValue: 54 * 3);
+
+					& ~ li:not([aria-selected="true"]) {
+						top: to-rem($pxValue: 54 * 4);
+
+						& ~ li:not([aria-selected="true"]) {
+							top: to-rem($pxValue: 54 * 5);
+
+							& ~ li:not([aria-selected="true"]) {
+								top: to-rem($pxValue: 54 * 6);
+							}
+						}
+					}
+				}
 			}
 			@media screen and (min-width: 1024px) {
 				top: to-rem($pxValue: 56);
@@ -56,7 +72,8 @@
 
 				&:hover,
 				&:focus {
-					background-color: $db-color-cool-gray-200;
+					// TODO: We need to replace this by its correct color variable
+					background-color: #d7dce1;
 				}
 			}
 		}
@@ -76,7 +93,7 @@
 				padding-bottom: to-rem($pxValue: 22);
 
 				&:hover {
-					color: $db-color-red-500;
+					color: $db-colors-primary-enabled;
 				}
 
 				&::after {

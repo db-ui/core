@@ -29,11 +29,13 @@
 
 .elm-loadingindicator {
 	animation: loadingindicator-rotate 3s linear infinite;
-	color: var(--loadingIndicator---color, #{$db-color-red-500});
+	color: var(--loadingIndicator---color, #{$db-colors-primary-enabled});
 	/* stylelint-disable */
 	@include loadingindicator--sizes("elm-");
 	@extend %size-m; // default
-	/* stylelint-enable */
+
+	animation: loadingindicator-rotate 3s linear infinite;
+	color: $db-colors-primary-enabled;
 
 	&[data-size="xs"] {
 		@extend %size-xs;

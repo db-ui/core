@@ -81,8 +81,8 @@
 
 	&%variant-secondary {
 		background-color: $button-secondary--backgroundColor;
-		border-color: $db-color-cool-gray-700;
-		color: $db-color-cool-gray-700;
+		border-color: currentColor;
+		color: $db-colors-secondary-enabled;
 
 		&:not(:disabled) {
 			&:hover {
@@ -99,7 +99,7 @@
 	&%variant-tertiary {
 		background-color: $button-tertiary--backgroundColor;
 		// TODO: replace by the correct variable afterwards
-		color: #0e1013;
+		color: $db-colors-secondary-enabled;
 
 		&:not(:disabled) {
 			&:hover {
@@ -116,9 +116,7 @@
 	&%variant-ghost {
 		background-color: transparent; // shame.css
 		border: 2px solid transparent;
-		border: 2px solid transparent;
-		color: $db-color-cool-gray-700;
-		color: $db-color-cool-gray-700;
+		color: $db-colors-secondary-enabled;
 
 		&:not(:disabled) {
 			&:hover {

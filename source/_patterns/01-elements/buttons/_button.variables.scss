@@ -9,7 +9,8 @@ $button---minHeight: to-rem(
 ) !default;
 
 // Background colors
-$button-primary--backgroundColor: $db-color-red-500 !default;
+// TODO: We need to either replace these values by its correct color variables or most likely remove all of these as we'll be defining this the main file with the new SCSS colors placeholders
+$button-primary--backgroundColor: $db-colors-primary-enabled !default;
 $button-primary-hover-backgroundColor: #cf0013 !default;
 $button-primary-active-backgroundColor: #b30010 !default;
 
