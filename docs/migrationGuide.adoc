@@ -37,7 +37,7 @@ All remaining brand colors have been removed from DB UI Core and will be used fr
 
 ==== Secondary Colors
 
-All secondary colors as well have been changed to include `db-` at the front, so e.g. `$color-red-500` is now `$db-color-red-500`.
+All secondary colors as well have been changed to include `db-` at the front, so e.g. `$color-red-500` is now `$db-colors-primary-enabled`.
 
 ==== Transporation
 

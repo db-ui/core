@@ -70,7 +70,7 @@
 
 // SCSS mixin for elements that text should get hidden in favour of only displaying the included icon
 @mixin is-icon-text-replace($position: "before") {
-	font-size: 0;
+	font-size: 0 !important;
 
 	@if $position == "before" {
 		&::before {

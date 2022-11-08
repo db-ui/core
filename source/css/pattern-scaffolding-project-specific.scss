@@ -1,6 +1,5 @@
 @import "helpers/functions";
 @import "db-ui-core.variables";
-@import "@db-ui/base/build/scss/db-ui-base";
 $fonts-path: "../fonts/";
 @import "../_patterns/00-base/type/fonts";
 
@@ -8,6 +7,10 @@ $fonts-path: "../fonts/";
 body,
 [class|="pl"] {
 	font-family: $db-font-family-sans;
+}
+
+.db-bg-success-light-ia {
+	@extend %db-bg-success-light;
 }
 
 pl-header {

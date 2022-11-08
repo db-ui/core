@@ -5,6 +5,10 @@ $fonts-path: "../../fonts/" !default;
 
 @import "@db-ui/base/build/scss/db-ui-base";
 
+:root {
+	@extend %db-ui-functional;
+}
+
 // General configurations
 $dbBaseFontSize: 16px;
 $dbBaseFontSizeSass: 0.0625 !default;

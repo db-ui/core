@@ -1,18 +1,3 @@
-@import "db-ui-core.variables";
 @import "@csstools/normalize.css/normalize";
+@import "db-ui-core.variables";
 @import "../_patterns/00-base/init";
-@import "fonts.general";
-
-/* TODO: We most likely need to rework this */
-body,
-div,
-button,
-input,
-select,
-textarea {
-	@extend %general-fonts;
-}
-
-body {
-	@extend %db-ui-normal;
-}
