@@ -2,9 +2,15 @@ body.styleguide {
 	display: initial;
 }
 
-.sg-wrapper-dark-background {
-	background-color: $db-color-cool-gray-700;
+// TODO: We most likely could align all of the implementation on this in the future and remove the ones from each pattern
+// [id$="-dark-background"],
+/* stylelint-disable selector-max-id */
+#elements-button-secondary-inverted {
+	.pl-js-pattern-example {
+		/* stylelint-enable selector-max-id */
+		background-color: $db-color-cool-gray-700;
 
-	margin: -1rem -0.5rem;
-	padding: 1rem 0.5rem;
+		margin: -1rem -0.5rem;
+		padding: 1rem 0.5rem;
+	}
 }
