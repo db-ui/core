@@ -1,5 +1,9 @@
-.sg-wrapper-full-width-Button {
-	p {
-		width: 300px;
+/* stylelint-disable selector-max-id */
+#elements-button-width {
+	.pl-js-pattern-example {
+		p {
+			/* stylelint-enable selector-max-id */
+			width: 300px;
+		}
 	}
 }
