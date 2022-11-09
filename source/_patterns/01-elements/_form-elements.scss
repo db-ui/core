@@ -3,8 +3,8 @@
 @import "form-elements.variables";
 
 %form-element {
-	border-radius: 4px;
 	border: none;
+	border-radius: 4px;
 
 	color: $form-elements-color;
 
@@ -81,7 +81,7 @@
 
 // Outline
 %form-element-outline {
-	--formElement---borderColor: #{$form-elements-outline-border-color};
+	//--formElement---borderColor: #{$form-elements-outline-border-color};
 	background-color: transparent;
 	// border-top: $form-elements---borderTop;
 	// border-right: $form-elements---borderRight;

@@ -8,17 +8,21 @@
 .elm-input {
 	@extend %form-element;
 
+	font-size: $db-type-font-size-md;
+
 	// font-size: to-rem($pxValue: 16);
 	// line-height: to-rem($pxValue: 24);
 
-	@include input--sizes();
-	@extend %size-m; // default
-
-	padding: $db-spacing-fixed-normal-xs $db-spacing-fixed-normal-m;
-
-	width: 100%;
+	//@include input--sizes();
+	// @extend %size-regular; // default
+	height: $db-sizing-md;
 	max-width: 100%;
-	//height: to-rem($pxValue: 40);
+	padding: $db-spacing-fixed-xs $db-spacing-fixed-md;
+	width: 100%;
+
+	+ .elm-label {
+		@include input-label-size();
+	}
 
 	// padding: $db-spacing-s $db-spacing-m;
 	//&:not(:placeholder-shown) {
@@ -27,25 +31,17 @@
 	//}
 
 	// ### Size variations
-	&[data-size="xs"] {
-		@extend %size-xs;
-	}
+	// &[data-size="functional"] {
+	// 	@extend %size-functional;
+	// }
 
-	&[data-size="s"] {
-		@extend %size-s;
-	}
+	// &[data-size="regular"] {
+	// 	@extend %size-regular;
+	// }
 
-	&[data-size="m"] {
-		@extend %size-m;
-	}
-
-	&[data-size="l"] {
-		@extend %size-l;
-	}
-
-	&[data-size="xl"] {
-		@extend %size-xl;
-	}
+	// &[data-size="expressive"] {
+	// 	@extend %size-expressive;
+	// }
 
 	// * TODO: to get evaluated
 	// display: inline-flex;
@@ -58,28 +54,20 @@
 	&:not(:placeholder-shown) {
 		&:not(:disabled) {
 			+ .elm-label {
-				@include input-label-translation(m);
+				@include input-label-translation();
 			}
 
-			&[data-size="xs"] + .elm-label {
-				@include input-label-translation(xs);
-			}
+			// &[data-size="functional"] + .elm-label {
+			// 	@include input-label-translation(functional);
+			// }
 
-			&[data-size="s"] + .elm-label {
-				@include input-label-translation(s);
-			}
+			// &[data-size="regular"] + .elm-label {
+			// 	@include input-label-translation(regular);
+			// }
 
-			&[data-size="m"] + .elm-label {
-				@include input-label-translation(m);
-			}
-
-			&[data-size="l"] + .elm-label {
-				@include input-label-translation(l);
-			}
-
-			&[data-size="xl"] + .elm-label {
-				@include input-label-translation(xl);
-			}
+			// &[data-size="expressive"] + .elm-label {
+			// 	@include input-label-translation(expressive);
+			// }
 		}
 	}
 
@@ -129,24 +117,16 @@
 
 		& + .elm-label {
 			// font-size: to-rem($pxValue: 14);
+			color: $db-colors-secondary-enabled;
 			display: block;
 			pointer-events: none;
 			transform-origin: left;
-			color: $db-colors-secondary-enabled;
 			// color: $db-color-cool-gray-500;
 
-			@include input-label-size(m);
+			//@include input-label-size(regular);
 
-<<<<<<< HEAD
-			margin-bottom: -#{to-rem($pxValue: 18)};
-			transform: translate(
-				$db-spacing-fixed-normal-m,
-				-#{to-rem($pxValue: 41)}
-			);
-=======
 			// transform: translate($db-spacing-s, -#{to-rem($pxValue: 16 + 14)});
 			// margin-bottom: -#{to-rem($pxValue: 18)};
->>>>>>> e755e419 (feat: added textfield sizes and label animation)
 
 			& + .description {
 				margin-top: -1.5rem;
@@ -203,23 +183,26 @@
 			}
 
 			& ~ .description {
-				@extend %db-text-critical;
+				color: $db-colors-critical-enabled;
+
 				display: flex;
 				justify-content: space-between;
 				max-width: 30rem;
 
 				&::after {
-					content: " ";
-					position: relative;
-					display: block;
-					width: 20px;
-					height: 20px;
-					background-color: aquamarine;
-					top: -2rem;
 					@include icon(glyph(error-triangle), 20, "filled");
+
+					background-color: $db-colors-warning-on-bg-enabled;
+					content: " ";
+					display: block;
+					height: 20px;
+					position: relative;
+					top: -2rem;
+					width: 20px;
 				}
 			}
 		}
+
 		&[data-variant="warning"] {
 			@extend %db-bg-warning-transparent-semi;
 
@@ -228,9 +211,10 @@
 			}
 
 			& ~ .description {
-				@extend %db-text-warning;
+				color: $db-colors-warning-enabled;
 			}
 		}
+
 		&[data-variant="success"] {
 			@extend %db-bg-success-transparent-semi;
 
@@ -239,9 +223,10 @@
 			}
 
 			& ~ .description {
-				@extend %db-text-success;
+				color: $db-colors-success-enabled;
 			}
 		}
+
 		&[data-variant="information"] {
 			@extend %db-bg-information-transparent-semi;
 
@@ -250,39 +235,27 @@
 			}
 
 			& ~ .description {
-				@extend %db-text-information;
+				color: $db-colors-information-enabled;
 			}
 		}
 
-		&[data-size="xs"] {
-			& + .elm-label {
-				@include input-label-size(xs);
-			}
-		}
+		// &[data-size="functional"] {
+		// 	& + .elm-label {
+		// 		@include input-label-size(functional);
+		// 	}
+		// }
 
-		&[data-size="s"] {
-			& + .elm-label {
-				@include input-label-size(s);
-			}
-		}
+		// &[data-size="regular"] {
+		// 	& + .elm-label {
+		// 		@include input-label-size(regular);
+		// 	}
+		// }
 
-		&[data-size="m"] {
-			& + .elm-label {
-				@include input-label-size(m);
-			}
-		}
-
-		&[data-size="l"] {
-			& + .elm-label {
-				@include input-label-size(l);
-			}
-		}
-
-		&[data-size="xl"] {
-			& + .elm-label {
-				@include input-label-size(xl);
-			}
-		}
+		// &[data-size="expressive"] {
+		// 	& + .elm-label {
+		// 		@include input-label-size(expressive);
+		// 	}
+		// }
 	}
 
 	&[type="search"] {
