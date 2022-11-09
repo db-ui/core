@@ -1,0 +1,15 @@
+{
+	"icon-size": "16",
+	"icon-style": "outline",
+	"icons": [
+		{
+			"icon-glyph": "add"
+		},
+		{
+			"icon-glyph": "done"
+		},
+		{
+			"icon-glyph": "minus"
+		}
+	]
+}
