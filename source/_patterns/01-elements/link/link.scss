@@ -6,6 +6,7 @@
 @import "link.variables";
 
 .elm-link {
+	// TODO: replace with color when it becomes available via core
 	color: #282d37;
 	display: inline-block;
 	border-radius: to-rem($pxValue: 6);
