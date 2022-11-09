@@ -6,6 +6,7 @@
 @import "link.variables";
 
 .elm-link {
+	color: #282d37;
 	display: inline-block;
 	border-radius: to-rem($pxValue: 6);
 
@@ -15,10 +16,6 @@
 	text-decoration-thickness: to-rem($pxValue: 1);
 	@supports (text-underline-offset: 3px) {
 		text-underline-position: auto;
-	}
-
-	&:active {
-		font-size: to-em($pxValue: 14);
 	}
 
 	// "disabled" links
@@ -40,7 +37,6 @@
 
 	&[data-variant="internal"],
 	&[data-variant="external"] {
-		color: #282d37;
 		&::after {
 			margin-top: -3px;
 			--icon-margin-before: #{to-rem($pxValue: 4)};
@@ -55,16 +51,21 @@
 		&:not(.is-icon-text-replace) {
 			font-size: to-em($pxValue: 12);
 		}
-		&:active {
-			font-size: to-em($pxValue: 10);
-		}
 	}
 
 	&[data-size="small"] {
+		// TODO: replace with color when it becomes available via core
 		color: #42464f;
 		@extend %size-Small;
 		&::after {
 			--icon-font-size: #{to-rem($pxValue: 16)};
+		}
+		&[rel],
+		&[data-icon],
+		&[data-icon-before] {
+			@include iconMeta(20);
+			// TODO: remove when icons are availabe in the correct size
+			font-size: 16px;
 		}
 	}
 }

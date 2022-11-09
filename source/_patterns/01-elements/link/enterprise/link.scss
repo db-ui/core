@@ -1,2 +1,23 @@
 @import "link.variables";
 @import "../link";
+
+// Define the available icons
+.elm-link {
+	&[rel="configuration"] {
+		@include icon(glyph(settings), 24, "outline", $partial: $partial);
+	}
+	&[rel="messages"] {
+		@include icon(glyph(chat), 24, "outline", $partial: $partial);
+	}
+	&[rel="account"] {
+		@include icon(glyph(account), 24, "outline", $partial: $partial);
+	}
+	&[rel="configuration"],
+	&[rel="messages"],
+	&[rel="account"] {
+		&::before {
+			// preventing an underlined icon on click
+			display: inline-block;
+		}
+	}
+}
