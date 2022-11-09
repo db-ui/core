@@ -35,7 +35,6 @@
 	@extend %size-m; // default
 
 	animation: loadingindicator-rotate 3s linear infinite;
-	color: $db-colors-primary-enabled;
 
 	&[data-size="xs"] {
 		@extend %size-xs;
