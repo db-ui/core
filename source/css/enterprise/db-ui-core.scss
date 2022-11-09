@@ -6,10 +6,14 @@ $partial: false;
 // TODO: Let's include normalize e.g. via postcss-normalize
 @use "@csstools/normalize.css/normalize.css";
 
-@import "../helpers/functions";
+@import "db-ui-core.variables";
 @import "../../_patterns/00-base/helpers";
 
-@import "db-ui-core.variables";
+@import "@db-ui/base/build/scss/typescale";
+
+:root {
+	@extend %db-ui-functional;
+}
 
 @import "../../_patterns/00-base/init.global";
 @import "../../_patterns/00-base/init";
