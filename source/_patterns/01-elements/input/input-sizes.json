@@ -1,24 +1,16 @@
 {
 	"sizes": [
 		{
-			"size": "xs",
-			"label": "Small"
+			"size": "functional",
+			"label": "Functional"
 		},
 		{
-			"size": "s",
-			"label": "Small"
+			"size": "normal",
+			"label": "Regular (default, data-size attribute is optional)"
 		},
 		{
-			"size": "m",
-			"label": "Medium (default, data-size attribute is optional)"
-		},
-		{
-			"size": "l",
-			"label": "Large"
-		},
-		{
-			"size": "xl",
-			"label": "Extra Large"
+			"size": "expressive",
+			"label": "Expressive"
 		}
 	],
 	"type": "text",
