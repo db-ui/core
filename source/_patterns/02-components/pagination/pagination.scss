@@ -11,6 +11,7 @@
 		display: flex;
 	}
 
+	// TODO remove class and use base typography placeholder instead
 	.elm-headline {
 		@include a11y-visually-hidden($partial: $partial);
 	}

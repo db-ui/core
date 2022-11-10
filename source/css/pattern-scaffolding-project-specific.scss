@@ -1,7 +1,5 @@
 @import "helpers/functions";
 @import "db-ui-core.variables";
-@import "@db-ui/base/build/scss/variables";
-@import "../_patterns/01-elements/headline/headline";
 $fonts-path: "../fonts/";
 @import "../_patterns/00-base/type/fonts";
 
@@ -11,9 +9,9 @@ body,
 	font-family: $db-font-family-sans;
 }
 
-pl-header {
-	font-size: to-rem($pxValue: 15.49191);
-}
+// pl-header {
+// 	font-size: to-rem($pxValue: 15.49191);
+// }
 
 pl-logo {
 	align-self: flex-start !important; // shame.css
@@ -34,7 +32,7 @@ pl-iframe {
 
 		// Splitted Intro Page
 		&:nth-of-type(2) {
-			background-color: $db-colors-secondary-enabled;
+			background-color: $db-colors-neutral-bg-2-enabled;
 			padding-bottom: 2.5rem;
 		}
 	}
@@ -83,11 +81,6 @@ pl-iframe {
 	border-left: 0;
 	border-right: 0;
 	border-top: 0;
-}
-
-.pl-c-category__title,
-.pl-c-pattern__title {
-	@extend .elm-headline;
 }
 
 // Related to https://github.com/db-ui/base/pull/6
