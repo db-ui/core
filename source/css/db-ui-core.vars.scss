@@ -9,9 +9,6 @@ $icons-path: "../icons/" !default;
 $images-path: "../images/" !default;
 $fonts-path: "../fonts/" !default;
 
-// General variables by DB UI Base
-@import "@db-ui/base/build/scss/variables";
-
 @import "../_patterns/00-base/icons/icons.variables";
 @import "../_patterns/00-base/icons/icons.font-faces";
 

@@ -3,11 +3,16 @@
 ***** */
 
 // Define the path for both image and font folders
-// $icons-path: "../../icons/" !default;
-// $images-path: "../../images/" !default;
-// $fonts-path: "../../fonts/" !default;
+$icons-path: "../../icons/" !default;
+$images-path: "../../images/" !default;
+$fonts-path: "../../fonts/" !default;
 
-// @import "@db-ui/base/build/scss/variables";
+// TODO change later and use db-ui/base bundle files
+
+@import "@db-ui/base/build/scss/variables";
+@import "@db-ui/base/build/scss/variables.global";
+// TODO change later, placeholders shouldn't be imported here
+@import "@db-ui/base/build/scss/color-placeholder";
 
 // General configurations
 $dbBaseFontSize: 16px;
