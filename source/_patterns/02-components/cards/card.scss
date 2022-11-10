@@ -12,7 +12,8 @@
 	}
 
 	figure {
-		margin: $db-spacing-2 $db-spacing-2 $db-spacing-2 $db-spacing-1;
+		margin: $db-spacing-fixed-normal-m $db-spacing-fixed-normal-m
+			$db-spacing-fixed-normal-m $db-spacing-fixed-normal-xs;
 	}
 
 	// Banner variant
