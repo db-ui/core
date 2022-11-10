@@ -63,7 +63,7 @@
 				content: none;
 			}
 		} @else {
-			@extend %icon;
+			@extend %icon !optional;
 		}
 	}
 }
