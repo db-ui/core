@@ -7,6 +7,12 @@
 @import "../_patterns/00-base/init";
 @import "fonts.general";
 
+$icons-path: "../../icons/" !default;
+$images-path: "../../images/" !default;
+$fonts-path: "../../fonts/" !default;
+
+@import "@db-ui/base/build/scss/db-ui-base";
+
 /* TODO: We most likely need to rework this */
 body,
 div,
@@ -15,8 +21,4 @@ input,
 select,
 textarea {
 	@extend %general-fonts;
-}
-
-body {
-	@extend %db-ui-normal;
 }

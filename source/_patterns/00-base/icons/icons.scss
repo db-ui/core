@@ -10,14 +10,14 @@
 [data-icon],
 [data-icon-before] {
 	&::before {
-		@extend %icon;
+		@extend %icon !optional;
 		margin-inline-end: var(--icon-margin-after, #{$icon-content-space});
 	}
 }
 
 [data-icon-after] {
 	&::after {
-		@extend %icon;
+		@extend %icon !optional;
 		margin-inline-start: var(--icon-margin-before, #{$icon-content-space});
 	}
 }
