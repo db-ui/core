@@ -301,6 +301,69 @@
 			"referenceUrl": "https://db-ui.github.io/core/patterns/components-notifications/index.html"
 		},
 		{
+			"label": "Language Switcher",
+			"url": "http://127.0.0.1:8080/patterns/components-language-switcher-language-switcher/components-language-switcher-language-switcher.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-language-switcher-language-switcher/components-language-switcher-language-switcher.rendered.html"
+		},
+		{
+			"label": "Language Switcher - hovered",
+			"url": "http://127.0.0.1:8080/patterns/components-language-switcher-language-switcher/components-language-switcher-language-switcher.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-language-switcher-language-switcher/components-language-switcher-language-switcher.rendered.html",
+			"hoverSelector": ".cmp-language-switcher",
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Link list",
+			"url": "http://127.0.0.1:8080/patterns/components-link-list-link-list/components-link-list-link-list.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-link-list-link-list/components-link-list-link-list.rendered.html"
+		},
+		{
+			"label": "Mainnavigation",
+			"url": "http://127.0.0.1:8080/patterns/components-mainnavigation-mainnavigation/components-mainnavigation-mainnavigation.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-mainnavigation-mainnavigation/components-mainnavigation-mainnavigation.rendered.html"
+		},
+		{
+			"label": "Mainnavigation - links hovered (bigger viewports)",
+			"url": "http://127.0.0.1:8080/patterns/components-mainnavigation-mainnavigation/components-mainnavigation-mainnavigation.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-mainnavigation-mainnavigation/components-mainnavigation-mainnavigation.rendered.html",
+			"hoverSelectors": [
+				".cmp-mainnavigation li:nth-of-type(1) .elm-link",
+				".cmp-mainnavigation li:nth-of-type(2) .elm-link",
+				".cmp-mainnavigation li:nth-of-type(3) .elm-link"
+			],
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js",
+			"viewports": [
+				{
+					"label": "tablet - portrait",
+					"width": 1024,
+					"height": 768
+				},
+				{
+					"label": "13 Zoll Macbook",
+					"width": 1440,
+					"height": 900
+				}
+			]
+		},
+		{
+			"label": "Metanavigation",
+			"url": "http://127.0.0.1:8080/patterns/components-metanavigation-metanavigation/components-metanavigation-metanavigation.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core-legacy/patterns/components-metanavigation-metanavigation/components-metanavigation-metanavigation.rendered.html"
+		},
+		{
+			"label": "Metanavigation - links hovered",
+			"url": "http://127.0.0.1:8080/patterns/components-metanavigation-metanavigation/components-metanavigation-metanavigation.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core-legacy/patterns/components-metanavigation-metanavigation/components-metanavigation-metanavigation.rendered.html",
+			"hoverSelectors": [
+				".cmp-metanavigation li:nth-of-type(1) .elm-link",
+				".cmp-metanavigation li:nth-of-type(2) .elm-link"
+			],
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
 			"label": "Components – Overflow Menu",
 			"url": "http://127.0.0.1:8080/patterns/components-overflow-menu/index.html",
 			"referenceUrl": "https://db-ui.github.io/core/patterns/components-overflow-menu/index.html"
@@ -332,6 +395,40 @@
 			"referenceUrl": "https://db-ui.github.io/core/patterns/components-pagination/index.html",
 			"hoverSelectors": [
 				".cmp-pagination li .elm-link"
+			],
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Side Navi",
+			"url": "http://127.0.0.1:8080/patterns/components-sidenavi-sidenavi/components-sidenavi-sidenavi.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core-legacy/patterns/components-sidenavi-sidenavi/components-sidenavi-sidenavi.rendered.html"
+		},
+		{
+			"label": "Side Navi - links hovered",
+			"url": "http://127.0.0.1:8080/patterns/components-sidenavi-sidenavi/components-sidenavi-sidenavi.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core-legacy/patterns/components-sidenavi-sidenavi/components-sidenavi-sidenavi.rendered.html",
+			"hoverSelectors": [
+				".cmp-sidenavi li .elm-link"
+			],
+			"postInteractionWait": 1000,
+			"onReadyScript": "puppet/clickAndHoverHelper.js"
+		},
+		{
+			"label": "Tab Bar",
+			"url": "http://127.0.0.1:8080/patterns/components-tab-bar-tab-bar/components-tab-bar-tab-bar.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-tab-bar-tab-bar/components-tab-bar-tab-bar.rendered.html"
+		},
+		{
+			"label": "Tab Bar - hovered",
+			"url": "http://127.0.0.1:8080/patterns/components-tab-bar-tab-bar/components-tab-bar-tab-bar.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-tab-bar-tab-bar/components-tab-bar-tab-bar.rendered.html",
+			"hoverSelectors": [
+				".cmp-tab-bar > label:nth-of-type(1)",
+				".cmp-tab-bar > label:nth-of-type(2)",
+				".cmp-tab-bar > label:nth-of-type(3)",
+				".cmp-tab-bar > label:nth-of-type(4)",
+				".cmp-tab-bar > label:nth-of-type(5)"
 			],
 			"postInteractionWait": 1000,
 			"onReadyScript": "puppet/clickAndHoverHelper.js"
