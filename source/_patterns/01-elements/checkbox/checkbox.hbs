@@ -5,8 +5,8 @@
 	value="{{ value }}"
 	{{#if describedbyid }} aria-describedby="{{ describedbyid }}"{{/if }}
 	{{#if size }} data-size="{{ size }}"{{/if }}
-	{{#if required }} required{{/if }}>
-<label class="elm-label" for="{{ id }}{{#if size }}-{{ size }}{{/if }}">{{ label }}</label>
+	{{#if required }} required{{/if }}
+><label class="elm-label" for="{{ id }}{{#if size }}-{{ size }}{{/if }}">{{ label }}</label>
 {{#if indeterminate}}
 <script>
 	document.querySelector('#{{ id }}{{#if size }}-{{ size }}{{/if }}').indeterminate = true;
