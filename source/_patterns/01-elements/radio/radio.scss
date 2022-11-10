@@ -16,7 +16,7 @@
 	display: inline-block;
 
 	font-size: to-rem($pxValue: 16);
-	height: to-em($pxValue: 24);
+	height: to-rem($pxValue: 24);
 
 	transition: border-width 0.5s ease;
 
@@ -24,10 +24,8 @@
 		vertical-align: top;
 	}
 
-	&:checked,
-	&:invalid,
-	&[aria-invalid="true"] {
-		border-width: to-em($pxValue: 6);
+	&:checked {
+		border-width: to-rem($pxValue: 7);
 	}
 	// * the invalid style using the :invalid pseudo class (and [aria-invalid="true"] equivalent, see #136 and #141)
 	// TODO: We need to set the correct styling / color here after alignment
@@ -64,10 +62,13 @@
 
 	// Sizes
 	&%size-Small {
-		border-width: to-em($pxValue: 4);
-		height: to-em($pxValue: 20);
+		height: to-rem($pxValue: 20);
 
 		vertical-align: sub;
+
+		&:checked {
+			border-width: to-rem($pxValue: 6);
+		}
 
 		& + label {
 			font-size: to-rem($pxValue: 14);
