@@ -20,7 +20,7 @@
     "lint:stylelint": "stylelint **/*.scss",
     "lint:xo": "xo",
     "lint:html": "npm-run-all pl:build:* lint:html:standalone",
-    "lint:html:standalone": "html-validate out/patterns --ext .rendered.html",
+    "lint:html:standalone": "html-validate out/patterns --ext .markup-only.html",
     "lint:prettier": "pretty-quick --staged",
     "pl:build:enterprise": "patternlab build --config ./enterprise.patternlab-config.json",
     "pl:help": "patternlab --help",
