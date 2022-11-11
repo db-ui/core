@@ -15,6 +15,6 @@ $table-line--borderColor: #d7dce1 !default;
 
 $table-row-zebra-color: rgba($db-colors-secondary-enabled, 0.07) !default;
 
-$table-densitySmall--padding: $db-spacing-1 !default;
-$table-densityRegular--padding: $db-spacing-1 !default;
-$table-densityLarge--padding: $db-spacing-2 !default;
+$table-densitySmall--padding: $db-spacing-fixed-normal-xs !default;
+$table-densityRegular--padding: $db-spacing-fixed-normal-xs !default;
+$table-densityLarge--padding: $db-spacing-fixed-normal-m !default;
