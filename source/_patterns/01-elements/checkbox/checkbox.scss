@@ -6,7 +6,8 @@
 .elm-checkbox {
 	$checkbox-size: 24;
 
-	@include icon("\00A0", 20, "outline", $partial: $partial);
+	@include icon("\00A0", $checkbox-size, "outline", $partial: $partial);
+	@include iconMeta($font-size: $checkbox-size - 2);
 	align-content: center;
 
 	appearance: none;
@@ -23,12 +24,10 @@
 	justify-content: center;
 
 	&[type="checkbox"] {
-		vertical-align: middle;
+		vertical-align: sub;
 	}
 
-	&::before {
-		margin-right: 0;
-	}
+	--icon-margin-after: 0;
 
 	&:checked {
 		background-color: $checkbox--checked-backgroundColor;
@@ -76,8 +75,13 @@
 
 	// Sizes
 	&%size-Small {
-		@include iconMeta(16);
-		height: to-rem($pxValue: 20);
+		$checkbox-size: 20;
+
+		@include iconMeta(
+			$size: $checkbox-size,
+			$font-size: $checkbox-size - 2
+		);
+		height: to-rem($pxValue: $checkbox-size);
 
 		& + label {
 			font-size: to-rem($pxValue: 14);
