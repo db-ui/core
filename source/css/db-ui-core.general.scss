@@ -1,3 +1,7 @@
+/* *****
+	This is mainly meant to get included within scoped components like e.g. within StencilJS Custom Components / DB UI Elements
+***** */
+
 @import "@csstools/normalize.css/normalize";
 @import "db-ui-core.variables";
 @import "../_patterns/00-base/init";

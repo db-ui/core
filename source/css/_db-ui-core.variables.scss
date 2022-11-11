@@ -7,8 +7,11 @@ $icons-path: "../../icons/" !default;
 $images-path: "../../images/" !default;
 $fonts-path: "../../fonts/" !default;
 
+// TODO change later and use db-ui/base bundle files
+
 @import "@db-ui/base/build/scss/variables";
 @import "@db-ui/base/build/scss/variables.global";
+// TODO change later, placeholders shouldn't be imported here
 @import "@db-ui/base/build/scss/color-placeholder";
 
 // General configurations

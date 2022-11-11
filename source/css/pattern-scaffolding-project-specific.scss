@@ -13,9 +13,9 @@ body,
 	@extend %db-bg-success-light;
 }
 
-pl-header {
-	font-size: to-rem($pxValue: 15.49191);
-}
+// pl-header {
+// 	font-size: to-rem($pxValue: 15.49191);
+// }
 
 pl-logo {
 	align-self: flex-start !important; // shame.css
