@@ -58,6 +58,8 @@ This should add a new entry to your `package.json` file:
 @import "@db-ui/core/sources/css/enterprise/db-ui-core";
 ----
 
+### SCSS: node_modules include path / load path
+
 Please keep in mind, that you would need to set your `include path` also known as `load path` depending on your setup for the sass compiler to find the correct `node_modules` folder, e.g. like the following (this is similar to how other frameworks and libraries like link:https://github.com/twbs/bootstrap-npm-starter/blob/main/package.json#L18[Bootstrap] are handling this):
 
 #### link:https://npmjs.com/sass[`sass` compiler]
@@ -169,6 +171,24 @@ If you want to use the compiled CSS directly, you can refence the css files in y
 ----
 <link rel="stylesheet" href="css/enterprise/db-ui-core.css" type="text/css">
 ----
+
+## Example 2: how to use DB UI Core in Create React app
+
+Create React App offers only limited access to the configuration of the production build. While it uses webpack under the hood, the webpack configuration is not exposed to the user. 
+To manage your CRA to work with SASS include Path you have to update or create your _.env_ file:
+
+----
+SASS_PATH=node_modules
+----
+
+In addition to get the asset paths working you have to load them separately. Further description is written above within the section _webpack based bundlers_.
+
+[source,scss]
+----
+@import "@db-ui/core/sources/css/webpack.assets-paths";
+@import "@db-ui/core/sources/css/enterprise/db-ui-core";
+----
+
 
 ## Documentation
 

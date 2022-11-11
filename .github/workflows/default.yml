@@ -1,11 +1,11 @@
 name: Default push workflow
 
 on:
+  pull_request:
   push:
     branches:
-      - "**"
-    tags:
-      - "!**"
+      - "main"
+      - "dbux-3"
 
 jobs:
   init:
@@ -26,6 +26,13 @@ jobs:
   build:
     uses: ./.github/workflows/01-build.yml
     needs: [init]
+
+  checks-done:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🎉 Checks done
+        run: echo "🎉 All tests & build were successful."
+    needs: [build, test, lint]
 
   deploy:
     uses: ./.github/workflows/02-deploy-gh-pages.yml
