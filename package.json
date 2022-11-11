@@ -21,7 +21,7 @@
     "lint:xo": "xo",
     "lint:html": "npm-run-all pl:build:* lint:html:standalone",
     "lint:html:standalone": "html-validate out/patterns --ext .markup-only.html",
-    "lint:prettier": "pretty-quick --staged",
+    "lint:prettier": "prettier . --check",
     "pl:build:enterprise": "patternlab build --config ./enterprise.patternlab-config.json",
     "pl:help": "patternlab --help",
     "pl:install:enterprise": "patternlab install --config ./enterprise.patternlab-config.json",
