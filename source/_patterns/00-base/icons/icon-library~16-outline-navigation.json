@@ -1,0 +1,21 @@
+{
+	"icon-size": "16",
+	"icon-style": "outline",
+	"icons": [
+		{
+			"icon-glyph": "chevron-left"
+		},
+		{
+			"icon-glyph": "chevron-right"
+		},
+		{
+			"icon-glyph": "close"
+		},
+		{
+			"icon-glyph": "expand-less"
+		},
+		{
+			"icon-glyph": "expand-more"
+		}
+	]
+}

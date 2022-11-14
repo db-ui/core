@@ -1,10 +1,10 @@
 <svg
 	class="elm-loadingindicator"
 	viewBox="0 0 44 44"
-	aria-labelledby="elm-loadingindicator__description" role="img"
+	aria-labelledby="{{ id }}" role="img"
 	{{#if size }} data-size="{{ size }}"{{/if }}
 >
-	<title id="elm-loadingindicator__description">{{aria-description}}</title>
+	<title id="{{ id }}">{{aria-description}}</title>
 	<circle
 		class="elm-loadingindicator__circle"
 		cx="22"
