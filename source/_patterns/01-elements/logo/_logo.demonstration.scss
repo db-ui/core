@@ -1,0 +1,41 @@
+.DO-NOT-COPY-THIS-CLASS-example-logo-list {
+	list-style: none;
+
+	padding-left: 0;
+
+	color: $db-color-cool-gray-700;
+
+	li {
+		display: inline-block;
+		box-sizing: border-box;
+
+		margin: 4px;
+		padding: 80px;
+		border-radius: 4px;
+
+		color: $db-color-cool-gray-700;
+
+		&.DO-NOT-COPY-THIS-CLASS-example-bg-variants-cool-gray {
+			background-color: $db-color-cool-gray-100;
+		}
+
+		&.DO-NOT-COPY-THIS-CLASS-example-bg-variants-red {
+			--db-logo-color: #{$db-color-white};
+			background-color: $db-color-red-500;
+		}
+
+		&.DO-NOT-COPY-THIS-CLASS-example-bg-variants-image {
+			--db-logo-backgroundColor: #{$db-color-white};
+			background-image: url("https://marketingportal.extranet.deutschebahn.com/sites/default/files/2021-05-19/Gruppe%20maskieren%2024.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+
+			display: block;
+
+			padding: 0;
+
+			width: 555px;
+			height: 400px;
+		}
+	}
+}

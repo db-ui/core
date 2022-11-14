@@ -1,0 +1,68 @@
+@use "sass:map";
+@import "logo.variables";
+
+.elm-logo {
+	$logo-sizes: (
+		"xs": (
+			"width": 20px,
+			"height": 14px
+		),
+		"s": (
+			"width": 29px,
+			"height": 20px
+		),
+		"m": (
+			"width": 34px,
+			"height": 24px
+		),
+		"l": (
+			"width": 40px,
+			"height": 28px
+		),
+		"xl": (
+			"width": 56px,
+			"height": 40px
+		)
+	);
+
+	width: var(--db-logo-width, #{$db-logo-default-width});
+	height: var(--db-logo-height, #{$db-logo-default-height});
+
+	&[data-size="xs"] {
+		@extend %logo-size-xs;
+	}
+
+	&[data-size="s"] {
+		@extend %logo-size-s;
+	}
+
+	&[data-size="m"] {
+		@extend %logo-size-m;
+	}
+
+	&[data-size="l"] {
+		@extend %logo-size-l;
+	}
+
+	&[data-size="xl"] {
+		@extend %logo-size-xl;
+	}
+
+	@each $name, $dimensions in $logo-sizes {
+		&%logo-size-#{$name} {
+			--db-logo-width: #{map.get($dimensions, "width")};
+			--db-logo-height: #{map.get($dimensions, "height")};
+
+			body:has(&) .elm-headline[data-pulse] {
+				--db-logo-width: #{map.get($dimensions, "width")};
+				--db-logo-height: #{map.get($dimensions, "height")};
+			}
+
+			// Legacy browsers
+			& ~ .elm-headline[data-pulse] {
+				--db-logo-width: #{map.get($dimensions, "width")};
+				--db-logo-height: #{map.get($dimensions, "height")};
+			}
+		}
+	}
+}
