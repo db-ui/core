@@ -27,6 +27,8 @@
 
 	width: var(--db-logo-width, #{$db-logo-default-width});
 	height: var(--db-logo-height, #{$db-logo-default-height});
+	// Logo safe zone
+	// margin: calc(var(--db-logo-height, #{$db-logo-default-height}) * 0.5);
 
 	&[data-size="xs"] {
 		@extend %logo-size-xs;
