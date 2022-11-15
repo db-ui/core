@@ -14,6 +14,6 @@
 		"declaration-property-value-disallowed-list": null,
 		"scss/percent-placeholder-pattern": null,
 		"scss/at-mixin-pattern": null,
-		"order/order": null
+		"order/properties-alphabetical-order": null
 	}
 }
