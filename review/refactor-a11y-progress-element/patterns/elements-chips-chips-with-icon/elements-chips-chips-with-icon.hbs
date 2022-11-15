@@ -1,0 +1,17 @@
+{{! TODO: The following conditional construct should obviously get simplified in the future }}
+{{#unless iconVariants }}
+	{{> elements-chip label="Title" id-suffix="chip01" }}
+	{{#each variants }}
+		{{> elements-chip id-suffix=@index icon=../icon icon-after=../icon-after selection=../selection name=../name disabled=../disabled }}
+	{{/each}}
+
+	{{> elements-headline type="3" text="POIs" }}
+
+	{{#each pois }}
+		{{> elements-chip id-suffix=@index size=../size disabled=../disabled selection=../selection name=../name }}
+	{{/each}}
+{{else}}
+	{{#each iconVariants}}
+		<p>{{> elements-chip label="Title" id-suffix=@index }}</p>
+	{{/each }}
+{{/unless }}
