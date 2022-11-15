@@ -53,7 +53,7 @@
 	// POIs
 	&[data-variant="poi-essen-trinken"] {
 		background-color: $db-color-food-drink;
-		color: $db-colors-secondary-enabled;
+		color: $db-color-cool-gray-700;
 	}
 
 	&[data-variant="poi-einkaufen"] {
@@ -82,7 +82,7 @@
 
 	&[data-variant="poi-dienstleistungen"] {
 		background-color: $db-color-services;
-		color: $db-colors-secondary-enabled;
+		color: $db-color-cool-gray-700;
 	}
 
 	&[data-variant="poi-db-services-einrichtung"] {
