@@ -1,5 +1,4 @@
 {
 	"size": "xs",
-	"aria-description": "Example description for xs loading spinner",
-	"id": "elm-loadingindicator__description-xs"
+	"aria-description": "Example description for xs loading spinner"
 }
