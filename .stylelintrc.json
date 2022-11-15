@@ -13,6 +13,7 @@
 		"scss/at-extend-no-missing-placeholder": null,
 		"declaration-property-value-disallowed-list": null,
 		"scss/percent-placeholder-pattern": null,
-		"scss/at-mixin-pattern": null
+		"scss/at-mixin-pattern": null,
+		"order/properties-alphabetical-order": null
 	}
 }
