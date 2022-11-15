@@ -13,7 +13,7 @@
 		align-items: center;
 		display: flex;
 
-		padding-block: $db-spacing-fixed-normal-xs;
+		padding-block: db-spacing-fixed-normal-xs;
 		// Negating the padding left for moving the element into that direction with the same measures
 		transform: translateX(calc(var(--db-accordion---paddingLeft) * -1));
 		width: calc(
