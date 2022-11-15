@@ -1,6 +1,6 @@
 {{! TODO: evaluate on the correct role and aria-label in here - there's a duplicate currently with both label and labelledby (prefered) }}
 <nav class="cmp-pagination" aria-label="pagination" aria-labelledby="headline01">
-	<h2 id="headline01">Pagination</h2>
+	{{> elements-headline type='2' text='Pagination' id='headline01' }}
 	<ol>
 		<li>{{> elements-link value='Previous' title='Goto previous page' rel='prev' disabled='true' }}</li>
 		<li>{{> elements-link value='1' current='page' }}</li>
