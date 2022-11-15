@@ -9,7 +9,7 @@ $partial: false;
 @import "db-ui-core.variables";
 @import "../../_patterns/00-base/helpers";
 
-@import "@db-ui/base/build/scss/typescale";
+@import "@db-ui/base/build/scss/tonality";
 
 :root {
 	@extend %db-ui-functional;
