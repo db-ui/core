@@ -1,3 +1,4 @@
 {
-	"aria-description": "Example description for loading spinner"
+	"aria-description": "Example description for loading spinner",
+	"id": "elm-loadingindicator__description"
 }
