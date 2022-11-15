@@ -2,7 +2,7 @@
 
 	<section>
 		{{> elements-image src="../../images/db-ui-core_logo.png" alt="" width="48" height="48" }}
-		<h1>DB UI Core</h1>
+		{{> elements-headline type='1' text='DB UI Core' }}
 
 		{{> elements-image src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="Apache 2.0 license badge" }}
 		<a href="https://npmjs.com/package/@db-ui/core" target="_blank" rel="noopener noreferrer">{{> elements-image src="https://img.shields.io/npm/v/@db-ui/core.svg?color=rgb%28237%2C%2028%2C%2036%29" alt="npm version" }}</a>
@@ -26,29 +26,29 @@
 	</section>
 
 	<section>
-		<h2>Core principals</h2>
+		{{> elements-headline type='2' text='Core principals' }}
 
 		{{> components-cards variant="banner" }}
 	</section>
 
 	<section>
-		<h2>How to use</h2>
+		{{> elements-headline type='2' text='How to use' }}
 		<p>For using DB UI Core, you need to install it as a dependency to your project and then link it within your HTML / CSS.<br>
 		Please have a look into the <a href='https://github.com/db-ui/core/tree/main/docs/getStarted.adoc' target='_blank' rel='noopener noreferrer'>Docs / Get Started(docs)</a> for detailed instructions.<br>
 		In case that you're developing a JavaScript application, please have a look at <a href="https://db-ui.github.io/elements/" target="_blank">DB UI Elements</a>, that's based on DB UI Core and provides Web Components for easier integration into this tech context.</p>
 
-		<h2>More information</h2>
+		{{> elements-headline type='2' text='More information' }}
 		<p>Additionally we'll provide some more information over time regrading the whole ecosystem:</p>
 		{{> components-link-list }}
 		{{! TODO: Introduce these links:
 				How to contribute
 				List of contributers
 			}}
-		<h2>Give us your feedback!</h2>
+		{{> elements-headline type='2' text='Give us your feedback!' }}
 		<p>This is only the beta version of our framework and we really want your feedback - either within the {{> elements-link href="https://db.de/krnm74" value="DB UI Channel by Web Dev Community in Microsoft Teams (only available DB internally)" target="_blank" rel="noopener noreferrer" }}, or directly at {{> elements-link href="mailto:db-ux-designsystem@deutschebahn.com" value="db-ux-designsystem@deutschebahn.com" }}.<br>
 		We're particularly keen to add as many examples to the behaviours as possible, to further clarify them.</p>
-		<h2>Things to keep in mind</h2>
-		<h3>Developed for and driven by the community</h3>
+		{{> elements-headline type='2' text='Things to keep in mind' }}
+		{{> elements-headline type='3' text='Developed for and driven by the community' }}
 		<p>This is mainly a platform providing the space and technology for a common basis of curated components; their development is mainly driven by the community, adapted out of the work done in projects and through the huge amount of feedback that we're gaining out of the community. So please support us in any way possible, this is greatly appreciated!</p>
 	</section>
 </main>
