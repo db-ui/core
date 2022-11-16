@@ -12,17 +12,17 @@
 
 
 	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1668584380195" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1668599569473" media="all">
 
 	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1668584380195" media="all">
-	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1668584380195" media="all">
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1668584380195" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1668599569473" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1668599569473" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1668599569473" media="all">
 	<!-- dialog polyfill //-->
-	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1668584380195" media="all">
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1668599569473" media="all">
 
 	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1668584380195" media="all">
+	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1668599569473" media="all">
 	<!-- End Pattern Lab -->
 
 
@@ -67,15 +67,15 @@ documentation has useful tips on creating an effective description. //-->
 <h2>Accessibility support</h2>
 <p>For our special construct (the order of the <code>label</code> and <code>input</code> HTML tags) we need to additionaly set some further attributes on those HTML tags to better support assistive tools (screenreaders like JAWS and VoiceOver); set the <code>aria-labelledby</code>-attribute on the <code>input</code> and related <code>id</code> on the <code>label</code> as well as <code>aria-hidden=&quot;true&quot;</code>, e.g. like this:</p>
 <pre><code class="language-html">&lt;input
-	type=&quot;text&quot;
-	class=&quot;elm-input&quot;
-	placeholder=&quot;Projekt Name&quot;
-	name=&quot;input01&quot;
-	id=&quot;input01&quot;
-	aria-labelledby=&quot;input01-label&quot;
+  type=&quot;text&quot;
+  class=&quot;elm-input&quot;
+  placeholder=&quot;Projekt Name&quot;
+  name=&quot;input01&quot;
+  id=&quot;input01&quot;
+  aria-labelledby=&quot;input01-label&quot;
 /&gt;
 &lt;label class=&quot;elm-label&quot; for=&quot;input01&quot; aria-hidden=&quot;true&quot; id=&quot;input01-label&quot;
-	&gt;Textlabel&lt;/label
+  &gt;Textlabel&lt;/label
 &gt;
 </code></pre>
 <p>We've conducted some tests with those assistive tools that lead to the conclusion that either the labels content hasn't been read out to the screenreader user on those form fields directly, but the labels content has been read again after the form field e.g. on VoiceOver. So those declarations are necessary for this kind of HTML construct, that is especially relevant for form validation and floating label functionality via CSS only.</p>
@@ -121,6 +121,7 @@ documentation has useful tips on creating an effective description. //-->
 			<dl>
 	<dt>semitransparent:</dt>
 	<dd><!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+<!-- [html-validate-disable-next input-missing-label] -->
 <input type="text"
 	class="elm-input "
 	placeholder="Projekt Name"
@@ -143,6 +144,7 @@ documentation has useful tips on creating an effective description. //-->
 </dd>
 	<dt>white:</dt>
 	<dd><!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+<!-- [html-validate-disable-next input-missing-label] -->
 <input type="text"
 	class="elm-input "
 	placeholder="Projekt Name"
@@ -165,6 +167,7 @@ documentation has useful tips on creating an effective description. //-->
 </dd>
 	<dt>solid:</dt>
 	<dd><!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+<!-- [html-validate-disable-next input-missing-label] -->
 <input type="text"
 	class="elm-input "
 	placeholder="Projekt Name"
@@ -187,6 +190,7 @@ documentation has useful tips on creating an effective description. //-->
 </dd>
 	<dt>outline:</dt>
 	<dd><!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+<!-- [html-validate-disable-next input-missing-label] -->
 <input type="text"
 	class="elm-input "
 	placeholder="Projekt Name"
@@ -252,6 +256,7 @@ documentation has useful tips on creating an effective description. //-->
 		
 			<div class="pl-js-pattern-example">
 			<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+<!-- [html-validate-disable-next input-missing-label] -->
 <input type="text"
 	class="elm-input "
 	placeholder="Projekt Name"
@@ -315,6 +320,7 @@ documentation has useful tips on creating an effective description. //-->
 		
 			<div class="pl-js-pattern-example">
 			<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+<!-- [html-validate-disable-next input-missing-label] -->
 <input type="text"
 	class="elm-input "
 	placeholder="Projekt Name"
@@ -378,6 +384,7 @@ documentation has useful tips on creating an effective description. //-->
 		
 			<div class="pl-js-pattern-example">
 			<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+<!-- [html-validate-disable-next input-missing-label] -->
 <input type="text"
 	class="elm-input "
 	placeholder="Projekt Name"
@@ -441,6 +448,7 @@ documentation has useful tips on creating an effective description. //-->
 		
 			<div class="pl-js-pattern-example">
 			<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+<!-- [html-validate-disable-next input-missing-label] -->
 <input type="text"
 	class="elm-input "
 	placeholder="Projekt Name"
@@ -504,6 +512,7 @@ documentation has useful tips on creating an effective description. //-->
 		
 			<div class="pl-js-pattern-example">
 			<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+<!-- [html-validate-disable-next input-missing-label] -->
 <input type="text"
 	class="elm-input "
 	placeholder="Mindestens fünf Zeichen eingeben"
@@ -568,6 +577,7 @@ documentation has useful tips on creating an effective description. //-->
 		
 			<div class="pl-js-pattern-example">
 			<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+<!-- [html-validate-disable-next input-missing-label] -->
 <input type="text"
 	class="elm-input "
 	placeholder="Projekt Name"
@@ -631,6 +641,7 @@ documentation has useful tips on creating an effective description. //-->
 		
 			<div class="pl-js-pattern-example">
 			<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+<!-- [html-validate-disable-next input-missing-label] -->
 <input type="text"
 	class="elm-input "
 	placeholder="Projekt Name"
@@ -694,6 +705,7 @@ documentation has useful tips on creating an effective description. //-->
 		
 			<div class="pl-js-pattern-example">
 			<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+<!-- [html-validate-disable-next input-missing-label] -->
 <input type="search"
 	class="elm-input "
 	placeholder="Projekt Name"
@@ -757,6 +769,7 @@ documentation has useful tips on creating an effective description. //-->
 		
 			<div class="pl-js-pattern-example">
 			<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+<!-- [html-validate-disable-next input-missing-label] -->
 <input type="search"
 	class="elm-input "
 	placeholder="Projekt Name"
@@ -831,10 +844,10 @@ documentation has useful tips on creating an effective description. //-->
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1668584380195">
+<script id="pl-js-polyfill-insert-1668599569473">
   (function() {
     if (self != top) {
-      var cb = '1668584380195';
+      var cb = '1668599569473';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -847,7 +860,7 @@ documentation has useful tips on creating an effective description. //-->
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1668584380195" nomodule>
+<script id="pl-js-insert-1668599569473" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 
