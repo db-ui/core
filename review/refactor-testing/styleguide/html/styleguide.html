@@ -12,17 +12,17 @@
 
 
 	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1668579928682" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1668585727496" media="all">
 
 	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1668579928682" media="all">
-	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1668579928682" media="all">
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1668579928682" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1668585727496" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1668585727496" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1668585727496" media="all">
 	<!-- dialog polyfill //-->
-	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1668579928682" media="all">
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1668585727496" media="all">
 
 	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1668579928682" media="all">
+	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1668585727496" media="all">
 	<!-- End Pattern Lab -->
 
 
@@ -16465,8 +16465,17 @@ For optimal user experience, use the aria-description prop to let assistive tech
 			<div class="pl-js-pattern-example">
 			<div class="elm-progress">
 	<!-- [html-validate-disable-next no-inline-style] -->
-	<progress value="68"  max="100"  id="progress-label-01" data-type="loader"></progress>
-	<output for="progress-label-01">68%</output>
+	<progress
+			value="68"
+			 max="100"
+			
+		id="progress-01"
+		 data-type="loader"
+		 aria-describedby="progress-01-label"></progress>
+		<label
+			for="progress-01"
+			id="progress-01-label"
+			aria-hidden="true">68%</label>
 </div>
 
 			</div><!--end pl-js-pattern-example-->
@@ -16514,8 +16523,13 @@ For optimal user experience, use the aria-description prop to let assistive tech
 			<div class="pl-js-pattern-example">
 			<div class="elm-progress">
 	<!-- [html-validate-disable-next no-inline-style] -->
-	<progress value="68"  max="100"  id="progress-label-07" data-type="spinner"></progress>
-	
+	<progress
+			value="68"
+			 max="100"
+			
+		id="progress-07"
+		 data-type="spinner"
+		></progress>
 </div>
 
 			</div><!--end pl-js-pattern-example-->
@@ -16563,8 +16577,10 @@ For optimal user experience, use the aria-description prop to let assistive tech
 			<div class="pl-js-pattern-example">
 			<div class="elm-progress">
 	<!-- [html-validate-disable-next no-inline-style] -->
-	<progress  id="progress-label-08" data-type="spinner"></progress>
-	
+	<progress
+		id="progress-08"
+		 data-type="spinner"
+		></progress>
 </div>
 
 			</div><!--end pl-js-pattern-example-->
@@ -16625,6 +16641,7 @@ For optimal user experience, use the aria-description prop to let assistive tech
 			<div class="pl-js-pattern-example">
 			<input type="radio"
 	class="elm-radio "
+	
 	id="radio01"
 	
 	
@@ -16677,6 +16694,7 @@ For optimal user experience, use the aria-description prop to let assistive tech
 			<div class="pl-js-pattern-example">
 			<input type="radio"
 	class="elm-radio "
+	
 	id="radio02"
 	 checked
 	
@@ -16729,6 +16747,7 @@ For optimal user experience, use the aria-description prop to let assistive tech
 			<div class="pl-js-pattern-example">
 			<input type="radio"
 	class="elm-radio "
+	
 	id="radio03"
 	
 	 disabled
@@ -16781,6 +16800,7 @@ For optimal user experience, use the aria-description prop to let assistive tech
 			<div class="pl-js-pattern-example">
 			<input type="radio"
 	class="elm-radio "
+	
 	id="radio04"
 	 checked
 	 disabled
@@ -16833,12 +16853,13 @@ For optimal user experience, use the aria-description prop to let assistive tech
 			<div class="pl-js-pattern-example">
 			<input type="radio"
 	class="elm-radio "
+	
 	id="radio05"
 	
 	
 	value=""
 	
-	aria-invalid="true">
+	 aria-invalid="true">
 <label class="elm-label" for="radio05">Radio</label>
 
 			</div><!--end pl-js-pattern-example-->
@@ -19148,7 +19169,8 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 	<fieldset>
 		<legend>Please choose a flavour</legend>
 		<input type="radio"
-	class="elm-radio " name="flavour[]"
+	class="elm-radio "
+	 name="flavour[]"
 	id="input-vanilla"
 	
 	
@@ -19158,7 +19180,8 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 <label class="elm-label" for="input-vanilla">Vanilla</label>
 <br>
 		<input type="radio"
-	class="elm-radio " name="flavour[]"
+	class="elm-radio "
+	 name="flavour[]"
 	id="input-strawberry"
 	
 	
@@ -19168,7 +19191,8 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 <label class="elm-label" for="input-strawberry">Strawberry</label>
 <br>
 		<input type="radio"
-			class="elm-radio " name="flavour[]"
+			class="elm-radio "
+			 name="flavour[]"
 			id="input-chocolate"
 			
 			
@@ -23789,10 +23813,10 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1668579928682">
+<script id="pl-js-polyfill-insert-1668585727496">
   (function() {
     if (self != top) {
-      var cb = '1668579928682';
+      var cb = '1668585727496';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -23805,7 +23829,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1668579928682" nomodule>
+<script id="pl-js-insert-1668585727496" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 
