@@ -1,0 +1,12 @@
+<input type="radio"
+	class="elm-radio {{ styleModifier }}"
+	{{#if name}} name="{{ name }}"{{/if }}
+	id="{{ id }}{{#if size }}-{{ size }}{{/if }}"
+	{{#if checked}} checked{{/if }}
+	{{#if disabled}} disabled{{/if }}
+	value="{{ value }}"
+	{{#if size }} data-size="{{ size }}"{{/if }}
+	{{#if required }} required{{/if }}
+	{{#if describedbyid }} aria-describedby="{{ describedbyid }}"{{/if }}
+	{{#if invalid}}aria-invalid="true"{{/if }}
+><label class="elm-label" for="{{ id }}{{#if size }}-{{ size }}{{/if }}">{{ label }}</label>
