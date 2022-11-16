@@ -14,11 +14,15 @@
 		font-weight: $font-weight;
 		@if $font-local {
 			src: local("#{$font-name}"),
-				url("#{$fonts-path}#{$font-filename}.woff2?4r0080") format("woff2"),
-				url("#{$fonts-path}#{$font-filename}.woff?4r0080") format("woff");
+				url("#{$fonts-path}#{$font-filename}.woff2?4r0080")
+					format("woff2"),
+				url("#{$fonts-path}#{$font-filename}.woff?4r0080")
+					format("woff");
 		} @else {
-			src: url("#{$fonts-path}#{$font-filename}.woff2?4r0080") format("woff2"),
-				url("#{$fonts-path}#{$font-filename}.woff?4r0080") format("woff");
+			src: url("#{$fonts-path}#{$font-filename}.woff2?4r0080")
+					format("woff2"),
+				url("#{$fonts-path}#{$font-filename}.woff?4r0080")
+					format("woff");
 		}
 	}
 }
