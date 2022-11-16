@@ -12,17 +12,17 @@
 
 
 	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1668584223669" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1668599836899" media="all">
 
 	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1668584223669" media="all">
-	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1668584223669" media="all">
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1668584223669" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1668599836899" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1668599836899" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1668599836899" media="all">
 	<!-- dialog polyfill //-->
-	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1668584223669" media="all">
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1668599836899" media="all">
 
 	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1668584223669" media="all">
+	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1668599836899" media="all">
 	<!-- End Pattern Lab -->
 
 
@@ -95,12 +95,14 @@ documentation has useful tips on creating an effective description. //-->
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-					<input
+					<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
+		<input
 			class="elm-chip"
 			type="checkbox"
 			id="chip-multiple-chip01"
 			data-type="filter"
 			>
+		<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 		<label
 			for="chip-multiple-chip01"
 			role="button"
@@ -110,12 +112,14 @@ documentation has useful tips on creating an effective description. //-->
 			tabindex="0"
 			aria-hidden="true"
 			>Title</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-warning0"
 				data-type="filter"
 				>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-warning0"
 				role="button"
@@ -125,12 +129,14 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Warning</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-error1"
 				data-type="filter"
 				>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-error1"
 				role="button"
@@ -140,12 +146,14 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Error</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-informative2"
 				data-type="filter"
 				>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-informative2"
 				role="button"
@@ -155,12 +163,14 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Informative</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-success3"
 				data-type="filter"
 				>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-success3"
 				role="button"
@@ -171,14 +181,17 @@ documentation has useful tips on creating an effective description. //-->
 				aria-hidden="true"
 				>Success</label>
 
+	<!-- [html-validate-disable-next heading-level] -->
 	<h3 class="elm-headline ">POIs</h3>
 
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-poi-essen-trinken0"
 				data-type="filter"
 				>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-poi-essen-trinken0"
 				role="button"
@@ -188,12 +201,14 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Essen &amp; Trinken</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-poi-einkaufen1"
 				data-type="filter"
 				>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-poi-einkaufen1"
 				role="button"
@@ -203,12 +218,14 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Einkaufen</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-poi-gesundheit2"
 				data-type="filter"
 				>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-poi-gesundheit2"
 				role="button"
@@ -218,12 +235,14 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Gesundheit</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-poi-kunst-kultur3"
 				data-type="filter"
 				>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-poi-kunst-kultur3"
 				role="button"
@@ -233,12 +252,14 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Kunst &amp; Kultur</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-poi-wissenswertes4"
 				data-type="filter"
 				>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-poi-wissenswertes4"
 				role="button"
@@ -248,12 +269,14 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Wissenswertes</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-poi-freizeit5"
 				data-type="filter"
 				>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-poi-freizeit5"
 				role="button"
@@ -263,12 +286,14 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Freizeit</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-poi-zivile-rel-einrichtungen6"
 				data-type="filter"
 				>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-poi-zivile-rel-einrichtungen6"
 				role="button"
@@ -278,12 +303,14 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Zivile &amp; reli. Einrichtungen</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-poi-dienstleistungen7"
 				data-type="filter"
 				>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-poi-dienstleistungen7"
 				role="button"
@@ -293,12 +320,14 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Dienstleistungen</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-poi-db-services-einrichtung8"
 				data-type="filter"
 				>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-poi-db-services-einrichtung8"
 				role="button"
@@ -308,12 +337,14 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>DB Services &amp; Einrichtung</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-poi-wegeleitung9"
 				data-type="filter"
 				>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-poi-wegeleitung9"
 				role="button"
@@ -366,13 +397,15 @@ documentation has useful tips on creating an effective description. //-->
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-					<input
+					<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
+		<input
 			class="elm-chip"
 			type="radio"
 			id="chip-single-chip01"
 			name="selection"
 			data-type="selection"
 			>
+		<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 		<label
 			for="chip-single-chip01"
 			role="button"
@@ -382,6 +415,7 @@ documentation has useful tips on creating an effective description. //-->
 			tabindex="0"
 			aria-hidden="true"
 			>Title</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="radio"
@@ -389,6 +423,7 @@ documentation has useful tips on creating an effective description. //-->
 				name="selection"
 				data-type="selection"
 				>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-single-warning0"
 				role="button"
@@ -398,6 +433,7 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Warning</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="radio"
@@ -405,6 +441,7 @@ documentation has useful tips on creating an effective description. //-->
 				name="selection"
 				data-type="selection"
 				>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-single-error1"
 				role="button"
@@ -414,6 +451,7 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Error</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="radio"
@@ -421,6 +459,7 @@ documentation has useful tips on creating an effective description. //-->
 				name="selection"
 				data-type="selection"
 				>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-single-informative2"
 				role="button"
@@ -430,6 +469,7 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Informative</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="radio"
@@ -437,6 +477,7 @@ documentation has useful tips on creating an effective description. //-->
 				name="selection"
 				data-type="selection"
 				>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-single-success3"
 				role="button"
@@ -447,8 +488,10 @@ documentation has useful tips on creating an effective description. //-->
 				aria-hidden="true"
 				>Success</label>
 
+	<!-- [html-validate-disable-next heading-level] -->
 	<h3 class="elm-headline ">POIs</h3>
 
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="radio"
@@ -456,6 +499,7 @@ documentation has useful tips on creating an effective description. //-->
 				name="selection"
 				data-type="selection"
 				>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-single-poi-essen-trinken0"
 				role="button"
@@ -465,6 +509,7 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Essen &amp; Trinken</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="radio"
@@ -472,6 +517,7 @@ documentation has useful tips on creating an effective description. //-->
 				name="selection"
 				data-type="selection"
 				>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-single-poi-einkaufen1"
 				role="button"
@@ -481,6 +527,7 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Einkaufen</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="radio"
@@ -488,6 +535,7 @@ documentation has useful tips on creating an effective description. //-->
 				name="selection"
 				data-type="selection"
 				>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-single-poi-gesundheit2"
 				role="button"
@@ -497,6 +545,7 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Gesundheit</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="radio"
@@ -504,6 +553,7 @@ documentation has useful tips on creating an effective description. //-->
 				name="selection"
 				data-type="selection"
 				>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-single-poi-kunst-kultur3"
 				role="button"
@@ -513,6 +563,7 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Kunst &amp; Kultur</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="radio"
@@ -520,6 +571,7 @@ documentation has useful tips on creating an effective description. //-->
 				name="selection"
 				data-type="selection"
 				>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-single-poi-wissenswertes4"
 				role="button"
@@ -529,6 +581,7 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Wissenswertes</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="radio"
@@ -536,6 +589,7 @@ documentation has useful tips on creating an effective description. //-->
 				name="selection"
 				data-type="selection"
 				>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-single-poi-freizeit5"
 				role="button"
@@ -545,6 +599,7 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Freizeit</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="radio"
@@ -552,6 +607,7 @@ documentation has useful tips on creating an effective description. //-->
 				name="selection"
 				data-type="selection"
 				>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-single-poi-zivile-rel-einrichtungen6"
 				role="button"
@@ -561,6 +617,7 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Zivile &amp; reli. Einrichtungen</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="radio"
@@ -568,6 +625,7 @@ documentation has useful tips on creating an effective description. //-->
 				name="selection"
 				data-type="selection"
 				>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-single-poi-dienstleistungen7"
 				role="button"
@@ -577,6 +635,7 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Dienstleistungen</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="radio"
@@ -584,6 +643,7 @@ documentation has useful tips on creating an effective description. //-->
 				name="selection"
 				data-type="selection"
 				>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-single-poi-db-services-einrichtung8"
 				role="button"
@@ -593,6 +653,7 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>DB Services &amp; Einrichtung</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="radio"
@@ -600,6 +661,7 @@ documentation has useful tips on creating an effective description. //-->
 				name="selection"
 				data-type="selection"
 				>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-single-poi-wegeleitung9"
 				role="button"
@@ -652,12 +714,14 @@ documentation has useful tips on creating an effective description. //-->
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-					<p>	<input
+					<p>	<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
+	<input
 		class="elm-chip"
 		type="checkbox"
 		id="chip-multiple-0"
 		data-type="filter"
 		>
+	<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 	<label
 		for="chip-multiple-0"
 		role="button"
@@ -668,12 +732,14 @@ documentation has useful tips on creating an effective description. //-->
 		aria-hidden="true"
 		>Title</label>
 </p>
-		<p>	<input
+		<p>	<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
+	<input
 		class="elm-chip"
 		type="checkbox"
 		id="chip-multiple-1"
 		data-type="filter"
 		>
+	<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 	<label
 		for="chip-multiple-1"
 		role="button"
@@ -684,12 +750,14 @@ documentation has useful tips on creating an effective description. //-->
 		aria-hidden="true"
 		>Title</label>
 </p>
-		<p>	<input
+		<p>	<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
+	<input
 		class="elm-chip"
 		type="checkbox"
 		id="chip-multiple-2"
 		data-type="filter"
 		>
+	<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 	<label
 		for="chip-multiple-2"
 		role="button"
@@ -743,12 +811,14 @@ documentation has useful tips on creating an effective description. //-->
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-					<input
+					<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
+		<input
 			class="elm-chip"
 			type="checkbox"
 			id="chip-multiple-chip01"
 			data-type="filter"
 			 disabled>
+		<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 		<label
 			for="chip-multiple-chip01"
 			role="button"
@@ -758,12 +828,14 @@ documentation has useful tips on creating an effective description. //-->
 			tabindex="0"
 			aria-hidden="true"
 			>Title</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-warning0"
 				data-type="filter"
 				 disabled>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-warning0"
 				role="button"
@@ -773,12 +845,14 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Warning</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-error1"
 				data-type="filter"
 				 disabled>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-error1"
 				role="button"
@@ -788,12 +862,14 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Error</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-informative2"
 				data-type="filter"
 				 disabled>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-informative2"
 				role="button"
@@ -803,12 +879,14 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Informative</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-success3"
 				data-type="filter"
 				 disabled>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-success3"
 				role="button"
@@ -819,14 +897,17 @@ documentation has useful tips on creating an effective description. //-->
 				aria-hidden="true"
 				>Success</label>
 
+	<!-- [html-validate-disable-next heading-level] -->
 	<h3 class="elm-headline ">POIs</h3>
 
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-poi-essen-trinken0"
 				data-type="filter"
 				 disabled>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-poi-essen-trinken0"
 				role="button"
@@ -836,12 +917,14 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Essen &amp; Trinken</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-poi-einkaufen1"
 				data-type="filter"
 				 disabled>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-poi-einkaufen1"
 				role="button"
@@ -851,12 +934,14 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Einkaufen</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-poi-gesundheit2"
 				data-type="filter"
 				 disabled>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-poi-gesundheit2"
 				role="button"
@@ -866,12 +951,14 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Gesundheit</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-poi-kunst-kultur3"
 				data-type="filter"
 				 disabled>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-poi-kunst-kultur3"
 				role="button"
@@ -881,12 +968,14 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Kunst &amp; Kultur</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-poi-wissenswertes4"
 				data-type="filter"
 				 disabled>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-poi-wissenswertes4"
 				role="button"
@@ -896,12 +985,14 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Wissenswertes</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-poi-freizeit5"
 				data-type="filter"
 				 disabled>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-poi-freizeit5"
 				role="button"
@@ -911,12 +1002,14 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Freizeit</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-poi-zivile-rel-einrichtungen6"
 				data-type="filter"
 				 disabled>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-poi-zivile-rel-einrichtungen6"
 				role="button"
@@ -926,12 +1019,14 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Zivile &amp; reli. Einrichtungen</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-poi-dienstleistungen7"
 				data-type="filter"
 				 disabled>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-poi-dienstleistungen7"
 				role="button"
@@ -941,12 +1036,14 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>Dienstleistungen</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-poi-db-services-einrichtung8"
 				data-type="filter"
 				 disabled>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-poi-db-services-einrichtung8"
 				role="button"
@@ -956,12 +1053,14 @@ documentation has useful tips on creating an effective description. //-->
 				tabindex="0"
 				aria-hidden="true"
 				>DB Services &amp; Einrichtung</label>
+			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-poi-wegeleitung9"
 				data-type="filter"
 				 disabled>
+			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-poi-wegeleitung9"
 				role="button"
@@ -1026,10 +1125,10 @@ documentation has useful tips on creating an effective description. //-->
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1668584223669">
+<script id="pl-js-polyfill-insert-1668599836899">
   (function() {
     if (self != top) {
-      var cb = '1668584223669';
+      var cb = '1668599836899';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -1042,7 +1141,7 @@ documentation has useful tips on creating an effective description. //-->
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1668584223669" nomodule>
+<script id="pl-js-insert-1668599836899" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 
