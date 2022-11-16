@@ -1,4 +1,5 @@
-@import "../../../00-base/icons/icons.helpers";
+@use "@db-ui/base/build/scss/helpers/functions" as *;
+@use "@db-ui/base/build/scss/icon/icons.helpers" as *;
 
 // We're changing this via a demonstration SCSS file here, but within a real project it's obviously the variable $metanavigation-iconOnly--maxWidth that could get changed for that instead
 .cmp-metanavigation {

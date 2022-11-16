@@ -1,4 +1,4 @@
-@import "../../../css/helpers/functions";
+@use "@db-ui/base/build/scss/helpers/functions" as *;
 
 $brand-image--width: 39px !default;
 $image-logo--maxwidth: 200px !default;

@@ -9,8 +9,8 @@ $icons-path: "../icons/" !default;
 $images-path: "../images/" !default;
 $fonts-path: "../fonts/" !default;
 
-@import "../_patterns/00-base/icons/icons.variables";
-@import "../_patterns/00-base/icons/icons.font-faces";
+@use "@db-ui/base/build/scss/icon/icons.variables" as *;
+@use "@db-ui/base/build/scss/icon/icons.font-faces" as *;
 
 :root {
 	// Overwriting the referenced SVG icons as this is going to get inlined and the path would be relative to the pages URL instead of the CSS, which would break

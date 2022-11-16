@@ -1,4 +1,4 @@
-@import "../../../css/helpers/functions";
+@use "@db-ui/base/build/scss/helpers/functions" as *;
 
 $rea-header-cmp-brand-padding-top: to-rem(
 	$pxValue: 32

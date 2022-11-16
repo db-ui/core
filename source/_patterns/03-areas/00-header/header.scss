@@ -1,6 +1,6 @@
+@use "@db-ui/base/build/scss/helpers/functions" as *;
 @import "../../../css/partials.meta";
 @import "header.variables";
-@import "../../../css/helpers/functions";
 
 .rea-header {
 	@include clearfix($partial: $partial);

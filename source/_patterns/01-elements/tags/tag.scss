@@ -1,3 +1,7 @@
+@use "@db-ui/base/build/scss/variables" as *;
+@use "@db-ui/base/build/scss/helpers/functions" as *;
+@use "@db-ui/base/build/scss/icon/icons.variables" as *;
+@use "@db-ui/base/build/scss/icon/icons.helpers" as *;
 @import "tag.variables";
 
 .elm-tag {
@@ -97,7 +101,7 @@
 	// Icons
 	&[data-icon],
 	&[data-icon-before] {
-		@include iconMeta(20);
+		@include icon-meta(20);
 
 		&::before {
 			--icon-margin-after: #{to-rem($pxValue: 2)};
@@ -105,7 +109,7 @@
 	}
 
 	&[data-icon-after] {
-		@include iconMeta($size: 20, $position: "after");
+		@include icon-meta($size: 20, $position: "after");
 
 		&::after {
 			--icon-margin-before: #{to-rem($pxValue: 2)};

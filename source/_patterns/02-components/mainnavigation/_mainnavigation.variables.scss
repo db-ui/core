@@ -1,6 +1,7 @@
-@import "../../../css/helpers/functions";
-@import "../../00-base/icons/icons.variables";
-@import "../../00-base/icons/icons.helpers";
+@use "@db-ui/base/build/scss/helpers/functions" as *;
+@use "@db-ui/base/build/scss/icon/icons.variables" as *;
+@use "@db-ui/base/build/scss/icon/icons.helpers" as *;
+@import "../../../css/db-ui-core.variables";
 
 $header-big-link-paddingTop: 32 * 0.0625 !default;
 $header---backgroundColor: #fdfdfd !default; // TODO: This would need to get replaced by the correct (semantic) color

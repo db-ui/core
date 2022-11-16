@@ -1,4 +1,5 @@
-@import "../../../css/helpers/functions";
+@use "@db-ui/base/build/scss/variables" as *;
+@use "@db-ui/base/build/scss/helpers/functions" as *;
 
 // offset-x | offset-y | blur-radius | spread-radius | color
 $header---boxShadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1),

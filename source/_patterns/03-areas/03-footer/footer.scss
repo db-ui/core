@@ -1,7 +1,8 @@
 @charset "utf-8";
 
+@use "@db-ui/base/build/scss/variables" as *;
+@use "@db-ui/base/build/scss/helpers/functions" as *;
 @import "../../../css/partials.meta";
-@import "../../../css/helpers/functions";
 @import "footer.variables";
 
 .rea-footer {
