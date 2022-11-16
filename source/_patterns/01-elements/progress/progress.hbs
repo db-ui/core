@@ -8,7 +8,7 @@
 		{{/if}}
 		id="{{ id }}"
 		{{#if type}} data-type="{{type}}"{{/if }}
-		aria-describedby="{{ id }}-label"></progress>
+		{{#if_eq type 'loader'}} aria-describedby="{{ id }}-label"{{/if_eq }}></progress>
 	{{#if_eq type 'loader'}}
 		{{#if value}}<label
 			for="{{ id }}"
