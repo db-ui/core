@@ -1,4 +1,4 @@
-$form-elements-color: $db-color-cool-gray-700 !default;
+$form-elements-color: $db-colors-secondary-enabled !default;
 $form-elements-border-radius: 4px !default;
 
 $form-elements---borderTop: 1px solid var(--formElement---borderTopColor) !default;
@@ -9,30 +9,30 @@ $form-elements---borderLeft: 1px solid var(--formElement---borderLeftColor) !def
 // ### Style variations ###
 // Semitransparent
 $form-elements-semitransparent-background-color: rgba(
-	$db-color-cool-gray-700,
+	$db-colors-secondary-enabled,
 	0.05
 ) !default;
 $form-elements-semitransparent-border-bottom-color: rgba(
-	$db-color-cool-gray-700,
+	$db-colors-secondary-enabled,
 	0.5
 ) !default;
 
 // White
-$form-elements-white-background-color: $db-color-white !default;
+$form-elements-white-background-color: $db-colors-secondary-on-enabled !default;
 $form-elements-white-border-bottom-color: rgba(
-	$db-color-cool-gray-700,
+	$db-colors-secondary-enabled,
 	0.5
 ) !default;
 
 // Solid
-$form-elements-solid-background-color: $db-color-cool-gray-100 !default;
+$form-elements-solid-background-color: $db-colors-secondary-on-enabled !default;
 $form-elements-solid-border-bottom-color: rgba(
-	$db-color-cool-gray-700,
+	$db-colors-secondary-enabled,
 	0.5
 ) !default;
 
 // Outline
 $form-elements-outline-border-color: rgba(
-	$db-color-cool-gray-700,
+	$db-colors-secondary-enabled,
 	0.25
 ) !default;

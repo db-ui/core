@@ -46,6 +46,7 @@ nav,
 // Focus styles
 :is(a, button, input, textarea, summary) {
 	--db-focus-outline-size: max(2px, 0.08em);
+	transition: outline 0.06s;
 
 	&:focus-visible {
 		outline: var(--db-focus-outline-size)
@@ -63,6 +64,6 @@ nav,
 	list-style-type: "\2022"+ "   ";
 
 	li::marker {
-		color: $db-color-red-500;
+		color: $db-colors-primary-enabled;
 	}
 }

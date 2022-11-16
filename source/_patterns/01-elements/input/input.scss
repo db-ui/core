@@ -13,7 +13,7 @@
 	line-height: to-rem($pxValue: 24);
 	max-width: 100%;
 
-	padding: $db-spacing-s $db-spacing-m;
+	padding: $db-spacing-fixed-normal-xs $db-spacing-fixed-normal-m;
 
 	width: 100%;
 
@@ -32,7 +32,7 @@
 	&:focus,
 	&:hover {
 		&:not(:disabled) {
-			--formElement---borderColor: #{$db-color-cool-gray-400};
+			--formElement---borderColor: #{$db-colors-secondary-enabled};
 		}
 	}
 
@@ -81,12 +81,15 @@
 		}
 
 		& + .elm-label {
-			color: $db-color-cool-gray-500;
+			color: $db-colors-secondary-enabled;
 			display: block;
 			font-size: to-rem($pxValue: 12);
 
 			margin-bottom: -#{to-rem($pxValue: 18)};
-			transform: translate($db-spacing-m, -#{to-rem($pxValue: 41)});
+			transform: translate(
+				$db-spacing-fixed-normal-m,
+				-#{to-rem($pxValue: 41)}
+			);
 
 			& + .description {
 				margin-top: 0;
@@ -102,25 +105,25 @@
 		}
 
 		&::placeholder {
-			color: $db-color-cool-gray-500;
+			color: $db-colors-secondary-enabled;
 		}
 
 		// TODO: Evaluate whether those could get moved to ../_form-elements.scss
 		// Validation
 		&:required {
 			&:valid:not([aria-invalid]) {
-				--formElement---borderColor: #{$db-color-green-600};
+				--formElement---borderColor: #{$db-colors-success-enabled};
 			}
 
 			&:invalid {
 				&:not(:placeholder-shown) {
-					--formElement---borderColor: #{$db-color-red-500};
+					--formElement---borderColor: #{$db-colors-primary-enabled};
 				}
 			}
 		}
 
 		&[aria-invalid="true"] {
-			--formElement---borderColor: #{$db-color-red-500};
+			--formElement---borderColor: #{$db-colors-primary-enabled};
 		}
 
 		// ### Style variations

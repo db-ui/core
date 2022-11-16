@@ -15,7 +15,7 @@
 			}
 
 			&[aria-selected="true"] {
-				color: $db-color-red-500;
+				color: $db-colors-primary-enabled;
 			}
 		}
 	}
@@ -72,7 +72,8 @@
 
 				&:hover,
 				&:focus {
-					background-color: $db-color-cool-gray-200;
+					// TODO: We need to replace this by its correct color variable
+					background-color: #d7dce1;
 				}
 			}
 		}
@@ -92,7 +93,7 @@
 				padding-bottom: to-rem($pxValue: 22);
 
 				&:hover {
-					color: $db-color-red-500;
+					color: $db-colors-primary-enabled;
 				}
 
 				&::after {

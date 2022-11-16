@@ -19,7 +19,7 @@
 			}
 
 			&::before {
-				color: $db-color-red;
+				color: $db-colors-primary-enabled;
 				display: inline-block;
 				font-size: to-rem($pxValue: 12);
 				font-weight: 700;

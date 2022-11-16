@@ -25,7 +25,8 @@
 		background-position: right to-rem($pxValue: 11) center;
 		background-repeat: no-repeat;
 		height: to-rem($pxValue: 44);
-		padding: to-rem($pxValue: 20) to-rem($pxValue: 42) 0 $db-spacing-m;
+		padding: to-rem($pxValue: 20) to-rem($pxValue: 42) 0
+			$db-spacing-fixed-normal-m;
 
 		// Floating labels
 		& + .elm-label {
@@ -43,7 +44,10 @@
 			& + .elm-label {
 				color: $select-floatingLabel--color;
 				font-size: to-rem($pxValue: 16);
-				transform: translate($db-spacing-m, -#{to-rem($pxValue: 35)});
+				transform: translate(
+					$db-spacing-fixed-normal-m,
+					-#{to-rem($pxValue: 35)}
+				);
 			}
 		}
 	}
@@ -70,7 +74,10 @@
 		display: block;
 		font-size: to-rem($pxValue: 12);
 		margin-bottom: -#{to-rem($pxValue: 18)};
-		transform: translate($db-spacing-m, -#{to-rem($pxValue: 41)});
+		transform: translate(
+			$db-spacing-fixed-normal-m,
+			-#{to-rem($pxValue: 41)}
+		);
 		transition: opacity, transform 150ms;
 		// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
 		@media (prefers-reduced-motion: reduce) {
@@ -82,7 +89,10 @@
 		margin-top: to-rem($pxValue: 16);
 
 		& + .elm-label {
-			transform: translate($db-spacing-m, -#{to-rem($pxValue: 100)});
+			transform: translate(
+				$db-spacing-fixed-normal-m,
+				-#{to-rem($pxValue: 100)}
+			);
 		}
 	}
 
@@ -93,11 +103,13 @@
 
 	option {
 		&:not(:disabled):hover {
-			background-color: $db-color-cool-gray-200;
+			// TODO: We need to replace this by its correct color variable
+			background-color: #d7dce1;
 		}
 
 		&:checked {
-			background-color: $db-color-cool-gray-200;
+			// TODO: We need to replace this by its correct color variable
+			background-color: #d7dce1;
 		}
 	}
 }

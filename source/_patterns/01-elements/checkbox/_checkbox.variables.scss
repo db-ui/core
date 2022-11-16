@@ -3,10 +3,10 @@
 @import "../../00-base/colors/colors.variables";
 
 $checkbox---backgroundColor: rgba(255, 255, 255, 0.1) !default;
-$checkbox---borderColor: $db-color-cool-gray-700 !default;
-$checkbox---color: $db-color-cool-gray-700 !default;
+$checkbox---borderColor: $db-colors-secondary-enabled !default;
+$checkbox---color: $db-colors-secondary-enabled !default;
 
-$checkbox--checked-backgroundColor: $db-color-cool-gray-700 !default;
+$checkbox--checked-backgroundColor: $db-colors-secondary-enabled !default;
 $checkbox--checked-color: #fff !default;
 
 $checkbox-hover-checked-backgroundColor: #52575f !default;
