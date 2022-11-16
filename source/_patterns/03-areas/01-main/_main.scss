@@ -4,9 +4,7 @@
 
 @import "../../../css/helpers/clearfix";
 
-/* stylelint-disable scss/at-import-partial-extension */
 @import "main.variables";
-/* stylelint-enable scss/at-import-partial-extension */
 
 .rea-main {
 	@include clearfix();

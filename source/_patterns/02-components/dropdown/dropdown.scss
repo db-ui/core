@@ -1,8 +1,6 @@
-/* stylelint-disable scss/at-import-partial-extension */
 @import "../../../css/partials.meta";
 @import "../overflow-menu/overflow-menu";
 @import "dropdown.variables";
-/* stylelint-enable scss/at-import-partial-extension */
 
 .cmp-dropdown {
 	@extend .cmp-overflow-menu;

@@ -1,7 +1,5 @@
 @import "helpers/functions";
-/* stylelint-disable scss/at-import-partial-extension */
 @import "db-ui-core.variables";
-/* stylelint-enable scss/at-import-partial-extension */
 @import "@db-ui/base/build/scss/variables";
 @import "../_patterns/01-elements/headline/headline";
 $fonts-path: "../fonts/";

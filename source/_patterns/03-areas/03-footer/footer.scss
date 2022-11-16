@@ -1,10 +1,8 @@
 @charset "utf-8";
 
-/* stylelint-disable scss/at-import-partial-extension */
 @import "../../../css/partials.meta";
 @import "../../../css/helpers/functions";
 @import "footer.variables";
-/* stylelint-enable scss/at-import-partial-extension */
 
 .rea-footer {
 	@include clearfix($partial: $partial);

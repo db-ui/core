@@ -1,7 +1,5 @@
-/* stylelint-disable scss/at-import-partial-extension */
 @import "progress.variables";
 @import "../progress.variables";
-/* stylelint-enable scss/at-import-partial-extension */
 
 .pl-js-pattern-example {
 	[id^="elements-progress-"][id*="-dark-background"] & {

@@ -1,7 +1,5 @@
-/* stylelint-disable scss/at-import-partial-extension */
 @import "../../../css/db-ui-core.variables";
 @import "fonts.variables";
-/* stylelint-enable scss/at-import-partial-extension */
 
 @each $font-name, $font-meta in $font-families {
 	$font-family: map-get($font-meta, "font-family");

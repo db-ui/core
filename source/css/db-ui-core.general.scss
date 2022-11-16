@@ -1,10 +1,8 @@
 /* *****
 	This is mainly meant to get included within scoped components like e.g. within StencilJS Custom Components / DB UI Elements
 ***** */
-/* stylelint-disable scss/at-import-partial-extension */
 
 @import "db-ui-core.variables";
-/* stylelint-enable scss/at-import-partial-extension */
 @import "@csstools/normalize.css/normalize";
 @import "../_patterns/00-base/init";
 @import "fonts.general";

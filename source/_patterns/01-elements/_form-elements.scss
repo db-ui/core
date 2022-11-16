@@ -1,7 +1,5 @@
 @import "../../css/helpers/functions";
-/* stylelint-disable scss/at-import-partial-extension */
 @import "form-elements.variables";
-/* stylelint-enable scss/at-import-partial-extension */
 
 %form-element {
 	--formElement---borderTopColor: var(

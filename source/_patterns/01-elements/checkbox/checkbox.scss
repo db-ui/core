@@ -1,9 +1,7 @@
 @charset "utf-8";
 
 @import "../../../css/partials.meta";
-/* stylelint-disable scss/at-import-partial-extension */
 @import "checkbox.variables";
-/* stylelint-enable scss/at-import-partial-extension */
 
 .elm-checkbox {
 	@include icon("\00A0", 24, "outline", $partial: $partial);

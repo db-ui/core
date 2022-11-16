@@ -1,7 +1,5 @@
 @import "../../../css/partials.meta";
-/* stylelint-disable scss/at-import-partial-extension */
 @import "link.variables";
-/* stylelint-enable scss/at-import-partial-extension */
 
 .elm-link {
 	border-radius: to-rem($pxValue: 4);

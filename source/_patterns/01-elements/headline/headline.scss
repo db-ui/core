@@ -1,7 +1,5 @@
 @use "sass:math";
-/* stylelint-disable scss/at-import-partial-extension */
 @import "headline.variables";
-/* stylelint-enable scss/at-import-partial-extension */
 
 .elm-headline {
 	margin-bottom: to-rem($pxValue: 16);
