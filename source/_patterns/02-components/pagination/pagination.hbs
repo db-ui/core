@@ -1,5 +1,6 @@
-{{! TODO: evaluate on the correct role and aria-label in here - there's a duplicate currently with both label and labelledby (prefered) }}
+{{! TODO: evaluate on the correct role and aria-label in here - there's a duplication currently with both label and labelledby (prefered); and probably we won't need a nav element }}
 <nav class="cmp-pagination" aria-label="pagination" aria-labelledby="headline01">
+	<!-- [html-validate-disable-next heading-level] -->
 	{{> elements-headline type='2' text='Pagination' id='headline01' }}
 	<ol>
 		<li>{{> elements-link value='Previous' title='Goto previous page' rel='prev' disabled='true' }}</li>
