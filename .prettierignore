@@ -12,3 +12,4 @@ dependencyGraph.json
 source/js/*.min.js*
 package-lock.json
 *.hbs
+out/

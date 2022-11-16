@@ -6,6 +6,7 @@
 	@extend %form-element;
 	appearance: none;
 	font-size: to-rem($pxValue: 16);
+
 	// For IE
 	&::-ms-expand {
 		display: none;

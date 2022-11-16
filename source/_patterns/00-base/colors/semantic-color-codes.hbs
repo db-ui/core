@@ -2,10 +2,11 @@
 	{{#each listItems.light}}
 		<li>
 			{{name}}
+			<!-- [html-validate-disable-next no-inline-style -- we're doing inline-styling for simplification here] -->
 			<span class="sg-swatch" style="background-color: {{hex}}"></span>
 			<span class="sg-label">
 				{{scssvariable}}
-				<br />
+				<br>
 				{{hex}}
 			</span>
 		</li>
@@ -14,12 +15,14 @@
 {{! TODO: Let's integrate the following even nicer in the future, after the themes have been correctly implemented }}
 <ul class="sg-colors">
 	{{#each listItems.dark}}
+		<!-- [html-validate-disable-next no-inline-style -- we're doing inline-styling for simplification here] -->
 		<li style="background-color: #282D37; color: #FDFDFD;">
 			{{name}}
+			<!-- [html-validate-disable-next no-inline-style -- we're doing inline-styling for simplification here] -->
 			<span class="sg-swatch" style="background-color: {{hex}}"></span>
 			<span class="sg-label">
 				{{scssvariable}}
-				<br />
+				<br>
 				{{hex}}
 			</span>
 		</li>
