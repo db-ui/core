@@ -3,23 +3,23 @@
 
 .elm-logo {
 	$logo-sizes: (
-		"xs": (
+		"xsmall": (
 			"width": 20px,
 			"height": 14px
 		),
-		"s": (
+		"small": (
 			"width": 29px,
 			"height": 20px
 		),
-		"m": (
+		"medium": (
 			"width": 34px,
 			"height": 24px
 		),
-		"l": (
+		"large": (
 			"width": 40px,
 			"height": 28px
 		),
-		"xl": (
+		"xlarge": (
 			"width": 56px,
 			"height": 40px
 		)
@@ -31,24 +31,24 @@
 	// Logo safe zone
 	// margin: calc(var(--db-logo-height, #{$db-logo-default-height}) * 0.5);
 
-	&[data-size="xs"] {
-		@extend %logo-size-xs;
+	&[data-size="xsmall"] {
+		@extend %logo-size-xsmall;
 	}
 
-	&[data-size="s"] {
-		@extend %logo-size-s;
+	&[data-size="small"] {
+		@extend %logo-size-small;
 	}
 
-	&[data-size="m"] {
-		@extend %logo-size-m;
+	&[data-size="medium"] {
+		@extend %logo-size-medium;
 	}
 
-	&[data-size="l"] {
-		@extend %logo-size-l;
+	&[data-size="large"] {
+		@extend %logo-size-large;
 	}
 
-	&[data-size="xl"] {
-		@extend %logo-size-xl;
+	&[data-size="xlarge"] {
+		@extend %logo-size-xlarge;
 	}
 
 	@each $name, $dimensions in $logo-sizes {

@@ -17,8 +17,8 @@ The fallback for an undefined `--db-logo-color` is our DB Red (`#f01414`), and `
 
 ### SCSS (recommended)
 
-Extend one of the size SCSS placeholders in case that you don't want the default (xl, 58px width, 40px height): `%logo-size-xs`, `%logo-size-s`, `%logo-size-m`, `%logo-size-l` or `%logo-size-xl`
+Extend one of the size SCSS placeholders in case that you don't want the default (xlarge, 58px width, 40px height): `%logo-size-xsmall`, `%logo-size-small`, `%logo-size-medium`, `%logo-size-large` or `%logo-size-xlarge`
 
 ### HTML attribute
 
-You could set the different button sizes via the `data-size` attribute, the default is `xl` and in that case is optional.
+You could set the different button sizes via the `data-size` attribute, the default is `xlarge` and in that case is optional.
