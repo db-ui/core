@@ -6,6 +6,23 @@
 
 	// * TODO: These declarations make sense for the moment, but should get aligned with overall definitions of spacing around elements
 	margin-top: to-rem($pxValue: 24);
+
+	&[data-pulse] {
+		&::after {
+			background: var(--db-pulse-background, #ec0016);
+			border-radius: calc(
+				var(--db-logo-height, #{$db-logo-default-height}) / 7 * 0.5
+			);
+			content: "";
+			display: block;
+			margin-bottom: var(--db-pulse-margin-bottom, 14px);
+			margin-top: calc(
+				var(--db-logo-height, #{$db-logo-default-height}) * 0.5
+			);
+			width: var(--db-logo-width, #{$db-logo-default-width});
+			height: calc(var(--db-logo-height, #{$db-logo-default-height}) / 7);
+		}
+	}
 }
 
 h1,
