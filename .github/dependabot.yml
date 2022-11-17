@@ -7,8 +7,6 @@ updates:
       interval: "daily"
       time: "03:00"
       timezone: "Europe/Berlin"
-    reviewers:
-      - "github-actions"
     pull-request-branch-name:
       separator: "-"
 
@@ -20,8 +18,6 @@ updates:
       interval: "daily"
       time: "03:00"
       timezone: "Europe/Berlin"
-    reviewers:
-      - "github-actions"
     pull-request-branch-name:
       separator: "-"
     # https://github.com/dependabot/dependabot-core/issues/5226#issuecomment-1179434437
