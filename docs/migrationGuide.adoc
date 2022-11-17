@@ -6,6 +6,15 @@ Especially the following aspects have changed through the various different rele
 
 == DB UI Core 3.0.0 Migration Guide
 
+=== Using SCSS/SASS sources
+
+==== Compiler
+
+We've removed the following files, that we already deprecated within the previous major version:
+- `@db-ui/core/sources/css/enterprise/db-ui-core-include.scss`
+- `@db-ui/core/sources/css/enterprise/db-ui-core-rollup.scss`
+- `@db-ui/core/sources/css/enterprise/db-ui-core-webpack.scss`
+
 === progress
 
 We've remove the deprecated previous HTML implementation of the label by an `output` element and replaced it by an actual `label` element. Necessary changes:
