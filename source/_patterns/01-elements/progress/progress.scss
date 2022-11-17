@@ -96,7 +96,6 @@
 					background: none;
 				}
 
-				& + output, // legacy; TODO: remove with the next major release
 				& + label {
 					align-items: center;
 					background: $progress-conic-inner-backgroundColor; // * TODO: possibly rework variable naming
