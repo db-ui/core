@@ -4,6 +4,18 @@ As with every release you're recommended to do a visual regression testing for y
 
 Especially the following aspects have changed through the various different releases and would need your review and probably adaptions within your code base.
 
+== DB UI Core 2.2.0 Migration Guide
+
+=== progress element
+
+We've replaced the previous HTML implementation of the label / an actual `label` element by an `output` element. Necessary changes:
+
+- replaced `output` element by `label` element
+- especially for screenreader optimization added the following two attributes to this `label` element:
+`id="{{ id }}-label" aria-hidden="true"`
+- The `id`-attributes value on that `label` element needs to match the following attributes values that needs to get added onto the `progress` HTML tag itself:
+`aria-describedby="{{ id }}-label"`
+
 == DB UI Core 2.0.0 Migration Guide
 
 === Using SCSS/SASS sources
