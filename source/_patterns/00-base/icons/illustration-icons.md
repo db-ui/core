@@ -8,12 +8,12 @@ You could reference the multicolor icons directly via the `<use>` HTML tag withi
 
 ```html
 <svg
-	xmlns="http://www.w3.org/2000/svg"
-	width="64"
-	height="64"
-	aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  width="64"
+  height="64"
+  aria-hidden="true"
 >
-	<use href="/icons/illustrative/action/db_ic_il_alarm_clock.svg#icon"></use>
+  <use href="/icons/illustrative/action/db_ic_il_alarm_clock.svg#icon"></use>
 </svg>
 ```
 

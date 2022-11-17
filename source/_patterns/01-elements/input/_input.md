@@ -28,15 +28,15 @@ For our special construct (the order of the `label` and `input` HTML tags) we ne
 
 ```html
 <input
-	type="text"
-	class="elm-input"
-	placeholder="Projekt Name"
-	name="input01"
-	id="input01"
-	aria-labelledby="input01-label"
+  type="text"
+  class="elm-input"
+  placeholder="Projekt Name"
+  name="input01"
+  id="input01"
+  aria-labelledby="input01-label"
 />
 <label class="elm-label" for="input01" aria-hidden="true" id="input01-label"
-	>Textlabel</label
+  >Textlabel</label
 >
 ```
 
