@@ -35,7 +35,7 @@
 			progress {
 				--progress-value--backgroundColor: #{$progress-onDarkBackground-value-backgroundColor};
 
-				& + output {
+				& + label {
 					background-color: $progress-onDarkBackground-conic-inner-backgroundColor; // * TODO: possibly rework variable naming
 				}
 			}
