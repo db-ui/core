@@ -7,9 +7,9 @@ $icons-path: "../../icons/" !default;
 $images-path: "../../images/" !default;
 $fonts-path: "../../fonts/" !default;
 
-@use "@db-ui/base/build/scss/variables" as *;
-@use "@db-ui/base/build/scss/variables.global" as *;
-@use "@db-ui/base/build/scss/color-placeholder" as *;
+@forward "@db-ui/base/build/scss/variables";
+@forward "@db-ui/base/build/scss/variables.global";
+@forward "@db-ui/base/build/scss/color-placeholder";
 
 // General configurations
 $dbBaseFontSize: 16px;
