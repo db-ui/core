@@ -9,6 +9,14 @@ $font-families: (
 		"font-style": normal,
 		"font-local": true
 	),
+	"DB Screen Head Regular": (
+		"font-family": "DB Screen Head",
+		"font-filename": "dbscreenhead-regular",
+		// normal font weight
+		"font-weight": 400,
+		"font-style": normal,
+		"font-local": true
+	),
 	"DB Screen Head Black": (
 		"font-family": "DB Screen Head",
 		"font-filename": "dbscreenhead-black",
@@ -33,6 +41,20 @@ $font-families: (
 			"font-style": normal,
 			"font-local": true
 		),
+	"DB Screen Sans Medium": (
+		"font-family": "DB Screen Sans",
+		"font-filename": "dbscreensans-medium",
+		"font-weight": 500,
+		"font-style": normal,
+		"font-local": true
+	),
+	"DB Screen Sans Semibold": (
+		"font-family": "DB Screen Sans",
+		"font-filename": "dbscreensans-semibold",
+		"font-weight": 600,
+		"font-style": normal,
+		"font-local": true
+	),
 	"DB Screen Sans Bold": (
 		"font-family": "DB Screen Sans",
 		"font-filename": "dbscreensans-bold",
