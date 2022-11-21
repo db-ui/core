@@ -1,3 +1,6 @@
+@use "@db-ui/base/build/scss/variables" as *;
+@use "@db-ui/base/build/scss/helpers/functions" as *;
+@use "@db-ui/base/build/scss/icon/icons.helpers" as *;
 @import "../../../css/partials.meta";
 @import "pagination.variables";
 

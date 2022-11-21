@@ -1,6 +1,7 @@
 @charset "utf-8";
 @use "sass:math";
 
+@use "@db-ui/base/build/scss/variables" as *;
 @import "loading-indicator.variables";
 
 .elm-loadingindicator {

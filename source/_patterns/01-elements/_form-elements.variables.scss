@@ -1,3 +1,5 @@
+@use "@db-ui/base/build/scss/variables" as *;
+
 $form-elements-color: $db-colors-secondary-enabled !default;
 $form-elements-border-radius: 4px !default;
 

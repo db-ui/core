@@ -3,24 +3,30 @@
 // Global setting to differentiate from the CSS partials rendering
 $partial: false;
 
+// Define the path for image, icons and font folders
+@use "@db-ui/base/build/scss/default.assets-paths" as * with (
+	$icons-path: "../../icons/",
+	$images-path: "../../images/",
+	$fonts-path: "../../fonts/"
+);
+
 // TODO: Let's include normalize e.g. via postcss-normalize
 @use "@csstools/normalize.css/normalize.css";
 
-@import "../helpers/functions";
-@import "../../_patterns/00-base/helpers";
+@use "@db-ui/base/build/scss/helpers/functions" as *;
+@use "../../_patterns/00-base/helpers" as *;
 
-@import "db-ui-core.variables";
+@use "db-ui-core.variables" as *;
 
-@import "../../_patterns/00-base/init.global";
-@import "../../_patterns/00-base/init";
+@use "../../_patterns/00-base/init.global" as *;
+@use "../../_patterns/00-base/init" as *;
 
 // Importing helpers
-@import "../helpers/a11y";
-@import "../helpers/clearfix";
+@use "@db-ui/base/build/scss/helpers/functions" as *;
 
 // GENERAL
-@import "../../_patterns/00-base/type/enterprise/fonts";
-@import "../../_patterns/00-base/icons/enterprise/icons";
+@use "@db-ui/base/build/scss/font-faces" as *;
+@use "@db-ui/base/build/scss/icon/icons" as *;
 // @import "../../_patterns/00-base/03-body/background";
 
 // ELEMENTS
@@ -30,6 +36,8 @@ $partial: false;
 @import "../../_patterns/01-elements/link/enterprise/link";
 /* image */
 @import "../../_patterns/01-elements/image/enterprise/image";
+/* logo */
+@import "../../_patterns/01-elements/logo/logo"; // /enterprise/logo
 
 /* checkbox */
 @import "../../_patterns/01-elements/checkbox/enterprise/checkbox";

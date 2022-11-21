@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+@use "@db-ui/base/build/scss/variables" as *;
+@use "@db-ui/base/build/scss/helpers/functions" as *;
+@use "@db-ui/base/build/scss/icon/icons.helpers" as *;
 @import "button.variables";
 
 .elm-button {
@@ -144,11 +147,11 @@
 
 		&[data-icon],
 		&[data-icon-before] {
-			@include iconMeta($icon-size);
+			@include icon-meta($icon-size);
 		}
 
 		&[data-icon-after] {
-			@include iconMeta($size: $icon-size, $position: "after");
+			@include icon-meta($size: $icon-size, $position: "after");
 		}
 
 		// Square icon only buttons

@@ -2,7 +2,7 @@
 // In case that you're building a web application you might want to have more freedom
 // and probably would want to not include it's contents into your SCSS build / references.
 
-@import "../../../css/helpers/clearfix";
+@import "@db-ui/base/build/scss/helpers/clearfix";
 
 @import "main.variables";
 

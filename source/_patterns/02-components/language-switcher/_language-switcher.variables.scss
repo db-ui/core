@@ -1,3 +1,4 @@
-@import "../../../css/helpers/functions";
-@import "../../00-base/icons/icons.helpers";
-@import "../../00-base/icons/icons.variables";
+@use "@db-ui/base/build/scss/helpers/functions" as *;
+@use "@db-ui/base/build/scss/icon/icons.helpers" as *;
+@use "@db-ui/base/build/scss/icon/icons.variables" as *;
+@import "../../../css/db-ui-core.variables";

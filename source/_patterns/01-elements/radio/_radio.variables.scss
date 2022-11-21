@@ -1,3 +1,4 @@
-@import "../../../css/helpers/functions";
+@use "@db-ui/base/build/scss/variables" as *;
+@use "@db-ui/base/build/scss/helpers/functions" as *;
 
 $radio---border: $db-colors-secondary-enabled !default;
