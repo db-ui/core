@@ -9,6 +9,7 @@ $icons-path: "../icons/" !default;
 $images-path: "../images/" !default;
 $fonts-path: "../fonts/" !default;
 
+@use "@db-ui/base/build/scss/font-faces" as *;
 @use "@db-ui/base/build/scss/icon/icons.variables" as *;
 @use "@db-ui/base/build/scss/icon/icons.font-faces" as *;
 
