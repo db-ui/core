@@ -1,4 +1,4 @@
 $icons-path: "../../../icons/" !default;
-@import "../../00-base/colors/enterprise/colors.variables";
 
+@use "@db-ui/base/build/scss/variables" as *;
 $select-floatingLabel--color: $db-colors-secondary-enabled !default;

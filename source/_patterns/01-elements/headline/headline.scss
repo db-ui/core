@@ -1,4 +1,5 @@
-@import "headline.variables";
+@use "../../../css/db-ui-core.variables" as *;
+@use "@db-ui/base/build/scss/helpers/functions" as *;
 
 .elm-headline {
 	margin-bottom: to-rem($pxValue: 16);

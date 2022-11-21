@@ -1,8 +1,8 @@
 @charset "utf-8";
 
-@import "db-ui-core.variables";
+@use "db-ui-core.variables";
 
-@import "@db-ui/base/build/scss/typescale";
+@use "@db-ui/base/build/scss/tonality";
 
 @import "../../_patterns/00-base/helpers";
 

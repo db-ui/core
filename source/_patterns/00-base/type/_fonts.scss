@@ -1,6 +1,7 @@
 @import "../../../css/db-ui-core.variables";
 @import "fonts.variables";
 
+// TODO: migrate this to DB UI Base
 @each $font-name, $font-meta in $font-families {
 	$font-family: map-get($font-meta, "font-family");
 	$font-filename: map-get($font-meta, "font-filename");
