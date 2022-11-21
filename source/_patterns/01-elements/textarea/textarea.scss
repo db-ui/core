@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@use "@db-ui/base/build/scss/variables" as *;
+@use "@db-ui/base/build/scss/helpers/functions" as *;
 @import "textarea.variables";
 @import "../form-elements";
 

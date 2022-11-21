@@ -1,8 +1,8 @@
 @charset "utf-8";
 
-@import "db-ui-core.variables";
+@use "db-ui-core.variables";
 
-@import "@db-ui/base/build/scss/typescale";
+@use "@db-ui/base/build/scss/tonality";
 
 @import "../../_patterns/00-base/helpers";
 
@@ -13,6 +13,7 @@
 @import "../../_patterns/01-elements/checkbox/enterprise/checkbox.demonstration";
 @import "../../_patterns/01-elements/progress/enterprise/progress.demonstration";
 @import "../../_patterns/01-elements/input/input.demonstration";
+@import "../../_patterns/01-elements/logo/logo.demonstration";
 @import "../../_patterns/01-elements/textarea/textarea.demonstration";
 @import "../../_patterns/01-elements/radio/enterprise/radio.demonstration";
 @import "../../_patterns/01-elements/select/select.demonstration";
@@ -26,4 +27,10 @@
 
 :root {
 	@extend %db-ui-functional;
+}
+
+iframe[src^="https://db-ui.github.io/base/"]
+{
+	width: 100%;
+	height: 500px;
 }

@@ -1,3 +1,5 @@
+@use "@db-ui/base/build/scss/variables" as *;
+@use "@db-ui/base/build/scss/helpers/functions" as *;
 @import "select.variables";
 @import "../form-elements";
 @import "../../../css/db-ui-core.variables";
@@ -6,6 +8,7 @@
 	@extend %form-element;
 	appearance: none;
 	font-size: to-rem($pxValue: 16);
+
 	// For IE
 	&::-ms-expand {
 		display: none;
