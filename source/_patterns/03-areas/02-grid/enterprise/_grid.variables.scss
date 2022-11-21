@@ -1,3 +1,5 @@
+@use "@db-ui/base/build/scss/helpers/functions" as *;
+
 $column-gap: to-rem(
 	$pxValue: 10
 ) !default;
