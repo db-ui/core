@@ -1,0 +1,7 @@
+{{! TODO: The following conditional construct should obviously get simplified in the future }}
+{{> elements-tag label="Default" }}
+{{#each variants }}
+	{{> elements-tag size=../size icon=../icon }}
+{{/each}}
+
+
