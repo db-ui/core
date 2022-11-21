@@ -1,3 +1,5 @@
+@use "@db-ui/base/build/scss/variables" as *;
+
 body.styleguide {
 	display: initial;
 }
@@ -8,7 +10,7 @@ body.styleguide {
 #elements-button-secondary-inverted {
 	.pl-js-pattern-example {
 		/* stylelint-enable selector-max-id */
-		background-color: $db-color-cool-gray-700;
+		background-color: $db-colors-secondary-enabled;
 
 		margin: -1rem -0.5rem;
 		padding: 1rem 0.5rem;
