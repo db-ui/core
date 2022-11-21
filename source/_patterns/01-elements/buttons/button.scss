@@ -1,24 +1,27 @@
 @charset "utf-8";
 
 @use "@db-ui/base/build/scss/variables" as *;
+@use "@db-ui/base/build/scss/variables.global" as *;
 @use "@db-ui/base/build/scss/helpers/functions" as *;
+@use "@db-ui/base/build/scss/color-placeholder" as *;
 @use "@db-ui/base/build/scss/icon/icons.helpers" as *;
 @import "button.variables";
 
 .elm-button {
 	// Including a loading indicator
 	--loadingIndicator---color: currentColor;
+
+	$icon-size: var(--db-icon-size, 20);
 	align-items: center; // Centering the content vertically and horizontally
 
-	// Centering the content vertically and horizontally
-	align-items: center;
 	border: 1px solid transparent;
 	border-radius: 4px;
 	display: inline-flex;
 
 	font-weight: 700;
 	justify-content: center;
-	padding: to-rem($pxValue: 7) to-rem($pxValue: 16);
+	min-height: $db-sizing-md;
+	padding: $db-spacing-fixed-xs $db-spacing-fixed-md;
 
 	text-align: center;
 
@@ -28,135 +31,89 @@
 
 	&[data-icon],
 	&[data-icon-before] {
-		padding-left: to-rem($pxValue: 14);
+		padding-left: $db-spacing-fixed-xs;
+
+		&::before {
+			--icon-font-family: var(--db-base-icon-font-family);
+			--icon-font-size: var(--db-base-icon-font-size);
+		}
 	}
 
 	&[data-icon-after] {
-		padding-right: to-rem($pxValue: 14);
+		padding-right: $db-spacing-fixed-xs;
+
+		&::after {
+			--icon-font-family: var(--db-base-icon-font-family);
+			--icon-font-size: var(--db-base-icon-font-size);
+		}
 	}
 	// Square icon only buttons
 	&.is-icon-text-replace {
-		width: $button---minHeight;
+		padding: 0;
+		width: $db-sizing-md;
 	}
 
-	/*&:focus {
-		border-color: #fff;
-	}*/
-	/*	&:active {
-		filter: brightness(75%);
-	}*/
-
-	&%variant-primary,
-	&%variant-secondary-inverted {
-		color: $button---color;
-	}
-
-	&%variant-primary {
-		background-color: $button-primary--backgroundColor;
-
-		&:not(:disabled) {
-			&:hover {
-				// TODO: This could probably get simplified later on e.g. via CSS variables
-				background-color: $button-primary-hover-backgroundColor;
-			}
-		}
-
-		&:active {
-			background-color: $button-primary-active-backgroundColor; // TODO: replace by correct color variable
-		}
-	}
-
-	&%variant-secondary-inverted {
-		background-color: $button-secondaryInverted--backgroundColor;
-		border-color: #fff;
-
-		&:not(:disabled) {
-			&:hover {
-				// TODO: This could probably get simplified later on e.g. via CSS variables
-				background-color: $button-secondaryInverted-hover-backgroundColor;
-			}
-		}
-
-		&:active {
-			background-color: $button-secondaryInverted-active-backgroundColor;
-		}
+	&:not([data-variant]),
+	&[data-variant="primary"] {
+		@extend %db-bg-primary-ia;
 	}
 
 	&%variant-secondary {
-		background-color: $button-secondary--backgroundColor;
-		border-color: currentColor;
-		color: $db-colors-secondary-enabled;
+		background-color: $db-colors-neutral-bg-transparent-full-enabled;
+		border: solid 1px
+			var(--db-current-color, $db-colors-neutral-on-bg-enabled);
+		color: var(--db-current-color, $db-colors-neutral-on-bg-enabled);
 
 		&:not(:disabled) {
 			&:hover {
-				// TODO: This could probably get simplified later on e.g. via CSS variables
-				background-color: $button-secondary-hover-backgroundColor;
+				background-color: $db-colors-neutral-bg-transparent-full-hover;
 			}
-		}
 
-		&:active {
-			background-color: $button-secondary-active-backgroundColor;
+			&:active {
+				background-color: $db-colors-neutral-bg-transparent-full-pressed;
+			}
 		}
 	}
 
 	&%variant-tertiary {
-		background-color: $button-tertiary--backgroundColor;
-		// TODO: replace by the correct variable afterwards
-		color: $db-colors-secondary-enabled;
+		background-color: $db-colors-neutral-bg-transparent-semi-enabled;
+		color: var(--db-current-color, $db-colors-neutral-on-bg-enabled);
 
 		&:not(:disabled) {
 			&:hover {
-				// TODO: This could probably get simplified later on e.g. via CSS variables
-				background-color: $button-tertiary-hover-backgroundColor;
+				background-color: $db-colors-neutral-bg-transparent-semi-hover;
 			}
-		}
 
-		&:active {
-			background-color: $button-tertiary-active-backgroundColor;
+			&:active {
+				background-color: $db-colors-neutral-bg-transparent-semi-pressed;
+			}
 		}
 	}
 
 	&%variant-ghost {
-		background-color: transparent; // shame.css
-		border: 2px solid transparent;
-		color: $db-colors-secondary-enabled;
+		background-color: $db-colors-neutral-bg-transparent-full-enabled;
+		color: var(--db-current-color, $db-colors-neutral-on-bg-enabled);
 
 		&:not(:disabled) {
 			&:hover {
-				// TODO: This could probably get simplified later on e.g. via CSS variables
-				background-color: $button-ghost-hover-backgroundColor;
+				background-color: $db-colors-neutral-bg-transparent-full-hover;
 			}
-		}
 
-		&:active {
-			background-color: $button-ghost-active-backgroundColor;
+			&:active {
+				background-color: $db-colors-neutral-bg-transparent-full-pressed;
+			}
 		}
 	}
 
 	// Sizes
+
 	&%size-Small {
-		$height: 32;
-		$icon-size: 16;
-
-		min-height: to-rem($pxValue: $height);
-		padding: to-rem($pxValue: 6) to-rem($pxValue: 12);
-
-		&:not(.is-icon-text-replace) {
-			font-size: to-rem($pxValue: 14);
-		}
-
-		&[data-icon],
-		&[data-icon-before] {
-			@include icon-meta($icon-size);
-		}
-
-		&[data-icon-after] {
-			@include icon-meta($size: $icon-size, $position: "after");
-		}
+		min-height: $db-sizing-sm;
+		padding: $db-spacing-fixed-3xs $db-spacing-fixed-sm;
 
 		// Square icon only buttons
 		&.is-icon-text-replace {
-			width: to-rem($pxValue: $height);
+			width: $db-sizing-sm;
 		}
 	}
 
@@ -165,22 +122,15 @@
 	}
 
 	// Width
-	&%width-Full {
+	&%width-full {
 		width: 100%;
 	}
 
 	&[data-width="full"] {
-		@extend %width-Full;
+		@extend %width-full;
 	}
 
 	// Providing the variants as HTML attributes as well
-	&[data-variant="primary"] {
-		@extend %variant-primary;
-	}
-
-	&[data-variant="secondary-inverted"] {
-		@extend %variant-secondary-inverted;
-	}
 
 	&[data-variant="secondary"] {
 		@extend %variant-secondary;
@@ -203,7 +153,7 @@
 		@include is-icon-text-replace();
 
 		&::before {
-			content: " ";
+			content: "";
 		}
 	}
 

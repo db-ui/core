@@ -29,7 +29,7 @@ You could set the different button sizes via the `data-size` attribute, the defa
 
 #### SCSS (recommended)
 
-Extend the width placeholders in case that you don't want the default (content-length sized): `%width-Full`
+Extend the width placeholders in case that you don't want the default (content-length sized): `%width-full`
 
 #### HTML attribute
 
