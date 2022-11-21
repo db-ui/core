@@ -4,11 +4,11 @@
 	of DB UI Core for each element and component.
 ***** */
 
-// Define the path for both image and font folders
-$icons-path: "../icons/" !default;
-$images-path: "../images/" !default;
-$fonts-path: "../fonts/" !default;
-
+// Define the path for image and font folders
+@use "@db-ui/base/build/scss/default.assets-paths" as * with (
+	$icons-path: "../icons/",
+	$fonts-path: "../fonts/"
+);
 @use "@db-ui/base/build/scss/font-faces" as *;
 @use "@db-ui/base/build/scss/icon/icons.variables" as *;
 @use "@db-ui/base/build/scss/icon/icons.font-faces" as *;

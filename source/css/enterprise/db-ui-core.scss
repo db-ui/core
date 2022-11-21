@@ -3,6 +3,13 @@
 // Global setting to differentiate from the CSS partials rendering
 $partial: false;
 
+// Define the path for image, icons and font folders
+@use "@db-ui/base/build/scss/default.assets-paths" as * with (
+	$icons-path: "../../icons/",
+	$images-path: "../../images/",
+	$fonts-path: "../../fonts/"
+);
+
 // TODO: Let's include normalize e.g. via postcss-normalize
 @use "@csstools/normalize.css/normalize.css";
 
