@@ -20,10 +20,6 @@ $partial: false;
 
 @use "@db-ui/base/build/scss/tonality" as *;
 
-:root {
-	@extend %db-ui-functional;
-}
-
 @use "../../_patterns/00-base/init.global" as *;
 @use "../../_patterns/00-base/init" as *;
 
@@ -34,6 +30,10 @@ $partial: false;
 @use "@db-ui/base/build/scss/font-faces" as *;
 @use "@db-ui/base/build/scss/icon/icons" as *;
 // @import "../../_patterns/00-base/03-body/background";
+
+:root {
+	@extend %db-ui-functional;
+}
 
 // ELEMENTS
 /* button */
