@@ -1,0 +1,21 @@
+{
+	"variant": "ia",
+	"cards": [
+		{
+			"title": "Interactive 01",
+			"text": "Lorem ipsum dolores sint."
+		},
+		{
+			"title": "Interactive 02",
+			"text": "Lorem ipsum dolores sint."
+		},
+		{
+			"title": "Interactive 03",
+			"text": "Lorem ipsum dolores sint."
+		},
+		{
+			"title": "Interactive 04",
+			"text": "Lorem ipsum dolores sint."
+		}
+	]
+}

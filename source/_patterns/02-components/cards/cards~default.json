@@ -1,0 +1,20 @@
+{
+	"cards": [
+		{
+			"title": "Headline 01",
+			"text": "Lorem ipsum dolores sint."
+		},
+		{
+			"title": "Headline 02",
+			"text": "Lorem ipsum dolores sint."
+		},
+		{
+			"title": "Headline 03",
+			"text": "Lorem ipsum dolores sint."
+		},
+		{
+			"title": "Headline 04",
+			"text": "Lorem ipsum dolores sint."
+		}
+	]
+}

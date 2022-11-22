@@ -35,6 +35,8 @@ $partial: false;
 	@extend %db-ui-functional;
 }
 
+@import "@db-ui/base/build/scss/color-classes";
+
 // ELEMENTS
 /* button */
 @import "../../_patterns/01-elements/buttons/enterprise/button";

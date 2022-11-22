@@ -1,61 +1,39 @@
+@use "@db-ui/base/build/scss/init" as *;
 @use "@db-ui/base/build/scss/variables" as *;
 @use "@db-ui/base/build/scss/helpers/functions" as *;
-@import "cards.variables";
+@use "../../00-base/color-variants" as *;
 
-.cmp-card {
-	background-color: #fff;
+.db-card {
+	@extend %focus-placeholder;
+	@extend %color-variants;
+
+	background-color: var(
+		--db-current-background-color,
+		$db-colors-neutral-bg-0-enabled
+	);
 
 	border-radius: 8px;
-	box-shadow: $box-shadow-01, $box-shadow-02;
+	box-shadow: $db-elevation-4;
+	padding: $db-spacing-fixed-md;
 
 	& > a {
 		text-decoration: none;
 	}
 
-	figure {
-		margin: $db-spacing-fixed-normal-m $db-spacing-fixed-normal-m
-			$db-spacing-fixed-normal-m $db-spacing-fixed-normal-xs;
+	&[data-size="w-full"],
+	&[data-size="width-full"] {
+		width: 100vw;
+		border-radius: 0;
 	}
 
-	// Banner variant
-	&[data-variant="banner"] {
-		figure {
-			display: flex;
+	&[data-variant="ia"] {
+		&:hover {
+			cursor: pointer;
+			box-shadow: $db-elevation-8;
 		}
 
-		figcaption {
-			margin-left: 1rem;
-
-			h1,
-			h2,
-			h3,
-			h4,
-			h5,
-			h6 {
-				font-size: to-rem($pxValue: 18);
-
-				&,
-				& ~ p {
-					margin: 0.125rem 0;
-				}
-			}
-
-			p {
-				font-size: to-rem($pxValue: 14);
-
-				max-width: to-rem(
-					$pxValue: 290
-				); // TODO: This would need some rework
-			}
+		&:active {
+			box-shadow: $db-elevation-2;
 		}
-	}
-
-	// Tile variant
-	&[data-variant="tile"] {
-		text-align: center;
-	}
-
-	figcaption {
-		max-width: 60ch;
 	}
 }
