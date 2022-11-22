@@ -7,9 +7,14 @@ $icons-path: "../../../icons/" !default;
 
 $input---color: $db-colors-secondary-enabled !default;
 
-:root {
-	--db-scaling: "regular";
-	--db-db-spacing-fixed-xs: 0.5rem;
+$db-scaling: "regular";
+
+.db-ui-functional {
+	$db-scaling: "functional";
+}
+
+.db-ui-expressive {
+	$db-scaling: "expressive";
 }
 
 // $db-input-sizes: (
@@ -90,11 +95,11 @@ $db-input-font-sizes: (
 @mixin input-label-size() {
 	// --db-sizing-md: 2.5rem;
 	// --db-db-spacing-fixed-xs: 0.5rem;
-	$transformScale: 5;
+	$transformScale: -0.75;
 
 	transform: translate(
 		$db-spacing-fixed-xs,
-		calc($transformScale * var(--db-sizing-md) * -1)
+		calc($transformScale * var(--db-sizing-md))
 	);
 }
 
@@ -106,12 +111,17 @@ $db-input-font-sizes: (
 	// 	//transform: translate($db-spacing-s, -#{to-rem($pxValue: calc(map-get($db-input-font-sizes, $size) * 1.2) + map-get($db-input-font-sizes, $size))}) scale(0.7);
 	// }
 	// @else {
-	$transformScale: 2.9;
+	$transformScale: -1.05;
+	$scaling: 0.65;
+
+	@if $db-scaling == "expressive" {
+		$scaling: 0.5;
+	}
 
 	transform: translate(
 			$db-spacing-fixed-xs,
 			calc($db-sizing-md * $transformScale)
-		),
-		scale(0.7);
+		)
+		scale($scaling);
 	transition: transform 0.2s $db-transition-functional-timing;
 }

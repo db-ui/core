@@ -17,7 +17,7 @@
 	// @extend %size-regular; // default
 	height: $db-sizing-md;
 	max-width: 100%;
-	padding: $db-spacing-fixed-xs $db-spacing-fixed-md;
+	padding: $db-spacing-fixed-xs $db-spacing-fixed-xs;
 	width: 100%;
 
 	+ .elm-label {
@@ -53,6 +53,8 @@
 	&:focus,
 	&:not(:placeholder-shown) {
 		&:not(:disabled) {
+			padding-bottom: 0;
+
 			+ .elm-label {
 				@include input-label-translation();
 			}
