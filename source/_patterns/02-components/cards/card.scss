@@ -4,7 +4,7 @@
 @use "@db-ui/base/build/scss/helpers/functions" as *;
 @use "../../00-base/color-variants" as *;
 
-.db-card {
+.cmp-card {
 	@extend %focus-placeholder;
 	@extend %color-variants;
 
