@@ -3,22 +3,26 @@
 		{
 			"variant": "error",
 			"message": "Error Message",
-			"description": "Error Message Description"
+			"description": "Error Message Description",
+			"id": "input04"
 		},
 		{
 			"variant": "warning",
 			"message": "Warning Message",
-			"description": "Warning Message Description"
+			"description": "Warning Message Description",
+			"id": "input05"
 		},
 		{
 			"variant": "success",
 			"message": "Success Message",
-			"description": "Success Message Description"
+			"description": "Success Message Description",
+			"id": "input06"
 		},
 		{
 			"variant": "warning",
 			"message": "Warning",
-			"description": "Warning Message Description"
+			"description": "Warning Message Description",
+			"id": "input07"
 		}
 	],
 	"type": "text",

@@ -2,6 +2,8 @@
 
 @use "@db-ui/base/build/scss/variables" as *;
 @use "@db-ui/base/build/scss/helpers/functions" as *;
+@use "@db-ui/base/build/scss/icon/icons.helpers" as *;
+
 @import "input.variables";
 @import "../form-elements";
 
@@ -10,11 +12,6 @@
 
 	font-size: $db-type-font-size-md;
 
-	// font-size: to-rem($pxValue: 16);
-	// line-height: to-rem($pxValue: 24);
-
-	//@include input--sizes();
-	// @extend %size-regular; // default
 	height: $db-sizing-md;
 	max-width: 100%;
 	padding: $db-spacing-fixed-xs $db-spacing-fixed-xs;
@@ -22,54 +19,21 @@
 
 	+ .elm-label {
 		@include input-label-size();
+		transition: transform 0.2s $db-transition-functional-timing;
 	}
-
-	// padding: $db-spacing-s $db-spacing-m;
-	//&:not(:placeholder-shown) {
-	// padding-top: to-rem($pxValue: 16);
-	// padding-bottom: 0;
-	//}
-
-	// ### Size variations
-	// &[data-size="functional"] {
-	// 	@extend %size-functional;
-	// }
-
-	// &[data-size="regular"] {
-	// 	@extend %size-regular;
-	// }
-
-	// &[data-size="expressive"] {
-	// 	@extend %size-expressive;
-	// }
-
-	// * TODO: to get evaluated
-	// display: inline-flex;
-	// align-items: center;
-	// justify-content: flex-start;
-	// max-width: 100%;
 
 	// TODO: Evaluate whether those could get moved to ../_form-elements.scss
 	&:focus,
 	&:not(:placeholder-shown) {
 		&:not(:disabled) {
-			padding-bottom: 0;
+			padding-bottom: calc(
+				$db-spacing-fixed-xs - var(--db-input-focus-opacity) *
+					$db-spacing-fixed-xs
+			);
 
 			+ .elm-label {
 				@include input-label-translation();
 			}
-
-			// &[data-size="functional"] + .elm-label {
-			// 	@include input-label-translation(functional);
-			// }
-
-			// &[data-size="regular"] + .elm-label {
-			// 	@include input-label-translation(regular);
-			// }
-
-			// &[data-size="expressive"] + .elm-label {
-			// 	@include input-label-translation(expressive);
-			// }
 		}
 	}
 
@@ -133,7 +97,21 @@
 			// margin-bottom: -#{to-rem($pxValue: 18)};
 
 			& + .description {
-				margin-top: -1.5rem;
+				margin-top: calc(var(--db-sizing-sm) * -1 + 2px);
+
+				display: flex;
+				justify-content: space-between;
+				max-width: 30rem;
+
+				&::after {
+					@include icon(glyph(error-triangle), 20, "filled");
+
+					display: block;
+					height: 20px;
+					position: relative;
+					top: -2rem;
+					width: 20px;
+				}
 			}
 		}
 		// &[placeholder] {
@@ -188,22 +166,6 @@
 
 			& ~ .description {
 				color: $db-colors-critical-enabled;
-
-				display: flex;
-				justify-content: space-between;
-				max-width: 30rem;
-
-				&::after {
-					@include icon(glyph(error-triangle), 20, "filled");
-
-					background-color: $db-colors-warning-on-bg-enabled;
-					content: " ";
-					display: block;
-					height: 20px;
-					position: relative;
-					top: -2rem;
-					width: 20px;
-				}
 			}
 		}
 
