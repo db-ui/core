@@ -48,12 +48,10 @@ body {
 	line-height: 1.5;
 }
 
-* {
-	color: var(--db-current-color, $db-colors-neutral-on-bg-enabled);
-}
-
 // Inline
 a {
+	color: inherit;
+
 	strong {
 		color: currentColor;
 	}
