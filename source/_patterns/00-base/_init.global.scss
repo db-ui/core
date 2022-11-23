@@ -48,12 +48,11 @@ body {
 	line-height: 1.5;
 }
 
-* {
-	color: var(--db-current-color, $db-colors-neutral-on-bg-enabled);
-}
-
 // Inline
 a {
+// TODO: Move to DB UI Base
+	color: inherit;
+
 	strong {
 		color: currentColor;
 	}
