@@ -2,7 +2,7 @@
 @use "@db-ui/base/build/scss/variables" as *;
 @use "@db-ui/base/build/scss/variables.global" as *;
 @use "@db-ui/base/build/scss/helpers/functions" as *;
-@use "../../00-base/color-variants" as *;
+@use "@db-ui/base/build/scss/color-variants" as *;
 
 .cmp-card {
 	@extend %focus-placeholder;
