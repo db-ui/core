@@ -15,6 +15,13 @@ We've removed the following files, that we already deprecated within the previou
 - `@db-ui/core/sources/css/enterprise/db-ui-core-rollup.scss`
 - `@db-ui/core/sources/css/enterprise/db-ui-core-webpack.scss`
 
+=== Moved "base" files DB UI Core to DB UI Base
+
+The following files including basic styles have been moved from DB UI Core to DB UI Base:
+- source/_patterns/00-base/icons/icons.scss -> @db-ui/base/build/scss/icon/icons.scss
+- source/css/_rollup.assets-paths.scss -> @db-ui/base/build/scss/_rollup.assets-paths.scss
+- source/css/_webpack.assets-paths.scss -> @db-ui/base/build/scss/_webpack.assets-paths.scss
+
 === progress
 
 We've remove the deprecated previous HTML implementation of the label by an `output` element and replaced it by an actual `label` element. Necessary changes:
