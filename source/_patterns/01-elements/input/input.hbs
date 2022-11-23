@@ -19,7 +19,7 @@
 	aria-hidden="true"
 	id="{{ id }}-label">{{ label }}</label>
 
-{{#if description }}<p{{#if describedbyid }} id="{{ describedbyid }}"{{/if }} class="description">{{{ description }}}</p>{{/if }}
+{{#if description }}<small{{#if describedbyid }} id="{{ describedbyid }}"{{/if }} class="description">{{{ description }}}</small>{{/if }}
 {{#if datalist }}<datalist id="datalist{{ id }}">
 	{{#each datalistItems }}
 		<option{{#if value }} value="{{ value }}"{{/if }}>{{ text }}</option>

@@ -2,8 +2,10 @@ $icons-path: "../../../icons/" !default;
 @use "@db-ui/base/build/scss/variables" as *;
 @use "@db-ui/base/build/scss/helpers/functions" as *;
 
-@import "../../00-base/icons/icons.variables";
-@import "../../00-base/icons/icons.helpers";
+@use "@db-ui/base/build/scss/icon/icons.helpers" as *;
+
+// @import "../../00-base/icons/icons.variables";
+// @import "../../00-base/icons/icons.helpers";
 
 $input---color: $db-colors-secondary-enabled !default;
 
@@ -105,23 +107,14 @@ $db-input-font-sizes: (
 
 // TODO rename
 @mixin input-label-translation() {
-	// @if var(--db-scaling) == functional {
-	// 	transition: opacity 0.08s, transform 0.15s;
-	// 	opacity: 0;
-	// 	//transform: translate($db-spacing-s, -#{to-rem($pxValue: calc(map-get($db-input-font-sizes, $size) * 1.2) + map-get($db-input-font-sizes, $size))}) scale(0.7);
-	// }
-	// @else {
 	$transformScale: -1.05;
-	$scaling: 0.65;
 
-	@if $db-scaling == "expressive" {
-		$scaling: 0.5;
-	}
+	transition: opacity 0.08s, transform 0.15s;
+	opacity: var(--db-input-focus-opacity);
 
 	transform: translate(
 			$db-spacing-fixed-xs,
 			calc($db-sizing-md * $transformScale)
 		)
-		scale($scaling);
-	transition: transform 0.2s $db-transition-functional-timing;
+		scale(var(--db-input-label-scale));
 }
