@@ -4,9 +4,7 @@
 		"wait": 2000
 	},
 	"urls": [
-		"http://127.0.0.1:8080/patterns/base-colors/index.html",
 		"http://127.0.0.1:8080/patterns/base-icons/index.html",
-		"http://127.0.0.1:8080/patterns/base-type-fonts/base-type-fonts.rendered.html",
 		"http://127.0.0.1:8080/patterns/elements-buttons/index.html",
 		"http://127.0.0.1:8080/patterns/elements-checkbox/index.html",
 		"http://127.0.0.1:8080/patterns/elements-image/index.html",
@@ -20,7 +18,6 @@
 		"http://127.0.0.1:8080/patterns/elements-toggle/index.html",
 		"http://127.0.0.1:8080/patterns/components-accordion/index.html",
 		"http://127.0.0.1:8080/patterns/components-breadcrumb/index.html",
-		"http://127.0.0.1:8080/patterns/components-cards/index.html",
 		"http://127.0.0.1:8080/patterns/components-dialog/index.html",
 		"http://127.0.0.1:8080/patterns/components-dropdown/index.html",
 		"http://127.0.0.1:8080/patterns/components-form/index.html",
