@@ -31,19 +31,9 @@
 	"// onReadyScript": "puppet/onReady.js",
 	"scenarios": [
 		{
-			"label": "Colors",
-			"url": "http://127.0.0.1:8080/patterns/base-colors/index.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/base-colors/index.html"
-		},
-		{
 			"label": "Icons",
 			"url": "http://127.0.0.1:8080/patterns/base-icons/index.html",
 			"referenceUrl": "https://db-ui.github.io/core/patterns/base-icons/index.html"
-		},
-		{
-			"label": "Type",
-			"url": "http://127.0.0.1:8080/patterns/base-type/index.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/base-type/index.html"
 		},
 		{
 			"label": "Elements - Buttons",
