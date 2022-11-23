@@ -8,11 +8,11 @@ $color-variants: "neutral-0", "neutral-1", "neutral-3", "neutral-4", "neutral-5"
 
 @mixin color-variants($ia) {
 	@each $variant in $color-variants {
-		&[color-variant="#{$variant}"] {
+		&[data-color-variant="#{$variant}"] {
 			@extend %db-bg-#{$variant};
 		}
 		@if ($ia == true) {
-			&[color-variant="#{$variant}-ia"] {
+			&[data-color-variant="#{$variant}-ia"] {
 				@extend %db-bg-#{$variant}-ia;
 			}
 		}
