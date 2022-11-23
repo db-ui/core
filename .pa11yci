@@ -4,9 +4,7 @@
 		"wait": 2000
 	},
 	"urls": [
-		"http://127.0.0.1:8080/patterns/base-colors/index.html",
 		"http://127.0.0.1:8080/patterns/base-icons/index.html",
-		"http://127.0.0.1:8080/patterns/base-type-fonts/base-type-fonts.rendered.html",
 		"http://127.0.0.1:8080/patterns/elements-buttons/index.html",
 		"http://127.0.0.1:8080/patterns/elements-checkbox/index.html",
 		"http://127.0.0.1:8080/patterns/elements-image/index.html",
