@@ -1,8 +1,8 @@
 {{#unless list }}
-<div class="cmp-card" data-variant="{{ variant }}">
+<div class="cmp-card"{{#if variant}} data-variant="{{ variant }}"{{/if }}>
 {{else}}
 <!-- [html-validate-disable-next element-permitted-content, element-permitted-parent -- we're only providing a partial here] -->
-<li class="cmp-card" data-variant="{{ variant }}">
+<li class="cmp-card"{{#if variant}} data-variant="{{ variant }}"{{/if }}>
 {{/unless}}
 	{{#if hyperlink }}<a href="#">{{/if }}
 		{{#if figure }}<figure>
