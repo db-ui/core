@@ -5,6 +5,7 @@
 		"no-trailing-whitespace": ["off"],
 		"doctype-style": ["off"],
 		"element-name": ["error", { "whitelist": ["dialog"] }],
-		"missing-doctype": ["off"]
+		"missing-doctype": ["off"],
+		"no-dup-id": ["off"]
 	}
 }

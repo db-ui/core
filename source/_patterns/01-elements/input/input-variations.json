@@ -19,9 +19,9 @@
 			"id": "input06"
 		},
 		{
-			"variant": "warning",
-			"message": "Warning",
-			"description": "Warning Message Description",
+			"variant": "information",
+			"message": "Information",
+			"description": "Information Message Description",
 			"id": "input07"
 		}
 	],

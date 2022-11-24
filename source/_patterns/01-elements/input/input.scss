@@ -1,16 +1,31 @@
 @charset "utf-8";
 
 @use "@db-ui/base/build/scss/variables" as *;
+@use "@db-ui/base/build/scss/variables.global" as *;
 @use "@db-ui/base/build/scss/helpers/functions" as *;
 @use "@db-ui/base/build/scss/icon/icons.helpers" as *;
 
-@import "input.variables";
-@import "../form-elements";
+//@import "input.variables";
+//@import "../form-elements";
+
+$input---color: $db-colors-secondary-enabled !default;
+
+// TODO rename
+@mixin input-label-translation() {
+	$transformScale: -1.25;
+
+	transition: opacity 0.08s, transform 0.15s;
+	opacity: var(--db-input-focus-opacity);
+
+	transform: translate(
+			$db-spacing-fixed-xs,
+			calc($db-sizing-md * $transformScale)
+		)
+		scale(var(--db-input-label-scale));
+}
 
 .elm-input {
 	@extend %form-element;
-
-	font-size: $db-type-font-size-md;
 
 	height: $db-sizing-md;
 	max-width: 100%;
@@ -18,8 +33,18 @@
 	width: 100%;
 
 	+ .elm-label {
-		@include input-label-size();
+		display: flex;
+		align-items: center;
+
+		font-size: var(--db-type-body-font-size-md); // $db-type-font-size-md;
+
+		transform: translate(
+			$db-spacing-fixed-xs,
+			calc(-1 * var(--db-sizing-md))
+		);
 		transition: transform 0.2s $db-transition-functional-timing;
+
+		height: $db-sizing-md;
 	}
 
 	// TODO: Evaluate whether those could get moved to ../_form-elements.scss
@@ -62,12 +87,14 @@
 	&[type="week"] {
 		// TODO: Evaluate whether those could get moved to ../_form-elements.scss
 		// Semitransparent is the default style
-		@at-root :where(#{&}) {
-			@extend %form-element-semitransparent;
-		}
+		// @at-root :where(#{&}) {
+		// 	@extend %form-element-semitransparent;
+		// }
+
+		font-size: $db-type-font-size-sm;
 
 		// Floating labels
-		margin-top: to-rem($pxValue: 16);
+		//margin-top: to-rem($pxValue: 16);
 
 		&:not([type="date"]):not([type="datetime-local"]):not(
 				[type="month"]
@@ -86,46 +113,27 @@
 		& + .elm-label {
 			// font-size: to-rem($pxValue: 14);
 			color: $db-colors-secondary-enabled;
-			display: block;
 			pointer-events: none;
 			transform-origin: left;
-			// color: $db-color-cool-gray-500;
-
-			//@include input-label-size(regular);
-
-			// transform: translate($db-spacing-s, -#{to-rem($pxValue: 16 + 14)});
-			// margin-bottom: -#{to-rem($pxValue: 18)};
 
 			& + .description {
-				margin-top: calc(var(--db-sizing-sm) * -1 + 2px);
+				margin-top: calc(var(--db-sizing-md) * -1);
+				padding: $db-spacing-fixed-2xs $db-spacing-fixed-xs 0;
 
 				display: flex;
 				justify-content: space-between;
 				max-width: 30rem;
 
 				&::after {
-					@include icon(glyph(error-triangle), 20, "filled");
-
-					display: block;
-					height: 20px;
 					position: relative;
-					top: -2rem;
-					width: 20px;
+					top: calc(var(--db-sizing-md) * -1 + $db-spacing-fixed-2xs);
+					// TODO overwrite width and height with correct value
 				}
 			}
 		}
-		// &[placeholder] {
-		// 	&:placeholder-shown {
-		// 		& + label {
-		// 			// opacity: 0;
-		// 		}
-		// 	}
-		// }
 
 		&::placeholder {
-			//color: $db-color-cool-gray-500;
 			opacity: 0;
-			//font-size: to-rem($pxValue: 14);
 		}
 
 		&:focus {
@@ -153,10 +161,29 @@
 		}
 
 		&[aria-invalid="true"] {
-			--formElement---borderColor: #{$db-colors-primary-enabled};
+			// --formElement---borderColor: #{$db-colors-primary-enabled};
 		}
 
 		// ### variations
+		&[data-variant] {
+			padding-right: var(--db-base-icon-font-size);
+
+			& ~ .description {
+				span {
+					//font-size: var(--db-type-body-font-size-xs);
+					// font-size: $db-type-font-size-xs;
+					// line-height: $db-type-line-height-xs;
+
+					@extend %extra-small;
+				}
+
+				&::after {
+					--icon-font-family: var(--db-base-icon-font-family);
+					--icon-font-size: var(--db-base-icon-font-size);
+				}
+			}
+		}
+
 		&[data-variant="error"] {
 			@extend %db-bg-critical-transparent-semi;
 
@@ -166,11 +193,27 @@
 
 			& ~ .description {
 				color: $db-colors-critical-enabled;
+
+				/* stylelint-disable */
+				@include icon(
+					glyph(error),
+					20,
+					"filled",
+					"after",
+					false,
+					false
+				);
+				// &::after {
+				// 	--icon-font-family: var(--db-base-icon-font-family-filled);
+				// 	--icon-font-size: var(--db-base-icon-font-size);
+				// }
 			}
 		}
 
 		&[data-variant="warning"] {
 			@extend %db-bg-warning-transparent-semi;
+
+			@include icon(glyph(error-triangle), 20, "filled", "after");
 
 			& + .elm-label {
 				color: $db-colors-warning-on-bg-enabled;
@@ -190,6 +233,7 @@
 
 			& ~ .description {
 				color: $db-colors-success-enabled;
+				@include icon(glyph(check-circle), 20, "filled", "after");
 			}
 		}
 
@@ -202,39 +246,22 @@
 
 			& ~ .description {
 				color: $db-colors-information-enabled;
+				@include icon(glyph(info), 20, "filled", "after");
 			}
 		}
-
-		// &[data-size="functional"] {
-		// 	& + .elm-label {
-		// 		@include input-label-size(functional);
-		// 	}
-		// }
-
-		// &[data-size="regular"] {
-		// 	& + .elm-label {
-		// 		@include input-label-size(regular);
-		// 	}
-		// }
-
-		// &[data-size="expressive"] {
-		// 	& + .elm-label {
-		// 		@include input-label-size(expressive);
-		// 	}
-		// }
 	}
 
 	&[type="search"] {
-		background: var(
-				--db-ic-search-24,
-				url(#{$icons-path}functional/images/action/db_ic_search_24.svg)
-			)
-			no-repeat to-rem($pxValue: 6) to-rem($pxValue: 12);
+		// background: var(
+		// 		--db-ic-search-24,
+		// 		url(#{$icons-path}functional/images/action/db_ic_search_24.svg)
+		// 	)
+		// 	no-repeat to-rem($pxValue: 6) to-rem($pxValue: 12);
 		background-size: to-rem($pxValue: 19);
 		padding-left: to-rem($pxValue: 32);
 
 		:not(.cmp-sitesearch) > & {
-			@extend %form-element-semitransparent;
+			// @extend %form-element-semitransparent;
 
 			& + .elm-label {
 				margin-left: to-rem($pxValue: 16);

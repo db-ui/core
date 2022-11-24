@@ -1,6 +1,8 @@
-<dl class="db-ui-normal">
+<dl>
 {{#each variations}}
 	<dt>{{variant}}:</dt>
-	<dd>{{> elements-input type=../type label=../label placeholder=../placeholder }}</dd>
+	<dd class="db-ui-functional">{{> elements-input type=../type label=../label placeholder=../placeholder }}</dd>
+	<dd class="db-ui-normal">{{> elements-input type=../type label=../label placeholder=../placeholder }}</dd>
+	<dd class="db-ui-expressive">{{> elements-input type=../type label=../label placeholder=../placeholder }}</dd>
 {{/each }}
 </dl>
