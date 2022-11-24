@@ -18,6 +18,7 @@ We've removed the following files, that we already deprecated within the previou
 === `button`
 
 - The `large` size has been removed; it became obsolete mainly due to our `tonality` introduction
+- And renamed `regular` size to `medium`
 - Made some changes regarding the variants:
   - `Brand primary` becomes the regular `Primary` button
   - `Primary` becomes `Secondary Inverted`
