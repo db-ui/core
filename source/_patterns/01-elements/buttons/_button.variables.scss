@@ -1,9 +1,3 @@
 @use "@db-ui/base/build/scss/variables" as *;
 @use "@db-ui/base/build/scss/helpers/functions" as *;
 @use "@db-ui/base/build/scss/icon/icons.helpers" as *;
-
-$button---color: #fff !default;
-
-$button---minHeight: to-rem(
-	$pxValue: 40
-) !default;
