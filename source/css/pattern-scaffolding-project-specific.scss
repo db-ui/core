@@ -10,6 +10,10 @@ body,
 	font-family: $db-font-family-sans;
 }
 
+.db-bg-success-light-ia {
+	@extend %db-bg-success-light;
+}
+
 // pl-header {
 // 	font-size: to-rem($pxValue: 15.49191);
 // }
