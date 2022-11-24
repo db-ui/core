@@ -1,0 +1,458 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>DB UI Core - Pattern Lab</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+	<script>document.documentElement.className = 'js ' + document.documentElement.className.replace(/\bno-js\b/, '')</script>
+
+	<!-- see https://htmlhead.dev/ for a description of what could get listed within your pages HEAD section //-->
+
+
+	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1669273450835" media="all">
+
+	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1669273450835" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1669273450835" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1669273450835" media="all">
+	<!-- dialog polyfill //-->
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1669273450835" media="all">
+
+	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1669273450835" media="all">
+	<!-- End Pattern Lab -->
+
+
+	<!-- Google's "Create good meta descriptions" / https://support.google.com/webmasters/answer/35624?hl=en#meta-descriptions
+documentation has useful tips on creating an effective description. //-->
+	<meta name="Description" content="Put your description here.">
+
+	<!-- You can add the theme-color meta extension in the <head> of your pages to suggest the color that browsers and OSes should use if they customize the display of individual pages in their UIs with varying colors.
+			more information: https://html.spec.whatwg.org/multipage/semantics.html#meta-theme-color -->
+	<meta name="theme-color" content="#f01414">
+
+	<!-- iframe resizing script for pattern previews -->
+	<script src="../../js/iframeresizer.contentwindow.min.js"></script>
+</head>
+
+<body class="styleguide">
+<!-- View All Patterns in a Pattern Sub-Type -->
+<div class="pl-c-main">
+
+	<!-- Index of Patterns -->
+	<div class="pl-c-pattern-index">
+
+		<div id="viewall-components-notifications" class="pl-c-category">
+				
+			<h2 class="pl-c-category__title">
+				<a href="../../patterns/components-notifications&#x2F;index.html" class="pl-c-category__title-link patternLink" data-patternpartial="viewall-components-notifications">Notifications</a>
+			</h2><!--end pl-c-category__title-->
+		
+			<div class="pl-c-category__description pl-c-text-passage">
+				<h2>Best practices</h2>
+<p>Best practice, research insights and examples: <a href="https://gerireid.com/forms.html#notifications">https://gerireid.com/forms.html#notifications</a></p>
+<h2>Accessibility</h2>
+<p>Notifications are intended to be small interruptions to your visitors or users, so to help those with screen readers and similar assistive technologies, you should wrap your notifications in an aria-live region. Changes to live regions (such as injecting/updating a notification component) are automatically announced by screen readers without needing to move the user’s focus or otherwise interrupt the user.</p>
+<p>Additionally, if you'd like to update existing notifications incrementally, include <code>aria-atomic=&quot;true&quot;</code> to ensure that the entire notification is always announced as a single (atomic) unit, rather than announcing what was changed (which could lead to problems if you only update part of the notification’s content, or if displaying the same notification content at a later point in time). It's still recommended to remove and add <code>cmp-notification</code> components as a whole within the <code>section</code>.</p>
+<p>Note that the <code>live</code> region needs to be present in the markup before the notification is generated or updated. If you dynamically generate both at the same time and inject them into the page, they will generally not be announced by assistive technologies.</p>
+<p>You also need to adapt the <code>role</code> and <code>aria-live</code> level depending on the content. If it’s an important message like an error, use <code>role=&quot;alert&quot;</code> and <code>aria-live=&quot;assertive&quot;</code>, otherwise use <code>role=&quot;status&quot;</code>and <code>aria-live=&quot;polite&quot;</code> attributes.</p>
+<p>Adapted from <a href="https://getbootstrap.com/docs/4.3/components/toasts/">https://getbootstrap.com/docs/4.3/components/toasts/</a></p>
+<p>And we're not using <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-relevant"><code>aria-relevant=&quot;additions&quot;</code></a>, as the default behaviour is even already what we expect with the default (<code>additions text</code>), compare to e.g. <a href="https://medium.com/dev-channel/why-authors-should-avoid-aria-relevant-5d3164fab1e3">https://medium.com/dev-channel/why-authors-should-avoid-aria-relevant-5d3164fab1e3</a> and <a href="https://github.com/w3c/aria/issues/712#issuecomment-529848465">https://github.com/w3c/aria/issues/712#issuecomment-529848465</a></p>
+<h3>Live regions</h3>
+<blockquote>
+<p>Live regions are perceivable regions of a web page that are typically updated as a result of an external event when user focus may be elsewhere. These regions are not always updated as a result of a user interaction. This practice has become commonplace with the growing use of Ajax. Examples of live regions include a chat log, stock ticker, or a sport scoring section that updates periodically to reflect game statistics. Since these asynchronous areas are expected to update outside the user's area of focus, assistive technologies such as screen readers have either been unaware of their existence or unable to process them for the user. WAI-ARIA has provided a collection of properties that allow the author to identify these live regions and process them: aria-live, aria-relevant, aria-atomic, and aria-busy.</p>
+</blockquote>
+<p>Source: <a href="https://www.w3.org/TR/wai-aria/#terms">https://www.w3.org/TR/wai-aria/#terms</a></p>
+<h3>Conveying meaning to assistive technologies</h3>
+<blockquote>
+<p>Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (e.g. the visible text), or is included through alternative means, such as additional visibly hidden text.</p>
+</blockquote>
+<p>Source: <a href="https://getbootstrap.com/docs/4.3/components/alerts/">https://getbootstrap.com/docs/4.3/components/alerts/</a></p>
+
+			</div><!--end pl-c-category__description-->
+			
+		</div><!--end pl-c-category-->
+					<div id="components-notifications" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/components-notifications-notifications&#x2F;components-notifications-notifications.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-notifications" title="Link to Pattern">
+						Notifications
+		
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-notifications" data-patternpartial="components-notifications" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-notifications">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			<section aria-live="polite" data-variant="">
+</section>
+
+<section aria-live="assertive" data-variant="">
+</section>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-components-notifications" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-notification","lineagePath":"../../patterns/components-notifications-_notification/components-notifications-_notification.rendered.html"}],"lineage":[{"lineagePattern":"components-notification","lineagePath":"../../patterns/components-notifications-_notification/components-notifications-_notification.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"notifications"},"patternExtension":"hbs","patternName":"Notifications","patternPartial":"components-notifications","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="components-notifications-variants" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/components-notifications-notifications-variants&#x2F;components-notifications-notifications-variants.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-notifications-variants" title="Link to Pattern">
+						Notifications Variants
+		
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-notifications-variants" data-patternpartial="components-notifications-variants" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-notifications-variants">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			<section aria-live="polite" data-variant="alert">
+			<div class="cmp-notification" role="status"
+				
+				>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit
+			</div>
+			<div class="cmp-notification" data-type="informative" role="status"
+				
+				>
+				informative: Lorem ipsum dolor sit amet, consectetur adipisicing elit
+			</div>
+			<div class="cmp-notification" data-type="success" role="status"
+				
+				>
+				success: Lorem ipsum dolor sit amet, consectetur adipisicing elit
+			</div>
+</section>
+
+<section aria-live="assertive" data-variant="alert">
+			<div class="cmp-notification" data-type="error" role="alert"
+				
+				>
+				error: Lorem ipsum dolor sit amet, consectetur adipisicing elit
+			</div>
+			<div class="cmp-notification" data-type="warning" role="alert"
+				
+				>
+				warning: Lorem ipsum dolor sit amet, consectetur adipisicing elit
+			</div>
+</section>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-components-notifications-variants" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-notification","lineagePath":"../../patterns/components-notifications-_notification/components-notifications-_notification.rendered.html"}],"lineage":[{"lineagePattern":"components-notification","lineagePath":"../../patterns/components-notifications-_notification/components-notifications-_notification.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"notifications"},"patternExtension":"hbs","patternName":"Notifications Variants","patternPartial":"components-notifications-variants","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="components-notifications-hovering" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/components-notifications-notifications-hovering&#x2F;components-notifications-notifications-hovering.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-notifications-hovering" title="Link to Pattern">
+						Notifications Hovering
+		
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-notifications-hovering" data-patternpartial="components-notifications-hovering" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-notifications-hovering">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			<section aria-live="polite" data-variant="hovering">
+			<div class="cmp-notification" role="status"
+				
+				>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit
+			</div>
+			<div class="cmp-notification" data-type="informative" role="status"
+				
+				>
+				informative: Lorem ipsum dolor sit amet, consectetur adipisicing elit
+			</div>
+			<div class="cmp-notification" data-type="success" role="status"
+				
+				>
+				success: Lorem ipsum dolor sit amet, consectetur adipisicing elit
+			</div>
+</section>
+
+<section aria-live="assertive" data-variant="hovering">
+			<div class="cmp-notification" data-type="error" role="alert"
+				
+				>
+				error: Lorem ipsum dolor sit amet, consectetur adipisicing elit
+			</div>
+			<div class="cmp-notification" data-type="warning" role="alert"
+				
+				>
+				warning: Lorem ipsum dolor sit amet, consectetur adipisicing elit
+			</div>
+</section>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-components-notifications-hovering" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-notification","lineagePath":"../../patterns/components-notifications-_notification/components-notifications-_notification.rendered.html"}],"lineage":[{"lineagePattern":"components-notification","lineagePath":"../../patterns/components-notifications-_notification/components-notifications-_notification.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"notifications"},"patternExtension":"hbs","patternName":"Notifications Hovering","patternPartial":"components-notifications-hovering","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":1}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="components-notifications-hovering-leading-icon" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/components-notifications-notifications-hovering-leading-icon&#x2F;components-notifications-notifications-hovering-leading-icon.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-notifications-hovering-leading-icon" title="Link to Pattern">
+						Notifications - Leading Icon
+		
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-notifications-hovering-leading-icon" data-patternpartial="components-notifications-hovering-leading-icon" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-notifications-hovering-leading-icon">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			<section aria-live="polite" data-variant="hovering">
+</section>
+
+<section aria-live="assertive" data-variant="hovering">
+			<div class="cmp-notification" data-type="informative" role="alert"
+				 data-icon="account"
+				>
+				informative: Lorem ipsum dolor sit amet, consectetur adipisicing elit
+			</div>
+</section>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-components-notifications-hovering-leading-icon" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-notification","lineagePath":"../../patterns/components-notifications-_notification/components-notifications-_notification.rendered.html"}],"lineage":[{"lineagePattern":"components-notification","lineagePath":"../../patterns/components-notifications-_notification/components-notifications-_notification.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"notifications"},"patternExtension":"hbs","patternName":"Notifications - Leading Icon","patternPartial":"components-notifications-hovering-leading-icon","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":2}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="components-notifications-hovering-trailing-icon" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/components-notifications-notifications-hovering-trailing-icon&#x2F;components-notifications-notifications-hovering-trailing-icon.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-notifications-hovering-trailing-icon" title="Link to Pattern">
+						Notifications - Trailing Icon
+		
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-notifications-hovering-trailing-icon" data-patternpartial="components-notifications-hovering-trailing-icon" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-notifications-hovering-trailing-icon">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			<section aria-live="polite" data-variant="hovering">
+</section>
+
+<section aria-live="assertive" data-variant="hovering">
+			<div class="cmp-notification" data-type="informative" role="alert"
+				
+				 data-icon-after="account">
+				informative: Lorem ipsum dolor sit amet, consectetur adipisicing elit
+			</div>
+</section>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-components-notifications-hovering-trailing-icon" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-notification","lineagePath":"../../patterns/components-notifications-_notification/components-notifications-_notification.rendered.html"}],"lineage":[{"lineagePattern":"components-notification","lineagePath":"../../patterns/components-notifications-_notification/components-notifications-_notification.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"notifications"},"patternExtension":"hbs","patternName":"Notifications - Trailing Icon","patternPartial":"components-notifications-hovering-trailing-icon","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":3}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+
+	</div>
+	<!--end pl-c-pattern-index-->
+
+</div>
+<!--end pl-c-main-->		<!--DO NOT REMOVE-->
+		<script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"patternPartial":"viewall-components-notifications"}
+</script>
+
+<script>
+  window.patternData = {"patternPartial":"viewall-components-notifications"};
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1669273450835">
+  (function() {
+    if (self != top) {
+      var cb = '1669273450835';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+
+<script type="module">
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  import('../../styleguide/js/patternlab-pattern.modern.js');
+</script>
+
+<script id="pl-js-insert-1669273450835" nomodule>
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  loadJS('../../styleguide/js/patternlab-pattern.js');
+</script>
+
+
+		<script src="../../js/plugins.min.js"></script>
+		<!-- details/summary polyfill //-->
+		<script src="../../js/details-element-polyfill.js"></script>
+		<!-- dialog polyfill //-->
+		<script src="../../js/dialog-polyfill.js"></script>
+		<script src="../../js/main.min.js"></script>
+	</body>
+
+</html>
