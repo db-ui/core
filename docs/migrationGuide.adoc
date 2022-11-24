@@ -15,7 +15,18 @@ We've removed the following files, that we already deprecated within the previou
 - `@db-ui/core/sources/css/enterprise/db-ui-core-rollup.scss`
 - `@db-ui/core/sources/css/enterprise/db-ui-core-webpack.scss`
 
-=== progress
+=== `button`
+
+- The `large` size has been removed; it became obsolete mainly due to our `tonality` introduction
+- And renamed `regular` size to `medium`
+- Made some changes regarding the variants:
+  - `Brand primary` becomes the regular `Primary` button
+  - `Primary` becomes `Secondary Inverted`
+  - `Secondary Outline` becomes `Secondary`
+  - `Secondary Solid` becomes `Tertiary`
+  - `Tertiary Plain` becomes `Ghost`
+
+=== `progress`
 
 We've remove the deprecated previous HTML implementation of the label by an `output` element and replaced it by an actual `label` element. Necessary changes:
 
