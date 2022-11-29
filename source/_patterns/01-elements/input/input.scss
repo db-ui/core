@@ -131,6 +131,13 @@ $input---color: $db-colors-secondary-enabled !default;
 				}
 			}
 		}
+		// &[placeholder] {
+		// 	&:placeholder-shown {
+		// 		& + label {
+		// 			// opacity: 0;
+		// 		}
+		// 	}
+		// }
 
 		&::placeholder {
 			opacity: 0;
@@ -249,6 +256,24 @@ $input---color: $db-colors-secondary-enabled !default;
 				@include icon(glyph(info), 20, "filled", "after");
 			}
 		}
+
+		// &[data-size="functional"] {
+		// 	& + .elm-label {
+		// 		@include input-label-size(functional);
+		// 	}
+		// }
+
+		// &[data-size="regular"] {
+		// 	& + .elm-label {
+		// 		@include input-label-size(regular);
+		// 	}
+		// }
+
+		// &[data-size="expressive"] {
+		// 	& + .elm-label {
+		// 		@include input-label-size(expressive);
+		// 	}
+		// }
 	}
 
 	&[type="search"] {
