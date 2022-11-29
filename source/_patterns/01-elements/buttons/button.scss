@@ -1,173 +1,118 @@
 @charset "utf-8";
 
 @use "@db-ui/base/build/scss/variables" as *;
+@use "@db-ui/base/build/scss/variables.global" as *;
 @use "@db-ui/base/build/scss/helpers/functions" as *;
+@use "@db-ui/base/build/scss/color-placeholder" as *;
 @use "@db-ui/base/build/scss/icon/icons.helpers" as *;
-@import "button.variables";
 
 .elm-button {
-	// Centering the content vertically and horizontally
-	align-items: center;
+	// Including a loading indicator
+	--loadingIndicator---color: currentColor;
+
+	$icon-size: var(--db-icon-size, 20);
+	align-items: center; // Centering the content vertically and horizontally
+
 	border: 1px solid transparent;
 	border-radius: 4px;
 	display: inline-flex;
-	font-size: to-rem($pxValue: 16);
+
+	font-weight: 700;
 	justify-content: center;
-	min-height: $button---minHeight;
-	padding: to-rem($pxValue: 8) to-rem($pxValue: 16);
+	min-height: $db-sizing-md;
+	padding: $db-spacing-fixed-xs $db-spacing-fixed-md;
+
+	text-align: center;
+
+	// Changing background-color on hover should be animated by a transition
+	transition: background-color
+		var(--db-transition-color, #{$db-transition-color});
 
 	&[data-icon],
 	&[data-icon-before] {
-		padding-left: to-rem($pxValue: 14);
+		padding-left: $db-spacing-fixed-xs;
+
+		&::before {
+			--icon-font-family: var(--db-base-icon-font-family);
+			--icon-font-size: var(--db-base-icon-font-size);
+		}
 	}
 
 	&[data-icon-after] {
-		padding-right: to-rem($pxValue: 14);
+		padding-right: $db-spacing-fixed-xs;
+
+		&::after {
+			--icon-font-family: var(--db-base-icon-font-family);
+			--icon-font-size: var(--db-base-icon-font-size);
+		}
 	}
 	// Square icon only buttons
 	&.is-icon-text-replace {
-		width: $button---minHeight;
+		padding: 0;
+		width: $db-sizing-md;
 	}
 
-	/*&:focus {
-		border-color: #fff;
-	}*/
-	/*	&:active {
-		filter: brightness(75%);
-	}*/
-
-	&%variant-brand-primary,
-	&%variant-primary {
-		color: $button---color;
+	&:not([data-variant]),
+	&[data-variant="primary"] {
+		@extend %db-bg-primary-ia;
 	}
 
-	&%variant-brand-primary,
-	&%variant-primary {
-		font-weight: 700;
-	}
-
-	&%variant-brand-primary {
-		background-color: $button-brand-primary--backgroundColor;
+	&%variant-secondary {
+		background-color: $db-colors-neutral-bg-transparent-full-enabled;
+		border: solid 1px
+			var(--db-current-color, $db-colors-neutral-on-bg-enabled);
+		color: var(--db-current-color, $db-colors-neutral-on-bg-enabled);
 
 		&:not(:disabled) {
 			&:hover {
-				// TODO: This could probably get simplified later on e.g. via CSS variables
-				background-color: $button-brand-primary-hover-backgroundColor;
+				background-color: $db-colors-neutral-bg-transparent-full-hover;
 			}
-		}
 
-		&:active {
-			background-color: #cc0013; // TODO: replace by correct color variable
+			&:active {
+				background-color: $db-colors-neutral-bg-transparent-full-pressed;
+			}
 		}
 	}
 
-	&%variant-primary {
-		background-color: $button-primary--backgroundColor;
+	&%variant-tertiary {
+		background-color: $db-colors-neutral-bg-transparent-semi-enabled;
+		color: var(--db-current-color, $db-colors-neutral-on-bg-enabled);
 
 		&:not(:disabled) {
 			&:hover {
-				// TODO: This could probably get simplified later on e.g. via CSS variables
-				background-color: $button-primary-hover-backgroundColor;
+				background-color: $db-colors-neutral-bg-transparent-semi-hover;
 			}
-		}
 
-		&:active {
-			background-color: #363c4a;
+			&:active {
+				background-color: $db-colors-neutral-bg-transparent-semi-pressed;
+			}
 		}
 	}
 
-	&%variant-secondaryOutline {
-		// TODO: This might get replaced by another effect
-		backdrop-filter: blur(4px);
-		background-color: transparent;
-		border-color: $db-colors-secondary-enabled;
-		color: $db-colors-secondary-enabled;
+	&%variant-ghost {
+		background-color: $db-colors-neutral-bg-transparent-full-enabled;
+		color: var(--db-current-color, $db-colors-neutral-on-bg-enabled);
 
 		&:not(:disabled) {
 			&:hover {
-				// TODO: This could probably get simplified later on e.g. via CSS variables
-				background-color: $button-secondaryOutline-hover-backgroundColor;
+				background-color: $db-colors-neutral-bg-transparent-full-hover;
 			}
-		}
 
-		&:disabled {
-			background-color: transparent;
-			color: $db-colors-secondary-enabled;
-		}
-
-		&:active {
-			background-color: $button-secondaryOutline-active-backgroundColor;
-		}
-	}
-
-	&%variant-secondarySolid {
-		background-color: $button-secondarySolid--backgroundColor;
-		color: $db-colors-secondary-enabled;
-
-		&:not(:disabled) {
-			&:hover {
-				// TODO: This could probably get simplified later on e.g. via CSS variables
-				background-color: $button-secondarySolid-hover-backgroundColor;
+			&:active {
+				background-color: $db-colors-neutral-bg-transparent-full-pressed;
 			}
-		}
-
-		&:active {
-			background-color: $button-secondarySolid-active-backgroundColor;
-		}
-	}
-
-	&%variant-tertiaryPlain {
-		background-color: transparent; // shame.css
-		border: 2px solid transparent;
-		color: $db-colors-secondary-enabled;
-
-		&:not(:disabled) {
-			&:hover {
-				// TODO: This could probably get simplified later on e.g. via CSS variables
-				background-color: $button-secondaryOutline-hover-backgroundColor;
-			}
-		}
-
-		&:disabled {
-			background-color: transparent; // shame.css
-		}
-
-		&:active {
-			background-color: $button-secondaryOutline-active-backgroundColor;
 		}
 	}
 
 	// Sizes
+
 	&%size-Small {
-		min-height: to-rem($pxValue: 36);
+		min-height: $db-sizing-sm;
+		padding: $db-spacing-fixed-3xs $db-spacing-fixed-sm;
 
-		&:not(.is-icon-text-replace) {
-			font-size: to-rem($pxValue: 14);
-		}
-
-		&[data-icon],
-		&[data-icon-before] {
-			@include icon-meta(20);
-		}
-
-		&[data-icon-after] {
-			@include icon-meta($size: 20, $position: "after");
-		}
 		// Square icon only buttons
 		&.is-icon-text-replace {
-			width: to-rem($pxValue: 36);
-		}
-	}
-
-	&%size-Large {
-		min-height: to-rem($pxValue: 52);
-
-		&:not(.is-icon-text-replace) {
-			font-size: to-rem($pxValue: 20);
-		}
-		// Square icon only buttons
-		&.is-icon-text-replace {
-			width: to-rem($pxValue: 52);
+			width: $db-sizing-sm;
 		}
 	}
 
@@ -175,35 +120,43 @@
 		@extend %size-Small;
 	}
 
-	&[data-size="large"] {
-		@extend %size-Large;
+	// Width
+	&%width-full {
+		width: 100%;
+	}
+
+	&[data-width="full"] {
+		@extend %width-full;
 	}
 
 	// Providing the variants as HTML attributes as well
-	&[data-variant="brand-primary"] {
-		@extend %variant-brand-primary;
+
+	&[data-variant="secondary"] {
+		@extend %variant-secondary;
 	}
 
-	&[data-variant="primary"] {
-		@extend %variant-primary;
+	&[data-variant="tertiary"] {
+		@extend %variant-tertiary;
 	}
 
-	&[data-variant="secondary-outline"] {
-		@extend %variant-secondaryOutline;
-	}
-
-	&[data-variant="secondary-solid"] {
-		@extend %variant-secondarySolid;
-	}
-
-	&[data-variant="tertiary-plain"] {
-		@extend %variant-tertiaryPlain;
+	&[data-variant="ghost"] {
+		@extend %variant-ghost;
 	}
 
 	&:disabled {
-		// TODO: We need to replace this by its correct color variable
-		background-color: #d7dce1;
-		color: $db-colors-secondary-enabled;
-		opacity: 0.5;
+		opacity: 0.25;
+	}
+
+	// States (currently only "loading")
+	&[data-state="loading"] {
+		@include is-icon-text-replace();
+
+		&::before {
+			content: "";
+		}
+	}
+
+	&[data-state="loading"] {
+		font-size: 0;
 	}
 }

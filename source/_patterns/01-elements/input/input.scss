@@ -15,7 +15,7 @@
 	line-height: to-rem($pxValue: 24);
 	max-width: 100%;
 
-	padding: $db-spacing-fixed-normal-xs $db-spacing-fixed-normal-m;
+	padding: $db-spacing-fixed-regular-xs $db-spacing-fixed-regular-m;
 
 	width: 100%;
 
@@ -70,7 +70,9 @@
 		// Floating labels
 		margin-top: to-rem($pxValue: 16);
 
-		&:not([type="date"]):not([type="datetime-local"]):not([type="month"]):not([type="time"]):not([type="week"])
+		&:not([type="date"]):not([type="datetime-local"]):not(
+				[type="month"]
+			):not([type="time"]):not([type="week"])
 			+ .elm-label {
 			// position: absolute;
 			// left: calc(#{to-em($pxValue: 10)} - 1px);
@@ -89,7 +91,7 @@
 
 			margin-bottom: -#{to-rem($pxValue: 18)};
 			transform: translate(
-				$db-spacing-fixed-normal-m,
+				$db-spacing-fixed-regular-m,
 				-#{to-rem($pxValue: 41)}
 			);
 
