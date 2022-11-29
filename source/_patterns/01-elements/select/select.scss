@@ -29,7 +29,7 @@
 		background-repeat: no-repeat;
 		height: to-rem($pxValue: 44);
 		padding: to-rem($pxValue: 20) to-rem($pxValue: 42) 0
-			$db-spacing-fixed-normal-m;
+			$db-spacing-fixed-regular-m;
 
 		// Floating labels
 		& + .elm-label {
@@ -48,7 +48,7 @@
 				color: $select-floatingLabel--color;
 				font-size: to-rem($pxValue: 16);
 				transform: translate(
-					$db-spacing-fixed-normal-m,
+					$db-spacing-fixed-regular-m,
 					-#{to-rem($pxValue: 35)}
 				);
 			}
@@ -78,7 +78,7 @@
 		font-size: to-rem($pxValue: 12);
 		margin-bottom: -#{to-rem($pxValue: 18)};
 		transform: translate(
-			$db-spacing-fixed-normal-m,
+			$db-spacing-fixed-regular-m,
 			-#{to-rem($pxValue: 41)}
 		);
 		transition: opacity, transform 150ms;
@@ -93,7 +93,7 @@
 
 		& + .elm-label {
 			transform: translate(
-				$db-spacing-fixed-normal-m,
+				$db-spacing-fixed-regular-m,
 				-#{to-rem($pxValue: 100)}
 			);
 		}
