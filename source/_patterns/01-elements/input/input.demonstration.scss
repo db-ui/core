@@ -1,3 +1,5 @@
+@use "@db-ui/base/build/scss/tonality" as *;
+
 @import "@db-ui/base/build/scss/scaling-classes";
 
 [id|="elements-input"] {
@@ -8,4 +10,8 @@
 
 .elm-input {
 	max-width: 30rem;
+}
+
+.pl-c-pattern {
+	@extend %db-ui-normal;
 }
