@@ -7,26 +7,24 @@
 
 $icons-path: "../../../icons/" !default;
 
-:root {
-	--elm-input-padding-left: #{$db-spacing-fixed-xs};
-}
+/* stylelint-disable */
 
 // TODO rename
-@mixin input-label-translation() {
+@mixin input-label-translation($translationX: var(--elm-input-padding-left)) {
 	$transformScale: -1.2;
 
 	transition: opacity 0.08s, transform 0.15s;
 	opacity: var(--db-input-focus-opacity);
 
-	transform: translate(
-			var(--elm-input-padding-left, $db-spacing-fixed-xs),
-			calc($db-sizing-md * $transformScale)
-		)
+	transform: translate($translationX, calc($db-sizing-md * $transformScale))
 		scale(var(--db-input-label-scale));
 }
 
 .elm-input {
 	position: relative;
+
+	--elm-input-padding-left: #{$db-spacing-fixed-sm};
+	--elm-input-padding-right: #{$db-spacing-fixed-sm};
 }
 
 .elm-input input {
@@ -34,28 +32,40 @@ $icons-path: "../../../icons/" !default;
 
 	border: none;
 	border-radius: 4px;
-
 	height: $db-sizing-md;
 	max-width: 100%;
 	width: 100%;
-	padding: $db-spacing-fixed-xs $db-spacing-fixed-xs;
+	padding: $db-spacing-fixed-xs var(--elm-input-padding-left)
+		$db-spacing-fixed-xs var(--elm-input-padding-right);
 
 	& + label {
+		position: absolute;
 		display: flex;
 		align-items: center;
+		font-size: var(--db-type-body-font-size-md);
+		color: $db-colors-secondary-enabled;
 
-		font-size: var(--db-type-body-font-size-md); // $db-type-font-size-md;
-
+		transform-origin: left;
 		transform: translate(
-			var(--elm-input-padding-left, $db-spacing-fixed-xs),
+			var(--elm-input-padding-left),
 			calc(-1 * var(--db-sizing-md))
 		);
 		transition: transform 0.2s $db-transition-functional-timing;
 
 		height: $db-sizing-md;
+		pointer-events: none;
 	}
 
-	// TODO: Evaluate whether those could get moved to ../_form-elements.scss
+	& ~ .description {
+		@extend %db-body-xs;
+		margin: $db-spacing-fixed-2xs
+			var(--elm-input-padding-left, $db-spacing-fixed-xs) 0;
+
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
 	&:focus,
 	&:not(:placeholder-shown) {
 		&:not(:disabled) {
@@ -77,7 +87,11 @@ $icons-path: "../../../icons/" !default;
 		&,
 		& + label {
 			// Decided against cursor: not-allowed, compare to e.g. https://phabricator.wikimedia.org/T121960
-			opacity: 0.4;
+			opacity: 0.25;
+		}
+
+		& + .description {
+			opacity: 0;
 		}
 	}
 
@@ -88,72 +102,24 @@ $icons-path: "../../../icons/" !default;
 	&[type="month"],
 	&[type="number"],
 	&[type="password"],
-	:where(:not(.cmp-sitesearch)) > &[type="search"],
+	//:where(:not(.cmp-sitesearch)) > &[type="search"],
+	&[type="search"],
 	&[type="tel"],
 	&[type="text"],
 	&[type="time"],
 	&[type="url"],
 	&[type="week"] {
-		// TODO: Evaluate whether those could get moved to ../_form-elements.scss
-		// Semitransparent is the default style
-		// @at-root :where(#{&}) {
-		// 	@extend %form-element-semitransparent;
-		// }
-
 		@extend %db-body-sm;
-
-		// Floating labels
-		//margin-top: to-rem($pxValue: 16);
 
 		&:not([type="date"]):not([type="datetime-local"]):not(
 				[type="month"]
 			):not([type="time"]):not([type="week"])
 			+ label {
-			// position: absolute;
-			// left: calc(#{to-em($pxValue: 10)} - 1px);
-
-			// transition: opacity, transform 250ms;
 			// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
 			@media (prefers-reduced-motion: reduce) {
 				transition-duration: 0.01s !important;
 			}
 		}
-
-		& + label {
-			// font-size: to-rem($pxValue: 14);
-			color: $db-colors-secondary-enabled;
-			pointer-events: none;
-			transform-origin: left;
-
-			& ~ .description {
-				@extend %db-body-xs;
-				margin-top: calc(var(--db-sizing-md) * -1);
-				padding: $db-spacing-fixed-2xs
-					var(--elm-input-padding-left, $db-spacing-fixed-xs) 0;
-
-				max-width: 30rem;
-
-				//height: calc(var(--db-sizing-md) * 0.5);
-				display: flex;
-				align-items: flex-start;
-				justify-content: space-between;
-
-				// trailing icon position
-				&::after {
-					position: relative;
-					top: calc(
-						var(--db-sizing-md) * -1 + var(--db-sizing-md) * 0.2
-					);
-				}
-			}
-		}
-		// &[placeholder] {
-		// 	&:placeholder-shown {
-		// 		& + label {
-		// 			// opacity: 0;
-		// 		}
-		// 	}
-		// }
 
 		&::placeholder {
 			opacity: 0;
@@ -164,45 +130,64 @@ $icons-path: "../../../icons/" !default;
 				opacity: 0.5;
 			}
 		}
+	}
 
-		// TODO: Evaluate whether those could get moved to ../_form-elements.scss
-		// Validation
-		&:required {
-			&:valid:not([aria-invalid]) {
-				//--formElement---borderColor: #{$db-color-green-600};
-			}
+	&[type="search"] {
+		// TODO this is scoped
+		--elm-input-padding-left: #{calc($db-spacing-fixed-sm * 2 + 0.625rem)};
 
-			&:invalid {
-				&:not(:placeholder-shown) {
-					@extend %db-bg-critical-transparent-semi;
+		$paddingLeft: calc($db-spacing-fixed-sm * 2 + 0.625rem);
 
-					& + label {
-						color: $db-colors-critical-on-bg-enabled;
-					}
+		padding-left: var(--elm-input-padding-left);
+
+		& ~ .elm-state-icon {
+			@include icon(glyph(search), 20, "filled", "before", false);
+		}
+
+		+ label {
+			transform: translate($paddingLeft, calc(-1 * var(--db-sizing-md)));
+		}
+
+		~ .description {
+			padding-left: $paddingLeft;
+		}
+
+		&:focus,
+		&:not(:placeholder-shown) {
+			&:not(:disabled) {
+				+ label {
+					padding-left: 0;
+					@include input-label-translation($paddingLeft);
 				}
 			}
 		}
 
-		&[aria-invalid="true"] {
-			// --formElement---borderColor: #{$db-colors-primary-enabled};
+		$icons-path: "../../../icons/" !default;
+
+		// https://stackoverflow.com/questions/20804016/editing-input-type-search-pseudo-element-button-x
+		&::-webkit-search-cancel-button {
+			-webkit-appearance: none;
+			position: absolute;
+			right: $db-spacing-fixed-sm;
+			top: 0;
+			height: $db-sizing-md;
+			width: 1em;
+			background: url(#{$icons-path}functional/images/navigation/db_ic_cancel_24.svg)
+				no-repeat 50% 50%;
+			background-size: contain;
+			opacity: 0;
+			pointer-events: none;
+			cursor: pointer;
 		}
-	}
 
-	&[type="search"] {
-		--elm-input-padding-left: #{calc(
-				$db-spacing-fixed-xs * 2 + var(--db-base-icon-font-size)
-			)};
-		padding-left: var(--elm-input-padding-left);
-
-		& ~ .elm-state-icon {
-			@include icon(glyph(search), 20, "filled", "before", false, false);
+		&:focus::-webkit-search-cancel-button {
+			opacity: 1;
+			pointer-events: all;
 		}
 
-		:not(.cmp-sitesearch) > & {
-			// @extend %form-element-semitransparent;
-
-			& + label {
-				margin-left: to-rem($pxValue: 16);
+		&.hide-native-cancel {
+			&::-webkit-search-cancel-button {
+				display: none;
 			}
 		}
 	}
@@ -242,23 +227,23 @@ $icons-path: "../../../icons/" !default;
 		}
 	}
 
-	&[data-variant="error"] {
-		.elm-state-icon {
-			color: $db-colors-critical-enabled;
-			/* stylelint-disable */
-			@include icon(glyph(error), 20, "filled", "after", false, false);
+	// Variant error or invalid state
+	&[data-variant="error"] input,
+	input:required:invalid:not(:placeholder-shown),
+	input[aria-invalid="true"] {
+		@extend %db-bg-critical-transparent-semi;
+
+		& + label {
+			color: $db-colors-critical-on-bg-enabled;
 		}
 
-		input {
-			@extend %db-bg-critical-transparent-semi;
+		& ~ .description {
+			color: $db-colors-critical-enabled;
+		}
 
-			& + label {
-				color: $db-colors-critical-on-bg-enabled;
-			}
-
-			& ~ .description {
-				color: $db-colors-critical-enabled;
-			}
+		& ~ .elm-state-icon {
+			color: $db-colors-critical-enabled;
+			@include icon(glyph(error), 20, "filled", "after", false);
 		}
 	}
 
@@ -271,14 +256,7 @@ $icons-path: "../../../icons/" !default;
 
 		& ~ .description {
 			color: $db-colors-warning-enabled;
-			@include icon(
-				glyph(error-triangle),
-				20,
-				"filled",
-				"after",
-				false,
-				false
-			);
+			@include icon(glyph(error-triangle), 20, "filled", "after", false);
 		}
 	}
 
@@ -291,33 +269,8 @@ $icons-path: "../../../icons/" !default;
 
 		& ~ .description {
 			color: $db-colors-success-enabled;
-			@include icon(
-				glyph(check-circle),
-				20,
-				"filled",
-				"after",
-				false,
-				false
-			);
+			@include icon(glyph(check-circle), 20, "filled", "after", false);
 		}
-
-		// &[data-size="functional"] {
-		// 	& + .elm-label {
-		// 		@include input-label-size(functional);
-		// 	}
-		// }
-
-		// &[data-size="regular"] {
-		// 	& + .elm-label {
-		// 		@include input-label-size(regular);
-		// 	}
-		// }
-
-		// &[data-size="expressive"] {
-		// 	& + .elm-label {
-		// 		@include input-label-size(expressive);
-		// 	}
-		// }
 	}
 
 	&[data-variant="information"] input {
@@ -329,7 +282,7 @@ $icons-path: "../../../icons/" !default;
 
 		& ~ .description {
 			color: $db-colors-information-enabled;
-			@include icon(glyph(info), 20, "filled", "after", false, false);
+			@include icon(glyph(info), 20, "filled", "after", false);
 		}
 	}
 }

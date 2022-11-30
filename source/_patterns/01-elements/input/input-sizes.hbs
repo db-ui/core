@@ -1,6 +1,6 @@
-<main>
+<dl>
 {{#each sizes}}
-	<code>data-size="{{size}}":</code>
-	<section class="box-with-border db-ui-{{size}}">{{> elements-input type=../type label=../label placeholder=../placeholder}}</section>
+	<dt>{{size}}:</dt>
+	<dd class="db-ui-{{size}}">{{> elements-input type=../type label=../label placeholder=../placeholder }}</dd>
 {{/each }}
-</main>
+</dl>

@@ -6,7 +6,7 @@
 			"id": "input01"
 		},
 		{
-			"size": "normal",
+			"size": "regular",
 			"label": "Regular (default, data-size attribute is optional)",
 			"id": "input02"
 		},
