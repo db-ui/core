@@ -15,7 +15,7 @@
 	line-height: to-rem($pxValue: 24);
 	max-width: 100%;
 
-	padding: $db-spacing-fixed-normal-xs $db-spacing-fixed-normal-m;
+	padding: $db-spacing-fixed-regular-xs $db-spacing-fixed-regular-m;
 
 	width: 100%;
 
@@ -91,7 +91,7 @@
 
 			margin-bottom: -#{to-rem($pxValue: 18)};
 			transform: translate(
-				$db-spacing-fixed-normal-m,
+				$db-spacing-fixed-regular-m,
 				-#{to-rem($pxValue: 41)}
 			);
 
