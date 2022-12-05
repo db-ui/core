@@ -1,6 +1,6 @@
 <!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
 <!-- [html-validate-disable-next input-missing-label] -->
-<div class="elm-input" {{#if variant}} data-variant="{{variant}}"{{/if }} {{#if icon-before}} data-icon-before="{{icon}}"{{/if}}>
+<div class="elm-input" {{#if variant}} data-variant="{{variant}}"{{/if }} {{#if icon-before}} data-icon-before="{{icon-before}}"{{/if}} {{#if icon-before}} data-icon-after="{{icon-after}}"{{/if}}>
 	<input type="{{ type }}"
 		class="{{ styleModifier }}"
 		placeholder="{{ placeholder }}"

@@ -9,9 +9,8 @@ $icons-path: "../../../icons/" !default;
 
 /* stylelint-disable */
 
-// TODO rename
-@mixin input-label-translation($translationX: var(--elm-input-padding-left)) {
-	$transformScale: -1.2;
+@mixin label-focus-animation($translationX: var(--elm-input-padding-left)) {
+	$transformScale: -1.25;
 
 	transition: opacity 0.08s, transform 0.15s;
 	opacity: var(--db-input-focus-opacity);
@@ -25,6 +24,56 @@ $icons-path: "../../../icons/" !default;
 
 	--elm-input-padding-left: #{$db-spacing-fixed-sm};
 	--elm-input-padding-right: #{$db-spacing-fixed-sm};
+
+	&[data-icon-before] {
+		--elm-input-padding-left: #{calc(2 * $db-spacing-fixed-sm + 0.425rem)};
+
+		input {
+			padding-left: var(--elm-input-padding-left);
+		}
+	}
+
+	&[data-icon-after] {
+		--elm-input-padding-right: #{calc(
+				2 * #{$db-spacing-fixed-sm} + 0.425rem
+			)};
+
+		input {
+			padding-right: var(--elm-input-padding-right);
+		}
+
+		.elm-state-icon::after {
+			margin-right: calc(0.75rem + $db-spacing-fixed-xs);
+		}
+	}
+
+	&[data-variant][data-icon-after] {
+		--elm-input-padding-right: #{calc(
+				2 * #{$db-spacing-fixed-sm} + 0.425rem + 0.75rem + #{$db-spacing-fixed-xs}
+			)};
+
+		input {
+			padding-right: var(--elm-input-padding-right);
+		}
+	}
+
+	&::before,
+	&::after {
+		@extend %db-body-sm;
+		--icon-font-family: var(--db-base-icon-font-family);
+		--icon-font-size: var(--db-base-icon-font-size);
+
+		height: var(--db-sizing-md);
+		display: flex;
+		align-items: center;
+		position: absolute;
+		top: 0;
+		padding: 0 $db-spacing-fixed-xs;
+	}
+
+	&::after {
+		right: 0;
+	}
 }
 
 .elm-input input {
@@ -35,8 +84,8 @@ $icons-path: "../../../icons/" !default;
 	height: $db-sizing-md;
 	max-width: 100%;
 	width: 100%;
-	padding: $db-spacing-fixed-xs var(--elm-input-padding-left)
-		$db-spacing-fixed-xs var(--elm-input-padding-right);
+	padding: $db-spacing-fixed-xs var(--elm-input-padding-right)
+		$db-spacing-fixed-xs var(--elm-input-padding-left);
 
 	& + label {
 		position: absolute;
@@ -58,8 +107,7 @@ $icons-path: "../../../icons/" !default;
 
 	& ~ .description {
 		@extend %db-body-xs;
-		margin: $db-spacing-fixed-2xs
-			var(--elm-input-padding-left, $db-spacing-fixed-xs) 0;
+		margin: $db-spacing-fixed-2xs $db-spacing-fixed-xs 0;
 
 		display: flex;
 		align-items: flex-start;
@@ -73,10 +121,10 @@ $icons-path: "../../../icons/" !default;
 				$db-spacing-fixed-xs - var(--db-input-focus-opacity) *
 					$db-spacing-fixed-xs
 			);
-			padding-top: $db-spacing-fixed-sm;
+			padding-top: $db-spacing-fixed-xs;
 
 			+ label {
-				@include input-label-translation();
+				@include label-focus-animation();
 			}
 		}
 	}
@@ -157,7 +205,7 @@ $icons-path: "../../../icons/" !default;
 			&:not(:disabled) {
 				+ label {
 					padding-left: 0;
-					@include input-label-translation($paddingLeft);
+					@include label-focus-animation($paddingLeft);
 				}
 			}
 		}
@@ -221,10 +269,8 @@ $icons-path: "../../../icons/" !default;
 		}
 	}
 
-	&[data-variant] {
-		input {
-			padding-right: var(--db-base-icon-font-size);
-		}
+	&[data-variant="error"] {
+		color: $db-colors-critical-on-bg-enabled;
 	}
 
 	// Variant error or invalid state
@@ -237,12 +283,12 @@ $icons-path: "../../../icons/" !default;
 			color: $db-colors-critical-on-bg-enabled;
 		}
 
-		& ~ .description {
+		& ~ .description,
+		& ~ .elm-state-icon {
 			color: $db-colors-critical-enabled;
 		}
 
 		& ~ .elm-state-icon {
-			color: $db-colors-critical-enabled;
 			@include icon(glyph(error), 20, "filled", "after", false);
 		}
 	}
@@ -254,8 +300,12 @@ $icons-path: "../../../icons/" !default;
 			color: $db-colors-warning-on-bg-enabled;
 		}
 
-		& ~ .description {
+		& ~ .description,
+		& ~ .elm-state-icon {
 			color: $db-colors-warning-enabled;
+		}
+
+		& ~ .elm-state-icon {
 			@include icon(glyph(error-triangle), 20, "filled", "after", false);
 		}
 	}
@@ -267,8 +317,12 @@ $icons-path: "../../../icons/" !default;
 			color: $db-colors-success-on-bg-enabled;
 		}
 
-		& ~ .description {
+		& ~ .description,
+		& ~ .elm-state-icon {
 			color: $db-colors-success-enabled;
+		}
+
+		& ~ .elm-state-icon {
 			@include icon(glyph(check-circle), 20, "filled", "after", false);
 		}
 	}
@@ -280,8 +334,12 @@ $icons-path: "../../../icons/" !default;
 			color: $db-colors-information-on-bg-enabled;
 		}
 
-		& ~ .description {
+		& ~ .description,
+		& ~ .elm-state-icon {
 			color: $db-colors-information-enabled;
+		}
+
+		& ~ .elm-state-icon {
 			@include icon(glyph(info), 20, "filled", "after", false);
 		}
 	}

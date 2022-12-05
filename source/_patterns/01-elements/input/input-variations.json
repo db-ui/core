@@ -4,8 +4,7 @@
 			"variant": "error",
 			"message": "Error Message",
 			"description": "Error Message Description",
-			"id": "input04",
-			"icon": "info"
+			"id": "input04"
 		},
 		{
 			"variant": "warning",
