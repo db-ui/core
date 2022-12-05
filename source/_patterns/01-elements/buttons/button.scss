@@ -20,6 +20,7 @@
 	font-weight: 700;
 	justify-content: center;
 	min-height: $db-sizing-md;
+	min-width: $db-sizing-md;
 	padding: $db-spacing-fixed-xs $db-spacing-fixed-md;
 
 	text-align: center;
@@ -49,7 +50,6 @@
 	// Square icon only buttons
 	&.is-icon-text-replace {
 		padding: 0;
-		width: $db-sizing-md;
 	}
 
 	&:not([data-variant]),
