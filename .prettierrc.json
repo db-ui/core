@@ -2,16 +2,11 @@
 	"trailingComma": "none",
 	"overrides": [
 		{
-			"files": "**/*.js",
+			"files": ["*.js", "*.jsx", "*.ts", "*.tsx"],
 			"options": {
-				"singleQuote": true
-			}
-		},
-		{
-			"files": "**/*.mjs",
-			"options": {
-				"singleQuote": true
+				"bracketSameLine": true
 			}
 		}
-	]
+	],
+	"bracketSpacing": true
 }
