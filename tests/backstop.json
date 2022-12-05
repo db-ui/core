@@ -88,13 +88,18 @@
 			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-image/index.html"
 		},
 		{
-			"label": "Elements – Input",
-			"url": "http://127.0.0.1:8080/patterns/elements-input/index.html",
+			"label": "Elements – Input Sizes",
+			"url": "http://127.0.0.1:8080/patterns/elements-input-input-sizes/elements-input-input-sizes.rendered.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input/index.html"
+		},
+		{
+			"label": "Elements – Input Variations",
+			"url": "http://127.0.0.1:8080/patterns/elements-input-input-variations/elements-input-input-variations.rendered.html",
 			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input/index.html"
 		},
 		{
 			"label": "Elements – Input / hovered",
-			"url": "http://127.0.0.1:8080/patterns/elements-input/index.html",
+			"url": "http://127.0.0.1:8080/patterns/elements-input-input/elements-input-input.rendered.html",
 			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input/index.html",
 			"hoverSelector": ".elm-input",
 			"postInteractionWait": 1000,
@@ -102,9 +107,9 @@
 		},
 		{
 			"label": "Elements – Input - focused",
-			"url": "http://127.0.0.1:8080/patterns/elements-input/index.html",
+			"url": "http://127.0.0.1:8080/patterns/elements-input-input/elements-input-input.rendered.html",
 			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input/index.html",
-			"clickSelector": ".elm-input",
+			"clickSelector": ".elm-input input",
 			"postInteractionWait": 1000,
 			"onReadyScript": "puppet/clickAndHoverHelper.js"
 		},
@@ -117,9 +122,7 @@
 			"label": "Elements – Link / hovered",
 			"url": "http://127.0.0.1:8080/patterns/elements-link/index.html",
 			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-link/index.html",
-			"hoverSelectors": [
-				".elm-link"
-			],
+			"hoverSelectors": [".elm-link"],
 			"postInteractionWait": 1000,
 			"onReadyScript": "puppet/clickAndHoverHelper.js"
 		},
@@ -127,9 +130,7 @@
 			"label": "Elements – Link / clicked",
 			"url": "http://127.0.0.1:8080/patterns/elements-link/index.html",
 			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-link/index.html",
-			"clickSelectors": [
-				".elm-link"
-			],
+			"clickSelectors": [".elm-link"],
 			"postInteractionWait": 1000,
 			"onReadyScript": "puppet/clickAndHoverHelper.js"
 		},
@@ -152,9 +153,7 @@
 			"label": "Elements – Radio / hovered",
 			"url": "http://127.0.0.1:8080/patterns/elements-radio/index.html",
 			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-radio/index.html",
-			"hoverSelectors": [
-				".elm-radio"
-			],
+			"hoverSelectors": [".elm-radio"],
 			"postInteractionWait": 1000,
 			"onReadyScript": "puppet/clickAndHoverHelper.js"
 		},
@@ -232,9 +231,7 @@
 			"label": "Components – Breadcrumb / links hovered",
 			"url": "http://127.0.0.1:8080/patterns/components-breadcrumb/index.html",
 			"referenceUrl": "https://db-ui.github.io/core/patterns/components-breadcrumb/index.html",
-			"hoverSelectors": [
-				".cmp-breadcrumb li .elm-link"
-			],
+			"hoverSelectors": [".cmp-breadcrumb li .elm-link"],
 			"postInteractionWait": 1000,
 			"onReadyScript": "puppet/clickAndHoverHelper.js"
 		},
@@ -320,9 +317,7 @@
 			"label": "Components – Pagination / links hovered",
 			"url": "http://127.0.0.1:8080/patterns/components-pagination/index.html",
 			"referenceUrl": "https://db-ui.github.io/core/patterns/components-pagination/index.html",
-			"hoverSelectors": [
-				".cmp-pagination li .elm-link"
-			],
+			"hoverSelectors": [".cmp-pagination li .elm-link"],
 			"postInteractionWait": 1000,
 			"onReadyScript": "puppet/clickAndHoverHelper.js"
 		},
