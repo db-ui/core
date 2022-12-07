@@ -6,6 +6,7 @@
 	"defaultPatternInfoPanelCode": "html",
 	"defaultInitialViewportWidth": true,
 	"disableDeprecationWarningForOrderPatterns": true,
+	"disableDeprecationWarningForHiddenPatterns": true,
 	"ishControlsHide": {
 		"s": false,
 		"m": false,
