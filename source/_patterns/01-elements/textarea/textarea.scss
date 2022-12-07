@@ -3,14 +3,13 @@
 @use "@db-ui/base/build/scss/variables" as *;
 @use "@db-ui/base/build/scss/helpers/functions" as *;
 @import "textarea.variables";
-@import "../form-elements";
 
 .elm-textarea {
-	@extend %form-element;
+	@extend %form-element !optional;
 
 	// Semitransparent is the default style
 	@at-root :where(#{&}) {
-		@extend %form-element-semitransparent;
+		@extend %form-element-semitransparent !optional;
 	}
 
 	display: block;
@@ -100,18 +99,18 @@
 
 	// ### Style variations
 	&[data-variant="semitransparent"] {
-		@extend %form-element-semitransparent;
+		@extend %form-element-semitransparent !optional;
 	}
 
 	&[data-variant="white"] {
-		@extend %form-element-white;
+		@extend %form-element-white !optional;
 	}
 
 	&[data-variant="solid"] {
-		@extend %form-element-solid;
+		@extend %form-element-solid !optional;
 	}
 
 	&[data-variant="outline"] {
-		@extend %form-element-outline;
+		@extend %form-element-outline !optional;
 	}
 }
