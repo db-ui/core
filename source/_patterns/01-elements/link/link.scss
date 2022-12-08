@@ -1,13 +1,12 @@
 @use "@db-ui/base/build/scss/variables" as *;
+@use "@db-ui/base/build/scss/scaling-placeholder" as *;
 @use "@db-ui/base/build/scss/helpers/functions" as *;
 @use "@db-ui/base/build/scss/icon/icons.helpers" as *;
 
 @import "../../../css/partials.meta";
-@import "link.variables";
 
 .elm-link {
-	// TODO: replace with color when it becomes available via core
-	color: #282d37;
+	color: var(--db-current-color, $db-colors-neutral-on-bg-enabled);
 	display: inline-block;
 	border-radius: to-rem($pxValue: 6);
 
@@ -19,9 +18,16 @@
 		text-underline-position: auto;
 	}
 
+	// Changing color on hover should be animated by a transition
+	transition: $db-transition-color;
+
+	&:hover {
+		color: inherit;
+	}
+
 	// "disabled" links
 	&[aria-disabled="true"] {
-		opacity: $link--disabled-opacity;
+		opacity: var(--db-disabled-text-opacity, 0.5);
 
 		pointer-events: none;
 
@@ -29,44 +35,46 @@
 			color: initial;
 		}
 	}
-	&[data-variant="internal"] {
-		@include icon(glyph(link), 20, "outline", "after");
-	}
-	&[data-variant="external"] {
-		@include icon(glyph(link-external), 20, "outline", "after");
+
+	&[data-content] {
+		--icon-font-family: var(--db-base-icon-font-family);
+		--icon-font-size: var(--db-base-icon-font-size);
 	}
 
-	&[data-variant="internal"],
-	&[data-variant="external"] {
+	&[data-content="internal"] {
+		@include icon(glyph(link), 24, "outline", "after");
+	}
+
+	&[data-content="external"] {
+		@include icon(glyph(link-external), 24, "outline", "after");
+	}
+
+	&[data-content="internal"],
+	&[data-content="external"] {
 		&::after {
+			--icon-margin-before: var(--db-spacing-fixed-xs);
 			margin-top: -3px;
-			--icon-margin-before: #{to-rem($pxValue: 4)};
 		}
+
 		&:focus-visible {
 			outline-offset: -1px;
-			padding: 0 2px 0 2px;
-		}
-	}
-	// Sizes
-	&%size-Small {
-		&:not(.is-icon-text-replace) {
-			font-size: to-em($pxValue: 12);
+			padding: 0 2px;
 		}
 	}
 
-	&[data-size="small"] {
-		// TODO: replace with color when it becomes available via core
-		color: #42464f;
-		@extend %size-Small;
-		&::after {
-			--icon-font-size: #{to-rem($pxValue: 16)};
-		}
-		&[rel],
-		&[data-icon],
-		&[data-icon-before] {
-			@include iconMeta(20);
-			// TODO: remove when icons are availabe in the correct size
-			font-size: 16px;
+	&[data-variant="primary"] {
+		color: $db-colors-primary-enabled;
+
+		&:not(:disabled) {
+			&:hover {
+				color: $db-colors-primary-hover;
+			}
+
+			&:active {
+				color: $db-colors-primary-pressed;
+			}
 		}
 	}
+
+	// data-size=small is defined by tonality in "@db-ui/base/build/scss/tonality"
 }
