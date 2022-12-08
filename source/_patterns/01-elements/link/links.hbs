@@ -8,20 +8,16 @@
 {{/unless }}
 
 <p class="{{ styleModifier }}">
-	{{> elements-link href='#' value='Teaser link' }}
+	{{> elements-link href='#' value='Teaser link Primary' data-variant="primary" data-content='internal'}}
 </p>
 
 <p class="{{ styleModifier }}">
-	{{> elements-link href='#' value='Teaser link' data-variant="primary"}}
+	{{> elements-link href='#' value='Teaser link (disabled)' disabled='true' data-content='internal'}}
 </p>
 
 <p class="{{ styleModifier }}">
-	{{> elements-link href='#' value='Teaser link (disabled)' disabled='true' }}
-</p>
-
-<p class="{{ styleModifier }}">
-	{{> elements-link href='#' value='Internal link hbs' data-content='internal' size=size }}
+	{{> elements-link href='#' value='Teaser link Internal (Default)' data-content='internal' size=size }}
 </p>
 <p class="{{ styleModifier }}">
-	{{> elements-link href='#' value='External link hbs' data-content='external' size=size }}
+	{{> elements-link href='#' value='External link External' data-content='external' size=size }}
 </p>

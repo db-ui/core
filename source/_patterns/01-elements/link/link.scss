@@ -52,7 +52,7 @@
 	&[data-content="internal"],
 	&[data-content="external"] {
 		&::after {
-			--icon-margin-before: var(--db-spacing-fixed-xs);
+			--icon-margin-before: var(--db-spacing-fixed-2xs);
 			margin-top: -3px;
 		}
 
@@ -77,4 +77,12 @@
 	}
 
 	// data-size=small is defined by tonality in "@db-ui/base/build/scss/tonality"
+	&[data-size="small"] {
+		&[data-content="internal"],
+		&[data-content="external"] {
+			&::after {
+				--icon-margin-before: var(--db-spacing-fixed-3xs);
+			}
+		}
+	}
 }
