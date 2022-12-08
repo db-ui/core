@@ -5,7 +5,7 @@
 	{{#if icon-before}} data-icon-before="{{icon-before}}"{{/if}}
 	{{#if icon-before}} data-icon-after="{{icon-after}}"{{/if}}>
 	<input type="{{ type }}"
-		class="{{ styleModifier }}"
+		{{#if styleModifier }}class="{{ styleModifier }}"{{/if }}
 		placeholder="{{ placeholder }}"
 		name="{{ id }}"
 		id="{{ id }}"
