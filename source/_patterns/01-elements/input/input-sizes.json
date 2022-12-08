@@ -14,6 +14,6 @@
 		}
 	],
 	"type": "text",
-	"placeholder": "z.B. DB User",
+	"placeholder": "e.g. DB User",
 	"label": "Textlabel"
 }
