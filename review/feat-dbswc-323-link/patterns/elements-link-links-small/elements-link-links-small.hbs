@@ -1,0 +1,23 @@
+{{#unless size}}
+	<p>
+		{{ excerpt.slim }}. {{> elements-link href='#' value='Text Link' size=size }}{{ excerpt.slim }}
+	</p>
+	<p>
+		{{ excerpt.slim }}. {{> elements-link href='#' value='Text Link (disabled)' disabled='true' size=size }}{{ excerpt.slim }}
+	</p>
+{{/unless }}
+
+<p class="{{ styleModifier }}">
+	{{> elements-link href='#' value='Teaser link Primary' data-variant="primary" data-content='internal'}}
+</p>
+
+<p class="{{ styleModifier }}">
+	{{> elements-link href='#' value='Teaser link (disabled)' disabled='true' data-content='internal'}}
+</p>
+
+<p class="{{ styleModifier }}">
+	{{> elements-link href='#' value='Teaser link Internal (Default)' data-content='internal' size=size }}
+</p>
+<p class="{{ styleModifier }}">
+	{{> elements-link href='#' value='External link External' data-content='external' size=size }}
+</p>

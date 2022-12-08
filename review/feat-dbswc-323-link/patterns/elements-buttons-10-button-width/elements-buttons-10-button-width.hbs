@@ -1,0 +1,13 @@
+{{#each width }}
+	<!-- [html-validate-disable-next heading-level] -->
+	<h2>{{ label }}</h2>
+	<p>
+		{{> elements-button variant='primary' value='Primary' width=width }}
+	</p>
+	<p>
+		{{> elements-button variant='primary' value='Primary' icon='add' width=width }}
+	</p>
+	<p>
+		{{> elements-button variant='primary' title='Done' value='Primary displaying only the icon' icon='done' styleModifier='is-icon-text-replace' width=width }}
+	</p>
+{{/each }}
