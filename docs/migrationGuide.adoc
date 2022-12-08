@@ -36,6 +36,14 @@ We've remove the deprecated previous HTML implementation of the label by an `out
 - The `id`-attributes value on that `label` element needs to match the following attributes values that needs to get added onto the `progress` HTML tag itself:
 `aria-describedby="{{ id }}-label"`
 
+=== `link`
+
+- Removed the ability for custom icons according to guidelines 3.0
+- Added `primary` as variant for highlighting links
+- Changed use of data-variant to use with `primary` and used `daata-content` attribute for differentiation between `internal` and `external`
+- Font-size definition has moved to base due to our `tonality` introduction (default and for `data-size=small`)
+
+
 == DB UI Core 2.2.0 Migration Guide
 
 === progress element
