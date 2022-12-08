@@ -2,18 +2,15 @@
 	"sizes": [
 		{
 			"size": "functional",
-			"label": "Functional",
-			"id": "input01"
+			"label": "Functional"
 		},
 		{
 			"size": "regular",
-			"label": "Regular (default, data-size attribute is optional)",
-			"id": "input02"
+			"label": "Regular (default, data-size attribute is optional)"
 		},
 		{
 			"size": "expressive",
-			"label": "Expressive",
-			"id": "input03"
+			"label": "Expressive"
 		}
 	],
 	"type": "text",

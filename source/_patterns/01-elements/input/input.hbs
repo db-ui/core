@@ -1,6 +1,9 @@
 <!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
 <!-- [html-validate-disable-next input-missing-label] -->
-<div class="elm-input" {{#if variant}} data-variant="{{variant}}"{{/if }} {{#if icon-before}} data-icon-before="{{icon-before}}"{{/if}} {{#if icon-before}} data-icon-after="{{icon-after}}"{{/if}}>
+<div class="elm-input"
+	{{#if variant}} data-variant="{{variant}}"{{/if }}
+	{{#if icon-before}} data-icon-before="{{icon-before}}"{{/if}}
+	{{#if icon-before}} data-icon-after="{{icon-after}}"{{/if}}>
 	<input type="{{ type }}"
 		class="{{ styleModifier }}"
 		placeholder="{{ placeholder }}"
@@ -15,12 +18,12 @@
 		aria-labelledby="{{ id }}-label">
 	<label for="{{ id }}"
 		aria-hidden="true"
-		id="{{ id }}-label">{{ label }}</label>	
+		id="{{ id }}-label">{{ label }}</label>
 
 	{{#if description }}<p{{#if describedbyid }} id="{{ describedbyid }}"{{/if }} class="description">{{{ description }}}</p>{{/if }}
 
 	{{!-- if span elm-icon o.ä. mit data-icon --}}
-	{{#if datalist }}<datalist id="datalist{{ id }}">
+	{{#if datalist }}<datalist id="datalist-{{ id }}">
 		{{#each datalistItems }}
 			<option{{#if value }} value="{{ value }}"{{/if }}>{{ text }}</option>
 		{{/each }}
