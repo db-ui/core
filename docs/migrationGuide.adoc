@@ -41,7 +41,7 @@ We've remove the deprecated previous HTML implementation of the label by an `out
 - The input background style variations `semitransparent`, `solid`, `white` and `outline` have been removed. Input fields have only one background style left. 
 - Introducing 3 different sizes of input fields according to our `tonality` introduction: `functional`, `regular`, `expressive
 - Integration of `data-icon-before` and `data-icon-after` property for enabling use of custom icons in input fields
-- Introducing new variations: `error`, `warning`, `success` and `information` follwing the new guidelines 3.0 color system
+- Introducing new variations: `error`, `warning`, `success` and `information` following the new guidelines 3.0 color system
 
 == DB UI Core 2.2.0 Migration Guide
 
