@@ -57,7 +57,7 @@ $icons-path: "../../../icons/" !default;
 		}
 
 		.elm-state-icon::after {
-			margin-right: calc(0.75rem + $db-spacing-fixed-xs);
+			margin-inline-end: calc(0.75rem + $db-spacing-fixed-xs);
 		}
 	}
 
