@@ -22,12 +22,13 @@
 
 	{{#if description }}<p{{#if describedbyid }} id="{{ describedbyid }}"{{/if }} class="description">{{{ description }}}</p>{{/if }}
 
-	{{!-- if span elm-icon o.ä. mit data-icon --}}
 	{{#if datalist }}<datalist id="datalist-{{ id }}">
 		{{#each datalistItems }}
 			<option{{#if value }} value="{{ value }}"{{/if }}>{{ text }}</option>
 		{{/each }}
 	</datalist>
 	{{/if }}
+
+	{{!-- icon for data-variants like error or success --}}
 	<span class="elm-state-icon"></span>
 </div>

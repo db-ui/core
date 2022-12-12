@@ -7,9 +7,9 @@
 
 $icons-path: "../../../icons/" !default;
 
-/* stylelint-disable */
-
-@mixin label-focus-animation($translationX: var(--elm-input-padding-left)) {
+@mixin label-focus-animation(
+	$translationX: var(--elm-input-padding-inline-start)
+) {
 	$transformScale: -1.25;
 
 	transition: opacity 0.08s, transform 0.15s;
@@ -20,26 +20,40 @@ $icons-path: "../../../icons/" !default;
 }
 
 .elm-input {
+	--elm-input-padding-inline-start: #{$db-spacing-fixed-sm};
+	--elm-input-padding-inline-end: #{$db-spacing-fixed-sm};
+
 	position: relative;
 
-	--elm-input-padding-left: #{$db-spacing-fixed-sm};
-	--elm-input-padding-right: #{$db-spacing-fixed-sm};
-
+	// padding-inline-end according to current amount of icons
 	&[data-icon-before] {
-		--elm-input-padding-left: #{calc(2 * $db-spacing-fixed-sm + 0.425rem)};
+		--elm-input-padding-inline-start: #{calc(
+				2 * $db-spacing-fixed-sm + 0.425rem
+			)};
 
 		input {
-			padding-left: var(--elm-input-padding-left);
+			padding-inline-start: var(--elm-input-padding-inline-start);
 		}
 	}
 
-	&[data-icon-after] {
-		--elm-input-padding-right: #{calc(
+	&[data-icon-after],
+	&[data-variant] {
+		--elm-input-padding-inline-end: #{calc(
 				2 * #{$db-spacing-fixed-sm} + 0.425rem
 			)};
 
 		input {
-			padding-right: var(--elm-input-padding-right);
+			padding-inline-end: var(--elm-input-padding-inline-end);
+		}
+	}
+
+	&[data-variant][data-icon-after] {
+		--elm-input-padding-inline-end: #{calc(
+				2 * #{$db-spacing-fixed-sm} + 0.425rem + 0.75rem + #{$db-spacing-fixed-xs}
+			)};
+
+		input {
+			padding-inline-end: var(--elm-input-padding-inline-end);
 		}
 
 		.elm-state-icon::after {
@@ -47,21 +61,12 @@ $icons-path: "../../../icons/" !default;
 		}
 	}
 
-	&[data-variant][data-icon-after] {
-		--elm-input-padding-right: #{calc(
-				2 * #{$db-spacing-fixed-sm} + 0.425rem + 0.75rem + #{$db-spacing-fixed-xs}
-			)};
-
-		input {
-			padding-right: var(--elm-input-padding-right);
-		}
-	}
-
 	&::before,
 	&::after {
-		@extend %db-body-sm;
 		--icon-font-family: var(--db-base-icon-font-family);
 		--icon-font-size: var(--db-base-icon-font-size);
+
+		@extend %db-body-sm;
 
 		height: var(--db-sizing-md);
 		display: flex;
@@ -74,18 +79,27 @@ $icons-path: "../../../icons/" !default;
 	&::after {
 		right: 0;
 	}
+
+	// currently not supported by firefox
+	&:has(> input:disabled) {
+		&::before,
+		&::after,
+		.elm-state-icon::after {
+			opacity: 0.5;
+		}
+	}
 }
 
 .elm-input input {
 	@extend %db-bg-neutral-transparent-semi;
 
-	border: none;
+	border: 1px solid transparent;
 	border-radius: 4px;
 	height: $db-sizing-md;
 	max-width: 100%;
 	width: 100%;
-	padding: $db-spacing-fixed-xs var(--elm-input-padding-right)
-		$db-spacing-fixed-xs var(--elm-input-padding-left);
+	padding: $db-spacing-fixed-xs var(--elm-input-padding-inline-end)
+		$db-spacing-fixed-xs var(--elm-input-padding-inline-start);
 
 	& + label {
 		position: absolute;
@@ -96,7 +110,7 @@ $icons-path: "../../../icons/" !default;
 
 		transform-origin: left;
 		transform: translate(
-			var(--elm-input-padding-left),
+			var(--elm-input-padding-inline-start),
 			calc(-1 * var(--db-sizing-md))
 		);
 		transition: transform 0.2s $db-transition-functional-timing;
@@ -138,7 +152,7 @@ $icons-path: "../../../icons/" !default;
 			opacity: 0.25;
 		}
 
-		& + .description {
+		& ~ .description {
 			opacity: 0;
 		}
 	}
@@ -150,7 +164,6 @@ $icons-path: "../../../icons/" !default;
 	&[type="month"],
 	&[type="number"],
 	&[type="password"],
-	//:where(:not(.cmp-sitesearch)) > &[type="search"],
 	&[type="search"],
 	&[type="tel"],
 	&[type="text"],
@@ -173,6 +186,7 @@ $icons-path: "../../../icons/" !default;
 		&::placeholder {
 			opacity: 0;
 		}
+
 		&:focus {
 			&::placeholder {
 				opacity: 0.5;
@@ -181,12 +195,17 @@ $icons-path: "../../../icons/" !default;
 	}
 
 	&[type="search"] {
-		// TODO this is scoped
-		--elm-input-padding-left: #{calc($db-spacing-fixed-sm * 2 + 0.625rem)};
-
 		$paddingLeft: calc($db-spacing-fixed-sm * 2 + 0.625rem);
+		$icons-path: "../../../icons/" !default;
 
-		padding-left: var(--elm-input-padding-left);
+		padding-inline-start: var(--elm-input-padding-inline-start);
+
+		&,
+		& + label {
+			--elm-input-padding-inline-start: #{calc(
+					$db-spacing-fixed-sm * 2 + 0.625rem
+				)};
+		}
 
 		& ~ .elm-state-icon {
 			@include icon(glyph(search), 20, "filled", "before", false);
@@ -197,24 +216,21 @@ $icons-path: "../../../icons/" !default;
 		}
 
 		~ .description {
-			padding-left: $paddingLeft;
+			padding-inline-start: $paddingLeft;
 		}
 
 		&:focus,
 		&:not(:placeholder-shown) {
 			&:not(:disabled) {
 				+ label {
-					padding-left: 0;
-					@include label-focus-animation($paddingLeft);
+					padding-inline-start: 0;
 				}
 			}
 		}
 
-		$icons-path: "../../../icons/" !default;
-
 		// https://stackoverflow.com/questions/20804016/editing-input-type-search-pseudo-element-button-x
 		&::-webkit-search-cancel-button {
-			-webkit-appearance: none;
+			appearance: none;
 			position: absolute;
 			right: $db-spacing-fixed-sm;
 			top: 0;
@@ -231,12 +247,6 @@ $icons-path: "../../../icons/" !default;
 		&:focus::-webkit-search-cancel-button {
 			opacity: 1;
 			pointer-events: all;
-		}
-
-		&.hide-native-cancel {
-			&::-webkit-search-cancel-button {
-				display: none;
-			}
 		}
 	}
 }

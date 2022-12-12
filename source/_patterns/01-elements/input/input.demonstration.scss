@@ -1,5 +1,3 @@
-@use "@db-ui/base/build/scss/tonality" as *;
-
 [id|="elements-input"] {
 	dl {
 		display: grid;
@@ -14,8 +12,4 @@
 
 .elm-input {
 	max-width: 30rem;
-}
-
-.pl-c-pattern {
-	@extend %db-ui-regular;
 }

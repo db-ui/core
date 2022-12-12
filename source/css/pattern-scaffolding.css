@@ -100,15 +100,6 @@
 }
 
 /**
-* used for input 
-**/
-.box-with-border {
-	border: 1px solid rgba(0, 0, 0, 0.06);
-	padding: 0 1rem 1rem;
-	margin: 0 0 2rem;
-}
-
-/**
 * For placeholder only block
 * 1) Used for placeholder blocks for layouts
 */
