@@ -12,17 +12,18 @@
 
 
 	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1670915999030" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1670916178714" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.classes.css?1670916178714" media="all">
 
 	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1670915999030" media="all">
-	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1670915999030" media="all">
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1670915999030" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1670916178714" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1670916178714" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1670916178714" media="all">
 	<!-- dialog polyfill //-->
-	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1670915999030" media="all">
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1670916178714" media="all">
 
 	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1670915999030" media="all">
+	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1670916178714" media="all">
 	<!-- End Pattern Lab -->
 
 
@@ -55,14 +56,19 @@ documentation has useful tips on creating an effective description. //-->
 				<h2>Variations/configurability</h2>
 <h3>Variant</h3>
 <h4>SCSS (recommended)</h4>
-<p>Extend one of the variant placeholders: <code>%variant-primary</code>, <code>%variant-secondary</code> or <code>%variant-tertiary</code></p>
+<p>Extend one of the variant placeholders: <code>%variant-primary</code>, <code>%variant-secondary</code>, <code>%variant-tertiary</code> or <code>%variant-ghost</code></p>
 <h4>HTML attribute</h4>
 <p>You could set the different button variants via the <code>data-variant</code> attribute.</p>
 <h3>Size</h3>
 <h4>SCSS (recommended)</h4>
-<p>Extend one of the size SCSS placeholders in case that you don't want the default (regular): <code>%size-Small</code> or <code>%size-Large</code></p>
+<p>Extend the size SCSS placeholder in case that you don't want the default (medium): <code>%size-Small</code></p>
 <h4>HTML attribute</h4>
-<p>You could set the different button sizes via the <code>data-size</code> attribute, the default is &quot;regular&quot; and in that case is optional.</p>
+<p>You could set the different button sizes via the <code>data-size</code> attribute, the default is &quot;medium&quot; and in that case is optional.</p>
+<h3>Width</h3>
+<h4>SCSS (recommended)</h4>
+<p>Extend the width placeholders in case that you don't want the default (content-length sized): <code>%width-full</code></p>
+<h4>HTML attribute</h4>
+<p>You could differentiate the button width via the <code>data-width</code> attribute, choose value &quot;full&quot; for a button taking the whole containers width; the default is &quot;auto&quot; and in that case is optional.</p>
 <h2>Usability</h2>
 <blockquote>
 <p>Buttons should be used in situations where users might need to:</p>
@@ -145,160 +151,24 @@ documentation has useful tips on creating an effective description. //-->
 		
 			<div class="pl-js-pattern-example">
 			<button class="elm-button "
-	data-variant="brand-primary"
+	data-variant="primary"
+	
 	
 	title="Done"
 	type="button"
 	
 	
 	
+	
 	>
-	Red 500
+	Button
+	
 </button>
 
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-elements-button" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"components-overflow-menu-navigation-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation-opposite-position/components-overflow-menu-overflow-menu-navigation-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-navigation","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-opposite-position/components-overflow-menu-overflow-menu-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-button-brand-primary","lineagePath":"../../patterns/elements-buttons-01-button-brand-primary/elements-buttons-01-button-brand-primary.rendered.html"},{"lineagePattern":"elements-button-primary","lineagePath":"../../patterns/elements-buttons-03-button-primary/elements-buttons-03-button-primary.rendered.html"},{"lineagePattern":"elements-button-secondary-outline","lineagePath":"../../patterns/elements-buttons-04-button-secondary-outline/elements-buttons-04-button-secondary-outline.rendered.html"},{"lineagePattern":"elements-button-secondary-solid","lineagePath":"../../patterns/elements-buttons-05-button-secondary-solid/elements-buttons-05-button-secondary-solid.rendered.html"},{"lineagePattern":"elements-button-tertiary-plain","lineagePath":"../../patterns/elements-buttons-06-button-tertiary-plain/elements-buttons-06-button-tertiary-plain.rendered.html"},{"lineagePattern":"elements-button-sizes","lineagePath":"../../patterns/elements-buttons-09-button-sizes/elements-buttons-09-button-sizes.rendered.html"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-example-form","lineagePath":"../../patterns/components-form-example-form/components-form-example-form.rendered.html"},{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"}],"lineageR":[{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"components-overflow-menu-navigation-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation-opposite-position/components-overflow-menu-overflow-menu-navigation-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-navigation","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-opposite-position/components-overflow-menu-overflow-menu-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-button-brand-primary","lineagePath":"../../patterns/elements-buttons-01-button-brand-primary/elements-buttons-01-button-brand-primary.rendered.html"},{"lineagePattern":"elements-button-primary","lineagePath":"../../patterns/elements-buttons-03-button-primary/elements-buttons-03-button-primary.rendered.html"},{"lineagePattern":"elements-button-secondary-outline","lineagePath":"../../patterns/elements-buttons-04-button-secondary-outline/elements-buttons-04-button-secondary-outline.rendered.html"},{"lineagePattern":"elements-button-secondary-solid","lineagePath":"../../patterns/elements-buttons-05-button-secondary-solid/elements-buttons-05-button-secondary-solid.rendered.html"},{"lineagePattern":"elements-button-tertiary-plain","lineagePath":"../../patterns/elements-buttons-06-button-tertiary-plain/elements-buttons-06-button-tertiary-plain.rendered.html"},{"lineagePattern":"elements-button-sizes","lineagePath":"../../patterns/elements-buttons-09-button-sizes/elements-buttons-09-button-sizes.rendered.html"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-example-form","lineagePath":"../../patterns/components-form-example-form/components-form-example-form.rendered.html"},{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button","patternPartial":"elements-button","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
-			</script>
-		
-		</div><!--end pl-c-pattern-->
-		<div id="elements-button-brand-primary" class="pl-c-pattern">
-		
-			<div class="pl-c-pattern__header">
-		
-				<h3 class="pl-c-pattern__title">
-		
-					<a href="../../patterns/elements-buttons-01-button-brand-primary&#x2F;elements-buttons-01-button-brand-primary.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-button-brand-primary" title="Link to Pattern">
-						Button Brand Primary
-		
-		
-					</a><!--end pl-c-pattern__title-link-->
-		
-				</h3><!--end pl-c-pattern__title-->
-		
-				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-button-brand-primary" data-patternpartial="elements-button-brand-primary" title="View Pattern Info" type="button">
-					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
-					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
-						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
-							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
-							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
-						</svg>
-		
-						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
-							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
-							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
-							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
-						</svg>
-				</button>
-		
-			</div><!--end pl-c-pattern__header-->
-		
-			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-button-brand-primary">
-		    </div><!--end pl-c-pattern__extra-->
-		
-			<div class="pl-js-pattern-example">
-			<p>
-	<button class="elm-button "
-		data-variant="brand-primary"
-		
-		title="Title text"
-		type="button"
-		
-		
-		 data-icon="add"
-		>
-		Brand Primary
-	</button>
-	<button class="elm-button "
-		data-variant="brand-primary"
-		
-		title="Title text"
-		type="button"
-		
-		 disabled
-		 data-icon="add"
-		>
-		Brand Primary
-	</button>
-</p>
-<p>
-	<button class="elm-button "
-		data-variant="brand-primary"
-		
-		title="Title text"
-		type="button"
-		
-		
-		
-		 data-icon-after="add">
-		Brand Primary with right icon
-	</button>
-	<button class="elm-button "
-		data-variant="brand-primary"
-		
-		title="Title text"
-		type="button"
-		
-		 disabled
-		
-		 data-icon-after="add">
-		Brand Primary with right icon(disabled)
-	</button>
-</p>
-<p>
-	<button class="elm-button "
-		data-variant="brand-primary"
-		
-		title="Title text"
-		type="button"
-		
-		
-		
-		>
-		Brand Primary without icon
-	</button>
-	<button class="elm-button "
-		data-variant="brand-primary"
-		
-		title="Title text"
-		type="button"
-		
-		 disabled
-		
-		>
-		Brand Primary without icon (disabled)
-	</button>
-</p>
-<p>
-	<button class="elm-button is-icon-text-replace"
-		data-variant="brand-primary"
-		
-		title="Check"
-		type="button"
-		
-		
-		 data-icon="done"
-		>
-		Brand Primary displaying only the icon
-	</button>
-	<button class="elm-button is-icon-text-replace"
-		data-variant="brand-primary"
-		
-		title="Check"
-		type="button"
-		
-		 disabled
-		 data-icon="done"
-		>
-		Brand Primary displaying only the icon
-	</button>
-</p>
-
-			</div><!--end pl-js-pattern-example-->
-		
-			<script type="text/json" id="pl-pattern-data-elements-button-brand-primary" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"lineage":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button Brand Primary","patternPartial":"elements-button-brand-primary","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-loading-indicator","lineagePath":"../../patterns/elements-loading-indicator-loading-indicator/elements-loading-indicator-loading-indicator.rendered.html"}],"lineage":[{"lineagePattern":"elements-loading-indicator","lineagePath":"../../patterns/elements-loading-indicator-loading-indicator/elements-loading-indicator-loading-indicator.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"components-overflow-menu-navigation-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation-opposite-position/components-overflow-menu-overflow-menu-navigation-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-navigation","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-opposite-position/components-overflow-menu-overflow-menu-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-button-primary","lineagePath":"../../patterns/elements-buttons-01-button-primary/elements-buttons-01-button-primary.rendered.html"},{"lineagePattern":"elements-button-secondary","lineagePath":"../../patterns/elements-buttons-02-button-secondary/elements-buttons-02-button-secondary.rendered.html"},{"lineagePattern":"elements-button-tertiary","lineagePath":"../../patterns/elements-buttons-05-button-tertiary/elements-buttons-05-button-tertiary.rendered.html"},{"lineagePattern":"elements-button-ghost","lineagePath":"../../patterns/elements-buttons-06-button-ghost/elements-buttons-06-button-ghost.rendered.html"},{"lineagePattern":"elements-button-sizes","lineagePath":"../../patterns/elements-buttons-09-button-sizes/elements-buttons-09-button-sizes.rendered.html"},{"lineagePattern":"elements-button-width","lineagePath":"../../patterns/elements-buttons-10-button-width/elements-buttons-10-button-width.rendered.html"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-example-form","lineagePath":"../../patterns/components-form-example-form/components-form-example-form.rendered.html"},{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"}],"lineageR":[{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"components-overflow-menu-navigation-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation-opposite-position/components-overflow-menu-overflow-menu-navigation-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-navigation","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-opposite-position/components-overflow-menu-overflow-menu-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-button-primary","lineagePath":"../../patterns/elements-buttons-01-button-primary/elements-buttons-01-button-primary.rendered.html"},{"lineagePattern":"elements-button-secondary","lineagePath":"../../patterns/elements-buttons-02-button-secondary/elements-buttons-02-button-secondary.rendered.html"},{"lineagePattern":"elements-button-tertiary","lineagePath":"../../patterns/elements-buttons-05-button-tertiary/elements-buttons-05-button-tertiary.rendered.html"},{"lineagePattern":"elements-button-ghost","lineagePath":"../../patterns/elements-buttons-06-button-ghost/elements-buttons-06-button-ghost.rendered.html"},{"lineagePattern":"elements-button-sizes","lineagePath":"../../patterns/elements-buttons-09-button-sizes/elements-buttons-09-button-sizes.rendered.html"},{"lineagePattern":"elements-button-width","lineagePath":"../../patterns/elements-buttons-10-button-width/elements-buttons-10-button-width.rendered.html"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-example-form","lineagePath":"../../patterns/components-form-example-form/components-form-example-form.rendered.html"},{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button","patternPartial":"elements-button","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -308,7 +178,7 @@ documentation has useful tips on creating an effective description. //-->
 		
 				<h3 class="pl-c-pattern__title">
 		
-					<a href="../../patterns/elements-buttons-03-button-primary&#x2F;elements-buttons-03-button-primary.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-button-primary" title="Link to Pattern">
+					<a href="../../patterns/elements-buttons-01-button-primary&#x2F;elements-buttons-01-button-primary.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-button-primary" title="Link to Pattern">
 						Button Primary
 		
 		
@@ -341,96 +211,122 @@ documentation has useful tips on creating an effective description. //-->
 	<button class="elm-button "
 		data-variant="primary"
 		
+		
 		title="Title text"
 		type="button"
 		
 		
-		 data-icon="add"
+		
+		
 		>
 		Primary
+		
 	</button>
 	<button class="elm-button "
 		data-variant="primary"
+		
 		
 		title="Title text"
 		type="button"
 		
 		 disabled
-		 data-icon="add"
+		
+		
 		>
 		Primary (disabled)
+		
 	</button>
 </p>
 <p>
 	<button class="elm-button "
 		data-variant="primary"
 		
+		
 		title="Title text"
 		type="button"
 		
 		
+		 data-icon="add"
 		
-		 data-icon-after="add">
-		Primary with icon
+		>
+		Primary
+		
 	</button>
 	<button class="elm-button "
 		data-variant="primary"
+		
 		
 		title="Title text"
 		type="button"
 		
 		 disabled
-		
-		 data-icon-after="add">
-		Primary with icon (disabled)
-	</button>
-</p>
-<p>
-	<button class="elm-button "
-		data-variant="primary"
-		
-		title="Title text"
-		type="button"
-		
-		
+		 data-icon="add"
 		
 		>
-		Primary without icon
-	</button>
-	<button class="elm-button "
-		data-variant="primary"
+		Primary
 		
-		title="Title text"
-		type="button"
-		
-		 disabled
-		
-		>
-		Primary without icon (disabled)
 	</button>
 </p>
 <p>
 	<button class="elm-button is-icon-text-replace"
 		data-variant="primary"
 		
+		
 		title="Check"
 		type="button"
 		
 		
 		 data-icon="done"
+		
 		>
 		Primary displaying only the icon
+		
 	</button>
 	<button class="elm-button is-icon-text-replace"
 		data-variant="primary"
+		
 		
 		title="Check"
 		type="button"
 		
 		 disabled
 		 data-icon="done"
+		
 		>
 		Primary displaying only the icon
+		
+	</button>
+</p>
+<p>
+	<button class="elm-button "
+		data-variant="primary"
+		
+		
+		title="Check"
+		type="button"
+		
+		
+		
+		
+		 data-state="loading">
+		loading
+		<svg
+		class="elm-loadingindicator"
+		viewBox="0 0 44 44"
+		aria-labelledby="elm-loadingindicator-primary" role="img"
+		 data-size="xs"
+	>
+		<title id="elm-loadingindicator-primary"></title>
+		<circle
+			class="elm-loadingindicator__circle"
+			cx="22"
+			cy="22"
+			r="20"
+			fill="none"
+			stroke-miterlimit="10"
+		></circle>
+	</svg>
+	
 	</button>
 </p>
 
@@ -441,21 +337,21 @@ documentation has useful tips on creating an effective description. //-->
 			</script>
 		
 		</div><!--end pl-c-pattern-->
-		<div id="elements-button-secondary-outline" class="pl-c-pattern">
+		<div id="elements-button-secondary" class="pl-c-pattern">
 		
 			<div class="pl-c-pattern__header">
 		
 				<h3 class="pl-c-pattern__title">
 		
-					<a href="../../patterns/elements-buttons-04-button-secondary-outline&#x2F;elements-buttons-04-button-secondary-outline.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-button-secondary-outline" title="Link to Pattern">
-						Button Secondary Outline
+					<a href="../../patterns/elements-buttons-02-button-secondary&#x2F;elements-buttons-02-button-secondary.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-button-secondary" title="Link to Pattern">
+						Button Secondary
 		
 		
 					</a><!--end pl-c-pattern__title-link-->
 		
 				</h3><!--end pl-c-pattern__title-->
 		
-				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-button-secondary-outline" data-patternpartial="elements-button-secondary-outline" title="View Pattern Info" type="button">
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-button-secondary" data-patternpartial="elements-button-secondary" title="View Pattern Info" type="button">
 					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
 					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
 						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
@@ -472,268 +368,187 @@ documentation has useful tips on creating an effective description. //-->
 		
 			</div><!--end pl-c-pattern__header-->
 		
-			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-button-secondary-outline">
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-button-secondary">
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
 			<p>
 	<button class="elm-button "
-		data-variant="secondary-outline"
+		data-variant="secondary"
 		
-		title="Title text"
-		type="button"
-		
-		
-		 data-icon="add"
-		>
-		Secondary Outline
-	</button>
-	<button class="elm-button "
-		data-variant="secondary-outline"
-		
-		title="Title text"
-		type="button"
-		
-		 disabled
-		 data-icon="add"
-		>
-		Secondary Outline (disabled)
-	</button>
-</p>
-<p>
-	<button class="elm-button "
-		data-variant="secondary-outline"
 		
 		title="Title text"
 		type="button"
 		
 		
 		
-		 data-icon-after="add">
-		Secondary Outline with right icon
-	</button>
-	<button class="elm-button "
-		data-variant="secondary-outline"
 		
-		title="Title text"
-		type="button"
-		
-		 disabled
-		
-		 data-icon-after="add">
-		Secondary Outline with right icon (disabled)
-	</button>
-</p>
-<p>
-	<button class="elm-button "
-		data-variant="secondary-outline"
-		
-		title="Title text"
-		type="button"
-		
-		
-		
-		>
-		Secondary Outline without left icon
-	</button>
-	<button class="elm-button "
-		data-variant="secondary-outline"
-		
-		title="Title text"
-		type="button"
-		
-		 disabled
-		
-		>
-		Secondary Outline without left icon (disabled)
-	</button>
-</p>
-<p>
-	<button class="elm-button is-icon-text-replace"
-		data-variant="secondary-outline"
-		
-		title="Check"
-		type="button"
-		
-		
-		 data-icon="done"
-		>
-		Secondary Outline displaying only the icon
-	</button>
-	<button class="elm-button is-icon-text-replace"
-		data-variant="secondary-outline"
-		
-		title="Check"
-		type="button"
-		
-		 disabled
-		 data-icon="done"
-		>
-		Secondary Outline displaying only the icon
-	</button>
-</p>
-
-			</div><!--end pl-js-pattern-example-->
-		
-			<script type="text/json" id="pl-pattern-data-elements-button-secondary-outline" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"lineage":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button Secondary Outline","patternPartial":"elements-button-secondary-outline","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
-			</script>
-		
-		</div><!--end pl-c-pattern-->
-		<div id="elements-button-secondary-solid" class="pl-c-pattern">
-		
-			<div class="pl-c-pattern__header">
-		
-				<h3 class="pl-c-pattern__title">
-		
-					<a href="../../patterns/elements-buttons-05-button-secondary-solid&#x2F;elements-buttons-05-button-secondary-solid.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-button-secondary-solid" title="Link to Pattern">
-						Button Secondary Solid
-		
-		
-					</a><!--end pl-c-pattern__title-link-->
-		
-				</h3><!--end pl-c-pattern__title-->
-		
-				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-button-secondary-solid" data-patternpartial="elements-button-secondary-solid" title="View Pattern Info" type="button">
-					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
-					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
-						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
-							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
-							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
-						</svg>
-		
-						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
-							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
-							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
-							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
-						</svg>
-				</button>
-		
-			</div><!--end pl-c-pattern__header-->
-		
-			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-button-secondary-solid">
-		    </div><!--end pl-c-pattern__extra-->
-		
-			<div class="pl-js-pattern-example">
-			<p>
-	<button class="elm-button "
-		data-variant="secondary-solid"
-		
-		title="Title text"
-		type="button"
-		
-		
-		 data-icon="add"
 		>
 		Secondary
+		
 	</button>
 	<button class="elm-button "
-		data-variant="secondary-solid"
+		data-variant="secondary"
+		
+		
+		title="Title text"
+		type="button"
+		
+		 disabled
+		
+		
+		>
+		Secondary (disabled)
+		
+	</button>
+</p>
+<p>
+	<button class="elm-button "
+		data-variant="secondary"
+		
+		
+		title="Title text"
+		type="button"
+		
+		
+		 data-icon="add"
+		
+		>
+		Secondary
+		
+	</button>
+	<button class="elm-button "
+		data-variant="secondary"
+		
 		
 		title="Title text"
 		type="button"
 		
 		 disabled
 		 data-icon="add"
+		
 		>
 		Secondary (disabled)
-	</button>
-</p>
-<p>
-	<button class="elm-button "
-		data-variant="secondary-solid"
 		
-		title="Title text"
-		type="button"
-		
-		
-		
-		 data-icon-after="add">
-		Secondary Solid with right icon
-	</button>
-	<button class="elm-button "
-		data-variant="secondary-solid"
-		
-		title="Title text"
-		type="button"
-		
-		 disabled
-		
-		 data-icon-after="add">
-		Secondary Solid with right icon (disabled)
-	</button>
-</p>
-<p>
-	<button class="elm-button "
-		data-variant="secondary-solid"
-		
-		title="Title text"
-		type="button"
-		
-		
-		
-		>
-		Secondary Solid without icon
-	</button>
-	<button class="elm-button "
-		data-variant="secondary-solid"
-		
-		title="Title text"
-		type="button"
-		
-		 disabled
-		
-		>
-		Secondary Solid without icon (disabled)
 	</button>
 </p>
 <p>
 	<button class="elm-button is-icon-text-replace"
-		data-variant="secondary-solid"
+		data-variant="secondary"
+		
 		
 		title="Check"
 		type="button"
 		
 		
 		 data-icon="done"
+		
 		>
-		Secondary Solid displaying only the icon
+		Secondary displaying only the icon
+		
 	</button>
 	<button class="elm-button is-icon-text-replace"
-		data-variant="secondary-solid"
+		data-variant="secondary"
+		
 		
 		title="Check"
 		type="button"
 		
 		 disabled
 		 data-icon="done"
+		
 		>
-		Secondary Solid displaying only the icon
+		Secondary displaying only the icon
+		
+	</button>
+</p>
+<p>
+	<button class="elm-button "
+		data-variant="secondary"
+		
+		
+		title="Check"
+		type="button"
+		
+		
+		
+		
+		 data-state="loading">
+		loading
+		<svg
+		class="elm-loadingindicator"
+		viewBox="0 0 44 44"
+		aria-labelledby="elm-loadingindicator-secondary" role="img"
+		 data-size="xs"
+	>
+		<title id="elm-loadingindicator-secondary"></title>
+		<circle
+			class="elm-loadingindicator__circle"
+			cx="22"
+			cy="22"
+			r="20"
+			fill="none"
+			stroke-miterlimit="10"
+		></circle>
+	</svg>
+	
+	</button>
+</p>
+
+
+<p class="db-bg-success-light-ia">
+	<button class="elm-button "
+		data-variant="secondary"
+		
+		
+		title="Title text"
+		type="button"
+		
+		
+		
+		
+		>
+		Secondary
+		
+	</button>
+	<button class="elm-button "
+		data-variant="secondary"
+		
+		
+		title="Title text"
+		type="button"
+		
+		 disabled
+		
+		
+		>
+		Secondary (disabled)
+		
 	</button>
 </p>
 
 			</div><!--end pl-js-pattern-example-->
 		
-			<script type="text/json" id="pl-pattern-data-elements-button-secondary-solid" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"lineage":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button Secondary Solid","patternPartial":"elements-button-secondary-solid","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+			<script type="text/json" id="pl-pattern-data-elements-button-secondary" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"lineage":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button Secondary","patternPartial":"elements-button-secondary","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
-		<div id="elements-button-tertiary-plain" class="pl-c-pattern">
+		<div id="elements-button-tertiary" class="pl-c-pattern">
 		
 			<div class="pl-c-pattern__header">
 		
 				<h3 class="pl-c-pattern__title">
 		
-					<a href="../../patterns/elements-buttons-06-button-tertiary-plain&#x2F;elements-buttons-06-button-tertiary-plain.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-button-tertiary-plain" title="Link to Pattern">
-						Button Tertiary Plain
+					<a href="../../patterns/elements-buttons-05-button-tertiary&#x2F;elements-buttons-05-button-tertiary.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-button-tertiary" title="Link to Pattern">
+						Button Tertiary
 		
 		
 					</a><!--end pl-c-pattern__title-link-->
 		
 				</h3><!--end pl-c-pattern__title-->
 		
-				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-button-tertiary-plain" data-patternpartial="elements-button-tertiary-plain" title="View Pattern Info" type="button">
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-button-tertiary" data-patternpartial="elements-button-tertiary" title="View Pattern Info" type="button">
 					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
 					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
 						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
@@ -750,111 +565,364 @@ documentation has useful tips on creating an effective description. //-->
 		
 			</div><!--end pl-c-pattern__header-->
 		
-			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-button-tertiary-plain">
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-button-tertiary">
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
 			<p>
 	<button class="elm-button "
-		data-variant="tertiary-plain"
+		data-variant="tertiary"
+		
 		
 		title="Title text"
 		type="button"
 		
 		
 		
+		
 		>
-		Tertiary Plain
+		Tertiary
+		
 	</button>
 	<button class="elm-button "
-		data-variant="tertiary-plain"
+		data-variant="tertiary"
+		
 		
 		title="Title text"
 		type="button"
 		
 		 disabled
 		
+		
 		>
-		Tertiary Plain
+		Tertiary (disabled)
+		
 	</button>
 </p>
 <p>
 	<button class="elm-button "
-		data-variant="tertiary-plain"
+		data-variant="tertiary"
+		
 		
 		title="Title text"
 		type="button"
 		
 		
+		 data-icon="add"
 		
-		 data-icon-after="add">
-		Tertiary Plain with right icon
+		>
+		Tertiary
+		
 	</button>
 	<button class="elm-button "
-		data-variant="tertiary-plain"
+		data-variant="tertiary"
+		
 		
 		title="Title text"
 		type="button"
 		
 		 disabled
-		
-		 data-icon-after="add">
-		Tertiary Plain with right icon(disabled)
-	</button>
-</p>
-<p>
-	<button class="elm-button "
-		data-variant="tertiary-plain"
-		
-		title="Title text"
-		type="button"
-		
-		
+		 data-icon="add"
 		
 		>
-		Tertiary Plain without left icon
-	</button>
-	<button class="elm-button "
-		data-variant="tertiary-plain"
+		Tertiary (disabled)
 		
-		title="Title text"
-		type="button"
-		
-		 disabled
-		
-		>
-		Tertiary Plain without left icon (disabled)
 	</button>
 </p>
 <p>
 	<button class="elm-button is-icon-text-replace"
-		data-variant="tertiary-plain"
+		data-variant="tertiary"
+		
 		
 		title="Check"
 		type="button"
 		
 		
 		 data-icon="done"
+		
 		>
-		Tertiary Plain displaying only the icon
+		Tertiary displaying only the icon
+		
 	</button>
 	<button class="elm-button is-icon-text-replace"
-		data-variant="tertiary-plain"
+		data-variant="tertiary"
+		
 		
 		title="Check"
 		type="button"
 		
 		 disabled
 		 data-icon="done"
+		
 		>
-		Tertiary Plain displaying only the icon
+		Tertiary displaying only the icon
+		
+	</button>
+</p>
+<p>
+	<button class="elm-button "
+		data-variant="tertiary"
+		
+		
+		title="Check"
+		type="button"
+		
+		
+		
+		
+		 data-state="loading">
+		loading
+		<svg
+		class="elm-loadingindicator"
+		viewBox="0 0 44 44"
+		aria-labelledby="elm-loadingindicator-tertiary" role="img"
+		 data-size="xs"
+	>
+		<title id="elm-loadingindicator-tertiary"></title>
+		<circle
+			class="elm-loadingindicator__circle"
+			cx="22"
+			cy="22"
+			r="20"
+			fill="none"
+			stroke-miterlimit="10"
+		></circle>
+	</svg>
+	
+	</button>
+</p>
+
+<p class="db-bg-success-light-ia">
+	<button class="elm-button "
+		data-variant="tertiary"
+		
+		
+		title="Title text"
+		type="button"
+		
+		
+		
+		
+		>
+		Tertiary
+		
+	</button>
+	<button class="elm-button "
+		data-variant="tertiary"
+		
+		
+		title="Title text"
+		type="button"
+		
+		 disabled
+		
+		
+		>
+		Tertiary (disabled)
+		
 	</button>
 </p>
 
 			</div><!--end pl-js-pattern-example-->
 		
-			<script type="text/json" id="pl-pattern-data-elements-button-tertiary-plain" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"lineage":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button Tertiary Plain","patternPartial":"elements-button-tertiary-plain","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+			<script type="text/json" id="pl-pattern-data-elements-button-tertiary" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"lineage":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button Tertiary","patternPartial":"elements-button-tertiary","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="elements-button-ghost" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/elements-buttons-06-button-ghost&#x2F;elements-buttons-06-button-ghost.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-button-ghost" title="Link to Pattern">
+						Button Ghost
+		
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-button-ghost" data-patternpartial="elements-button-ghost" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-button-ghost">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			<p>
+	<button class="elm-button "
+		data-variant="ghost"
+		
+		
+		title="Title text"
+		type="button"
+		
+		
+		
+		
+		>
+		Ghost
+		
+	</button>
+	<button class="elm-button "
+		data-variant="ghost"
+		
+		
+		title="Title text"
+		type="button"
+		
+		 disabled
+		
+		
+		>
+		Ghost (disabled)
+		
+	</button>
+</p>
+<p>
+	<button class="elm-button "
+		data-variant="ghost"
+		
+		
+		title="Title text"
+		type="button"
+		
+		
+		
+		
+		>
+		Ghost
+		
+	</button>
+	<button class="elm-button "
+		data-variant="ghost"
+		
+		
+		title="Title text"
+		type="button"
+		
+		 disabled
+		
+		
+		>
+		Ghost
+		
+	</button>
+</p>
+<p>
+	<button class="elm-button is-icon-text-replace"
+		data-variant="ghost"
+		
+		
+		title="Check"
+		type="button"
+		
+		
+		 data-icon="done"
+		
+		>
+		Ghost displaying only the icon
+		
+	</button>
+	<button class="elm-button is-icon-text-replace"
+		data-variant="ghost"
+		
+		
+		title="Check"
+		type="button"
+		
+		 disabled
+		 data-icon="done"
+		
+		>
+		Ghost displaying only the icon
+		
+	</button>
+</p>
+<p>
+	<button class="elm-button "
+		data-variant="ghost"
+		
+		
+		title="Check"
+		type="button"
+		
+		
+		
+		
+		 data-state="loading">
+		loading
+		<svg
+		class="elm-loadingindicator"
+		viewBox="0 0 44 44"
+		aria-labelledby="elm-loadingindicator-ghost" role="img"
+		 data-size="xs"
+	>
+		<title id="elm-loadingindicator-ghost"></title>
+		<circle
+			class="elm-loadingindicator__circle"
+			cx="22"
+			cy="22"
+			r="20"
+			fill="none"
+			stroke-miterlimit="10"
+		></circle>
+	</svg>
+	
+	</button>
+</p>
+
+<p class="db-bg-success-light-ia">
+	<button class="elm-button "
+		data-variant="ghost"
+		
+		
+		title="Title text"
+		type="button"
+		
+		
+		
+		
+		>
+		Ghost
+		
+	</button>
+	<button class="elm-button "
+		data-variant="ghost"
+		
+		
+		title="Title text"
+		type="button"
+		
+		 disabled
+		
+		
+		>
+		Ghost (disabled)
+		
+	</button>
+</p>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-elements-button-ghost" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"lineage":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button Ghost","patternPartial":"elements-button-ghost","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -897,294 +965,184 @@ documentation has useful tips on creating an effective description. //-->
 	<h2>Small</h2>
 	<p>
 		<button class="elm-button "
-			data-variant="brand-primary"
+			data-variant="primary"
 			 data-size="small"
+			
+			title=""
+			type="button"
+			
+			
+			
+			
+			>
+			Primary
+			
+		</button>
+		<button class="elm-button "
+			data-variant="primary"
+			 data-size="small"
+			
+			title=""
+			type="button"
+			
+			 disabled
+			
+			
+			>
+			Primary (disabled)
+			
+		</button>
+	</p>
+	<p>
+		<button class="elm-button "
+			data-variant="primary"
+			 data-size="small"
+			
 			title=""
 			type="button"
 			
 			
 			 data-icon="add"
+			
 			>
-			Brand Primary
+			Primary
+			
 		</button>
 		<button class="elm-button "
-			data-variant="brand-primary"
+			data-variant="primary"
 			 data-size="small"
+			
 			title=""
 			type="button"
 			
 			 disabled
 			 data-icon="add"
-			>
-			Brand Primary (disabled)
-		</button>
-	</p>
-	<p>
-	<button class="elm-button "
-		data-variant="brand-primary"
-		 data-size="small"
-		title=""
-		type="button"
-		
-		
-		
-		 data-icon-after="add">
-		Brand Primary with right icon
-	</button>
-	<button class="elm-button "
-		data-variant="brand-primary"
-		 data-size="small"
-		title=""
-		type="button"
-		
-		 disabled
-		
-		 data-icon-after="add">
-		Brand Primary with right icon(disabled)
-	</button>
-	</p>
-	<p>
-		<button class="elm-button "
-			data-variant="brand-primary"
-			 data-size="small"
-			title=""
-			type="button"
-			
-			
 			
 			>
-			Brand Primary without icon
-		</button>
-		<button class="elm-button "
-			data-variant="brand-primary"
-			 data-size="small"
-			title=""
-			type="button"
+			Primary (disabled)
 			
-			 disabled
-			
-			>
-			Brand Primary without icon (disabled)
 		</button>
 	</p>
 	<p>
 		<button class="elm-button is-icon-text-replace"
-			data-variant="brand-primary"
+			data-variant="primary"
 			 data-size="small"
+			
 			title="Done"
 			type="button"
 			
 			
 			 data-icon="done"
+			
 			>
-			Brand Primary displaying only the icon
+			Primary displaying only the icon
+			
 		</button>
 		<button class="elm-button is-icon-text-replace"
-			data-variant="brand-primary"
+			data-variant="primary"
 			 data-size="small"
+			
 			title="Done"
 			type="button"
 			
 			 disabled
 			 data-icon="done"
+			
 			>
-			Brand Primary displaying only the icon
+			Primary displaying only the icon
+			
 		</button>
 	</p>
 	<!-- [html-validate-disable-next heading-level] -->
-	<h2>Regular (default, data-size attribute is optional)</h2>
+	<h2>Medium (default, data-size attribute is optional)</h2>
 	<p>
 		<button class="elm-button "
-			data-variant="brand-primary"
-			 data-size="regular"
+			data-variant="primary"
+			 data-size="medium"
+			
+			title=""
+			type="button"
+			
+			
+			
+			
+			>
+			Primary
+			
+		</button>
+		<button class="elm-button "
+			data-variant="primary"
+			 data-size="medium"
+			
+			title=""
+			type="button"
+			
+			 disabled
+			
+			
+			>
+			Primary (disabled)
+			
+		</button>
+	</p>
+	<p>
+		<button class="elm-button "
+			data-variant="primary"
+			 data-size="medium"
+			
 			title=""
 			type="button"
 			
 			
 			 data-icon="add"
+			
 			>
-			Brand Primary
+			Primary
+			
 		</button>
 		<button class="elm-button "
-			data-variant="brand-primary"
-			 data-size="regular"
+			data-variant="primary"
+			 data-size="medium"
+			
 			title=""
 			type="button"
 			
 			 disabled
 			 data-icon="add"
-			>
-			Brand Primary (disabled)
-		</button>
-	</p>
-	<p>
-	<button class="elm-button "
-		data-variant="brand-primary"
-		 data-size="regular"
-		title=""
-		type="button"
-		
-		
-		
-		 data-icon-after="add">
-		Brand Primary with right icon
-	</button>
-	<button class="elm-button "
-		data-variant="brand-primary"
-		 data-size="regular"
-		title=""
-		type="button"
-		
-		 disabled
-		
-		 data-icon-after="add">
-		Brand Primary with right icon(disabled)
-	</button>
-	</p>
-	<p>
-		<button class="elm-button "
-			data-variant="brand-primary"
-			 data-size="regular"
-			title=""
-			type="button"
-			
-			
 			
 			>
-			Brand Primary without icon
-		</button>
-		<button class="elm-button "
-			data-variant="brand-primary"
-			 data-size="regular"
-			title=""
-			type="button"
+			Primary (disabled)
 			
-			 disabled
-			
-			>
-			Brand Primary without icon (disabled)
 		</button>
 	</p>
 	<p>
 		<button class="elm-button is-icon-text-replace"
-			data-variant="brand-primary"
-			 data-size="regular"
+			data-variant="primary"
+			 data-size="medium"
+			
 			title="Done"
 			type="button"
 			
 			
 			 data-icon="done"
+			
 			>
-			Brand Primary displaying only the icon
+			Primary displaying only the icon
+			
 		</button>
 		<button class="elm-button is-icon-text-replace"
-			data-variant="brand-primary"
-			 data-size="regular"
+			data-variant="primary"
+			 data-size="medium"
+			
 			title="Done"
 			type="button"
 			
 			 disabled
 			 data-icon="done"
-			>
-			Brand Primary displaying only the icon
-		</button>
-	</p>
-	<!-- [html-validate-disable-next heading-level] -->
-	<h2>Large</h2>
-	<p>
-		<button class="elm-button "
-			data-variant="brand-primary"
-			 data-size="large"
-			title=""
-			type="button"
-			
-			
-			 data-icon="add"
-			>
-			Brand Primary
-		</button>
-		<button class="elm-button "
-			data-variant="brand-primary"
-			 data-size="large"
-			title=""
-			type="button"
-			
-			 disabled
-			 data-icon="add"
-			>
-			Brand Primary (disabled)
-		</button>
-	</p>
-	<p>
-	<button class="elm-button "
-		data-variant="brand-primary"
-		 data-size="large"
-		title=""
-		type="button"
-		
-		
-		
-		 data-icon-after="add">
-		Brand Primary with right icon
-	</button>
-	<button class="elm-button "
-		data-variant="brand-primary"
-		 data-size="large"
-		title=""
-		type="button"
-		
-		 disabled
-		
-		 data-icon-after="add">
-		Brand Primary with right icon(disabled)
-	</button>
-	</p>
-	<p>
-		<button class="elm-button "
-			data-variant="brand-primary"
-			 data-size="large"
-			title=""
-			type="button"
-			
-			
 			
 			>
-			Brand Primary without icon
-		</button>
-		<button class="elm-button "
-			data-variant="brand-primary"
-			 data-size="large"
-			title=""
-			type="button"
+			Primary displaying only the icon
 			
-			 disabled
-			
-			>
-			Brand Primary without icon (disabled)
-		</button>
-	</p>
-	<p>
-		<button class="elm-button is-icon-text-replace"
-			data-variant="brand-primary"
-			 data-size="large"
-			title="Done"
-			type="button"
-			
-			
-			 data-icon="done"
-			>
-			Brand Primary displaying only the icon
-		</button>
-		<button class="elm-button is-icon-text-replace"
-			data-variant="brand-primary"
-			 data-size="large"
-			title="Done"
-			type="button"
-			
-			 disabled
-			 data-icon="done"
-			>
-			Brand Primary displaying only the icon
 		</button>
 	</p>
 
@@ -1192,6 +1150,99 @@ documentation has useful tips on creating an effective description. //-->
 		
 			<script type="text/json" id="pl-pattern-data-elements-button-sizes" class="pl-js-pattern-data">
 			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"lineage":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button Sizes","patternPartial":"elements-button-sizes","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="elements-button-width" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/elements-buttons-10-button-width&#x2F;elements-buttons-10-button-width.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-button-width" title="Link to Pattern">
+						Button width
+		
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-button-width" data-patternpartial="elements-button-width" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-button-width">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+				<!-- [html-validate-disable-next heading-level] -->
+	<h2>FullWidth</h2>
+	<p>
+		<button class="elm-button "
+			data-variant="primary"
+			
+			 data-width="full"
+			title=""
+			type="button"
+			
+			
+			
+			
+			>
+			Primary
+			
+		</button>
+	</p>
+	<p>
+		<button class="elm-button "
+			data-variant="primary"
+			
+			 data-width="full"
+			title=""
+			type="button"
+			
+			
+			 data-icon="add"
+			
+			>
+			Primary
+			
+		</button>
+	</p>
+	<p>
+		<button class="elm-button is-icon-text-replace"
+			data-variant="primary"
+			
+			 data-width="full"
+			title="Done"
+			type="button"
+			
+			
+			 data-icon="done"
+			
+			>
+			Primary displaying only the icon
+			
+		</button>
+	</p>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-elements-button-width" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"lineage":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button width","patternPartial":"elements-button-width","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -1242,10 +1293,10 @@ documentation has useful tips on creating an effective description. //-->
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1670915999030">
+<script id="pl-js-polyfill-insert-1670916178714">
   (function() {
     if (self != top) {
-      var cb = '1670915999030';
+      var cb = '1670916178714';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -1258,7 +1309,7 @@ documentation has useful tips on creating an effective description. //-->
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1670915999030" nomodule>
+<script id="pl-js-insert-1670916178714" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 
