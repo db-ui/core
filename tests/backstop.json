@@ -88,20 +88,10 @@
 			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-image/index.html"
 		},
 		{
-			"label": "Elements – Input Sizes",
-			"url": "http://127.0.0.1:8080/patterns/elements-input-input-sizes/elements-input-input-sizes.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input/index.html"
-		},
-		{
-			"label": "Elements – Input Variations",
-			"url": "http://127.0.0.1:8080/patterns/elements-input-input-variations/elements-input-input-variations.rendered.html",
-			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input/index.html"
-		},
-		{
 			"label": "Elements – Input / hovered",
 			"url": "http://127.0.0.1:8080/patterns/elements-input-input/elements-input-input.rendered.html",
 			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input/index.html",
-			"hoverSelector": ".elm-input",
+			"hoverSelector": ".elm-input input",
 			"postInteractionWait": 1000,
 			"onReadyScript": "puppet/clickAndHoverHelper.js"
 		},
