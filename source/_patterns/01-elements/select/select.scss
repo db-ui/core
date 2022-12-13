@@ -4,7 +4,7 @@
 @import "../../../css/db-ui-core.variables";
 
 .elm-select {
-	@extend %form-element !optional;
+	@extend %form-element;
 	appearance: none;
 	font-size: to-rem($pxValue: 16);
 
@@ -17,7 +17,7 @@
 	&:not([multiple]) {
 		// Semitransparent is the default style
 		@at-root :where(#{&}) {
-			@extend %form-element-semitransparent !optional;
+			@extend %form-element-semitransparent;
 		}
 
 		background-image: var(
@@ -56,19 +56,19 @@
 
 	// ### Style variations
 	&[data-variant="semitransparent"] {
-		@extend %form-element-semitransparent !optional;
+		@extend %form-element-semitransparent;
 	}
 
 	&[data-variant="white"] {
-		@extend %form-element-white !optional;
+		@extend %form-element-white;
 	}
 
 	&[data-variant="solid"] {
-		@extend %form-element-solid !optional;
+		@extend %form-element-solid;
 	}
 
 	&[data-variant="outline"] {
-		@extend %form-element-outline !optional;
+		@extend %form-element-outline;
 	}
 
 	// Floating labels
