@@ -5,12 +5,12 @@
 @import "textarea.variables";
 
 .elm-textarea {
-	// TODO adopt from input element and move base styles to form-element
-	//@extend %form-element !optional;
+	// TODO adopt from input element and move base styles to ../_form-elements.scss
+	//@extend %form-element;
 
 	// Semitransparent is the default style
 	// @at-root :where(#{&}) {
-	// 	@extend %form-element-semitransparent !optional;
+	// 	@extend %form-element-semitransparent;
 	// }
 
 	display: block;
