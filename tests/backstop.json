@@ -88,8 +88,13 @@
 			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-image/index.html"
 		},
 		{
+			"label": "Elements – Input",
+			"url": "http://127.0.0.1:8080/patterns/elements-input/index.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input/index.html"
+		},
+		{
 			"label": "Elements – Input / hovered",
-			"url": "http://127.0.0.1:8080/patterns/elements-input-input/elements-input-input.rendered.html",
+			"url": "http://127.0.0.1:8080/patterns/elements-input/index.html",
 			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input/index.html",
 			"hoverSelector": ".elm-input input",
 			"postInteractionWait": 1000,
@@ -97,7 +102,7 @@
 		},
 		{
 			"label": "Elements – Input - focused",
-			"url": "http://127.0.0.1:8080/patterns/elements-input-input/elements-input-input.rendered.html",
+			"url": "http://127.0.0.1:8080/patterns/elements-input/index.html",
 			"referenceUrl": "https://db-ui.github.io/core/patterns/elements-input/index.html",
 			"clickSelector": ".elm-input input",
 			"postInteractionWait": 1000,
