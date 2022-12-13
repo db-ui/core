@@ -4,7 +4,8 @@
 @import "../../../css/db-ui-core.variables";
 
 .elm-select {
-	@extend %form-element;
+	// TODO adopt from input element and move base styles to ../_form-elements.scss
+	// @extend %form-element;
 	appearance: none;
 	font-size: to-rem($pxValue: 16);
 
