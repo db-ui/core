@@ -126,6 +126,7 @@ $icons-path: "../../../icons/" !default;
 		padding: $db-spacing-fixed-xs var(--elm-input-padding-inline-end)
 			$db-spacing-fixed-xs var(--elm-input-padding-inline-start);
 
+		// TODO: Evaluate whether those could get moved to ../_form-elements.scss
 		&:focus,
 		&:not(:placeholder-shown) {
 			&:not(:disabled) {
