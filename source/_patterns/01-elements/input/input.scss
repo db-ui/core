@@ -88,20 +88,8 @@ $icons-path: "../../../icons/" !default;
 			opacity: 0.5;
 		}
 	}
-}
 
-.elm-input input {
-	@extend %db-bg-neutral-transparent-semi;
-
-	border: 1px solid transparent;
-	border-radius: 4px;
-	height: $db-sizing-md;
-	max-width: 100%;
-	width: 100%;
-	padding: $db-spacing-fixed-xs var(--elm-input-padding-inline-end)
-		$db-spacing-fixed-xs var(--elm-input-padding-inline-start);
-
-	& + label {
+	label {
 		position: absolute;
 		display: flex;
 		align-items: center;
@@ -114,12 +102,12 @@ $icons-path: "../../../icons/" !default;
 			calc(-1 * var(--db-sizing-md))
 		);
 		transition: transform 0.2s $db-transition-functional-timing;
-
 		height: $db-sizing-md;
+		// TODO lets discuss this her: https://github.com/db-ui/core/issues/223
 		pointer-events: none;
 	}
 
-	& ~ .description {
+	.description {
 		@extend %db-body-xs;
 		margin: $db-spacing-fixed-2xs $db-spacing-fixed-xs 0;
 
@@ -128,125 +116,133 @@ $icons-path: "../../../icons/" !default;
 		justify-content: space-between;
 	}
 
-	&:focus,
-	&:not(:placeholder-shown) {
-		&:not(:disabled) {
-			padding-bottom: calc(
-				$db-spacing-fixed-xs - var(--db-input-focus-opacity) *
-					$db-spacing-fixed-xs
-			);
-			padding-top: $db-spacing-fixed-xs;
-
-			+ label {
-				@include label-focus-animation();
-			}
-		}
-	}
-
-	// TODO: Evaluate whether those could get moved to ../_form-elements.scss
-	&:disabled,
-	fieldset:disabled & {
-		&,
-		& + label {
-			// Decided against cursor: not-allowed, compare to e.g. https://phabricator.wikimedia.org/T121960
-			opacity: 0.25;
-		}
-
-		& ~ .description {
-			opacity: 0;
-		}
-	}
-
-	&[type="color"],
-	&[type="date"],
-	&[type="datetime-local"],
-	&[type="email"],
-	&[type="month"],
-	&[type="number"],
-	&[type="password"],
-	&[type="search"],
-	&[type="tel"],
-	&[type="text"],
-	&[type="time"],
-	&[type="url"],
-	&[type="week"] {
-		@extend %db-body-sm;
-
-		&:not([type="date"]):not([type="datetime-local"]):not(
-				[type="month"]
-			):not([type="time"]):not([type="week"])
-			+ label {
-			// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
-			@media (prefers-reduced-motion: reduce) {
-				transition-duration: 0.01s !important;
-			}
-		}
-
-		// Hiding inputs placeholder for floating label
-		&::placeholder {
-			opacity: 0;
-		}
-
-		&:focus {
-			&::placeholder {
-				opacity: 0.5;
-			}
-		}
-	}
-
-	&[type="search"] {
-		$paddingLeft: calc($db-spacing-fixed-sm * 2 + 0.625rem);
-		$icons-path: "../../../icons/" !default;
-
-		padding-inline-start: var(--elm-input-padding-inline-start);
-
-		&,
-		& + label {
-			--elm-input-padding-inline-start: #{calc(
-					$db-spacing-fixed-sm * 2 + 0.625rem
-				)};
-		}
-
-		& ~ .elm-state-icon {
-			@include icon(glyph(search), 20, "filled", "before", false);
-		}
-
-		+ label {
-			transform: translate($paddingLeft, calc(-1 * var(--db-sizing-md)));
-		}
-
-		~ .description {
-			padding-inline-start: $paddingLeft;
-		}
+	input {
+		@extend %db-bg-neutral-transparent-semi;
+		border: 1px solid transparent;
+		border-radius: 4px;
+		height: $db-sizing-md;
+		max-width: 100%;
+		width: 100%;
+		padding: $db-spacing-fixed-xs var(--elm-input-padding-inline-end)
+			$db-spacing-fixed-xs var(--elm-input-padding-inline-start);
 
 		&:focus,
 		&:not(:placeholder-shown) {
 			&:not(:disabled) {
+				padding-bottom: calc(
+					$db-spacing-fixed-xs - var(--db-input-focus-opacity) *
+						$db-spacing-fixed-xs
+				);
+				padding-top: $db-spacing-fixed-xs;
+
 				+ label {
-					padding-inline-start: 0;
+					@include label-focus-animation();
 				}
 			}
 		}
 
-		// https://stackoverflow.com/questions/20804016/editing-input-type-search-pseudo-element-button-x
-		&::-webkit-search-cancel-button {
-			appearance: none;
-			position: absolute;
-			right: $db-spacing-fixed-sm;
-			top: 0;
-			height: $db-sizing-md;
-			width: 1em;
-			background: url(#{$icons-path}functional/images/navigation/db_ic_cancel_24.svg)
-				no-repeat 50% 50%;
-			background-size: contain;
-			cursor: pointer;
-			transition: opacity 0.12s;
+		// TODO: Evaluate whether those could get moved to ../_form-elements.scss
+		&:disabled,
+		fieldset:disabled & {
+			&,
+			& + label {
+				// Decided against cursor: not-allowed, compare to e.g. https://phabricator.wikimedia.org/T121960
+				opacity: 0.25;
+			}
+		}
+
+		&[type="color"],
+		&[type="date"],
+		&[type="datetime-local"],
+		&[type="email"],
+		&[type="month"],
+		&[type="number"],
+		&[type="password"],
+		&[type="search"],
+		&[type="tel"],
+		&[type="text"],
+		&[type="time"],
+		&[type="url"],
+		&[type="week"] {
+			@extend %db-body-sm;
+
+			&:not([type="date"]):not([type="datetime-local"]):not(
+					[type="month"]
+				):not([type="time"]):not([type="week"])
+				+ label {
+				// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
+				@media (prefers-reduced-motion: reduce) {
+					transition-duration: 0.01s !important;
+				}
+			}
+
+			// Hiding inputs placeholder for floating label
+			&::placeholder {
+				opacity: 0;
+			}
+
+			&:focus {
+				&::placeholder {
+					opacity: 0.5;
+				}
+			}
+		}
+
+		&[type="search"] {
+			$paddingLeft: calc($db-spacing-fixed-sm * 2 + 0.625rem);
+			$icons-path: "../../../icons/" !default;
+
+			padding-inline-start: var(--elm-input-padding-inline-start);
+
+			&,
+			& + label {
+				--elm-input-padding-inline-start: #{calc(
+						$db-spacing-fixed-sm * 2 + 0.625rem
+					)};
+			}
+
+			& ~ .elm-state-icon {
+				@include icon(glyph(search), 20, "filled", "before", false);
+			}
+
+			+ label {
+				transform: translate(
+					$paddingLeft,
+					calc(-1 * var(--db-sizing-md))
+				);
+			}
+
+			~ .description {
+				padding-inline-start: $paddingLeft;
+			}
+
+			&:focus,
+			&:not(:placeholder-shown) {
+				&:not(:disabled) {
+					+ label {
+						padding-inline-start: 0;
+					}
+				}
+			}
+
+			// https://stackoverflow.com/questions/20804016/editing-input-type-search-pseudo-element-button-x
+			&::-webkit-search-cancel-button {
+				appearance: none;
+				position: absolute;
+				right: $db-spacing-fixed-sm;
+				top: 0;
+				height: $db-sizing-md;
+				width: 1em;
+				background: url(#{$icons-path}functional/images/navigation/db_ic_cancel_24.svg)
+					no-repeat 50% 50%;
+				background-size: contain;
+				cursor: pointer;
+				transition: opacity 0.12s;
+			}
 		}
 	}
-}
 
-// ### variations
-.elm-input {
+	// #variations
 	.elm-state-icon {
 		display: flex;
 		align-items: center;
