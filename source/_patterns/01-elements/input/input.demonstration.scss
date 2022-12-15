@@ -1,6 +1,12 @@
 [id|="elements-input"] {
+	dl {
+		display: grid;
+		grid-template-columns: 1fr 5fr;
+		align-items: center;
+	}
+
 	dd {
-		margin-bottom: 2rem;
+		margin: 1rem 0;
 	}
 }
 
