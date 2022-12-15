@@ -4,7 +4,7 @@ We're using the colors provided by our other product [DB UI Base](https://db-ui.
 
 ## Accessibility
 
-Please have a look at the related page within the Marketingportal for more information as well: <https://marketingportal.extranet.deutschebahn.com/de/farbe#db186aa1-4d79-4c85-93cb-44b83ba57056>
+Please have a look at the related page within the Marketingportal for more information as well: <https://marketingportal.extranet.deutschebahn.com/marketingportal/Basiselemente/Farbe>
 
 ### Criteria
 
@@ -18,7 +18,7 @@ Large-scale text and images of large-scale text have a contrast ratio of at leas
 
 ### DB color palette for InDesign, Illustrator and Photoshop
 
-A file containing the Deutsche Bahn color palette for Adobe InDesign, Adobe Illustrator or Adobe Photoshop is provided by the [DB Marketingportal](https://marketingportal.extranet.deutschebahn.com/de/farbe#db186aa1-4d79-4c85-93cb-44b83ba57056).
+A file containing the Deutsche Bahn color palette for Adobe InDesign, Adobe Illustrator or Adobe Photoshop is provided by the [DB Marketingportal](https://marketingportal.extranet.deutschebahn.com/marketingportal/Basiselemente/Farbe).
 
 ### Inspirational external sources for this pattern
 
