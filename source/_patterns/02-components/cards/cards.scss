@@ -1,4 +1,4 @@
-@import "../../../css/helpers/functions";
+@use "@db-ui/base/build/scss/helpers/functions" as *;
 
 .cmp-cards {
 	list-style: none;

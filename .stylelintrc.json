@@ -4,6 +4,9 @@
 		"stylelint-config-prettier"
 	],
 	"rules": {
+		"order/properties-alphabetical-order": null,
+		"scss/operator-no-newline-after": null,
+		"declaration-empty-line-before": null,
 		"selector-no-qualifying-type": null,
 		"selector-class-pattern": null,
 		"scss/dollar-variable-pattern": null,
@@ -14,6 +17,6 @@
 		"declaration-property-value-disallowed-list": null,
 		"scss/percent-placeholder-pattern": null,
 		"scss/at-mixin-pattern": null,
-		"order/properties-alphabetical-order": null
+		"scss/at-import-partial-extension": null
 	}
 }

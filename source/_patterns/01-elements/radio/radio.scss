@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@use "@db-ui/base/build/scss/variables" as *;
+@use "@db-ui/base/build/scss/helpers/functions" as *;
 @import "radio.variables";
 
 .elm-radio {
@@ -50,7 +52,7 @@
 	// }
 
 	& + label {
-		margin-left: $db-spacing-fixed-normal-xs;
+		margin-left: $db-spacing-fixed-regular-xs;
 	}
 
 	&:disabled {

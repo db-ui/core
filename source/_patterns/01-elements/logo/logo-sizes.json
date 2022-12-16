@@ -1,0 +1,19 @@
+{
+	"sizes": [
+		{
+			"size": "xsmall"
+		},
+		{
+			"size": "small"
+		},
+		{
+			"size": "medium"
+		},
+		{
+			"size": "large"
+		},
+		{
+			"size": "xlarge"
+		}
+	]
+}

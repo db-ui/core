@@ -1,3 +1,7 @@
+@use "@db-ui/base/build/scss/variables" as *;
+@use "@db-ui/base/build/scss/helpers/functions" as *;
+@use "@db-ui/base/build/scss/icon/icons.helpers" as *;
+
 @import "../../../css/partials.meta";
 @import "link.variables";
 
@@ -36,11 +40,11 @@
 		&[rel],
 		&[data-icon],
 		&[data-icon-before] {
-			@include iconMeta(20);
+			@include icon-meta(20);
 		}
 
 		&[data-icon-after]::after {
-			@include iconMeta($size: 20, $position: "after");
+			@include icon-meta($size: 20, $position: "after");
 		}
 	}
 

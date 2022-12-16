@@ -1,164 +1,349 @@
 @charset "utf-8";
 
-@import "input.variables";
-@import "../form-elements";
+@use "@db-ui/base/build/scss/variables" as *;
+@use "@db-ui/base/build/scss/variables.global" as *;
+@use "@db-ui/base/build/scss/helpers/functions" as *;
+@use "@db-ui/base/build/scss/icon/icons.helpers" as *;
+@use "@db-ui/base/build/scss/tonality" as *;
+@use "@db-ui/base/build/scss/color-placeholder" as *;
+
+$icons-path: "../../../icons/" !default;
+
+@mixin label-focus-animation(
+	$translationX: var(--elm-input-padding-inline-start)
+) {
+	$transformScale: -1.25;
+
+	transition: opacity 0.08s, transform 0.15s;
+	opacity: var(--db-input-focus-opacity);
+
+	transform: translate($translationX, calc($db-sizing-md * $transformScale))
+		scale(var(--db-input-label-scale));
+}
 
 .elm-input {
-	@extend %form-element;
+	--elm-input-padding-inline-start: #{$db-spacing-fixed-sm};
+	--elm-input-padding-inline-end: #{$db-spacing-fixed-sm};
 
-	color: $input---color;
+	position: relative;
 
-	font-size: to-rem($pxValue: 16);
-	height: to-rem($pxValue: 44);
-	line-height: to-rem($pxValue: 24);
-	max-width: 100%;
+	// padding-inline-end according to current amount of icons
+	&[data-icon-before] {
+		--elm-input-padding-inline-start: #{calc(
+				2 * $db-spacing-fixed-sm + 0.425rem
+			)};
 
-	padding: $db-spacing-fixed-normal-xs $db-spacing-fixed-normal-m;
-
-	width: 100%;
-
-	&:not(:placeholder-shown) {
-		padding-bottom: 0;
-		padding-top: to-rem($pxValue: 16);
-	}
-
-	// * TODO: to get evaluated
-	// display: inline-flex;
-	// align-items: center;
-	// justify-content: flex-start;
-	// max-width: 100%;
-
-	// TODO: Evaluate whether those could get moved to ../_form-elements.scss
-	&:focus,
-	&:hover {
-		&:not(:disabled) {
-			--formElement---borderColor: #{$db-colors-secondary-enabled};
+		input {
+			padding-inline-start: var(--elm-input-padding-inline-start);
 		}
 	}
 
-	// TODO: Evaluate whether those could get moved to ../_form-elements.scss
-	&:disabled,
-	fieldset:disabled & {
-		&,
-		& + .elm-label {
-			// Decided against cursor: not-allowed, compare to e.g. https://phabricator.wikimedia.org/T121960
-			opacity: 0.4;
+	&[data-icon-after],
+	&[data-variant] {
+		--elm-input-padding-inline-end: #{calc(
+				2 * #{$db-spacing-fixed-sm} + 0.425rem
+			)};
+
+		input {
+			padding-inline-end: var(--elm-input-padding-inline-end);
 		}
 	}
 
-	&[type="color"],
-	&[type="date"],
-	&[type="datetime-local"],
-	&[type="email"],
-	&[type="month"],
-	&[type="number"],
-	&[type="password"],
-	:where(:not(.cmp-sitesearch)) > &[type="search"],
-	&[type="tel"],
-	&[type="text"],
-	&[type="time"],
-	&[type="url"],
-	&[type="week"] {
+	&[data-variant][data-icon-after] {
+		--elm-input-padding-inline-end: #{calc(
+				2 * #{$db-spacing-fixed-sm} + 0.425rem + 0.75rem + #{$db-spacing-fixed-xs}
+			)};
+
+		input {
+			padding-inline-end: var(--elm-input-padding-inline-end);
+		}
+
+		.elm-state-icon::after {
+			margin-inline-end: calc(0.75rem + $db-spacing-fixed-xs);
+		}
+	}
+
+	&::before,
+	&::after {
+		--icon-font-family: var(--db-base-icon-font-family);
+		--icon-font-size: var(--db-base-icon-font-size);
+
+		@extend %db-body-sm;
+
+		height: var(--db-sizing-md);
+		display: flex;
+		align-items: center;
+		position: absolute;
+		top: 0;
+		padding: 0 $db-spacing-fixed-xs;
+	}
+
+	&::after {
+		right: 0;
+	}
+
+	// currently not supported by firefox
+	&:has(> input:disabled) {
+		&::before,
+		&::after,
+		.elm-state-icon::after {
+			opacity: 0.5;
+		}
+	}
+
+	label {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		font-size: var(--db-type-body-font-size-md);
+		color: $db-colors-secondary-enabled;
+
+		transform-origin: left;
+		transform: translate(
+			var(--elm-input-padding-inline-start),
+			calc(-1 * var(--db-sizing-md))
+		);
+		transition: transform 0.2s $db-transition-functional-timing;
+		height: $db-sizing-md;
+		// TODO lets discuss this her: https://github.com/db-ui/core/issues/223
+		pointer-events: none;
+	}
+
+	.description {
+		@extend %db-body-xs;
+		margin: $db-spacing-fixed-2xs $db-spacing-fixed-sm 0;
+
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	input {
+		@extend %db-bg-neutral-transparent-semi;
+		border: 1px solid transparent;
+		border-radius: 4px;
+		height: $db-sizing-md;
+		max-width: 100%;
+		width: 100%;
+		padding: $db-spacing-fixed-xs var(--elm-input-padding-inline-end)
+			$db-spacing-fixed-xs var(--elm-input-padding-inline-start);
+
 		// TODO: Evaluate whether those could get moved to ../_form-elements.scss
-		// Semitransparent is the default style
-		@at-root :where(#{&}) {
-			@extend %form-element-semitransparent;
-		}
+		&:focus,
+		&:not(:placeholder-shown) {
+			&:not(:disabled) {
+				padding-bottom: calc(
+					$db-spacing-fixed-xs - var(--db-input-focus-opacity) *
+						$db-spacing-fixed-xs
+				);
+				padding-top: $db-spacing-fixed-xs;
 
-		// Floating labels
-		margin-top: to-rem($pxValue: 16);
-
-		&:not([type="date"]):not([type="datetime-local"]):not([type="month"]):not([type="time"]):not([type="week"])
-			+ .elm-label {
-			// position: absolute;
-			// left: calc(#{to-em($pxValue: 10)} - 1px);
-
-			transition: opacity, transform 250ms;
-			// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
-			@media (prefers-reduced-motion: reduce) {
-				transition-duration: 0.01s !important;
-			}
-		}
-
-		& + .elm-label {
-			color: $db-colors-secondary-enabled;
-			display: block;
-			font-size: to-rem($pxValue: 12);
-
-			margin-bottom: -#{to-rem($pxValue: 18)};
-			transform: translate(
-				$db-spacing-fixed-normal-m,
-				-#{to-rem($pxValue: 41)}
-			);
-
-			& + .description {
-				margin-top: 0;
-			}
-		}
-
-		&[placeholder] {
-			&:placeholder-shown {
-				& + label {
-					opacity: 0;
+				+ label {
+					@include label-focus-animation();
 				}
 			}
 		}
 
-		&::placeholder {
-			color: $db-colors-secondary-enabled;
+		// TODO: Evaluate whether those could get moved to ../_form-elements.scss
+		&:disabled,
+		fieldset:disabled & {
+			&,
+			& + label {
+				// Decided against cursor: not-allowed, compare to e.g. https://phabricator.wikimedia.org/T121960
+				opacity: 0.25;
+			}
 		}
 
-		// TODO: Evaluate whether those could get moved to ../_form-elements.scss
-		// Validation
-		&:required {
-			&:valid:not([aria-invalid]) {
-				--formElement---borderColor: #{$db-colors-success-enabled};
+		&[type="color"],
+		&[type="date"],
+		&[type="datetime-local"],
+		&[type="email"],
+		&[type="month"],
+		&[type="number"],
+		&[type="password"],
+		&[type="search"],
+		&[type="tel"],
+		&[type="text"],
+		&[type="time"],
+		&[type="url"],
+		&[type="week"] {
+			@extend %db-body-sm;
+
+			&:not([type="date"]):not([type="datetime-local"]):not(
+					[type="month"]
+				):not([type="time"]):not([type="week"])
+				+ label {
+				// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
+				@media (prefers-reduced-motion: reduce) {
+					transition-duration: 0.01s !important;
+				}
 			}
 
-			&:invalid {
-				&:not(:placeholder-shown) {
-					--formElement---borderColor: #{$db-colors-primary-enabled};
+			// Hiding inputs placeholder for floating label
+			&::placeholder {
+				opacity: 0;
+			}
+
+			&:focus {
+				&::placeholder {
+					opacity: 0.5;
 				}
 			}
 		}
 
-		&[aria-invalid="true"] {
-			--formElement---borderColor: #{$db-colors-primary-enabled};
-		}
+		&[type="search"] {
+			$paddingLeft: calc($db-spacing-fixed-sm * 2 + 0.625rem);
+			$icons-path: "../../../icons/" !default;
 
-		// ### Style variations
-		&[data-variant="semitransparent"] {
-			@extend %form-element-semitransparent;
-		}
+			padding-inline-start: var(--elm-input-padding-inline-start);
 
-		&[data-variant="white"] {
-			@extend %form-element-white;
-		}
+			&,
+			& + label {
+				--elm-input-padding-inline-start: #{calc(
+						$db-spacing-fixed-sm * 2 + 0.625rem
+					)};
+			}
 
-		&[data-variant="solid"] {
-			@extend %form-element-solid;
-		}
+			& ~ .elm-state-icon {
+				@include icon(glyph(search), 20, "filled", "before", false);
+			}
 
-		&[data-variant="outline"] {
-			@extend %form-element-outline;
+			+ label {
+				transform: translate(
+					$paddingLeft,
+					calc(-1 * var(--db-sizing-md))
+				);
+			}
+
+			~ .description {
+				padding-inline-start: $paddingLeft;
+			}
+
+			&:focus,
+			&:not(:placeholder-shown) {
+				&:not(:disabled) {
+					+ label {
+						padding-inline-start: 0;
+					}
+				}
+			}
+
+			// https://stackoverflow.com/questions/20804016/editing-input-type-search-pseudo-element-button-x
+			&::-webkit-search-cancel-button {
+				appearance: none;
+				position: absolute;
+				right: $db-spacing-fixed-sm;
+				top: 0;
+				height: $db-sizing-md;
+				width: 1em;
+				background: url(#{$icons-path}functional/images/navigation/db_ic_cancel_24.svg)
+					no-repeat 50% 50%;
+				background-size: contain;
+				cursor: pointer;
+				transition: opacity 0.12s;
+			}
 		}
 	}
 
-	&[type="search"] {
-		background: var(
-				--db-ic-search-24,
-				url(#{$icons-path}functional/images/action/db_ic_search_24.svg)
-			)
-			no-repeat to-rem($pxValue: 6) to-rem($pxValue: 12);
-		background-size: to-rem($pxValue: 19);
-		padding-left: to-rem($pxValue: 32);
+	// #variations
+	.elm-state-icon {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		position: absolute;
+		top: 0;
+		padding: 0 $db-spacing-fixed-xs;
+		height: $db-sizing-md;
+		width: 100%;
+		pointer-events: none;
 
-		:not(.cmp-sitesearch) > & {
-			@extend %form-element-semitransparent;
+		&::after,
+		&::before {
+			--icon-font-family: var(--db-base-icon-font-family);
+			--icon-font-size: var(--db-base-icon-font-size);
+		}
 
-			& + .elm-label {
-				margin-left: to-rem($pxValue: 16);
-			}
+		&::before {
+			--icon-margin-after: auto;
+		}
+
+		&::after {
+			--icon-margin-before: auto;
+		}
+	}
+
+	&[data-variant="error"] {
+		color: $db-colors-critical-on-bg-enabled;
+	}
+
+	// Variant error or invalid state
+	&[data-variant="error"] input,
+	input:required:invalid:not(:placeholder-shown),
+	input[aria-invalid="true"] {
+		@extend %db-bg-critical-transparent-semi;
+
+		& + label {
+			color: $db-colors-critical-on-bg-enabled;
+		}
+
+		& ~ .description,
+		& ~ .elm-state-icon {
+			color: $db-colors-critical-enabled;
+		}
+
+		& ~ .elm-state-icon {
+			@include icon(glyph(error), 20, "filled", "after", false);
+		}
+	}
+
+	&[data-variant="warning"] input {
+		@extend %db-bg-warning-transparent-semi;
+
+		& + label {
+			color: $db-colors-warning-on-bg-enabled;
+		}
+
+		& ~ .description,
+		& ~ .elm-state-icon {
+			color: $db-colors-warning-enabled;
+		}
+
+		& ~ .elm-state-icon {
+			@include icon(glyph(error-triangle), 20, "filled", "after", false);
+		}
+	}
+
+	&[data-variant="success"] input {
+		@extend %db-bg-success-transparent-semi;
+
+		& + label {
+			color: $db-colors-success-on-bg-enabled;
+		}
+
+		& ~ .description,
+		& ~ .elm-state-icon {
+			color: $db-colors-success-enabled;
+		}
+
+		& ~ .elm-state-icon {
+			@include icon(glyph(check-circle), 20, "filled", "after", false);
+		}
+	}
+
+	&[data-variant="information"] input {
+		@extend %db-bg-information-transparent-semi;
+
+		& + label {
+			color: $db-colors-information-on-bg-enabled;
+		}
+
+		& ~ .description,
+		& ~ .elm-state-icon {
+			color: $db-colors-information-enabled;
+		}
+
+		& ~ .elm-state-icon {
+			@include icon(glyph(info), 20, "filled", "after", false);
 		}
 	}
 }

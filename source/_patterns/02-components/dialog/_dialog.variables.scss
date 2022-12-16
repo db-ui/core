@@ -1,5 +1,4 @@
-@import "../../../css/helpers/functions";
-@import "../../00-base/icons/icons.variables";
-@import "../../00-base/icons/icons.helpers";
+@use "@db-ui/base/build/scss/helpers/functions" as *;
+@use "@db-ui/base/build/scss/icon/icons.helpers" as *;
 
 $dialog-backdrop--backgroundColor: rgba(0, 0, 0, 0.9) !default;

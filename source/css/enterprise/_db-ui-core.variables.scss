@@ -1,4 +1,4 @@
 $domain: "enterprise";
 
-@import "../helpers/functions";
-@import "../../_patterns/00-base/colors/enterprise/colors.variables";
+@use "@db-ui/base/build/scss/variables" as *;
+@use "@db-ui/base/build/scss/helpers/functions" as *;

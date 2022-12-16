@@ -1,3 +1,5 @@
+@use "@db-ui/base/build/scss/variables" as *;
+@use "@db-ui/base/build/scss/helpers/functions" as *;
 @import "../../../css/db-ui-core.variables";
 
 $cmp-table-cell-height-36: to-rem(
@@ -15,6 +17,6 @@ $table-line--borderColor: #d7dce1 !default;
 
 $table-row-zebra-color: rgba($db-colors-secondary-enabled, 0.07) !default;
 
-$table-densitySmall--padding: $db-spacing-fixed-normal-xs !default;
-$table-densityRegular--padding: $db-spacing-fixed-normal-xs !default;
-$table-densityLarge--padding: $db-spacing-fixed-normal-m !default;
+$table-densitySmall--padding: $db-spacing-fixed-regular-xs !default;
+$table-densityRegular--padding: $db-spacing-fixed-regular-xs !default;
+$table-densityLarge--padding: $db-spacing-fixed-regular-m !default;
