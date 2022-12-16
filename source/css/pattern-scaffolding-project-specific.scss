@@ -1,6 +1,8 @@
 @use "@db-ui/base/build/scss/variables" as *;
 @use "@db-ui/base/build/scss/helpers/functions" as *;
 @use "@db-ui/base/build/scss/font-faces" as *;
+@use "@db-ui/base/build/scss/tonality" as *;
+
 @import "db-ui-core.variables";
 $fonts-path: "../fonts/";
 
@@ -25,6 +27,11 @@ pl-logo {
 .pl-c-viewport-modal-wrapper,
 pl-iframe {
 	background-color: $db-colors-secondary-enabled !important; // shame.css
+}
+
+// use regular as default for patterns
+.pl-c-pattern {
+	@extend %db-ui-regular;
 }
 
 // Intro page

@@ -36,13 +36,19 @@ We've remove the deprecated previous HTML implementation of the label by an `out
 - The `id`-attributes value on that `label` element needs to match the following attributes values that needs to get added onto the `progress` HTML tag itself:
 `aria-describedby="{{ id }}-label"`
 
+=== `input`
+
+- The input background style variations `semitransparent`, `solid`, `white` and `outline` have been removed. Input fields have only one background style left. 
+- Introducing 3 different sizes of input fields according to our `tonality` introduction: `functional`, `regular`, `expressive
+- Integration of `data-icon-before` and `data-icon-after` property for enabling use of custom icons in input fields
+- Introducing new variations: `error`, `warning`, `success` and `information` following the new guidelines 3.0 color system
+
 === `link`
 
 - Removed the ability for custom icons according to guidelines 3.0
 - Added `primary` as variant for highlighting links
 - Changed use of `data-variant` to use with `primary` and used `data-content` attribute for differentiation between `internal` and `external`
 - Font-size definition has moved to DB UI Base due to our `tonality` introduction (default and for `data-size=small`)
-
 
 == DB UI Core 2.2.0 Migration Guide
 

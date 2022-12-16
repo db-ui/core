@@ -1,6 +1,5 @@
 ---
 title: Input - type date
-state: inevaluation
 tags: [style-1.6]
 ---
 
