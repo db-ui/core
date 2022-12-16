@@ -8,6 +8,8 @@
 @import "checkbox.variables";
 
 .elm-checkbox {
+	--icon-margin-after: 0;
+
 	$checkbox-size: 24;
 
 	@include icon("\00A0", $checkbox-size, "outline", $partial: $partial);
@@ -30,8 +32,6 @@
 	&[type="checkbox"] {
 		vertical-align: sub;
 	}
-
-	--icon-margin-after: 0;
 
 	&:checked {
 		background-color: $checkbox--checked-backgroundColor;
