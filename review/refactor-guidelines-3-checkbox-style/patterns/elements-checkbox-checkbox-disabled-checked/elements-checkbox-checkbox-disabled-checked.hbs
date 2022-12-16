@@ -1,0 +1,14 @@
+<input type="checkbox"
+	class="elm-checkbox {{ styleModifier }}"
+	id="{{ id }}{{#if size }}-{{ size }}{{/if }}"{{#if checked}} checked{{/if }}
+	{{#if disabled}} disabled{{/if }}
+	value="{{ value }}"
+	{{#if describedbyid }} aria-describedby="{{ describedbyid }}"{{/if }}
+	{{#if size }} data-size="{{ size }}"{{/if }}
+	{{#if required }} required{{/if }}
+><label class="elm-label" for="{{ id }}{{#if size }}-{{ size }}{{/if }}">{{ label }}</label>
+{{#if indeterminate}}
+<script>
+	document.querySelector('#{{ id }}{{#if size }}-{{ size }}{{/if }}').indeterminate = true;
+</script>
+{{/if }}
