@@ -13,7 +13,7 @@
 	$checkbox-size: 24;
 
 	@include icon("\00A0", $checkbox-size, "outline", $partial: $partial);
-	@include iconMeta($font-size: $checkbox-size - 2);
+	@include icon-meta($font-size: $checkbox-size - 2);
 	align-content: center;
 
 	appearance: none;
@@ -81,7 +81,7 @@
 	&%size-Small {
 		$checkbox-size: 20;
 
-		@include iconMeta(
+		@include icon-meta(
 			$size: $checkbox-size,
 			$font-size: $checkbox-size - 2
 		);
