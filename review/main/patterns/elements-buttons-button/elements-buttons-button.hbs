@@ -1,14 +1,11 @@
 <button class="elm-button {{ styleModifier }}"
 	{{#if variant }}data-variant="{{ variant }}"{{/if }}
 	{{#if size }} data-size="{{ size }}"{{/if }}
-	{{#if width }} data-width="{{ width }}"{{/if }}
 	title="{{ title }}"
 	type="{{#if buttontype }}{{ buttontype }}{{else}}button{{/if }}"
 	{{#if role }} role="{{ role }}"{{/if }}
 	{{#if disabled }} disabled{{/if }}
 	{{#if icon}} data-icon="{{ icon }}"{{/if}}
-	{{#if icon-after}} data-icon-after="{{ icon-after }}"{{/if}}
-	{{#if state}} data-state="{{ state }}"{{/if}}>
+	{{#if icon-after}} data-icon-after="{{ icon-after }}"{{/if}}>
 	{{{ value }}}
-	{{#if_eq state "loading" }}{{> elements-loading-indicator size="xs" id=variant }}{{/if_eq }}
 </button>
