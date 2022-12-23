@@ -1,21 +1,27 @@
-<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
-<!-- [html-validate-disable-next input-missing-label] -->
-<input type="text"
-	class="elm-input "
-	placeholder="Projekt Name"
-	name="input03"
-	id="input03"
-	
-	value="Input"
-	 aria-describedby="input03hint"
+<div class="elm-input"
 	
 	
-	
-	aria-labelledby="input03-label"
 	>
-<label class="elm-label"
-	for="input03"
-	aria-hidden="true"
-	id="input03-label">Textlabel</label>
-<p id="input03hint" class="description">Optionale Beschreibung<br>Zeile zwei</p>
+	<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+	<!-- [html-validate-disable-next input-missing-label] -->
+	<input type="text"
+		
+		placeholder="Projekt Name"
+		name="input03"
+		id="input03"
+		
+		value="Input"
+		 aria-describedby="input03hint"
+		
+		
+		
+		aria-labelledby="input03-label">
+	<label for="input03"
+		aria-hidden="true"
+		id="input03-label">Textlabel</label>
 
+	<p id="input03hint" class="description">Optionale Beschreibung<br>Zeile zwei</p>
+
+	
+	<span class="elm-state-icon"></span>
+</div>
