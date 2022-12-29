@@ -12,18 +12,17 @@
 
 
 	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1671781702281" media="all">
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.classes.css?1671781702281" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1672310769909" media="all">
 
 	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1671781702281" media="all">
-	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1671781702281" media="all">
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1671781702281" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1672310769909" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1672310769909" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1672310769909" media="all">
 	<!-- dialog polyfill //-->
-	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1671781702281" media="all">
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1672310769909" media="all">
 
 	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1671781702281" media="all">
+	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1672310769909" media="all">
 	<!-- End Pattern Lab -->
 
 
@@ -860,35 +859,28 @@ documentation has useful tips on creating an effective description. //-->
 
 	<div class="rea-meta">
 		<form class="cmp-sitesearch" action="#" method="post" role="search">
-			<div class="elm-input"
+			<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+			<!-- [html-validate-disable-next input-missing-label] -->
+			<input type="search"
+				class="elm-input "
+				placeholder="Suchen …"
+				name="input00"
+				id="input00"
+				
+				value=""
 				
 				
+				
+				
+				aria-labelledby="input00-label"
 				>
-				<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
-				<!-- [html-validate-disable-next input-missing-label] -->
-				<input type="search"
-					
-					placeholder="Suchen …"
-					name="input00"
-					id="input00"
-					
-					value=""
-					
-					
-					
-					
-					aria-labelledby="input00-label">
-				<label for="input00"
-					aria-hidden="true"
-					id="input00-label">Suche</label>
+			<label class="elm-label"
+				for="input00"
+				aria-hidden="true"
+				id="input00-label">Suche</label>
 			
-				
 			
-				
-				<span class="elm-state-icon"></span>
-			</div>
 			<button class="elm-button "
-				
 				
 				
 				title="Title text"
@@ -896,10 +888,8 @@ documentation has useful tips on creating an effective description. //-->
 				
 				
 				
-				
 				>
 				Suchen
-				
 			</button>
 		</form>
 		<ul class="cmp-metanavigation">
@@ -1320,35 +1310,28 @@ documentation has useful tips on creating an effective description. //-->
 
 	<div class="rea-meta">
 		<form class="cmp-sitesearch" action="#" method="post" role="search">
-			<div class="elm-input"
+			<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+			<!-- [html-validate-disable-next input-missing-label] -->
+			<input type="search"
+				class="elm-input "
+				placeholder="Suchen …"
+				name="input00"
+				id="input00"
+				
+				value=""
 				
 				
+				
+				
+				aria-labelledby="input00-label"
 				>
-				<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
-				<!-- [html-validate-disable-next input-missing-label] -->
-				<input type="search"
-					
-					placeholder="Suchen …"
-					name="input00"
-					id="input00"
-					
-					value=""
-					
-					
-					
-					
-					aria-labelledby="input00-label">
-				<label for="input00"
-					aria-hidden="true"
-					id="input00-label">Suche</label>
+			<label class="elm-label"
+				for="input00"
+				aria-hidden="true"
+				id="input00-label">Suche</label>
 			
-				
 			
-				
-				<span class="elm-state-icon"></span>
-			</div>
 			<button class="elm-button "
-				
 				
 				
 				title="Title text"
@@ -1356,10 +1339,8 @@ documentation has useful tips on creating an effective description. //-->
 				
 				
 				
-				
 				>
 				Suchen
-				
 			</button>
 		</form>
 		<ul class="cmp-metanavigation">
@@ -1469,20 +1450,16 @@ documentation has useful tips on creating an effective description. //-->
 					<li><button class="elm-button  is-account"
 				
 				
-				
 				title="Title text"
 				type="button"
-				
 				
 				
 				
 				>
 				Profileinstellungen
-				
 			</button>
 			</li>
 					<li><button class="elm-button  is-account"
-				
 				
 				
 				title="Title text"
@@ -1490,10 +1467,8 @@ documentation has useful tips on creating an effective description. //-->
 				
 				
 				
-				
 				>
 				Logout
-				
 			</button>
 			</li>
 				</menu>
@@ -1546,35 +1521,28 @@ documentation has useful tips on creating an effective description. //-->
 			<div class="pl-js-pattern-example">
 			<div class="rea-meta">
 	<form class="cmp-sitesearch" action="#" method="post" role="search">
-		<div class="elm-input"
+		<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+		<!-- [html-validate-disable-next input-missing-label] -->
+		<input type="search"
+			class="elm-input "
+			placeholder="Suchen …"
+			name="input00"
+			id="input00"
+			
+			value=""
 			
 			
+			
+			
+			aria-labelledby="input00-label"
 			>
-			<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
-			<!-- [html-validate-disable-next input-missing-label] -->
-			<input type="search"
-				
-				placeholder="Suchen …"
-				name="input00"
-				id="input00"
-				
-				value=""
-				
-				
-				
-				
-				aria-labelledby="input00-label">
-			<label for="input00"
-				aria-hidden="true"
-				id="input00-label">Suche</label>
+		<label class="elm-label"
+			for="input00"
+			aria-hidden="true"
+			id="input00-label">Suche</label>
 		
-			
 		
-			
-			<span class="elm-state-icon"></span>
-		</div>
 		<button class="elm-button "
-			
 			
 			
 			title="Title text"
@@ -1582,10 +1550,8 @@ documentation has useful tips on creating an effective description. //-->
 			
 			
 			
-			
 			>
 			Suchen
-			
 		</button>
 	</form>
 	<ul class="cmp-metanavigation">
@@ -1761,10 +1727,10 @@ documentation has useful tips on creating an effective description. //-->
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1671781702281">
+<script id="pl-js-polyfill-insert-1672310769909">
   (function() {
     if (self != top) {
-      var cb = '1671781702281';
+      var cb = '1672310769909';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -1777,7 +1743,7 @@ documentation has useful tips on creating an effective description. //-->
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1671781702281" nomodule>
+<script id="pl-js-insert-1672310769909" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 
