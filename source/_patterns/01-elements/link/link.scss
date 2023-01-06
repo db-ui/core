@@ -63,17 +63,7 @@
 	}
 
 	&[data-variant="primary"] {
-		color: $db-colors-primary-enabled;
-
-		&:not(:disabled) {
-			&:hover {
-				color: $db-colors-primary-hover;
-			}
-
-			&:active {
-				color: $db-colors-primary-pressed;
-			}
-		}
+		@extend %db-primary-text-ia;
 	}
 
 	// data-size=small is defined by tonality in "@db-ui/base/build/scss/tonality"
