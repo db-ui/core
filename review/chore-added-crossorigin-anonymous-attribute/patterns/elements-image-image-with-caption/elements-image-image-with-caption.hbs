@@ -1,0 +1,18 @@
+{{#if caption}}<figure>{{/if }}
+	{{#if sources}}
+	<picture>
+		{{#each sources}}
+			<source srcset="{{ srcset }}" {{#if media}} media="{{ media }}" {{/if }}{{#if type}} type="{{ type }}" {{/if }}>
+		{{/each }}
+		{{/if }}
+		{{! TODO: We need to integrate the responsive image attributes as well as think whether and how we would like to
+		output this element within the patternlab itself }}
+		<img src="{{ src }}" alt="{{ alt }}" width="{{ width }}" height="{{ height }}"
+			class="elm-image {{ styleModifier }}" {{#if role }} role="{{ role }}" {{/if }}{{#if lazy}} loading="lazy"
+			{{/if }}{{#if srcset}} srcset="{{ srcset }}" {{/if }} {{#if caption}} aria-labelledby="caption01" {{/if
+			}}{{#if elementtiming }} elementtiming="{{ elementtiming }}"{{/if }}
+			{{#if crossorigin }} crossorigin="{{ crossorigin }}"{{/if }}>
+		{{#if sources}}
+	</picture>{{/if }}
+	{{#if caption}}<figcaption id="caption01">{{ caption }}</figcaption>
+</figure>{{/if }}

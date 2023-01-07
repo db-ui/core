@@ -1,0 +1,55 @@
+<main>
+
+	<section>
+		{{> elements-image src="../../images/db-ui-core_logo.png" alt="" width="48" height="48" }}
+		{{> elements-headline type='1' text='DB UI Core' }}
+
+		{{> elements-image src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="Apache 2.0 license badge" crossorigin="anonymous" }}
+		<a href="https://npmjs.com/package/@db-ui/core" target="_blank" rel="noopener noreferrer">{{> elements-image src="https://img.shields.io/npm/v/@db-ui/core.svg?color=rgb%28237%2C%2028%2C%2036%29" alt="npm version" crossorigin="anonymous" }}</a>
+		{{> elements-image src="https://img.shields.io/badge/Based%20on-DB%20Design%20System%20UX%20Guides%20%2B%20Standards-d7dce1.svg" alt="Based on DB UX Design System guidelines" crossorigin="anonymous" }}
+
+		<p lang="de">Personenverkehr und DB Systel führen ihre Design Systeme für Web in der Version 2.0 der Standard Web Components zusammen. Unser Ziel ist eine einheitliche Basis UX im Sinne der Modernen Ikone für Kunden und Mitarbeiteranwendungen. Um unser Design End 2 End von Konzeption über Design bis zur Implementierung konsistent zu halten, wird das DB UX Design System auch in Code von DB Systel und Reisendeninformation umgesetzt. Stay Tuned!</p>
+
+		<figure class="intro-quotation">
+			<blockquote>We’re not designing pages anymore. We’re designing systems of components.</blockquote>
+			<figcaption>{{> elements-link href="https://bradfrost.com/blog/post/bdconf-stephen-hay-presents-responsive-design-workflow/" target="_blank" rel="noopener noreferrer" value="Stephen Hay" title="Article on Stephen Hay presenting the responsive design workflow by Brad Frost" }}.
+				Quoted in a <cite>{{> elements-link href="https://vimeo.com/67476280" target="_blank" rel="noopener noreferrer" value="talk by Brad Frost" title="Video on vimeo of a talk by Brad Frost regarding responsive design" }} at beyond tellerrand conference</cite>.</figcaption>
+		</figure>
+
+		<p lang="de">Mit DB UI Core bieten wir robuste HTML UI Komponenten, wiederverwendbare visuelle Styles und mächtige Werkzeuge, um
+			vor allem Mitarbeitende der Bereiche Entwicklung, Konzeption&amp;Design und Content Pflege&amp;Produktion dabei zu unterstützen,
+			allerbeste digitale Erlebnisse zu erstellen und zu betreiben.</p>
+
+		<p lang="de">Damit unsere technischen Produkte einen möglichst gro&szlig;en Umfang an Nutzer:innen erreichen,
+			haben wir uns dazu entschlossen, die Majorität unserer Dokumentation in englischer Sprache zu verfassen,
+			die insbesondere im Bereich der technischen Entwicklung i.d.R. geläufig ist.</p>
+	</section>
+
+	<section>
+		{{> elements-headline type='2' text='Core principals' }}
+
+		{{> components-cards variant="banner" }}
+	</section>
+
+	<section>
+		{{> elements-headline type='2' text='How to use' }}
+		<p>For using DB UI Core, you need to install it as a dependency to your project and then link it within your HTML / CSS.<br>
+		Please have a look into the <a href="https://github.com/db-ui/core/tree/main/docs/getStarted.adoc" target="_blank" rel="noopener noreferrer">Docs / Get Started(docs)</a> for detailed instructions.<br>
+		In case that you're developing a JavaScript application, please have a look at <a href="https://db-ui.github.io/elements/" target="_blank">DB UI Elements</a>, that's based on DB UI Core and provides Web Components for easier integration into this tech context.</p>
+
+		{{> elements-headline type='2' text='More information' }}
+		<p>Additionally we'll provide some more information over time regrading the whole ecosystem:</p>
+		{{> components-link-list }}
+		{{! TODO: Introduce these links:
+				How to contribute
+				List of contributers
+			}}
+		{{> elements-headline type='2' text='Give us your feedback!' }}
+		<p>This is only the beta version of our framework and we really want your feedback - either within the {{> elements-link href="https://db.de/krnm74" value="DB UI Channel by Web Dev Community in Microsoft Teams (only available DB internally)" target="_blank" rel="noopener noreferrer" }}, or directly at {{> elements-link href="mailto:db-ux-designsystem@deutschebahn.com" value="db-ux-designsystem@deutschebahn.com" }}.<br>
+		We're particularly keen to add as many examples to the behaviours as possible, to further clarify them.</p>
+		{{> elements-headline type='2' text='Things to keep in mind' }}
+		{{> elements-headline type='3' text='Developed for and driven by the community' }}
+		<p>This is mainly a platform providing the space and technology for a common basis of curated components; their development is mainly driven by the community, adapted out of the work done in projects and through the huge amount of feedback that we're gaining out of the community. So please support us in any way possible, this is greatly appreciated!</p>
+	</section>
+</main>
+{{> areas-footer }}
