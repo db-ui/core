@@ -107,9 +107,15 @@ $partial: false;
 @import "../../_patterns/02-components/dropdown/enterprise/dropdown";
 
 // AREAS
+/* areas */
 @import "../../_patterns/03-areas/enterprise/areas";
+/* header */
 @import "../../_patterns/03-areas/00-header/enterprise/header";
+/* meta */
 @import "../../_patterns/03-areas/00-header/enterprise/meta";
+/* main */
 @import "../../_patterns/03-areas/01-main/enterprise/main";
+/* grid */
 @import "../../_patterns/03-areas/02-grid/enterprise/grid";
+/* footer */
 @import "../../_patterns/03-areas/03-footer/enterprise/footer";
