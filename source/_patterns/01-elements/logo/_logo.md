@@ -2,7 +2,7 @@
 title: Deutsche Bahn Logo
 ---
 
-Please find a lot of more information regarding our logo and how to use it within the [Marketingportal](https://marketingportal.extranet.deutschebahn.com/de/logo-3).
+Please find a lot of more information regarding our logo and how to use it within the [Marketingportal](https://marketingportal.extranet.deutschebahn.com/marketingportal/Design-Anwendungen/DB-UX-Design-System/Design-fuer-Apps-Web/Logo).
 
 ## Adapt logos colors (background and fill)
 

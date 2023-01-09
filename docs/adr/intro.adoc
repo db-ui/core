@@ -4,7 +4,7 @@ The purpose of this product is providing a stable and most generic library of Fr
 
 ____
 
-Design systems are containers for institutional knowledge. They provide tested and proven solutions to design problems. When these solutions are held together by a consistent visual language and link:https://marketingportal.extranet.deutschebahn.com/de/ui-komponenten[UX guidelines], they represent what good design looks like for the organization or platform.
+Design systems are containers for institutional knowledge. They provide tested and proven solutions to design problems. When these solutions are held together by a consistent visual language and link:https://marketingportal.extranet.deutschebahn.com/marketingportal/Design-Anwendungen/DB-UX-Design-System/Design-fuer-Apps-Web/UI-Komponenten[UX guidelines], they represent what good design looks like for the organization or platform.
 ____
 ____
 For projects like this one, we work with our client partners to identify the design problems their teams confront over and over again. And then we identify and extract the best solutions to those problems.
