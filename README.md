@@ -1,6 +1,10 @@
 <!-- markdownlint-configure-file { "MD013": false, "MD041":false } -->
 
+<!-- markdownlint-disable MD033 -->
+
 <img src="source/samples/images/header_image_0.guetzli.jpg" alt="" srcset="source/samples/images/header_image_0.guetzli.2x.jpg 2x, source/samples/images/header_image_0.guetzli.3x.jpg 3x"> <!-- width="830" height="276" //-->
+
+<!-- markdownlint-enable MD033 -->
 
 # DB UI Core
 
@@ -107,7 +111,7 @@ Please mind the [conventions for git commits](/docs/conventions.adoc#user-conten
 
 <!-- markdownlint-disable MD033 -->
 
-This is only the first version of our framework and we really want your feedback - either within the <a href="https://db.de/krnm74" target="_blank" rel="noopener noreferrer">DB UI Channel by Web Dev Community in Microsoft Teams (only available DB internally)</a>, or directly at [db-ux-designsystem@deutschebahn.com](mailto:db-ux-designsystem@deutschebahn.com). <!-- markdownlint-disable MD033 -->
+This is only the first version of our framework and we really want your feedback - either within the <a href="https://db.de/krnm74" target="_blank" rel="noopener noreferrer">DB UI Channel by Web Dev Community in Microsoft Teams (only available DB internally)</a>, or directly at [db-ux-designsystem@deutschebahn.com](mailto:db-ux-designsystem@deutschebahn.com).
 We're particularly keen to add as many examples to the behaviours as possible, to further clarify them.
 
 ## FAQ
