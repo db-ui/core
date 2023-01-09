@@ -19,7 +19,7 @@
 
 <!-- ![Pipeline status](https://github.com/db-ui/core/badges/main/pipeline.svg?style=flat) -->
 
-DB Personenverkehr and DB Systel are merging their Design Systems for Web [with DB Design System](https://marketingportal.extranet.deutschebahn.com/de/ui-komponenten) as their successor. Our goal is to provide a common UX based on the [DB "Moderne Ikone"](https://marketingportal.extranet.deutschebahn.com/marke) for customer and employee applications. To achieve an end 2 end consistence from conception to implementation, we'll provide this new version of DB UI Core (npm: `@db-ui/core`), that is being used within a Design System by T.R (Reisendeninformation) as well. Stay Tuned!
+DB Personenverkehr and DB Systel are merging their Design Systems for Web [with DB Design System](https://marketingportal.extranet.deutschebahn.com/marketingportal/Design-Anwendungen/DB-UX-Design-System/Design-fuer-Apps-Web/UI-Komponenten) as their successor. Our goal is to provide a common UX based on the [DB "Moderne Ikone"](https://marketingportal.extranet.deutschebahn.com/marke) for customer and employee applications. To achieve an end 2 end consistence from conception to implementation, we'll provide this new version of DB UI Core (npm: `@db-ui/core`), that is being used within a Design System by T.R (Reisendeninformation) as well. Stay Tuned!
 
 You could still use the existing version of [DB UI Core that is based on version 1.6 of the guidelines (only hosted internally)](https://db.de/4cwtyn). For new projects we recommend to use this new version.
 
@@ -45,7 +45,7 @@ DB UI Core provides robust HTML UI components, reusable visual styles, and power
 
 ### Consistent & Compliant
 
-DB UI Core is based on the [DB UX Design System](https://marketingportal.extranet.deutschebahn.com/de/ui-komponenten), that are the guidelines for any Personenverkehr Customer and Deutsche Bahn Enterprise website and web applications.
+DB UI Core is based on the [DB UX Design System](https://marketingportal.extranet.deutschebahn.com/marketingportal/Design-Anwendungen/DB-UX-Design-System/Design-fuer-Apps-Web/UI-Komponenten), that are the guidelines for any Personenverkehr Customer and Deutsche Bahn Enterprise website and web applications.
 
 ### Accessible
 
@@ -61,13 +61,13 @@ DB UI Core is decoupled from the JavaScript layer, to implement the patterns in 
 
 ### Evergreen
 
-As [DB UX Design System](https://marketingportal.extranet.deutschebahn.com/de/ui-komponenten) evolves, so does DB UI Core, meaning apps only need to keep their DB UI Core package updated to ensure the latest look and feel.
+As [DB UX Design System](https://marketingportal.extranet.deutschebahn.com/marketingportal/Design-Anwendungen/DB-UX-Design-System/Design-fuer-Apps-Web/UI-Komponenten) evolves, so does DB UI Core, meaning apps only need to keep their DB UI Core package updated to ensure the latest look and feel.
 
 ## More information
 
 Additionally we'll provide some more information over time regrading the whole ecosystem:
 
-- [DB UX Design System documentation within the DB Marketingportal (german)](https://marketingportal.extranet.deutschebahn.com/de/ui-komponenten)
+- [DB UX Design System documentation within the DB Marketingportal (german)](https://marketingportal.extranet.deutschebahn.com/marketingportal/Design-Anwendungen/DB-UX-Design-System/Design-fuer-Apps-Web/UI-Komponenten)
 - [Confluence / Base Wiki - "Technische Umsetzung des Enterprise UI Design Systems" (german, only available internally)](https://db.de/pu8moh)
 - [Confluence - Web UI Component Library (only available internally)](https://db.de/1tyr73)
 - [Changelog](https://github.com/db-ui/core/blob/main/CHANGELOG.md)
@@ -136,7 +136,7 @@ src\styles.scss 5:9 root stylesheet
 ## Deutsche Bahn brand
 
 As we'd like to perfectly support our users and customers on their digital journey, the usage of Deutsche Bahn brand and trademarks are bound to clear guidelines and restrictions even when being used with the code that we're providing with this product; Deutsche Bahn fully reserves all rights and ownership regarding the Deutsche Bahn brand, even though that we're providing the code of DB UI products free to use and release it under the Apache 2.0 license.
-Please have a look at our brand portal at <https://marketingportal.extranet.deutschebahn.com/> for any further questions and whom to contact on any brand issues. As these assets and visual guidelines are retrieved from our Deutsche Bahn Marketingportal, you'll agree with the ["Allgemeine Nutzungsbedingungen für das DB-Marketingportal" (german)](https://marketingportal.extranet.deutschebahn.com/de/nutzungsbedingungen) in case of using them.
+Please have a look at our brand portal at <https://marketingportal.extranet.deutschebahn.com/> for any further questions and whom to contact on any brand issues. As these assets and visual guidelines are retrieved from our Deutsche Bahn Marketingportal, you'll agree with the ["Allgemeine Nutzungsbedingungen für das DB-Marketingportal" (german)](https://marketingportal.extranet.deutschebahn.com/marketingportal/Nutzungsbedingungen-9702684) in case of using them.
 
 For any usage outside of Deutsche Bahn websites and applications you must remove or replace any Deutsche Bahn brand and design assets as well as protected characteristics and trademarks. We're even also planning to provide a neutral theme that would make it much easier for you to use our product without the trademarks by Deutsche Bahn.
 
