@@ -12,17 +12,18 @@
 
 
 	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1673247722124" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1673247847458" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.classes.css?1673247847458" media="all">
 
 	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1673247722124" media="all">
-	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1673247722124" media="all">
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1673247722124" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1673247847458" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1673247847458" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1673247847458" media="all">
 	<!-- dialog polyfill //-->
-	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1673247722124" media="all">
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1673247847458" media="all">
 
 	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1673247722124" media="all">
+	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1673247847458" media="all">
 	<!-- End Pattern Lab -->
 
 
@@ -55,14 +56,19 @@ documentation has useful tips on creating an effective description. //-->
 				<h2>Variations/configurability</h2>
 <h3>Variant</h3>
 <h4>SCSS (recommended)</h4>
-<p>Extend one of the variant placeholders: <code>%variant-primary</code>, <code>%variant-secondary</code> or <code>%variant-tertiary</code></p>
+<p>Extend one of the variant placeholders: <code>%variant-primary</code>, <code>%variant-secondary</code>, <code>%variant-tertiary</code> or <code>%variant-ghost</code></p>
 <h4>HTML attribute</h4>
 <p>You could set the different button variants via the <code>data-variant</code> attribute.</p>
 <h3>Size</h3>
 <h4>SCSS (recommended)</h4>
-<p>Extend one of the size SCSS placeholders in case that you don't want the default (regular): <code>%size-Small</code> or <code>%size-Large</code></p>
+<p>Extend the size SCSS placeholder in case that you don't want the default (medium): <code>%size-Small</code></p>
 <h4>HTML attribute</h4>
-<p>You could set the different button sizes via the <code>data-size</code> attribute, the default is &quot;regular&quot; and in that case is optional.</p>
+<p>You could set the different button sizes via the <code>data-size</code> attribute, the default is &quot;medium&quot; and in that case is optional.</p>
+<h3>Width</h3>
+<h4>SCSS (recommended)</h4>
+<p>Extend the width placeholders in case that you don't want the default (content-length sized): <code>%width-full</code></p>
+<h4>HTML attribute</h4>
+<p>You could differentiate the button width via the <code>data-width</code> attribute, choose value &quot;full&quot; for a button taking the whole containers width; the default is &quot;auto&quot; and in that case is optional.</p>
 <h2>Usability</h2>
 <blockquote>
 <p>Buttons should be used in situations where users might need to:</p>
@@ -145,160 +151,24 @@ documentation has useful tips on creating an effective description. //-->
 		
 			<div class="pl-js-pattern-example">
 			<button class="elm-button "
-	data-variant="brand-primary"
+	data-variant="primary"
+	
 	
 	title="Done"
 	type="button"
 	
 	
 	
+	
 	>
-	Red 500
+	Button
+	
 </button>
 
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-elements-button" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"components-overflow-menu-navigation-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation-opposite-position/components-overflow-menu-overflow-menu-navigation-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-navigation","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-opposite-position/components-overflow-menu-overflow-menu-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-button-brand-primary","lineagePath":"../../patterns/elements-buttons-01-button-brand-primary/elements-buttons-01-button-brand-primary.rendered.html"},{"lineagePattern":"elements-button-primary","lineagePath":"../../patterns/elements-buttons-03-button-primary/elements-buttons-03-button-primary.rendered.html"},{"lineagePattern":"elements-button-secondary-outline","lineagePath":"../../patterns/elements-buttons-04-button-secondary-outline/elements-buttons-04-button-secondary-outline.rendered.html"},{"lineagePattern":"elements-button-secondary-solid","lineagePath":"../../patterns/elements-buttons-05-button-secondary-solid/elements-buttons-05-button-secondary-solid.rendered.html"},{"lineagePattern":"elements-button-tertiary-plain","lineagePath":"../../patterns/elements-buttons-06-button-tertiary-plain/elements-buttons-06-button-tertiary-plain.rendered.html"},{"lineagePattern":"elements-button-sizes","lineagePath":"../../patterns/elements-buttons-09-button-sizes/elements-buttons-09-button-sizes.rendered.html"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-example-form","lineagePath":"../../patterns/components-form-example-form/components-form-example-form.rendered.html"},{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"}],"lineageR":[{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"components-overflow-menu-navigation-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation-opposite-position/components-overflow-menu-overflow-menu-navigation-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-navigation","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-opposite-position/components-overflow-menu-overflow-menu-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-button-brand-primary","lineagePath":"../../patterns/elements-buttons-01-button-brand-primary/elements-buttons-01-button-brand-primary.rendered.html"},{"lineagePattern":"elements-button-primary","lineagePath":"../../patterns/elements-buttons-03-button-primary/elements-buttons-03-button-primary.rendered.html"},{"lineagePattern":"elements-button-secondary-outline","lineagePath":"../../patterns/elements-buttons-04-button-secondary-outline/elements-buttons-04-button-secondary-outline.rendered.html"},{"lineagePattern":"elements-button-secondary-solid","lineagePath":"../../patterns/elements-buttons-05-button-secondary-solid/elements-buttons-05-button-secondary-solid.rendered.html"},{"lineagePattern":"elements-button-tertiary-plain","lineagePath":"../../patterns/elements-buttons-06-button-tertiary-plain/elements-buttons-06-button-tertiary-plain.rendered.html"},{"lineagePattern":"elements-button-sizes","lineagePath":"../../patterns/elements-buttons-09-button-sizes/elements-buttons-09-button-sizes.rendered.html"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-example-form","lineagePath":"../../patterns/components-form-example-form/components-form-example-form.rendered.html"},{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button","patternPartial":"elements-button","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
-			</script>
-		
-		</div><!--end pl-c-pattern-->
-		<div id="elements-button-brand-primary" class="pl-c-pattern">
-		
-			<div class="pl-c-pattern__header">
-		
-				<h3 class="pl-c-pattern__title">
-		
-					<a href="../../patterns/elements-buttons-01-button-brand-primary&#x2F;elements-buttons-01-button-brand-primary.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-button-brand-primary" title="Link to Pattern">
-						Button Brand Primary
-		
-		
-					</a><!--end pl-c-pattern__title-link-->
-		
-				</h3><!--end pl-c-pattern__title-->
-		
-				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-button-brand-primary" data-patternpartial="elements-button-brand-primary" title="View Pattern Info" type="button">
-					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
-					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
-						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
-							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
-							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
-						</svg>
-		
-						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
-							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
-							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
-							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
-						</svg>
-				</button>
-		
-			</div><!--end pl-c-pattern__header-->
-		
-			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-button-brand-primary">
-		    </div><!--end pl-c-pattern__extra-->
-		
-			<div class="pl-js-pattern-example">
-			<p>
-	<button class="elm-button "
-		data-variant="brand-primary"
-		
-		title="Title text"
-		type="button"
-		
-		
-		 data-icon="add"
-		>
-		Brand Primary
-	</button>
-	<button class="elm-button "
-		data-variant="brand-primary"
-		
-		title="Title text"
-		type="button"
-		
-		 disabled
-		 data-icon="add"
-		>
-		Brand Primary
-	</button>
-</p>
-<p>
-	<button class="elm-button "
-		data-variant="brand-primary"
-		
-		title="Title text"
-		type="button"
-		
-		
-		
-		 data-icon-after="add">
-		Brand Primary with right icon
-	</button>
-	<button class="elm-button "
-		data-variant="brand-primary"
-		
-		title="Title text"
-		type="button"
-		
-		 disabled
-		
-		 data-icon-after="add">
-		Brand Primary with right icon(disabled)
-	</button>
-</p>
-<p>
-	<button class="elm-button "
-		data-variant="brand-primary"
-		
-		title="Title text"
-		type="button"
-		
-		
-		
-		>
-		Brand Primary without icon
-	</button>
-	<button class="elm-button "
-		data-variant="brand-primary"
-		
-		title="Title text"
-		type="button"
-		
-		 disabled
-		
-		>
-		Brand Primary without icon (disabled)
-	</button>
-</p>
-<p>
-	<button class="elm-button is-icon-text-replace"
-		data-variant="brand-primary"
-		
-		title="Check"
-		type="button"
-		
-		
-		 data-icon="done"
-		>
-		Brand Primary displaying only the icon
-	</button>
-	<button class="elm-button is-icon-text-replace"
-		data-variant="brand-primary"
-		
-		title="Check"
-		type="button"
-		
-		 disabled
-		 data-icon="done"
-		>
-		Brand Primary displaying only the icon
-	</button>
-</p>
-
-			</div><!--end pl-js-pattern-example-->
-		
-			<script type="text/json" id="pl-pattern-data-elements-button-brand-primary" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"lineage":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button Brand Primary","patternPartial":"elements-button-brand-primary","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-loading-indicator","lineagePath":"../../patterns/elements-loading-indicator-loading-indicator/elements-loading-indicator-loading-indicator.rendered.html"}],"lineage":[{"lineagePattern":"elements-loading-indicator","lineagePath":"../../patterns/elements-loading-indicator-loading-indicator/elements-loading-indicator-loading-indicator.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"components-overflow-menu-navigation-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation-opposite-position/components-overflow-menu-overflow-menu-navigation-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-navigation","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-opposite-position/components-overflow-menu-overflow-menu-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-button-primary","lineagePath":"../../patterns/elements-buttons-01-button-primary/elements-buttons-01-button-primary.rendered.html"},{"lineagePattern":"elements-button-secondary","lineagePath":"../../patterns/elements-buttons-02-button-secondary/elements-buttons-02-button-secondary.rendered.html"},{"lineagePattern":"elements-button-tertiary","lineagePath":"../../patterns/elements-buttons-05-button-tertiary/elements-buttons-05-button-tertiary.rendered.html"},{"lineagePattern":"elements-button-ghost","lineagePath":"../../patterns/elements-buttons-06-button-ghost/elements-buttons-06-button-ghost.rendered.html"},{"lineagePattern":"elements-button-sizes","lineagePath":"../../patterns/elements-buttons-09-button-sizes/elements-buttons-09-button-sizes.rendered.html"},{"lineagePattern":"elements-button-width","lineagePath":"../../patterns/elements-buttons-10-button-width/elements-buttons-10-button-width.rendered.html"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-example-form","lineagePath":"../../patterns/components-form-example-form/components-form-example-form.rendered.html"},{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"}],"lineageR":[{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"components-overflow-menu-navigation-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation-opposite-position/components-overflow-menu-overflow-menu-navigation-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-navigation","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-opposite-position/components-overflow-menu-overflow-menu-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-button-primary","lineagePath":"../../patterns/elements-buttons-01-button-primary/elements-buttons-01-button-primary.rendered.html"},{"lineagePattern":"elements-button-secondary","lineagePath":"../../patterns/elements-buttons-02-button-secondary/elements-buttons-02-button-secondary.rendered.html"},{"lineagePattern":"elements-button-tertiary","lineagePath":"../../patterns/elements-buttons-05-button-tertiary/elements-buttons-05-button-tertiary.rendered.html"},{"lineagePattern":"elements-button-ghost","lineagePath":"../../patterns/elements-buttons-06-button-ghost/elements-buttons-06-button-ghost.rendered.html"},{"lineagePattern":"elements-button-sizes","lineagePath":"../../patterns/elements-buttons-09-button-sizes/elements-buttons-09-button-sizes.rendered.html"},{"lineagePattern":"elements-button-width","lineagePath":"../../patterns/elements-buttons-10-button-width/elements-buttons-10-button-width.rendered.html"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-example-form","lineagePath":"../../patterns/components-form-example-form/components-form-example-form.rendered.html"},{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button","patternPartial":"elements-button","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -308,7 +178,7 @@ documentation has useful tips on creating an effective description. //-->
 		
 				<h3 class="pl-c-pattern__title">
 		
-					<a href="../../patterns/elements-buttons-03-button-primary&#x2F;elements-buttons-03-button-primary.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-button-primary" title="Link to Pattern">
+					<a href="../../patterns/elements-buttons-01-button-primary&#x2F;elements-buttons-01-button-primary.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-button-primary" title="Link to Pattern">
 						Button Primary
 		
 		
@@ -341,96 +211,122 @@ documentation has useful tips on creating an effective description. //-->
 	<button class="elm-button "
 		data-variant="primary"
 		
+		
 		title="Title text"
 		type="button"
 		
 		
-		 data-icon="add"
+		
+		
 		>
 		Primary
+		
 	</button>
 	<button class="elm-button "
 		data-variant="primary"
+		
 		
 		title="Title text"
 		type="button"
 		
 		 disabled
-		 data-icon="add"
+		
+		
 		>
 		Primary (disabled)
+		
 	</button>
 </p>
 <p>
 	<button class="elm-button "
 		data-variant="primary"
 		
+		
 		title="Title text"
 		type="button"
 		
 		
+		 data-icon="add"
 		
-		 data-icon-after="add">
-		Primary with icon
+		>
+		Primary
+		
 	</button>
 	<button class="elm-button "
 		data-variant="primary"
+		
 		
 		title="Title text"
 		type="button"
 		
 		 disabled
-		
-		 data-icon-after="add">
-		Primary with icon (disabled)
-	</button>
-</p>
-<p>
-	<button class="elm-button "
-		data-variant="primary"
-		
-		title="Title text"
-		type="button"
-		
-		
+		 data-icon="add"
 		
 		>
-		Primary without icon
-	</button>
-	<button class="elm-button "
-		data-variant="primary"
+		Primary
 		
-		title="Title text"
-		type="button"
-		
-		 disabled
-		
-		>
-		Primary without icon (disabled)
 	</button>
 </p>
 <p>
 	<button class="elm-button is-icon-text-replace"
 		data-variant="primary"
 		
+		
 		title="Check"
 		type="button"
 		
 		
 		 data-icon="done"
+		
 		>
 		Primary displaying only the icon
+		
 	</button>
 	<button class="elm-button is-icon-text-replace"
 		data-variant="primary"
+		
 		
 		title="Check"
 		type="button"
 		
 		 disabled
 		 data-icon="done"
+		
 		>
 		Primary displaying only the icon
+		
+	</button>
+</p>
+<p>
+	<button class="elm-button "
+		data-variant="primary"
+		
+		
+		title="Check"
+		type="button"
+		
+		
+		
+		
+		 data-state="loading">
+		loading
+		<svg
+		class="elm-loadingindicator"
+		viewBox="0 0 44 44"
+		aria-labelledby="elm-loadingindicator-primary" role="img"
+		 data-size="xs"
+	>
+		<title id="elm-loadingindicator-primary"></title>
+		<circle
+			class="elm-loadingindicator__circle"
+			cx="22"
+			cy="22"
+			r="20"
+			fill="none"
+			stroke-miterlimit="10"
+		></circle>
+	</svg>
+	
 	</button>
 </p>
 
@@ -441,21 +337,21 @@ documentation has useful tips on creating an effective description. //-->
 			</script>
 		
 		</div><!--end pl-c-pattern-->
-		<div id="elements-button-secondary-outline" class="pl-c-pattern">
+		<div id="elements-button-secondary" class="pl-c-pattern">
 		
 			<div class="pl-c-pattern__header">
 		
 				<h3 class="pl-c-pattern__title">
 		
-					<a href="../../patterns/elements-buttons-04-button-secondary-outline&#x2F;elements-buttons-04-button-secondary-outline.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-button-secondary-outline" title="Link to Pattern">
-						Button Secondary Outline
+					<a href="../../patterns/elements-buttons-02-button-secondary&#x2F;elements-buttons-02-button-secondary.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-button-secondary" title="Link to Pattern">
+						Button Secondary
 		
 		
 					</a><!--end pl-c-pattern__title-link-->
 		
 				</h3><!--end pl-c-pattern__title-->
 		
-				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-button-secondary-outline" data-patternpartial="elements-button-secondary-outline" title="View Pattern Info" type="button">
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-button-secondary" data-patternpartial="elements-button-secondary" title="View Pattern Info" type="button">
 					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
 					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
 						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
@@ -472,268 +368,187 @@ documentation has useful tips on creating an effective description. //-->
 		
 			</div><!--end pl-c-pattern__header-->
 		
-			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-button-secondary-outline">
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-button-secondary">
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
 			<p>
 	<button class="elm-button "
-		data-variant="secondary-outline"
+		data-variant="secondary"
 		
-		title="Title text"
-		type="button"
-		
-		
-		 data-icon="add"
-		>
-		Secondary Outline
-	</button>
-	<button class="elm-button "
-		data-variant="secondary-outline"
-		
-		title="Title text"
-		type="button"
-		
-		 disabled
-		 data-icon="add"
-		>
-		Secondary Outline (disabled)
-	</button>
-</p>
-<p>
-	<button class="elm-button "
-		data-variant="secondary-outline"
 		
 		title="Title text"
 		type="button"
 		
 		
 		
-		 data-icon-after="add">
-		Secondary Outline with right icon
-	</button>
-	<button class="elm-button "
-		data-variant="secondary-outline"
 		
-		title="Title text"
-		type="button"
-		
-		 disabled
-		
-		 data-icon-after="add">
-		Secondary Outline with right icon (disabled)
-	</button>
-</p>
-<p>
-	<button class="elm-button "
-		data-variant="secondary-outline"
-		
-		title="Title text"
-		type="button"
-		
-		
-		
-		>
-		Secondary Outline without left icon
-	</button>
-	<button class="elm-button "
-		data-variant="secondary-outline"
-		
-		title="Title text"
-		type="button"
-		
-		 disabled
-		
-		>
-		Secondary Outline without left icon (disabled)
-	</button>
-</p>
-<p>
-	<button class="elm-button is-icon-text-replace"
-		data-variant="secondary-outline"
-		
-		title="Check"
-		type="button"
-		
-		
-		 data-icon="done"
-		>
-		Secondary Outline displaying only the icon
-	</button>
-	<button class="elm-button is-icon-text-replace"
-		data-variant="secondary-outline"
-		
-		title="Check"
-		type="button"
-		
-		 disabled
-		 data-icon="done"
-		>
-		Secondary Outline displaying only the icon
-	</button>
-</p>
-
-			</div><!--end pl-js-pattern-example-->
-		
-			<script type="text/json" id="pl-pattern-data-elements-button-secondary-outline" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"lineage":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button Secondary Outline","patternPartial":"elements-button-secondary-outline","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
-			</script>
-		
-		</div><!--end pl-c-pattern-->
-		<div id="elements-button-secondary-solid" class="pl-c-pattern">
-		
-			<div class="pl-c-pattern__header">
-		
-				<h3 class="pl-c-pattern__title">
-		
-					<a href="../../patterns/elements-buttons-05-button-secondary-solid&#x2F;elements-buttons-05-button-secondary-solid.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-button-secondary-solid" title="Link to Pattern">
-						Button Secondary Solid
-		
-		
-					</a><!--end pl-c-pattern__title-link-->
-		
-				</h3><!--end pl-c-pattern__title-->
-		
-				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-button-secondary-solid" data-patternpartial="elements-button-secondary-solid" title="View Pattern Info" type="button">
-					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
-					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
-						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
-							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
-							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
-						</svg>
-		
-						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
-							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
-							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
-							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
-						</svg>
-				</button>
-		
-			</div><!--end pl-c-pattern__header-->
-		
-			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-button-secondary-solid">
-		    </div><!--end pl-c-pattern__extra-->
-		
-			<div class="pl-js-pattern-example">
-			<p>
-	<button class="elm-button "
-		data-variant="secondary-solid"
-		
-		title="Title text"
-		type="button"
-		
-		
-		 data-icon="add"
 		>
 		Secondary
+		
 	</button>
 	<button class="elm-button "
-		data-variant="secondary-solid"
+		data-variant="secondary"
+		
+		
+		title="Title text"
+		type="button"
+		
+		 disabled
+		
+		
+		>
+		Secondary (disabled)
+		
+	</button>
+</p>
+<p>
+	<button class="elm-button "
+		data-variant="secondary"
+		
+		
+		title="Title text"
+		type="button"
+		
+		
+		 data-icon="add"
+		
+		>
+		Secondary
+		
+	</button>
+	<button class="elm-button "
+		data-variant="secondary"
+		
 		
 		title="Title text"
 		type="button"
 		
 		 disabled
 		 data-icon="add"
+		
 		>
 		Secondary (disabled)
-	</button>
-</p>
-<p>
-	<button class="elm-button "
-		data-variant="secondary-solid"
 		
-		title="Title text"
-		type="button"
-		
-		
-		
-		 data-icon-after="add">
-		Secondary Solid with right icon
-	</button>
-	<button class="elm-button "
-		data-variant="secondary-solid"
-		
-		title="Title text"
-		type="button"
-		
-		 disabled
-		
-		 data-icon-after="add">
-		Secondary Solid with right icon (disabled)
-	</button>
-</p>
-<p>
-	<button class="elm-button "
-		data-variant="secondary-solid"
-		
-		title="Title text"
-		type="button"
-		
-		
-		
-		>
-		Secondary Solid without icon
-	</button>
-	<button class="elm-button "
-		data-variant="secondary-solid"
-		
-		title="Title text"
-		type="button"
-		
-		 disabled
-		
-		>
-		Secondary Solid without icon (disabled)
 	</button>
 </p>
 <p>
 	<button class="elm-button is-icon-text-replace"
-		data-variant="secondary-solid"
+		data-variant="secondary"
+		
 		
 		title="Check"
 		type="button"
 		
 		
 		 data-icon="done"
+		
 		>
-		Secondary Solid displaying only the icon
+		Secondary displaying only the icon
+		
 	</button>
 	<button class="elm-button is-icon-text-replace"
-		data-variant="secondary-solid"
+		data-variant="secondary"
+		
 		
 		title="Check"
 		type="button"
 		
 		 disabled
 		 data-icon="done"
+		
 		>
-		Secondary Solid displaying only the icon
+		Secondary displaying only the icon
+		
+	</button>
+</p>
+<p>
+	<button class="elm-button "
+		data-variant="secondary"
+		
+		
+		title="Check"
+		type="button"
+		
+		
+		
+		
+		 data-state="loading">
+		loading
+		<svg
+		class="elm-loadingindicator"
+		viewBox="0 0 44 44"
+		aria-labelledby="elm-loadingindicator-secondary" role="img"
+		 data-size="xs"
+	>
+		<title id="elm-loadingindicator-secondary"></title>
+		<circle
+			class="elm-loadingindicator__circle"
+			cx="22"
+			cy="22"
+			r="20"
+			fill="none"
+			stroke-miterlimit="10"
+		></circle>
+	</svg>
+	
+	</button>
+</p>
+
+
+<p class="db-bg-success-light-ia">
+	<button class="elm-button "
+		data-variant="secondary"
+		
+		
+		title="Title text"
+		type="button"
+		
+		
+		
+		
+		>
+		Secondary
+		
+	</button>
+	<button class="elm-button "
+		data-variant="secondary"
+		
+		
+		title="Title text"
+		type="button"
+		
+		 disabled
+		
+		
+		>
+		Secondary (disabled)
+		
 	</button>
 </p>
 
 			</div><!--end pl-js-pattern-example-->
 		
-			<script type="text/json" id="pl-pattern-data-elements-button-secondary-solid" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"lineage":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button Secondary Solid","patternPartial":"elements-button-secondary-solid","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+			<script type="text/json" id="pl-pattern-data-elements-button-secondary" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"lineage":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button Secondary","patternPartial":"elements-button-secondary","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
-		<div id="elements-button-tertiary-plain" class="pl-c-pattern">
+		<div id="elements-button-tertiary" class="pl-c-pattern">
 		
 			<div class="pl-c-pattern__header">
 		
 				<h3 class="pl-c-pattern__title">
 		
-					<a href="../../patterns/elements-buttons-06-button-tertiary-plain&#x2F;elements-buttons-06-button-tertiary-plain.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-button-tertiary-plain" title="Link to Pattern">
-						Button Tertiary Plain
+					<a href="../../patterns/elements-buttons-05-button-tertiary&#x2F;elements-buttons-05-button-tertiary.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-button-tertiary" title="Link to Pattern">
+						Button Tertiary
 		
 		
 					</a><!--end pl-c-pattern__title-link-->
 		
 				</h3><!--end pl-c-pattern__title-->
 		
-				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-button-tertiary-plain" data-patternpartial="elements-button-tertiary-plain" title="View Pattern Info" type="button">
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-button-tertiary" data-patternpartial="elements-button-tertiary" title="View Pattern Info" type="button">
 					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
 					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
 						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
@@ -750,111 +565,364 @@ documentation has useful tips on creating an effective description. //-->
 		
 			</div><!--end pl-c-pattern__header-->
 		
-			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-button-tertiary-plain">
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-button-tertiary">
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
 			<p>
 	<button class="elm-button "
-		data-variant="tertiary-plain"
+		data-variant="tertiary"
+		
 		
 		title="Title text"
 		type="button"
 		
 		
 		
+		
 		>
-		Tertiary Plain
+		Tertiary
+		
 	</button>
 	<button class="elm-button "
-		data-variant="tertiary-plain"
+		data-variant="tertiary"
+		
 		
 		title="Title text"
 		type="button"
 		
 		 disabled
 		
+		
 		>
-		Tertiary Plain
+		Tertiary (disabled)
+		
 	</button>
 </p>
 <p>
 	<button class="elm-button "
-		data-variant="tertiary-plain"
+		data-variant="tertiary"
+		
 		
 		title="Title text"
 		type="button"
 		
 		
+		 data-icon="add"
 		
-		 data-icon-after="add">
-		Tertiary Plain with right icon
+		>
+		Tertiary
+		
 	</button>
 	<button class="elm-button "
-		data-variant="tertiary-plain"
+		data-variant="tertiary"
+		
 		
 		title="Title text"
 		type="button"
 		
 		 disabled
-		
-		 data-icon-after="add">
-		Tertiary Plain with right icon(disabled)
-	</button>
-</p>
-<p>
-	<button class="elm-button "
-		data-variant="tertiary-plain"
-		
-		title="Title text"
-		type="button"
-		
-		
+		 data-icon="add"
 		
 		>
-		Tertiary Plain without left icon
-	</button>
-	<button class="elm-button "
-		data-variant="tertiary-plain"
+		Tertiary (disabled)
 		
-		title="Title text"
-		type="button"
-		
-		 disabled
-		
-		>
-		Tertiary Plain without left icon (disabled)
 	</button>
 </p>
 <p>
 	<button class="elm-button is-icon-text-replace"
-		data-variant="tertiary-plain"
+		data-variant="tertiary"
+		
 		
 		title="Check"
 		type="button"
 		
 		
 		 data-icon="done"
+		
 		>
-		Tertiary Plain displaying only the icon
+		Tertiary displaying only the icon
+		
 	</button>
 	<button class="elm-button is-icon-text-replace"
-		data-variant="tertiary-plain"
+		data-variant="tertiary"
+		
 		
 		title="Check"
 		type="button"
 		
 		 disabled
 		 data-icon="done"
+		
 		>
-		Tertiary Plain displaying only the icon
+		Tertiary displaying only the icon
+		
+	</button>
+</p>
+<p>
+	<button class="elm-button "
+		data-variant="tertiary"
+		
+		
+		title="Check"
+		type="button"
+		
+		
+		
+		
+		 data-state="loading">
+		loading
+		<svg
+		class="elm-loadingindicator"
+		viewBox="0 0 44 44"
+		aria-labelledby="elm-loadingindicator-tertiary" role="img"
+		 data-size="xs"
+	>
+		<title id="elm-loadingindicator-tertiary"></title>
+		<circle
+			class="elm-loadingindicator__circle"
+			cx="22"
+			cy="22"
+			r="20"
+			fill="none"
+			stroke-miterlimit="10"
+		></circle>
+	</svg>
+	
+	</button>
+</p>
+
+<p class="db-bg-success-light-ia">
+	<button class="elm-button "
+		data-variant="tertiary"
+		
+		
+		title="Title text"
+		type="button"
+		
+		
+		
+		
+		>
+		Tertiary
+		
+	</button>
+	<button class="elm-button "
+		data-variant="tertiary"
+		
+		
+		title="Title text"
+		type="button"
+		
+		 disabled
+		
+		
+		>
+		Tertiary (disabled)
+		
 	</button>
 </p>
 
 			</div><!--end pl-js-pattern-example-->
 		
-			<script type="text/json" id="pl-pattern-data-elements-button-tertiary-plain" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"lineage":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button Tertiary Plain","patternPartial":"elements-button-tertiary-plain","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+			<script type="text/json" id="pl-pattern-data-elements-button-tertiary" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"lineage":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button Tertiary","patternPartial":"elements-button-tertiary","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="elements-button-ghost" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/elements-buttons-06-button-ghost&#x2F;elements-buttons-06-button-ghost.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-button-ghost" title="Link to Pattern">
+						Button Ghost
+		
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-button-ghost" data-patternpartial="elements-button-ghost" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-button-ghost">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			<p>
+	<button class="elm-button "
+		data-variant="ghost"
+		
+		
+		title="Title text"
+		type="button"
+		
+		
+		
+		
+		>
+		Ghost
+		
+	</button>
+	<button class="elm-button "
+		data-variant="ghost"
+		
+		
+		title="Title text"
+		type="button"
+		
+		 disabled
+		
+		
+		>
+		Ghost (disabled)
+		
+	</button>
+</p>
+<p>
+	<button class="elm-button "
+		data-variant="ghost"
+		
+		
+		title="Title text"
+		type="button"
+		
+		
+		
+		
+		>
+		Ghost
+		
+	</button>
+	<button class="elm-button "
+		data-variant="ghost"
+		
+		
+		title="Title text"
+		type="button"
+		
+		 disabled
+		
+		
+		>
+		Ghost
+		
+	</button>
+</p>
+<p>
+	<button class="elm-button is-icon-text-replace"
+		data-variant="ghost"
+		
+		
+		title="Check"
+		type="button"
+		
+		
+		 data-icon="done"
+		
+		>
+		Ghost displaying only the icon
+		
+	</button>
+	<button class="elm-button is-icon-text-replace"
+		data-variant="ghost"
+		
+		
+		title="Check"
+		type="button"
+		
+		 disabled
+		 data-icon="done"
+		
+		>
+		Ghost displaying only the icon
+		
+	</button>
+</p>
+<p>
+	<button class="elm-button "
+		data-variant="ghost"
+		
+		
+		title="Check"
+		type="button"
+		
+		
+		
+		
+		 data-state="loading">
+		loading
+		<svg
+		class="elm-loadingindicator"
+		viewBox="0 0 44 44"
+		aria-labelledby="elm-loadingindicator-ghost" role="img"
+		 data-size="xs"
+	>
+		<title id="elm-loadingindicator-ghost"></title>
+		<circle
+			class="elm-loadingindicator__circle"
+			cx="22"
+			cy="22"
+			r="20"
+			fill="none"
+			stroke-miterlimit="10"
+		></circle>
+	</svg>
+	
+	</button>
+</p>
+
+<p class="db-bg-success-light-ia">
+	<button class="elm-button "
+		data-variant="ghost"
+		
+		
+		title="Title text"
+		type="button"
+		
+		
+		
+		
+		>
+		Ghost
+		
+	</button>
+	<button class="elm-button "
+		data-variant="ghost"
+		
+		
+		title="Title text"
+		type="button"
+		
+		 disabled
+		
+		
+		>
+		Ghost (disabled)
+		
+	</button>
+</p>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-elements-button-ghost" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"lineage":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button Ghost","patternPartial":"elements-button-ghost","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -897,294 +965,184 @@ documentation has useful tips on creating an effective description. //-->
 	<h2>Small</h2>
 	<p>
 		<button class="elm-button "
-			data-variant="brand-primary"
+			data-variant="primary"
 			 data-size="small"
+			
+			title=""
+			type="button"
+			
+			
+			
+			
+			>
+			Primary
+			
+		</button>
+		<button class="elm-button "
+			data-variant="primary"
+			 data-size="small"
+			
+			title=""
+			type="button"
+			
+			 disabled
+			
+			
+			>
+			Primary (disabled)
+			
+		</button>
+	</p>
+	<p>
+		<button class="elm-button "
+			data-variant="primary"
+			 data-size="small"
+			
 			title=""
 			type="button"
 			
 			
 			 data-icon="add"
+			
 			>
-			Brand Primary
+			Primary
+			
 		</button>
 		<button class="elm-button "
-			data-variant="brand-primary"
+			data-variant="primary"
 			 data-size="small"
+			
 			title=""
 			type="button"
 			
 			 disabled
 			 data-icon="add"
-			>
-			Brand Primary (disabled)
-		</button>
-	</p>
-	<p>
-	<button class="elm-button "
-		data-variant="brand-primary"
-		 data-size="small"
-		title=""
-		type="button"
-		
-		
-		
-		 data-icon-after="add">
-		Brand Primary with right icon
-	</button>
-	<button class="elm-button "
-		data-variant="brand-primary"
-		 data-size="small"
-		title=""
-		type="button"
-		
-		 disabled
-		
-		 data-icon-after="add">
-		Brand Primary with right icon(disabled)
-	</button>
-	</p>
-	<p>
-		<button class="elm-button "
-			data-variant="brand-primary"
-			 data-size="small"
-			title=""
-			type="button"
-			
-			
 			
 			>
-			Brand Primary without icon
-		</button>
-		<button class="elm-button "
-			data-variant="brand-primary"
-			 data-size="small"
-			title=""
-			type="button"
+			Primary (disabled)
 			
-			 disabled
-			
-			>
-			Brand Primary without icon (disabled)
 		</button>
 	</p>
 	<p>
 		<button class="elm-button is-icon-text-replace"
-			data-variant="brand-primary"
+			data-variant="primary"
 			 data-size="small"
+			
 			title="Done"
 			type="button"
 			
 			
 			 data-icon="done"
+			
 			>
-			Brand Primary displaying only the icon
+			Primary displaying only the icon
+			
 		</button>
 		<button class="elm-button is-icon-text-replace"
-			data-variant="brand-primary"
+			data-variant="primary"
 			 data-size="small"
+			
 			title="Done"
 			type="button"
 			
 			 disabled
 			 data-icon="done"
+			
 			>
-			Brand Primary displaying only the icon
+			Primary displaying only the icon
+			
 		</button>
 	</p>
 	<!-- [html-validate-disable-next heading-level] -->
-	<h2>Regular (default, data-size attribute is optional)</h2>
+	<h2>Medium (default, data-size attribute is optional)</h2>
 	<p>
 		<button class="elm-button "
-			data-variant="brand-primary"
-			 data-size="regular"
+			data-variant="primary"
+			 data-size="medium"
+			
+			title=""
+			type="button"
+			
+			
+			
+			
+			>
+			Primary
+			
+		</button>
+		<button class="elm-button "
+			data-variant="primary"
+			 data-size="medium"
+			
+			title=""
+			type="button"
+			
+			 disabled
+			
+			
+			>
+			Primary (disabled)
+			
+		</button>
+	</p>
+	<p>
+		<button class="elm-button "
+			data-variant="primary"
+			 data-size="medium"
+			
 			title=""
 			type="button"
 			
 			
 			 data-icon="add"
+			
 			>
-			Brand Primary
+			Primary
+			
 		</button>
 		<button class="elm-button "
-			data-variant="brand-primary"
-			 data-size="regular"
+			data-variant="primary"
+			 data-size="medium"
+			
 			title=""
 			type="button"
 			
 			 disabled
 			 data-icon="add"
-			>
-			Brand Primary (disabled)
-		</button>
-	</p>
-	<p>
-	<button class="elm-button "
-		data-variant="brand-primary"
-		 data-size="regular"
-		title=""
-		type="button"
-		
-		
-		
-		 data-icon-after="add">
-		Brand Primary with right icon
-	</button>
-	<button class="elm-button "
-		data-variant="brand-primary"
-		 data-size="regular"
-		title=""
-		type="button"
-		
-		 disabled
-		
-		 data-icon-after="add">
-		Brand Primary with right icon(disabled)
-	</button>
-	</p>
-	<p>
-		<button class="elm-button "
-			data-variant="brand-primary"
-			 data-size="regular"
-			title=""
-			type="button"
-			
-			
 			
 			>
-			Brand Primary without icon
-		</button>
-		<button class="elm-button "
-			data-variant="brand-primary"
-			 data-size="regular"
-			title=""
-			type="button"
+			Primary (disabled)
 			
-			 disabled
-			
-			>
-			Brand Primary without icon (disabled)
 		</button>
 	</p>
 	<p>
 		<button class="elm-button is-icon-text-replace"
-			data-variant="brand-primary"
-			 data-size="regular"
+			data-variant="primary"
+			 data-size="medium"
+			
 			title="Done"
 			type="button"
 			
 			
 			 data-icon="done"
+			
 			>
-			Brand Primary displaying only the icon
+			Primary displaying only the icon
+			
 		</button>
 		<button class="elm-button is-icon-text-replace"
-			data-variant="brand-primary"
-			 data-size="regular"
+			data-variant="primary"
+			 data-size="medium"
+			
 			title="Done"
 			type="button"
 			
 			 disabled
 			 data-icon="done"
-			>
-			Brand Primary displaying only the icon
-		</button>
-	</p>
-	<!-- [html-validate-disable-next heading-level] -->
-	<h2>Large</h2>
-	<p>
-		<button class="elm-button "
-			data-variant="brand-primary"
-			 data-size="large"
-			title=""
-			type="button"
-			
-			
-			 data-icon="add"
-			>
-			Brand Primary
-		</button>
-		<button class="elm-button "
-			data-variant="brand-primary"
-			 data-size="large"
-			title=""
-			type="button"
-			
-			 disabled
-			 data-icon="add"
-			>
-			Brand Primary (disabled)
-		</button>
-	</p>
-	<p>
-	<button class="elm-button "
-		data-variant="brand-primary"
-		 data-size="large"
-		title=""
-		type="button"
-		
-		
-		
-		 data-icon-after="add">
-		Brand Primary with right icon
-	</button>
-	<button class="elm-button "
-		data-variant="brand-primary"
-		 data-size="large"
-		title=""
-		type="button"
-		
-		 disabled
-		
-		 data-icon-after="add">
-		Brand Primary with right icon(disabled)
-	</button>
-	</p>
-	<p>
-		<button class="elm-button "
-			data-variant="brand-primary"
-			 data-size="large"
-			title=""
-			type="button"
-			
-			
 			
 			>
-			Brand Primary without icon
-		</button>
-		<button class="elm-button "
-			data-variant="brand-primary"
-			 data-size="large"
-			title=""
-			type="button"
+			Primary displaying only the icon
 			
-			 disabled
-			
-			>
-			Brand Primary without icon (disabled)
-		</button>
-	</p>
-	<p>
-		<button class="elm-button is-icon-text-replace"
-			data-variant="brand-primary"
-			 data-size="large"
-			title="Done"
-			type="button"
-			
-			
-			 data-icon="done"
-			>
-			Brand Primary displaying only the icon
-		</button>
-		<button class="elm-button is-icon-text-replace"
-			data-variant="brand-primary"
-			 data-size="large"
-			title="Done"
-			type="button"
-			
-			 disabled
-			 data-icon="done"
-			>
-			Brand Primary displaying only the icon
 		</button>
 	</p>
 
@@ -1192,6 +1150,99 @@ documentation has useful tips on creating an effective description. //-->
 		
 			<script type="text/json" id="pl-pattern-data-elements-button-sizes" class="pl-js-pattern-data">
 			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"lineage":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button Sizes","patternPartial":"elements-button-sizes","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="elements-button-width" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/elements-buttons-10-button-width&#x2F;elements-buttons-10-button-width.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-button-width" title="Link to Pattern">
+						Button width
+		
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-button-width" data-patternpartial="elements-button-width" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-button-width">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+				<!-- [html-validate-disable-next heading-level] -->
+	<h2>FullWidth</h2>
+	<p>
+		<button class="elm-button "
+			data-variant="primary"
+			
+			 data-width="full"
+			title=""
+			type="button"
+			
+			
+			
+			
+			>
+			Primary
+			
+		</button>
+	</p>
+	<p>
+		<button class="elm-button "
+			data-variant="primary"
+			
+			 data-width="full"
+			title=""
+			type="button"
+			
+			
+			 data-icon="add"
+			
+			>
+			Primary
+			
+		</button>
+	</p>
+	<p>
+		<button class="elm-button is-icon-text-replace"
+			data-variant="primary"
+			
+			 data-width="full"
+			title="Done"
+			type="button"
+			
+			
+			 data-icon="done"
+			
+			>
+			Primary displaying only the icon
+			
+		</button>
+	</p>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-elements-button-width" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"lineage":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button width","patternPartial":"elements-button-width","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -1858,185 +1909,11 @@ documentation has useful tips on creating an effective description. //-->
 				aria-hidden="true"
 				>Success</label>
 
-	<!-- [html-validate-disable-next heading-level] -->
-	<!-- [html-validate-disable-next heading-level -- we're doing some simple demonstration simplification here] -->
-	<h3 class="elm-headline ">POIs</h3>
-
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-			<input
-				class="elm-chip"
-				type="checkbox"
-				id="chip-multiple-poi-essen-trinken0"
-				data-type="filter"
-				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
-			<label
-				for="chip-multiple-poi-essen-trinken0"
-				role="button"
-				 data-variant="poi-essen-trinken"
-				
-				
-				tabindex="0"
-				aria-hidden="true"
-				>Essen &amp; Trinken</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-			<input
-				class="elm-chip"
-				type="checkbox"
-				id="chip-multiple-poi-einkaufen1"
-				data-type="filter"
-				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
-			<label
-				for="chip-multiple-poi-einkaufen1"
-				role="button"
-				 data-variant="poi-einkaufen"
-				
-				
-				tabindex="0"
-				aria-hidden="true"
-				>Einkaufen</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-			<input
-				class="elm-chip"
-				type="checkbox"
-				id="chip-multiple-poi-gesundheit2"
-				data-type="filter"
-				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
-			<label
-				for="chip-multiple-poi-gesundheit2"
-				role="button"
-				 data-variant="poi-gesundheit"
-				
-				
-				tabindex="0"
-				aria-hidden="true"
-				>Gesundheit</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-			<input
-				class="elm-chip"
-				type="checkbox"
-				id="chip-multiple-poi-kunst-kultur3"
-				data-type="filter"
-				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
-			<label
-				for="chip-multiple-poi-kunst-kultur3"
-				role="button"
-				 data-variant="poi-kunst-kultur"
-				
-				
-				tabindex="0"
-				aria-hidden="true"
-				>Kunst &amp; Kultur</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-			<input
-				class="elm-chip"
-				type="checkbox"
-				id="chip-multiple-poi-wissenswertes4"
-				data-type="filter"
-				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
-			<label
-				for="chip-multiple-poi-wissenswertes4"
-				role="button"
-				 data-variant="poi-wissenswertes"
-				
-				
-				tabindex="0"
-				aria-hidden="true"
-				>Wissenswertes</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-			<input
-				class="elm-chip"
-				type="checkbox"
-				id="chip-multiple-poi-freizeit5"
-				data-type="filter"
-				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
-			<label
-				for="chip-multiple-poi-freizeit5"
-				role="button"
-				 data-variant="poi-freizeit"
-				
-				
-				tabindex="0"
-				aria-hidden="true"
-				>Freizeit</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-			<input
-				class="elm-chip"
-				type="checkbox"
-				id="chip-multiple-poi-zivile-rel-einrichtungen6"
-				data-type="filter"
-				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
-			<label
-				for="chip-multiple-poi-zivile-rel-einrichtungen6"
-				role="button"
-				 data-variant="poi-zivile-rel-einrichtungen"
-				
-				
-				tabindex="0"
-				aria-hidden="true"
-				>Zivile &amp; reli. Einrichtungen</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-			<input
-				class="elm-chip"
-				type="checkbox"
-				id="chip-multiple-poi-dienstleistungen7"
-				data-type="filter"
-				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
-			<label
-				for="chip-multiple-poi-dienstleistungen7"
-				role="button"
-				 data-variant="poi-dienstleistungen"
-				
-				
-				tabindex="0"
-				aria-hidden="true"
-				>Dienstleistungen</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-			<input
-				class="elm-chip"
-				type="checkbox"
-				id="chip-multiple-poi-db-services-einrichtung8"
-				data-type="filter"
-				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
-			<label
-				for="chip-multiple-poi-db-services-einrichtung8"
-				role="button"
-				 data-variant="poi-db-services-einrichtung"
-				
-				
-				tabindex="0"
-				aria-hidden="true"
-				>DB Services &amp; Einrichtung</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-			<input
-				class="elm-chip"
-				type="checkbox"
-				id="chip-multiple-poi-wegeleitung9"
-				data-type="filter"
-				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
-			<label
-				for="chip-multiple-poi-wegeleitung9"
-				role="button"
-				 data-variant="poi-wegeleitung"
-				
-				
-				tabindex="0"
-				aria-hidden="true"
-				>Wegeleitung</label>
 
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-elements-chips" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-chip","lineagePath":"../../patterns/elements-chips-_chip/elements-chips-_chip.rendered.html"},{"lineagePattern":"elements-headline","lineagePath":"../../patterns/elements-headline-headline/elements-headline-headline.rendered.html"}],"lineage":[{"lineagePattern":"elements-chip","lineagePath":"../../patterns/elements-chips-_chip/elements-chips-_chip.rendered.html"},{"lineagePattern":"elements-headline","lineagePath":"../../patterns/elements-headline-headline/elements-headline-headline.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"chips"},"patternExtension":"hbs","patternName":"Filter chips","patternPartial":"elements-chips","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":10}}
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-chip","lineagePath":"../../patterns/elements-chips-_chip/elements-chips-_chip.rendered.html"}],"lineage":[{"lineagePattern":"elements-chip","lineagePath":"../../patterns/elements-chips-_chip/elements-chips-_chip.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"chips"},"patternExtension":"hbs","patternName":"Filter chips","patternPartial":"elements-chips","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":10}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -2166,195 +2043,11 @@ documentation has useful tips on creating an effective description. //-->
 				aria-hidden="true"
 				>Success</label>
 
-	<!-- [html-validate-disable-next heading-level] -->
-	<!-- [html-validate-disable-next heading-level -- we're doing some simple demonstration simplification here] -->
-	<h3 class="elm-headline ">POIs</h3>
-
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-			<input
-				class="elm-chip"
-				type="radio"
-				id="chip-single-poi-essen-trinken0"
-				name="selection"
-				data-type="selection"
-				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
-			<label
-				for="chip-single-poi-essen-trinken0"
-				role="button"
-				 data-variant="poi-essen-trinken"
-				
-				
-				tabindex="0"
-				aria-hidden="true"
-				>Essen &amp; Trinken</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-			<input
-				class="elm-chip"
-				type="radio"
-				id="chip-single-poi-einkaufen1"
-				name="selection"
-				data-type="selection"
-				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
-			<label
-				for="chip-single-poi-einkaufen1"
-				role="button"
-				 data-variant="poi-einkaufen"
-				
-				
-				tabindex="0"
-				aria-hidden="true"
-				>Einkaufen</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-			<input
-				class="elm-chip"
-				type="radio"
-				id="chip-single-poi-gesundheit2"
-				name="selection"
-				data-type="selection"
-				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
-			<label
-				for="chip-single-poi-gesundheit2"
-				role="button"
-				 data-variant="poi-gesundheit"
-				
-				
-				tabindex="0"
-				aria-hidden="true"
-				>Gesundheit</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-			<input
-				class="elm-chip"
-				type="radio"
-				id="chip-single-poi-kunst-kultur3"
-				name="selection"
-				data-type="selection"
-				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
-			<label
-				for="chip-single-poi-kunst-kultur3"
-				role="button"
-				 data-variant="poi-kunst-kultur"
-				
-				
-				tabindex="0"
-				aria-hidden="true"
-				>Kunst &amp; Kultur</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-			<input
-				class="elm-chip"
-				type="radio"
-				id="chip-single-poi-wissenswertes4"
-				name="selection"
-				data-type="selection"
-				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
-			<label
-				for="chip-single-poi-wissenswertes4"
-				role="button"
-				 data-variant="poi-wissenswertes"
-				
-				
-				tabindex="0"
-				aria-hidden="true"
-				>Wissenswertes</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-			<input
-				class="elm-chip"
-				type="radio"
-				id="chip-single-poi-freizeit5"
-				name="selection"
-				data-type="selection"
-				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
-			<label
-				for="chip-single-poi-freizeit5"
-				role="button"
-				 data-variant="poi-freizeit"
-				
-				
-				tabindex="0"
-				aria-hidden="true"
-				>Freizeit</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-			<input
-				class="elm-chip"
-				type="radio"
-				id="chip-single-poi-zivile-rel-einrichtungen6"
-				name="selection"
-				data-type="selection"
-				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
-			<label
-				for="chip-single-poi-zivile-rel-einrichtungen6"
-				role="button"
-				 data-variant="poi-zivile-rel-einrichtungen"
-				
-				
-				tabindex="0"
-				aria-hidden="true"
-				>Zivile &amp; reli. Einrichtungen</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-			<input
-				class="elm-chip"
-				type="radio"
-				id="chip-single-poi-dienstleistungen7"
-				name="selection"
-				data-type="selection"
-				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
-			<label
-				for="chip-single-poi-dienstleistungen7"
-				role="button"
-				 data-variant="poi-dienstleistungen"
-				
-				
-				tabindex="0"
-				aria-hidden="true"
-				>Dienstleistungen</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-			<input
-				class="elm-chip"
-				type="radio"
-				id="chip-single-poi-db-services-einrichtung8"
-				name="selection"
-				data-type="selection"
-				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
-			<label
-				for="chip-single-poi-db-services-einrichtung8"
-				role="button"
-				 data-variant="poi-db-services-einrichtung"
-				
-				
-				tabindex="0"
-				aria-hidden="true"
-				>DB Services &amp; Einrichtung</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-			<input
-				class="elm-chip"
-				type="radio"
-				id="chip-single-poi-wegeleitung9"
-				name="selection"
-				data-type="selection"
-				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
-			<label
-				for="chip-single-poi-wegeleitung9"
-				role="button"
-				 data-variant="poi-wegeleitung"
-				
-				
-				tabindex="0"
-				aria-hidden="true"
-				>Wegeleitung</label>
 
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-elements-chips-type-selection" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-chip","lineagePath":"../../patterns/elements-chips-_chip/elements-chips-_chip.rendered.html"},{"lineagePattern":"elements-headline","lineagePath":"../../patterns/elements-headline-headline/elements-headline-headline.rendered.html"}],"lineage":[{"lineagePattern":"elements-chip","lineagePath":"../../patterns/elements-chips-_chip/elements-chips-_chip.rendered.html"},{"lineagePattern":"elements-headline","lineagePath":"../../patterns/elements-headline-headline/elements-headline-headline.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"chips"},"patternExtension":"hbs","patternName":"Selection chips","patternPartial":"elements-chips-type-selection","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":20}}
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-chip","lineagePath":"../../patterns/elements-chips-_chip/elements-chips-_chip.rendered.html"}],"lineage":[{"lineagePattern":"elements-chip","lineagePath":"../../patterns/elements-chips-_chip/elements-chips-_chip.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"chips"},"patternExtension":"hbs","patternName":"Selection chips","patternPartial":"elements-chips-type-selection","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":20}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -2451,7 +2144,7 @@ documentation has useful tips on creating an effective description. //-->
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-elements-chips-with-icon" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-chip","lineagePath":"../../patterns/elements-chips-_chip/elements-chips-_chip.rendered.html"},{"lineagePattern":"elements-headline","lineagePath":"../../patterns/elements-headline-headline/elements-headline-headline.rendered.html"}],"lineage":[{"lineagePattern":"elements-chip","lineagePath":"../../patterns/elements-chips-_chip/elements-chips-_chip.rendered.html"},{"lineagePattern":"elements-headline","lineagePath":"../../patterns/elements-headline-headline/elements-headline-headline.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"chips"},"patternExtension":"hbs","patternName":"Chips with icon","patternPartial":"elements-chips-with-icon","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":30}}
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-chip","lineagePath":"../../patterns/elements-chips-_chip/elements-chips-_chip.rendered.html"}],"lineage":[{"lineagePattern":"elements-chip","lineagePath":"../../patterns/elements-chips-_chip/elements-chips-_chip.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"chips"},"patternExtension":"hbs","patternName":"Chips with icon","patternPartial":"elements-chips-with-icon","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":30}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -2576,185 +2269,11 @@ documentation has useful tips on creating an effective description. //-->
 				aria-hidden="true"
 				>Success</label>
 
-	<!-- [html-validate-disable-next heading-level] -->
-	<!-- [html-validate-disable-next heading-level -- we're doing some simple demonstration simplification here] -->
-	<h3 class="elm-headline ">POIs</h3>
-
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-			<input
-				class="elm-chip"
-				type="checkbox"
-				id="chip-multiple-poi-essen-trinken0"
-				data-type="filter"
-				 disabled>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
-			<label
-				for="chip-multiple-poi-essen-trinken0"
-				role="button"
-				 data-variant="poi-essen-trinken"
-				
-				
-				tabindex="0"
-				aria-hidden="true"
-				>Essen &amp; Trinken</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-			<input
-				class="elm-chip"
-				type="checkbox"
-				id="chip-multiple-poi-einkaufen1"
-				data-type="filter"
-				 disabled>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
-			<label
-				for="chip-multiple-poi-einkaufen1"
-				role="button"
-				 data-variant="poi-einkaufen"
-				
-				
-				tabindex="0"
-				aria-hidden="true"
-				>Einkaufen</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-			<input
-				class="elm-chip"
-				type="checkbox"
-				id="chip-multiple-poi-gesundheit2"
-				data-type="filter"
-				 disabled>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
-			<label
-				for="chip-multiple-poi-gesundheit2"
-				role="button"
-				 data-variant="poi-gesundheit"
-				
-				
-				tabindex="0"
-				aria-hidden="true"
-				>Gesundheit</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-			<input
-				class="elm-chip"
-				type="checkbox"
-				id="chip-multiple-poi-kunst-kultur3"
-				data-type="filter"
-				 disabled>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
-			<label
-				for="chip-multiple-poi-kunst-kultur3"
-				role="button"
-				 data-variant="poi-kunst-kultur"
-				
-				
-				tabindex="0"
-				aria-hidden="true"
-				>Kunst &amp; Kultur</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-			<input
-				class="elm-chip"
-				type="checkbox"
-				id="chip-multiple-poi-wissenswertes4"
-				data-type="filter"
-				 disabled>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
-			<label
-				for="chip-multiple-poi-wissenswertes4"
-				role="button"
-				 data-variant="poi-wissenswertes"
-				
-				
-				tabindex="0"
-				aria-hidden="true"
-				>Wissenswertes</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-			<input
-				class="elm-chip"
-				type="checkbox"
-				id="chip-multiple-poi-freizeit5"
-				data-type="filter"
-				 disabled>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
-			<label
-				for="chip-multiple-poi-freizeit5"
-				role="button"
-				 data-variant="poi-freizeit"
-				
-				
-				tabindex="0"
-				aria-hidden="true"
-				>Freizeit</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-			<input
-				class="elm-chip"
-				type="checkbox"
-				id="chip-multiple-poi-zivile-rel-einrichtungen6"
-				data-type="filter"
-				 disabled>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
-			<label
-				for="chip-multiple-poi-zivile-rel-einrichtungen6"
-				role="button"
-				 data-variant="poi-zivile-rel-einrichtungen"
-				
-				
-				tabindex="0"
-				aria-hidden="true"
-				>Zivile &amp; reli. Einrichtungen</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-			<input
-				class="elm-chip"
-				type="checkbox"
-				id="chip-multiple-poi-dienstleistungen7"
-				data-type="filter"
-				 disabled>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
-			<label
-				for="chip-multiple-poi-dienstleistungen7"
-				role="button"
-				 data-variant="poi-dienstleistungen"
-				
-				
-				tabindex="0"
-				aria-hidden="true"
-				>Dienstleistungen</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-			<input
-				class="elm-chip"
-				type="checkbox"
-				id="chip-multiple-poi-db-services-einrichtung8"
-				data-type="filter"
-				 disabled>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
-			<label
-				for="chip-multiple-poi-db-services-einrichtung8"
-				role="button"
-				 data-variant="poi-db-services-einrichtung"
-				
-				
-				tabindex="0"
-				aria-hidden="true"
-				>DB Services &amp; Einrichtung</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-			<input
-				class="elm-chip"
-				type="checkbox"
-				id="chip-multiple-poi-wegeleitung9"
-				data-type="filter"
-				 disabled>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
-			<label
-				for="chip-multiple-poi-wegeleitung9"
-				role="button"
-				 data-variant="poi-wegeleitung"
-				
-				
-				tabindex="0"
-				aria-hidden="true"
-				>Wegeleitung</label>
 
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-elements-chips-disabled" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-chip","lineagePath":"../../patterns/elements-chips-_chip/elements-chips-_chip.rendered.html"},{"lineagePattern":"elements-headline","lineagePath":"../../patterns/elements-headline-headline/elements-headline-headline.rendered.html"}],"lineage":[{"lineagePattern":"elements-chip","lineagePath":"../../patterns/elements-chips-_chip/elements-chips-_chip.rendered.html"},{"lineagePattern":"elements-headline","lineagePath":"../../patterns/elements-headline-headline/elements-headline-headline.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"chips"},"patternExtension":"hbs","patternName":"Chips – disabled","patternPartial":"elements-chips-disabled","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":40}}
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-chip","lineagePath":"../../patterns/elements-chips-_chip/elements-chips-_chip.rendered.html"}],"lineage":[{"lineagePattern":"elements-chip","lineagePath":"../../patterns/elements-chips-_chip/elements-chips-_chip.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"chips"},"patternExtension":"hbs","patternName":"Chips – disabled","patternPartial":"elements-chips-disabled","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":40}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -2812,7 +2331,7 @@ documentation has useful tips on creating an effective description. //-->
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-elements-headline" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"base-fonts-dark-background","lineagePath":"../../patterns/base-type-fonts-dark-background/base-type-fonts-dark-background.rendered.html"},{"lineagePattern":"base-fonts-light-font","lineagePath":"../../patterns/base-type-fonts-light-font/base-type-fonts-light-font.rendered.html"},{"lineagePattern":"elements-chips-disabled","lineagePath":"../../patterns/elements-chips-chips-disabled/elements-chips-chips-disabled.rendered.html"},{"lineagePattern":"elements-chips-linked","lineagePath":"../../patterns/elements-chips-chips-linked/elements-chips-chips-linked.rendered.html"},{"lineagePattern":"elements-chips-type-selection","lineagePath":"../../patterns/elements-chips-chips-type-selection/elements-chips-chips-type-selection.rendered.html"},{"lineagePattern":"elements-chips-with-icon","lineagePath":"../../patterns/elements-chips-chips-with-icon/elements-chips-chips-with-icon.rendered.html"},{"lineagePattern":"elements-tags-small","lineagePath":"../../patterns/elements-tags-tags-small/elements-tags-tags-small.rendered.html"},{"lineagePattern":"elements-tags-with-icon","lineagePath":"../../patterns/elements-tags-tags-with-icon/elements-tags-tags-with-icon.rendered.html"},{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"pages-intro","lineagePath":"../../patterns/pages-intro/pages-intro.rendered.html"},{"lineagePattern":"pages-sample-page","lineagePath":"../../patterns/pages-sample-page/pages-sample-page.rendered.html"},{"lineagePattern":"base-fonts","lineagePath":"../../patterns/base-type-fonts/base-type-fonts.rendered.html","lineageState":"complete"},{"lineagePattern":"elements-chips","lineagePath":"../../patterns/elements-chips-chips/elements-chips-chips.rendered.html"},{"lineagePattern":"elements-headline-pulse","lineagePath":"../../patterns/elements-headline-headline-pulse/elements-headline-headline-pulse.rendered.html"},{"lineagePattern":"elements-logo-with-following-headline","lineagePath":"../../patterns/elements-logo-logo-with-following-headline/elements-logo-logo-with-following-headline.rendered.html"},{"lineagePattern":"elements-tags","lineagePath":"../../patterns/elements-tags-tags/elements-tags-tags.rendered.html"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-pagination","lineagePath":"../../patterns/components-pagination-pagination/components-pagination-pagination.rendered.html","lineageState":"inreview"}],"lineageR":[{"lineagePattern":"base-fonts-dark-background","lineagePath":"../../patterns/base-type-fonts-dark-background/base-type-fonts-dark-background.rendered.html"},{"lineagePattern":"base-fonts-light-font","lineagePath":"../../patterns/base-type-fonts-light-font/base-type-fonts-light-font.rendered.html"},{"lineagePattern":"elements-chips-disabled","lineagePath":"../../patterns/elements-chips-chips-disabled/elements-chips-chips-disabled.rendered.html"},{"lineagePattern":"elements-chips-linked","lineagePath":"../../patterns/elements-chips-chips-linked/elements-chips-chips-linked.rendered.html"},{"lineagePattern":"elements-chips-type-selection","lineagePath":"../../patterns/elements-chips-chips-type-selection/elements-chips-chips-type-selection.rendered.html"},{"lineagePattern":"elements-chips-with-icon","lineagePath":"../../patterns/elements-chips-chips-with-icon/elements-chips-chips-with-icon.rendered.html"},{"lineagePattern":"elements-tags-small","lineagePath":"../../patterns/elements-tags-tags-small/elements-tags-tags-small.rendered.html"},{"lineagePattern":"elements-tags-with-icon","lineagePath":"../../patterns/elements-tags-tags-with-icon/elements-tags-tags-with-icon.rendered.html"},{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"pages-intro","lineagePath":"../../patterns/pages-intro/pages-intro.rendered.html"},{"lineagePattern":"pages-sample-page","lineagePath":"../../patterns/pages-sample-page/pages-sample-page.rendered.html"},{"lineagePattern":"base-fonts","lineagePath":"../../patterns/base-type-fonts/base-type-fonts.rendered.html","lineageState":"complete"},{"lineagePattern":"elements-chips","lineagePath":"../../patterns/elements-chips-chips/elements-chips-chips.rendered.html"},{"lineagePattern":"elements-headline-pulse","lineagePath":"../../patterns/elements-headline-headline-pulse/elements-headline-headline-pulse.rendered.html"},{"lineagePattern":"elements-logo-with-following-headline","lineagePath":"../../patterns/elements-logo-logo-with-following-headline/elements-logo-logo-with-following-headline.rendered.html"},{"lineagePattern":"elements-tags","lineagePath":"../../patterns/elements-tags-tags/elements-tags-tags.rendered.html"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-pagination","lineagePath":"../../patterns/components-pagination-pagination/components-pagination-pagination.rendered.html","lineageState":"inreview"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"headline"},"patternExtension":"hbs","patternName":"Headline","patternPartial":"elements-headline","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"pages-intro","lineagePath":"../../patterns/pages-intro/pages-intro.rendered.html"},{"lineagePattern":"pages-sample-page","lineagePath":"../../patterns/pages-sample-page/pages-sample-page.rendered.html"},{"lineagePattern":"elements-headline-pulse","lineagePath":"../../patterns/elements-headline-headline-pulse/elements-headline-headline-pulse.rendered.html"},{"lineagePattern":"elements-logo-with-following-headline","lineagePath":"../../patterns/elements-logo-logo-with-following-headline/elements-logo-logo-with-following-headline.rendered.html"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-pagination","lineagePath":"../../patterns/components-pagination-pagination/components-pagination-pagination.rendered.html","lineageState":"inreview"}],"lineageR":[{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"pages-intro","lineagePath":"../../patterns/pages-intro/pages-intro.rendered.html"},{"lineagePattern":"pages-sample-page","lineagePath":"../../patterns/pages-sample-page/pages-sample-page.rendered.html"},{"lineagePattern":"elements-headline-pulse","lineagePath":"../../patterns/elements-headline-headline-pulse/elements-headline-headline-pulse.rendered.html"},{"lineagePattern":"elements-logo-with-following-headline","lineagePath":"../../patterns/elements-logo-logo-with-following-headline/elements-logo-logo-with-following-headline.rendered.html"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-pagination","lineagePath":"../../patterns/components-pagination-pagination/components-pagination-pagination.rendered.html","lineageState":"inreview"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"headline"},"patternExtension":"hbs","patternName":"Headline","patternPartial":"elements-headline","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -2972,7 +2491,7 @@ documentation has useful tips on creating an effective description. //-->
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-elements-image" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"pages-intro","lineagePath":"../../patterns/pages-intro/pages-intro.rendered.html"},{"lineagePattern":"components-brand","lineagePath":"../../patterns/components-brand-_brand/components-brand-_brand.rendered.html"},{"lineagePattern":"components-card","lineagePath":"../../patterns/components-cards-_card/components-cards-_card.rendered.html"}],"lineageR":[{"lineagePattern":"pages-intro","lineagePath":"../../patterns/pages-intro/pages-intro.rendered.html"},{"lineagePattern":"components-brand","lineagePath":"../../patterns/components-brand-_brand/components-brand-_brand.rendered.html"},{"lineagePattern":"components-card","lineagePath":"../../patterns/components-cards-_card/components-cards-_card.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"image"},"patternExtension":"hbs","patternName":"Image","patternPartial":"elements-image","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"components-card-full-width","lineagePath":"../../patterns/components-cards-card-full-width/components-cards-card-full-width.rendered.html"},{"lineagePattern":"pages-intro","lineagePath":"../../patterns/pages-intro/pages-intro.rendered.html"},{"lineagePattern":"components-brand","lineagePath":"../../patterns/components-brand-_brand/components-brand-_brand.rendered.html"},{"lineagePattern":"components-card","lineagePath":"../../patterns/components-cards-card/components-cards-card.rendered.html"}],"lineageR":[{"lineagePattern":"components-card-full-width","lineagePath":"../../patterns/components-cards-card-full-width/components-cards-card-full-width.rendered.html"},{"lineagePattern":"pages-intro","lineagePath":"../../patterns/pages-intro/pages-intro.rendered.html"},{"lineagePattern":"components-brand","lineagePath":"../../patterns/components-brand-_brand/components-brand-_brand.rendered.html"},{"lineagePattern":"components-card","lineagePath":"../../patterns/components-cards-card/components-cards-card.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"image"},"patternExtension":"hbs","patternName":"Image","patternPartial":"elements-image","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -3317,7 +2836,139 @@ documentation has useful tips on creating an effective description. //-->
 			</div><!--end pl-c-category__description-->
 			
 		</div><!--end pl-c-category-->
-					<div id="elements-input-variations" class="pl-c-pattern">
+					<div id="elements-input-sizes" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/elements-input-input-sizes&#x2F;elements-input-input-sizes.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-input-sizes" title="Link to Pattern">
+						Input sizes
+		
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-input-sizes" data-patternpartial="elements-input-sizes" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-input-sizes">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			<dl>
+	<dt>functional:</dt>
+	<dd class="db-ui-functional"><div class="elm-input"
+	
+	
+	>
+	<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+	<!-- [html-validate-disable-next input-missing-label] -->
+	<input type="text"
+		
+		placeholder="e.g. DB User"
+		name="id-fe18e83d-96dc-4f62-bea5-001d76a2af20"
+		id="id-fe18e83d-96dc-4f62-bea5-001d76a2af20"
+		
+		value=""
+		
+		
+		
+		
+		aria-labelledby="id-fe18e83d-96dc-4f62-bea5-001d76a2af20-label">
+	<label for="id-fe18e83d-96dc-4f62-bea5-001d76a2af20"
+		aria-hidden="true"
+		id="id-fe18e83d-96dc-4f62-bea5-001d76a2af20-label">Textlabel</label>
+
+	
+
+	
+	<span class="elm-state-icon"></span>
+</div>
+</dd>
+	<dt>regular:</dt>
+	<dd class="db-ui-regular"><div class="elm-input"
+	
+	
+	>
+	<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+	<!-- [html-validate-disable-next input-missing-label] -->
+	<input type="text"
+		
+		placeholder="e.g. DB User"
+		name="id-b867b02a-2ef4-4ae9-905c-520ac9b6ffdb"
+		id="id-b867b02a-2ef4-4ae9-905c-520ac9b6ffdb"
+		
+		value=""
+		
+		
+		
+		
+		aria-labelledby="id-b867b02a-2ef4-4ae9-905c-520ac9b6ffdb-label">
+	<label for="id-b867b02a-2ef4-4ae9-905c-520ac9b6ffdb"
+		aria-hidden="true"
+		id="id-b867b02a-2ef4-4ae9-905c-520ac9b6ffdb-label">Textlabel</label>
+
+	
+
+	
+	<span class="elm-state-icon"></span>
+</div>
+</dd>
+	<dt>expressive:</dt>
+	<dd class="db-ui-expressive"><div class="elm-input"
+	
+	
+	>
+	<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+	<!-- [html-validate-disable-next input-missing-label] -->
+	<input type="text"
+		
+		placeholder="e.g. DB User"
+		name="id-63339d3e-9477-42a3-a9ba-2c64b94d6a69"
+		id="id-63339d3e-9477-42a3-a9ba-2c64b94d6a69"
+		
+		value=""
+		
+		
+		
+		
+		aria-labelledby="id-63339d3e-9477-42a3-a9ba-2c64b94d6a69-label">
+	<label for="id-63339d3e-9477-42a3-a9ba-2c64b94d6a69"
+		aria-hidden="true"
+		id="id-63339d3e-9477-42a3-a9ba-2c64b94d6a69-label">Textlabel</label>
+
+	
+
+	
+	<span class="elm-state-icon"></span>
+</div>
+</dd>
+</dl>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-elements-input-sizes" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-input","lineagePath":"../../patterns/elements-input-input/elements-input-input.rendered.html"}],"lineage":[{"lineagePattern":"elements-input","lineagePath":"../../patterns/elements-input-input/elements-input-input.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"input"},"patternExtension":"hbs","patternName":"Input sizes","patternPartial":"elements-input-sizes","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":1}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="elements-input-variations" class="pl-c-pattern">
 		
 			<div class="pl-c-pattern__header">
 		
@@ -3352,98 +3003,354 @@ documentation has useful tips on creating an effective description. //-->
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			<dl>
-	<dt>semitransparent:</dt>
-	<dd><!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
-<!-- [html-validate-disable-next input-missing-label] -->
-<input type="text"
-	class="elm-input "
-	placeholder="Projekt Name"
-	name="input16"
-	id="input16"
+			<dl class="db-ui-normal">
+	<dt>error:</dt>
+	<dd class="db-ui-functional"><div class="elm-input"
+	 data-variant="error"
 	
-	value=""
-	
-	
-	
-	
-	aria-labelledby="input16-label"
-	 data-variant="semitransparent">
-<label class="elm-label"
-	for="input16"
-	aria-hidden="true"
-	id="input16-label">Textlabel</label>
+	>
+	<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+	<!-- [html-validate-disable-next input-missing-label] -->
+	<input type="text"
+		
+		placeholder="Projekt Name"
+		name="id-8912c6f6-b05f-44e0-b52e-54b48c120b66"
+		id="id-8912c6f6-b05f-44e0-b52e-54b48c120b66"
+		
+		value=""
+		
+		
+		
+		
+		aria-labelledby="id-8912c6f6-b05f-44e0-b52e-54b48c120b66-label">
+	<label for="id-8912c6f6-b05f-44e0-b52e-54b48c120b66"
+		aria-hidden="true"
+		id="id-8912c6f6-b05f-44e0-b52e-54b48c120b66-label">Textlabel</label>
 
+	<p class="description">Error Message Description</p>
 
+	
+	<span class="elm-state-icon"></span>
+</div>
 </dd>
-	<dt>white:</dt>
-	<dd><!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
-<!-- [html-validate-disable-next input-missing-label] -->
-<input type="text"
-	class="elm-input "
-	placeholder="Projekt Name"
-	name="input17"
-	id="input17"
+	<dt>&nbsp;</dt>
+	<dd class="db-ui-normal"><div class="elm-input"
+	 data-variant="error"
 	
-	value=""
-	
-	
-	
-	
-	aria-labelledby="input17-label"
-	 data-variant="white">
-<label class="elm-label"
-	for="input17"
-	aria-hidden="true"
-	id="input17-label">Textlabel</label>
+	>
+	<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+	<!-- [html-validate-disable-next input-missing-label] -->
+	<input type="text"
+		
+		placeholder="Projekt Name"
+		name="id-ee2e7eaa-ef9e-4efc-be73-c1657eae1370"
+		id="id-ee2e7eaa-ef9e-4efc-be73-c1657eae1370"
+		
+		value=""
+		
+		
+		
+		
+		aria-labelledby="id-ee2e7eaa-ef9e-4efc-be73-c1657eae1370-label">
+	<label for="id-ee2e7eaa-ef9e-4efc-be73-c1657eae1370"
+		aria-hidden="true"
+		id="id-ee2e7eaa-ef9e-4efc-be73-c1657eae1370-label">Textlabel</label>
 
+	<p class="description">Error Message Description</p>
 
+	
+	<span class="elm-state-icon"></span>
+</div>
 </dd>
-	<dt>solid:</dt>
-	<dd><!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
-<!-- [html-validate-disable-next input-missing-label] -->
-<input type="text"
-	class="elm-input "
-	placeholder="Projekt Name"
-	name="input18"
-	id="input18"
+	<dt>&nbsp;</dt>
+	<dd class="db-ui-expressive"><div class="elm-input"
+	 data-variant="error"
 	
-	value=""
-	
-	
-	
-	
-	aria-labelledby="input18-label"
-	 data-variant="solid">
-<label class="elm-label"
-	for="input18"
-	aria-hidden="true"
-	id="input18-label">Textlabel</label>
+	>
+	<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+	<!-- [html-validate-disable-next input-missing-label] -->
+	<input type="text"
+		
+		placeholder="Projekt Name"
+		name="id-952ac643-ef3a-4dcc-b168-6a0575e16845"
+		id="id-952ac643-ef3a-4dcc-b168-6a0575e16845"
+		
+		value=""
+		
+		
+		
+		
+		aria-labelledby="id-952ac643-ef3a-4dcc-b168-6a0575e16845-label">
+	<label for="id-952ac643-ef3a-4dcc-b168-6a0575e16845"
+		aria-hidden="true"
+		id="id-952ac643-ef3a-4dcc-b168-6a0575e16845-label">Textlabel</label>
 
+	<p class="description">Error Message Description</p>
 
+	
+	<span class="elm-state-icon"></span>
+</div>
 </dd>
-	<dt>outline:</dt>
-	<dd><!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
-<!-- [html-validate-disable-next input-missing-label] -->
-<input type="text"
-	class="elm-input "
-	placeholder="Projekt Name"
-	name="input19"
-	id="input19"
+	<dt>warning:</dt>
+	<dd class="db-ui-functional"><div class="elm-input"
+	 data-variant="warning"
 	
-	value=""
-	
-	
-	
-	
-	aria-labelledby="input19-label"
-	 data-variant="outline">
-<label class="elm-label"
-	for="input19"
-	aria-hidden="true"
-	id="input19-label">Textlabel</label>
+	>
+	<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+	<!-- [html-validate-disable-next input-missing-label] -->
+	<input type="text"
+		
+		placeholder="Projekt Name"
+		name="id-03cf18fd-7463-455c-91fe-26da3490a069"
+		id="id-03cf18fd-7463-455c-91fe-26da3490a069"
+		
+		value=""
+		
+		
+		
+		
+		aria-labelledby="id-03cf18fd-7463-455c-91fe-26da3490a069-label">
+	<label for="id-03cf18fd-7463-455c-91fe-26da3490a069"
+		aria-hidden="true"
+		id="id-03cf18fd-7463-455c-91fe-26da3490a069-label">Textlabel</label>
 
+	<p class="description">Warning Message Description</p>
 
+	
+	<span class="elm-state-icon"></span>
+</div>
+</dd>
+	<dt>&nbsp;</dt>
+	<dd class="db-ui-normal"><div class="elm-input"
+	 data-variant="warning"
+	
+	>
+	<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+	<!-- [html-validate-disable-next input-missing-label] -->
+	<input type="text"
+		
+		placeholder="Projekt Name"
+		name="id-b6969643-7509-44fb-b46b-b4de68b2b4ec"
+		id="id-b6969643-7509-44fb-b46b-b4de68b2b4ec"
+		
+		value=""
+		
+		
+		
+		
+		aria-labelledby="id-b6969643-7509-44fb-b46b-b4de68b2b4ec-label">
+	<label for="id-b6969643-7509-44fb-b46b-b4de68b2b4ec"
+		aria-hidden="true"
+		id="id-b6969643-7509-44fb-b46b-b4de68b2b4ec-label">Textlabel</label>
+
+	<p class="description">Warning Message Description</p>
+
+	
+	<span class="elm-state-icon"></span>
+</div>
+</dd>
+	<dt>&nbsp;</dt>
+	<dd class="db-ui-expressive"><div class="elm-input"
+	 data-variant="warning"
+	
+	>
+	<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+	<!-- [html-validate-disable-next input-missing-label] -->
+	<input type="text"
+		
+		placeholder="Projekt Name"
+		name="id-3903faf6-6cd0-4084-8e3a-2086727c2175"
+		id="id-3903faf6-6cd0-4084-8e3a-2086727c2175"
+		
+		value=""
+		
+		
+		
+		
+		aria-labelledby="id-3903faf6-6cd0-4084-8e3a-2086727c2175-label">
+	<label for="id-3903faf6-6cd0-4084-8e3a-2086727c2175"
+		aria-hidden="true"
+		id="id-3903faf6-6cd0-4084-8e3a-2086727c2175-label">Textlabel</label>
+
+	<p class="description">Warning Message Description</p>
+
+	
+	<span class="elm-state-icon"></span>
+</div>
+</dd>
+	<dt>success:</dt>
+	<dd class="db-ui-functional"><div class="elm-input"
+	 data-variant="success"
+	
+	>
+	<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+	<!-- [html-validate-disable-next input-missing-label] -->
+	<input type="text"
+		
+		placeholder="Projekt Name"
+		name="id-48d7f919-40f2-4ada-9558-338e059c4724"
+		id="id-48d7f919-40f2-4ada-9558-338e059c4724"
+		
+		value=""
+		
+		
+		
+		
+		aria-labelledby="id-48d7f919-40f2-4ada-9558-338e059c4724-label">
+	<label for="id-48d7f919-40f2-4ada-9558-338e059c4724"
+		aria-hidden="true"
+		id="id-48d7f919-40f2-4ada-9558-338e059c4724-label">Textlabel</label>
+
+	<p class="description">Success Message Description</p>
+
+	
+	<span class="elm-state-icon"></span>
+</div>
+</dd>
+	<dt>&nbsp;</dt>
+	<dd class="db-ui-normal"><div class="elm-input"
+	 data-variant="success"
+	
+	>
+	<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+	<!-- [html-validate-disable-next input-missing-label] -->
+	<input type="text"
+		
+		placeholder="Projekt Name"
+		name="id-c9f58662-ba57-4bae-8691-c24dfe30aedc"
+		id="id-c9f58662-ba57-4bae-8691-c24dfe30aedc"
+		
+		value=""
+		
+		
+		
+		
+		aria-labelledby="id-c9f58662-ba57-4bae-8691-c24dfe30aedc-label">
+	<label for="id-c9f58662-ba57-4bae-8691-c24dfe30aedc"
+		aria-hidden="true"
+		id="id-c9f58662-ba57-4bae-8691-c24dfe30aedc-label">Textlabel</label>
+
+	<p class="description">Success Message Description</p>
+
+	
+	<span class="elm-state-icon"></span>
+</div>
+</dd>
+	<dt>&nbsp;</dt>
+	<dd class="db-ui-expressive"><div class="elm-input"
+	 data-variant="success"
+	
+	>
+	<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+	<!-- [html-validate-disable-next input-missing-label] -->
+	<input type="text"
+		
+		placeholder="Projekt Name"
+		name="id-a5d3630f-0f99-4a7e-a61d-c46f2c2a04f2"
+		id="id-a5d3630f-0f99-4a7e-a61d-c46f2c2a04f2"
+		
+		value=""
+		
+		
+		
+		
+		aria-labelledby="id-a5d3630f-0f99-4a7e-a61d-c46f2c2a04f2-label">
+	<label for="id-a5d3630f-0f99-4a7e-a61d-c46f2c2a04f2"
+		aria-hidden="true"
+		id="id-a5d3630f-0f99-4a7e-a61d-c46f2c2a04f2-label">Textlabel</label>
+
+	<p class="description">Success Message Description</p>
+
+	
+	<span class="elm-state-icon"></span>
+</div>
+</dd>
+	<dt>information:</dt>
+	<dd class="db-ui-functional"><div class="elm-input"
+	 data-variant="information"
+	
+	>
+	<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+	<!-- [html-validate-disable-next input-missing-label] -->
+	<input type="text"
+		
+		placeholder="Projekt Name"
+		name="id-fe9f52e9-eadb-4742-8eae-2159abfcbcd0"
+		id="id-fe9f52e9-eadb-4742-8eae-2159abfcbcd0"
+		
+		value=""
+		
+		
+		
+		
+		aria-labelledby="id-fe9f52e9-eadb-4742-8eae-2159abfcbcd0-label">
+	<label for="id-fe9f52e9-eadb-4742-8eae-2159abfcbcd0"
+		aria-hidden="true"
+		id="id-fe9f52e9-eadb-4742-8eae-2159abfcbcd0-label">Textlabel</label>
+
+	<p class="description">Information Message Description</p>
+
+	
+	<span class="elm-state-icon"></span>
+</div>
+</dd>
+	<dt>&nbsp;</dt>
+	<dd class="db-ui-normal"><div class="elm-input"
+	 data-variant="information"
+	
+	>
+	<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+	<!-- [html-validate-disable-next input-missing-label] -->
+	<input type="text"
+		
+		placeholder="Projekt Name"
+		name="id-3db4ea08-564a-42d5-9eac-9b1fd19e5c01"
+		id="id-3db4ea08-564a-42d5-9eac-9b1fd19e5c01"
+		
+		value=""
+		
+		
+		
+		
+		aria-labelledby="id-3db4ea08-564a-42d5-9eac-9b1fd19e5c01-label">
+	<label for="id-3db4ea08-564a-42d5-9eac-9b1fd19e5c01"
+		aria-hidden="true"
+		id="id-3db4ea08-564a-42d5-9eac-9b1fd19e5c01-label">Textlabel</label>
+
+	<p class="description">Information Message Description</p>
+
+	
+	<span class="elm-state-icon"></span>
+</div>
+</dd>
+	<dt>&nbsp;</dt>
+	<dd class="db-ui-expressive"><div class="elm-input"
+	 data-variant="information"
+	
+	>
+	<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+	<!-- [html-validate-disable-next input-missing-label] -->
+	<input type="text"
+		
+		placeholder="Projekt Name"
+		name="id-7e456ceb-34a7-4822-b754-fd07cdd6647e"
+		id="id-7e456ceb-34a7-4822-b754-fd07cdd6647e"
+		
+		value=""
+		
+		
+		
+		
+		aria-labelledby="id-7e456ceb-34a7-4822-b754-fd07cdd6647e-label">
+	<label for="id-7e456ceb-34a7-4822-b754-fd07cdd6647e"
+		aria-hidden="true"
+		id="id-7e456ceb-34a7-4822-b754-fd07cdd6647e-label">Textlabel</label>
+
+	<p class="description">Information Message Description</p>
+
+	
+	<span class="elm-state-icon"></span>
+</div>
 </dd>
 </dl>
 
@@ -3489,32 +3396,38 @@ documentation has useful tips on creating an effective description. //-->
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
-<!-- [html-validate-disable-next input-missing-label] -->
-<input type="text"
-	class="elm-input "
-	placeholder="Projekt Name"
-	name="input01"
-	id="input01"
-	
-	value=""
+			<div class="elm-input"
 	
 	
-	
-	
-	aria-labelledby="input01-label"
 	>
-<label class="elm-label"
-	for="input01"
-	aria-hidden="true"
-	id="input01-label">Textlabel</label>
+	<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+	<!-- [html-validate-disable-next input-missing-label] -->
+	<input type="text"
+		
+		placeholder="Projekt Name"
+		name="input01"
+		id="input01"
+		
+		value=""
+		
+		
+		
+		
+		aria-labelledby="input01-label">
+	<label for="input01"
+		aria-hidden="true"
+		id="input01-label">Textlabel</label>
 
+	
 
+	
+	<span class="elm-state-icon"></span>
+</div>
 
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-elements-input" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"elements-input-variations","lineagePath":"../../patterns/elements-input-input-variations/elements-input-input-variations.rendered.html"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"}],"lineageR":[{"lineagePattern":"elements-input-variations","lineagePath":"../../patterns/elements-input-input-variations/elements-input-input-variations.rendered.html"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"input"},"patternExtension":"hbs","patternName":"Input","patternPartial":"elements-input","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":2}}
+			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"elements-input-sizes","lineagePath":"../../patterns/elements-input-input-sizes/elements-input-input-sizes.rendered.html"},{"lineagePattern":"elements-input-variations","lineagePath":"../../patterns/elements-input-input-variations/elements-input-input-variations.rendered.html"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"}],"lineageR":[{"lineagePattern":"elements-input-sizes","lineagePath":"../../patterns/elements-input-input-sizes/elements-input-input-sizes.rendered.html"},{"lineagePattern":"elements-input-variations","lineagePath":"../../patterns/elements-input-input-variations/elements-input-input-variations.rendered.html"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"input"},"patternExtension":"hbs","patternName":"Input","patternPartial":"elements-input","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":2}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -3553,32 +3466,108 @@ documentation has useful tips on creating an effective description. //-->
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
-<!-- [html-validate-disable-next input-missing-label] -->
-<input type="text"
-	class="elm-input "
-	placeholder="Projekt Name"
-	name="input02"
-	id="input02"
-	
-	value=""
-	 aria-describedby="input02hint"
+			<div class="elm-input"
 	
 	
-	
-	aria-labelledby="input02-label"
 	>
-<label class="elm-label"
-	for="input02"
-	aria-hidden="true"
-	id="input02-label">Textlabel</label>
-<p id="input02hint" class="description">Optionale Beschreibung<br>Zeile zwei</p>
+	<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+	<!-- [html-validate-disable-next input-missing-label] -->
+	<input type="text"
+		
+		placeholder="Projekt Name"
+		name="input02"
+		id="input02"
+		
+		value=""
+		 aria-describedby="input02hint"
+		
+		
+		
+		aria-labelledby="input02-label">
+	<label for="input02"
+		aria-hidden="true"
+		id="input02-label">Textlabel</label>
 
+	<p id="input02hint" class="description">Optionale Beschreibung<br>Zeile zwei</p>
+
+	
+	<span class="elm-state-icon"></span>
+</div>
 
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-elements-input-description" class="pl-js-pattern-data">
 			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"input"},"patternExtension":"hbs","patternName":"Input with description","patternPartial":"elements-input-description","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":3}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="elements-input-icon" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/elements-input-input-icon&#x2F;elements-input-input-icon.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-input-icon" title="Link to Pattern">
+						Input with Icon
+		
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-input-icon" data-patternpartial="elements-input-icon" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-input-icon">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			<div class="elm-input"
+	
+	 data-icon-before="heart"
+	 data-icon-after="edit">
+	<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+	<!-- [html-validate-disable-next input-missing-label] -->
+	<input type="text"
+		
+		placeholder="Projekt Name"
+		name="input23"
+		id="input23"
+		
+		value=""
+		
+		
+		
+		
+		aria-labelledby="input23-label">
+	<label for="input23"
+		aria-hidden="true"
+		id="input23-label">Textlabel</label>
+
+	
+
+	
+	<span class="elm-state-icon"></span>
+</div>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-elements-input-icon" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"input"},"patternExtension":"hbs","patternName":"Input with Icon","patternPartial":"elements-input-icon","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":3}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -3617,27 +3606,33 @@ documentation has useful tips on creating an effective description. //-->
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
-<!-- [html-validate-disable-next input-missing-label] -->
-<input type="text"
-	class="elm-input "
-	placeholder="Projekt Name"
-	name="input03"
-	id="input03"
-	
-	value="Input"
-	 aria-describedby="input03hint"
+			<div class="elm-input"
 	
 	
-	
-	aria-labelledby="input03-label"
 	>
-<label class="elm-label"
-	for="input03"
-	aria-hidden="true"
-	id="input03-label">Textlabel</label>
-<p id="input03hint" class="description">Optionale Beschreibung<br>Zeile zwei</p>
+	<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+	<!-- [html-validate-disable-next input-missing-label] -->
+	<input type="text"
+		
+		placeholder="Projekt Name"
+		name="input03"
+		id="input03"
+		
+		value="Input"
+		 aria-describedby="input03hint"
+		
+		
+		
+		aria-labelledby="input03-label">
+	<label for="input03"
+		aria-hidden="true"
+		id="input03-label">Textlabel</label>
 
+	<p id="input03hint" class="description">Optionale Beschreibung<br>Zeile zwei</p>
+
+	
+	<span class="elm-state-icon"></span>
+</div>
 
 			</div><!--end pl-js-pattern-example-->
 		
@@ -3681,27 +3676,33 @@ documentation has useful tips on creating an effective description. //-->
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
-<!-- [html-validate-disable-next input-missing-label] -->
-<input type="text"
-	class="elm-input "
-	placeholder="Projekt Name"
-	name="input04"
-	id="input04"
-	
-	value="Input"
+			<div class="elm-input"
 	
 	
-	 minlength="3" required
-	
-	aria-labelledby="input04-label"
 	>
-<label class="elm-label"
-	for="input04"
-	aria-hidden="true"
-	id="input04-label">Textlabel</label>
+	<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+	<!-- [html-validate-disable-next input-missing-label] -->
+	<input type="text"
+		
+		placeholder="Projekt Name"
+		name="input04"
+		id="input04"
+		
+		value="Input"
+		
+		
+		 minlength="3" required
+		
+		aria-labelledby="input04-label">
+	<label for="input04"
+		aria-hidden="true"
+		id="input04-label">Textlabel</label>
 
+	
 
+	
+	<span class="elm-state-icon"></span>
+</div>
 
 			</div><!--end pl-js-pattern-example-->
 		
@@ -3745,27 +3746,33 @@ documentation has useful tips on creating an effective description. //-->
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
-<!-- [html-validate-disable-next input-missing-label] -->
-<input type="text"
-	class="elm-input "
-	placeholder="Mindestens fünf Zeichen eingeben"
-	name="input06"
-	id="input06"
+			<div class="elm-input"
 	
-	value=""
-	 aria-describedby="input06hint"
 	
-	 minlength="5" required
-	
-	aria-labelledby="input06-label"
 	>
-<label class="elm-label"
-	for="input06"
-	aria-hidden="true"
-	id="input06-label">Textlabel</label>
-<p id="input06hint" class="description">Optionale Beschreibung<br>Zeile zwei</p>
+	<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+	<!-- [html-validate-disable-next input-missing-label] -->
+	<input type="text"
+		
+		placeholder="Mindestens fünf Zeichen eingeben"
+		name="input06"
+		id="input06"
+		
+		value=""
+		 aria-describedby="input06hint"
+		
+		 minlength="5" required
+		
+		aria-labelledby="input06-label">
+	<label for="input06"
+		aria-hidden="true"
+		id="input06-label">Textlabel</label>
 
+	<p id="input06hint" class="description">Optionale Beschreibung<br>Zeile zwei</p>
+
+	
+	<span class="elm-state-icon"></span>
+</div>
 
 			</div><!--end pl-js-pattern-example-->
 		
@@ -3810,27 +3817,33 @@ documentation has useful tips on creating an effective description. //-->
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
-<!-- [html-validate-disable-next input-missing-label] -->
-<input type="text"
-	class="elm-input "
-	placeholder="Projekt Name"
-	name="input15"
-	id="input15"
+			<div class="elm-input"
 	
-	value="Inpu"
-	 aria-describedby="input15hint"
-	 aria-invalid="true"
-	 minlength="5"
 	
-	aria-labelledby="input15-label"
 	>
-<label class="elm-label"
-	for="input15"
-	aria-hidden="true"
-	id="input15-label">Textlabel</label>
-<p id="input15hint" class="description">Optionale Beschreibung<br>Zeile zwei</p>
+	<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+	<!-- [html-validate-disable-next input-missing-label] -->
+	<input type="text"
+		
+		placeholder="Projekt Name"
+		name="input15"
+		id="input15"
+		
+		value="Inpu"
+		 aria-describedby="input15hint"
+		 aria-invalid="true"
+		 minlength="5"
+		
+		aria-labelledby="input15-label">
+	<label for="input15"
+		aria-hidden="true"
+		id="input15-label">Textlabel</label>
 
+	<p id="input15hint" class="description">Optionale Beschreibung<br>Zeile zwei</p>
+
+	
+	<span class="elm-state-icon"></span>
+</div>
 
 			</div><!--end pl-js-pattern-example-->
 		
@@ -3874,27 +3887,33 @@ documentation has useful tips on creating an effective description. //-->
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
-<!-- [html-validate-disable-next input-missing-label] -->
-<input type="text"
-	class="elm-input "
-	placeholder="Projekt Name"
-	name="input05"
-	id="input05"
-	 disabled
-	value=""
+			<div class="elm-input"
 	
 	
-	
-	
-	aria-labelledby="input05-label"
 	>
-<label class="elm-label"
-	for="input05"
-	aria-hidden="true"
-	id="input05-label">Textlabel</label>
+	<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+	<!-- [html-validate-disable-next input-missing-label] -->
+	<input type="text"
+		
+		placeholder="Projekt Name"
+		name="input05"
+		id="input05"
+		 disabled
+		value=""
+		
+		
+		
+		
+		aria-labelledby="input05-label">
+	<label for="input05"
+		aria-hidden="true"
+		id="input05-label">Textlabel</label>
 
+	
 
+	
+	<span class="elm-state-icon"></span>
+</div>
 
 			</div><!--end pl-js-pattern-example-->
 		
@@ -3938,27 +3957,33 @@ documentation has useful tips on creating an effective description. //-->
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
-<!-- [html-validate-disable-next input-missing-label] -->
-<input type="search"
-	class="elm-input "
-	placeholder="Projekt Name"
-	name="input07"
-	id="input07"
-	
-	value=""
+			<div class="elm-input"
 	
 	
-	
-	
-	aria-labelledby="input07-label"
 	>
-<label class="elm-label"
-	for="input07"
-	aria-hidden="true"
-	id="input07-label">Textlabel</label>
+	<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+	<!-- [html-validate-disable-next input-missing-label] -->
+	<input type="search"
+		
+		placeholder="Projekt Name"
+		name="input07"
+		id="input07"
+		
+		value=""
+		
+		
+		
+		
+		aria-labelledby="input07-label">
+	<label for="input07"
+		aria-hidden="true"
+		id="input07-label">Textlabel</label>
 
+	
 
+	
+	<span class="elm-state-icon"></span>
+</div>
 
 			</div><!--end pl-js-pattern-example-->
 		
@@ -4002,27 +4027,33 @@ documentation has useful tips on creating an effective description. //-->
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
-<!-- [html-validate-disable-next input-missing-label] -->
-<input type="search"
-	class="elm-input "
-	placeholder="Projekt Name"
-	name="input08"
-	id="input08"
-	
-	value="Input"
+			<div class="elm-input"
 	
 	
-	
-	
-	aria-labelledby="input08-label"
 	>
-<label class="elm-label"
-	for="input08"
-	aria-hidden="true"
-	id="input08-label">Textlabel</label>
+	<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+	<!-- [html-validate-disable-next input-missing-label] -->
+	<input type="search"
+		
+		placeholder="Projekt Name"
+		name="input08"
+		id="input08"
+		
+		value="Input"
+		
+		
+		
+		
+		aria-labelledby="input08-label">
+	<label for="input08"
+		aria-hidden="true"
+		id="input08-label">Textlabel</label>
 
+	
 
+	
+	<span class="elm-state-icon"></span>
+</div>
 
 			</div><!--end pl-js-pattern-example-->
 		
@@ -4462,10 +4493,10 @@ For optimal user experience, use the aria-description prop to let assistive tech
 			<svg
 	class="elm-loadingindicator"
 	viewBox="0 0 44 44"
-	aria-labelledby="elm-loadingindicator__description" role="img"
+	aria-labelledby="elm-loadingindicator-elm-loadingindicator__description" role="img"
 	
 >
-	<title id="elm-loadingindicator__description">Example description for loading spinner</title>
+	<title id="elm-loadingindicator-elm-loadingindicator__description">Example description for loading spinner</title>
 	<circle
 		class="elm-loadingindicator__circle"
 		cx="22"
@@ -4479,7 +4510,7 @@ For optimal user experience, use the aria-description prop to let assistive tech
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-elements-loading-indicator" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"loading-indicator"},"patternExtension":"hbs","patternName":"Loading Indicator","patternPartial":"elements-loading-indicator","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"lineageR":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"loading-indicator"},"patternExtension":"hbs","patternName":"Loading Indicator","patternPartial":"elements-loading-indicator","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -4521,10 +4552,10 @@ For optimal user experience, use the aria-description prop to let assistive tech
 			<svg
 	class="elm-loadingindicator"
 	viewBox="0 0 44 44"
-	aria-labelledby="elm-loadingindicator__description-s" role="img"
+	aria-labelledby="elm-loadingindicator-elm-loadingindicator__description-s" role="img"
 	 data-size="s"
 >
-	<title id="elm-loadingindicator__description-s">Example description for s loading spinner</title>
+	<title id="elm-loadingindicator-elm-loadingindicator__description-s">Example description for s loading spinner</title>
 	<circle
 		class="elm-loadingindicator__circle"
 		cx="22"
@@ -4580,10 +4611,10 @@ For optimal user experience, use the aria-description prop to let assistive tech
 			<svg
 	class="elm-loadingindicator"
 	viewBox="0 0 44 44"
-	aria-labelledby="elm-loadingindicator__description-xs" role="img"
+	aria-labelledby="elm-loadingindicator-elm-loadingindicator__description-xs" role="img"
 	 data-size="xs"
 >
-	<title id="elm-loadingindicator__description-xs">Example description for xs loading spinner</title>
+	<title id="elm-loadingindicator-elm-loadingindicator__description-xs">Example description for xs loading spinner</title>
 	<circle
 		class="elm-loadingindicator__circle"
 		cx="22"
@@ -4639,10 +4670,10 @@ For optimal user experience, use the aria-description prop to let assistive tech
 			<svg
 	class="elm-loadingindicator"
 	viewBox="0 0 44 44"
-	aria-labelledby="elm-loadingindicator__description-m" role="img"
+	aria-labelledby="elm-loadingindicator-elm-loadingindicator__description-m" role="img"
 	 data-size="m"
 >
-	<title id="elm-loadingindicator__description-m">Example description for loading spinner size M</title>
+	<title id="elm-loadingindicator-elm-loadingindicator__description-m">Example description for loading spinner size M</title>
 	<circle
 		class="elm-loadingindicator__circle"
 		cx="22"
@@ -4698,10 +4729,10 @@ For optimal user experience, use the aria-description prop to let assistive tech
 			<svg
 	class="elm-loadingindicator"
 	viewBox="0 0 44 44"
-	aria-labelledby="elm-loadingindicator__description-l" role="img"
+	aria-labelledby="elm-loadingindicator-elm-loadingindicator__description-l" role="img"
 	 data-size="l"
 >
-	<title id="elm-loadingindicator__description-l">Example description for loading spinner size L</title>
+	<title id="elm-loadingindicator-elm-loadingindicator__description-l">Example description for loading spinner size L</title>
 	<circle
 		class="elm-loadingindicator__circle"
 		cx="22"
@@ -4757,10 +4788,10 @@ For optimal user experience, use the aria-description prop to let assistive tech
 			<svg
 	class="elm-loadingindicator"
 	viewBox="0 0 44 44"
-	aria-labelledby="elm-loadingindicator__description-xl" role="img"
+	aria-labelledby="elm-loadingindicator-elm-loadingindicator__description-xl" role="img"
 	 data-size="xl"
 >
-	<title id="elm-loadingindicator__description-xl">Example description for loading spinner size XL</title>
+	<title id="elm-loadingindicator-elm-loadingindicator__description-xl">Example description for loading spinner size XL</title>
 	<circle
 		class="elm-loadingindicator__circle"
 		cx="22"
@@ -5867,65 +5898,12 @@ If you would like to even also match those visual requirements, you would need t
 		
 	>Gl. 10</span>
 
-	<!-- [html-validate-disable-next heading-level] -->
-	<!-- [html-validate-disable-next heading-level -- we're doing some simple demonstration simplification here] -->
-	<h3 class="elm-headline ">POIs</h3>
 
-		<span class="elm-tag"
-			
-			 data-variant="poi-essen-trinken"
-			
-		>Essen &amp; Trinken</span>
-		<span class="elm-tag"
-			
-			 data-variant="poi-einkaufen"
-			
-		>Einkaufen</span>
-		<span class="elm-tag"
-			
-			 data-variant="poi-gesundheit"
-			
-		>Gesundheit</span>
-		<span class="elm-tag"
-			
-			 data-variant="poi-kunst-kultur"
-			
-		>Kunst &amp; Kultur</span>
-		<span class="elm-tag"
-			
-			 data-variant="poi-wissenswertes"
-			
-		>Wissenswertes</span>
-		<span class="elm-tag"
-			
-			 data-variant="poi-freizeit"
-			
-		>Freizeit</span>
-		<span class="elm-tag"
-			
-			 data-variant="poi-zivile-rel-einrichtungen"
-			
-		>Zivile &amp; reli. Einrichtungen</span>
-		<span class="elm-tag"
-			
-			 data-variant="poi-dienstleistungen"
-			
-		>Dienstleistungen</span>
-		<span class="elm-tag"
-			
-			 data-variant="poi-db-services-einrichtung"
-			
-		>DB Services &amp; Einrichtung</span>
-		<span class="elm-tag"
-			
-			 data-variant="poi-wegeleitung"
-			
-		>Wegeleitung</span>
 
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-elements-tags" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-tag","lineagePath":"../../patterns/elements-tags-_tag/elements-tags-_tag.rendered.html"},{"lineagePattern":"elements-headline","lineagePath":"../../patterns/elements-headline-headline/elements-headline-headline.rendered.html"}],"lineage":[{"lineagePattern":"elements-tag","lineagePath":"../../patterns/elements-tags-_tag/elements-tags-_tag.rendered.html"},{"lineagePattern":"elements-headline","lineagePath":"../../patterns/elements-headline-headline/elements-headline-headline.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"tags"},"patternExtension":"hbs","patternName":"Tags","patternPartial":"elements-tags","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-tag","lineagePath":"../../patterns/elements-tags-_tag/elements-tags-_tag.rendered.html"}],"lineage":[{"lineagePattern":"elements-tag","lineagePath":"../../patterns/elements-tags-_tag/elements-tags-_tag.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"tags"},"patternExtension":"hbs","patternName":"Tags","patternPartial":"elements-tags","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -5995,65 +5973,12 @@ If you would like to even also match those visual requirements, you would need t
 		
 	>Gl. 10</span>
 
-	<!-- [html-validate-disable-next heading-level] -->
-	<!-- [html-validate-disable-next heading-level -- we're doing some simple demonstration simplification here] -->
-	<h3 class="elm-headline ">POIs</h3>
 
-		<span class="elm-tag"
-			 data-size="small"
-			 data-variant="poi-essen-trinken"
-			
-		>Essen &amp; Trinken</span>
-		<span class="elm-tag"
-			 data-size="small"
-			 data-variant="poi-einkaufen"
-			
-		>Einkaufen</span>
-		<span class="elm-tag"
-			 data-size="small"
-			 data-variant="poi-gesundheit"
-			
-		>Gesundheit</span>
-		<span class="elm-tag"
-			 data-size="small"
-			 data-variant="poi-kunst-kultur"
-			
-		>Kunst &amp; Kultur</span>
-		<span class="elm-tag"
-			 data-size="small"
-			 data-variant="poi-wissenswertes"
-			
-		>Wissenswertes</span>
-		<span class="elm-tag"
-			 data-size="small"
-			 data-variant="poi-freizeit"
-			
-		>Freizeit</span>
-		<span class="elm-tag"
-			 data-size="small"
-			 data-variant="poi-zivile-rel-einrichtungen"
-			
-		>Zivile &amp; reli. Einrichtungen</span>
-		<span class="elm-tag"
-			 data-size="small"
-			 data-variant="poi-dienstleistungen"
-			
-		>Dienstleistungen</span>
-		<span class="elm-tag"
-			 data-size="small"
-			 data-variant="poi-db-services-einrichtung"
-			
-		>DB Services &amp; Einrichtung</span>
-		<span class="elm-tag"
-			 data-size="small"
-			 data-variant="poi-wegeleitung"
-			
-		>Wegeleitung</span>
 
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-elements-tags-small" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-tag","lineagePath":"../../patterns/elements-tags-_tag/elements-tags-_tag.rendered.html"},{"lineagePattern":"elements-headline","lineagePath":"../../patterns/elements-headline-headline/elements-headline-headline.rendered.html"}],"lineage":[{"lineagePattern":"elements-tag","lineagePath":"../../patterns/elements-tags-_tag/elements-tags-_tag.rendered.html"},{"lineagePattern":"elements-headline","lineagePath":"../../patterns/elements-headline-headline/elements-headline-headline.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"tags"},"patternExtension":"hbs","patternName":"Tags Small","patternPartial":"elements-tags-small","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-tag","lineagePath":"../../patterns/elements-tags-_tag/elements-tags-_tag.rendered.html"}],"lineage":[{"lineagePattern":"elements-tag","lineagePath":"../../patterns/elements-tags-_tag/elements-tags-_tag.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"tags"},"patternExtension":"hbs","patternName":"Tags Small","patternPartial":"elements-tags-small","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -6124,10 +6049,11 @@ If you would like to even also match those visual requirements, you would need t
 	>Gl. 10</span>
 
 
+
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-elements-tags-with-icon" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-tag","lineagePath":"../../patterns/elements-tags-_tag/elements-tags-_tag.rendered.html"},{"lineagePattern":"elements-headline","lineagePath":"../../patterns/elements-headline-headline/elements-headline-headline.rendered.html"}],"lineage":[{"lineagePattern":"elements-tag","lineagePath":"../../patterns/elements-tags-_tag/elements-tags-_tag.rendered.html"},{"lineagePattern":"elements-headline","lineagePath":"../../patterns/elements-headline-headline/elements-headline-headline.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"tags"},"patternExtension":"hbs","patternName":"Tags With Icon","patternPartial":"elements-tags-with-icon","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-tag","lineagePath":"../../patterns/elements-tags-_tag/elements-tags-_tag.rendered.html"}],"lineage":[{"lineagePattern":"elements-tag","lineagePath":"../../patterns/elements-tags-_tag/elements-tags-_tag.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"tags"},"patternExtension":"hbs","patternName":"Tags With Icon","patternPartial":"elements-tags-with-icon","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -6909,10 +6835,10 @@ If you would like to even also match those visual requirements, you would need t
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1673247722124">
+<script id="pl-js-polyfill-insert-1673247847458">
   (function() {
     if (self != top) {
-      var cb = '1673247722124';
+      var cb = '1673247847458';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -6925,7 +6851,7 @@ If you would like to even also match those visual requirements, you would need t
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1673247722124" nomodule>
+<script id="pl-js-insert-1673247847458" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 
