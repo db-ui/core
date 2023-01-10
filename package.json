@@ -63,7 +63,7 @@
   "devDependencies": {
     "@babel/cli": "^7.20.7",
     "@babel/preset-env": "^7.20.2",
-    "@commitlint/cli": "^17.4.0",
+    "@commitlint/cli": "^17.4.1",
     "@commitlint/config-conventional": "^17.4.0",
     "@mfranzke/plugin-node-uiextension": "^1.0.0",
     "@pattern-lab/cli": "^5.17.0",
@@ -78,7 +78,7 @@
     "dialog-polyfill": "^0.5.6",
     "dotenv": "^16.0.3",
     "find-versions-cli": "^4.0.0",
-    "html-validate": "^7.12.1",
+    "html-validate": "^7.12.2",
     "html5-boilerplate": "^8.0.0",
     "husky": "^8.0.3",
     "iframe-resizer": "^4.3.2",
