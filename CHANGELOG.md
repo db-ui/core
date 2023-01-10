@@ -3,7 +3,7 @@
 # Changelog
 
 | :point_up: | From now on we'll only document our changes within the [repositories releases page](https://github.com/db-ui/core/releases). |
-| ---------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ---------- | :--------------------------------------------------------------------------------------------------------------------------- |
 
 ~~All notable changes to this project will be documented in this file.~~
 
