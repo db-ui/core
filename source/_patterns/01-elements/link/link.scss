@@ -12,6 +12,7 @@
 	border-radius: to-rem($pxValue: 6);
 
 	// Link underline
+	text-underline-position: from-font;
 	text-decoration-thickness: to-rem($pxValue: 1);
 
 	// Changing color on hover should be animated by a transition
