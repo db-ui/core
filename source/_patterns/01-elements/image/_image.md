@@ -36,7 +36,7 @@ Attention: `PNG` is even also often used for pictures, even though that the spec
 
 Regarding images that need to have some kind of full or partial transparency, you could use either `GIF` (full) or `PNG` (most likely `PNG-24` for partial) transparency.
 
-Or use SVG masks, as this beautiful concept shows: https://github.blog/2021-01-29-making-githubs-new-homepage-fast-and-performant/#serving-the-perfect-image
+Or use SVG masks, as this beautiful concept shows: <https://github.blog/2021-01-29-making-githubs-new-homepage-fast-and-performant/#serving-the-perfect-image>
 
 ### Diagrams, drawings, and charts
 
@@ -46,7 +46,7 @@ Source: <https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types#
 
 ## Further image compressions
 
-On top of the possibilities mentioned above regarding image optimizations (Google Guetzli & JPEGMini) you could as well have a look at both [ImageAlpha (for PNG)](https://pngmini.com) and [ImageOptim (for all)](https://imageoptim.com/), both available for Mac and the first [both both other GUI and command-line variants](https://pngquant.org) and the latter as well as a webservice. Another great online tool that works entirely in the browser and doesn't even need to process your data on their servers (due to WebAssembly and some other cool stuff) is <https://squoosh.app>. Nowadays they additionally provide a CLI version of their software and new cool image formats, check out their version 2: https://web.dev/squoosh-v2/
+On top of the possibilities mentioned above regarding image optimizations (Google Guetzli & JPEGMini) you could as well have a look at both [ImageAlpha (for PNG)](https://pngmini.com) and [ImageOptim (for all)](https://imageoptim.com/), both available for Mac and the first [both both other GUI and command-line variants](https://pngquant.org) and the latter as well as a webservice. Another great online tool that works entirely in the browser and doesn't even need to process your data on their servers (due to WebAssembly and some other cool stuff) is <https://squoosh.app>. Nowadays they additionally provide a CLI version of their software and new cool image formats, check out their version 2: <https://web.dev/squoosh-v2/>
 
 Some further information on this topic are provided on this page: <https://dev.to/prototyp/optimizing-images-for-the-web-an-in-depth-guide-4j7d>
 
