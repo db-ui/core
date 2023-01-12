@@ -40,8 +40,8 @@
     "js-watch": "npm run js-build -- --watch",
     "copy-assets": "cpr node_modules/@db-ui/base/build/assets/icons dist/icons -d && cpr node_modules/@db-ui/base/build/assets/fonts dist/fonts --filter=\"^(.*[/]sources[/]).*$\" -d | cpr source/images dist/images -d | cpr source/favicon.ico dist/favicon.ico -o | cpr source/robots.txt dist/robots.txt -o | cpr source/site.webmanifest dist/site.webmanifest -o",
     "copy-scss-sources": "cpr source/_patterns/ sources/_patterns/ --filter=\"^(?!.*[.](scss|sass)$).*$\" -d | cpr source/css/ sources/css/ --filter=\"^(?!.*[.](scss|sass)$).*$\" -d",
-    "clean": "rimraf dist",
-    "build": "npm run clean && npm-run-all css-deploy js-deploy pl:build:* --parallel copy-assets copy-scss-sources",
+    "clean": "git clean -dfx --exclude=.env",
+    "build": "rimraf dist && npm-run-all css-deploy js-deploy pl:build:* --parallel copy-assets copy-scss-sources",
     "start": "npm-run-all --parallel pl:serve:enterprise css-watch js-watch",
     "stylelint-check": "stylelint-config-prettier-check",
     "prepare": "node -e \"try { require('husky').install() } catch (e) {}\""
