@@ -12,15 +12,10 @@
 	border-radius: to-rem($pxValue: 6);
 
 	// Link underline
-	text-underline-offset: to-rem($pxValue: 1);
-	text-underline-position: under;
 	text-decoration-thickness: to-rem($pxValue: 1);
-	@supports (text-underline-offset: 3px) {
-		text-underline-position: auto;
-	}
 
 	// Changing color on hover should be animated by a transition
-	transition: $db-transition-color;
+	transition: outline 0.06s, color $db-transition-color;
 
 	&:hover {
 		color: inherit;
@@ -58,8 +53,7 @@
 		}
 
 		&:focus-visible {
-			outline-offset: -1px;
-			padding: 0 2px;
+			outline-offset: var(--db-focus-outline-offset, 1px);
 		}
 	}
 
