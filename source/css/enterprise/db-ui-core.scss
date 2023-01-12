@@ -51,7 +51,7 @@ $partial: false;
 @import "../../_patterns/01-elements/checkbox/enterprise/checkbox";
 /* input */
 @import "../../_patterns/01-elements/input/enterprise/input";
-/* loading */
+/* loading indicator */
 @import "../../_patterns/01-elements/loading-indicator/loading-indicator";
 /* progress */
 @import "../../_patterns/01-elements/progress/enterprise/progress";
@@ -109,9 +109,15 @@ $partial: false;
 @import "../../_patterns/02-components/dropdown/enterprise/dropdown";
 
 // AREAS
+/* areas */
 @import "../../_patterns/03-areas/enterprise/areas";
+/* header */
 @import "../../_patterns/03-areas/00-header/enterprise/header";
+/* meta */
 @import "../../_patterns/03-areas/00-header/enterprise/meta";
+/* main */
 @import "../../_patterns/03-areas/01-main/enterprise/main";
+/* grid */
 @import "../../_patterns/03-areas/02-grid/enterprise/grid";
+/* footer */
 @import "../../_patterns/03-areas/03-footer/enterprise/footer";
