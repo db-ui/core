@@ -19,6 +19,7 @@ $partial: false;
 @use "db-ui-core.variables" as *;
 
 @use "@db-ui/base/build/scss/tonality" as *;
+@use "@db-ui/base/build/scss/color-placeholder" as *;
 
 @use "../../_patterns/00-base/init.global" as *;
 @use "../../_patterns/00-base/init" as *;
@@ -33,6 +34,7 @@ $partial: false;
 
 :root {
 	@extend %db-ui-functional;
+	@extend %db-bg-neutral-0;
 }
 
 // ELEMENTS
