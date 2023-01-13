@@ -1,2 +1,40 @@
-@import "link.variables";
+@use "@db-ui/base/build/scss/icon/icons.helpers" as *;
+
 @import "../link";
+
+// Define the available icons
+.elm-link {
+	&[rel] {
+		--icon-font-family: var(--db-base-icon-font-family);
+		--icon-font-size: var(--db-base-icon-font-size);
+	}
+
+	&[rel="configuration"] {
+		@include icon(glyph(settings), 24, "outline", $partial: $partial);
+	}
+
+	&[rel="messages"] {
+		@include icon(glyph(chat), 24, "outline", $partial: $partial);
+	}
+
+	&[rel="account"] {
+		@include icon(glyph(account), 24, "outline", $partial: $partial);
+	}
+
+	&[rel="configuration"],
+	&[rel="messages"],
+	&[rel="account"] {
+		&::before {
+			// preventing an underlined icon on click
+			display: inline-block;
+		}
+	}
+
+	&[data-size="small"] {
+		&[rel] {
+			@include icon-meta(20);
+			// TODO: remove when icons are availabe in the correct size
+			font-size: 16px;
+		}
+	}
+}
