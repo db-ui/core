@@ -10,3 +10,14 @@ body.styleguide {
 	margin: -1rem -0.5rem;
 	padding: 1rem 0.5rem;
 }
+
+dl.variations {
+	dd {
+		&[data-tonality="regular"],
+		&[data-tonality="functional"] {
+			& + dt {
+				visibility: hidden;
+			}
+		}
+	}
+}

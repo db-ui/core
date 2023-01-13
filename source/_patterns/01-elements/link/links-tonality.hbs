@@ -1,0 +1,10 @@
+<dl>
+{{#each tonality as |tonality| }}
+	<dt>{{ tonality }}:</dt>
+	<dd data-tonality="{{ tonality }}">
+		{{> elements-link href='#' value='Internal link' data-content='internal' }}
+		{{> elements-link href='#' value='External link' data-content='external' }}
+		{{> elements-link href='#' value='Internal link small' data-content='internal' size="small" }}
+		{{> elements-link href='#' value='External link small' data-content='external' size="small" }}</dd>
+{{/each }}
+</dl>
