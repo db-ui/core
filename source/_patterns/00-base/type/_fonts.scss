@@ -1,6 +1,7 @@
 @import "../../../css/db-ui-core.variables";
 @import "fonts.variables";
 
+// TODO: migrate this to DB UI Base
 @each $font-name, $font-meta in $font-families {
 	$font-family: map-get($font-meta, "font-family");
 	$font-filename: map-get($font-meta, "font-filename");
@@ -14,11 +15,15 @@
 		font-weight: $font-weight;
 		@if $font-local {
 			src: local("#{$font-name}"),
-				url("#{$fonts-path}#{$font-filename}.woff2?4r0080") format("woff2"),
-				url("#{$fonts-path}#{$font-filename}.woff?4r0080") format("woff");
+				url("#{$fonts-path}#{$font-filename}.woff2?4r0080")
+					format("woff2"),
+				url("#{$fonts-path}#{$font-filename}.woff?4r0080")
+					format("woff");
 		} @else {
-			src: url("#{$fonts-path}#{$font-filename}.woff2?4r0080") format("woff2"),
-				url("#{$fonts-path}#{$font-filename}.woff?4r0080") format("woff");
+			src: url("#{$fonts-path}#{$font-filename}.woff2?4r0080")
+					format("woff2"),
+				url("#{$fonts-path}#{$font-filename}.woff?4r0080")
+					format("woff");
 		}
 	}
 }

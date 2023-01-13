@@ -1,3 +1,6 @@
+@use "@db-ui/base/build/scss/variables" as *;
+@use "@db-ui/base/build/scss/helpers/functions" as *;
+
 // *! this is an opionionated (especially based on "enhancing" normalize.css) version of minireset.css v0.0.4 | MIT License | github.com/jgthms/minireset.css
 html,
 body {
@@ -47,14 +50,11 @@ body {
 
 // Inline
 a {
-	color: $db-colors-secondary-enabled;
+	// TODO: Move to DB UI Base
+	color: inherit;
 
 	strong {
 		color: currentColor;
-	}
-
-	&:hover {
-		color: #5d616a; // TODO: Identify correct color variable
 	}
 }
 

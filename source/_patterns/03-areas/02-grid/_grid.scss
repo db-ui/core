@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@use "@db-ui/base/build/scss/helpers/functions" as *;
+
 .rea-grid {
 	// TODO: We would probably need to recheck on this declaration regarding compabitility
 	flex-wrap: wrap;

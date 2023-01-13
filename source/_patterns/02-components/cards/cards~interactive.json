@@ -1,0 +1,25 @@
+{
+	"variant": "ia",
+	"cards": [
+		{
+			"headline": "Interactive 01",
+			"text": "Lorem ipsum dolores sint.",
+			"hyperlink": true
+		},
+		{
+			"headline": "Interactive 02",
+			"text": "Lorem ipsum dolores sint.",
+			"hyperlink": true
+		},
+		{
+			"headline": "Interactive 03",
+			"text": "Lorem ipsum dolores sint.",
+			"hyperlink": true
+		},
+		{
+			"headline": "Interactive 04",
+			"text": "Lorem ipsum dolores sint.",
+			"hyperlink": true
+		}
+	]
+}

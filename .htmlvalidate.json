@@ -1,8 +1,10 @@
 {
 	"extends": ["html-validate:document", "html-validate:recommended"],
-
 	"rules": {
-		"void-style": ["warn", { "style": "selfclosing" }],
-		"require-sri": ["error", { "target": "crossorigin" }]
+		"require-sri": ["error", { "target": "crossorigin" }],
+		"no-trailing-whitespace": ["off"],
+		"doctype-style": ["off"],
+		"element-name": ["error", { "whitelist": ["dialog"] }],
+		"missing-doctype": ["off"]
 	}
 }

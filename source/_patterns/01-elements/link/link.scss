@@ -1,24 +1,30 @@
+@use "@db-ui/base/build/scss/variables" as *;
+@use "@db-ui/base/build/scss/scaling-placeholder" as *;
+@use "@db-ui/base/build/scss/color-placeholder" as *;
+@use "@db-ui/base/build/scss/helpers/functions" as *;
+@use "@db-ui/base/build/scss/icon/icons.helpers" as *;
+
 @import "../../../css/partials.meta";
-@import "link.variables";
 
 .elm-link {
-	border-radius: to-rem($pxValue: 4);
+	color: var(--db-current-color, $db-colors-neutral-on-bg-enabled);
 	display: inline-block;
+	border-radius: to-rem($pxValue: 6);
 
 	// Link underline
-	text-underline-offset: to-rem($pxValue: 3);
-	text-underline-position: under;
-	@supports (text-underline-offset: 3px) {
-		text-underline-position: auto;
-	}
+	text-underline-position: from-font;
+	text-decoration-thickness: to-rem($pxValue: 1);
 
-	&:active {
-		color: initial;
+	// Changing color on hover should be animated by a transition
+	transition: outline 0.06s, color $db-transition-color;
+
+	&:hover {
+		color: inherit;
 	}
 
 	// "disabled" links
 	&[aria-disabled="true"] {
-		opacity: $link--disabled-opacity;
+		opacity: var(--db-disabled-text-opacity, 0.5);
 
 		pointer-events: none;
 
@@ -27,46 +33,42 @@
 		}
 	}
 
-	// Sizes
-	&%size-Small {
-		&:not(.is-icon-text-replace) {
-			font-size: to-rem($pxValue: 14);
+	&[data-content] {
+		--icon-font-family: var(--db-base-icon-font-family);
+		--icon-font-size: var(--db-base-icon-font-size);
+	}
+
+	&[data-content="internal"] {
+		@include icon(glyph(link), 24, "outline", "after");
+	}
+
+	&[data-content="external"] {
+		@include icon(glyph(link-external), 24, "outline", "after");
+	}
+
+	&[data-content="internal"],
+	&[data-content="external"] {
+		&::after {
+			--icon-margin-before: var(--db-spacing-fixed-2xs);
+			margin-top: -3px;
 		}
 
-		&[rel],
-		&[data-icon],
-		&[data-icon-before] {
-			@include iconMeta(20);
-		}
-
-		&[data-icon-after]::after {
-			@include iconMeta($size: 20, $position: "after");
+		&:focus-visible {
+			outline-offset: var(--db-focus-outline-offset, 1px);
 		}
 	}
 
+	&[data-variant="primary"] {
+		@extend %db-primary-text-ia;
+	}
+
+	// data-size=small is defined by tonality in "@db-ui/base/build/scss/tonality"
 	&[data-size="small"] {
-		@extend %size-Small;
-	}
-
-	// Define the available icons
-	&[rel="configuration"] {
-		@include icon(glyph(settings), 24, "outline", $partial: $partial);
-	}
-
-	&[rel="messages"] {
-		@include icon(glyph(chat), 24, "outline", $partial: $partial);
-	}
-
-	&[rel="account"] {
-		@include icon(glyph(account), 24, "outline", $partial: $partial);
-	}
-
-	&[rel="configuration"],
-	&[rel="messages"],
-	&[rel="account"] {
-		&::before {
-			// preventing an underlined icon on click
-			display: inline-block;
+		&[data-content="internal"],
+		&[data-content="external"] {
+			&::after {
+				--icon-margin-before: var(--db-spacing-fixed-3xs);
+			}
 		}
 	}
 }

@@ -1,3 +1,6 @@
+@use "@db-ui/base/build/scss/variables" as *;
+@use "@db-ui/base/build/scss/helpers/functions" as *;
+@use "@db-ui/base/build/scss/icon/icons.helpers" as *;
 @import "../../../css/partials.meta";
 @import "accordion.variables";
 
@@ -13,7 +16,7 @@
 		align-items: center;
 		display: flex;
 
-		padding-block: $db-spacing-fixed-normal-xs;
+		padding-block: $db-spacing-fixed-regular-xs;
 		// Negating the padding left for moving the element into that direction with the same measures
 		transform: translateX(calc(var(--db-accordion---paddingLeft) * -1));
 		width: calc(
@@ -95,7 +98,7 @@
 
 		summary {
 			font-size: to-rem($pxValue: 20);
-			padding-block: $db-spacing-fixed-normal-m;
+			padding-block: $db-spacing-fixed-regular-m;
 
 			&::before {
 				--icon-font-size: #{to-rem($pxValue: 32)};

@@ -1,3 +1,5 @@
+@use "@db-ui/base/build/scss/variables" as *;
+
 // Box sizing
 html {
 	box-sizing: border-box;
@@ -40,7 +42,9 @@ nav,
 // General styles (TODO: most likely move those to DB UI Base)
 :root {
 	--db-focus-outline-offset: 1px;
-	--db-focus-outline-color: #2c95c4;
+	--db-focus-outline-color: #0087b9;
+
+	--db-disabled-text-opacity: 0.5;
 }
 
 // Focus styles

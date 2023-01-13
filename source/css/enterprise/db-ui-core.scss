@@ -3,25 +3,39 @@
 // Global setting to differentiate from the CSS partials rendering
 $partial: false;
 
+// Define the path for image, icons and font folders
+@use "@db-ui/base/build/scss/default.assets-paths" as * with (
+	$icons-path: "../../icons/",
+	$images-path: "../../images/",
+	$fonts-path: "../../fonts/"
+);
+
 // TODO: Let's include normalize e.g. via postcss-normalize
 @use "@csstools/normalize.css/normalize.css";
 
-@import "../helpers/functions";
-@import "../../_patterns/00-base/helpers";
+@use "@db-ui/base/build/scss/helpers/functions" as *;
+@use "../../_patterns/00-base/helpers" as *;
 
-@import "db-ui-core.variables";
+@use "db-ui-core.variables" as *;
 
-@import "../../_patterns/00-base/init.global";
-@import "../../_patterns/00-base/init";
+@use "@db-ui/base/build/scss/tonality" as *;
+@use "@db-ui/base/build/scss/color-placeholder" as *;
+
+@use "../../_patterns/00-base/init.global" as *;
+@use "../../_patterns/00-base/init" as *;
 
 // Importing helpers
-@import "../helpers/a11y";
-@import "../helpers/clearfix";
+@use "@db-ui/base/build/scss/helpers/functions" as *;
 
 // GENERAL
-@import "../../_patterns/00-base/type/enterprise/fonts";
-@import "../../_patterns/00-base/icons/enterprise/icons";
+@use "@db-ui/base/build/scss/font-faces" as *;
+@use "@db-ui/base/build/scss/icon/icons" as *;
 // @import "../../_patterns/00-base/03-body/background";
+
+:root {
+	@extend %db-ui-functional;
+	@extend %db-bg-neutral-0;
+}
 
 // ELEMENTS
 /* button */
@@ -30,12 +44,14 @@ $partial: false;
 @import "../../_patterns/01-elements/link/enterprise/link";
 /* image */
 @import "../../_patterns/01-elements/image/enterprise/image";
+/* logo */
+@import "../../_patterns/01-elements/logo/logo"; // /enterprise/logo
 
 /* checkbox */
 @import "../../_patterns/01-elements/checkbox/enterprise/checkbox";
 /* input */
 @import "../../_patterns/01-elements/input/enterprise/input";
-/* loading */
+/* loading indicator */
 @import "../../_patterns/01-elements/loading-indicator/loading-indicator";
 /* progress */
 @import "../../_patterns/01-elements/progress/enterprise/progress";
@@ -93,9 +109,15 @@ $partial: false;
 @import "../../_patterns/02-components/dropdown/enterprise/dropdown";
 
 // AREAS
+/* areas */
 @import "../../_patterns/03-areas/enterprise/areas";
+/* header */
 @import "../../_patterns/03-areas/00-header/enterprise/header";
+/* meta */
 @import "../../_patterns/03-areas/00-header/enterprise/meta";
+/* main */
 @import "../../_patterns/03-areas/01-main/enterprise/main";
+/* grid */
 @import "../../_patterns/03-areas/02-grid/enterprise/grid";
+/* footer */
 @import "../../_patterns/03-areas/03-footer/enterprise/footer";

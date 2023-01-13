@@ -4,7 +4,7 @@ title: Icon-Library Enterprise
 
 ## New iconset
 
-The included iconset has been developed in cooperation with the Center of Excellence @ Personenverkehr and replaces the previous enterprise only icons. More information: <https://marketingportal.extranet.deutschebahn.com/de/icons-2>
+The included iconset has been developed in cooperation with the Center of Excellence @ Personenverkehr and replaces the previous enterprise only icons. More information: <https://marketingportal.extranet.deutschebahn.com/marketingportal/Basiselemente/Icons/Funktionale-Icons-Architektur-und-Fahrzeuge>
 
 ## Usage
 

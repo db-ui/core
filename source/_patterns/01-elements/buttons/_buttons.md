@@ -9,7 +9,7 @@ state: complete
 
 #### SCSS (recommended)
 
-Extend one of the variant placeholders: `%variant-primary`, `%variant-secondary` or `%variant-tertiary`
+Extend one of the variant placeholders: `%variant-primary`, `%variant-secondary`, `%variant-tertiary` or `%variant-ghost`
 
 #### HTML attribute
 
@@ -19,11 +19,21 @@ You could set the different button variants via the `data-variant` attribute.
 
 #### SCSS (recommended)
 
-Extend one of the size SCSS placeholders in case that you don't want the default (regular): `%size-Small` or `%size-Large`
+Extend the size SCSS placeholder in case that you don't want the default (medium): `%size-Small`
 
 #### HTML attribute
 
-You could set the different button sizes via the `data-size` attribute, the default is "regular" and in that case is optional.
+You could set the different button sizes via the `data-size` attribute, the default is "medium" and in that case is optional.
+
+### Width
+
+#### SCSS (recommended)
+
+Extend the width placeholders in case that you don't want the default (content-length sized): `%width-full`
+
+#### HTML attribute
+
+You could differentiate the button width via the `data-width` attribute, choose value "full" for a button taking the whole containers width; the default is "auto" and in that case is optional.
 
 ## Usability
 

@@ -1,3 +1,5 @@
+@use "@db-ui/base/build/scss/variables" as *;
+@use "@db-ui/base/build/scss/helpers/functions" as *;
 @import "progress.variables";
 @import "../progress.variables";
 
@@ -35,7 +37,7 @@
 			progress {
 				--progress-value--backgroundColor: #{$progress-onDarkBackground-value-backgroundColor};
 
-				& + output {
+				& + label {
 					background-color: $progress-onDarkBackground-conic-inner-backgroundColor; // * TODO: possibly rework variable naming
 				}
 			}
