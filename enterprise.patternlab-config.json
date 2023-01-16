@@ -144,7 +144,20 @@
 				},
 				"toolLinks": {
 					"before": [],
-					"after": []
+					"after": [
+						{
+							"text": "Imprint",
+							"url": "https://www.dbsystel.de/dbsystel-en/legal-3715942",
+							"class": "",
+							"icon": "help"
+						},
+						{
+							"text": "Datenschutzerklärung",
+							"url": "https://db-ui.github.io/datenschutzerklaerung.html",
+							"class": "",
+							"icon": "help"
+						}
+					]
 				}
 			}
 		}
