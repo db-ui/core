@@ -13,7 +13,6 @@
 	{{#if target}} target="{{ target }}"{{/if }}
 	{{#if current}} aria-current="{{ current }}"{{/if }}
 	{{#if size }} data-size="{{ size }}"{{/if }}
-	{{#if icon}} data-icon="{{ icon }}"{{/if}}
-	{{#if icon-after}} data-icon-after="{{ icon-after }}"{{/if}}
-	>{{#if value }}{{{ value }}}{{ else }}{{ href }}{{/if }}
-</a>
+	{{#if data-variant}} data-variant="{{ data-variant }}"{{/if}}
+	{{#if data-content}} data-content="{{data-content}}"{{/if}}
+	>{{#if value }}{{{ value }}}{{ else }}{{ href }}{{/if }}</a>
