@@ -1,16 +1,22 @@
 {
 	"navItems": [
 		{
-			"href": "#",
-			"value": "Datenschutz"
+			"href": "https://db-ui.github.io/datenschutzerklaerung.html",
+			"value": "Datenschutzerklärung",
+			"lang": "de",
+			"hreflang": "de",
+			"rel": "noopener noreferrer",
+			"target": "_blank"
 		},
 		{
-			"href": "#",
-			"value": "Impressum"
+			"href": "https://www.dbsystel.de/dbsystel-en/legal-3715942",
+			"value": "Imprint",
+			"rel": "noopener noreferrer",
+			"target": "_blank"
 		},
 		{
 			"href": "mailto:db-ux-designsystem@deutschebahn.com",
-			"value": "Kontakt"
+			"value": "Contact"
 		},
 		{
 			"href": "#",
