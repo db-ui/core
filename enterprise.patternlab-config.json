@@ -160,6 +160,11 @@
 					]
 				}
 			}
+		},
+		"plugin-node-patternlab-inline-remote-assets": {
+			"enabled": true,
+			"initialized": false,
+			"options": {}
 		}
 	}
 }
