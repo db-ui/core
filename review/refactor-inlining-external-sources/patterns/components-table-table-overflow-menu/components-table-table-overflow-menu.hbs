@@ -1,5 +1,5 @@
 {{! TODO: evaluate on the correct role and aria-label in here }}
-<!-- [html-validate-disable-next no-inline-style -- we're doing inline-styling for simplification here] -->
+{{#if font-size }}<!-- [html-validate-disable-next no-inline-style -- we're doing inline-styling for simplification here] -->{{/if }}
 <table class="cmp-table {{ styleModifier }}"
 	{{#if border }} data-border="{{ border }}"{{/if }}
 	{{#if rows }} data-rows="{{ rows }}"{{/if }}
