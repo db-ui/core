@@ -12,18 +12,17 @@
 
 
 	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1673882980689" media="all">
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.classes.css?1673882980689" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1674018239159" media="all">
 
 	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1673882980689" media="all">
-	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1673882980689" media="all">
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1673882980689" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1674018239159" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1674018239159" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1674018239159" media="all">
 	<!-- dialog polyfill //-->
-	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1673882980689" media="all">
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1674018239159" media="all">
 
 	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1673882980689" media="all">
+	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1674018239159" media="all">
 	<!-- End Pattern Lab -->
 
 
@@ -115,7 +114,8 @@ documentation has useful tips on creating an effective description. //-->
 					
 					
 					
-					>Startseite</a>
+					>Startseite
+				</a>
 	
 				<ul>
 						<li aria-haspopup="true">
@@ -135,7 +135,8 @@ documentation has useful tips on creating an effective description. //-->
 								
 								
 								
-								>Submenu 01</a>
+								>Submenu 01
+							</a>
 	
 								<ul>
 										<li><a
@@ -154,7 +155,8 @@ documentation has useful tips on creating an effective description. //-->
 		
 		
 		
-		>Sub 01 Sub 01</a>
+		>Sub 01 Sub 01
+	</a>
 	</li>
 										<li><a
 		href="#"
@@ -172,7 +174,8 @@ documentation has useful tips on creating an effective description. //-->
 		
 		
 		
-		>Sub 01 Sub 02</a>
+		>Sub 01 Sub 02
+	</a>
 	</li>
 										<li><a
 		href="#"
@@ -190,7 +193,8 @@ documentation has useful tips on creating an effective description. //-->
 		
 		
 		
-		>Sub 01 Sub 03</a>
+		>Sub 01 Sub 03
+	</a>
 	</li>
 								</ul>
 						</li>
@@ -211,7 +215,8 @@ documentation has useful tips on creating an effective description. //-->
 								
 								
 								
-								>Submenu 02</a>
+								>Submenu 02
+							</a>
 	
 								<ul>
 										<li><a
@@ -230,7 +235,8 @@ documentation has useful tips on creating an effective description. //-->
 		
 		
 		
-		>Sub 02 Sub 01</a>
+		>Sub 02 Sub 01
+	</a>
 	</li>
 										<li><a
 		href="#"
@@ -248,7 +254,8 @@ documentation has useful tips on creating an effective description. //-->
 		
 		
 		
-		>Sub 02 Sub 02</a>
+		>Sub 02 Sub 02
+	</a>
 	</li>
 										<li><a
 		href="#"
@@ -266,7 +273,8 @@ documentation has useful tips on creating an effective description. //-->
 		
 		
 		
-		>Sub 02 Sub 03</a>
+		>Sub 02 Sub 03
+	</a>
 	</li>
 								</ul>
 						</li>
@@ -287,7 +295,8 @@ documentation has useful tips on creating an effective description. //-->
 								
 								
 								
-								>Submenu 03</a>
+								>Submenu 03
+							</a>
 	
 						</li>
 				</ul>
@@ -309,7 +318,8 @@ documentation has useful tips on creating an effective description. //-->
 					
 					
 					
-					>Aufträge</a>
+					>Aufträge
+				</a>
 	
 			</li>
 			<li>
@@ -329,7 +339,8 @@ documentation has useful tips on creating an effective description. //-->
 					
 					
 					
-					>News</a>
+					>News
+				</a>
 	
 			</li>
 		</ul>
@@ -348,35 +359,27 @@ documentation has useful tips on creating an effective description. //-->
 
 	<div class="rea-meta">
 		<form class="cmp-sitesearch" action="#" method="post" role="search">
-			<div class="elm-input"
+			<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+			<input type="search"
+				class="elm-input "
+				placeholder="Suchen …"
+				name="input00"
+				id="input00"
+				
+				value=""
 				
 				
+				
+				
+				aria-labelledby="input00-label"
 				>
-				<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
-				<!-- [html-validate-disable-next input-missing-label] -->
-				<input type="search"
-					
-					placeholder="Suchen …"
-					name="input00"
-					id="input00"
-					
-					value=""
-					
-					
-					
-					
-					aria-labelledby="input00-label">
-				<label for="input00"
-					aria-hidden="true"
-					id="input00-label">Suche</label>
+			<label class="elm-label"
+				for="input00"
+				aria-hidden="true"
+				id="input00-label">Suche</label>
 			
-				
 			
-				
-				<span class="elm-state-icon"></span>
-			</div>
 			<button class="elm-button "
-				
 				
 				
 				title="Title text"
@@ -384,10 +387,8 @@ documentation has useful tips on creating an effective description. //-->
 				
 				
 				
-				
 				>
 				Suchen
-				
 			</button>
 		</form>
 		<ul class="cmp-metanavigation">
@@ -408,7 +409,8 @@ documentation has useful tips on creating an effective description. //-->
 					
 					
 					
-					>Einstellungen</a>
+					>Einstellungen
+				</a>
 			</li>
 			<li>
 				<a
@@ -427,7 +429,8 @@ documentation has useful tips on creating an effective description. //-->
 					
 					
 					
-					>Nachrichten</a>
+					>Nachrichten
+				</a>
 			</li>
 		</ul>
 		<!-- [html-validate-disable-next prefer-native-element] -->
@@ -449,7 +452,8 @@ documentation has useful tips on creating an effective description. //-->
 					
 					
 					
-					>EN</a>
+					>EN
+				</a>
 			</li>
 			<li role="option" aria-selected="true">
 				<a
@@ -468,7 +472,8 @@ documentation has useful tips on creating an effective description. //-->
 					
 					
 					
-					>DE</a>
+					>DE
+				</a>
 			</li>
 			<li role="option">
 				<a
@@ -487,7 +492,8 @@ documentation has useful tips on creating an effective description. //-->
 					
 					
 					
-					>FR</a>
+					>FR
+				</a>
 			</li>
 		</ul>
 			<a
@@ -506,7 +512,8 @@ documentation has useful tips on creating an effective description. //-->
 				
 				
 				
-				>Login</a>
+				>Login
+			</a>
 	</div>
 </header>
 
@@ -575,7 +582,8 @@ documentation has useful tips on creating an effective description. //-->
 					
 					
 					
-					>Startseite</a>
+					>Startseite
+				</a>
 	
 				<ul>
 						<li aria-haspopup="true">
@@ -595,7 +603,8 @@ documentation has useful tips on creating an effective description. //-->
 								
 								
 								
-								>Submenu 01</a>
+								>Submenu 01
+							</a>
 	
 								<ul>
 										<li><a
@@ -614,7 +623,8 @@ documentation has useful tips on creating an effective description. //-->
 		
 		
 		
-		>Sub 01 Sub 01</a>
+		>Sub 01 Sub 01
+	</a>
 	</li>
 										<li><a
 		href="#"
@@ -632,7 +642,8 @@ documentation has useful tips on creating an effective description. //-->
 		
 		
 		
-		>Sub 01 Sub 02</a>
+		>Sub 01 Sub 02
+	</a>
 	</li>
 										<li><a
 		href="#"
@@ -650,7 +661,8 @@ documentation has useful tips on creating an effective description. //-->
 		
 		
 		
-		>Sub 01 Sub 03</a>
+		>Sub 01 Sub 03
+	</a>
 	</li>
 								</ul>
 						</li>
@@ -671,7 +683,8 @@ documentation has useful tips on creating an effective description. //-->
 								
 								
 								
-								>Submenu 02</a>
+								>Submenu 02
+							</a>
 	
 								<ul>
 										<li><a
@@ -690,7 +703,8 @@ documentation has useful tips on creating an effective description. //-->
 		
 		
 		
-		>Sub 02 Sub 01</a>
+		>Sub 02 Sub 01
+	</a>
 	</li>
 										<li><a
 		href="#"
@@ -708,7 +722,8 @@ documentation has useful tips on creating an effective description. //-->
 		
 		
 		
-		>Sub 02 Sub 02</a>
+		>Sub 02 Sub 02
+	</a>
 	</li>
 										<li><a
 		href="#"
@@ -726,7 +741,8 @@ documentation has useful tips on creating an effective description. //-->
 		
 		
 		
-		>Sub 02 Sub 03</a>
+		>Sub 02 Sub 03
+	</a>
 	</li>
 								</ul>
 						</li>
@@ -747,7 +763,8 @@ documentation has useful tips on creating an effective description. //-->
 								
 								
 								
-								>Submenu 03</a>
+								>Submenu 03
+							</a>
 	
 						</li>
 				</ul>
@@ -769,7 +786,8 @@ documentation has useful tips on creating an effective description. //-->
 					
 					
 					
-					>Aufträge</a>
+					>Aufträge
+				</a>
 	
 			</li>
 			<li>
@@ -789,7 +807,8 @@ documentation has useful tips on creating an effective description. //-->
 					
 					
 					
-					>News</a>
+					>News
+				</a>
 	
 			</li>
 		</ul>
@@ -808,35 +827,27 @@ documentation has useful tips on creating an effective description. //-->
 
 	<div class="rea-meta">
 		<form class="cmp-sitesearch" action="#" method="post" role="search">
-			<div class="elm-input"
+			<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+			<input type="search"
+				class="elm-input "
+				placeholder="Suchen …"
+				name="input00"
+				id="input00"
+				
+				value=""
 				
 				
+				
+				
+				aria-labelledby="input00-label"
 				>
-				<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
-				<!-- [html-validate-disable-next input-missing-label] -->
-				<input type="search"
-					
-					placeholder="Suchen …"
-					name="input00"
-					id="input00"
-					
-					value=""
-					
-					
-					
-					
-					aria-labelledby="input00-label">
-				<label for="input00"
-					aria-hidden="true"
-					id="input00-label">Suche</label>
+			<label class="elm-label"
+				for="input00"
+				aria-hidden="true"
+				id="input00-label">Suche</label>
 			
-				
 			
-				
-				<span class="elm-state-icon"></span>
-			</div>
 			<button class="elm-button "
-				
 				
 				
 				title="Title text"
@@ -844,10 +855,8 @@ documentation has useful tips on creating an effective description. //-->
 				
 				
 				
-				
 				>
 				Suchen
-				
 			</button>
 		</form>
 		<ul class="cmp-metanavigation">
@@ -868,7 +877,8 @@ documentation has useful tips on creating an effective description. //-->
 					
 					
 					
-					>Einstellungen</a>
+					>Einstellungen
+				</a>
 			</li>
 			<li>
 				<a
@@ -887,7 +897,8 @@ documentation has useful tips on creating an effective description. //-->
 					
 					
 					
-					>Nachrichten</a>
+					>Nachrichten
+				</a>
 			</li>
 		</ul>
 		<!-- [html-validate-disable-next prefer-native-element] -->
@@ -909,7 +920,8 @@ documentation has useful tips on creating an effective description. //-->
 					
 					
 					
-					>EN</a>
+					>EN
+				</a>
 			</li>
 			<li role="option" aria-selected="true">
 				<a
@@ -928,7 +940,8 @@ documentation has useful tips on creating an effective description. //-->
 					
 					
 					
-					>DE</a>
+					>DE
+				</a>
 			</li>
 			<li role="option">
 				<a
@@ -947,30 +960,27 @@ documentation has useful tips on creating an effective description. //-->
 					
 					
 					
-					>FR</a>
+					>FR
+				</a>
 			</li>
 		</ul>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
+			
 			<details class="cmp-dropdown is-account">
 				<summary>Ina Wheeler</summary>
 				<menu type="toolbar">
 					<li><button class="elm-button  is-account"
 				
 				
-				
 				title="Title text"
 				type="button"
-				
 				
 				
 				
 				>
 				Profileinstellungen
-				
 			</button>
 			</li>
 					<li><button class="elm-button  is-account"
-				
 				
 				
 				title="Title text"
@@ -978,10 +988,8 @@ documentation has useful tips on creating an effective description. //-->
 				
 				
 				
-				
 				>
 				Logout
-				
 			</button>
 			</li>
 				</menu>
@@ -1034,35 +1042,27 @@ documentation has useful tips on creating an effective description. //-->
 			<div class="pl-js-pattern-example">
 			<div class="rea-meta">
 	<form class="cmp-sitesearch" action="#" method="post" role="search">
-		<div class="elm-input"
+		<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+		<input type="search"
+			class="elm-input "
+			placeholder="Suchen …"
+			name="input00"
+			id="input00"
+			
+			value=""
 			
 			
+			
+			
+			aria-labelledby="input00-label"
 			>
-			<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
-			<!-- [html-validate-disable-next input-missing-label] -->
-			<input type="search"
-				
-				placeholder="Suchen …"
-				name="input00"
-				id="input00"
-				
-				value=""
-				
-				
-				
-				
-				aria-labelledby="input00-label">
-			<label for="input00"
-				aria-hidden="true"
-				id="input00-label">Suche</label>
+		<label class="elm-label"
+			for="input00"
+			aria-hidden="true"
+			id="input00-label">Suche</label>
 		
-			
 		
-			
-			<span class="elm-state-icon"></span>
-		</div>
 		<button class="elm-button "
-			
 			
 			
 			title="Title text"
@@ -1070,10 +1070,8 @@ documentation has useful tips on creating an effective description. //-->
 			
 			
 			
-			
 			>
 			Suchen
-			
 		</button>
 	</form>
 	<ul class="cmp-metanavigation">
@@ -1094,7 +1092,8 @@ documentation has useful tips on creating an effective description. //-->
 				
 				
 				
-				>Einstellungen</a>
+				>Einstellungen
+			</a>
 		</li>
 		<li>
 			<a
@@ -1113,7 +1112,8 @@ documentation has useful tips on creating an effective description. //-->
 				
 				
 				
-				>Nachrichten</a>
+				>Nachrichten
+			</a>
 		</li>
 	</ul>
 	<!-- [html-validate-disable-next prefer-native-element] -->
@@ -1135,7 +1135,8 @@ documentation has useful tips on creating an effective description. //-->
 				
 				
 				
-				>EN</a>
+				>EN
+			</a>
 		</li>
 		<li role="option" aria-selected="true">
 			<a
@@ -1154,7 +1155,8 @@ documentation has useful tips on creating an effective description. //-->
 				
 				
 				
-				>DE</a>
+				>DE
+			</a>
 		</li>
 		<li role="option">
 			<a
@@ -1173,7 +1175,8 @@ documentation has useful tips on creating an effective description. //-->
 				
 				
 				
-				>FR</a>
+				>FR
+			</a>
 		</li>
 	</ul>
 		<a
@@ -1192,7 +1195,8 @@ documentation has useful tips on creating an effective description. //-->
 			
 			
 			
-			>Login</a>
+			>Login
+		</a>
 </div>
 
 			</div><!--end pl-js-pattern-example-->
@@ -1249,10 +1253,10 @@ documentation has useful tips on creating an effective description. //-->
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1673882980689">
+<script id="pl-js-polyfill-insert-1674018239159">
   (function() {
     if (self != top) {
-      var cb = '1673882980689';
+      var cb = '1674018239159';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -1265,7 +1269,7 @@ documentation has useful tips on creating an effective description. //-->
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1673882980689" nomodule>
+<script id="pl-js-insert-1674018239159" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 

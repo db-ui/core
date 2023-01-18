@@ -12,18 +12,17 @@
 
 
 	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1673882980689" media="all">
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.classes.css?1673882980689" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1674018239159" media="all">
 
 	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1673882980689" media="all">
-	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1673882980689" media="all">
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1673882980689" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1674018239159" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1674018239159" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1674018239159" media="all">
 	<!-- dialog polyfill //-->
-	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1673882980689" media="all">
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1674018239159" media="all">
 
 	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1673882980689" media="all">
+	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1674018239159" media="all">
 	<!-- End Pattern Lab -->
 
 
@@ -184,7 +183,8 @@ documentation has useful tips on creating an effective description. //-->
 	
 	
 	
-	>Text Link</a>
+	>Text Link
+</a>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit
 	</p>
 	<p>
@@ -204,7 +204,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit
 	
 	
 	
-	>Text Link (disabled)</a>
+	>Text Link (disabled)
+</a>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit
 	</p>
 
@@ -223,11 +224,31 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit
 		
 		
 		
-		 data-variant="primary"
-		 data-content="internal"
-		>Teaser link Primary</a>
+		
+		
+		>Teaser link
+	</a>
 </p>
-
+<p class="">
+	<a
+		href="#"
+		class="elm-link "
+		title="Title text"
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		 data-icon="settings"
+		
+		>Teaser link
+	</a>
+</p>
 <p class="">
 	<a
 		href="#"
@@ -244,28 +265,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit
 		
 		
 		
-		 data-content="internal"
-		>Teaser link (disabled)</a>
-</p>
-
-<p class="">
-	<a
-		href="#"
-		class="elm-link "
-		title="Title text"
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		 data-content="internal"
-		>Teaser link Internal (Default)</a>
+		>Teaser link (disabled)
+	</a>
 </p>
 <p class="">
 	<a
@@ -274,6 +276,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit
 		title="Title text"
 		
 		
+		 aria-disabled="true" tabindex="-1"
 		
 		
 		
@@ -282,9 +285,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit
 		
 		
 		
-		
-		 data-content="external"
-		>External link External</a>
+		 data-icon-after="account"
+		>Teaser Link (disabled)
+	</a>
 </p>
 
 			</div><!--end pl-js-pattern-example-->
@@ -346,11 +349,31 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit
 		
 		
 		 data-size="small"
-		 data-variant="primary"
-		 data-content="internal"
-		>Teaser link Primary</a>
+		
+		
+		>Teaser link
+	</a>
 </p>
-
+<p class="">
+	<a
+		href="#"
+		class="elm-link "
+		title="Title text"
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		 data-size="small"
+		 data-icon="settings"
+		
+		>Teaser link
+	</a>
+</p>
 <p class="">
 	<a
 		href="#"
@@ -367,28 +390,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit
 		
 		 data-size="small"
 		
-		 data-content="internal"
-		>Teaser link (disabled)</a>
-</p>
-
-<p class="">
-	<a
-		href="#"
-		class="elm-link "
-		title="Title text"
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		 data-size="small"
-		
-		 data-content="internal"
-		>Teaser link Internal (Default)</a>
+		>Teaser link (disabled)
+	</a>
 </p>
 <p class="">
 	<a
@@ -397,7 +401,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit
 		title="Title text"
 		
 		
-		
+		 aria-disabled="true" tabindex="-1"
 		
 		
 		
@@ -406,274 +410,15 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit
 		
 		 data-size="small"
 		
-		 data-content="external"
-		>External link External</a>
+		 data-icon-after="account"
+		>Teaser Link (disabled)
+	</a>
 </p>
 
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-elements-links-small" class="pl-js-pattern-data">
 			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-link","lineagePath":"../../patterns/elements-link-_link/elements-link-_link.rendered.html","lineageState":"inreview"}],"lineage":[{"lineagePattern":"elements-link","lineagePath":"../../patterns/elements-link-_link/elements-link-_link.rendered.html","lineageState":"inreview"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"link"},"patternExtension":"hbs","patternName":"Links Small","patternPartial":"elements-links-small","patternState":"inreview","patternEngineName":"handlebars","extraOutput":{}}
-			</script>
-		
-		</div><!--end pl-c-pattern-->
-		<div id="elements-tonality" class="pl-c-pattern">
-		
-			<div class="pl-c-pattern__header">
-		
-				<h3 class="pl-c-pattern__title">
-		
-					<a href="../../patterns/elements-link-tonality&#x2F;elements-link-tonality.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-tonality" title="Link to Pattern">
-						Tonality
-		
-						<span class="pl-c-pattern-state pl-c-pattern-state--inreview" title="inreview"></span>
-		
-					</a><!--end pl-c-pattern__title-link-->
-		
-				</h3><!--end pl-c-pattern__title-->
-		
-				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-tonality" data-patternpartial="elements-tonality" title="View Pattern Info" type="button">
-					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
-					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
-						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
-							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
-							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
-						</svg>
-		
-						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
-							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
-							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
-							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
-						</svg>
-				</button>
-		
-			</div><!--end pl-c-pattern__header-->
-		
-			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-tonality">
-		    </div><!--end pl-c-pattern__extra-->
-		
-			<div class="pl-js-pattern-example">
-			
-<p class="db-ui-functional">
-	<a
-		href="#"
-		class="elm-link "
-		title="Title text"
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		 data-content="internal"
-		>Internal link functional</a>
-	<a
-		href="#"
-		class="elm-link "
-		title="Title text"
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		 data-content="external"
-		>External link functional</a>
-	<a
-		href="#"
-		class="elm-link "
-		title="Title text"
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		 data-size="small"
-		
-		 data-content="internal"
-		>Internal link functional small</a>
-	<a
-		href="#"
-		class="elm-link "
-		title="Title text"
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		 data-size="small"
-		
-		 data-content="external"
-		>External link functional small</a>
-</p>
-
-
-<p class="db-ui-regular">
-	<a
-		href="#"
-		class="elm-link "
-		title="Title text"
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		 data-content="internal"
-		>Internal link regular (Default)</a>
-	<a
-		href="#"
-		class="elm-link "
-		title="Title text"
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		 data-content="external"
-		>External link regular (Default)</a>
-	<a
-		href="#"
-		class="elm-link "
-		title="Title text"
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		 data-size="small"
-		
-		 data-content="internal"
-		>Internal link regular (Default) small</a>
-	<a
-		href="#"
-		class="elm-link "
-		title="Title text"
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		 data-size="small"
-		
-		 data-content="external"
-		>External link regular (Default) small</a>
-</p>
-
-
-
-<p class="db-ui-expressive">
-	<a
-		href="#"
-		class="elm-link "
-		title="Title text"
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		 data-content="internal"
-		>Internal link expressive</a>
-	<a
-		href="#"
-		class="elm-link "
-		title="Title text"
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		 data-content="external"
-		>External link expressive</a>
-	<a
-		href="#"
-		class="elm-link "
-		title="Title text"
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		 data-size="small"
-		
-		 data-content="internal"
-		>Internal link expressive small</a>
-	<a
-		href="#"
-		class="elm-link "
-		title="Title text"
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		 data-size="small"
-		
-		 data-content="external"
-		>External link expressive small</a>
-</p>
-
-			</div><!--end pl-js-pattern-example-->
-		
-			<script type="text/json" id="pl-pattern-data-elements-tonality" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-link","lineagePath":"../../patterns/elements-link-_link/elements-link-_link.rendered.html","lineageState":"inreview"}],"lineage":[{"lineagePattern":"elements-link","lineagePath":"../../patterns/elements-link-_link/elements-link-_link.rendered.html","lineageState":"inreview"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"link"},"patternExtension":"hbs","patternName":"Tonality","patternPartial":"elements-tonality","patternState":"inreview","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -724,10 +469,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1673882980689">
+<script id="pl-js-polyfill-insert-1674018239159">
   (function() {
     if (self != top) {
-      var cb = '1673882980689';
+      var cb = '1674018239159';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -740,7 +485,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1673882980689" nomodule>
+<script id="pl-js-insert-1674018239159" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 
