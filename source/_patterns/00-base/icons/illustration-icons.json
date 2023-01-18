@@ -216,7 +216,7 @@
 				"icon": "news/db_ic_il_newspaper"
 			},
 			{
-				"icon": "news/db_ic_il_s_bahn_magazin_muenchen"
+				"icon": "news/db_ic_il_s-bahn_magazine_munich"
 			}
 		],
 		"Station": [
@@ -306,7 +306,7 @@
 				"icon": "transportation/db_ic_il_electric_scooter"
 			},
 			{
-				"icon": "transportation/db_ic_il_ev_car"
+				"icon": "transportation/db_ic_il_ev-car"
 			},
 			{
 				"icon": "transportation/db_ic_il_ferry"
@@ -333,7 +333,7 @@
 				"icon": "transportation/db_ic_il_scooter"
 			},
 			{
-				"icon": "transportation/db_ic_il_self_driving_side_view"
+				"icon": "transportation/db_ic_il_self-driving_side_view"
 			},
 			{
 				"icon": "transportation/db_ic_il_speedboat"
@@ -389,7 +389,7 @@
 				"icon": "travel/db_ic_il_timetable"
 			},
 			{
-				"icon": "travel/db_ic_il_advertising_transportation"
+				"icon": "travel/db_ic_il_transportation_advertising"
 			},
 			{
 				"icon": "travel/db_ic_il_zuginformation"
