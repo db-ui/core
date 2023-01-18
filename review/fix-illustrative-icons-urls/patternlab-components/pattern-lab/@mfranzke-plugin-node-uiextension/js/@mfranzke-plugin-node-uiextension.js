@@ -11,6 +11,7 @@ var PluginUIExtension = {
 
     var rightList = document.querySelector('.pl-c-tools__list');
     rightList.prepend(/*TOOLLINKS-BEFORE-SNIPPET*/);
-    rightList.append(/*TOOLLINKS-AFTER-SNIPPET*/);
+    rightList.append(document.createRange().createContextualFragment('<li class="pl-c-tools__item"><pl-button target="_blank" href="https://www.dbsystel.de/dbsystel-en/legal-3715942">Imprint<pl-icon name="help" slot="after"></pl-icon></pl-button></li>'),
+document.createRange().createContextualFragment('<li class="pl-c-tools__item"><pl-button target="_blank" href="https://db-ui.github.io/datenschutzerklaerung.html">Datenschutzerklärung<pl-icon name="help" slot="after"></pl-icon></pl-button></li>'));
   }
 };

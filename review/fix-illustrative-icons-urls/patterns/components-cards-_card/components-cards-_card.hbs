@@ -1,4 +1,3 @@
-<!-- [html-validate-disable-next element-permitted-content, element-permitted-parent -- we're only providing a partial here] -->
 <li class="cmp-card" data-variant="{{ variant }}">
 	{{#if link }}<a href="#">{{/if }}
 		<figure>
@@ -10,7 +9,7 @@
 				{{> elements-image src="../../icons/functional/images/navigation/db_ic_list_20.svg" alt="" role="presentation" }}
 			{{/if_eq }}
 			<figcaption>
-				<!-- [html-validate-disable-next heading-level] -->
+				<!-- [html-validate-disable-next heading-level, no-unused-disable] -->
 				<h3 class="elm-headline">{{ title }}</h3>
 				{{#if text }}<p>{{{ text }}}</p>{{/if }}
 			</figcaption>
