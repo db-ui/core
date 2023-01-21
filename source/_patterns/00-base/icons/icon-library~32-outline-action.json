@@ -6,16 +6,19 @@
 			"icon-glyph": "account"
 		},
 		{
-			"icon-glyph": "add-circle"
-		},
-		{
 			"icon-glyph": "add"
 		},
 		{
-			"icon-glyph": "alarm-add"
+			"icon-glyph": "add-circle"
+		},
+		{
+			"icon-glyph": "add-link"
 		},
 		{
 			"icon-glyph": "alarm"
+		},
+		{
+			"icon-glyph": "alarm-add"
 		},
 		{
 			"icon-glyph": "alert"
@@ -24,13 +27,52 @@
 			"icon-glyph": "alert-off"
 		},
 		{
+			"icon-glyph": "attachment"
+		},
+		{
+			"icon-glyph": "augmented-reality"
+		},
+		{
+			"icon-glyph": "block"
+		},
+		{
+			"icon-glyph": "bookmark"
+		},
+		{
+			"icon-glyph": "bug"
+		},
+		{
+			"icon-glyph": "build"
+		},
+		{
 			"icon-glyph": "calendar"
+		},
+		{
+			"icon-glyph": "camera"
+		},
+		{
+			"icon-glyph": "cash"
 		},
 		{
 			"icon-glyph": "check-circle"
 		},
 		{
+			"icon-glyph": "cloud"
+		},
+		{
+			"icon-glyph": "cloud-download"
+		},
+		{
+			"icon-glyph": "cloud-upload"
+		},
+		{
+			"icon-glyph": "copy"
+		},
+		{
 			"icon-glyph": "credit-card"
+		},
+		{
+			"icon-glyph": "dashboard"
 		},
 		{
 			"icon-glyph": "delete"
@@ -51,7 +93,25 @@
 			"icon-glyph": "edit"
 		},
 		{
+			"icon-glyph": "face-neutral"
+		},
+		{
+			"icon-glyph": "face-sad"
+		},
+		{
+			"icon-glyph": "face-smiling"
+		},
+		{
 			"icon-glyph": "filter"
+		},
+		{
+			"icon-glyph": "fingerprint"
+		},
+		{
+			"icon-glyph": "folder"
+		},
+		{
+			"icon-glyph": "folder-open"
 		},
 		{
 			"icon-glyph": "generic-card"
@@ -66,22 +126,49 @@
 			"icon-glyph": "help"
 		},
 		{
+			"icon-glyph": "image"
+		},
+		{
 			"icon-glyph": "info"
+		},
+		{
+			"icon-glyph": "key"
 		},
 		{
 			"icon-glyph": "legal"
 		},
 		{
+			"icon-glyph": "lightbulb"
+		},
+		{
+			"icon-glyph": "lock-close"
+		},
+		{
+			"icon-glyph": "lock-open"
+		},
+		{
 			"icon-glyph": "log-out"
 		},
 		{
+			"icon-glyph": "logbook"
+		},
+		{
 			"icon-glyph": "minus"
+		},
+		{
+			"icon-glyph": "pin"
 		},
 		{
 			"icon-glyph": "print"
 		},
 		{
 			"icon-glyph": "remove"
+		},
+		{
+			"icon-glyph": "resize"
+		},
+		{
+			"icon-glyph": "save"
 		},
 		{
 			"icon-glyph": "schedule"
@@ -91,6 +178,9 @@
 		},
 		{
 			"icon-glyph": "send"
+		},
+		{
+			"icon-glyph": "sepa"
 		},
 		{
 			"icon-glyph": "settings"
@@ -105,7 +195,13 @@
 			"icon-glyph": "shopping-basket"
 		},
 		{
+			"icon-glyph": "shopping-basket-disabled"
+		},
+		{
 			"icon-glyph": "shopping-cart"
+		},
+		{
+			"icon-glyph": "shopping-cart-disabled"
 		},
 		{
 			"icon-glyph": "star"
@@ -117,13 +213,22 @@
 			"icon-glyph": "swap-vertical"
 		},
 		{
+			"icon-glyph": "thumb-up"
+		},
+		{
+			"icon-glyph": "thumb-up-down"
+		},
+		{
+			"icon-glyph": "undo"
+		},
+		{
 			"icon-glyph": "upload"
 		},
 		{
-			"icon-glyph": "visibility-off"
+			"icon-glyph": "visibility"
 		},
 		{
-			"icon-glyph": "visibility"
+			"icon-glyph": "visibility-off"
 		},
 		{
 			"icon-glyph": "website"
@@ -133,21 +238,6 @@
 		},
 		{
 			"icon-glyph": "zoom-out"
-		},
-		{
-			"icon-glyph": "duplicate"
-		},
-		{
-			"icon-glyph": "lock-close"
-		},
-		{
-			"icon-glyph": "lock-open"
-		},
-		{
-			"icon-glyph": "shopping-basket-disabled"
-		},
-		{
-			"icon-glyph": "shopping-cart-disabled"
 		}
 	]
 }

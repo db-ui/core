@@ -6,13 +6,13 @@
 			"icon-glyph": "error"
 		},
 		{
-			"icon-glyph": "error-triangle"
-		},
-		{
 			"icon-glyph": "notify"
 		},
 		{
 			"icon-glyph": "notify-cutoff"
+		},
+		{
+			"icon-glyph": "warning"
 		}
 	]
 }

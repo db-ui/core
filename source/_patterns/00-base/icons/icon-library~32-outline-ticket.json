@@ -12,6 +12,9 @@
 			"icon-glyph": "bahncard"
 		},
 		{
+			"icon-glyph": "best-price"
+		},
+		{
 			"icon-glyph": "commuter-ticket"
 		},
 		{
@@ -22,6 +25,12 @@
 		},
 		{
 			"icon-glyph": "komfort-check-in"
+		},
+		{
+			"icon-glyph": "multiple-cards"
+		},
+		{
+			"icon-glyph": "multiple-passenger"
 		},
 		{
 			"icon-glyph": "my-travel"
@@ -36,13 +45,13 @@
 			"icon-glyph": "return-journey"
 		},
 		{
+			"icon-glyph": "ticket"
+		},
+		{
 			"icon-glyph": "ticket-discount"
 		},
 		{
 			"icon-glyph": "ticket-multiple"
-		},
-		{
-			"icon-glyph": "ticket"
 		},
 		{
 			"icon-glyph": "time-outward-journey"
@@ -52,6 +61,9 @@
 		},
 		{
 			"icon-glyph": "timetable"
+		},
+		{
+			"icon-glyph": "travel-insurance"
 		}
 	]
 }

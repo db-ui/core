@@ -33,19 +33,19 @@
 			"icon-glyph": "expand-more"
 		},
 		{
-			"icon-glyph": "fullscreen-exit"
+			"icon-glyph": "fullscreen"
 		},
 		{
-			"icon-glyph": "fullscreen"
+			"icon-glyph": "fullscreen-exit"
 		},
 		{
 			"icon-glyph": "grid-view"
 		},
 		{
-			"icon-glyph": "link-external"
+			"icon-glyph": "link"
 		},
 		{
-			"icon-glyph": "link"
+			"icon-glyph": "link-external"
 		},
 		{
 			"icon-glyph": "list"

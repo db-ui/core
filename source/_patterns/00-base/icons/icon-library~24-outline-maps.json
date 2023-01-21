@@ -4,6 +4,12 @@
 	"default": true,
 	"icons": [
 		{
+			"icon-glyph": "gps"
+		},
+		{
+			"icon-glyph": "gps-north"
+		},
+		{
 			"icon-glyph": "home"
 		},
 		{
@@ -13,16 +19,19 @@
 			"icon-glyph": "map-stop"
 		},
 		{
+			"icon-glyph": "parking"
+		},
+		{
 			"icon-glyph": "place"
 		},
 		{
 			"icon-glyph": "set-position"
 		},
 		{
-			"icon-glyph": "trainstation"
+			"icon-glyph": "station"
 		},
 		{
-			"icon-glyph": "gps"
+			"icon-glyph": "train-station"
 		}
 	]
 }

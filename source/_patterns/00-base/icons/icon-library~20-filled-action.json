@@ -12,16 +12,43 @@
 			"icon-glyph": "alert"
 		},
 		{
+			"icon-glyph": "block"
+		},
+		{
+			"icon-glyph": "bookmark"
+		},
+		{
+			"icon-glyph": "build"
+		},
+		{
+			"icon-glyph": "camera"
+		},
+		{
 			"icon-glyph": "check-circle"
 		},
 		{
+			"icon-glyph": "cloud"
+		},
+		{
+			"icon-glyph": "copy"
+		},
+		{
 			"icon-glyph": "credit-card"
+		},
+		{
+			"icon-glyph": "dashboard"
 		},
 		{
 			"icon-glyph": "discount"
 		},
 		{
 			"icon-glyph": "edit"
+		},
+		{
+			"icon-glyph": "folder"
+		},
+		{
+			"icon-glyph": "folder-open"
 		},
 		{
 			"icon-glyph": "generic-card"
@@ -33,31 +60,10 @@
 			"icon-glyph": "help"
 		},
 		{
-			"icon-glyph": "info"
-		},
-		{
-			"icon-glyph": "print"
-		},
-		{
-			"icon-glyph": "remove"
-		},
-		{
-			"icon-glyph": "schedule"
-		},
-		{
-			"icon-glyph": "shopping-bag"
-		},
-		{
-			"icon-glyph": "shopping-basket"
-		},
-		{
-			"icon-glyph": "star"
-		},
-		{
-			"icon-glyph": "duplicate"
-		},
-		{
 			"icon-glyph": "image"
+		},
+		{
+			"icon-glyph": "info"
 		},
 		{
 			"icon-glyph": "lock-close"
@@ -66,7 +72,37 @@
 			"icon-glyph": "lock-open"
 		},
 		{
+			"icon-glyph": "pin"
+		},
+		{
+			"icon-glyph": "print"
+		},
+		{
+			"icon-glyph": "remove"
+		},
+		{
+			"icon-glyph": "resize"
+		},
+		{
+			"icon-glyph": "save"
+		},
+		{
+			"icon-glyph": "schedule"
+		},
+		{
+			"icon-glyph": "sepa"
+		},
+		{
+			"icon-glyph": "shopping-bag"
+		},
+		{
+			"icon-glyph": "shopping-basket"
+		},
+		{
 			"icon-glyph": "shopping-basket-disabled"
+		},
+		{
+			"icon-glyph": "star"
 		}
 	]
 }

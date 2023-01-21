@@ -1,0 +1,9 @@
+{
+	"icon-size": "32",
+	"icon-style": "outline",
+	"icons": [
+		{
+			"icon-glyph": "database"
+		}
+	]
+}

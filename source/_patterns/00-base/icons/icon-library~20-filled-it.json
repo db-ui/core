@@ -3,10 +3,7 @@
 	"icon-style": "filled",
 	"icons": [
 		{
-			"icon-glyph": "cancel"
-		},
-		{
-			"icon-glyph": "grid-view"
+			"icon-glyph": "database"
 		}
 	]
 }

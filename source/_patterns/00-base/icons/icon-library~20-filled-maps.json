@@ -3,16 +3,22 @@
 	"icon-style": "filled",
 	"icons": [
 		{
+			"icon-glyph": "gps"
+		},
+		{
+			"icon-glyph": "gps-north"
+		},
+		{
 			"icon-glyph": "home"
+		},
+		{
+			"icon-glyph": "parking"
 		},
 		{
 			"icon-glyph": "place"
 		},
 		{
-			"icon-glyph": "gps"
-		},
-		{
-			"icon-glyph": "gps-north"
+			"icon-glyph": "stop"
 		}
 	]
 }

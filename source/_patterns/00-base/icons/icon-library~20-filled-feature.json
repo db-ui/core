@@ -3,7 +3,25 @@
 	"icon-style": "filled",
 	"icons": [
 		{
+			"icon-glyph": "day"
+		},
+		{
+			"icon-glyph": "hydrogen"
+		},
+		{
+			"icon-glyph": "marketplace"
+		},
+		{
 			"icon-glyph": "medical"
+		},
+		{
+			"icon-glyph": "night"
+		},
+		{
+			"icon-glyph": "platform"
+		},
+		{
+			"icon-glyph": "reservation"
 		}
 	]
 }

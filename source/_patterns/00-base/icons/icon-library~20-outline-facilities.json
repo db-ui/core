@@ -3,6 +3,24 @@
 	"icon-style": "outline",
 	"icons": [
 		{
+			"icon-glyph": "playground"
+		},
+		{
+			"icon-glyph": "restricted-mobility-toilet"
+		},
+		{
+			"icon-glyph": "shower"
+		},
+		{
+			"icon-glyph": "shower-man"
+		},
+		{
+			"icon-glyph": "shower-women"
+		},
+		{
+			"icon-glyph": "sink"
+		},
+		{
 			"icon-glyph": "wc"
 		},
 		{
@@ -13,9 +31,6 @@
 		},
 		{
 			"icon-glyph": "wc-woman"
-		},
-		{
-			"icon-glyph": "restricted-mobility-toilet"
 		}
 	]
 }

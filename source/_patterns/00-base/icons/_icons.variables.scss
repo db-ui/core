@@ -118,7 +118,10 @@ $icon-glyphs-personenverkehr: (
 	"parking": "\1F17F",
 	"place": "\e1116",
 	"set-position": "\1F78B",
+	// trainstation has been deprecated in favour of the new name train-station
+	// TODO: remove with the next major release
 	"trainstation": "\1F689",
+	"train-station": "\1F689",
 	"arrow-back": "\2190",
 	"arrow-down": "\2193",
 	"arrow-forward": "\2192",
@@ -140,7 +143,10 @@ $icon-glyphs-personenverkehr: (
 	"more-vertical": "\22EE",
 	"refresh": "\1F5D8",
 	"error": "\e1123",
+	// error-triangle has been deprecated in favour of the new name warning
+	// TODO: remove with the next major release
 	"error-triangle": "\26A0",
+	"warning": "\26A0",
 	"notify": "\e1126",
 	"notify-cutoff": "\e1127",
 	"aisle": "\1F4BA",
@@ -236,7 +242,10 @@ $icon-glyphs-personenverkehr: (
 	"gps-north": "\e1158",
 	"local-train": "\1F688",
 	"rail-and-fly": "\e1159",
+	// seat-priority has been deprecated in favour of the new name priority
+	// TODO: remove with the next major release
 	"seat-priority": "\e1162",
+	"priority": "\e1162",
 	"standing-room": "\e1160",
 	"mixed-class": "\e1161",
 	"transportation-train-ec": "\e900",

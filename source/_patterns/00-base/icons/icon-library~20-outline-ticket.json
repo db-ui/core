@@ -12,6 +12,9 @@
 			"icon-glyph": "bahncard"
 		},
 		{
+			"icon-glyph": "best-price"
+		},
+		{
 			"icon-glyph": "commuter-ticket"
 		},
 		{
@@ -22,6 +25,12 @@
 		},
 		{
 			"icon-glyph": "komfort-check-in-circle"
+		},
+		{
+			"icon-glyph": "mutiple-cards"
+		},
+		{
+			"icon-glyph": "mutiple-passenger"
 		},
 		{
 			"icon-glyph": "my-travel"
@@ -52,6 +61,9 @@
 		},
 		{
 			"icon-glyph": "timetable"
+		},
+		{
+			"icon-glyph": "travel-insurance"
 		}
 	]
 }

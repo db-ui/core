@@ -13,6 +13,15 @@
 		},
 		{
 			"icon-glyph": "feedback"
+		},
+		{
+			"icon-glyph": "question"
+		},
+		{
+			"icon-glyph": "receive-item"
+		},
+		{
+			"icon-glyph": "share-item"
 		}
 	]
 }

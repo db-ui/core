@@ -15,6 +15,9 @@
 			"icon-glyph": "booking"
 		},
 		{
+			"icon-glyph": "capacity-indicator"
+		},
+		{
 			"icon-glyph": "capacity-indicator-fully-booked"
 		},
 		{
@@ -24,13 +27,13 @@
 			"icon-glyph": "capacity-indicator-low"
 		},
 		{
-			"icon-glyph": "capacity-indicator"
-		},
-		{
 			"icon-glyph": "destination"
 		},
 		{
 			"icon-glyph": "intermediary-stop"
+		},
+		{
+			"icon-glyph": "mixed-class"
 		},
 		{
 			"icon-glyph": "round-trip"
@@ -40,9 +43,6 @@
 		},
 		{
 			"icon-glyph": "start"
-		},
-		{
-			"icon-glyph": "mixed-class"
 		}
 	]
 }

@@ -1,6 +1,7 @@
 {
-	"icon-size": "20",
+	"icon-size": "24",
 	"icon-style": "filled",
+	"default": true,
 	"icons": [
 		{
 			"icon-glyph": "error"

@@ -3,6 +3,9 @@
 	"icon-style": "filled",
 	"icons": [
 		{
+			"icon-glyph": "microphone"
+		},
+		{
 			"icon-glyph": "play"
 		},
 		{

@@ -4,10 +4,31 @@
 	"default": true,
 	"icons": [
 		{
+			"icon-glyph": "add-circle"
+		},
+		{
 			"icon-glyph": "alert"
 		},
 		{
+			"icon-glyph": "bookmark"
+		},
+		{
+			"icon-glyph": "camera"
+		},
+		{
+			"icon-glyph": "check-circle"
+		},
+		{
+			"icon-glyph": "cloud"
+		},
+		{
 			"icon-glyph": "heart"
+		},
+		{
+			"icon-glyph": "pin"
+		},
+		{
+			"icon-glyph": "remove"
 		},
 		{
 			"icon-glyph": "star"
