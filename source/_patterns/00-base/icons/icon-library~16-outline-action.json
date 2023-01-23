@@ -9,6 +9,12 @@
 			"icon-glyph": "done"
 		},
 		{
+			"icon-glyph": "help"
+		},
+		{
+			"icon-glyph": "info"
+		},
+		{
 			"icon-glyph": "minus"
 		}
 	]

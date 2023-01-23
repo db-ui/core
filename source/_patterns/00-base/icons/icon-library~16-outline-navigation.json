@@ -3,6 +3,18 @@
 	"icon-style": "outline",
 	"icons": [
 		{
+			"icon-glyph": "arrow-back"
+		},
+		{
+			"icon-glyph": "arrow-down"
+		},
+		{
+			"icon-glyph": "arrow-forward"
+		},
+		{
+			"icon-glyph": "arrow-up"
+		},
+		{
 			"icon-glyph": "chevron-left"
 		},
 		{

@@ -67,6 +67,9 @@
 			"icon-glyph": "cloud-upload"
 		},
 		{
+			"icon-glyph": "compass"
+		},
+		{
 			"icon-glyph": "copy"
 		},
 		{
@@ -89,6 +92,9 @@
 		},
 		{
 			"icon-glyph": "download"
+		},
+		{
+			"icon-glyph": "drag-and-drop"
 		},
 		{
 			"icon-glyph": "edit"
@@ -157,6 +163,12 @@
 			"icon-glyph": "minus"
 		},
 		{
+			"icon-glyph": "person-with-cane"
+		},
+		{
+			"icon-glyph": "person-with-rollator"
+		},
+		{
 			"icon-glyph": "pin"
 		},
 		{
@@ -203,6 +215,12 @@
 		},
 		{
 			"icon-glyph": "shopping-cart-disabled"
+		},
+		{
+			"icon-glyph": "sort-down"
+		},
+		{
+			"icon-glyph": "sort-up"
 		},
 		{
 			"icon-glyph": "star"
