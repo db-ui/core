@@ -86,11 +86,6 @@
 			}
 		}
 
-		&:disabled {
-			background-color: transparent;
-			color: $db-color-cool-gray-700;
-		}
-
 		&:active {
 			background-color: $button-secondaryOutline-active-backgroundColor;
 		}
@@ -122,10 +117,6 @@
 				// TODO: This could probably get simplified later on e.g. via CSS variables
 				background-color: $button-secondaryOutline-hover-backgroundColor;
 			}
-		}
-
-		&:disabled {
-			background-color: transparent; // shame.css
 		}
 
 		&:active {
@@ -197,8 +188,6 @@
 	}
 
 	&:disabled {
-		background-color: $db-color-cool-gray-200;
-		color: $db-color-cool-gray-700;
 		opacity: 0.5;
 	}
 }
