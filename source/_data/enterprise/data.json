@@ -17,5 +17,6 @@
 	},
 	"href": "#",
 	"title": "Title text",
-	"alt": "Alt text - not tag ! ;-)"
+	"alt": "Alt text - not tag ! ;-)",
+	"tonality": ["functional", "regular", "expressive"]
 }
