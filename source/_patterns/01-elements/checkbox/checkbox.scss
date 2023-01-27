@@ -88,6 +88,7 @@
 	&%size-Small {
 		--checkbox-size: calc(#{$db-sizing-sm} * 0.83333333);
 
+		// TODO: we still need to scale this
 		& + label {
 			font-size: to-rem($pxValue: 14);
 		}
