@@ -1,5 +1,5 @@
 {{#each sizes }}
-	<!-- [html-validate-disable-next heading-level] -->
+	{{#if @first }}<!-- [html-validate-disable-next heading-level -- we're doing some simple demonstration simplification here] -->{{/if }}
 	<h2>{{ label }}</h2>
 	<p>
 		{{> elements-button variant='primary' value='Primary' size=size }}
