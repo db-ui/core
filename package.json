@@ -70,7 +70,7 @@
     "@pattern-lab/core": "^5.17.0",
     "@pattern-lab/engine-handlebars": "^5.16.4",
     "@pattern-lab/starterkit-handlebars-demo": "^5.16.4",
-    "@pattern-lab/uikit-workshop": "^5.17.0",
+    "@pattern-lab/uikit-workshop": "^6.0.1",
     "autoprefixer": "^10.4.13",
     "backstopjs": "^6.1.4",
     "cpr": "^3.0.1",
