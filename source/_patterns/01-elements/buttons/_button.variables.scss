@@ -2,7 +2,10 @@
 @import "../../00-base/icons/icons.variables";
 @import "../../00-base/icons/icons.helpers";
 
-$button---color: #fff !default;
+// We want to set the alpha value and that for need the long form hex code
+// stylelint-disable color-hex-length
+$button---color: #ffffff !default;
+// stylelint-enable color-hex-length
 
 $button---minHeight: to-rem(
 	$pxValue: 44
