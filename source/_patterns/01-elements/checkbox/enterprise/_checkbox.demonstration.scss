@@ -5,16 +5,5 @@
 @import "checkbox.variables";
 @import "../checkbox.variables";
 
-.pl-js-pattern-example {
-	[id^="elements-checkbox-on-dark-background"] & {
-		background-color: $db-colors-secondary-enabled;
-		color: $db-colors-secondary-on-enabled;
-		padding: to-rem($pxValue: 16);
-
-		.elm-checkbox {
-			background-color: $checkbox-onDarkBackground--backgroundColor;
-			border-color: $checkbox-onDarkBackground--borderColor;
-			color: $checkbox-onDarkBackground--color;
-		}
-	}
-}
+// .pl-js-pattern-example {
+// }

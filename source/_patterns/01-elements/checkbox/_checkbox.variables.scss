@@ -9,8 +9,3 @@ $checkbox--checked-backgroundColor: $db-colors-secondary-enabled !default;
 $checkbox--checked-color: #fff !default;
 
 $checkbox-hover-checked-backgroundColor: #52575f !default;
-
-// On dark background
-$checkbox-onDarkBackground--backgroundColor: transparent !default;
-$checkbox-onDarkBackground--borderColor: #fdfdfd !default; // TODO: This would need to get replaced by the correct (semantic) color
-$checkbox-onDarkBackground--color: #fdfdfd !default; // TODO: This would need to get replaced by the correct (semantic) color
