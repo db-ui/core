@@ -15,6 +15,9 @@
 
 	$checkbox-size: 24;
 
+	@extend %db-bg-neutral-0;
+	@extend %db-bg-neutral-0-ia-states;
+
 	@include icon("\00A0", $checkbox-size, "outline", $partial: $partial);
 	@include icon-meta($font-size: $checkbox-size - 2);
 
@@ -24,11 +27,8 @@
 
 	aspect-ratio: 1;
 
-	background-color: $checkbox---backgroundColor;
-	color: $checkbox---color;
-
 	border: calc(var(--checkbox-size, #{$db-sizing-sm}) / 16 + 0.5px) solid
-		$checkbox---borderColor;
+		currentColor;
 	border-radius: 3px;
 
 	display: inline-flex;
@@ -45,29 +45,14 @@
 	}
 
 	&:checked {
-		background-color: $checkbox--checked-backgroundColor;
+		@extend %db-bg-secondary;
+		@extend %db-bg-secondary-ia-states;
 
 		border: 0;
 
 		&::before {
-			color: $checkbox--checked-color;
+			color: inherit;
 			content: glyph(done);
-		}
-	}
-
-	&:not(:disabled) {
-		&:hover {
-			background-color: rgba(40, 45, 55, 0.14);
-		}
-
-		&:checked {
-			&:hover {
-				background-color: $checkbox-hover-checked-backgroundColor;
-			}
-		}
-
-		&:active {
-			background-color: rgba(0, 0, 0, 0.24);
 		}
 	}
 
