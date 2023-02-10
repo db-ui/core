@@ -6,7 +6,6 @@
 @use "@db-ui/base/build/scss/icon/icons.helpers" as *;
 
 @import "../../../css/partials.meta";
-@import "checkbox.variables";
 
 .elm-checkbox {
 	// We need to reset the general icons margin, as we want to use it in a tiny space
