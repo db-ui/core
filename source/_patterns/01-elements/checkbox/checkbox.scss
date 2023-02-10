@@ -48,7 +48,9 @@
 		@extend %db-bg-secondary;
 		@extend %db-bg-secondary-ia-states;
 
-		border: 0;
+		// The icon within the checkbox has the same dimensions as the checkbox itself and that for there can't be any border
+		border-width: 0;
+		padding: 1px;
 
 		&::before {
 			color: inherit;
