@@ -85,7 +85,7 @@
 	}
 
 	& + label {
-		margin-left: $db-spacing-fixed-regular-xs;
+		margin-inline-start: $db-spacing-fixed-regular-xs;
 	}
 
 	// Sizes
@@ -96,6 +96,7 @@
 		& + label {
 			font-size: $db-typography-regular-desktop-body-small-font-size;
 			line-height: $db-typography-regular-desktop-body-small-line-height;
+			margin-inline-start: $db-spacing-fixed-regular-2xs;
 		}
 	}
 
