@@ -4,22 +4,25 @@
 @use "@db-ui/base/build/scss/variables.global" as *;
 @use "@db-ui/base/build/scss/helpers/functions" as *;
 @use "@db-ui/base/build/scss/color-placeholder" as *;
-@import "radio.variables";
 
 .elm-radio {
+	// Using another CSS variable for the size to differentiate for the small variant later
+	--radio-size: #{$db-sizing-sm};
+
 	@extend %db-bg-neutral-transparent-full-ia;
 
 	appearance: none;
 
 	aspect-ratio: 1;
 
-	border: 1px solid $radio---border;
+	border: max(calc(var(--radio-size, #{$db-sizing-sm}) / 16 + 0.5px), 2px)
+		solid currentColor;
 	border-radius: to-em($pxValue: 16);
 
 	// * the basic, unchecked style
 	display: inline-block;
 
-	height: $db-sizing-sm;
+	height: var(--radio-size);
 
 	transition: border-width 0.5s ease;
 
