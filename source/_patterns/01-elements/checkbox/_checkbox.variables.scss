@@ -1,7 +1,7 @@
 @use "@db-ui/base/build/scss/variables" as *;
 @use "@db-ui/base/build/scss/icon/icons.helpers" as *;
 
-$checkbox---backgroundColor: rgba(255, 255, 255, 0.1) !default;
+$checkbox---backgroundColor: $db-colors-neutral-on-bg-enabled !default;
 $checkbox---borderColor: $db-colors-secondary-enabled !default;
 $checkbox---color: $db-colors-secondary-enabled !default;
 

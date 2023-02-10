@@ -9,16 +9,15 @@
 @import "checkbox.variables";
 
 .elm-checkbox {
+	// We need to reset the general icons margin, as we want to use it in a tiny space
 	--icon-margin-after: 0;
+	// Using another CSS variable for the size to differentiate for the small variant later
 	--checkbox-size: #{$db-sizing-sm};
 
 	$checkbox-size: 24;
 
 	@include icon("\00A0", $checkbox-size, "outline", $partial: $partial);
 	@include icon-meta($font-size: $checkbox-size - 2);
-
-	font-size: $db-typography-regular-desktop-body-medium-font-size;
-	line-height: $db-typography-regular-desktop-body-medium-line-height;
 
 	align-content: center;
 
@@ -27,9 +26,11 @@
 	aspect-ratio: 1;
 
 	background-color: $checkbox---backgroundColor;
-	border: 1px solid $checkbox---borderColor;
-	border-radius: 3px;
 	color: $checkbox---color;
+
+	border: calc(var(--checkbox-size, #{$db-sizing-sm}) / 16 + 0.5px) solid
+		$checkbox---borderColor;
+	border-radius: 3px;
 
 	display: inline-flex;
 	height: var(--checkbox-size);
@@ -46,6 +47,8 @@
 
 	&:checked {
 		background-color: $checkbox--checked-backgroundColor;
+
+		border: 0;
 
 		&::before {
 			color: $checkbox--checked-color;
@@ -85,6 +88,9 @@
 	}
 
 	& + label {
+		font-size: $db-typography-regular-desktop-body-medium-font-size;
+		line-height: $db-typography-regular-desktop-body-medium-line-height;
+
 		margin-inline-start: $db-spacing-fixed-regular-xs;
 	}
 
@@ -96,6 +102,7 @@
 		& + label {
 			font-size: $db-typography-regular-desktop-body-small-font-size;
 			line-height: $db-typography-regular-desktop-body-small-line-height;
+
 			margin-inline-start: $db-spacing-fixed-regular-2xs;
 		}
 	}
