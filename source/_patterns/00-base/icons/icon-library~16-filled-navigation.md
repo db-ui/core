@@ -1,5 +1,5 @@
 ---
-title: DB Icons 16x16 - Outline - Navigation
+title: DB Icons 16x16 - Filled - Navigation
 state: complete
 ---
 

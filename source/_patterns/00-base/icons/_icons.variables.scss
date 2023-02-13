@@ -17,6 +17,7 @@ $icon-glyphs-personenverkehr: (
 	"alarm-add": "\e1062",
 	"alert": "\1F514",
 	"alert-off": "\1F515",
+	"railroad-car": "\e1193",
 	"calendar": "\1F4C6",
 	"check-circle": "\2705",
 	"credit-card": "\1F4B3",
@@ -53,6 +54,7 @@ $icon-glyphs-personenverkehr: (
 	"visibility-off": "\e1082",
 	"website": "\1F310",
 	"zoom-in": "\e1083",
+	"bicycle-trailer": "\e1192",
 	"zoom-out": "\e1084",
 	"fast-backward-10": "\e1085",
 	"fast-backward-30": "\e1086",
@@ -65,6 +67,7 @@ $icon-glyphs-personenverkehr: (
 	"skip-backward": "\23EE",
 	"skip-forward": "\23ED",
 	"stop": "\25A1",
+	"subway": "\e1207",
 	"subtitles": "\e1091",
 	"volume-down": "\1F509",
 	"volume-mute": "\1F508",
@@ -97,6 +100,7 @@ $icon-glyphs-personenverkehr: (
 	"alternative-connection": "\e1102",
 	"booking": "\e1103",
 	"capacity-indicator": "\e1104",
+	"scooter": "\e1204",
 	"capacity-indicator-fully-booked": "\e1106",
 	"capacity-indicator-high": "\e1108",
 	"capacity-indicator-low": "\e1110",
@@ -132,6 +136,8 @@ $icon-glyphs-personenverkehr: (
 	"chevron-right": "\003E",
 	"close": "\2A2F",
 	"expand-less": "\2303",
+	"carsharing": "\e1194",
+	"electric-locomotive": "\e1195",
 	"expand-more": "\2304",
 	"fullscreen": "\e1119",
 	"fullscreen-exit": "\e1120",
@@ -140,6 +146,7 @@ $icon-glyphs-personenverkehr: (
 	"link-external": "\1F865",
 	"list": "\e1121",
 	"menu": "\e1122",
+	"s-bahn": "\e1203",
 	"more-horizontal": "\22EF",
 	"more-vertical": "\22EE",
 	"refresh": "\1F5D8",
@@ -149,6 +156,7 @@ $icon-glyphs-personenverkehr: (
 	"error-triangle": "\26A0",
 	"warning": "\26A0",
 	"notify": "\e1126",
+	"taxi": "\e1208",
 	"notify-cutoff": "\e1127",
 	"aisle": "\1F4BA",
 	"elderly": "\e1128",
@@ -165,9 +173,13 @@ $icon-glyphs-personenverkehr: (
 	"my-travel": "\e1138",
 	"outward-journey": "\e1139",
 	"qr-code": "\e1140",
+	"airplane": "\e1190",
+	"call-a-bike": "\e1191",
 	"return-journey": "\e1141",
 	"ticket": "\1F3AB",
 	"ticket-discount": "\e1142",
+	"electric-scooter": "\e1196",
+	"ev-car": "\e1197",
 	"ticket-multiple": "\e1143",
 	"time-outward-journey": "\e1144",
 	"time-return-journey": "\e1145",
@@ -194,10 +206,12 @@ $icon-glyphs-personenverkehr: (
 	"restricted-mobility-toilet": "\e1163",
 	"database": "\e1181",
 	"breakfast": "\1F950",
+	"ferry": "\e1198",
 	"no-smoking": "\1F6AD",
 	"luggage-compartment": "\1F6C5",
 	"environmental-mobility-check": "\1F343",
 	"clothing-hanger": "\e1180",
+	"handcart": "\e1199",
 	"reservation": "\e1179",
 	"platform": "\1F6E4",
 	"night": "\1F312",
@@ -208,6 +222,8 @@ $icon-glyphs-personenverkehr: (
 	"microphone": "\1F3A4",
 	"undo": "\238C",
 	"thumb-up-down": "\1F44E",
+	"local-bus": "\e1201",
+	"long-distance-bus": "\e1202",
 	"thumb-up": "\1F44D",
 	"logbook": "\1F4D3",
 	"lightbulb": "\1F4A1",
@@ -215,6 +231,7 @@ $icon-glyphs-personenverkehr: (
 	"fingerprint": "\e1171",
 	"face-smiling": "\e1170",
 	"face-neutral": "\e1168",
+	"ice": "\e1200",
 	"face-sad": "\e1169",
 	"cloud-upload": "\21E7",
 	"cloud-download": "\21E9",
@@ -234,6 +251,10 @@ $icon-glyphs-personenverkehr: (
 	"sort-down": "\21A1",
 	"sort-up": "\219F",
 	"cloud": "\2601",
+	"sev": "\e1205",
+	"train-and-car": "\e1209",
+	"tram": "\e1210",
+	"speedboat": "\e1206",
 	"build": "\1F6E0",
 	"bug": "\1F41B",
 	"question": "\e1172",
@@ -334,7 +355,7 @@ $icon-font-families-personenverkehr: (
 				"U+e1131-e1132,U+e1134,U+e1136-e1146,U+2714,U+1F907,U+1F3AB,U+e1185,U+e1184,U+1F46D,U+e1186"
 			),
 			"transportation": (
-				"U+1F6B2,U+e1147,U+e1151,U+1F684,U+e1148,U+1F6B6,U+1F688,U+e1159"
+				"U+1F6B2,U+e1147,U+e1151,U+1F684,U+e1148,U+1F6B6,U+1F688,U+e1159,U+e1190-e1210"
 			)
 		),
 		24: (
@@ -384,7 +405,7 @@ $icon-font-families-personenverkehr: (
 				"U+e1131-e1146,U+2714,U+1F907,U+1F3AB,U+e1184,U+e1185,U+1F46D,U+e1186"
 			),
 			"transportation": (
-				"U+1F6B2,U+e1147,U+e1151,U+1F684,U+e1148,U+1F6B6,U+1F688,U+e1159"
+				"U+1F6B2,U+e1147,U+e1151,U+1F684,U+e1148,U+1F6B6,U+1F688,U+e1159,U+e1190-e1210"
 			)
 		),
 		32: (
@@ -434,7 +455,7 @@ $icon-font-families-personenverkehr: (
 				"U+e1131-e1146,U+2714,U+1F907,U+1F3AB,U+e1184,U+e1185,U+1F46D,U+e1186"
 			),
 			"transportation": (
-				"U+1F6B2,U+e1147,U+e1151,U+1F684,U+e1148,U+1F6B6,U+1F688,U+e1159"
+				"U+1F6B2,U+e1147,U+e1151,U+1F684,U+e1148,U+1F6B6,U+1F688,U+e1159,U+e1190-e1210"
 			)
 		),
 		48: (
