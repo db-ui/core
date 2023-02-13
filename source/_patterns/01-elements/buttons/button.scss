@@ -45,6 +45,12 @@
 	&%variant-brand-primary {
 		background-color: $button-brand-primary--backgroundColor;
 
+		&:disabled {
+			background-color: unquote(
+				$button-brand-primary--backgroundColor + "40"
+			);
+		}
+
 		&:not(:disabled) {
 			&:hover {
 				// TODO: This could probably get simplified later on e.g. via CSS variables
@@ -59,6 +65,10 @@
 
 	&%variant-primary {
 		background-color: $button-primary--backgroundColor;
+
+		&:disabled {
+			background-color: unquote($button-primary--backgroundColor + "40");
+		}
 
 		&:not(:disabled) {
 			&:hover {
@@ -79,16 +89,16 @@
 		border-color: $db-color-cool-gray-700;
 		color: $db-color-cool-gray-700;
 
+		&:disabled {
+			color: unquote($db-color-cool-gray-700 + "80");
+			border-color: unquote($db-color-cool-gray-700 + "40");
+		}
+
 		&:not(:disabled) {
 			&:hover {
 				// TODO: This could probably get simplified later on e.g. via CSS variables
 				background-color: $button-secondaryOutline-hover-backgroundColor;
 			}
-		}
-
-		&:disabled {
-			background-color: transparent;
-			color: $db-color-cool-gray-700;
 		}
 
 		&:active {
@@ -99,6 +109,13 @@
 	&%variant-secondarySolid {
 		background-color: $button-secondarySolid--backgroundColor;
 		color: $db-color-cool-gray-700;
+
+		&:disabled {
+			color: unquote($db-color-cool-gray-700 + "80");
+			background-color: unquote(
+				$button-secondarySolid--backgroundColor + "40"
+			);
+		}
 
 		&:not(:disabled) {
 			&:hover {
@@ -117,15 +134,15 @@
 		border: 2px solid transparent;
 		color: $db-color-cool-gray-700;
 
+		&:disabled {
+			color: unquote($db-color-cool-gray-700 + "80");
+		}
+
 		&:not(:disabled) {
 			&:hover {
 				// TODO: This could probably get simplified later on e.g. via CSS variables
 				background-color: $button-secondaryOutline-hover-backgroundColor;
 			}
-		}
-
-		&:disabled {
-			background-color: transparent; // shame.css
 		}
 
 		&:active {
@@ -197,8 +214,6 @@
 	}
 
 	&:disabled {
-		background-color: $db-color-cool-gray-200;
-		color: $db-color-cool-gray-700;
-		opacity: 0.5;
+		color: unquote($button---color + "80");
 	}
 }
