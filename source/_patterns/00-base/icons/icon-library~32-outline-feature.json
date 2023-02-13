@@ -42,6 +42,12 @@
 			"icon-glyph": "no-smoking"
 		},
 		{
+			"icon-glyph": "person-with-cane"
+		},
+		{
+			"icon-glyph": "person-with-rollator"
+		},
+		{
 			"icon-glyph": "platform"
 		},
 		{
@@ -52,6 +58,9 @@
 		},
 		{
 			"icon-glyph": "standing-room"
+		},
+		{
+			"icon-glyph": "support-dog"
 		}
 	]
 }

@@ -127,6 +127,12 @@
 			"icon-glyph": "giftcard"
 		},
 		{
+			"icon-glyph": "hearing"
+		},
+		{
+			"icon-glyph": "hearing-disabled"
+		},
+		{
 			"icon-glyph": "heart"
 		},
 		{
@@ -161,12 +167,6 @@
 		},
 		{
 			"icon-glyph": "minus"
-		},
-		{
-			"icon-glyph": "person-with-cane"
-		},
-		{
-			"icon-glyph": "person-with-rollator"
 		},
 		{
 			"icon-glyph": "pin"
@@ -238,6 +238,9 @@
 			"icon-glyph": "thumb-up-down"
 		},
 		{
+			"icon-glyph": "translation"
+		},
+		{
 			"icon-glyph": "undo"
 		},
 		{
@@ -248,6 +251,9 @@
 		},
 		{
 			"icon-glyph": "visibility-off"
+		},
+		{
+			"icon-glyph": "voucher"
 		},
 		{
 			"icon-glyph": "website"
