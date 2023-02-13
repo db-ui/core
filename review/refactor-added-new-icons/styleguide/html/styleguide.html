@@ -12,17 +12,17 @@
 
 
 	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1674654424768" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1676315163493" media="all">
 
 	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1674654424768" media="all">
-	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1674654424768" media="all">
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1674654424768" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1676315163493" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1676315163493" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1676315163493" media="all">
 	<!-- dialog polyfill //-->
-	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1674654424768" media="all">
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1676315163493" media="all">
 
 	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1674654424768" media="all">
+	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1676315163493" media="all">
 	<!-- End Pattern Lab -->
 
 
@@ -1725,7 +1725,7 @@ var(--db-icon-pulse-color, #EC0016)
 				<h3 class="pl-c-pattern__title">
 		
 					<a href="../../patterns/base-icons-icon-library-16-filled-navigation&#x2F;base-icons-icon-library-16-filled-navigation.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="base-icon-library-16-filled-navigation" title="Link to Pattern">
-						DB Icons 16x16 - Outline - Navigation
+						DB Icons 16x16 - Filled - Navigation
 		
 						<span class="pl-c-pattern-state pl-c-pattern-state--complete" title="complete"></span>
 		
@@ -1767,7 +1767,7 @@ var(--db-icon-pulse-color, #EC0016)
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-base-icon-library-16-filled-navigation" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>[Insert description here]</p>\n","patternBreadcrumb":{"patternGroup":"base","patternSubgroup":"icons"},"patternExtension":"hbs","patternName":"DB Icons 16x16 - Outline - Navigation","patternPartial":"base-icon-library-16-filled-navigation","patternState":"complete","patternEngineName":"handlebars","extraOutput":{}}
+			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>[Insert description here]</p>\n","patternBreadcrumb":{"patternGroup":"base","patternSubgroup":"icons"},"patternExtension":"hbs","patternName":"DB Icons 16x16 - Filled - Navigation","patternPartial":"base-icon-library-16-filled-navigation","patternState":"complete","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -5074,10 +5074,28 @@ var(--db-icon-pulse-color, #EC0016)
 			<div class="pl-js-pattern-example">
 			
 <ul class="DO-NOT-COPY-THIS-CLASS-example-icon-list">
+	<li data-icon="airplane" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(airplane), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="airplane" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="bicycle" data-icon-variant="20-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(bicycle), 20, "outline")</code></li>
 			<li>HTML: <code>data-icon="bicycle" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="bicycle-trailer" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(bicycle-trailer), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="bicycle-trailer" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="call-a-bike" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(call-a-bike), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="call-a-bike" data-icon-variant="20-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="car" data-icon-variant="20-outline">
@@ -5086,10 +5104,52 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="car" data-icon-variant="20-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="carsharing" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(carsharing), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="carsharing" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="car-sequence" data-icon-variant="20-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(car-sequence), 20, "outline")</code></li>
 			<li>HTML: <code>data-icon="car-sequence" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="electric-locomotive" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(electric-locomotive), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="electric-locomotive" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="electric-scooter" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(electric-scooter), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="electric-scooter" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="ev-car" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(ev-car), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="ev-car" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="ferry" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(ferry), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="ferry" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="handcart" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(handcart), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="handcart" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="ice" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(ice), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="ice" data-icon-variant="20-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="ice-side-view" data-icon-variant="20-outline">
@@ -5098,16 +5158,16 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="ice-side-view" data-icon-variant="20-outline"</code></li>
 		</ul>
 	</li>
-	<li data-icon="sprinter" data-icon-variant="20-outline">
+	<li data-icon="local-bus" data-icon-variant="20-outline">
 		<ul>
-			<li>SCSS: <code>@include icon(glyph(sprinter), 20, "outline")</code></li>
-			<li>HTML: <code>data-icon="sprinter" data-icon-variant="20-outline"</code></li>
+			<li>SCSS: <code>@include icon(glyph(local-bus), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="local-bus" data-icon-variant="20-outline"</code></li>
 		</ul>
 	</li>
-	<li data-icon="walking" data-icon-variant="20-outline">
+	<li data-icon="long-distance-bus" data-icon-variant="20-outline">
 		<ul>
-			<li>SCSS: <code>@include icon(glyph(walking), 20, "outline")</code></li>
-			<li>HTML: <code>data-icon="walking" data-icon-variant="20-outline"</code></li>
+			<li>SCSS: <code>@include icon(glyph(long-distance-bus), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="long-distance-bus" data-icon-variant="20-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="local-train" data-icon-variant="20-outline">
@@ -5120,6 +5180,72 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(rail-and-fly), 20, "outline")</code></li>
 			<li>HTML: <code>data-icon="rail-and-fly" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="railroad-car" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(railroad-car), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="railroad-car" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="s-bahn" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(s-bahn), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="s-bahn" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="scooter" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(scooter), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="scooter" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="sev" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(sev), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="sev" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="speedboat" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(speedboat), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="speedboat" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="sprinter" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(sprinter), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="sprinter" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="subway" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(subway), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="subway" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="taxi" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(taxi), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="taxi" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="train-and-car" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(train-and-car), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="train-and-car" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="tram" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(tram), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="tram" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="walking" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(walking), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="walking" data-icon-variant="20-outline"</code></li>
 		</ul>
 	</li>
 </ul>
@@ -7692,10 +7818,28 @@ var(--db-icon-pulse-color, #EC0016)
 			<div class="pl-js-pattern-example">
 			<p>Please keep in mind that it's optional to set the variant and size for the following ones, as this size (24) and style (outline) combination is defined as the default.<br>In case that you'll need another default in your project, you could overwrite the defaults by modifying the <code>$icon-size</code> and <code>$icon-style</code> SCSS variables.</p>
 <ul class="DO-NOT-COPY-THIS-CLASS-example-icon-list">
+	<li data-icon="airplane" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(airplane))</code> or <code>@include icon(glyph(airplane), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="airplane"</code> or <code>data-icon="airplane" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="bicycle" data-icon-variant="24-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(bicycle))</code> or <code>@include icon(glyph(bicycle), 24, "outline")</code></li>
 			<li>HTML: <code>data-icon="bicycle"</code> or <code>data-icon="bicycle" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="bicycle-trailer" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(bicycle-trailer))</code> or <code>@include icon(glyph(bicycle-trailer), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="bicycle-trailer"</code> or <code>data-icon="bicycle-trailer" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="call-a-bike" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(call-a-bike))</code> or <code>@include icon(glyph(call-a-bike), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="call-a-bike"</code> or <code>data-icon="call-a-bike" data-icon-variant="24-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="car" data-icon-variant="24-outline">
@@ -7704,10 +7848,52 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="car"</code> or <code>data-icon="car" data-icon-variant="24-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="carsharing" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(carsharing))</code> or <code>@include icon(glyph(carsharing), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="carsharing"</code> or <code>data-icon="carsharing" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="car-sequence" data-icon-variant="24-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(car-sequence))</code> or <code>@include icon(glyph(car-sequence), 24, "outline")</code></li>
 			<li>HTML: <code>data-icon="car-sequence"</code> or <code>data-icon="car-sequence" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="electric-locomotive" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(electric-locomotive))</code> or <code>@include icon(glyph(electric-locomotive), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="electric-locomotive"</code> or <code>data-icon="electric-locomotive" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="electric-scooter" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(electric-scooter))</code> or <code>@include icon(glyph(electric-scooter), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="electric-scooter"</code> or <code>data-icon="electric-scooter" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="ev-car" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(ev-car))</code> or <code>@include icon(glyph(ev-car), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="ev-car"</code> or <code>data-icon="ev-car" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="ferry" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(ferry))</code> or <code>@include icon(glyph(ferry), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="ferry"</code> or <code>data-icon="ferry" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="handcart" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(handcart))</code> or <code>@include icon(glyph(handcart), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="handcart"</code> or <code>data-icon="handcart" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="ice" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(ice))</code> or <code>@include icon(glyph(ice), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="ice"</code> or <code>data-icon="ice" data-icon-variant="24-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="ice-side-view" data-icon-variant="24-outline">
@@ -7716,16 +7902,16 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="ice-side-view"</code> or <code>data-icon="ice-side-view" data-icon-variant="24-outline"</code></li>
 		</ul>
 	</li>
-	<li data-icon="sprinter" data-icon-variant="24-outline">
+	<li data-icon="local-bus" data-icon-variant="24-outline">
 		<ul>
-			<li>SCSS: <code>@include icon(glyph(sprinter))</code> or <code>@include icon(glyph(sprinter), 24, "outline")</code></li>
-			<li>HTML: <code>data-icon="sprinter"</code> or <code>data-icon="sprinter" data-icon-variant="24-outline"</code></li>
+			<li>SCSS: <code>@include icon(glyph(local-bus))</code> or <code>@include icon(glyph(local-bus), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="local-bus"</code> or <code>data-icon="local-bus" data-icon-variant="24-outline"</code></li>
 		</ul>
 	</li>
-	<li data-icon="walking" data-icon-variant="24-outline">
+	<li data-icon="long-distance-bus" data-icon-variant="24-outline">
 		<ul>
-			<li>SCSS: <code>@include icon(glyph(walking))</code> or <code>@include icon(glyph(walking), 24, "outline")</code></li>
-			<li>HTML: <code>data-icon="walking"</code> or <code>data-icon="walking" data-icon-variant="24-outline"</code></li>
+			<li>SCSS: <code>@include icon(glyph(long-distance-bus))</code> or <code>@include icon(glyph(long-distance-bus), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="long-distance-bus"</code> or <code>data-icon="long-distance-bus" data-icon-variant="24-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="local-train" data-icon-variant="24-outline">
@@ -7738,6 +7924,72 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(rail-and-fly))</code> or <code>@include icon(glyph(rail-and-fly), 24, "outline")</code></li>
 			<li>HTML: <code>data-icon="rail-and-fly"</code> or <code>data-icon="rail-and-fly" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="railroad-car" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(railroad-car))</code> or <code>@include icon(glyph(railroad-car), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="railroad-car"</code> or <code>data-icon="railroad-car" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="s-bahn" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(s-bahn))</code> or <code>@include icon(glyph(s-bahn), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="s-bahn"</code> or <code>data-icon="s-bahn" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="scooter" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(scooter))</code> or <code>@include icon(glyph(scooter), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="scooter"</code> or <code>data-icon="scooter" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="sev" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(sev))</code> or <code>@include icon(glyph(sev), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="sev"</code> or <code>data-icon="sev" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="speedboat" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(speedboat))</code> or <code>@include icon(glyph(speedboat), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="speedboat"</code> or <code>data-icon="speedboat" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="sprinter" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(sprinter))</code> or <code>@include icon(glyph(sprinter), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="sprinter"</code> or <code>data-icon="sprinter" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="subway" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(subway))</code> or <code>@include icon(glyph(subway), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="subway"</code> or <code>data-icon="subway" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="taxi" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(taxi))</code> or <code>@include icon(glyph(taxi), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="taxi"</code> or <code>data-icon="taxi" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="train-and-car" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(train-and-car))</code> or <code>@include icon(glyph(train-and-car), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="train-and-car"</code> or <code>data-icon="train-and-car" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="tram" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(tram))</code> or <code>@include icon(glyph(tram), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="tram"</code> or <code>data-icon="tram" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="walking" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(walking))</code> or <code>@include icon(glyph(walking), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="walking"</code> or <code>data-icon="walking" data-icon-variant="24-outline"</code></li>
 		</ul>
 	</li>
 </ul>
@@ -10233,10 +10485,28 @@ var(--db-icon-pulse-color, #EC0016)
 			<div class="pl-js-pattern-example">
 			
 <ul class="DO-NOT-COPY-THIS-CLASS-example-icon-list">
+	<li data-icon="airplane" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(airplane), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="airplane" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="bicycle" data-icon-variant="32-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(bicycle), 32, "outline")</code></li>
 			<li>HTML: <code>data-icon="bicycle" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="bicycle-trailer" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(bicycle-trailer), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="bicycle-trailer" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="call-a-bike" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(call-a-bike), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="call-a-bike" data-icon-variant="32-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="car" data-icon-variant="32-outline">
@@ -10245,10 +10515,52 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="car" data-icon-variant="32-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="carsharing" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(carsharing), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="carsharing" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="car-sequence" data-icon-variant="32-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(car-sequence), 32, "outline")</code></li>
 			<li>HTML: <code>data-icon="car-sequence" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="electric-locomotive" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(electric-locomotive), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="electric-locomotive" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="electric-scooter" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(electric-scooter), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="electric-scooter" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="ev-car" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(ev-car), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="ev-car" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="ferry" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(ferry), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="ferry" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="handcart" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(handcart), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="handcart" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="ice" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(ice), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="ice" data-icon-variant="32-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="ice-side-view" data-icon-variant="32-outline">
@@ -10257,16 +10569,16 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="ice-side-view" data-icon-variant="32-outline"</code></li>
 		</ul>
 	</li>
-	<li data-icon="sprinter" data-icon-variant="32-outline">
+	<li data-icon="local-bus" data-icon-variant="32-outline">
 		<ul>
-			<li>SCSS: <code>@include icon(glyph(sprinter), 32, "outline")</code></li>
-			<li>HTML: <code>data-icon="sprinter" data-icon-variant="32-outline"</code></li>
+			<li>SCSS: <code>@include icon(glyph(local-bus), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="local-bus" data-icon-variant="32-outline"</code></li>
 		</ul>
 	</li>
-	<li data-icon="walking" data-icon-variant="32-outline">
+	<li data-icon="long-distance-bus" data-icon-variant="32-outline">
 		<ul>
-			<li>SCSS: <code>@include icon(glyph(walking), 32, "outline")</code></li>
-			<li>HTML: <code>data-icon="walking" data-icon-variant="32-outline"</code></li>
+			<li>SCSS: <code>@include icon(glyph(long-distance-bus), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="long-distance-bus" data-icon-variant="32-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="local-train" data-icon-variant="32-outline">
@@ -10279,6 +10591,72 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(rail-and-fly), 32, "outline")</code></li>
 			<li>HTML: <code>data-icon="rail-and-fly" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="railroad-car" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(railroad-car), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="railroad-car" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="s-bahn" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(s-bahn), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="s-bahn" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="scooter" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(scooter), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="scooter" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="sev" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(sev), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="sev" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="speedboat" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(speedboat), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="speedboat" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="sprinter" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(sprinter), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="sprinter" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="subway" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(subway), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="subway" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="taxi" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(taxi), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="taxi" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="train-and-car" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(train-and-car), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="train-and-car" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="tram" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(tram), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="tram" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="walking" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(walking), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="walking" data-icon-variant="32-outline"</code></li>
 		</ul>
 	</li>
 </ul>
@@ -25935,7 +26313,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 		<h1 class="elm-headline ">DB UI Core</h1>
 
 		<img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTI0IiBoZWlnaHQ9IjIwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkxpY2Vuc2U6IEFwYWNoZSAyLjAiPjx0aXRsZT5MaWNlbnNlOiBBcGFjaGUgMi4wPC90aXRsZT48bGluZWFyR3JhZGllbnQgaWQ9InMiIHgyPSIwIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjYmJiIiBzdG9wLW9wYWNpdHk9Ii4xIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLW9wYWNpdHk9Ii4xIi8+PC9saW5lYXJHcmFkaWVudD48Y2xpcFBhdGggaWQ9InIiPjxyZWN0IHdpZHRoPSIxMjQiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjZmZmIi8+PC9jbGlwUGF0aD48ZyBjbGlwLXBhdGg9InVybCgjcikiPjxyZWN0IHdpZHRoPSI1MSIgaGVpZ2h0PSIyMCIgZmlsbD0iIzU1NSIvPjxyZWN0IHg9IjUxIiB3aWR0aD0iNzMiIGhlaWdodD0iMjAiIGZpbGw9IiMwMDdlYzYiLz48cmVjdCB3aWR0aD0iMTI0IiBoZWlnaHQ9IjIwIiBmaWxsPSJ1cmwoI3MpIi8+PC9nPjxnIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJWZXJkYW5hLEdlbmV2YSxEZWphVnUgU2FucyxzYW5zLXNlcmlmIiB0ZXh0LXJlbmRlcmluZz0iZ2VvbWV0cmljUHJlY2lzaW9uIiBmb250LXNpemU9IjExMCI+PHRleHQgYXJpYS1oaWRkZW49InRydWUiIHg9IjI2NSIgeT0iMTUwIiBmaWxsPSIjMDEwMTAxIiBmaWxsLW9wYWNpdHk9Ii4zIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgdGV4dExlbmd0aD0iNDEwIj5MaWNlbnNlPC90ZXh0Pjx0ZXh0IHg9IjI2NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iNDEwIj5MaWNlbnNlPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI4NjUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjYzMCI+QXBhY2hlIDIuMDwvdGV4dD48dGV4dCB4PSI4NjUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9IjYzMCI+QXBhY2hlIDIuMDwvdGV4dD48L2c+PC9zdmc+" width="124" height="20" alt="Apache 2.0 license badge">
-		<a href="https://npmjs.com/package/@db-ui/core" target="_blank" rel="noopener noreferrer"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iODAiIGhlaWdodD0iMjAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0ibnBtOiB2Mi40LjEiPjx0aXRsZT5ucG06IHYyLjQuMTwvdGl0bGU+PGxpbmVhckdyYWRpZW50IGlkPSJzIiB4Mj0iMCIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2JiYiIgc3RvcC1vcGFjaXR5PSIuMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1vcGFjaXR5PSIuMSIvPjwvbGluZWFyR3JhZGllbnQ+PGNsaXBQYXRoIGlkPSJyIj48cmVjdCB3aWR0aD0iODAiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjZmZmIi8+PC9jbGlwUGF0aD48ZyBjbGlwLXBhdGg9InVybCgjcikiPjxyZWN0IHdpZHRoPSIzNSIgaGVpZ2h0PSIyMCIgZmlsbD0iIzU1NSIvPjxyZWN0IHg9IjM1IiB3aWR0aD0iNDUiIGhlaWdodD0iMjAiIGZpbGw9InJnYigyMzcsIDI4LCAzNikiLz48cmVjdCB3aWR0aD0iODAiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMTg1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSIyNTAiPm5wbTwvdGV4dD48dGV4dCB4PSIxODUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9IjI1MCI+bnBtPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI1NjUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjM1MCI+djIuNC4xPC90ZXh0Pjx0ZXh0IHg9IjU2NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iMzUwIj52Mi40LjE8L3RleHQ+PC9nPjwvc3ZnPg==" width="80" height="20" alt="npm version"></a>
+		<a href="https://npmjs.com/package/@db-ui/core" target="_blank" rel="noopener noreferrer"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iODAiIGhlaWdodD0iMjAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0ibnBtOiB2Mi41LjAiPjx0aXRsZT5ucG06IHYyLjUuMDwvdGl0bGU+PGxpbmVhckdyYWRpZW50IGlkPSJzIiB4Mj0iMCIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2JiYiIgc3RvcC1vcGFjaXR5PSIuMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1vcGFjaXR5PSIuMSIvPjwvbGluZWFyR3JhZGllbnQ+PGNsaXBQYXRoIGlkPSJyIj48cmVjdCB3aWR0aD0iODAiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjZmZmIi8+PC9jbGlwUGF0aD48ZyBjbGlwLXBhdGg9InVybCgjcikiPjxyZWN0IHdpZHRoPSIzNSIgaGVpZ2h0PSIyMCIgZmlsbD0iIzU1NSIvPjxyZWN0IHg9IjM1IiB3aWR0aD0iNDUiIGhlaWdodD0iMjAiIGZpbGw9InJnYigyMzcsIDI4LCAzNikiLz48cmVjdCB3aWR0aD0iODAiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMTg1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSIyNTAiPm5wbTwvdGV4dD48dGV4dCB4PSIxODUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9IjI1MCI+bnBtPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI1NjUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjM1MCI+djIuNS4wPC90ZXh0Pjx0ZXh0IHg9IjU2NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iMzUwIj52Mi41LjA8L3RleHQ+PC9nPjwvc3ZnPg==" width="80" height="20" alt="npm version"></a>
 		<img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzA4IiBoZWlnaHQ9IjIwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkJhc2VkIG9uOiBEQiBEZXNpZ24gU3lzdGVtIFVYIEd1aWRlcyArIFN0YW5kYXJkcyI+PHRpdGxlPkJhc2VkIG9uOiBEQiBEZXNpZ24gU3lzdGVtIFVYIEd1aWRlcyArIFN0YW5kYXJkczwvdGl0bGU+PGxpbmVhckdyYWRpZW50IGlkPSJzIiB4Mj0iMCIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2JiYiIgc3RvcC1vcGFjaXR5PSIuMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1vcGFjaXR5PSIuMSIvPjwvbGluZWFyR3JhZGllbnQ+PGNsaXBQYXRoIGlkPSJyIj48cmVjdCB3aWR0aD0iMzA4IiBoZWlnaHQ9IjIwIiByeD0iMyIgZmlsbD0iI2ZmZiIvPjwvY2xpcFBhdGg+PGcgY2xpcC1wYXRoPSJ1cmwoI3IpIj48cmVjdCB3aWR0aD0iNjEiIGhlaWdodD0iMjAiIGZpbGw9IiM1NTUiLz48cmVjdCB4PSI2MSIgd2lkdGg9IjI0NyIgaGVpZ2h0PSIyMCIgZmlsbD0iI2Q3ZGNlMSIvPjxyZWN0IHdpZHRoPSIzMDgiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMzE1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI1MTAiPkJhc2VkIG9uPC90ZXh0Pjx0ZXh0IHg9IjMxNSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iNTEwIj5CYXNlZCBvbjwvdGV4dD48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMTgzNSIgeT0iMTUwIiBmaWxsPSIjY2NjIiBmaWxsLW9wYWNpdHk9Ii4zIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgdGV4dExlbmd0aD0iMjM3MCI+REIgRGVzaWduIFN5c3RlbSBVWCBHdWlkZXMgKyBTdGFuZGFyZHM8L3RleHQ+PHRleHQgeD0iMTgzNSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iIzMzMyIgdGV4dExlbmd0aD0iMjM3MCI+REIgRGVzaWduIFN5c3RlbSBVWCBHdWlkZXMgKyBTdGFuZGFyZHM8L3RleHQ+PC9nPjwvc3ZnPg==" width="308" height="20" alt="Based on DB UX Design System guidelines">
 
 		<p lang="de">Personenverkehr und DB Systel führen ihre Design Systeme für Web in der Version 2.0 der Standard Web Components zusammen. Unser Ziel ist eine einheitliche Basis UX im Sinne der Modernen Ikone für Kunden und Mitarbeiteranwendungen. Um unser Design End 2 End von Konzeption über Design bis zur Implementierung konsistent zu halten, wird das DB UX Design System auch in Code von DB Systel und Reisendeninformation umgesetzt. Stay Tuned!</p>
@@ -26395,10 +26773,10 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1674654424768">
+<script id="pl-js-polyfill-insert-1676315163493">
   (function() {
     if (self != top) {
-      var cb = '1674654424768';
+      var cb = '1676315163493';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -26411,7 +26789,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1674654424768" nomodule>
+<script id="pl-js-insert-1676315163493" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 
