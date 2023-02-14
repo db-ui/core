@@ -34,6 +34,9 @@
 			"icon-glyph": "intermediary-stop"
 		},
 		{
+			"icon-glyph": "mixed-class"
+		},
+		{
 			"icon-glyph": "round-trip"
 		},
 		{
@@ -41,9 +44,6 @@
 		},
 		{
 			"icon-glyph": "start"
-		},
-		{
-			"icon-glyph": "mixed-class"
 		}
 	]
 }

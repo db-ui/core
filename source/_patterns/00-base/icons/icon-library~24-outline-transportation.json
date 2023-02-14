@@ -4,28 +4,91 @@
 	"default": true,
 	"icons": [
 		{
+			"icon-glyph": "airplane"
+		},
+		{
 			"icon-glyph": "bicycle"
+		},
+		{
+			"icon-glyph": "bicycle-trailer"
+		},
+		{
+			"icon-glyph": "call-a-bike"
 		},
 		{
 			"icon-glyph": "car"
 		},
 		{
+			"icon-glyph": "carsharing"
+		},
+		{
 			"icon-glyph": "car-sequence"
+		},
+		{
+			"icon-glyph": "electric-locomotive"
+		},
+		{
+			"icon-glyph": "electric-scooter"
+		},
+		{
+			"icon-glyph": "ev-car"
+		},
+		{
+			"icon-glyph": "ferry"
+		},
+		{
+			"icon-glyph": "handcart"
+		},
+		{
+			"icon-glyph": "ice"
 		},
 		{
 			"icon-glyph": "ice-side-view"
 		},
 		{
-			"icon-glyph": "sprinter"
+			"icon-glyph": "local-bus"
 		},
 		{
-			"icon-glyph": "walking"
+			"icon-glyph": "long-distance-bus"
 		},
 		{
 			"icon-glyph": "local-train"
 		},
 		{
 			"icon-glyph": "rail-and-fly"
+		},
+		{
+			"icon-glyph": "railroad-car"
+		},
+		{
+			"icon-glyph": "s-bahn"
+		},
+		{
+			"icon-glyph": "scooter"
+		},
+		{
+			"icon-glyph": "sev"
+		},
+		{
+			"icon-glyph": "speedboat"
+		},
+		{
+			"icon-glyph": "sprinter"
+		},
+		{
+			"icon-glyph": "subway"
+		},
+		{
+			"icon-glyph": "taxi"
+		},
+		{
+			"icon-glyph": "train-and-car"
+		},
+		{
+			"icon-glyph": "tram"
+		},
+		{
+			"icon-glyph": "walking"
 		}
 	]
 }

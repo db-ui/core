@@ -4,6 +4,9 @@
 	"icons": [
 		{
 			"icon-glyph": "cancel"
+		},
+		{
+			"icon-glyph": "grid-view"
 		}
 	]
 }

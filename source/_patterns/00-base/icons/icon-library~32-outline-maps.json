@@ -3,10 +3,19 @@
 	"icon-style": "outline",
 	"icons": [
 		{
+			"icon-glyph": "gps"
+		},
+		{
+			"icon-glyph": "gps-north"
+		},
+		{
 			"icon-glyph": "home"
 		},
 		{
 			"icon-glyph": "map"
+		},
+		{
+			"icon-glyph": "parking"
 		},
 		{
 			"icon-glyph": "place"
@@ -15,13 +24,13 @@
 			"icon-glyph": "set-position"
 		},
 		{
-			"icon-glyph": "map-stop"
+			"icon-glyph": "station"
 		},
 		{
-			"icon-glyph": "trainstation"
+			"icon-glyph": "stop-sign"
 		},
 		{
-			"icon-glyph": "gps"
+			"icon-glyph": "train-station"
 		}
 	]
 }

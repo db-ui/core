@@ -1,0 +1,15 @@
+{
+	"icon-size": "16",
+	"icon-style": "filled",
+	"icons": [
+		{
+			"icon-glyph": "check-circle"
+		},
+		{
+			"icon-glyph": "help"
+		},
+		{
+			"icon-glyph": "info"
+		}
+	]
+}

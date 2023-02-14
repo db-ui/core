@@ -6,7 +6,7 @@
 			"icon-glyph": "error"
 		},
 		{
-			"icon-glyph": "error-triangle"
+			"icon-glyph": "warning"
 		}
 	]
 }

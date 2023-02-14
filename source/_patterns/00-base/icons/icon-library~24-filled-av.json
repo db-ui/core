@@ -4,6 +4,9 @@
 	"default": true,
 	"icons": [
 		{
+			"icon-glyph": "microphone"
+		},
+		{
 			"icon-glyph": "play"
 		},
 		{

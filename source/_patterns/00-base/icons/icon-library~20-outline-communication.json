@@ -21,10 +21,19 @@
 			"icon-glyph": "mail"
 		},
 		{
+			"icon-glyph": "mobile-phone"
+		},
+		{
 			"icon-glyph": "mobile-off"
 		},
 		{
-			"icon-glyph": "mobile-phone"
+			"icon-glyph": "question"
+		},
+		{
+			"icon-glyph": "receive-item"
+		},
+		{
+			"icon-glyph": "share-item"
 		},
 		{
 			"icon-glyph": "wifi"

@@ -7,28 +7,34 @@
 			"icon-glyph": "aisle"
 		},
 		{
+			"icon-glyph": "aisle-not-available"
+		},
+		{
+			"icon-glyph": "bed"
+		},
+		{
+			"icon-glyph": "childrens-compartment"
+		},
+		{
 			"icon-glyph": "elderly"
 		},
 		{
 			"icon-glyph": "handicapped"
 		},
 		{
-			"icon-glyph": "table"
-		},
-		{
-			"icon-glyph": "window"
-		},
-		{
-			"icon-glyph": "childrens-compartment"
-		},
-		{
 			"icon-glyph": "parent-child-compartment"
+		},
+		{
+			"icon-glyph": "priority"
 		},
 		{
 			"icon-glyph": "quiet-zone"
 		},
 		{
-			"icon-glyph": "seat-priority"
+			"icon-glyph": "table"
+		},
+		{
+			"icon-glyph": "window"
 		}
 	]
 }

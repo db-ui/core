@@ -3,25 +3,64 @@
 	"icon-style": "outline",
 	"icons": [
 		{
-			"icon-glyph": "entry-aid"
-		},
-		{
-			"icon-glyph": "luggage-rack"
-		},
-		{
-			"icon-glyph": "medical"
-		},
-		{
-			"icon-glyph": "power-outlet"
+			"icon-glyph": "air-condition"
 		},
 		{
 			"icon-glyph": "buggy"
 		},
 		{
+			"icon-glyph": "clothing-hanger"
+		},
+		{
+			"icon-glyph": "day"
+		},
+		{
+			"icon-glyph": "entry-aid"
+		},
+		{
+			"icon-glyph": "environmental-mobility-check"
+		},
+		{
+			"icon-glyph": "hydrogen"
+		},
+		{
+			"icon-glyph": "luggage-compartment"
+		},
+		{
+			"icon-glyph": "luggage-rack"
+		},
+		{
+			"icon-glyph": "marketplace"
+		},
+		{
+			"icon-glyph": "medical"
+		},
+		{
+			"icon-glyph": "night"
+		},
+		{
+			"icon-glyph": "no-smoking"
+		},
+		{
+			"icon-glyph": "person-with-cane"
+		},
+		{
+			"icon-glyph": "person-with-rollator"
+		},
+		{
+			"icon-glyph": "platform"
+		},
+		{
+			"icon-glyph": "power-outlet"
+		},
+		{
+			"icon-glyph": "reservation"
+		},
+		{
 			"icon-glyph": "standing-room"
 		},
 		{
-			"icon-glyph": "air-condition"
+			"icon-glyph": "support-dog"
 		}
 	]
 }

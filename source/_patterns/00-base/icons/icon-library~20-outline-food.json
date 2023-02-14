@@ -3,6 +3,9 @@
 	"icon-style": "outline",
 	"icons": [
 		{
+			"icon-glyph": "breakfast"
+		},
+		{
 			"icon-glyph": "coffee-cup"
 		},
 		{
