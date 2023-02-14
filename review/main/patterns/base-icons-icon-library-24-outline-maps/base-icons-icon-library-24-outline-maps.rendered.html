@@ -12,14 +12,14 @@
 
 
 	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1676273662899" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1676363948233" media="all">
 
 	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1676273662899" media="all">
-	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1676273662899" media="all">
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1676273662899" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1676363948233" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1676363948233" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1676363948233" media="all">
 	<!-- dialog polyfill //-->
-	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1676273662899" media="all">
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1676363948233" media="all">
 
 	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
 	
@@ -41,6 +41,18 @@ documentation has useful tips on creating an effective description. //-->
 <body class="styleguide">
 <p>Please keep in mind that it's optional to set the variant and size for the following ones, as this size (24) and style (outline) combination is defined as the default.<br>In case that you'll need another default in your project, you could overwrite the defaults by modifying the <code>$icon-size</code> and <code>$icon-style</code> SCSS variables.</p>
 <ul class="DO-NOT-COPY-THIS-CLASS-example-icon-list">
+	<li data-icon="gps" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(gps))</code> or <code>@include icon(glyph(gps), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="gps"</code> or <code>data-icon="gps" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="gps-north" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(gps-north))</code> or <code>@include icon(glyph(gps-north), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="gps-north"</code> or <code>data-icon="gps-north" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="home" data-icon-variant="24-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(home))</code> or <code>@include icon(glyph(home), 24, "outline")</code></li>
@@ -53,10 +65,16 @@ documentation has useful tips on creating an effective description. //-->
 			<li>HTML: <code>data-icon="map"</code> or <code>data-icon="map" data-icon-variant="24-outline"</code></li>
 		</ul>
 	</li>
-	<li data-icon="map-stop" data-icon-variant="24-outline">
+	<li data-icon="stop-sign" data-icon-variant="24-outline">
 		<ul>
-			<li>SCSS: <code>@include icon(glyph(map-stop))</code> or <code>@include icon(glyph(map-stop), 24, "outline")</code></li>
-			<li>HTML: <code>data-icon="map-stop"</code> or <code>data-icon="map-stop" data-icon-variant="24-outline"</code></li>
+			<li>SCSS: <code>@include icon(glyph(stop-sign))</code> or <code>@include icon(glyph(stop-sign), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="stop-sign"</code> or <code>data-icon="stop-sign" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="parking" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(parking))</code> or <code>@include icon(glyph(parking), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="parking"</code> or <code>data-icon="parking" data-icon-variant="24-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="place" data-icon-variant="24-outline">
@@ -71,16 +89,16 @@ documentation has useful tips on creating an effective description. //-->
 			<li>HTML: <code>data-icon="set-position"</code> or <code>data-icon="set-position" data-icon-variant="24-outline"</code></li>
 		</ul>
 	</li>
-	<li data-icon="trainstation" data-icon-variant="24-outline">
+	<li data-icon="station" data-icon-variant="24-outline">
 		<ul>
-			<li>SCSS: <code>@include icon(glyph(trainstation))</code> or <code>@include icon(glyph(trainstation), 24, "outline")</code></li>
-			<li>HTML: <code>data-icon="trainstation"</code> or <code>data-icon="trainstation" data-icon-variant="24-outline"</code></li>
+			<li>SCSS: <code>@include icon(glyph(station))</code> or <code>@include icon(glyph(station), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="station"</code> or <code>data-icon="station" data-icon-variant="24-outline"</code></li>
 		</ul>
 	</li>
-	<li data-icon="gps" data-icon-variant="24-outline">
+	<li data-icon="train-station" data-icon-variant="24-outline">
 		<ul>
-			<li>SCSS: <code>@include icon(glyph(gps))</code> or <code>@include icon(glyph(gps), 24, "outline")</code></li>
-			<li>HTML: <code>data-icon="gps"</code> or <code>data-icon="gps" data-icon-variant="24-outline"</code></li>
+			<li>SCSS: <code>@include icon(glyph(train-station))</code> or <code>@include icon(glyph(train-station), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="train-station"</code> or <code>data-icon="train-station" data-icon-variant="24-outline"</code></li>
 		</ul>
 	</li>
 </ul>
@@ -126,10 +144,10 @@ documentation has useful tips on creating an effective description. //-->
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1676273662899">
+<script id="pl-js-polyfill-insert-1676363948233">
   (function() {
     if (self != top) {
-      var cb = '1676273662899';
+      var cb = '1676363948233';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -142,7 +160,7 @@ documentation has useful tips on creating an effective description. //-->
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1676273662899" nomodule>
+<script id="pl-js-insert-1676363948233" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 
