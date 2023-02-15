@@ -16,7 +16,7 @@
     "test:lighthouse": "npx lighthouse http://localhost:8080/patterns/pages-sample-page/pages-sample-page.rendered.html --budget-path=.lighthouse-budget.json --view",
     "test:webhint": "npx hint http://localhost:8080/styleguide/html/styleguide.html",
     "lint": "npm-run-all -p lint:*",
-    "lint:markdownlint": "markdownlint -c .markdown-lint.yml **/*.md",
+    "lint:markdownlint": "markdownlint -c .markdown-lint.yml '**/*.md'",
     "lint:stylelint": "stylelint **/*.scss",
     "lint:xo": "xo",
     "lint:html": "npm-run-all pl:build:* lint:html:standalone",
