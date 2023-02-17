@@ -1,0 +1,79 @@
+{
+	"icon-size": "24",
+	"icon-style": "filled",
+	"default": true,
+	"icons": [
+		{
+			"icon-glyph": "airplane"
+		},
+		{
+			"icon-glyph": "bicycle"
+		},
+		{
+			"icon-glyph": "bicycle-trailer"
+		},
+		{
+			"icon-glyph": "call-a-bike"
+		},
+		{
+			"icon-glyph": "car"
+		},
+		{
+			"icon-glyph": "carsharing"
+		},
+		{
+			"icon-glyph": "electric-locomotive"
+		},
+		{
+			"icon-glyph": "electric-scooter"
+		},
+		{
+			"icon-glyph": "ev-car"
+		},
+		{
+			"icon-glyph": "ferry"
+		},
+		{
+			"icon-glyph": "handcart"
+		},
+		{
+			"icon-glyph": "ice"
+		},
+		{
+			"icon-glyph": "intercity-train"
+		},
+		{
+			"icon-glyph": "local-bus"
+		},
+		{
+			"icon-glyph": "long-distance-bus"
+		},
+		{
+			"icon-glyph": "local-train"
+		},
+		{
+			"icon-glyph": "s-bahn"
+		},
+		{
+			"icon-glyph": "scooter"
+		},
+		{
+			"icon-glyph": "speedboat"
+		},
+		{
+			"icon-glyph": "subway"
+		},
+		{
+			"icon-glyph": "taxi"
+		},
+		{
+			"icon-glyph": "train-and-car"
+		},
+		{
+			"icon-glyph": "tram"
+		},
+		{
+			"icon-glyph": "walking"
+		}
+	]
+}
