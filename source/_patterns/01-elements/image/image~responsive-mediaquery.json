@@ -1,11 +1,11 @@
 {
 	"sources": [
 		{
-			"srcset": "../../samples/images/alexander-bagno-iILbjYtkyG0-unsplash.1128x759.jpg",
+			"srcset": "../../samples/images/maximilian--UZa949e8LE-unsplash.1128x846.squoosh.mozjpeg.jpg",
 			"media": "(min-width: 1100px)"
 		},
 		{
-			"srcset": "../../samples/images/alexander-bagno-iILbjYtkyG0-unsplash.752x506.jpg",
+			"srcset": "../../samples/images/maximilian--UZa949e8LE-unsplash.752x564.squoosh.mozjpeg.jpg",
 			"media": "(min-width: 700px)"
 		}
 	]
