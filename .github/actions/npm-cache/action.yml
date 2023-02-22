@@ -3,6 +3,19 @@ description: "Initialize NPM Cache"
 runs:
   using: "composite"
   steps:
+    - name: Setup Node version equally to our local development version
+      # pick the Node version to use and install it
+      # https://github.com/actions/setup-node
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+
+    - name: Display node and npm version
+      if: steps.npm-cache.outputs.cache-hit != 'true'
+      run: |
+        node --version
+        npm --version
+
     - uses: actions/cache@v3
       id: "npm-cache" # use this to check for `cache-hit` ==> if: steps.npm-cache.outputs.cache-hit != 'true'
       with:
