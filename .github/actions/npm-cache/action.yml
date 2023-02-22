@@ -11,6 +11,7 @@ runs:
         node-version: 16
 
     - name: Display node and npm version
+      shell: bash
       run: |
         node --version
         npm --version
