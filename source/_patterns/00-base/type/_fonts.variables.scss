@@ -25,22 +25,21 @@ $font-families: (
 		"font-style": normal,
 		"font-local": true
 	),
-	// "DB Screen Sans Digital Regular": (
-	// 	"font-family": "DB Screen Sans Digital Regular",
-	// 	"font-filename": "dbscreensans-digitalregular",
-	// 	// normal font weight
-	// 	"font-weight": 400,
-	// 	"font-style": normal
-	// ),
-	"DB Screen Sans Regular":
-		(
-			"font-family": "DB Screen Sans",
-			"font-filename": "dbscreensans-regular",
-			// normal font weight
-			"font-weight": 400,
-			"font-style": normal,
-			"font-local": true
-		),
+	"DB Screen Sans Digital Regular": (
+		"font-family": "DB Screen Sans Digital Regular",
+		"font-filename": "dbscreensans-digitalregular",
+		// normal font weight
+		"font-weight": 400,
+		"font-style": normal
+	),
+	"DB Screen Sans Regular": (
+		"font-family": "DB Screen Sans",
+		"font-filename": "dbscreensans-regular",
+		// normal font weight
+		"font-weight": 400,
+		"font-style": normal,
+		"font-local": true
+	),
 	"DB Screen Sans Medium": (
 		"font-family": "DB Screen Sans",
 		"font-filename": "dbscreensans-medium",
