@@ -49,6 +49,16 @@
 		}
 	}
 
+	// TODO: Evaluate whether those could get moved to ../_form-elements.scss
+	&:disabled,
+	fieldset:disabled & {
+		&,
+		& + .elm-label {
+			// Decided against cursor: not-allowed, compare to e.g. https://phabricator.wikimedia.org/T121960
+			opacity: 0.4;
+		}
+	}
+
 	// ### Style variations
 	&[data-variant="semitransparent"] {
 		@extend %form-element-semitransparent;
