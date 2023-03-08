@@ -1,0 +1,25 @@
+{
+	"variations": [
+		{
+			"variant": "semitransparent",
+			"id": "select05",
+			"label": "Devices"
+		},
+		{
+			"variant": "white",
+			"id": "select06",
+			"label": "Devices"
+		},
+		{
+			"variant": "solid",
+			"id": "select07",
+			"label": "Devices"
+		},
+		{
+			"variant": "outline",
+			"id": "select08",
+			"label": "Devices"
+		}
+	],
+	"disabled": true
+}
