@@ -3,7 +3,6 @@
 @import "../../../css/helpers/functions";
 
 .rea-header {
-	@include clearfix($partial: $partial);
 	background-color: $header---backgroundColor;
 	box-shadow: $header---boxShadow;
 	display: flex;
