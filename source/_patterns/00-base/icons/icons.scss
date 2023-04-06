@@ -12,6 +12,7 @@
 	&::before {
 		@extend %icon;
 		margin-inline-end: var(--icon-margin-after, #{$icon-content-space});
+		font-size: var(--icon-font-size-before, var(--icon-font-size));
 	}
 }
 
@@ -19,6 +20,7 @@
 	&::after {
 		@extend %icon;
 		margin-inline-start: var(--icon-margin-before, #{$icon-content-space});
+		font-size: var(--icon-font-size-after, var(--icon-font-size));
 	}
 }
 

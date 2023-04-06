@@ -9,7 +9,11 @@
 	&::#{$position} {
 		--icon-font-family: "#{"icons-" + $size + "-" + $style}",
 			"missing-icons" !important;
-		--icon-font-size: #{to-rem($pxValue: $size)};
+
+		font-size: var(
+			--icon-font-size-#{$position},
+			var(--icon-font-size, #{to-rem($pxValue: $size)})
+		);
 
 		@if $position == "before" {
 			margin-inline-end: var(--icon-margin-after, #{$icon-content-space});
@@ -30,8 +34,6 @@
 			/*** icon - partial ***/
 			// * use !important to prevent issues with browser extensions that change fonts
 			font-family: var(--icon-font-family) !important;
-
-			font-size: var(--icon-font-size);
 			font-style: normal;
 			font-variant: normal;
 
