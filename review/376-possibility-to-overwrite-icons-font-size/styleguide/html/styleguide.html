@@ -12,17 +12,17 @@
 
 
 	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1681195012847" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1681200271984" media="all">
 
 	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1681195012847" media="all">
-	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1681195012847" media="all">
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1681195012847" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1681200271984" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1681200271984" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1681200271984" media="all">
 	<!-- dialog polyfill //-->
-	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1681195012847" media="all">
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1681200271984" media="all">
 
 	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1681195012847" media="all">
+	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1681200271984" media="all">
 	<!-- End Pattern Lab -->
 
 
@@ -1589,6 +1589,17 @@ span.with-an-icon {
 <p>In case of the need to display only the icon and hide the text next to it, use the following class:</p>
 <pre><code class="language-html">.is-icon-text-replace
 </code></pre>
+<h6>Tweaking icons <code>font-size</code></h6>
+<p>If you'd like to control the icons <code>font-size</code> any further (defining sizes in between all of the <code>data-icon-variant</code> declarations, like e.g. having an icon <code>font-size</code> of <code>23px</code> instead of <code>24px</code> when defining <code>data-icon-variant=&quot;24-outline&quot;</code>), you could set set one of the CSS variables <code>--icon-font-size-before</code> or <code>--icon-font-size-after</code> (in this case <code>--icon-font-size-before: 23px</code>).</p>
+<pre><code class="language-html">&lt;a
+  href=&quot;#&quot;
+  data-icon=&quot;alarm&quot;
+  data-icon-variant=&quot;24-outline&quot;
+  style=&quot;--icon-font-size-before: 23px&quot;
+  &gt;Alarm&lt;/a
+&gt;
+</code></pre>
+<h4>Further tweaking</h4>
 <h3>SVG files</h3>
 <p>As mentioned above we're even also providing all of the icon sources (<code>svg</code> files) within this package in the folder <code>node_modules/@db-ui/core/dist/icons/</code>.</p>
 <p>And we're enabling to change the colors for the <a href="https://db-ui.github.io/base/?p=viewall-icons-illustrative">illustrative icons</a> (&quot;pulse&quot; and icon itself) as well as the <a href="https://db-ui.github.io/base/?p=viewall-icons-functional">functional icons</a> (only the single-color icon), through the two following CSS variables / CSS custom properties, with their included default (second value):</p>
@@ -27577,10 +27588,10 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1681195012847">
+<script id="pl-js-polyfill-insert-1681200271984">
   (function() {
     if (self != top) {
-      var cb = '1681195012847';
+      var cb = '1681200271984';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -27593,7 +27604,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1681195012847" nomodule>
+<script id="pl-js-insert-1681200271984" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 
