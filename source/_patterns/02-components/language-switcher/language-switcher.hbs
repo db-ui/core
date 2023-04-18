@@ -1,13 +1,11 @@
-{{! TODO: evaluate on the correct role and aria-label in here }}
-<!-- [html-validate-disable-next prefer-native-element] -->
-<ul class="cmp-language-switcher" role="listbox">
-	<li role="option">
+<ul class="cmp-language-switcher">
+	<li>
 		{{> elements-link href='#' hreflang='en' value='EN' title='English language' rel='alternate' }}
 	</li>
-	<li role="option" aria-selected="true">
+	<li aria-current="page">
 		{{> elements-link href='#' hreflang='de' value='DE' title='Deutsche Sprache' rel='bookmark' }}
 	</li>
-	<li role="option">
+	<li>
 		{{> elements-link href='#' hreflang='fr' value='FR' title='Langue française' rel='alternate' }}
 	</li>
 </ul>
