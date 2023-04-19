@@ -94,6 +94,22 @@ In case of the need to display only the icon and hide the text next to it, use t
 .is-icon-text-replace
 ```
 
+###### Tweaking icons `font-size`
+
+If you'd like to control the icons `font-size` any further (defining sizes in between all of the `data-icon-variant` declarations, like e.g. having an icon `font-size` of `23px` instead of `24px` when defining `data-icon-variant="24-outline"`), you could set set one of the CSS variables `--icon-font-size-before` or `--icon-font-size-after` (in this case `--icon-font-size-before: 23px`).
+
+```html
+<a
+  href="#"
+  data-icon="alarm"
+  data-icon-variant="24-outline"
+  style="--icon-font-size-before: 23px"
+  >Alarm</a
+>
+```
+
+#### Further tweaking
+
 ### SVG files
 
 As mentioned above we're even also providing all of the icon sources (`svg` files) within this package in the folder `node_modules/@db-ui/core/dist/icons/`.
