@@ -10,7 +10,7 @@
 	&:hover,
 	&:focus {
 		li {
-			&:not(:has([aria-current="page"])) {
+			&:not([aria-current]) {
 				visibility: visible;
 			}
 
@@ -33,20 +33,19 @@
 			z-index: $z-index-rea-header-cmp-language-switcher-li; // * TODO: possibly rework variable naming
 
 			// TODO: This is an enhancement for more languages, but obviously doesn't scale that nicely and would need some rework
-			&:not(:has([aria-current="page"]))
-				~ li:not(:has([aria-current="page"])) {
+			&:not([aria-current="page"]) ~ li:not([aria-current="page"]) {
 				top: to-rem($pxValue: 54 * 2);
 
-				& ~ li:not(:has([aria-current="page"])) {
+				& ~ li:not([aria-current="page"]) {
 					top: to-rem($pxValue: 54 * 3);
 
-					& ~ li:not(:has([aria-current="page"])) {
+					& ~ li:not([aria-current="page"]) {
 						top: to-rem($pxValue: 54 * 4);
 
-						& ~ li:not(:has([aria-current="page"])) {
+						& ~ li:not([aria-current="page"]) {
 							top: to-rem($pxValue: 54 * 5);
 
-							& ~ li:not(:has([aria-current="page"])) {
+							& ~ li:not([aria-current="page"]) {
 								top: to-rem($pxValue: 54 * 6);
 							}
 						}
@@ -63,7 +62,7 @@
 			text-decoration: none;
 		}
 
-		&:not(:has([aria-current="page"])) {
+		&:not([aria-current]) {
 			visibility: hidden;
 
 			.elm-link {
@@ -78,7 +77,7 @@
 			}
 		}
 
-		&:has([aria-current]) {
+		&[aria-current] {
 			position: initial;
 
 			.elm-link {
