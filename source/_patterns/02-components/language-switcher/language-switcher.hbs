@@ -1,11 +1,24 @@
-<ul class="cmp-language-switcher">
-	<li>
-		{{> elements-link href='#' hreflang='en' value='EN' title='English language' rel='alternate' }}
+{{#if spa}}<!-- [html-validate-disable-next prefer-native-element] -->{{/if }}
+<ul class="cmp-language-switcher"{{#if spa}} role="listbox"{{/if }}>
+	<li{{#if spa}} role="option"{{/if }}>
+		{{#unless spa}}
+			{{> elements-link href='#' hreflang='en' value='EN' title='English language' rel='alternate' }}
+		{{else}}
+			{{> elements-button type='button' value='EN' title='English language' variant='tertiary-plain' }}
+		{{/unless }}
 	</li>
-	<li aria-current="page">
-		{{> elements-link href='#' hreflang='de' value='DE' title='Deutsche Sprache' rel='bookmark' }}
+	<li{{#if spa}} role="option" aria-selected="true"{{else}} aria-current="page"{{/if }}>
+		{{#unless spa}}
+			{{> elements-link href='#' hreflang='de' value='DE' title='Deutsche Sprache' rel='bookmark' }}
+		{{else}}
+			{{> elements-button type='button' value='DE' title='Deutsche Sprache' variant='tertiary-plain' }}
+		{{/unless }}
 	</li>
-	<li>
-		{{> elements-link href='#' hreflang='fr' value='FR' title='Langue française' rel='alternate' }}
+	<li{{#if spa}} role="option"{{/if }}>
+		{{#unless spa}}
+			{{> elements-link href='#' hreflang='fr' value='FR' title='Langue française' rel='alternate' }}
+		{{else}}
+			{{> elements-button type='button' value='FR' title='Langue française' variant='tertiary-plain' }}
+		{{/unless }}
 	</li>
 </ul>
