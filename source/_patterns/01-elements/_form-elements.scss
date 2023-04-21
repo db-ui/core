@@ -35,7 +35,7 @@
 
 // Validation
 %form-element-validation {
-	&:is(:required, [pattern], [min], [max], [step], [minlength], [maxlength]) {
+	&:required {
 		&,
 		&[data-variant]  {
 			&:not([aria-invalid]) {
@@ -51,7 +51,8 @@
 			}
 		}
 	}
-
+}
+%form-element-validation-programmatic {
 	&[aria-invalid="true"] {
 		&,
 		&[data-variant] {
