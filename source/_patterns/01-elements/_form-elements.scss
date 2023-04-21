@@ -34,17 +34,18 @@
 }
 
 // Validation
+// We need to differentiate here for select elements, that we couldn't handle by :placeholder-shown
 %form-element-validation {
-	&:required {
+	&:is(:required, [pattern], [min], [max], [step], [minlength], [maxlength]) {
 		&,
 		&[data-variant]  {
 			&:not([aria-invalid]) {
-				&:valid {
-					--formElement---borderColor: #{$db-color-green-600};
-				}
+				&:not(:placeholder-shown) {
+					&:valid {
+						--formElement---borderColor: #{$db-color-green-600};
+					}
 
-				&:invalid {
-					&:not(:placeholder-shown) {
+					&:invalid {
 						--formElement---borderColor: #{$db-color-red-500};
 					}
 				}
