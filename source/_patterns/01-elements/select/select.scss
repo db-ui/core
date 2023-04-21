@@ -39,7 +39,7 @@
 			}
 		}
 
-		&:required:invalid {
+		&:has(option:checked:empty) {
 			& + .elm-label {
 				color: $select-floatingLabel--color;
 				font-size: to-rem($pxValue: 16);
