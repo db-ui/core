@@ -56,34 +56,9 @@
 		}
 	}
 
-	// TODO: Evaluate whether those could get moved to ../_form-elements.scss
-	// Validation
-	&:required,
-	&:focus {
-		&,
-		&[data-variant] {
-			&:valid:not([aria-invalid]) {
-				--formElement---borderColor: #{$db-color-green-600};
-			}
-
-			&:invalid {
-				&:not(:placeholder-shown) {
-					--formElement---borderColor: #{$db-color-red-500};
-
-					& ~ .description {
-						color: $db-color-red-500;
-					}
-				}
-			}
-		}
-	}
-
-	&[aria-invalid="true"] {
-		&,
-		&[data-variant] {
-			--formElement---borderColor: #{$db-color-red-500};
-		}
-	}
+	/* stylelint-disable order/order */
+	@extend %form-element-validation;
+	/* stylelint-enable order/order */
 
 	// TODO: Evaluate whether those could get moved to ../_form-elements.scss
 	& + output {
