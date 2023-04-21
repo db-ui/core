@@ -39,8 +39,7 @@
 			}
 		}
 
-		&:required:invalid,
-		&[aria-invalid="true"] {
+		&:required:invalid {
 			& + .elm-label {
 				color: $select-floatingLabel--color;
 				font-size: to-rem($pxValue: 16);
