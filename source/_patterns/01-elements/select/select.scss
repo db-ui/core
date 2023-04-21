@@ -49,7 +49,7 @@
 
 		// Validation
 		/* stylelint-disable order/order */
-		@extend %form-element-validation-programmatic;
+		@extend %form-element-validation;
 		/* stylelint-enable order/order */
 		&,
 		&[data-variant]  {
