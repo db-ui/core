@@ -39,12 +39,28 @@
 			}
 		}
 
-		&:required:invalid,
-		&[aria-invalid="true"] {
+		&:has(option:checked:empty) {
 			& + .elm-label {
 				color: $select-floatingLabel--color;
 				font-size: to-rem($pxValue: 16);
 				transform: translate($db-spacing-m, -#{to-rem($pxValue: 35)});
+			}
+		}
+
+		// Validation
+		/* stylelint-disable order/order */
+		@extend %form-element-validation-programmatic;
+		/* stylelint-enable order/order */
+		&,
+		&[data-variant]  {
+			&:not([aria-invalid]) {
+				&:is(:user-valid) {
+					--formElement---borderColor: #{$db-color-green-600};
+				}
+
+				&:is(:user-invalid) {
+					--formElement---borderColor: #{$db-color-red-500};
+				}
 			}
 		}
 	}
