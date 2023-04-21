@@ -36,9 +36,11 @@
 // Validation
 // We need to differentiate here for select elements, that we couldn't handle by :placeholder-shown
 %form-element-validation {
+	// listing the relevant form attributes related to form validation
 	&:is(:required, [pattern], [min], [max], [step], [minlength], [maxlength]) {
 		&,
-		&[data-variant]  {
+		// workaround for the DB UI Core selectors
+		&[data-variant] {
 			&:not([aria-invalid]) {
 				&:not(:placeholder-shown) {
 					&:valid {
