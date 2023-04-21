@@ -38,13 +38,15 @@
 	&:required {
 		&,
 		&[data-variant]  {
-			&:valid:not([aria-invalid]) {
-				--formElement---borderColor: #{$db-color-green-600};
-			}
+			&:not([aria-invalid]) {
+				&:valid {
+					--formElement---borderColor: #{$db-color-green-600};
+				}
 
-			&:invalid {
-				&:not(:placeholder-shown) {
-					--formElement---borderColor: #{$db-color-red-500};
+				&:invalid {
+					&:not(:placeholder-shown) {
+						--formElement---borderColor: #{$db-color-red-500};
+					}
 				}
 			}
 		}
