@@ -49,9 +49,7 @@
 				}
 
 				&:invalid {
-					&:not(:placeholder-shown) {
-						--formElement---borderColor: #{$db-color-red-500};
-					}
+					--formElement---borderColor: #{$db-color-red-500};
 				}
 			}
 		}
