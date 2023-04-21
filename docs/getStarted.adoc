@@ -8,17 +8,18 @@ You're a Web Developer and you want to use DB UI Core in your own application. E
 
 There are multiple options how to use DB UI Core:
 
-* Manually copy the artifacs to your project
+* Manually copy the artifacts to your project
 * Use npm package
 
 ## How to use
+
 Download DB UI Core to get the compiled CSS (and the small parts of JavaScript), source code, or include it with npm package manager (repository on _npmjs.com_ or _yarn_).
 
-Previous to that you would need to have `node.js` installed on your local machine. In case you haven't we recommend installing `node` via [`nvm`](https://github.com/nvm-sh/nvm).
+Previous to that you would need to have `node.js` installed on your local machine. In case you haven't we recommend installing `node` via link:https://github.com/nvm-sh/nvm[`nvm`].
 
 ### Use _npmjs.com_ or _yarn_ (installing npm package, recommended)
+
 In case you'd like to use DB UI Core as a dependency in your (frontend) build process and you even also care about handling DB UI Core as a dependency (e.g. for updates etc.), you need to install it as a dependency to your project and then link it within your HTML (CSS file) or within your SCSS.
-Please have a look into the link:docs/getStarted.adoc[Docs / Get Started] for detailed instructions.
 
 [source,bash]
 ----
@@ -167,7 +168,7 @@ For Rollup based bundlers like Vite or Parcel we're providing the following SCSS
 
 ### Use css files:
 
-If you want to use the compiled CSS directly, you can refence the css files in your index.html like this:
+If you want to use the compiled CSS directly, you can reference the css files in your index.html like this:
 
 [source,html]
 ----
