@@ -54,12 +54,14 @@
 		/* stylelint-enable order/order */
 		&,
 		&[data-variant]  {
-			&:is(:user-valid):not([aria-invalid]) {
-				--formElement---borderColor: #{$db-color-green-600};
-			}
+			&:not([aria-invalid]) {
+				&:is(:user-valid) {
+					--formElement---borderColor: #{$db-color-green-600};
+				}
 
-			&:is(:user-invalid) {
-				--formElement---borderColor: #{$db-color-red-500};
+				&:is(:user-invalid) {
+					--formElement---borderColor: #{$db-color-red-500};
+				}
 			}
 		}
 	}
