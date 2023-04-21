@@ -1,5 +1,5 @@
 ---
-title: Language switcher
+title: Language switcher with buttons
 state: inprogress
 ---
 

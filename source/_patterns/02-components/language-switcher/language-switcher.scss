@@ -10,10 +10,11 @@
 	&:hover,
 	&:focus {
 		li {
-			&:not([aria-selected]) {
+			&:not([aria-current], [aria-selected]) {
 				visibility: visible;
 			}
 
+			&[aria-current="page"],
 			&[aria-selected="true"] {
 				color: $db-color-red-500;
 			}
@@ -33,19 +34,28 @@
 			z-index: $z-index-rea-header-cmp-language-switcher-li; // * TODO: possibly rework variable naming
 
 			// TODO: This is an enhancement for more languages, but obviously doesn't scale that nicely and would need some rework
-			&:not([aria-selected="true"]) ~ li:not([aria-selected="true"]) {
+			&:not([aria-current="page"], [aria-selected="true"])
+				~ li:not([aria-current="page"], [aria-selected="true"]) {
 				top: to-rem($pxValue: 54 * 2);
 
-				& ~ li:not([aria-selected="true"]) {
+				& ~ li:not([aria-current="page"], [aria-selected="true"]) {
 					top: to-rem($pxValue: 54 * 3);
 
-					& ~ li:not([aria-selected="true"]) {
+					& ~ li:not([aria-current="page"], [aria-selected="true"]) {
 						top: to-rem($pxValue: 54 * 4);
 
-						& ~ li:not([aria-selected="true"]) {
+						&
+							~ li:not(
+								[aria-current="page"],
+								[aria-selected="true"]
+							) {
 							top: to-rem($pxValue: 54 * 5);
 
-							& ~ li:not([aria-selected="true"]) {
+							&
+								~ li:not(
+									[aria-current="page"],
+									[aria-selected="true"]
+								) {
 								top: to-rem($pxValue: 54 * 6);
 							}
 						}
@@ -57,15 +67,17 @@
 			}
 		}
 
-		.elm-link {
+		.elm-link,
+		.elm-button {
 			color: inherit;
 			text-decoration: none;
 		}
 
-		&:not([aria-selected]) {
+		&:not([aria-current], [aria-selected]) {
 			visibility: hidden;
 
-			.elm-link {
+			.elm-link,
+			.elm-button {
 				padding-bottom: to-rem($pxValue: 15);
 				padding-right: to-rem($pxValue: 34);
 				padding-top: to-rem($pxValue: 15);
@@ -77,10 +89,12 @@
 			}
 		}
 
+		&[aria-current],
 		&[aria-selected] {
 			position: initial;
 
-			.elm-link {
+			.elm-link,
+			.elm-button {
 				@include icon(
 					glyph(expand-more),
 					24,
@@ -103,7 +117,8 @@
 			}
 		}
 
-		.elm-link {
+		.elm-link,
+		.elm-button {
 			display: inline-block;
 
 			padding-left: to-rem($pxValue: 18);
@@ -112,6 +127,13 @@
 			&:focus {
 				color: initial;
 			}
+		}
+
+		.elm-button {
+			line-height: 1.5;
+			padding-right: 0;
+			border-width: 0;
+			padding-top: to-rem($pxValue: 9);
 		}
 	}
 }
