@@ -58,6 +58,7 @@
 
 	/* stylelint-disable order/order */
 	@extend %form-element-validation;
+	@extend %form-element-validation-programmatic;
 	/* stylelint-enable order/order */
 
 	// TODO: Evaluate whether those could get moved to ../_form-elements.scss

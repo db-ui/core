@@ -39,9 +39,20 @@
 			}
 		}
 
+		// Validation
 		/* stylelint-disable order/order */
-		@extend %form-element-validation;
+		@extend %form-element-validation-programmatic;
 		/* stylelint-enable order/order */
+		&,
+		&[data-variant]  {
+			&:is(:user-valid):not([aria-invalid]) {
+				--formElement---borderColor: #{$db-color-green-600};
+			}
+
+			&:is(:user-invalid) {
+				--formElement---borderColor: #{$db-color-red-500};
+			}
+		}
 	}
 
 	// TODO: Evaluate whether those could get moved to ../_form-elements.scss
