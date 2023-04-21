@@ -39,6 +39,15 @@
 			}
 		}
 
+		&:required:invalid,
+		&[aria-invalid="true"] {
+			& + .elm-label {
+				color: $select-floatingLabel--color;
+				font-size: to-rem($pxValue: 16);
+				transform: translate($db-spacing-m, -#{to-rem($pxValue: 35)});
+			}
+		}
+
 		// Validation
 		/* stylelint-disable order/order */
 		@extend %form-element-validation-programmatic;
