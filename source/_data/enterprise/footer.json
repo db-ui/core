@@ -2,7 +2,7 @@
 	"navItems": [
 		{
 			"href": "https://db-ui.github.io/datenschutzerklaerung.html",
-			"value": "Datenschutzerklärung",
+			"value": "Datenschutzerklärung (Data privacy)",
 			"lang": "de",
 			"hreflang": "de",
 			"rel": "noopener noreferrer",
@@ -19,8 +19,10 @@
 			"value": "Contact"
 		},
 		{
-			"href": "#",
-			"value": "Über uns"
+			"href": "https://marketingportal.extranet.deutschebahn.com/marketingportal/Design-Anwendungen/DB-UX-Design-System/Design-fuer-Apps-Web/",
+			"value": "About us",
+			"rel": "noopener noreferrer",
+			"target": "_blank"
 		}
 	]
 }
