@@ -31,9 +31,7 @@
 		background-color: rgba(40, 45, 55, 0.3);
 	}
 
-	&:checked,
-	&:invalid,
-	&[aria-invalid="true"] {
+	&:checked {
 		border-width: to-em($pxValue: 6);
 	}
 	// * the invalid style using the :invalid pseudo class (and [aria-invalid="true"] equivalent, see #136 and #141)
