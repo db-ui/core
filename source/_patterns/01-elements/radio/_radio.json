@@ -1,4 +1,5 @@
 {
 	"label": "Radio",
-	"id": "radio"
+	"id": "radio",
+	"name": "radio"
 }
