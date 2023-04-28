@@ -56,11 +56,6 @@
 		}
 	}
 
-	/* stylelint-disable order/order */
-	@extend %form-element-validation;
-	@extend %form-element-validation-programmatic;
-	/* stylelint-enable order/order */
-
 	// TODO: Evaluate whether those could get moved to ../_form-elements.scss
 	& + output {
 		// amount of signs output
@@ -94,4 +89,10 @@
 	&[data-variant="outline"] {
 		@extend %form-element-outline;
 	}
+
+	// Validation
+	/* stylelint-disable order/order */
+	@extend %form-element-validation;
+	@extend %form-element-validation-programmatic;
+	/* stylelint-enable order/order */
 }
