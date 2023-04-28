@@ -84,7 +84,7 @@
 }
 
 // Validation
-// We need to differentiate here for select elements, that we couldn't handle by :placeholder-shown
+// We need to differentiate here because of any non-textual input elements like select, radio and checkbox, that we couldn't handle by :placeholder-shown
 // TODO: maybe we could totally restructure this, work with a :not(select) instead, differentiate in between user-invalid and provide a fallback (https://github.com/db-ui/mono/pull/893), etc.
 %form-element-validation {
 	&:not([aria-invalid]) {
