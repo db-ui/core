@@ -7,7 +7,7 @@
 	{{#if describedbyid }} aria-describedby="{{ describedbyid }}"{{/if }}
 	{{{ validation }}}
 	{{#if maxlength }} maxlength="{{ maxlength }}"
-	{{#if aria-invalid }} aria-invalid="{{ aria-invalid }}"{{/if }}
+	{{#if invalid }} aria-invalid="{{ invalid }}"{{/if }}
 	oninput="result_{{ id }}.value=this.value.length+'/'+this.attributes.maxlength.value"{{/if }}
 	{{#if variant}} data-variant="{{variant}}"{{/if }}>{{ value }}</textarea>
 {{#if maxlength }}<output for="{{ id }}" id="result_{{ id }}"></output>{{/if }}

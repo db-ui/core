@@ -2,8 +2,8 @@
 	{{#if id }} name="{{ id }}" id="{{ id }}"{{/if }}
 	{{#if disabled}} disabled{{/if }}
 	{{#if multiple}} multiple{{/if }}
-	{{#unless multiple}} required{{/unless}}
-	{{#if aria-invalid }} aria-invalid="{{ aria-invalid }}" {{/if }}
+	{{#if required}} required{{/if}}
+	{{#if invalid }} aria-invalid="{{ invalid }}" {{/if }}
 	{{#if variant}} data-variant="{{variant}}"{{/if }}>
 	{{#if optgroup}}<optgroup label="Devices">{{else}}{{#unless multiple}}<option></option>{{/unless}}{{/if }}
 		<option value="smartphone">Smartphone</option>
