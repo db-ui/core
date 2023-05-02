@@ -1,6 +1,6 @@
 # Global
 
-This is a dynamic styleguide. We are working on this continuously. It is influenced by project work. Please share your experience with us at db-ux-designsystem@deutschebahn.com.
+This is a dynamic styleguide. We are working on this continuously. It is influenced by project work. Please share your experience with us at <db-ux-designsystem@deutschebahn.com>.
 
 The global category defines visual elements such as color, font families, and motion. While not technically UI components, these elements are critical to document in the pattern library.
 
