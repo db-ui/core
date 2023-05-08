@@ -56,10 +56,10 @@
 				// TODO: This could probably get simplified later on e.g. via CSS variables
 				background-color: $button-brand-primary-hover-backgroundColor;
 			}
-		}
 
-		&:active {
-			background-color: #cc0013; // TODO: replace by correct color variable
+			&:active {
+				background-color: #cc0013; // TODO: replace by correct color variable
+			}
 		}
 	}
 
@@ -75,10 +75,10 @@
 				// TODO: This could probably get simplified later on e.g. via CSS variables
 				background-color: $button-primary-hover-backgroundColor;
 			}
-		}
 
-		&:active {
-			background-color: #363c4a;
+			&:active {
+				background-color: #363c4a;
+			}
 		}
 	}
 
@@ -99,10 +99,10 @@
 				// TODO: This could probably get simplified later on e.g. via CSS variables
 				background-color: $button-secondaryOutline-hover-backgroundColor;
 			}
-		}
 
-		&:active {
-			background-color: $button-secondaryOutline-active-backgroundColor;
+			&:active {
+				background-color: $button-secondaryOutline-active-backgroundColor;
+			}
 		}
 	}
 
@@ -122,10 +122,10 @@
 				// TODO: This could probably get simplified later on e.g. via CSS variables
 				background-color: $button-secondarySolid-hover-backgroundColor;
 			}
-		}
 
-		&:active {
-			background-color: $button-secondarySolid-active-backgroundColor;
+			&:active {
+				background-color: $button-secondarySolid-active-backgroundColor;
+			}
 		}
 	}
 
@@ -143,10 +143,10 @@
 				// TODO: This could probably get simplified later on e.g. via CSS variables
 				background-color: $button-secondaryOutline-hover-backgroundColor;
 			}
-		}
 
-		&:active {
-			background-color: $button-secondaryOutline-active-backgroundColor;
+			&:active {
+				background-color: $button-secondaryOutline-active-backgroundColor;
+			}
 		}
 	}
 
