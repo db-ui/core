@@ -1,0 +1,15 @@
+{
+	"disabled": true,
+	"name": "radioDisabledChecked",
+	"radios": [
+		{
+			"checked": true
+		},
+		{
+			"checked": false
+		},
+		{
+			"checked": false
+		}
+	]
+}

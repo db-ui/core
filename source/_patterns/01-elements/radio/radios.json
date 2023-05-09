@@ -1,0 +1,14 @@
+{
+	"name": "radio",
+	"radios": [
+		{
+			"label": "Radio 01"
+		},
+		{
+			"label": "Radio 02"
+		},
+		{
+			"label": "Radio 03"
+		}
+	]
+}
