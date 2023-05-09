@@ -23,12 +23,16 @@
 		vertical-align: sub;
 	}
 
-	&:hover {
-		background-color: rgba(40, 45, 55, 0.14);
-	}
+	&:enabled {
+		&:hover {
+			&:not(:checked) {
+				background-color: rgba(40, 45, 55, 0.14);
+			}
+		}
 
-	&:active {
-		background-color: rgba(40, 45, 55, 0.3);
+		&:active {
+			background-color: rgba(40, 45, 55, 0.3);
+		}
 	}
 
 	&:checked {

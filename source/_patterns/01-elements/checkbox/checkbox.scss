@@ -36,13 +36,11 @@
 		}
 	}
 
-	&:not(:disabled) {
+	&:enabled {
 		&:hover {
 			background-color: rgba(40, 45, 55, 0.14);
-		}
 
-		&:checked {
-			&:hover {
+			&:checked {
 				background-color: $checkbox-hover-checked-backgroundColor;
 			}
 		}
