@@ -12,6 +12,7 @@ body {
 // adapted from https://github.com/jgthms/bulma/blob/0.7.5/sass/base/generic.sass
 html {
 	background-color: #fdfdfd; // TODO: This would need to get replaced by the correct (semantic) color
+	// font-size: 16px; // We need to deactivate this due to accessibility problems, as even also reported with https://github.com/jgthms/bulma/issues/3588
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	min-width: 300px;
@@ -20,6 +21,9 @@ html {
 	text-rendering: optimizeLegibility;
 	text-size-adjust: 100%;
 	text-size-adjust: 100%;
+}
+body {
+	font-size: 1rem;
 }
 
 body,
