@@ -7,6 +7,7 @@ body {
 
 body {
 	min-height: 100vh;
+	font-size: 1rem;
 }
 
 // adapted from https://github.com/jgthms/bulma/blob/0.7.5/sass/base/generic.sass
@@ -21,9 +22,6 @@ html {
 	text-rendering: optimizeLegibility;
 	text-size-adjust: 100%;
 	text-size-adjust: 100%;
-}
-body {
-	font-size: 1rem;
 }
 
 body,
