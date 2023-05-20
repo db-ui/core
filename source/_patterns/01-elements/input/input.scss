@@ -66,8 +66,6 @@
 		}
 
 		// Floating labels
-		margin-top: to-rem($pxValue: 16);
-
 		&:not([type="date"]):not([type="datetime-local"]):not(
 				[type="month"]
 			):not([type="time"]):not([type="week"])
