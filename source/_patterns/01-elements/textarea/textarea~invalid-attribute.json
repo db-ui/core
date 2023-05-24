@@ -1,6 +1,6 @@
 {
 	"id": "textarea06",
-	"value": "Inpu",
+	"value": "Input",
 	"validation": " minlength=\"5\"",
 	"invalid": "true"
 }
