@@ -2,7 +2,7 @@
 	"id": "input15",
 	"description": "Optionale Beschreibung<br>Zeile zwei",
 	"describedbyid": "input15hint",
-	"value": "Inpu",
+	"value": "Input",
 	"validation": " minlength=\"5\"",
 	"invalid": "true"
 }

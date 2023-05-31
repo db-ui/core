@@ -1,5 +1,5 @@
 {
 	"id": "textarea05",
-	"value": "Inpu",
+	"value": "Input",
 	"validation": " minlength=\"5\" required"
 }
