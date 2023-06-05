@@ -92,6 +92,9 @@
 		},
 		{
 			"icon-glyph": "walking"
+		},
+		{
+			"icon-glyph": "walking-fast"
 		}
 	]
 }
