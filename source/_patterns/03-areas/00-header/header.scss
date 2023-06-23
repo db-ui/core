@@ -14,6 +14,11 @@
 	padding-left: to-rem($pxValue: 16);
 	padding-right: to-rem($pxValue: 16);
 
+	// We'll need to keep this for legacy reasons, to position the navigation even within a metanavigation included in header
+	&::after {
+		content: "";
+	}
+
 	.elm-link {
 		display: inline-block;
 	}
