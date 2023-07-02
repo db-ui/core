@@ -10,7 +10,7 @@
 		order: 1;
 	}
 
-	// Header Components positioning
+	// Header Components positioning, :has non-supporting browsers fallback
 	@supports not selector(:has(db)) {
 		margin: auto;
 	}
