@@ -1,6 +1,6 @@
 // Box sizing
 html {
-	box-sizing: var(--box-sizing, border-box);
+	box-sizing: var(--db-box-sizing, border-box);
 }
 
 *,
@@ -68,10 +68,10 @@ nav,
 }
 
 // Incorrect details/summary box-sizing / most likely a browser bug
-details[class|="cmp"] {
+details {
 	& > *,
 	& > ::before,
 	& > ::after {
-		box-sizing: var(--box-sizing, border-box);
+		box-sizing: var(--db-box-sizing, border-box);
 	}
 }
