@@ -1,6 +1,6 @@
 // Box sizing
 html {
-	box-sizing: border-box;
+	box-sizing: var(--box-sizing, border-box);
 }
 
 *,
@@ -64,5 +64,14 @@ nav,
 
 	li::marker {
 		color: $db-color-red-500;
+	}
+}
+
+// Incorrect details/summary box-sizing / most likely a browser bug
+details[class|="cmp"] {
+	& > *,
+	& > ::before,
+	& > ::after {
+		box-sizing: var(--box-sizing, border-box);
 	}
 }
