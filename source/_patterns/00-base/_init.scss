@@ -67,7 +67,7 @@ nav,
 	}
 }
 
-// Incorrect details/summary box-sizing / most likely a browser bug
+// details/summary box-sizing / https://kittygiraudel.com/2021/08/23/shadow-roots-and-inheritance/
 details {
 	& > *,
 	& > ::before,
