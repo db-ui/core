@@ -10,6 +10,11 @@
 		order: 1;
 	}
 
+	// Header Components positioning, :has non-supporting browsers fallback
+	@supports not selector(:has(db)) {
+		margin: auto;
+	}
+
 	// The links shouldn't get an underline as text-decoration
 	.elm-link {
 		// We need to reset the general border-radius here
