@@ -1,6 +1,6 @@
 // Box sizing
 html {
-	box-sizing: border-box;
+	box-sizing: var(--db-box-sizing, border-box);
 }
 
 *,
@@ -64,5 +64,14 @@ nav,
 
 	li::marker {
 		color: $db-color-red-500;
+	}
+}
+
+// details/summary box-sizing / https://kittygiraudel.com/2021/08/23/shadow-roots-and-inheritance/
+details {
+	& > *,
+	& > ::before,
+	& > ::after {
+		box-sizing: var(--db-box-sizing, border-box);
 	}
 }
