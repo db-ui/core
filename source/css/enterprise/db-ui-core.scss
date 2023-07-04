@@ -22,7 +22,6 @@ $partial: false;
 @use "@db-ui/base/build/scss/color-placeholder" as *;
 
 @use "../../_patterns/00-base/init.global" as *;
-@use "../../_patterns/00-base/init" as *;
 
 // Importing helpers
 @use "@db-ui/base/build/scss/helpers/functions" as *;

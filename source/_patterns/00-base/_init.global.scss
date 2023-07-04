@@ -1,17 +1,6 @@
 @use "@db-ui/base/build/scss/variables" as *;
 @use "@db-ui/base/build/scss/helpers/functions" as *;
 
-// *! this is an opionionated (especially based on "enhancing" normalize.css) version of minireset.css v0.0.4 | MIT License | github.com/jgthms/minireset.css
-html,
-body {
-	margin: 0;
-	padding: 0;
-}
-
-body {
-	min-height: 100vh;
-}
-
 // adapted from https://github.com/jgthms/bulma/blob/0.7.5/sass/base/generic.sass
 html {
 	background-color: #fdfdfd; // TODO: This would need to get replaced by the correct (semantic) color
@@ -48,16 +37,6 @@ body {
 	line-height: 1.5;
 }
 
-// Inline
-a {
-	// TODO: Move to DB UI Base
-	color: inherit;
-
-	strong {
-		color: currentColor;
-	}
-}
-
 code {
 	background-color: #f5f5f5;
 	color: darken($db-colors-primary-enabled, 2%);
@@ -74,18 +53,8 @@ hr {
 	margin: 1.5rem 0;
 }
 
-img {
-	height: auto;
-	max-width: 100%;
-}
-
 small {
 	font-size: to-em($pxValue: 14);
-}
-
-// Block
-fieldset {
-	border: none;
 }
 
 pre {
