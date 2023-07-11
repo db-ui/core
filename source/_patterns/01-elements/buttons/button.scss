@@ -92,18 +92,26 @@
 		}
 
 		&:disabled {
-			color: unquote($db-color-cool-gray-700 + "80");
-			border-color: unquote($db-color-cool-gray-700 + "40");
+			@media (prefers-color-scheme: light) {
+				color: unquote($db-color-cool-gray-700 + "80");
+				border-color: unquote($db-color-cool-gray-700 + "40");
+			}
 		}
 
 		&:not(:disabled) {
 			&:hover {
 				// TODO: This could probably get simplified later on e.g. via CSS variables
 				background-color: $button-secondaryOutline-hover-backgroundColor;
+				@media (prefers-color-scheme: dark) {
+					background-color: rgba(255, 255, 255, 0.03);
+				}
 			}
 
 			&:active {
 				background-color: $button-secondaryOutline-active-backgroundColor;
+				@media (prefers-color-scheme: dark) {
+					background-color: rgba(255, 255, 255, 0.06);
+				}
 			}
 		}
 	}
@@ -216,6 +224,8 @@
 	}
 
 	&:disabled {
-		color: unquote($button---color + "80");
+		@media (prefers-color-scheme: light) {
+			color: unquote($button---color + "80");
+		}
 	}
 }
