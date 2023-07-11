@@ -142,7 +142,9 @@
 	&%variant-tertiaryPlain {
 		background-color: transparent; // shame.css
 		border: 2px solid transparent;
-		color: $db-color-cool-gray-700;
+		@media (prefers-color-scheme: light) {
+			color: $db-color-cool-gray-700;
+		}
 
 		&:disabled {
 			color: unquote($db-color-cool-gray-700 + "80");
@@ -152,10 +154,16 @@
 			&:hover {
 				// TODO: This could probably get simplified later on e.g. via CSS variables
 				background-color: $button-secondaryOutline-hover-backgroundColor;
+				@media (prefers-color-scheme: dark) {
+					background-color: rgba(255, 255, 255, 0.03);
+				}
 			}
 
 			&:active {
 				background-color: $button-secondaryOutline-active-backgroundColor;
+				@media (prefers-color-scheme: dark) {
+					background-color: rgba(255, 255, 255, 0.06);
+				}
 			}
 		}
 	}
