@@ -12,7 +12,9 @@ body {
 
 // adapted from https://github.com/jgthms/bulma/blob/0.7.5/sass/base/generic.sass
 html {
-	background-color: #fdfdfd; // TODO: This would need to get replaced by the correct (semantic) color
+	background-color: var(
+		--db-element---backgroundColor
+	); // TODO: This would need to get replaced by the correct (semantic) color
 	// font-size: 16px; // We need to deactivate this due to accessibility problems, as even also reported with https://github.com/jgthms/bulma/issues/3588
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
@@ -40,7 +42,7 @@ pre {
 }
 
 body {
-	color: $db-color-cool-gray-700;
+	color: var(--db-text---color);
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
@@ -48,7 +50,7 @@ body {
 
 // Inline
 a {
-	color: $db-color-cool-gray-700;
+	color: var(--db-text---color);
 
 	strong {
 		color: currentColor;
@@ -56,6 +58,9 @@ a {
 
 	&:hover {
 		color: #5d616a; // TODO: Identify correct color variable
+		@media (prefers-color-scheme: dark) {
+			color: #cdd4da; // TODO: Identify correct color variable
+		}
 	}
 }
 

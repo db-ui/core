@@ -1,3 +1,13 @@
+:root {
+	--db-text---color: #{$db-color-cool-gray-700};
+	--db-element---backgroundColor: #fdfdfd; // We need to figure out the correct variable for this
+
+	@media (prefers-color-scheme: dark) {
+		--db-text---color: #{$db-color-white};
+		--db-element---backgroundColor: #{$db-color-cool-gray-700};
+	}
+}
+
 // Box sizing
 html {
 	box-sizing: var(--db-box-sizing, border-box);
