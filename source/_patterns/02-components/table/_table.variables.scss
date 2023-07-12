@@ -12,7 +12,7 @@ $table-cell-height68-paddingVertical: to-rem(
 
 $table-line--borderColor: $db-color-cool-gray-200 !default;
 
-$table-row-zebra-color: rgba($db-color-cool-gray-700, 0.07) !default;
+$table-row-zebra-color: color-mix(in srgb, transparent 93%, currentColor);
 
 $table-densitySmall--padding: $db-spacing-s !default;
 $table-densityRegular--padding: $db-spacing-sm !default;

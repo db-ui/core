@@ -22,8 +22,8 @@
 	}
 
 	thead {
-		border-bottom: to-rem($pxValue: 1) solid $db-color-cool-gray-700;
-		border-top: to-rem($pxValue: 1) solid $db-color-cool-gray-700;
+		border-bottom: to-rem($pxValue: 1) solid currentColor;
+		border-top: to-rem($pxValue: 1) solid currentColor;
 
 		th {
 			color: $db-color-cool-gray-500;
