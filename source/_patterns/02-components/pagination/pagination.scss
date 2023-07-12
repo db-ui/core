@@ -2,7 +2,7 @@
 @import "pagination.variables";
 
 .cmp-pagination {
-	color: $db-color-cool-gray-700;
+	color: var(--db-element---color);
 	font-size: to-rem($pxValue: 14);
 
 	user-select: none;
