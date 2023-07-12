@@ -6,7 +6,9 @@
 .elm-input {
 	@extend %form-element;
 
-	color: $input---color;
+	@media (prefers-color-scheme: light) {
+		color: $input---color;
+	}
 
 	font-size: to-rem($pxValue: 16);
 	height: to-rem($pxValue: 44);
