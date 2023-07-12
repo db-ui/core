@@ -5,7 +5,9 @@
 .elm-radio {
 	appearance: none;
 
-	background-color: rgba(255, 255, 255, 0.1);
+	@media (prefers-color-scheme: light) {
+		background-color: rgba(255, 255, 255, 0.1);
+	}
 	border: to-rem($pxValue: 1) solid $radio---border;
 	border-radius: to-em($pxValue: 16);
 
@@ -27,11 +29,17 @@
 		&:hover {
 			&:not(:checked) {
 				background-color: rgba(40, 45, 55, 0.14);
+				@media (prefers-color-scheme: dark) {
+					background-color: rgba(255, 255, 255, 0.03);
+				}
 			}
 		}
 
 		&:active {
 			background-color: rgba(40, 45, 55, 0.3);
+			@media (prefers-color-scheme: dark) {
+				background-color: rgba(255, 255, 255, 0.06);
+			}
 		}
 	}
 
