@@ -3,26 +3,61 @@
 	"viewports": [
 		{
 			"label": "phone - portrait",
+			"emulateDark": false,
 			"width": 320,
 			"height": 480
 		},
 		{
 			"label": "phone - landscape",
+			"emulateDark": false,
 			"width": 480,
 			"height": 320
 		},
 		{
 			"label": "tablet - portrait",
+			"emulateDark": false,
 			"width": 1024,
 			"height": 768
 		},
 		{
 			"label": "tablet - landscape",
+			"emulateDark": false,
 			"width": 768,
 			"height": 1024
 		},
 		{
 			"label": "13 Zoll Macbook",
+			"emulateDark": false,
+			"width": 1440,
+			"height": 900
+		},
+		{
+			"label": "phone - portrait",
+			"emulateDark": true,
+			"width": 320,
+			"height": 480
+		},
+		{
+			"label": "phone - landscape",
+			"emulateDark": true,
+			"width": 480,
+			"height": 320
+		},
+		{
+			"label": "tablet - portrait",
+			"emulateDark": true,
+			"width": 1024,
+			"height": 768
+		},
+		{
+			"label": "tablet - landscape",
+			"emulateDark": true,
+			"width": 768,
+			"height": 1024
+		},
+		{
+			"label": "13 Zoll Macbook",
+			"emulateDark": true,
 			"width": 1440,
 			"height": 900
 		}
