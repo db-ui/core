@@ -26,7 +26,9 @@
 		border-top: to-rem($pxValue: 1) solid currentColor;
 
 		th {
-			color: $db-color-cool-gray-500;
+			@media (prefers-color-scheme: light) {
+				color: $db-color-cool-gray-500;
+			}
 		}
 	}
 
@@ -166,7 +168,7 @@
 	&[data-sticky="header"] {
 		thead,
 		tbody th {
-			background-color: #fff;
+			background-color: var(--db-element---backgroundColor);
 			position: sticky;
 			top: -1px;
 		}
