@@ -52,10 +52,10 @@
 	}
 
 	tbody {
-		border-bottom: to-rem($pxValue: 1) solid $db-color-cool-gray-700;
+		border-bottom: to-rem($pxValue: 1) solid currentColor;
 
 		th:first-child {
-			border-right: 1px solid $db-color-warm-gray-700;
+			border-right: 1px solid currentColor;
 		}
 	}
 
