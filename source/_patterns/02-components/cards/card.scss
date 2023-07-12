@@ -3,6 +3,9 @@
 
 .cmp-card {
 	background-color: #fff;
+	@media (prefers-color-scheme: dark) {
+		background-color: color-mix(in srgb, transparent 95%, currentColor);
+	}
 
 	border-radius: 8px;
 	box-shadow: $box-shadow-01, $box-shadow-02;
