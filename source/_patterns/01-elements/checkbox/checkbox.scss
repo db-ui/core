@@ -8,10 +8,14 @@
 	align-content: center;
 
 	appearance: none;
-	background-color: $checkbox---backgroundColor;
+	@media (prefers-color-scheme: light) {
+		background-color: $checkbox---backgroundColor;
+	}
 	border: #{to-rem($pxValue: 1)} solid $checkbox---borderColor;
 	border-radius: 4px;
-	color: $checkbox---color;
+	@media (prefers-color-scheme: light) {
+		color: $checkbox---color;
+	}
 
 	display: inline-flex;
 	height: to-rem($pxValue: 24);
@@ -24,14 +28,19 @@
 
 	&::before {
 		--icon-font-size: 1.375rem;
+		color: inherit;
 		margin-right: 0;
 	}
 
 	&:checked {
 		background-color: $checkbox--checked-backgroundColor;
+		color: $checkbox--checked-color;
+		@media (prefers-color-scheme: dark) {
+			color: $checkbox---color;
+			background-color: $db-color-white;
+		}
 
 		&::before {
-			color: $checkbox--checked-color;
 			content: glyph(done);
 		}
 	}
@@ -39,6 +48,9 @@
 	&:enabled {
 		&:hover {
 			background-color: rgba(40, 45, 55, 0.14);
+			@media (prefers-color-scheme: dark) {
+				background-color: rgba(255, 255, 255, 0.03);
+			}
 
 			&:checked {
 				background-color: $checkbox-hover-checked-backgroundColor;
@@ -47,6 +59,9 @@
 
 		&:active {
 			background-color: rgba(40, 45, 55, 0.14);
+			@media (prefers-color-scheme: dark) {
+				background-color: rgba(255, 255, 255, 0.06);
+			}
 		}
 	}
 
