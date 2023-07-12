@@ -6,6 +6,11 @@
 	$position: "before",
 	$partial: false
 ) {
+	// We're setting this on the parent tag already, so that it could get overwritten via
+	@if $glyph != "" {
+		--icon-glyph: "#{$glyph}";
+	}
+
 	&::#{$position} {
 		--icon-font-family: "#{"icons-" + $size + "-" + $style}",
 			"missing-icons" !important;
@@ -25,9 +30,6 @@
 			);
 		}
 
-		@if $glyph != "" {
-			--icon-glyph: "#{$glyph}";
-		}
 		@if $partial {
 			content: var(--icon-glyph);
 			display: inline-block;
