@@ -10,7 +10,7 @@
 	margin-bottom: #{to-rem($pxValue: 16)};
 	padding: #{to-rem($pxValue: 16)}; // TODO: replace by spacing-m variable
 	section[data-variant="hovering"] & {
-		background-color: #fff;
+		background-color: var(--db-element---backgroundColor);
 	}
 
 	// Alert variant
