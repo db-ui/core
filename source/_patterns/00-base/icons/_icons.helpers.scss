@@ -6,7 +6,7 @@
 	$position: "before",
 	$partial: false
 ) {
-	// We're setting this on the parent tag already, so that it could get overwritten via
+	// We're setting this on the parent tag, so that it could get overwritten via data-icon=*
 	@if $glyph != "" {
 		--icon-glyph: "#{$glyph}";
 	}
