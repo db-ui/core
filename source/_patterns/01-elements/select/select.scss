@@ -32,7 +32,9 @@
 		& + .elm-label {
 			pointer-events: none;
 			position: absolute;
-			transition: opacity, transform 250ms;
+			transition:
+				opacity,
+				transform 250ms;
 			// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
 			@media (prefers-reduced-motion: reduce) {
 				transition-duration: 0.01s !important;
@@ -98,7 +100,9 @@
 		font-size: to-rem($pxValue: 12);
 		margin-bottom: -#{to-rem($pxValue: 18)};
 		transform: translate($db-spacing-m, -#{to-rem($pxValue: 41)});
-		transition: opacity, transform 150ms;
+		transition:
+			opacity,
+			transform 150ms;
 		// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
 		@media (prefers-reduced-motion: reduce) {
 			transition-duration: 0.01s !important;
