@@ -15,7 +15,8 @@
 					font-family: $icon-font-family;
 					font-style: normal;
 					font-weight: normal;
-					src: url("#{$icons-path}functional/fonts/#{$icon-font-family}.woff2?4r2096")
+					src:
+						url("#{$icons-path}functional/fonts/#{$icon-font-family}.woff2?4r2096")
 							format("woff2"),
 						url("#{$icons-path}functional/fonts/#{$icon-font-family}.woff?4r2096")
 							format("woff");
@@ -27,7 +28,8 @@
 				font-family: $icon-style;
 				font-style: normal;
 				font-weight: normal;
-				src: url("#{$icons-path}functional/fonts/#{$icon-style}.woff2?4r2096")
+				src:
+					url("#{$icons-path}functional/fonts/#{$icon-style}.woff2?4r2096")
 						format("woff2"),
 					url("#{$icons-path}functional/fonts/#{$icon-style}.woff?4r2096")
 						format("woff");

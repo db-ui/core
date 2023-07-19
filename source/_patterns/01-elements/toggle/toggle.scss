@@ -36,7 +36,8 @@
 
 		border-radius: to-rem($pxValue: 10);
 
-		box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.05),
+		box-shadow:
+			0 5px 30px 0 rgba(0, 0, 0, 0.05),
 			0 1px 5px 0 rgba(0, 0, 0, 0.15);
 		content: ""; // we could even also add toggled textual content for the switch in the future
 
@@ -47,7 +48,9 @@
 		position: absolute;
 		top: #{to-rem($pxValue: 2)};
 
-		transition: border-color, left 0.3s cubic-bezier(0.3, 1.5, 0.7, 1);
+		transition:
+			border-color,
+			left 0.3s cubic-bezier(0.3, 1.5, 0.7, 1);
 
 		width: to-rem($pxValue: 20);
 		// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
