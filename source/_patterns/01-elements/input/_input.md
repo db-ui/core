@@ -10,6 +10,10 @@ We're using the construct of `label` and `input` elements shown below (both thei
 - "Generally, explicit labels are better supported by assistive technology." - compare to the [W3C spec](https://www.w3.org/WAI/tutorials/forms/labels/#associating-labels-implicitly), seems to be a [WCAG criteria](https://www.w3.org/TR/WCAG20-TECHS/H44.html) that for, too.
 - We could easily control the styling depending on the `input` elements (pseudo-)states w/o the need for JavaScript
 
+## Auto suggestions
+
+You could easily integrate the possibility to provide auto suggestions to your input fields via the [`list`-attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#list) on the `input`-HTML-elements as well as adding the suggestions via the [`datalist`-HTML-element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist). Please follow up within the [Input - Auto Suggestions](/patterns/elements-input-input-auto-suggest/elements-input-input-auto-suggest.rendered.html) section.
+
 ## Autofill
 
 For heavily supporting the user on autofilling form fields (not only, but especially on mobile browsing) with information even already available on their devices, you could use the `autocomplete` attribute, as described e.g. here <https://cloudfour.com/thinks/autofill-what-web-devs-should-know-but-dont/>
