@@ -12,17 +12,17 @@
 
 
 	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1690171208390" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1690804213085" media="all">
 
 	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1690171208390" media="all">
-	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1690171208390" media="all">
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1690171208390" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1690804213085" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1690804213085" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1690804213085" media="all">
 	<!-- dialog polyfill //-->
-	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1690171208390" media="all">
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1690804213085" media="all">
 
 	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1690171208390" media="all">
+	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1690804213085" media="all">
 	<!-- End Pattern Lab -->
 
 
@@ -18349,6 +18349,8 @@ var(--db-icon-pulse-color, #EC0016)
 <li>&quot;Generally, explicit labels are better supported by assistive technology.&quot; - compare to the <a href="https://www.w3.org/WAI/tutorials/forms/labels/#associating-labels-implicitly">W3C spec</a>, seems to be a <a href="https://www.w3.org/TR/WCAG20-TECHS/H44.html">WCAG criteria</a> that for, too.</li>
 <li>We could easily control the styling depending on the <code>input</code> elements (pseudo-)states w/o the need for JavaScript</li>
 </ul>
+<h2>Auto suggestions</h2>
+<p>You could easily integrate the possibility to provide auto suggestions to your input fields via the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#list"><code>list</code>-attribute</a> on the <code>input</code>-HTML-elements as well as adding the suggestions via the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist"><code>datalist</code>-HTML-element</a>. Please follow up within the <a href="/patterns/elements-input-input-auto-suggest/elements-input-input-auto-suggest.rendered.html">Input - Auto Suggestions</a> section.</p>
 <h2>Autofill</h2>
 <p>For heavily supporting the user on autofilling form fields (not only, but especially on mobile browsing) with information even already available on their devices, you could use the <code>autocomplete</code> attribute, as described e.g. here <a href="https://cloudfour.com/thinks/autofill-what-web-devs-should-know-but-dont/">https://cloudfour.com/thinks/autofill-what-web-devs-should-know-but-dont/</a></p>
 <p>The attribute doesn't even only take boolean values, but even also a list of specific field types, as described in the specification: <a href="https://html.spec.whatwg.org/multipage/forms.html#inappropriate-for-the-control">https://html.spec.whatwg.org/multipage/forms.html#inappropriate-for-the-control</a></p>
@@ -18567,6 +18569,73 @@ var(--db-icon-pulse-color, #EC0016)
 		
 			<script type="text/json" id="pl-pattern-data-elements-input" class="pl-js-pattern-data">
 			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"elements-input-variations","lineagePath":"../../patterns/elements-input-input-variations/elements-input-input-variations.rendered.html"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"}],"lineageR":[{"lineagePattern":"elements-input-variations","lineagePath":"../../patterns/elements-input-input-variations/elements-input-input-variations.rendered.html"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"input"},"patternExtension":"hbs","patternName":"Input","patternPartial":"elements-input","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":2}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="elements-input-auto-suggest" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/elements-input-input-auto-suggest&#x2F;elements-input-input-auto-suggest.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-input-auto-suggest" title="Link to Pattern">
+						Input - Auto suggestions
+		
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-input-auto-suggest" data-patternpartial="elements-input-auto-suggest" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-input-auto-suggest">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+<input type="text"
+	class="elm-input "
+	placeholder="Projekt Name"
+	name="input09"
+	id="input09"
+	
+	value="Ap"
+	
+	
+	
+	 list="datalistinput09"
+	aria-labelledby="input09-label"
+	>
+<label class="elm-label"
+	for="input09"
+	aria-hidden="true"
+	id="input09-label">Textlabel</label>
+
+<datalist id="datalistinput09">
+		<option value="Apple Computers">Apple</option>
+		<option>Applify</option>
+		<option>App-Design</option>
+</datalist>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-elements-input-auto-suggest" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>You could easily integrate the possibility to provide auto suggestions to your input fields via the <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#list\"><code>list</code>-attribute</a> on the <code>input</code>-HTML-elements as well as adding the suggestions via the <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist\"><code>datalist</code>-HTML-element</a>.</p>\n","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"input"},"patternExtension":"hbs","patternName":"Input - Auto suggestions","patternPartial":"elements-input-auto-suggest","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -20345,38 +20414,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radio"
-	id="id-f9ed9afd-6624-4871-80cb-ca2e9c95322a"
+	id="id-80ae71fb-05a6-40a5-a5e0-64fb7332aa57"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-f9ed9afd-6624-4871-80cb-ca2e9c95322a">Radio 01</label>
+<label class="elm-label" for="id-80ae71fb-05a6-40a5-a5e0-64fb7332aa57">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radio"
-	id="id-fa4e0f37-a690-4352-bb3c-081bc2c3ae92"
+	id="id-854e8270-5ea0-4ada-8836-f81a122a8e94"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-fa4e0f37-a690-4352-bb3c-081bc2c3ae92">Radio 02</label>
+<label class="elm-label" for="id-854e8270-5ea0-4ada-8836-f81a122a8e94">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radio"
-	id="id-8f067b68-5c53-4c46-b99e-9eb5ea433b29"
+	id="id-88404234-1b7a-4a37-a9a2-cdef77288bba"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-8f067b68-5c53-4c46-b99e-9eb5ea433b29">Radio 03</label>
+<label class="elm-label" for="id-88404234-1b7a-4a37-a9a2-cdef77288bba">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -20425,38 +20494,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radioChecked"
-	id="id-69b2d0a1-9e87-4673-8204-fe79453d104f"
+	id="id-e0bd8784-79d4-489b-8116-2444fad6a2ae"
 	 checked
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-69b2d0a1-9e87-4673-8204-fe79453d104f">Radio 01</label>
+<label class="elm-label" for="id-e0bd8784-79d4-489b-8116-2444fad6a2ae">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioChecked"
-	id="id-1d844c5e-ef69-4e1d-81dc-b737367f5ee4"
+	id="id-1ceacdcd-b6a5-48b9-8812-98191374474b"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-1d844c5e-ef69-4e1d-81dc-b737367f5ee4">Radio 02</label>
+<label class="elm-label" for="id-1ceacdcd-b6a5-48b9-8812-98191374474b">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioChecked"
-	id="id-526e2cba-eea2-4d7a-a535-2428ccb40f8e"
+	id="id-77603509-672f-4707-9eff-8957676e5e14"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-526e2cba-eea2-4d7a-a535-2428ccb40f8e">Radio 03</label>
+<label class="elm-label" for="id-77603509-672f-4707-9eff-8957676e5e14">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -20505,38 +20574,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radioDisabled"
-	id="id-abb80686-20e7-413c-9eb7-5fc564e2cab7"
+	id="id-c3d31b4d-cecf-45ae-9ac5-3f63c3293760"
 	
 	 disabled
 	
 	
 	
 	>
-<label class="elm-label" for="id-abb80686-20e7-413c-9eb7-5fc564e2cab7">Radio 01</label>
+<label class="elm-label" for="id-c3d31b4d-cecf-45ae-9ac5-3f63c3293760">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioDisabled"
-	id="id-216439dd-c23d-424b-92f5-593ba0dd8cb7"
+	id="id-703cd2ef-76ac-4ae7-889d-9317b9c06b8b"
 	
 	 disabled
 	
 	
 	
 	>
-<label class="elm-label" for="id-216439dd-c23d-424b-92f5-593ba0dd8cb7">Radio 02</label>
+<label class="elm-label" for="id-703cd2ef-76ac-4ae7-889d-9317b9c06b8b">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioDisabled"
-	id="id-2ee05b79-8f96-45fe-9e80-f32715aa8df2"
+	id="id-2c8a0b21-7582-4113-9b0e-919ee8121fe4"
 	
 	 disabled
 	
 	
 	
 	>
-<label class="elm-label" for="id-2ee05b79-8f96-45fe-9e80-f32715aa8df2">Radio 03</label>
+<label class="elm-label" for="id-2c8a0b21-7582-4113-9b0e-919ee8121fe4">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -20585,38 +20654,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radioDisabledChecked"
-	id="id-dac72ad7-424c-4d57-ad04-9fba21ccd71c"
+	id="id-d51bacb8-8248-4361-a035-bc3fbefdd7af"
 	 checked
 	 disabled
 	
 	
 	
 	>
-<label class="elm-label" for="id-dac72ad7-424c-4d57-ad04-9fba21ccd71c">Radio 01</label>
+<label class="elm-label" for="id-d51bacb8-8248-4361-a035-bc3fbefdd7af">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioDisabledChecked"
-	id="id-8d439877-9073-4ba9-9564-4b2141a1f26a"
+	id="id-efec36b2-bef8-4493-9ef8-968c89085f93"
 	
 	 disabled
 	
 	
 	
 	>
-<label class="elm-label" for="id-8d439877-9073-4ba9-9564-4b2141a1f26a">Radio 02</label>
+<label class="elm-label" for="id-efec36b2-bef8-4493-9ef8-968c89085f93">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioDisabledChecked"
-	id="id-e33d3a7f-b8e1-45b9-9cd4-5057778ba9a6"
+	id="id-ad12fa3f-96b7-4c69-9bf4-396219eb4531"
 	
 	 disabled
 	
 	
 	
 	>
-<label class="elm-label" for="id-e33d3a7f-b8e1-45b9-9cd4-5057778ba9a6">Radio 03</label>
+<label class="elm-label" for="id-ad12fa3f-96b7-4c69-9bf4-396219eb4531">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -20665,38 +20734,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radioInvalid"
-	id="id-c18b2132-9320-4977-99c7-5faeb76ae33d"
+	id="id-96d2853e-af1e-423c-a526-575e39818831"
 	
 	
 	
 	
 	 aria-invalid="true"
 	>
-<label class="elm-label" for="id-c18b2132-9320-4977-99c7-5faeb76ae33d">Radio 01</label>
+<label class="elm-label" for="id-96d2853e-af1e-423c-a526-575e39818831">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioInvalid"
-	id="id-a0273e7e-2942-440a-845f-05265b74e972"
+	id="id-b379e7c9-cba3-4f8d-a5e9-ee4be1e58236"
 	
 	
 	
 	
 	 aria-invalid="true"
 	>
-<label class="elm-label" for="id-a0273e7e-2942-440a-845f-05265b74e972">Radio 02</label>
+<label class="elm-label" for="id-b379e7c9-cba3-4f8d-a5e9-ee4be1e58236">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioInvalid"
-	id="id-95e8eae0-7f52-442b-8975-bd7430fd0995"
+	id="id-8bcff363-ecbd-445b-a6c1-10307d930710"
 	
 	
 	
 	
 	 aria-invalid="true"
 	>
-<label class="elm-label" for="id-95e8eae0-7f52-442b-8975-bd7430fd0995">Radio 03</label>
+<label class="elm-label" for="id-8bcff363-ecbd-445b-a6c1-10307d930710">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -20745,38 +20814,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radioRequired"
-	id="id-a15113fa-62b6-4b77-9643-a8883c7df774"
+	id="id-76c18433-17e8-48a6-bc21-cd5d8db7a67b"
 	
 	
 	
 	
 	
 	 required>
-<label class="elm-label" for="id-a15113fa-62b6-4b77-9643-a8883c7df774">Radio 01</label>
+<label class="elm-label" for="id-76c18433-17e8-48a6-bc21-cd5d8db7a67b">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioRequired"
-	id="id-17b95645-82e8-41c8-821a-e6d0dfbe6c80"
+	id="id-26f5bab3-c6b5-4ccb-9d92-3ea4ede94964"
 	
 	
 	
 	
 	
 	 required>
-<label class="elm-label" for="id-17b95645-82e8-41c8-821a-e6d0dfbe6c80">Radio 02</label>
+<label class="elm-label" for="id-26f5bab3-c6b5-4ccb-9d92-3ea4ede94964">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioRequired"
-	id="id-861c9076-7725-4ceb-b2f7-19ef857f91c0"
+	id="id-e8137f25-46e7-4505-9084-871271f7951f"
 	
 	
 	
 	
 	
 	 required>
-<label class="elm-label" for="id-861c9076-7725-4ceb-b2f7-19ef857f91c0">Radio 03</label>
+<label class="elm-label" for="id-e8137f25-46e7-4505-9084-871271f7951f">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -28327,10 +28396,10 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1690171208390">
+<script id="pl-js-polyfill-insert-1690804213085">
   (function() {
     if (self != top) {
-      var cb = '1690171208390';
+      var cb = '1690804213085';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -28343,7 +28412,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1690171208390" nomodule>
+<script id="pl-js-insert-1690804213085" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 
