@@ -17,6 +17,12 @@
 
 	width: 100%;
 
+	&[list] {
+		&::-webkit-calendar-picker-indicator {
+			margin-right: -1rem;
+		}
+	}
+
 	&:not(:placeholder-shown) {
 		padding-bottom: 0;
 		padding-top: to-rem($pxValue: 16);
