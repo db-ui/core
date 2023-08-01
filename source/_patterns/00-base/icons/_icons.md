@@ -21,6 +21,8 @@ All of the available glyphs variables are shown on this page right next to the i
 
 #### SCSS (recommended)
 
+If you're only using our SCSS files incrementally and not including the `@db-ui/core/sources/css/enterprise/db-ui-core` at the beginning of your code, you would need to import the `@db-ui/core/sources/_patterns/00-base/icons/icon` file for being able to use the `icon()` SCSS mixin, that we describe below.
+
 ##### Icon for element
 
 Use the following SCSS mixin for setting an icon:
