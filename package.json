@@ -92,7 +92,7 @@
     "postcss-cli": "^10.1.0",
     "postcss-focus": "^6.0.0",
     "postcss-list-style-safari-fix": "^1.0.0",
-    "prettier": "^3.0.0",
+    "prettier": "^3.0.1",
     "rimraf": "^5.0.1",
     "sass": "^1.64.2",
     "start-server-and-test": "^2.0.0",
