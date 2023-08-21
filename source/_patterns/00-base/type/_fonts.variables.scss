@@ -7,7 +7,8 @@ $font-families: (
 		// light font weight
 		"font-weight": 300,
 		"font-style": normal,
-		"font-local-name": "DB Screen Head"
+		"font-local-name": "DB Screen Head",
+		"font-local-name-short": "DB Head Light"
 	),
 	"DB Screen Head Regular": (
 		"font-family": "DB Screen Head",
@@ -25,7 +26,8 @@ $font-families: (
 		"font-weight": 900,
 		"font-style": normal,
 		// TODO: Identify the correct name on local environments; most likely this isn't installed and/or possible to get referenced at the moment
-		// "font-local-name": "DB Screen Head"
+		"font-local-name": "DB Screen Head Black" "font-local-name-short":
+			"DB Head Black"
 	),
 
 	"DB Screen Sans Digital Regular": (
@@ -33,7 +35,9 @@ $font-families: (
 		"font-filename": "dbscreensans-digitalregular",
 		// normal font weight
 		"font-weight": 400,
-		"font-style": normal
+		"font-style": normal,
+		"font-local-name": "DB Screen Sans Digital" "font-local-name-short":
+			"DB Sans Digital"
 	),
 
 	"DB Screen Sans Regular": (
@@ -42,7 +46,8 @@ $font-families: (
 		// normal font weight
 		"font-weight": 400,
 		"font-style": normal,
-		"font-local-name": "DB Screen Sans"
+		"font-local-name": "DB Screen Sans",
+		"font-local-name-short": "DB Sans"
 	),
 	"DB Screen Sans Medium": (
 		"font-family": "DB Screen Sans",
@@ -66,6 +71,7 @@ $font-families: (
 		// bold font weight
 		"font-weight": 700,
 		"font-style": normal,
-		"font-local-name": "DB Screen Cond"
+		"font-local-name": "DB Screen Cond",
+		"font-local-name-short": "DB Sans Bold"
 	)
 ) !default;
