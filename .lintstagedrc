@@ -1,4 +1,7 @@
 {
-	"*.scss": "stylelint --fix",
-	"*.{js,scss,md}": "prettier --write"
+	"*.hbs": "npm run lint:html",
+	"*.md": "markdownlint -c .markdown-lint.yml",
+	"*.{css,scss}": "stylelint --fix",
+	"*.{js,ts,tsx}": "xo --fix",
+	"!*.{js,ts,tsx}": "prettier --write --ignore-unknown"
 }
