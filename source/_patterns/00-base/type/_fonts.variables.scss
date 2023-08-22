@@ -56,7 +56,8 @@ $font-families: (
 		"font-weight": 500,
 		"font-style": normal,
 		// TODO: Identify the correct name on local environments; most likely this isn't installed and/or possible to get referenced at the moment
-		// "font-local-name": "DB Screen Sans"
+		// "font-local-name": "DB Screen Sans Medium",
+		// "font-local-name-short": "DB Sans Medium"
 	),
 	"DB Screen Sans Semibold": (
 		"font-family": "DB Screen Sans",
@@ -64,7 +65,8 @@ $font-families: (
 		"font-weight": 600,
 		"font-style": normal,
 		// TODO: Identify the correct name on local environments; most likely this isn't installed and/or possible to get referenced at the moment
-		// "font-local-name": "DB Screen Sans"
+		// "font-local-name": "DB Screen Sans Semibold",
+		// "font-local-name-short": "DB Sans Semibold"
 	),
 	"DB Screen Sans Bold": (
 		"font-family": "DB Screen Sans",
