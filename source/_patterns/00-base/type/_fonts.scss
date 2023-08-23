@@ -15,6 +15,7 @@
 		font-weight: $font-weight;
 		@if $font-local-name and $font-local-name-short {
 			src:
+				local("#{$font-name}"),
 				local("#{$font-local-name}"),
 				local("#{$font-local-name-short}"),
 				url("#{$fonts-path}#{$font-filename}.woff2?4r0080")
@@ -23,6 +24,7 @@
 					format("woff");
 		} @else if $font-local-name {
 			src:
+				local("#{$font-name}"),
 				local("#{$font-local-name}"),
 				url("#{$fonts-path}#{$font-filename}.woff2?4r0080")
 					format("woff2"),
@@ -30,6 +32,7 @@
 					format("woff");
 		} @else if $font-local-name-short {
 			src:
+				local("#{$font-name}"),
 				local("#{$font-local-name-short}"),
 				url("#{$fonts-path}#{$font-filename}.woff2?4r0080")
 					format("woff2"),
@@ -37,6 +40,7 @@
 					format("woff");
 		} @else {
 			src:
+				local("#{$font-name}"),
 				url("#{$fonts-path}#{$font-filename}.woff2?4r0080")
 					format("woff2"),
 				url("#{$fonts-path}#{$font-filename}.woff?4r0080")
