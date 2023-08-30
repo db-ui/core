@@ -19,6 +19,12 @@
 
 	width: 100%;
 
+	&[list] {
+		&::-webkit-calendar-picker-indicator {
+			margin-right: -1rem;
+		}
+	}
+
 	&:not(:placeholder-shown) {
 		padding-bottom: 0;
 		padding-top: to-rem($pxValue: 16);
@@ -75,7 +81,9 @@
 			// position: absolute;
 			// left: calc(#{to-em($pxValue: 10)} - 1px);
 
-			transition: opacity, transform 250ms;
+			transition:
+				opacity,
+				transform 250ms;
 			// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
 			@media (prefers-reduced-motion: reduce) {
 				transition-duration: 0.01s !important;

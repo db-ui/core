@@ -3,7 +3,9 @@
 # shellcheck source=./_/husky.sh
 . "$(dirname "$0")/_/husky.sh"
 
+echo "### validate branch name ###"
 npx validate-branch-name
-npx --yes pretty-quick --staged
-npm run lint
+echo "### lint staged files ###"
+npx lint-staged
+echo "### check for commit mail ###"
 node ./scripts/check-commit-mail.mjs

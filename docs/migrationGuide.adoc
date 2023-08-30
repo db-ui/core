@@ -26,7 +26,7 @@ Please note that we've switched from the deprecated link:https://www.npmjs.com/p
 
 You need to set the load path / include path depending on your SCSS compiler as described within our link:getStarted.adoc#scss-node_modules-include-path--load-path[getting started]
 
-Additionally we've deprecated the `@db-ui/core/sources/css/enterprise/db-ui-core-include` SCSS endpoint – please either `@import` the file `@db-ui/core/sources/css/rollup.assets-paths` or `@db-ui/core/sources/css/webpack.assets-paths` depending on your bundler, previous to `@import`ing `@db-ui/core/sources/css/enterprise/db-ui-core` directly from now on.
+Additionally we've deprecated the `@db-ui/core/sources/css/enterprise/db-ui-core-include` SCSS endpoint – please either `@import` the file `@db-ui/core/sources/css/rollup.assets-paths` or `@db-ui/core/sources/css/webpack.assets-paths` depending on your bundler, previous to importing our main CSS via `@import @db-ui/core/sources/css/enterprise/db-ui-core` directly from now on.
 
 ==== SCSS Helper functions
 
