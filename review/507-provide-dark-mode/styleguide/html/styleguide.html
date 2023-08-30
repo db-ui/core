@@ -15,17 +15,17 @@
 	<meta name="color-scheme" content="dark light">
 
 	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1690269820800" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1693397927356" media="all">
 
 	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1690269820800" media="all">
-	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1690269820800" media="all">
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1690269820800" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1693397927356" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1693397927356" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1693397927356" media="all">
 	<!-- dialog polyfill //-->
-	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1690269820800" media="all">
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1693397927356" media="all">
 
 	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1690269820800" media="all">
+	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1693397927356" media="all">
 	<!-- End Pattern Lab -->
 
 
@@ -18352,6 +18352,8 @@ var(--db-icon-pulse-color, #EC0016)
 <li>&quot;Generally, explicit labels are better supported by assistive technology.&quot; - compare to the <a href="https://www.w3.org/WAI/tutorials/forms/labels/#associating-labels-implicitly">W3C spec</a>, seems to be a <a href="https://www.w3.org/TR/WCAG20-TECHS/H44.html">WCAG criteria</a> that for, too.</li>
 <li>We could easily control the styling depending on the <code>input</code> elements (pseudo-)states w/o the need for JavaScript</li>
 </ul>
+<h2>Auto suggestions</h2>
+<p>You could easily integrate the possibility to provide auto suggestions to your input fields via the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#list"><code>list</code>-attribute</a> on the <code>input</code>-HTML-elements as well as adding the suggestions via the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist"><code>datalist</code>-HTML-element</a>. Please follow up within the <a href="/patterns/elements-input-input-auto-suggest/elements-input-input-auto-suggest.rendered.html">Input - Auto Suggestions</a> section.</p>
 <h2>Autofill</h2>
 <p>For heavily supporting the user on autofilling form fields (not only, but especially on mobile browsing) with information even already available on their devices, you could use the <code>autocomplete</code> attribute, as described e.g. here <a href="https://cloudfour.com/thinks/autofill-what-web-devs-should-know-but-dont/">https://cloudfour.com/thinks/autofill-what-web-devs-should-know-but-dont/</a></p>
 <p>The attribute doesn't even only take boolean values, but even also a list of specific field types, as described in the specification: <a href="https://html.spec.whatwg.org/multipage/forms.html#inappropriate-for-the-control">https://html.spec.whatwg.org/multipage/forms.html#inappropriate-for-the-control</a></p>
@@ -18570,6 +18572,73 @@ var(--db-icon-pulse-color, #EC0016)
 		
 			<script type="text/json" id="pl-pattern-data-elements-input" class="pl-js-pattern-data">
 			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"elements-input-variations","lineagePath":"../../patterns/elements-input-input-variations/elements-input-input-variations.rendered.html"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"}],"lineageR":[{"lineagePattern":"elements-input-variations","lineagePath":"../../patterns/elements-input-input-variations/elements-input-input-variations.rendered.html"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"input"},"patternExtension":"hbs","patternName":"Input","patternPartial":"elements-input","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":2}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="elements-input-auto-suggest" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/elements-input-input-auto-suggest&#x2F;elements-input-input-auto-suggest.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-input-auto-suggest" title="Link to Pattern">
+						Input - Auto suggestions
+		
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-input-auto-suggest" data-patternpartial="elements-input-auto-suggest" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-input-auto-suggest">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+<input type="text"
+	class="elm-input "
+	placeholder="Projekt Name"
+	name="input09"
+	id="input09"
+	
+	value="Ap"
+	
+	
+	
+	 list="datalistinput09"
+	aria-labelledby="input09-label"
+	>
+<label class="elm-label"
+	for="input09"
+	aria-hidden="true"
+	id="input09-label">Textlabel</label>
+
+<datalist id="datalistinput09">
+		<option value="Apple Computers">Apple</option>
+		<option>Applify</option>
+		<option>App-Design</option>
+</datalist>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-elements-input-auto-suggest" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>You could easily integrate the possibility to provide auto suggestions to your input fields via the <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#list\"><code>list</code>-attribute</a> on the <code>input</code>-HTML-elements as well as adding the suggestions via the <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist\"><code>datalist</code>-HTML-element</a>.</p>\n","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"input"},"patternExtension":"hbs","patternName":"Input - Auto suggestions","patternPartial":"elements-input-auto-suggest","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -20348,38 +20417,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radio"
-	id="id-1caf87be-9319-4d1c-8f47-43b45e38d8a3"
+	id="id-73821ffc-7e97-4527-92cf-c157c706d2ef"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-1caf87be-9319-4d1c-8f47-43b45e38d8a3">Radio 01</label>
+<label class="elm-label" for="id-73821ffc-7e97-4527-92cf-c157c706d2ef">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radio"
-	id="id-bb800abf-13e6-4f3f-9917-b82fddd85510"
+	id="id-83b43015-4a74-45b1-bf59-039d72dc5107"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-bb800abf-13e6-4f3f-9917-b82fddd85510">Radio 02</label>
+<label class="elm-label" for="id-83b43015-4a74-45b1-bf59-039d72dc5107">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radio"
-	id="id-d9e6afb5-2d83-49e1-9054-346f2eff8964"
+	id="id-4d732dbc-c1de-42a2-8f63-17b02f274ddf"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-d9e6afb5-2d83-49e1-9054-346f2eff8964">Radio 03</label>
+<label class="elm-label" for="id-4d732dbc-c1de-42a2-8f63-17b02f274ddf">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -20428,38 +20497,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radioChecked"
-	id="id-28c3e646-96a0-4f60-8813-4b48a0cd60c2"
+	id="id-017dd1e2-263c-44d4-b81f-7799ecc64c94"
 	 checked
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-28c3e646-96a0-4f60-8813-4b48a0cd60c2">Radio 01</label>
+<label class="elm-label" for="id-017dd1e2-263c-44d4-b81f-7799ecc64c94">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioChecked"
-	id="id-3149e616-45b2-4697-b04e-f43e0de3e9be"
+	id="id-fa78bc8a-620a-4d17-bbc4-1441981c7f5d"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-3149e616-45b2-4697-b04e-f43e0de3e9be">Radio 02</label>
+<label class="elm-label" for="id-fa78bc8a-620a-4d17-bbc4-1441981c7f5d">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioChecked"
-	id="id-ed21169e-ac09-46ff-8a10-afdbd0cf76bc"
+	id="id-69919467-063b-4d15-adb1-8316fd105977"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-ed21169e-ac09-46ff-8a10-afdbd0cf76bc">Radio 03</label>
+<label class="elm-label" for="id-69919467-063b-4d15-adb1-8316fd105977">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -20508,38 +20577,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radioDisabled"
-	id="id-9e610851-42ff-4e07-a62b-b3c82c6114fd"
+	id="id-2f1b48bc-c503-4595-91af-5780604c9633"
 	
 	 disabled
 	
 	
 	
 	>
-<label class="elm-label" for="id-9e610851-42ff-4e07-a62b-b3c82c6114fd">Radio 01</label>
+<label class="elm-label" for="id-2f1b48bc-c503-4595-91af-5780604c9633">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioDisabled"
-	id="id-ff010145-327d-4c91-ad29-9c420aa7368c"
+	id="id-9dcd5ded-8745-4ebc-98b2-88c2bbad5b63"
 	
 	 disabled
 	
 	
 	
 	>
-<label class="elm-label" for="id-ff010145-327d-4c91-ad29-9c420aa7368c">Radio 02</label>
+<label class="elm-label" for="id-9dcd5ded-8745-4ebc-98b2-88c2bbad5b63">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioDisabled"
-	id="id-adb084f9-e8cf-42be-8de1-33c3e86f267b"
+	id="id-219a2c0f-15a8-4906-aad8-d691fbdad531"
 	
 	 disabled
 	
 	
 	
 	>
-<label class="elm-label" for="id-adb084f9-e8cf-42be-8de1-33c3e86f267b">Radio 03</label>
+<label class="elm-label" for="id-219a2c0f-15a8-4906-aad8-d691fbdad531">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -20588,38 +20657,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radioDisabledChecked"
-	id="id-22e1289c-1d6f-4fab-8f59-a4097a921d2a"
+	id="id-42816af1-dcda-4dd1-b0bf-5b344e89d61e"
 	 checked
 	 disabled
 	
 	
 	
 	>
-<label class="elm-label" for="id-22e1289c-1d6f-4fab-8f59-a4097a921d2a">Radio 01</label>
+<label class="elm-label" for="id-42816af1-dcda-4dd1-b0bf-5b344e89d61e">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioDisabledChecked"
-	id="id-71d248af-b93c-4cbb-8067-c1af093fe041"
+	id="id-de5d1eae-912c-4048-8a93-a9e14d6b468b"
 	
 	 disabled
 	
 	
 	
 	>
-<label class="elm-label" for="id-71d248af-b93c-4cbb-8067-c1af093fe041">Radio 02</label>
+<label class="elm-label" for="id-de5d1eae-912c-4048-8a93-a9e14d6b468b">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioDisabledChecked"
-	id="id-aff393d5-79ce-476e-be85-522dca95acc0"
+	id="id-af71b415-f9d1-4a6c-a645-503b93d5d514"
 	
 	 disabled
 	
 	
 	
 	>
-<label class="elm-label" for="id-aff393d5-79ce-476e-be85-522dca95acc0">Radio 03</label>
+<label class="elm-label" for="id-af71b415-f9d1-4a6c-a645-503b93d5d514">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -20668,38 +20737,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radioInvalid"
-	id="id-6f079dd9-ad18-412b-934d-9e08b8d9aa44"
+	id="id-67962285-05ae-415c-b315-e25d92274c16"
 	
 	
 	
 	
 	 aria-invalid="true"
 	>
-<label class="elm-label" for="id-6f079dd9-ad18-412b-934d-9e08b8d9aa44">Radio 01</label>
+<label class="elm-label" for="id-67962285-05ae-415c-b315-e25d92274c16">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioInvalid"
-	id="id-4df369e2-4109-4f3b-8946-2d0001914ea5"
+	id="id-ff6d6a47-1e0c-4577-b7f5-124f17cedbb8"
 	
 	
 	
 	
 	 aria-invalid="true"
 	>
-<label class="elm-label" for="id-4df369e2-4109-4f3b-8946-2d0001914ea5">Radio 02</label>
+<label class="elm-label" for="id-ff6d6a47-1e0c-4577-b7f5-124f17cedbb8">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioInvalid"
-	id="id-df066f10-9998-4d6d-8562-44cf12dc38d6"
+	id="id-f03baa3d-839b-4808-a95e-ccb603e52473"
 	
 	
 	
 	
 	 aria-invalid="true"
 	>
-<label class="elm-label" for="id-df066f10-9998-4d6d-8562-44cf12dc38d6">Radio 03</label>
+<label class="elm-label" for="id-f03baa3d-839b-4808-a95e-ccb603e52473">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -20748,38 +20817,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radioRequired"
-	id="id-f04c390a-ca44-4b9c-9c4a-321aa4545267"
+	id="id-94476f68-8415-4841-90ea-88960c4e0359"
 	
 	
 	
 	
 	
 	 required>
-<label class="elm-label" for="id-f04c390a-ca44-4b9c-9c4a-321aa4545267">Radio 01</label>
+<label class="elm-label" for="id-94476f68-8415-4841-90ea-88960c4e0359">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioRequired"
-	id="id-20fc0fd3-3462-4dbd-942a-7688327a1a20"
+	id="id-3d108412-e2b5-4d5b-8068-48430f2a4a8e"
 	
 	
 	
 	
 	
 	 required>
-<label class="elm-label" for="id-20fc0fd3-3462-4dbd-942a-7688327a1a20">Radio 02</label>
+<label class="elm-label" for="id-3d108412-e2b5-4d5b-8068-48430f2a4a8e">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioRequired"
-	id="id-cc7d7f6f-fd81-4cff-b981-23c7734f1d88"
+	id="id-95da8e9f-5b79-43e5-8149-329ca23c3514"
 	
 	
 	
 	
 	
 	 required>
-<label class="elm-label" for="id-cc7d7f6f-fd81-4cff-b981-23c7734f1d88">Radio 03</label>
+<label class="elm-label" for="id-95da8e9f-5b79-43e5-8149-329ca23c3514">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -27850,7 +27919,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 		<h1 class="elm-headline ">DB UI Core</h1>
 
 		<img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTI0IiBoZWlnaHQ9IjIwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkxpY2Vuc2U6IEFwYWNoZSAyLjAiPjx0aXRsZT5MaWNlbnNlOiBBcGFjaGUgMi4wPC90aXRsZT48bGluZWFyR3JhZGllbnQgaWQ9InMiIHgyPSIwIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjYmJiIiBzdG9wLW9wYWNpdHk9Ii4xIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLW9wYWNpdHk9Ii4xIi8+PC9saW5lYXJHcmFkaWVudD48Y2xpcFBhdGggaWQ9InIiPjxyZWN0IHdpZHRoPSIxMjQiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjZmZmIi8+PC9jbGlwUGF0aD48ZyBjbGlwLXBhdGg9InVybCgjcikiPjxyZWN0IHdpZHRoPSI1MSIgaGVpZ2h0PSIyMCIgZmlsbD0iIzU1NSIvPjxyZWN0IHg9IjUxIiB3aWR0aD0iNzMiIGhlaWdodD0iMjAiIGZpbGw9IiMwMDdlYzYiLz48cmVjdCB3aWR0aD0iMTI0IiBoZWlnaHQ9IjIwIiBmaWxsPSJ1cmwoI3MpIi8+PC9nPjxnIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJWZXJkYW5hLEdlbmV2YSxEZWphVnUgU2FucyxzYW5zLXNlcmlmIiB0ZXh0LXJlbmRlcmluZz0iZ2VvbWV0cmljUHJlY2lzaW9uIiBmb250LXNpemU9IjExMCI+PHRleHQgYXJpYS1oaWRkZW49InRydWUiIHg9IjI2NSIgeT0iMTUwIiBmaWxsPSIjMDEwMTAxIiBmaWxsLW9wYWNpdHk9Ii4zIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgdGV4dExlbmd0aD0iNDEwIj5MaWNlbnNlPC90ZXh0Pjx0ZXh0IHg9IjI2NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iNDEwIj5MaWNlbnNlPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI4NjUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjYzMCI+QXBhY2hlIDIuMDwvdGV4dD48dGV4dCB4PSI4NjUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9IjYzMCI+QXBhY2hlIDIuMDwvdGV4dD48L2c+PC9zdmc+" width="124" height="20" alt="Apache 2.0 license badge">
-		<a href="https://npmjs.com/package/@db-ui/core" target="_blank" rel="noopener noreferrer"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iODgiIGhlaWdodD0iMjAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0ibnBtOiB2Mi4xMS4zIj48dGl0bGU+bnBtOiB2Mi4xMS4zPC90aXRsZT48bGluZWFyR3JhZGllbnQgaWQ9InMiIHgyPSIwIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjYmJiIiBzdG9wLW9wYWNpdHk9Ii4xIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLW9wYWNpdHk9Ii4xIi8+PC9saW5lYXJHcmFkaWVudD48Y2xpcFBhdGggaWQ9InIiPjxyZWN0IHdpZHRoPSI4OCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiNmZmYiLz48L2NsaXBQYXRoPjxnIGNsaXAtcGF0aD0idXJsKCNyKSI+PHJlY3Qgd2lkdGg9IjM1IiBoZWlnaHQ9IjIwIiBmaWxsPSIjNTU1Ii8+PHJlY3QgeD0iMzUiIHdpZHRoPSI1MyIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiKDIzNywgMjgsIDM2KSIvPjxyZWN0IHdpZHRoPSI4OCIgaGVpZ2h0PSIyMCIgZmlsbD0idXJsKCNzKSIvPjwvZz48ZyBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iVmVyZGFuYSxHZW5ldmEsRGVqYVZ1IFNhbnMsc2Fucy1zZXJpZiIgdGV4dC1yZW5kZXJpbmc9Imdlb21ldHJpY1ByZWNpc2lvbiIgZm9udC1zaXplPSIxMTAiPjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSIxODUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjI1MCI+bnBtPC90ZXh0Pjx0ZXh0IHg9IjE4NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iMjUwIj5ucG08L3RleHQ+PHRleHQgYXJpYS1oaWRkZW49InRydWUiIHg9IjYwNSIgeT0iMTUwIiBmaWxsPSIjMDEwMTAxIiBmaWxsLW9wYWNpdHk9Ii4zIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgdGV4dExlbmd0aD0iNDMwIj52Mi4xMS4zPC90ZXh0Pjx0ZXh0IHg9IjYwNSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iNDMwIj52Mi4xMS4zPC90ZXh0PjwvZz48L3N2Zz4=" width="88" height="20" alt="npm version"></a>
+		<a href="https://npmjs.com/package/@db-ui/core" target="_blank" rel="noopener noreferrer"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iODgiIGhlaWdodD0iMjAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0ibnBtOiB2Mi4xMS42Ij48dGl0bGU+bnBtOiB2Mi4xMS42PC90aXRsZT48bGluZWFyR3JhZGllbnQgaWQ9InMiIHgyPSIwIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjYmJiIiBzdG9wLW9wYWNpdHk9Ii4xIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLW9wYWNpdHk9Ii4xIi8+PC9saW5lYXJHcmFkaWVudD48Y2xpcFBhdGggaWQ9InIiPjxyZWN0IHdpZHRoPSI4OCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiNmZmYiLz48L2NsaXBQYXRoPjxnIGNsaXAtcGF0aD0idXJsKCNyKSI+PHJlY3Qgd2lkdGg9IjM1IiBoZWlnaHQ9IjIwIiBmaWxsPSIjNTU1Ii8+PHJlY3QgeD0iMzUiIHdpZHRoPSI1MyIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiKDIzNywgMjgsIDM2KSIvPjxyZWN0IHdpZHRoPSI4OCIgaGVpZ2h0PSIyMCIgZmlsbD0idXJsKCNzKSIvPjwvZz48ZyBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iVmVyZGFuYSxHZW5ldmEsRGVqYVZ1IFNhbnMsc2Fucy1zZXJpZiIgdGV4dC1yZW5kZXJpbmc9Imdlb21ldHJpY1ByZWNpc2lvbiIgZm9udC1zaXplPSIxMTAiPjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSIxODUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjI1MCI+bnBtPC90ZXh0Pjx0ZXh0IHg9IjE4NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iMjUwIj5ucG08L3RleHQ+PHRleHQgYXJpYS1oaWRkZW49InRydWUiIHg9IjYwNSIgeT0iMTUwIiBmaWxsPSIjMDEwMTAxIiBmaWxsLW9wYWNpdHk9Ii4zIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgdGV4dExlbmd0aD0iNDMwIj52Mi4xMS42PC90ZXh0Pjx0ZXh0IHg9IjYwNSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iNDMwIj52Mi4xMS42PC90ZXh0PjwvZz48L3N2Zz4=" width="88" height="20" alt="npm version"></a>
 		<img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzA4IiBoZWlnaHQ9IjIwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkJhc2VkIG9uOiBEQiBEZXNpZ24gU3lzdGVtIFVYIEd1aWRlcyArIFN0YW5kYXJkcyI+PHRpdGxlPkJhc2VkIG9uOiBEQiBEZXNpZ24gU3lzdGVtIFVYIEd1aWRlcyArIFN0YW5kYXJkczwvdGl0bGU+PGxpbmVhckdyYWRpZW50IGlkPSJzIiB4Mj0iMCIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2JiYiIgc3RvcC1vcGFjaXR5PSIuMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1vcGFjaXR5PSIuMSIvPjwvbGluZWFyR3JhZGllbnQ+PGNsaXBQYXRoIGlkPSJyIj48cmVjdCB3aWR0aD0iMzA4IiBoZWlnaHQ9IjIwIiByeD0iMyIgZmlsbD0iI2ZmZiIvPjwvY2xpcFBhdGg+PGcgY2xpcC1wYXRoPSJ1cmwoI3IpIj48cmVjdCB3aWR0aD0iNjEiIGhlaWdodD0iMjAiIGZpbGw9IiM1NTUiLz48cmVjdCB4PSI2MSIgd2lkdGg9IjI0NyIgaGVpZ2h0PSIyMCIgZmlsbD0iI2Q3ZGNlMSIvPjxyZWN0IHdpZHRoPSIzMDgiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMzE1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI1MTAiPkJhc2VkIG9uPC90ZXh0Pjx0ZXh0IHg9IjMxNSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iNTEwIj5CYXNlZCBvbjwvdGV4dD48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMTgzNSIgeT0iMTUwIiBmaWxsPSIjY2NjIiBmaWxsLW9wYWNpdHk9Ii4zIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgdGV4dExlbmd0aD0iMjM3MCI+REIgRGVzaWduIFN5c3RlbSBVWCBHdWlkZXMgKyBTdGFuZGFyZHM8L3RleHQ+PHRleHQgeD0iMTgzNSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iIzMzMyIgdGV4dExlbmd0aD0iMjM3MCI+REIgRGVzaWduIFN5c3RlbSBVWCBHdWlkZXMgKyBTdGFuZGFyZHM8L3RleHQ+PC9nPjwvc3ZnPg==" width="308" height="20" alt="Based on DB UX Design System guidelines">
 
 		<p lang="de">Personenverkehr und DB Systel führen ihre Design Systeme für Web in der Version 2.0 der Standard Web Components zusammen. Unser Ziel ist eine einheitliche Basis UX im Sinne der Modernen Ikone für Kunden und Mitarbeiteranwendungen. Um unser Design End 2 End von Konzeption über Design bis zur Implementierung konsistent zu halten, wird das DB UX Design System auch in Code von DB Systel und Reisendeninformation umgesetzt. Stay Tuned!</p>
@@ -28330,10 +28399,10 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1690269820800">
+<script id="pl-js-polyfill-insert-1693397927356">
   (function() {
     if (self != top) {
-      var cb = '1690269820800';
+      var cb = '1693397927356';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -28346,7 +28415,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1690269820800" nomodule>
+<script id="pl-js-insert-1693397927356" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 

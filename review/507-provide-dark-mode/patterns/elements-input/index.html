@@ -15,17 +15,17 @@
 	<meta name="color-scheme" content="dark light">
 
 	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1690269820800" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1693397927356" media="all">
 
 	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1690269820800" media="all">
-	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1690269820800" media="all">
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1690269820800" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1693397927356" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1693397927356" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1693397927356" media="all">
 	<!-- dialog polyfill //-->
-	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1690269820800" media="all">
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1693397927356" media="all">
 
 	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1690269820800" media="all">
+	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1693397927356" media="all">
 	<!-- End Pattern Lab -->
 
 
@@ -61,6 +61,8 @@ documentation has useful tips on creating an effective description. //-->
 <li>&quot;Generally, explicit labels are better supported by assistive technology.&quot; - compare to the <a href="https://www.w3.org/WAI/tutorials/forms/labels/#associating-labels-implicitly">W3C spec</a>, seems to be a <a href="https://www.w3.org/TR/WCAG20-TECHS/H44.html">WCAG criteria</a> that for, too.</li>
 <li>We could easily control the styling depending on the <code>input</code> elements (pseudo-)states w/o the need for JavaScript</li>
 </ul>
+<h2>Auto suggestions</h2>
+<p>You could easily integrate the possibility to provide auto suggestions to your input fields via the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#list"><code>list</code>-attribute</a> on the <code>input</code>-HTML-elements as well as adding the suggestions via the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist"><code>datalist</code>-HTML-element</a>. Please follow up within the <a href="/patterns/elements-input-input-auto-suggest/elements-input-input-auto-suggest.rendered.html">Input - Auto Suggestions</a> section.</p>
 <h2>Autofill</h2>
 <p>For heavily supporting the user on autofilling form fields (not only, but especially on mobile browsing) with information even already available on their devices, you could use the <code>autocomplete</code> attribute, as described e.g. here <a href="https://cloudfour.com/thinks/autofill-what-web-devs-should-know-but-dont/">https://cloudfour.com/thinks/autofill-what-web-devs-should-know-but-dont/</a></p>
 <p>The attribute doesn't even only take boolean values, but even also a list of specific field types, as described in the specification: <a href="https://html.spec.whatwg.org/multipage/forms.html#inappropriate-for-the-control">https://html.spec.whatwg.org/multipage/forms.html#inappropriate-for-the-control</a></p>
@@ -279,6 +281,73 @@ documentation has useful tips on creating an effective description. //-->
 		
 			<script type="text/json" id="pl-pattern-data-elements-input" class="pl-js-pattern-data">
 			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"elements-input-variations","lineagePath":"../../patterns/elements-input-input-variations/elements-input-input-variations.rendered.html"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"}],"lineageR":[{"lineagePattern":"elements-input-variations","lineagePath":"../../patterns/elements-input-input-variations/elements-input-input-variations.rendered.html"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"input"},"patternExtension":"hbs","patternName":"Input","patternPartial":"elements-input","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":2}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="elements-input-auto-suggest" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/elements-input-input-auto-suggest&#x2F;elements-input-input-auto-suggest.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-input-auto-suggest" title="Link to Pattern">
+						Input - Auto suggestions
+		
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-input-auto-suggest" data-patternpartial="elements-input-auto-suggest" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-input-auto-suggest">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+<input type="text"
+	class="elm-input "
+	placeholder="Projekt Name"
+	name="input09"
+	id="input09"
+	
+	value="Ap"
+	
+	
+	
+	 list="datalistinput09"
+	aria-labelledby="input09-label"
+	>
+<label class="elm-label"
+	for="input09"
+	aria-hidden="true"
+	id="input09-label">Textlabel</label>
+
+<datalist id="datalistinput09">
+		<option value="Apple Computers">Apple</option>
+		<option>Applify</option>
+		<option>App-Design</option>
+</datalist>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-elements-input-auto-suggest" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>You could easily integrate the possibility to provide auto suggestions to your input fields via the <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#list\"><code>list</code>-attribute</a> on the <code>input</code>-HTML-elements as well as adding the suggestions via the <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist\"><code>datalist</code>-HTML-element</a>.</p>\n","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"input"},"patternExtension":"hbs","patternName":"Input - Auto suggestions","patternPartial":"elements-input-auto-suggest","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -834,10 +903,10 @@ documentation has useful tips on creating an effective description. //-->
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1690269820800">
+<script id="pl-js-polyfill-insert-1693397927356">
   (function() {
     if (self != top) {
-      var cb = '1690269820800';
+      var cb = '1693397927356';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -850,7 +919,7 @@ documentation has useful tips on creating an effective description. //-->
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1690269820800" nomodule>
+<script id="pl-js-insert-1693397927356" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 
