@@ -2,7 +2,7 @@
 @import "../../00-base/icons/icons.variables";
 @import "../../00-base/icons/icons.helpers";
 
-$accordion---paddingLeft: 46 !default;
+$accordion---paddingLeft: $db-spacing-m !default;
 $accordion---paddingRight: to-rem(
 	$pxValue: 16
 ) !default;
