@@ -6,6 +6,6 @@
 echo "### validate branch name ###"
 npx validate-branch-name
 echo "### lint staged files ###"
-npx lint-staged --no
+npx --no lint-staged
 echo "### check for commit mail ###"
 node ./scripts/check-commit-mail.mjs
