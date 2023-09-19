@@ -1,11 +1,11 @@
-#!/bin/sh
+#!/usr/bin/env sh
 # shellcheck disable=SC1091
 # shellcheck source=./_/husky.sh
-. "$(dirname "$0")/_/husky.sh"
+. "$(dirname -- "$0")/_/husky.sh"
 
 echo "### validate branch name ###"
 npx validate-branch-name
 echo "### lint staged files ###"
-npx --no lint-staged
+npx --no -- lint-staged
 echo "### check for commit mail ###"
 node ./scripts/check-commit-mail.mjs
