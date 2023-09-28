@@ -2,6 +2,9 @@
 	"plugins": {
 		"autoprefixer": {},
 		"postcss-focus": {},
-		"postcss-list-style-safari-fix": {}
+		"postcss-list-style-safari-fix": {},
+		"cssnano": {
+			"preset": "default"
+		}
 	}
 }
