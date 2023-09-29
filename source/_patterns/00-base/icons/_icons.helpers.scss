@@ -8,7 +8,7 @@
 ) {
 	// We're setting this on the parent tag, so that it could get overwritten via data-icon=*
 	@if $glyph != "" {
-		--icon-glyph: "#{$glyph}";
+		--icon-glyph-#{$position}: "#{$glyph}";
 	}
 
 	&::#{$position} {
@@ -30,8 +30,9 @@
 			);
 		}
 
+		content: var(--icon-glyph-#{$position});
+
 		@if $partial {
-			content: var(--icon-glyph);
 			display: inline-block;
 			/*** icon - partial ***/
 			// * use !important to prevent issues with browser extensions that change fonts
