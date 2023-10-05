@@ -9,18 +9,18 @@ $icon-content-space: to-rem(
 ) !default;
 
 $icon-glyphs-personenverkehr: (
-	"account": "\1f642",
+	"account": "\e1220",
 	"add": "\002B",
 	"add-circle": "\2295",
 	"air-condition": "\2744",
-	"alarm": "\23F0",
+	"alarm": "\e1243",
 	"alarm-add": "\e1062",
-	"alert": "\1F514",
-	"alert-off": "\1F515",
+	"alert": "\e1222",
+	"alert-off": "\e1244",
 	"railroad-car": "\e1193",
-	"calendar": "\1F4C6",
-	"check-circle": "\2705",
-	"credit-card": "\1F4B3",
+	"calendar": "\e1247",
+	"check-circle": "\e1220",
+	"credit-card": "\e1226",
 	"delete": "\1F5D1",
 	"discount": "\e1066",
 	"document": "\1F5B9",
@@ -29,7 +29,7 @@ $icon-glyphs-personenverkehr: (
 	"edit": "\270F",
 	"filter": "\e1069",
 	"generic-card": "\e1070",
-	"giftcard": "\1F381",
+	"giftcard": "\e1250",
 	"heart": "\2661",
 	"help": "\003F",
 	"info": "\1F6C8",
@@ -38,21 +38,21 @@ $icon-glyphs-personenverkehr: (
 	"minus": "\2212",
 	"print": "\1F5A8",
 	"remove": "\229D",
-	"schedule": "\1F553",
-	"search": "\1F50D",
+	"schedule": "\e1233",
+	"search": "\e1254",
 	"send": "\25F9",
 	"settings": "\2699",
 	"share": "\e1077",
 	"shopping-bag": "\1F6CD",
 	"shopping-basket": "\e1079",
-	"shopping-cart": "\1F6D2",
+	"shopping-cart": "\e1255",
 	"star": "\2606",
 	"swap-horizontal": "\21C6",
 	"swap-vertical": "\21F5",
 	"upload": "\e1081",
 	"visibility": "\1F441",
 	"visibility-off": "\e1082",
-	"website": "\1F310",
+	"website": "\e1258",
 	"zoom-in": "\e1083",
 	"bicycle-trailer": "\e1192",
 	"zoom-out": "\e1084",
@@ -69,30 +69,30 @@ $icon-glyphs-personenverkehr: (
 	"stop": "\25A1",
 	"subway": "\e1207",
 	"subtitles": "\e1091",
-	"volume-down": "\1F509",
-	"volume-mute": "\1F508",
-	"volume-off": "\1F507",
-	"volume-up": "\1F50A",
-	"call": "\1F4DE",
-	"chat": "\1F4AC",
+	"volume-down": "\e1259",
+	"volume-mute": "\e1260",
+	"volume-off": "\e1261",
+	"volume-up": "\e1262",
+	"call": "\e1235",
+	"chat": "\e1236",
 	"conversation": "\e1095",
 	"fax": "\1F5B7",
 	"feedback": "\2370",
 	"mail": "\2709",
-	"mobile-off": "\1F4F4",
-	"mobile-phone": "\1F4F1",
+	"mobile-off": "\e1264",
+	"mobile-phone": "\e1263",
 	"wifi": "\e1098",
 	"wifi-off": "\e1149",
-	"mask": "\1F637",
-	"wc": "\1F6BB",
-	"wc-men": "\1F6B9",
-	"wc-sign": "\1F6BE",
-	"wc-woman": "\1F6BA",
+	"mask": "\e1265",
+	"wc": "\e1269",
+	"wc-men": "\e1270",
+	"wc-sign": "\e1271",
+	"wc-woman": "\e1272",
 	"entry-aid": "\e1150",
-	"luggage-rack": "\1F9F3",
+	"luggage-rack": "\e1275",
 	"medical": "\271A",
-	"power-outlet": "\1F50C",
-	"coffee-cup": "\2615",
+	"power-outlet": "\e1278",
+	"coffee-cup": "\e1237",
 	"drink": "\e1101",
 	"restaurant": "\1F37D",
 	"1st-class": "\2488",
@@ -104,7 +104,7 @@ $icon-glyphs-personenverkehr: (
 	"capacity-indicator-fully-booked": "\e1106",
 	"capacity-indicator-high": "\e1108",
 	"capacity-indicator-low": "\e1110",
-	"destination": "\1F4CD",
+	"destination": "\e1238",
 	"intermediary-stop": "\e1113",
 	"round-trip": "\2B94",
 	"single-trip": "\291E",
@@ -116,7 +116,7 @@ $icon-glyphs-personenverkehr: (
 	"map-stop": "\e1115",
 	"travel-insurance": "\e1186",
 	"intercity-train": "\e1216",
-	"multiple-passenger": "\1F46D",
+	"multiple-passenger": "\e1286",
 	"best-price": "\e1185",
 	"multiple-cards": "\e1184",
 	"bed": "\1F6CF",
@@ -130,8 +130,8 @@ $icon-glyphs-personenverkehr: (
 	"set-position": "\1F78B",
 	// trainstation has been deprecated in favour of the new name train-station
 	// TODO: remove with the next major release
-	"trainstation": "\1F689",
-	"train-station": "\1F689",
+	"trainstation": "\e1280",
+	"train-station": "\e1280",
 	"couchette": "\e1189",
 	"arrow-back": "\2190",
 	"arrow-down": "\2193",
@@ -164,9 +164,9 @@ $icon-glyphs-personenverkehr: (
 	"notify": "\e1126",
 	"taxi": "\e1208",
 	"notify-cutoff": "\e1127",
-	"aisle": "\1F4BA",
+	"aisle": "\e1281",
 	"elderly": "\e1128",
-	"handicapped": "\267F",
+	"handicapped": "\e1283",
 	"table": "\e1129",
 	"window": "\e1130",
 	"bahnbonus": "\e1131",
@@ -182,7 +182,7 @@ $icon-glyphs-personenverkehr: (
 	"airplane": "\e1190",
 	"call-a-bike": "\e1191",
 	"return-journey": "\e1141",
-	"ticket": "\1F3AB",
+	"ticket": "\e1287",
 	"ticket-discount": "\e1142",
 	"electric-scooter": "\e1196",
 	"ev-car": "\e1197",
@@ -190,50 +190,50 @@ $icon-glyphs-personenverkehr: (
 	"time-outward-journey": "\e1144",
 	"time-return-journey": "\e1145",
 	"timetable": "\e1146",
-	"bicycle": "\1F6B2",
+	"bicycle": "\e1239",
 	"car": "\e1151",
 	"car-sequence": "\e1147",
-	"ice-side-view": "\1F684",
+	"ice-side-view": "\e1288",
 	"sprinter": "\e1148",
-	"walking": "\1F6B6",
+	"walking": "\e1241",
 	"logo": "\e1152",
 	"buggy": "\e1153",
-	"childrens-compartment": "\1F37C",
-	"parent-child-compartment": "\1F46A",
+	"childrens-compartment": "\e1282",
+	"parent-child-compartment": "\e1284",
 	"augmented-reality": "\e1167",
-	"quiet-zone": "\1F92B",
+	"quiet-zone": "\e1285",
 	// duplicate has been deprecated in favour of the new name copy
 	// TODO: remove with the next major release
 	"duplicate": "\e1154",
 	"copy": "\e1154",
 	"image": "\1F5BC",
-	"lock-close": "\1F512",
-	"lock-open": "\1F513",
+	"lock-close": "\e1229",
+	"lock-open": "\e1230",
 	"restricted-mobility-toilet": "\e1163",
 	"database": "\e1181",
-	"breakfast": "\1F950",
+	"breakfast": "\e1279",
 	"ferry": "\e1198",
-	"no-smoking": "\1F6AD",
-	"luggage-compartment": "\1F6C5",
-	"environmental-mobility-check": "\1F343",
+	"no-smoking": "\e1276",
+	"luggage-compartment": "\e1274",
+	"environmental-mobility-check": "\e1273",
 	"clothing-hanger": "\e1180",
 	"handcart": "\e1199",
 	"reservation": "\e1179",
 	"platform": "\1F6E4",
-	"night": "\1F312",
+	"night": "\e1237",
 	"marketplace": "\e1178",
 	"hydrogen": "\e1177",
 	"day": "\2600",
-	"sink": "\1F9FC",
-	"microphone": "\1F3A4",
+	"sink": "\e1268",
+	"microphone": "\e1234",
 	"undo": "\238C",
-	"thumb-up-down": "\1F44E",
+	"thumb-up-down": "\e1257",
 	"local-bus": "\e1201",
 	"long-distance-bus": "\e1202",
-	"thumb-up": "\1F44D",
-	"logbook": "\1F4D3",
-	"lightbulb": "\1F4A1",
-	"key": "\1F511",
+	"thumb-up": "\e1256",
+	"logbook": "\e1253",
+	"lightbulb": "\e1252",
+	"key": "\e1251",
 	"fingerprint": "\e1171",
 	"face-smiling": "\e1170",
 	"face-neutral": "\e1168",
@@ -241,18 +241,18 @@ $icon-glyphs-personenverkehr: (
 	"face-sad": "\e1169",
 	"cloud-upload": "\21E7",
 	"cloud-download": "\21E9",
-	"cash": "\1F4B8",
+	"cash": "\e1248",
 	"dashboard": "\e1164",
 	"resize": "\e1165",
 	"sepa": "\e1166",
-	"save": "\1F4BE",
-	"pin": "\1F4CC",
-	"folder-open": "\1F4C2",
-	"folder": "\1F4C1",
-	"camera": "\1F4F7",
-	"compass": "\1F9ED",
+	"save": "\e1232",
+	"pin": "\e1231",
+	"folder-open": "\e1228",
+	"folder": "\e1227",
+	"camera": "\e1225",
+	"compass": "\e1249",
 	"drag-and-drop": "\e1187",
-	"person-with-cane": "\1F9AF",
+	"person-with-cane": "\e1277",
 	"hearing": "\e1211",
 	"hearing-disabled": "\e1212",
 	"translation": "\e1213",
@@ -267,23 +267,23 @@ $icon-glyphs-personenverkehr: (
 	"tram": "\e1210",
 	"speedboat": "\e1206",
 	"build": "\1F6E0",
-	"bug": "\1F41B",
+	"bug": "\e1246",
 	"question": "\e1172",
 	"receive-item": "\e1173",
 	"share-item": "\e1174",
-	"playground": "\1F9F8",
-	"shower": "\1F6BF",
+	"playground": "\e1266",
+	"shower": "\e1267",
 	"shower-men": "\e1175",
 	"shower-women": "\e1176",
-	"add-link": "\1F517",
-	"attachment": "\1F4CE",
-	"block": "\274E",
-	"bookmark": "\1F516",
+	"add-link": "\e1242",
+	"attachment": "\e1245",
+	"block": "\e1223",
+	"bookmark": "\e1224",
 	"shopping-basket-disabled": "\e1155",
 	"shopping-cart-disabled": "\e1156",
 	"gps": "\e1157",
 	"gps-north": "\e1158",
-	"local-train": "\1F688",
+	"local-train": "\e1240",
 	"rail-and-fly": "\e1159",
 	// seat-priority has been deprecated in favour of the new name priority
 	// TODO: remove with the next major release
@@ -321,37 +321,37 @@ $icon-font-families-personenverkehr: (
 		),
 		20: (
 			"action": (
-				"U+1f642,U+e1062,U+e1066,U+e1069-e1070,U+e1077,U+e1079,U+e1081-e1084,U+002B,U+2295,U+23F0,U+1F514-1F515,U+1F4C6,U+2705,U+1F4B3,U+1F5D1,U+1F5B9,U+2713,U+2B73,U+270F,U+1F381,U+2661,U+003F,U+1F6C8,U+00A7,U+21A6,U+2212,U+1F5A8,U+229D,U+1F553,U+1F50D,U+25F9,U+2699,U+1F6CD,U+1F6D2,U+2606,U+21C6,U+21F5,U+1F441,U+1F310,U+e1154,U+1F5BC,U+1F512,U+1F513,U+e1155,U+e1156,U+1F517,U+1F4CE,U+e1167,U+274E,U+1F516,U+1F41B,U+1F6E0,U+1F4F7,U+1F4B8,U+2601,U+21E9,U+21E7,U+e1164,U+e1168,U+e1169,U+e1170,U+e1171,U+1F4C1,U+1F4C2,U+1F511,U+1F4A1,U+1F4D3,U+1F4CC,U+e1165,U+1F4BE,U+e1166,U+1F44D,U+1F44E,U+238C,U+1F9ED,U+e1187,U+21A1,U+219F,U+e1211,U+e1212,U+e1213,U+e1214"
+				"U+e1220,U+e1062,U+e1066,U+e1069-e1070,U+e1077,U+e1079,U+e1081-e1084,U+002B,U+2295,U+e1243,U+e1222-e1244,U+e1247,U+e1220,U+e1226,U+1F5D1,U+1F5B9,U+2713,U+2B73,U+270F,U+e1250,U+2661,U+003F,U+1F6C8,U+00A7,U+21A6,U+2212,U+1F5A8,U+229D,U+e1233,U+e1254,U+25F9,U+2699,U+1F6CD,U+e1255,U+2606,U+21C6,U+21F5,U+1F441,U+e1258,U+e1154,U+1F5BC,U+e1229,U+e1230,U+e1155,U+e1156,U+e1242,U+e1245,U+e1167,U+e1223,U+e1224,U+e1246,U+1F6E0,U+e1225,U+e1248,U+2601,U+21E9,U+21E7,U+e1164,U+e1168,U+e1169,U+e1170,U+e1171,U+e1227,U+e1228,U+e1251,U+e1252,U+e1253,U+e1231,U+e1165,U+e1232,U+e1166,U+e1256,U+e1257,U+238C,U+e1249,U+e1187,U+21A1,U+219F,U+e1211,U+e1212,U+e1213,U+e1214"
 			),
 			"av": (
-				"U+e1085-e1088,U+e1091,U+293A,U+293B,U+23F8,U+25B7,U+23EE,U+23ED,U+25A1,U+1F507-1F509,U+1F50A,U+1F3A4"
+				"U+e1085-e1088,U+e1091,U+293A,U+293B,U+23F8,U+25B7,U+23EE,U+23ED,U+25A1,U+e1261-e1259,U+e1262,U+e1234"
 			),
 			"brand": (
 				"U+e1152"
 			),
 			"communication": (
-				"U+1F4DE,U+e1095,U+e1098,U+e1149,U+1F4AC,U+1F5B7,U+2370,U+2709,U+1F4F4,U+1F4F1,U+e1172,U+e1173,U+e1174"
+				"U+e1235,U+e1095,U+e1098,U+e1149,U+e1236,U+1F5B7,U+2370,U+2709,U+e1264,U+e1263,U+e1172,U+e1173,U+e1174"
 			),
 			"covid-19": (
-				"U+1F637"
+				"U+e1265"
 			),
 			"facilities": (
-				"U+1F6BB,U+1F6B9,U+1F6BE,U+1F6BA,U+e1163,U+,U+1F6BF,U+e1175,U+e1176,U+1F9FC"
+				"U+e1269,U+e1270,U+e1271,U+e1272,U+e1163,U+,U+e1267,U+e1175,U+e1176,U+e1268"
 			),
 			"feature": (
-				"U+1F9F3,U+271A,U+1F50C,U+e1150,U+e1153,U+e1160,U+2744,U+e1180,U+2600,U+1F343,U+e1177,U+1F6C5,U+e1178,U+1F312,U+1F6AD,U+1F6E4,U+e1179,U+e1215,U+1F9AF,U+e1188,U+e1217"
+				"U+e1275,U+271A,U+e1278,U+e1150,U+e1153,U+e1160,U+2744,U+e1180,U+2600,U+e1273,U+e1177,U+e1274,U+e1178,U+e1237,U+e1276,U+1F6E4,U+e1179,U+e1215,U+e1277,U+e1188,U+e1217"
 			),
 			"food": (
-				"U+2615,U+e1101,U+1F37D,U+1F950"
+				"U+e1237,U+e1101,U+1F37D,U+e1279"
 			),
 			"it": (
 				"U+e1181"
 			),
 			"journey": (
-				"U+2488,U+2489,U+e1102-e1104,U+e1106,U+e1108,U+e1110,U+e1113,U+1F4CD,U+2B94,U+291E,U+29BF,U+e1161"
+				"U+2488,U+2489,U+e1102-e1104,U+e1106,U+e1108,U+e1110,U+e1113,U+e1238,U+2B94,U+291E,U+29BF,U+e1161"
 			),
 			"maps": (
-				"U+2302,U+e1115-e1116,U+1F5FA,U+1F78B,U+1F689,U+e1157,U+e1158,U+e1182,U+1F17F"
+				"U+2302,U+e1115-e1116,U+1F5FA,U+1F78B,U+e1280,U+e1157,U+e1158,U+e1182,U+1F17F"
 			),
 			"navigation": (
 				"U+2190-2193,U+2BBE,U+e1119-e1122,U+003C,U+003E,U+2A2F,U+2303,U+2304,U+1030E,U+1F862,U+1F865,U+22EF,U+22EE,U+1F5D8"
@@ -360,48 +360,48 @@ $icon-font-families-personenverkehr: (
 				"U+e1123,U+26A0,U+e1126,U+e1127"
 			),
 			"seat": (
-				"U+e1128-e1130,U+1F4BA,U+267F,U+1F37C,U+1F46A,U+1F92B,U+e1162,U+e1183,U+1F6CF,U+e1189"
+				"U+e1128-e1130,U+e1281,U+e1283,U+e1282,U+e1284,U+e1285,U+e1162,U+e1183,U+1F6CF,U+e1189"
 			),
 			"ticket": (
-				"U+e1131-e1132,U+e1134,U+e1136-e1146,U+2714,U+1F907,U+1F3AB,U+e1185,U+e1184,U+1F46D,U+e1186,U+e1218"
+				"U+e1131-e1132,U+e1134,U+e1136-e1146,U+2714,U+1F907,U+e1287,U+e1185,U+e1184,U+e1286,U+e1186,U+e1218"
 			),
 			"transportation": (
-				"U+1F6B2,U+e1147,U+e1151,U+1F684,U+e1148,U+1F6B6,U+1F688,U+e1159,U+e1190-e1210,U+e1216,U+e1219"
+				"U+e1239,U+e1147,U+e1151,U+e1288,U+e1148,U+e1240,U+e1241,U+e1159,U+e1190-e1210,U+e1216,U+e1219"
 			)
 		),
 		24: (
 			"action": (
-				"U+1f642,U+002B,U+2295,U+1F517,U+23F0,U+e1062,U+1F514-1F515,U+1F4CE,U+e1167,U+274E,U+1F516,U+1F41B,U+1F6E0,U+1F4C6,U+1F4F7,U+1F4B8,U+2705,U+2601,U+21E9,U+21E7,U+e1154,U+1F4B3,U+e1164,U+1F5D1,U+e1066,U+1F5B9,U+2713,U+2B73,U+270F,U+e1168,U+e1169,U+e1170,U+e1069,U+e1171,U+1F4C1,U+1F4C2,U+e1070,U+1F381,U+2661,U+003F,U+1F5BC,U+1F6C8,U+1F511,U+00A7,U+1F4A1,U+1F512,U+1F513,U+21A6,U+1F4D3,U+2212,U+1F4CC,U+1F5A8,U+229D,U+e1165,U+1F4BE,U+1F553,U+1F50D,U+25F9,U+e1166,U+2699,U+e1077,U+1F6CD,U+e1079,U+e1155,U+1F6D2,U+e1156,U+2606,U+21C6,U+21F5,U+1F44D,U+1F44E,U+238C,U+e1081,U+1F441,U+e1082,U+1F310,U+e1083,U+e1084,U+1F9ED,U+e1187,U+21A1,U+219F,U+e1211,U+e1212,U+e1213,U+e1214"
+				"U+e1220,U+002B,U+2295,U+e1242,U+e1243,U+e1062,U+e1222-e1244,U+e1245,U+e1167,U+e1223,U+e1224,U+e1246,U+1F6E0,U+e1247,U+e1225,U+e1248,U+e1220,U+2601,U+21E9,U+21E7,U+e1154,U+e1226,U+e1164,U+1F5D1,U+e1066,U+1F5B9,U+2713,U+2B73,U+270F,U+e1168,U+e1169,U+e1170,U+e1069,U+e1171,U+e1227,U+e1228,U+e1070,U+e1250,U+2661,U+003F,U+1F5BC,U+1F6C8,U+e1251,U+00A7,U+e1252,U+e1229,U+e1230,U+21A6,U+e1253,U+2212,U+e1231,U+1F5A8,U+229D,U+e1165,U+e1232,U+e1233,U+e1254,U+25F9,U+e1166,U+2699,U+e1077,U+1F6CD,U+e1079,U+e1155,U+e1255,U+e1156,U+2606,U+21C6,U+21F5,U+e1256,U+e1257,U+238C,U+e1081,U+1F441,U+e1082,U+e1258,U+e1083,U+e1084,U+e1249,U+e1187,U+21A1,U+219F,U+e1211,U+e1212,U+e1213,U+e1214"
 			),
 			"av": (
-				"U+e1085,U+e1086,U+293A,U+e1087,U+e1088,U+293B,U+23F8,U+25B7,U+23EE,U+23ED,U+25A1,U+e1091,U+1F509,U+1F508,U+1F507,U+1F50A,U+1F3A4"
+				"U+e1085,U+e1086,U+293A,U+e1087,U+e1088,U+293B,U+23F8,U+25B7,U+23EE,U+23ED,U+25A1,U+e1091,U+e1259,U+e1260,U+e1261,U+e1262,U+e1234"
 			),
 			"brand": (
 				"U+e1152"
 			),
 			"communication": (
-				"U+1F4DE,U+1F4AC,U+e1095,U+1F5B7,U+2370,U+2709,U+1F4F4,U+1F4F1,U+e1098,U+e1149,U+e1172,U+e1173,U+e1174"
+				"U+e1235,U+e1236,U+e1095,U+1F5B7,U+2370,U+2709,U+e1264,U+e1263,U+e1098,U+e1149,U+e1172,U+e1173,U+e1174"
 			),
 			"covid-19": (
-				"U+1F637"
+				"U+e1265"
 			),
 			"facilities": (
-				"U+1F6BB,U+1F6B9,U+1F6BE,U+1F6BA,U+e1163,U+1F9F8,U+1F6BF,U+e1175,U+e1176,U+1F9FC,"
+				"U+e1269,U+e1270,U+e1271,U+e1272,U+e1163,U+e1266,U+e1267,U+e1175,U+e1176,U+e1268,"
 			),
 			"feature": (
-				"U+1F9F3,U+271A,U+1F50C,U+e1150,U+e1153,U+e1160,U+2744,U+e1180,U+2600,U+1F343,U+e1177,U+1F6C5,U+e1178,U+1F312,U+1F6AD,U+1F6E4,U+e1179,U+e1215,U+1F9AF,U+e1188,U+e1217"
+				"U+e1275,U+271A,U+e1278,U+e1150,U+e1153,U+e1160,U+2744,U+e1180,U+2600,U+e1273,U+e1177,U+e1274,U+e1178,U+e1237,U+e1276,U+1F6E4,U+e1179,U+e1215,U+e1277,U+e1188,U+e1217"
 			),
 			"food": (
-				"U+2615,U+e1101,U+1F37D,U+1F950"
+				"U+e1237,U+e1101,U+1F37D,U+e1279"
 			),
 			"it": (
 				"U+e1181"
 			),
 			"journey": (
-				"U+2488-2489,U+e1102-e1104,U+e1106,U+e1108,U+e1110,U+1F4CD,U+e1113,U+2B94,U+291E,U+29BF,U+e1161"
+				"U+2488-2489,U+e1102-e1104,U+e1106,U+e1108,U+e1110,U+e1238,U+e1113,U+2B94,U+291E,U+29BF,U+e1161"
 			),
 			"maps": (
-				"U+2302,U+1F5FA,U+e1115,U+e1116,U+1F78B,U+1F689,U+e1157,U+e1158,U+1F17F,U+e1182"
+				"U+2302,U+1F5FA,U+e1115,U+e1116,U+1F78B,U+e1280,U+e1157,U+e1158,U+1F17F,U+e1182"
 			),
 			"navigation": (
 				"U+2190-2193,U+2BBE,U+003C,U+003E,U+2A2F,U+2303,U+2304,U+e1119,U+e1120,U+1030E,U+1F862,U+1F865,U+e1121,U+e1122,U+22EF,U+22EE,U+1F5D8"
@@ -410,48 +410,48 @@ $icon-font-families-personenverkehr: (
 				"U+e1123-e1127,U+26A0"
 			),
 			"seat": (
-				"U+1F4BA,U+e1128-e1130,U+267F,U+1F37C,U+1F46A,U+1F92B,U+e1162,U+e1183,U+1F6CF,U+e1189"
+				"U+e1281,U+e1128-e1130,U+e1283,U+e1282,U+e1284,U+e1285,U+e1162,U+e1183,U+1F6CF,U+e1189"
 			),
 			"ticket": (
-				"U+e1131-e1146,U+2714,U+1F907,U+1F3AB,U+e1184,U+e1185,U+1F46D,U+e1186,U+e1218"
+				"U+e1131-e1146,U+2714,U+1F907,U+e1287,U+e1184,U+e1185,U+e1286,U+e1186,U+e1218"
 			),
 			"transportation": (
-				"U+1F6B2,U+e1147,U+e1151,U+1F684,U+e1148,U+1F6B6,U+1F688,U+e1159,U+e1190-e1210,U+e1216,U+e1219"
+				"U+e1239,U+e1147,U+e1151,U+e1288,U+e1148,U+e1240,U+e1241,U+e1159,U+e1190-e1210,U+e1216,U+e1219"
 			)
 		),
 		32: (
 			"action": (
-				"U+1f642,U+002B,U+2295,U+1F517,U+23F0,U+e1062,U+1F514-1F515,U+1F4CE,U+e1167,U+274E,U+1F516,U+1F41B,U+1F6E0,U+1F4C6,U+1F4F7,U+1F4B8,U+2705,U+2601,U+21E9,U+21E7,U+e1154,U+1F4B3,U+e1164,U+1F5D1,U+e1066,U+1F5B9,U+2713,U+2B73,U+270F,U+e1168,U+e1169,U+e1170,U+e1069,U+e1171,U+1F4C1,U+1F4C2,U+e1070,U+1F381,U+2661,U+003F,U+1F5BC,U+1F6C8,U+1F511,U+00A7,U+1F4A1,U+1F512,U+1F513,U+21A6,U+1F4D3,U+2212,U+1F4CC,U+1F5A8,U+229D,U+e1165,U+1F4BE,U+1F553,U+1F50D,U+25F9,U+e1166,U+2699,U+e1077,U+1F6CD,U+e1079,U+e1155,U+1F6D2,U+e1156,U+2606,U+21C6,U+21F5,U+1F44D,U+1F44E,U+238C,U+e1081,U+1F441,U+e1082,U+1F310,U+e1083,U+e1084,U+1F9ED,U+e1187,U+21A1,U+219F,U+e1211,U+e1212,U+e1213,U+e1214"
+				"U+e1220,U+002B,U+2295,U+e1242,U+e1243,U+e1062,U+e1222-e1244,U+e1245,U+e1167,U+e1223,U+e1224,U+e1246,U+1F6E0,U+e1247,U+e1225,U+e1248,U+e1220,U+2601,U+21E9,U+21E7,U+e1154,U+e1226,U+e1164,U+1F5D1,U+e1066,U+1F5B9,U+2713,U+2B73,U+270F,U+e1168,U+e1169,U+e1170,U+e1069,U+e1171,U+e1227,U+e1228,U+e1070,U+e1250,U+2661,U+003F,U+1F5BC,U+1F6C8,U+e1251,U+00A7,U+e1252,U+e1229,U+e1230,U+21A6,U+e1253,U+2212,U+e1231,U+1F5A8,U+229D,U+e1165,U+e1232,U+e1233,U+e1254,U+25F9,U+e1166,U+2699,U+e1077,U+1F6CD,U+e1079,U+e1155,U+e1255,U+e1156,U+2606,U+21C6,U+21F5,U+e1256,U+e1257,U+238C,U+e1081,U+1F441,U+e1082,U+e1258,U+e1083,U+e1084,U+e1249,U+e1187,U+21A1,U+219F,U+e1211,U+e1212,U+e1213,U+e1214"
 			),
 			"av": (
-				"U+e1085-e1088,U+e1091,U+293A,U+293B,U+23F8,U+25B7,U+23EE,U+23ED,U+25A1,U+1F509,U+1F508,U+1F507,U+1F50A,U+1F3A4"
+				"U+e1085-e1088,U+e1091,U+293A,U+293B,U+23F8,U+25B7,U+23EE,U+23ED,U+25A1,U+e1259,U+e1260,U+e1261,U+e1262,U+e1234"
 			),
 			"brand": (
 				"U+e1152"
 			),
 			"communication": (
-				"U+1F4DE,U+1F4AC,U+e1095,U+1F5B7,U+2370,U+2709,U+1F4F4,U+1F4F1,U+e1098,U+e1149,U+e1172,U+e1173,U+e1174"
+				"U+e1235,U+e1236,U+e1095,U+1F5B7,U+2370,U+2709,U+e1264,U+e1263,U+e1098,U+e1149,U+e1172,U+e1173,U+e1174"
 			),
 			"covid-19": (
-				"U+1F637"
+				"U+e1265"
 			),
 			"facilities": (
-				"U+1F6B9,U+1F6BE,U+1F6BA,U+1F6BB,U+e1163,U+1F9F8,U+1F6BF,U+e1175,U+e1176,U+1F9FC"
+				"U+e1270,U+e1271,U+e1272,U+e1269,U+e1163,U+e1266,U+e1267,U+e1175,U+e1176,U+e1268"
 			),
 			"feature": (
-				"U+1F9F3,U+271A,U+1F50C,U+e1150,U+e1153,U+e1160,U+2744,U+e1180,U+2600,U+1F343,U+e1177,U+1F6C5,U+e1178,U+1F312,U+1F6AD,U+1F6E4,U+e1179,U+1F9AF,U+e1188,U+e1215,U+e1217"
+				"U+e1275,U+271A,U+e1278,U+e1150,U+e1153,U+e1160,U+2744,U+e1180,U+2600,U+e1273,U+e1177,U+e1274,U+e1178,U+e1237,U+e1276,U+1F6E4,U+e1179,U+e1277,U+e1188,U+e1215,U+e1217"
 			),
 			"food": (
-				"U+2615,U+e1101,U+1F37D,U+1F950"
+				"U+e1237,U+e1101,U+1F37D,U+e1279"
 			),
 			"it": (
 				"U+e1181"
 			),
 			"journey": (
-				"U+2488,U+2489,U+e1102-e1110,U+1F4CD,U+e1113,U+2B94,U+291E,U+29BF,U+e1161"
+				"U+2488,U+2489,U+e1102-e1110,U+e1238,U+e1113,U+2B94,U+291E,U+29BF,U+e1161"
 			),
 			"maps": (
-				"U+2302,U+1F5FA,U+e1116,U+1F78B,U+e1115,U+1F689,U+e1157,U+e1158,U+1F17F,U+e1182"
+				"U+2302,U+1F5FA,U+e1116,U+1F78B,U+e1115,U+e1280,U+e1157,U+e1158,U+1F17F,U+e1182"
 			),
 			"navigation": (
 				"U+2190-2193,U+e1119-e1122,U+2BBE,U+003C,U+003E,U+2A2F,U+2303,U+2304,U+1030E,U+1F865,U+1F862,U+22EF,U+22EE,U+1F5D8"
@@ -460,13 +460,13 @@ $icon-font-families-personenverkehr: (
 				"U+26A0,U+e1123-e1127"
 			),
 			"seat": (
-				"U+1F4BA,U+e1128-e1130,U+267F,U+1F37C,U+1F46A,U+1F92B,U+e1162,U+e1183,U+1F6CF,U+e1189"
+				"U+e1281,U+e1128-e1130,U+e1283,U+e1282,U+e1284,U+e1285,U+e1162,U+e1183,U+1F6CF,U+e1189"
 			),
 			"ticket": (
-				"U+e1131-e1146,U+2714,U+1F907,U+1F3AB,U+e1184,U+e1185,U+1F46D,U+e1186,U+e1218"
+				"U+e1131-e1146,U+2714,U+1F907,U+e1287,U+e1184,U+e1185,U+e1286,U+e1186,U+e1218"
 			),
 			"transportation": (
-				"U+1F6B2,U+e1147,U+e1151,U+1F684,U+e1148,U+1F6B6,U+1F688,U+e1159,U+e1190-e1210,U+e1216,U+e1219"
+				"U+e1239,U+e1147,U+e1151,U+e1288,U+e1148,U+e1240,U+e1241,U+e1159,U+e1190-e1210,U+e1216,U+e1219"
 			)
 		),
 		48: (
@@ -489,7 +489,7 @@ $icon-font-families-personenverkehr: (
 	"filled": (
 		16: (
 			"action": (
-				"U+2705,U+003F,U+1F6C8"
+				"U+e1220,U+003F,U+1F6C8"
 			),
 			"navigation": (
 				"U+2BBE"
@@ -500,25 +500,25 @@ $icon-font-families-personenverkehr: (
 		),
 		20: (
 			"action": (
-				"U+1f642,U+2295,U+1F514,U+2705,U+1F4B3,U+e1066,U+270F,U+e1070,U+003F,U+1F6C8,U+1F5A8,U+229D,U+1F553,U+1F6CD,U+e1079,U+2661,U+2606,U+e1154,U+1F5BC,U+1F512,U+1F513,U+e1155,U+274E,U+1F516,U+1F6E0,U+1F4F7,U+2601,U+1F4C2,U+1F4C1,U+1F4CC,U+1F4BE,U+e1164,U+e1165,U+e1166,U+1F6C8,U+003F,U+e1214"
+				"U+e1220,U+2295,U+e1222,U+e1220,U+e1226,U+e1066,U+270F,U+e1070,U+003F,U+1F6C8,U+1F5A8,U+229D,U+e1233,U+1F6CD,U+e1079,U+2661,U+2606,U+e1154,U+1F5BC,U+e1229,U+e1230,U+e1155,U+e1223,U+e1224,U+1F6E0,U+e1225,U+2601,U+e1228,U+e1227,U+e1231,U+e1232,U+e1164,U+e1165,U+e1166,U+1F6C8,U+003F,U+e1214"
 			),
 			"av": (
-				"U+25B7,U+23EE,U+23ED,U+25A1,U+e1091,U+1F3A4"
+				"U+25B7,U+23EE,U+23ED,U+25A1,U+e1091,U+e1234"
 			),
 			"communication": (
-				"U+1F4DE,U+1F4AC,U+e1095,U+2370,U+e1172,U+e1173,U+e1174"
+				"U+e1235,U+e1236,U+e1095,U+2370,U+e1172,U+e1173,U+e1174"
 			),
 			"feature": (
-				"U+271A,U+2600,U+e1177,U+e1178,U+1F312,U+1F6E4,U+e1179"
+				"U+271A,U+2600,U+e1177,U+e1178,U+e1237,U+1F6E4,U+e1179"
 			),
 			"food": (
-				"U+2615"
+				"U+e1237"
 			),
 			"it": (
 				"U+e1181"
 			),
 			"journey": (
-				"U+e1104,U+e1106,U+e1108,U+e1110,U+1F4CD"
+				"U+e1104,U+e1106,U+e1108,U+e1110,U+e1238"
 			),
 			"maps": (
 				"U+2302,U+e1116,U+e1157,U+e1158,U+e1115,U+1F17F"
@@ -533,18 +533,18 @@ $icon-font-families-personenverkehr: (
 				"U+e1132,U+e1134,U+e1184"
 			),
 			"transportation": (
-				"U+e1190,U+e1191,U+e1192,U+e1194,U+e1195,U+e1196,U+e1197,U+e1198,U+e1199,U+e1200,U+e1201,U+e1202,U+e1203,U+e1204,U+1F6B2,U+e1151,U+e1147,U+1F684,U+1F688,U+e1206,U+e1207,U+e1208,U+e1216,U+e1208,U+e1209,U+e1210,U+1F6B6,U+e1219"
+				"U+e1190,U+e1191,U+e1192,U+e1194,U+e1195,U+e1196,U+e1197,U+e1198,U+e1199,U+e1200,U+e1201,U+e1202,U+e1203,U+e1204,U+e1239,U+e1151,U+e1147,U+e1288,U+e1240,U+e1206,U+e1207,U+e1208,U+e1216,U+e1208,U+e1209,U+e1210,U+e1241,U+e1219"
 			)
 		),
 		24: (
 			"action": (
-				"U+1F514,U+2661,U+2606,U+1F4F7,U+1F516,U+2295,U+2705,U+2601,U+1F4CC,U+229D,U+1F6C8,U+003F"
+				"U+e1222,U+2661,U+2606,U+e1225,U+e1224,U+2295,U+e1220,U+2601,U+e1231,U+229D,U+1F6C8,U+003F"
 			),
 			"av": (
-				"U+25B7,U+25A1,U+23EE,U+23ED,U+1F3A4"
+				"U+25B7,U+25A1,U+23EE,U+23ED,U+e1234"
 			),
 			"journey": (
-				"U+e1104,U+e1106,U+e1108,U+e1110,U+1F4CD"
+				"U+e1104,U+e1106,U+e1108,U+e1110,U+e1238"
 			),
 			"maps": (
 				"U+e1157,U+e1158"
@@ -556,15 +556,15 @@ $icon-font-families-personenverkehr: (
 				"U+e1123,U+26A0"
 			),
 			"transportation": (
-				"U+e1190,U+e1191,U+e1192,U+e1194,U+e1195,U+e1196,U+e1197,U+e1198,U+e1199,U+e1200,U+e1201,U+e1202,U+e1203,U+e1204,U+1F6B2,U+e1151,U+e1147,U+1F684,U+1F688,U+e1206,U+e1207,U+e1208,U+e1216,U+e1208,U+e1209,U+e1210,U+1F6B6,U+e1219"
+				"U+e1190,U+e1191,U+e1192,U+e1194,U+e1195,U+e1196,U+e1197,U+e1198,U+e1199,U+e1200,U+e1201,U+e1202,U+e1203,U+e1204,U+e1239,U+e1151,U+e1147,U+e1288,U+e1240,U+e1206,U+e1207,U+e1208,U+e1216,U+e1208,U+e1209,U+e1210,U+e1241,U+e1219"
 			)
 		),
 		32: (
 			"action": (
-				"U+2606,U+2661,U+1F514,U+2295,U+1f516,U+1F4F7,U+e904,U+2705,U+2601,U+1F4CC,U+229D,U+1F6C8,U+003F"
+				"U+2606,U+2661,U+e1222,U+2295,U+e1224,U+e1225,U+e904,U+e1220,U+2601,U+e1231,U+229D,U+1F6C8,U+003F"
 			),
 			"av": (
-				"U+25B7,U+23EE,U+23ED,U+25A1,U+1F3A4"
+				"U+25B7,U+23EE,U+23ED,U+25A1,U+e1234"
 			),
 			"maps": (
 				"U+e1157,U+e1158"
@@ -576,7 +576,7 @@ $icon-font-families-personenverkehr: (
 				"U+e1123,U+26A0"
 			),
 			"transportation": (
-				"U+e1190,U+e1191,U+e1192,U+e1194,U+e1195,U+e1196,U+e1197,U+e1198,U+e1199,U+e1200,U+e1201,U+e1202,U+e1203,U+e1204,U+1F6B2,U+e1151,U+e1147,U+1F684,U+1F688,U+e1206,U+e1207,U+e1208,U+e1216,U+e1208,U+e1209,U+e1210,U+1F6B6,U+e1219"
+				"U+e1190,U+e1191,U+e1192,U+e1194,U+e1195,U+e1196,U+e1197,U+e1198,U+e1199,U+e1200,U+e1201,U+e1202,U+e1203,U+e1204,U+e1239,U+e1151,U+e1147,U+e1288,U+e1240,U+e1206,U+e1207,U+e1208,U+e1216,U+e1208,U+e1209,U+e1210,U+e1241,U+e1219"
 			)
 		),
 		48: (
