@@ -31,6 +31,10 @@
 		}
 
 		content: var(--icon-glyph-#{$position});
+		// Hiding icon from screenreaders
+		@supports (content: ""/"") {
+			content: var(--icon-glyph-#{$position}) / ""; // https://www.w3.org/TR/css-content-3/#alt
+		}
 
 		@if $partial {
 			display: inline-block;
@@ -53,9 +57,6 @@
 			/* stylelint-enable */
 
 			// Hiding icon from screenreaders
-			@supports (content: ""/"") {
-				content: var(--icon-glyph) / ""; // https://www.w3.org/TR/css-content-3/#alt
-			}
 			/* stylelint-disable */
 			-webkit-alt: "";
 			/* stylelint-enable */
