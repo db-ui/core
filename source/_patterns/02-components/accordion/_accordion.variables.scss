@@ -1,6 +1,6 @@
 @import "../../../css/helpers/functions";
 
-$accordion---paddingLeft: 46 !default;
+$accordion---paddingLeft: $db-spacing-m !default;
 $accordion---paddingRight: to-rem(
 	$pxValue: 16
 ) !default;

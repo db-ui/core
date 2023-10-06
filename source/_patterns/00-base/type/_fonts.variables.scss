@@ -7,7 +7,8 @@ $font-families: (
 		// light font weight
 		"font-weight": 300,
 		"font-style": normal,
-		"font-local": true
+		"font-local-name": "DB Screen Head Light",
+		"font-local-name-short": "DB Head Light"
 	),
 	"DB Screen Head Regular": (
 		"font-family": "DB Screen Head",
@@ -15,7 +16,8 @@ $font-families: (
 		// normal font weight
 		"font-weight": 400,
 		"font-style": normal,
-		"font-local": true
+		"font-local-name": "DB Screen Head",
+		"font-local-name-short": "DB Head"
 	),
 	"DB Screen Head Black": (
 		"font-family": "DB Screen Head",
@@ -23,42 +25,54 @@ $font-families: (
 		// black/"bold" font weight
 		"font-weight": 900,
 		"font-style": normal,
-		"font-local": true
+		"font-local-name": "DB Screen Head Black",
+		"font-local-name-short": "DB Head Black"
 	),
+
 	"DB Screen Sans Digital Regular": (
 		"font-family": "DB Screen Sans Digital Regular",
 		"font-filename": "dbscreensans-digitalregular",
 		// normal font weight
 		"font-weight": 400,
-		"font-style": normal
+		"font-style": normal,
+		"font-local-name": "DB Screen Sans Digital",
+		"font-local-name-short": "DB Sans Digital"
 	),
+
 	"DB Screen Sans Regular": (
 		"font-family": "DB Screen Sans",
 		"font-filename": "dbscreensans-regular",
 		// normal font weight
 		"font-weight": 400,
 		"font-style": normal,
-		"font-local": true
+		"font-local-name": "DB Screen Sans",
+		"font-local-name-short": "DB Sans"
 	),
 	"DB Screen Sans Medium": (
 		"font-family": "DB Screen Sans",
 		"font-filename": "dbscreensans-medium",
 		"font-weight": 500,
 		"font-style": normal,
-		"font-local": true
+		// TODO: Identify the correct name on local environments; most likely this isn't installed and/or possible to get referenced at the moment
+		// "font-local-name": "DB Screen Sans Medium",
+		// "font-local-name-short": "DB Sans Medium"
 	),
 	"DB Screen Sans Semibold": (
 		"font-family": "DB Screen Sans",
 		"font-filename": "dbscreensans-semibold",
 		"font-weight": 600,
 		"font-style": normal,
-		"font-local": true
+		// TODO: Identify the correct name on local environments; most likely this isn't installed and/or possible to get referenced at the moment
+		// "font-local-name": "DB Screen Sans Semibold",
+		// "font-local-name-short": "DB Sans Semibold"
 	),
 	"DB Screen Sans Bold": (
 		"font-family": "DB Screen Sans",
 		"font-filename": "dbscreensans-bold",
 		// bold font weight
 		"font-weight": 700,
-		"font-style": normal
+		"font-style": normal,
+		"font-local-name": "DB Screen Sans Bold",
+		"font-local-name-short": "DB Sans Bold"
 	)
 ) !default;

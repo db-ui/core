@@ -9,9 +9,16 @@
 	padding-right: $accordion---paddingRight;
 
 	summary {
-		@include icon(glyph(chevron-right), 24, "outline", $partial: $partial);
+		@include icon(
+			glyph(expand-more),
+			24,
+			"outline",
+			"after",
+			$partial: $partial
+		);
 		align-items: center;
 		display: flex;
+		justify-content: space-between;
 
 		padding-block: $db-spacing-sm;
 		// Negating the padding left for moving the element into that direction with the same measures
@@ -30,9 +37,9 @@
 		}
 
 		// Icon horizontal space
-		&::before {
-			--icon-margin-after: #{to-rem($pxValue: 8)};
-			margin-left: #{to-rem($pxValue: 14)};
+		&::after {
+			--icon-margin-before: #{to-rem($pxValue: 8)};
+			margin-right: #{to-rem($pxValue: 14)};
 		}
 
 		& + p {
@@ -41,7 +48,7 @@
 	}
 	// TODO: This might get simplified in the future with @nest
 	&[open] > summary {
-		&::before {
+		&::after {
 			content: glyph(expand-less);
 		}
 	}
@@ -57,7 +64,7 @@
 			font-weight: 700;
 			height: to-rem($pxValue: 56);
 
-			&::before {
+			&::after {
 				--icon-font-size: #{to-rem($pxValue: 32)};
 			}
 		}
@@ -79,7 +86,7 @@
 			// ToDo: This needs to get replaced by the correct variable
 			padding-block: 0.59375rem;
 
-			&::before {
+			&::after {
 				--icon-font-size: #{to-rem($pxValue: 20)};
 				--icon-margin-after: #{to-rem($pxValue: 6)};
 				margin-left: #{to-rem($pxValue: 6)};
@@ -97,7 +104,7 @@
 			font-size: to-rem($pxValue: 20);
 			padding-block: $db-spacing-m;
 
-			&::before {
+			&::after {
 				--icon-font-size: #{to-rem($pxValue: 32)};
 			}
 		}
