@@ -95,7 +95,7 @@
     "postcss-list-style-safari-fix": "^1.0.0",
     "prettier": "^3.0.3",
     "rimraf": "^5.0.5",
-    "sass": "^1.69.2",
+    "sass": "^1.69.3",
     "start-server-and-test": "^2.0.1",
     "stylelint": "^14.16.1",
     "stylelint-config-prettier": "^9.0.5",
