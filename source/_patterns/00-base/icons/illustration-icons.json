@@ -227,10 +227,10 @@
 				"icon": "station/db_ic_il_db_ticket_vending_machine"
 			},
 			{
-				"icon": "station/db_ic_il_db_trainstation_with_train"
+				"icon": "station/db_ic_il_db_train_station_with_train"
 			},
 			{
-				"icon": "station/db_ic_il_db_trainstation"
+				"icon": "station/db_ic_il_db_train_station"
 			},
 			{
 				"icon": "station/db_ic_il_db_travel_center"
