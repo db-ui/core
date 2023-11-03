@@ -18,4 +18,4 @@
 		<option value="developer">Developer</option>
 	</optgroup>{{/if }}
 </select>
-<label class="elm-label" for="{{ id }}">{{ label }}</label>
+<label class="elm-label" for="{{ id }}"{{#if labelHidden }} data-label-hidden="true"{{/if }}>{{ label }}</label>
