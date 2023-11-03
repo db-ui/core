@@ -146,6 +146,11 @@
 		background-size: to-rem($pxValue: 19);
 		padding-left: to-rem($pxValue: 32);
 
+		// Reposition the Chromium browsers cancel button to "counteract" on floating labels padding-top on inputs
+		&::-webkit-search-cancel-button {
+			transform: translateY(-#{to-rem(8)});
+		}
+
 		:not(.cmp-sitesearch) > & {
 			@extend %form-element-semitransparent;
 
