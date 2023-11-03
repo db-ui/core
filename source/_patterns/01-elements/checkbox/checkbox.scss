@@ -64,6 +64,8 @@
 	}
 
 	& + label {
+		@extend %form-label;
+
 		margin-left: $db-spacing-xs;
 	}
 }

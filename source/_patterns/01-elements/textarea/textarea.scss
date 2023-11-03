@@ -29,6 +29,10 @@
 	// align-items: center;
 	// justify-content: flex-start;
 
+	.elm-label:has(+ &) {
+		@extend %form-label;
+	}
+
 	&:not([rows]) {
 		max-height: to-rem($pxValue: 600);
 		min-height: to-rem($pxValue: 120);
