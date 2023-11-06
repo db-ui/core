@@ -35,7 +35,7 @@
 
 %form-label {
 	&[data-label-hidden="true"] {
-		@include a11y-visually-hidden($partial: $partial);
+		@include a11y-visually-hidden();
 	}
 }
 
