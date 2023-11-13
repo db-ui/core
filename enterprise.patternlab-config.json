@@ -56,7 +56,7 @@
 			"css": "./source/css",
 			"icons": "./node_modules/@db-ui/base/build/assets/icons",
 			"samples": "./source/samples",
-			"iframeResizer.contentWindow.min.js": "node_modules/iframe-resizer/js/iframeResizer.contentWindow.min.js",
+			"iframeResizer.contentWindow.js": "node_modules/iframe-resizer/js/iframeResizer.contentWindow.js",
 			"details-element-polyfill.js": "node_modules/details-element-polyfill/dist/details-element-polyfill.js",
 			"dialog-polyfill.js": "node_modules/dialog-polyfill/dist/dialog-polyfill.js",
 			"dialog-polyfill.css": "node_modules/dialog-polyfill/dist/dialog-polyfill.css",
