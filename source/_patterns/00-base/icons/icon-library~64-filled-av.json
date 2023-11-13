@@ -10,6 +10,15 @@
 		},
 		{
 			"icon-glyph": "play"
+		},
+		{
+			"icon-glyph": "skip-backward"
+		},
+		{
+			"icon-glyph": "skip-forward"
+		},
+		{
+			"icon-glyph": "stop"
 		}
 	]
 }
