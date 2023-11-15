@@ -74,7 +74,7 @@
 			"css": "out/css",
 			"icons": "out/icons",
 			"samples": "out/samples",
-			"iframeResizer.contentWindow.min.js": "out/js/iframeresizer.contentwindow.min.js",
+			"iframeResizer.contentWindow.js": "out/js/iframeResizer.contentWindow.js",
 			"details-element-polyfill.js": "out/js/details-element-polyfill.js",
 			"dialog-polyfill.js": "out/js/dialog-polyfill.js",
 			"dialog-polyfill.css": "out/css/dialog-polyfill.css",
