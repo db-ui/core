@@ -3,6 +3,12 @@
 	"icon-style": "filled",
 	"icons": [
 		{
+			"icon-glyph": "fast-backward"
+		},
+		{
+			"icon-glyph": "fast-forward"
+		},
+		{
 			"icon-glyph": "microphone"
 		},
 		{

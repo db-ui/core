@@ -69,6 +69,7 @@ $icon-glyphs-personenverkehr: (
 	"stop": "\25A1",
 	"subway": "\e1207",
 	"subtitles": "\e1091",
+	"dog": "\e1299",
 	"volume-down": "\e1259",
 	"volume-mute": "\e1260",
 	"volume-off": "\e1261",
@@ -77,6 +78,7 @@ $icon-glyphs-personenverkehr: (
 	"chat": "\e1236",
 	"conversation": "\e1095",
 	"fax": "\1F5B7",
+	"qr-code-scan": "\e1298",
 	"feedback": "\2370",
 	"mail": "\2709",
 	"mobile-off": "\e1264",
@@ -221,6 +223,14 @@ $icon-glyphs-personenverkehr: (
 	"reservation": "\e1179",
 	"platform": "\1F6E4",
 	"night": "\e1289",
+	"piggybank": "\e1290",
+	"resize-handle-corner": "\e1291",
+	"document-check": "\e1292",
+	"face-delighted": "\e1293",
+	"face-disappointed": "\e1294",
+	"push-button": "\e1295",
+	"fast-backward": "\e1296",
+	"fast-forward": "\e1297",
 	"marketplace": "\e1178",
 	"hydrogen": "\e1177",
 	"day": "\2600",
@@ -291,6 +301,10 @@ $icon-glyphs-personenverkehr: (
 	"priority": "\e1162",
 	"standing-room": "\e1160",
 	"mixed-class": "\e1161",
+	"navigation-straight": "\e1300",
+	"navigation-to-left": "\e1301",
+	"navigation-to-right": "\e1302",
+	"navigation-u-turn": "\e1303",
 	"transportation-train-ec": "\e900",
 	"transportation-train-ic": "\e901",
 	"transportation-train-ice": "\e902",
@@ -321,10 +335,10 @@ $icon-font-families-personenverkehr: (
 		),
 		20: (
 			"action": (
-				"U+002B,U+003F,U+00A7,U+1F441,U+1F5A8,U+1F5B9,U+1F5BC,U+1F5D1,U+1F6C8,U+1F6CD,U+1F6E0,U+219F,U+21A1,U+21A6,U+21C6,U+21E7,U+21E9,U+21F5,U+2212,U+2295,U+229D,U+238C,U+25F9,U+2601,U+2606,U+2661,U+2699,U+270F,U+2713,U+2B73,U+e1062,U+e1066,U+e1069-e1070,U+e1077,U+e1079,U+e1081-e1084,U+e1154-e1156,U+e1164-e1171,U+e1187,U+e1211-e1214,U+e1220-e1258"
+				"U+002B,U+003F,U+00A7,U+1F441,U+1F5A8,U+1F5B9,U+1F5BC,U+1F5D1,U+1F6C8,U+1F6CD,U+1F6E0,U+219F,U+21A1,U+21A6,U+21C6,U+21E7,U+21E9,U+21F5,U+2212,U+2295,U+229D,U+238C,U+25F9,U+2601,U+2606,U+2661,U+2699,U+270F,U+2713,U+2B73,U+e1062,U+e1066,U+e1069-e1070,U+e1077,U+e1079,U+e1081-e1084,U+e1154-e1156,U+e1164-e1171,U+e1187,U+e1211-e1214,U+e1220-e1258,U+e1290-e1295"
 			),
 			"av": (
-				"U+23ED-23EE,U+23F8,U+25A1,U+25B7,U+293A-293B,U+e1085-e1088,U+e1091,U+e1234,U+e1261-e1259,U+e1262"
+				"U+23ED-23EE,U+23F8,U+25A1,U+25B7,U+293A-293B,U+e1085-e1088,U+e1091,U+e1234,U+e1261-e1259,U+e1262,U+e1296-e1297"
 			),
 			"brand": (
 				"U+e1152"
@@ -339,7 +353,7 @@ $icon-font-families-personenverkehr: (
 				"U+e1163,U+e1175-e1176,U+e1266-e1272"
 			),
 			"feature": (
-				"U+1F6E4,U+2600,U+271A,U+2744,U+e1150,U+e1153,U+e1160,U+e1177-e1180,U+e1188,U+e1215,U+e1217,U+e1273-e1278,U+e1289"
+				"U+1F6E4,U+2600,U+271A,U+2744,U+e1150,U+e1153,U+e1160,U+e1177-e1180,U+e1188,U+e1215,U+e1217,U+e1273-e1278,U+e1289,U+e1299"
 			),
 			"food": (
 				"U+1F37D,U+e1101,U+e1237,U+e1279"
@@ -351,7 +365,7 @@ $icon-font-families-personenverkehr: (
 				"U+2488-2489,U+291E,U+29BF,U+2B94,U+e1102-e1104,U+e1106,U+e1108,U+e1110,U+e1113,U+e1161,U+e1238"
 			),
 			"maps": (
-				"U+1F17F,U+1F5FA,U+1F78B,U+2302,U+e1115-e1116,U+e1157-e1158,U+e1182,U+e1280"
+				"U+1F17F,U+1F5FA,U+1F78B,U+2302,U+e1115-e1116,U+e1157-e1158,U+e1182,U+e1280,U+e1300-e1303"
 			),
 			"navigation": (
 				"U+003C,U+003E,U+1030E,U+1F5D8,U+1F862,U+1F865,U+2190-2193,U+22EE-22EF,U+2303-2304,U+2A2F,U+2BBE,U+e1119-e1122"
@@ -363,7 +377,7 @@ $icon-font-families-personenverkehr: (
 				"U+1F6CF,U+e1128-e1130,U+e1162,U+e1183,U+e1189,U+e1281-e1285"
 			),
 			"ticket": (
-				"U+1F907,U+2714,U+e1131-e1132,U+e1134,U+e1136-e1146,U+e1184-e1186,U+e1218,U+e1286-e1287"
+				"U+1F907,U+2714,U+e1131-e1132,U+e1134,U+e1136-e1146,U+e1184-e1186,U+e1218,U+e1286-e1287,U+e1298"
 			),
 			"transportation": (
 				"U+e1147-e1148,U+e1151,U+e1159,U+e1190-e1210,U+e1216,U+e1219,U+e1239-e1241,U+e1288"
@@ -371,10 +385,10 @@ $icon-font-families-personenverkehr: (
 		),
 		24: (
 			"action": (
-				"U+002B,U+003F,U+00A7,U+1F441,U+1F5A8,U+1F5B9,U+1F5BC,U+1F5D1,U+1F6C8,U+1F6CD,U+1F6E0,U+219F,U+21A1,U+21A6,U+21C6,U+21E7,U+21E9,U+21F5,U+2212,U+2295,U+229D,U+238C,U+25F9,U+2601,U+2606,U+2661,U+2699,U+270F,U+2713,U+2B73,U+e1062,U+e1066,U+e1069-e1070,U+e1077,U+e1079,U+e1081-e1084,U+e1154-e1156,U+e1164-e1171,U+e1187,U+e1211-e1214,U+e1220-e1258"
+				"U+002B,U+003F,U+00A7,U+1F441,U+1F5A8,U+1F5B9,U+1F5BC,U+1F5D1,U+1F6C8,U+1F6CD,U+1F6E0,U+219F,U+21A1,U+21A6,U+21C6,U+21E7,U+21E9,U+21F5,U+2212,U+2295,U+229D,U+238C,U+25F9,U+2601,U+2606,U+2661,U+2699,U+270F,U+2713,U+2B73,U+e1062,U+e1066,U+e1069-e1070,U+e1077,U+e1079,U+e1081-e1084,U+e1154-e1156,U+e1164-e1171,U+e1187,U+e1211-e1214,U+e1220-e1258,U+e1290-e1295"
 			),
 			"av": (
-				"U+23ED-23EE,U+23F8,U+25A1,U+25B7,U+293A-293B,U+e1085-e1088,U+e1091,U+e1234,U+e1259-e1262"
+				"U+23ED-23EE,U+23F8,U+25A1,U+25B7,U+293A-293B,U+e1085-e1088,U+e1091,U+e1234,U+e1259-e1262,U+e1296-e1297"
 			),
 			"brand": (
 				"U+e1152"
@@ -389,7 +403,7 @@ $icon-font-families-personenverkehr: (
 				"U+e1163,U+e1175-e1176,U+e1266-e1272"
 			),
 			"feature": (
-				"U+1F6E4,U+2600,U+271A,U+2744,U+e1150,U+e1153,U+e1160,U+e1177-e1180,U+e1188,U+e1215,U+e1217,U+e1273-e1278,U+e1289"
+				"U+1F6E4,U+2600,U+271A,U+2744,U+e1150,U+e1153,U+e1160,U+e1177-e1180,U+e1188,U+e1215,U+e1217,U+e1273-e1278,U+e1289,U+e1299"
 			),
 			"food": (
 				"U+1F37D,U+e1101,U+e1237,U+e1279"
@@ -401,7 +415,7 @@ $icon-font-families-personenverkehr: (
 				"U+2488-2489,U+291E,U+29BF,U+2B94,U+e1102-e1104,U+e1106,U+e1108,U+e1110,U+e1113,U+e1161,U+e1238"
 			),
 			"maps": (
-				"U+1F17F,U+1F5FA,U+1F78B,U+2302,U+e1115-e1116,U+e1157-e1158,U+e1182,U+e1280"
+				"U+1F17F,U+1F5FA,U+1F78B,U+2302,U+e1115-e1116,U+e1157-e1158,U+e1182,U+e1280,U+e1300-e1303"
 			),
 			"navigation": (
 				"U+003C,U+003E,U+1030E,U+1F5D8,U+1F862,U+1F865,U+2190-2193,U+22EE-22EF,U+2303-2304,U+2A2F,U+2BBE,U+e1119-e1122"
@@ -413,7 +427,7 @@ $icon-font-families-personenverkehr: (
 				"U+1F6CF,U+e1128-e1130,U+e1162,U+e1183,U+e1189,U+e1281-e1285"
 			),
 			"ticket": (
-				"U+1F907,U+2714,U+e1131-e1146,U+e1184-e1186,U+e1218,U+e1286-e1287"
+				"U+1F907,U+2714,U+e1131-e1146,U+e1184-e1186,U+e1218,U+e1286-e1287,U+e1298"
 			),
 			"transportation": (
 				"U+e1147-e1148,U+e1151,U+e1159,U+e1190-e1210,U+e1216,U+e1219,U+e1239-e1241,U+e1288"
@@ -421,10 +435,10 @@ $icon-font-families-personenverkehr: (
 		),
 		32: (
 			"action": (
-				"U+002B,U+003F,U+00A7,U+1F441,U+1F5A8,U+1F5B9,U+1F5BC,U+1F5D1,U+1F6C8,U+1F6CD,U+1F6E0,U+219F,U+21A1,U+21A6,U+21C6,U+21E7,U+21E9,U+21F5,U+2212,U+2295,U+229D,U+238C,U+25F9,U+2601,U+2606,U+2661,U+2699,U+270F,U+2713,U+2B73,U+e1062,U+e1066,U+e1069-e1070,U+e1077,U+e1079,U+e1081-e1084,U+e1154-e1156,U+e1164-e1171,U+e1187,U+e1211-e1214,U+e1220-e1258"
+				"U+002B,U+003F,U+00A7,U+1F441,U+1F5A8,U+1F5B9,U+1F5BC,U+1F5D1,U+1F6C8,U+1F6CD,U+1F6E0,U+219F,U+21A1,U+21A6,U+21C6,U+21E7,U+21E9,U+21F5,U+2212,U+2295,U+229D,U+238C,U+25F9,U+2601,U+2606,U+2661,U+2699,U+270F,U+2713,U+2B73,U+e1062,U+e1066,U+e1069-e1070,U+e1077,U+e1079,U+e1081-e1084,U+e1154-e1156,U+e1164-e1171,U+e1187,U+e1211-e1214,U+e1220-e1258,U+e1290-e1295"
 			),
 			"av": (
-				"U+23ED-23EE,U+23F8,U+25A1,U+25B7,U+293A-293B,U+e1085-e1088,U+e1091,U+e1234,U+e1259-e1262"
+				"U+23ED-23EE,U+23F8,U+25A1,U+25B7,U+293A-293B,U+e1085-e1088,U+e1091,U+e1234,U+e1259-e1262,U+e1296-e1297"
 			),
 			"brand": (
 				"U+e1152"
@@ -439,7 +453,7 @@ $icon-font-families-personenverkehr: (
 				"U+e1163,U+e1175-e1176,U+e1266-e1272"
 			),
 			"feature": (
-				"U+1F6E4,U+2600,U+271A,U+2744,U+e1150,U+e1153,U+e1160,U+e1177-e1180,U+e1188,U+e1215,U+e1217,U+e1273-e1278,U+e1289"
+				"U+1F6E4,U+2600,U+271A,U+2744,U+e1150,U+e1153,U+e1160,U+e1177-e1180,U+e1188,U+e1215,U+e1217,U+e1273-e1278,U+e1289,U+e1299"
 			),
 			"food": (
 				"U+1F37D,U+e1101,U+e1237,U+e1279"
@@ -451,7 +465,7 @@ $icon-font-families-personenverkehr: (
 				"U+2488-2489,U+291E,U+29BF,U+2B94,U+e1102-e1110,U+e1113,U+e1161,U+e1238"
 			),
 			"maps": (
-				"U+1F17F,U+1F5FA,U+1F78B,U+2302,U+e1115-e1116,U+e1157-e1158,U+e1182,U+e1280"
+				"U+1F17F,U+1F5FA,U+1F78B,U+2302,U+e1115-e1116,U+e1157-e1158,U+e1182,U+e1280,U+e1300-e1303"
 			),
 			"navigation": (
 				"U+003C,U+003E,U+1030E,U+1F5D8,U+1F862,U+1F865,U+2190-2193,U+22EE-22EF,U+2303-2304,U+2A2F,U+2BBE,U+e1119-e1122"
@@ -463,7 +477,7 @@ $icon-font-families-personenverkehr: (
 				"U+1F6CF,U+e1128-e1130,U+e1162,U+e1183,U+e1189,U+e1281-e1285"
 			),
 			"ticket": (
-				"U+1F907,U+2714,U+e1131-e1146,U+e1184-e1186,U+e1218,U+e1286-e1287"
+				"U+1F907,U+2714,U+e1131-e1146,U+e1184-e1186,U+e1218,U+e1286-e1287,U+e1298"
 			),
 			"transportation": (
 				"U+e1147-e1148,U+e1151,U+e1159,U+e1190-e1210,U+e1216,U+e1219,U+e1239-e1241,U+e1288"
@@ -471,7 +485,7 @@ $icon-font-families-personenverkehr: (
 		),
 		48: (
 			"av": (
-				"U+23F8,U+25B7"
+				"U+23F8,U+25B7,U+e1296-e1297,U+25A1,U+23EE,U+23ED"
 			),
 			"brand": (
 				"U+e1152"
@@ -479,7 +493,7 @@ $icon-font-families-personenverkehr: (
 		),
 		64: (
 			"av": (
-				"U+23F8,U+25B7"
+				"U+23F8,U+25B7,U+e1296-e1297,U+25A1,U+23EE,U+23ED"
 			),
 			"brand": (
 				"U+e1152"
@@ -503,7 +517,7 @@ $icon-font-families-personenverkehr: (
 				"U+003F,U+1F5A8,U+1F5BC,U+1F6C8,U+1F6CD,U+1F6E0,U+2295,U+229D,U+2601,U+2606,U+2661,U+270F,U+e1066,U+e1070,U+e1079,U+e1154-e1155,U+e1164-e1166,U+e1214,U+e1220-e1233"
 			),
 			"av": (
-				"U+23ED,U+23EE,U+25A1,U+25B7,U+e1091,U+e1234"
+				"U+23ED,U+23EE,U+25A1,U+25B7,U+e1091,U+e1234,U+e1296-e1297"
 			),
 			"communication": (
 				"U+2370,U+e1095,U+e1172-e1174,U+e1235-e1236"
@@ -541,7 +555,7 @@ $icon-font-families-personenverkehr: (
 				"U+003F,U+1F6C8,U+2295,U+229D,U+2601,U+2606,U+2661,U+e1220,U+e1222,U+e1224-e1225,U+e1231"
 			),
 			"av": (
-				"U+23ED-23EE,U+25A1,U+25B7,U+e1234"
+				"U+23ED-23EE,U+25A1,U+25B7,U+e1234,U+e1296-e1297"
 			),
 			"journey": (
 				"U+e1104,U+e1106,U+e1108,U+e1110,U+e1238"
@@ -564,7 +578,7 @@ $icon-font-families-personenverkehr: (
 				"U+003F,U+1F6C8,U+2295,U+229D,U+2601,U+2606,U+2661,U+e1220,U+e1222,U+e1224-e1225,U+e1231,U+e904"
 			),
 			"av": (
-				"U+23ED-23EE,U+25A1,U+25B7,U+e1234"
+				"U+23ED-23EE,U+25A1,U+25B7,U+e1234,U+e1296-e1297"
 			),
 			"maps": (
 				"U+e1157-e1158"
@@ -581,12 +595,12 @@ $icon-font-families-personenverkehr: (
 		),
 		48: (
 			"av": (
-				"U+25B7"
+				"U+25B7,U+e1296-e1297,U+25A1,U+23EE,U+23ED"
 			)
 		),
 		64: (
 			"av": (
-				"U+25B7"
+				"U+25B7,U+e1296-e1297,U+25A1,U+23EE,U+23ED"
 			)
 		)
 	)

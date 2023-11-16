@@ -15,6 +15,18 @@
 			"icon-glyph": "map"
 		},
 		{
+			"icon-glyph": "navigation-straight"
+		},
+		{
+			"icon-glyph": "navigation-to-left"
+		},
+		{
+			"icon-glyph": "navigation-to-right"
+		},
+		{
+			"icon-glyph": "navigation-u-turn"
+		},
+		{
 			"icon-glyph": "parking"
 		},
 		{
