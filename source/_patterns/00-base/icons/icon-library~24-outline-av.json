@@ -4,6 +4,9 @@
 	"default": true,
 	"icons": [
 		{
+			"icon-glyph": "fast-backward"
+		},
+		{
 			"icon-glyph": "fast-backward-10"
 		},
 		{
@@ -11,6 +14,9 @@
 		},
 		{
 			"icon-glyph": "fast-backward-empty"
+		},
+		{
+			"icon-glyph": "fast-forward"
 		},
 		{
 			"icon-glyph": "fast-forward-10"

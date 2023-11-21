@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/usr/bin/env sh
 # shellcheck disable=SC1091
 # shellcheck source=./_/husky.sh
-. "$(dirname "$0")/_/husky.sh"
+. "$(dirname -- "$0")/_/husky.sh"
 
-npx --yes commitlint --edit "$1"
+npx --no -- commitlint --edit "$1"

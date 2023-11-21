@@ -42,6 +42,9 @@
 			"icon-glyph": "qr-code"
 		},
 		{
+			"icon-glyph": "qr-code-scan"
+		},
+		{
 			"icon-glyph": "return-journey"
 		},
 		{

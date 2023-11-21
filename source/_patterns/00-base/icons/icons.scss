@@ -11,6 +11,7 @@
 [data-icon-before] {
 	&::before {
 		@extend %icon;
+		content: var(--icon-glyph-before);
 		margin-inline-end: var(--icon-margin-after, #{$icon-content-space});
 		font-size: var(
 			--icon-font-size-before,
@@ -22,6 +23,7 @@
 [data-icon-after] {
 	&::after {
 		@extend %icon;
+		content: var(--icon-glyph-after);
 		margin-inline-start: var(--icon-margin-before, #{$icon-content-space});
 		font-size: var(
 			--icon-font-size-after,

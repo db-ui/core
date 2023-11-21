@@ -3,7 +3,22 @@
 	"icon-style": "filled",
 	"icons": [
 		{
+			"icon-glyph": "fast-backward"
+		},
+		{
+			"icon-glyph": "fast-forward"
+		},
+		{
 			"icon-glyph": "play"
+		},
+		{
+			"icon-glyph": "skip-backward"
+		},
+		{
+			"icon-glyph": "skip-forward"
+		},
+		{
+			"icon-glyph": "stop"
 		}
 	]
 }
