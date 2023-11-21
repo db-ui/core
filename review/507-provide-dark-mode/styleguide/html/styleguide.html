@@ -15,17 +15,17 @@
 	<meta name="color-scheme" content="dark light">
 
 	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1693397927356" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1700559408654" media="all">
 
 	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1693397927356" media="all">
-	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1693397927356" media="all">
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1693397927356" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1700559408654" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1700559408654" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1700559408654" media="all">
 	<!-- dialog polyfill //-->
-	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1693397927356" media="all">
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1700559408654" media="all">
 
 	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1693397927356" media="all">
+	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1700559408654" media="all">
 	<!-- End Pattern Lab -->
 
 
@@ -38,7 +38,7 @@ documentation has useful tips on creating an effective description. //-->
 	<meta name="theme-color" content="#f01414">
 
 	<!-- iframe resizing script for pattern previews -->
-	<script src="../../js/iframeresizer.contentwindow.min.js"></script>
+	<script src="../../js/iframeResizer.contentWindow.js"></script>
 </head>
 
 <body class="styleguide">
@@ -2305,6 +2305,18 @@ var(--db-icon-pulse-color, #EC0016)
 			<div class="pl-js-pattern-example">
 			
 <ul class="DO-NOT-COPY-THIS-CLASS-example-icon-list">
+	<li data-icon="fast-backward" data-icon-variant="20-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-backward), 20, "filled")</code></li>
+			<li>HTML: <code>data-icon="fast-backward" data-icon-variant="20-filled"</code></li>
+		</ul>
+	</li>
+	<li data-icon="fast-forward" data-icon-variant="20-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-forward), 20, "filled")</code></li>
+			<li>HTML: <code>data-icon="fast-forward" data-icon-variant="20-filled"</code></li>
+		</ul>
+	</li>
 	<li data-icon="microphone" data-icon-variant="20-filled">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(microphone), 20, "filled")</code></li>
@@ -3380,6 +3392,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="document" data-icon-variant="20-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="document-check" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(document-check), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="document-check" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="done" data-icon-variant="20-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(done), 20, "outline")</code></li>
@@ -3402,6 +3420,18 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(edit), 20, "outline")</code></li>
 			<li>HTML: <code>data-icon="edit" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="face-delighted" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(face-delighted), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="face-delighted" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="face-disappointed" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(face-disappointed), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="face-disappointed" data-icon-variant="20-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="face-neutral" data-icon-variant="20-outline">
@@ -3542,6 +3572,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="minus" data-icon-variant="20-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="piggybank" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(piggybank), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="piggybank" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="pin" data-icon-variant="20-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(pin), 20, "outline")</code></li>
@@ -3554,6 +3590,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="print" data-icon-variant="20-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="push-button" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(push-button), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="push-button" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="remove" data-icon-variant="20-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(remove), 20, "outline")</code></li>
@@ -3564,6 +3606,12 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(resize), 20, "outline")</code></li>
 			<li>HTML: <code>data-icon="resize" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="resize-handle-corner" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(resize-handle-corner), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="resize-handle-corner" data-icon-variant="20-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="save" data-icon-variant="20-outline">
@@ -3781,6 +3829,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<div class="pl-js-pattern-example">
 			
 <ul class="DO-NOT-COPY-THIS-CLASS-example-icon-list">
+	<li data-icon="fast-backward" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-backward), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="fast-backward" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="fast-backward-10" data-icon-variant="20-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(fast-backward-10), 20, "outline")</code></li>
@@ -3797,6 +3851,12 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(fast-backward-empty), 20, "outline")</code></li>
 			<li>HTML: <code>data-icon="fast-backward-empty" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="fast-forward" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-forward), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="fast-forward" data-icon-variant="20-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="fast-forward-10" data-icon-variant="20-outline">
@@ -4292,6 +4352,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="day" data-icon-variant="20-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="dog" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(dog), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="dog" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="entry-aid" data-icon-variant="20-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(entry-aid), 20, "outline")</code></li>
@@ -4718,6 +4784,30 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(map), 20, "outline")</code></li>
 			<li>HTML: <code>data-icon="map" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="navigation-straight" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(navigation-straight), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="navigation-straight" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="navigation-to-left" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(navigation-to-left), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="navigation-to-left" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="navigation-to-right" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(navigation-to-right), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="navigation-to-right" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="navigation-u-turn" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(navigation-u-turn), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="navigation-u-turn" data-icon-variant="20-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="stop-sign" data-icon-variant="20-outline">
@@ -5232,6 +5322,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="qr-code" data-icon-variant="20-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="qr-code-scan" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(qr-code-scan), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="qr-code-scan" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="return-journey" data-icon-variant="20-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(return-journey), 20, "outline")</code></li>
@@ -5685,6 +5781,18 @@ var(--db-icon-pulse-color, #EC0016)
 			<div class="pl-js-pattern-example">
 			<p>Please keep in mind that it's optional to set the variant and size for the following ones, as this size (24) and style (filled) combination is defined as the default.<br>In case that you'll need another default in your project, you could overwrite the defaults by modifying the <code>$icon-size</code> and <code>$icon-style</code> SCSS variables.</p>
 <ul class="DO-NOT-COPY-THIS-CLASS-example-icon-list">
+	<li data-icon="fast-backward" data-icon-variant="24-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-backward))</code> or <code>@include icon(glyph(fast-backward), 24, "filled")</code></li>
+			<li>HTML: <code>data-icon="fast-backward"</code> or <code>data-icon="fast-backward" data-icon-variant="24-filled"</code></li>
+		</ul>
+	</li>
+	<li data-icon="fast-forward" data-icon-variant="24-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-forward))</code> or <code>@include icon(glyph(fast-forward), 24, "filled")</code></li>
+			<li>HTML: <code>data-icon="fast-forward"</code> or <code>data-icon="fast-forward" data-icon-variant="24-filled"</code></li>
+		</ul>
+	</li>
 	<li data-icon="microphone" data-icon-variant="24-filled">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(microphone))</code> or <code>@include icon(glyph(microphone), 24, "filled")</code></li>
@@ -6375,6 +6483,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="document"</code> or <code>data-icon="document" data-icon-variant="24-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="document-check" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(document-check))</code> or <code>@include icon(glyph(document-check), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="document-check"</code> or <code>data-icon="document-check" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="done" data-icon-variant="24-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(done))</code> or <code>@include icon(glyph(done), 24, "outline")</code></li>
@@ -6397,6 +6511,18 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(edit))</code> or <code>@include icon(glyph(edit), 24, "outline")</code></li>
 			<li>HTML: <code>data-icon="edit"</code> or <code>data-icon="edit" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="face-delighted" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(face-delighted))</code> or <code>@include icon(glyph(face-delighted), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="face-delighted"</code> or <code>data-icon="face-delighted" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="face-disappointed" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(face-disappointed))</code> or <code>@include icon(glyph(face-disappointed), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="face-disappointed"</code> or <code>data-icon="face-disappointed" data-icon-variant="24-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="face-neutral" data-icon-variant="24-outline">
@@ -6537,6 +6663,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="minus"</code> or <code>data-icon="minus" data-icon-variant="24-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="piggybank" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(piggybank))</code> or <code>@include icon(glyph(piggybank), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="piggybank"</code> or <code>data-icon="piggybank" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="pin" data-icon-variant="24-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(pin))</code> or <code>@include icon(glyph(pin), 24, "outline")</code></li>
@@ -6549,6 +6681,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="print"</code> or <code>data-icon="print" data-icon-variant="24-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="push-button" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(push-button))</code> or <code>@include icon(glyph(push-button), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="push-button"</code> or <code>data-icon="push-button" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="remove" data-icon-variant="24-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(remove))</code> or <code>@include icon(glyph(remove), 24, "outline")</code></li>
@@ -6559,6 +6697,12 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(resize))</code> or <code>@include icon(glyph(resize), 24, "outline")</code></li>
 			<li>HTML: <code>data-icon="resize"</code> or <code>data-icon="resize" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="resize-handle-corner" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(resize-handle-corner))</code> or <code>@include icon(glyph(resize-handle-corner), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="resize-handle-corner"</code> or <code>data-icon="resize-handle-corner" data-icon-variant="24-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="save" data-icon-variant="24-outline">
@@ -6776,6 +6920,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<div class="pl-js-pattern-example">
 			<p>Please keep in mind that it's optional to set the variant and size for the following ones, as this size (24) and style (outline) combination is defined as the default.<br>In case that you'll need another default in your project, you could overwrite the defaults by modifying the <code>$icon-size</code> and <code>$icon-style</code> SCSS variables.</p>
 <ul class="DO-NOT-COPY-THIS-CLASS-example-icon-list">
+	<li data-icon="fast-backward" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-backward))</code> or <code>@include icon(glyph(fast-backward), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="fast-backward"</code> or <code>data-icon="fast-backward" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="fast-backward-10" data-icon-variant="24-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(fast-backward-10))</code> or <code>@include icon(glyph(fast-backward-10), 24, "outline")</code></li>
@@ -6792,6 +6942,12 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(fast-backward-empty))</code> or <code>@include icon(glyph(fast-backward-empty), 24, "outline")</code></li>
 			<li>HTML: <code>data-icon="fast-backward-empty"</code> or <code>data-icon="fast-backward-empty" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="fast-forward" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-forward))</code> or <code>@include icon(glyph(fast-forward), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="fast-forward"</code> or <code>data-icon="fast-forward" data-icon-variant="24-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="fast-forward-10" data-icon-variant="24-outline">
@@ -7287,6 +7443,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="day"</code> or <code>data-icon="day" data-icon-variant="24-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="dog" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(dog))</code> or <code>@include icon(glyph(dog), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="dog"</code> or <code>data-icon="dog" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="entry-aid" data-icon-variant="24-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(entry-aid))</code> or <code>@include icon(glyph(entry-aid), 24, "outline")</code></li>
@@ -7713,6 +7875,30 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(map))</code> or <code>@include icon(glyph(map), 24, "outline")</code></li>
 			<li>HTML: <code>data-icon="map"</code> or <code>data-icon="map" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="navigation-straight" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(navigation-straight))</code> or <code>@include icon(glyph(navigation-straight), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="navigation-straight"</code> or <code>data-icon="navigation-straight" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="navigation-to-left" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(navigation-to-left))</code> or <code>@include icon(glyph(navigation-to-left), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="navigation-to-left"</code> or <code>data-icon="navigation-to-left" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="navigation-to-right" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(navigation-to-right))</code> or <code>@include icon(glyph(navigation-to-right), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="navigation-to-right"</code> or <code>data-icon="navigation-to-right" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="navigation-u-turn" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(navigation-u-turn))</code> or <code>@include icon(glyph(navigation-u-turn), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="navigation-u-turn"</code> or <code>data-icon="navigation-u-turn" data-icon-variant="24-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="stop-sign" data-icon-variant="24-outline">
@@ -8227,6 +8413,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="qr-code"</code> or <code>data-icon="qr-code" data-icon-variant="24-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="qr-code-scan" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(qr-code-scan))</code> or <code>@include icon(glyph(qr-code-scan), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="qr-code-scan"</code> or <code>data-icon="qr-code-scan" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="return-journey" data-icon-variant="24-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(return-journey))</code> or <code>@include icon(glyph(return-journey), 24, "outline")</code></li>
@@ -8680,6 +8872,18 @@ var(--db-icon-pulse-color, #EC0016)
 			<div class="pl-js-pattern-example">
 			
 <ul class="DO-NOT-COPY-THIS-CLASS-example-icon-list">
+	<li data-icon="fast-backward" data-icon-variant="32-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-backward), 32, "filled")</code></li>
+			<li>HTML: <code>data-icon="fast-backward" data-icon-variant="32-filled"</code></li>
+		</ul>
+	</li>
+	<li data-icon="fast-forward" data-icon-variant="32-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-forward), 32, "filled")</code></li>
+			<li>HTML: <code>data-icon="fast-forward" data-icon-variant="32-filled"</code></li>
+		</ul>
+	</li>
 	<li data-icon="microphone" data-icon-variant="32-filled">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(microphone), 32, "filled")</code></li>
@@ -9293,6 +9497,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="document" data-icon-variant="32-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="document-check" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(document-check), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="document-check" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="done" data-icon-variant="32-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(done), 32, "outline")</code></li>
@@ -9315,6 +9525,18 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(edit), 32, "outline")</code></li>
 			<li>HTML: <code>data-icon="edit" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="face-delighted" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(face-delighted), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="face-delighted" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="face-disappointed" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(face-disappointed), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="face-disappointed" data-icon-variant="32-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="face-neutral" data-icon-variant="32-outline">
@@ -9455,6 +9677,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="minus" data-icon-variant="32-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="piggybank" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(piggybank), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="piggybank" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="pin" data-icon-variant="32-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(pin), 32, "outline")</code></li>
@@ -9467,6 +9695,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="print" data-icon-variant="32-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="push-button" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(push-button), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="push-button" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="remove" data-icon-variant="32-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(remove), 32, "outline")</code></li>
@@ -9477,6 +9711,12 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(resize), 32, "outline")</code></li>
 			<li>HTML: <code>data-icon="resize" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="resize-handle-corner" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(resize-handle-corner), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="resize-handle-corner" data-icon-variant="32-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="save" data-icon-variant="32-outline">
@@ -9694,6 +9934,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<div class="pl-js-pattern-example">
 			
 <ul class="DO-NOT-COPY-THIS-CLASS-example-icon-list">
+	<li data-icon="fast-backward" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-backward), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="fast-backward" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="fast-backward-10" data-icon-variant="32-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(fast-backward-10), 32, "outline")</code></li>
@@ -9710,6 +9956,12 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(fast-backward-empty), 32, "outline")</code></li>
 			<li>HTML: <code>data-icon="fast-backward-empty" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="fast-forward" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-forward), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="fast-forward" data-icon-variant="32-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="fast-forward-10" data-icon-variant="32-outline">
@@ -10205,6 +10457,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="day" data-icon-variant="32-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="dog" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(dog), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="dog" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="entry-aid" data-icon-variant="32-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(entry-aid), 32, "outline")</code></li>
@@ -10631,6 +10889,30 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(map), 32, "outline")</code></li>
 			<li>HTML: <code>data-icon="map" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="navigation-straight" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(navigation-straight), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="navigation-straight" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="navigation-to-left" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(navigation-to-left), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="navigation-to-left" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="navigation-to-right" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(navigation-to-right), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="navigation-to-right" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="navigation-u-turn" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(navigation-u-turn), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="navigation-u-turn" data-icon-variant="32-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="parking" data-icon-variant="32-outline">
@@ -11145,6 +11427,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="qr-code" data-icon-variant="32-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="qr-code-scan" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(qr-code-scan), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="qr-code-scan" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="return-journey" data-icon-variant="32-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(return-journey), 32, "outline")</code></li>
@@ -11479,10 +11767,40 @@ var(--db-icon-pulse-color, #EC0016)
 			<div class="pl-js-pattern-example">
 			
 <ul class="DO-NOT-COPY-THIS-CLASS-example-icon-list">
+	<li data-icon="fast-backward" data-icon-variant="48-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-backward), 48, "filled")</code></li>
+			<li>HTML: <code>data-icon="fast-backward" data-icon-variant="48-filled"</code></li>
+		</ul>
+	</li>
+	<li data-icon="fast-forward" data-icon-variant="48-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-forward), 48, "filled")</code></li>
+			<li>HTML: <code>data-icon="fast-forward" data-icon-variant="48-filled"</code></li>
+		</ul>
+	</li>
 	<li data-icon="play" data-icon-variant="48-filled">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(play), 48, "filled")</code></li>
 			<li>HTML: <code>data-icon="play" data-icon-variant="48-filled"</code></li>
+		</ul>
+	</li>
+	<li data-icon="skip-backward" data-icon-variant="48-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(skip-backward), 48, "filled")</code></li>
+			<li>HTML: <code>data-icon="skip-backward" data-icon-variant="48-filled"</code></li>
+		</ul>
+	</li>
+	<li data-icon="skip-forward" data-icon-variant="48-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(skip-forward), 48, "filled")</code></li>
+			<li>HTML: <code>data-icon="skip-forward" data-icon-variant="48-filled"</code></li>
+		</ul>
+	</li>
+	<li data-icon="stop" data-icon-variant="48-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(stop), 48, "filled")</code></li>
+			<li>HTML: <code>data-icon="stop" data-icon-variant="48-filled"</code></li>
 		</ul>
 	</li>
 </ul>
@@ -11532,6 +11850,18 @@ var(--db-icon-pulse-color, #EC0016)
 			<div class="pl-js-pattern-example">
 			
 <ul class="DO-NOT-COPY-THIS-CLASS-example-icon-list">
+	<li data-icon="fast-backward" data-icon-variant="48-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-backward), 48, "outline")</code></li>
+			<li>HTML: <code>data-icon="fast-backward" data-icon-variant="48-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="fast-forward" data-icon-variant="48-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-forward), 48, "outline")</code></li>
+			<li>HTML: <code>data-icon="fast-forward" data-icon-variant="48-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="pause" data-icon-variant="48-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(pause), 48, "outline")</code></li>
@@ -11542,6 +11872,24 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(play), 48, "outline")</code></li>
 			<li>HTML: <code>data-icon="play" data-icon-variant="48-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="skip-backward" data-icon-variant="48-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(skip-backward), 48, "outline")</code></li>
+			<li>HTML: <code>data-icon="skip-backward" data-icon-variant="48-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="skip-forward" data-icon-variant="48-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(skip-forward), 48, "outline")</code></li>
+			<li>HTML: <code>data-icon="skip-forward" data-icon-variant="48-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="stop" data-icon-variant="48-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(stop), 48, "outline")</code></li>
+			<li>HTML: <code>data-icon="stop" data-icon-variant="48-outline"</code></li>
 		</ul>
 	</li>
 </ul>
@@ -11644,10 +11992,40 @@ var(--db-icon-pulse-color, #EC0016)
 			<div class="pl-js-pattern-example">
 			
 <ul class="DO-NOT-COPY-THIS-CLASS-example-icon-list">
+	<li data-icon="fast-backward" data-icon-variant="64-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-backward), 64, "filled")</code></li>
+			<li>HTML: <code>data-icon="fast-backward" data-icon-variant="64-filled"</code></li>
+		</ul>
+	</li>
+	<li data-icon="fast-forward" data-icon-variant="64-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-forward), 64, "filled")</code></li>
+			<li>HTML: <code>data-icon="fast-forward" data-icon-variant="64-filled"</code></li>
+		</ul>
+	</li>
 	<li data-icon="play" data-icon-variant="64-filled">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(play), 64, "filled")</code></li>
 			<li>HTML: <code>data-icon="play" data-icon-variant="64-filled"</code></li>
+		</ul>
+	</li>
+	<li data-icon="skip-backward" data-icon-variant="64-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(skip-backward), 64, "filled")</code></li>
+			<li>HTML: <code>data-icon="skip-backward" data-icon-variant="64-filled"</code></li>
+		</ul>
+	</li>
+	<li data-icon="skip-forward" data-icon-variant="64-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(skip-forward), 64, "filled")</code></li>
+			<li>HTML: <code>data-icon="skip-forward" data-icon-variant="64-filled"</code></li>
+		</ul>
+	</li>
+	<li data-icon="stop" data-icon-variant="64-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(stop), 64, "filled")</code></li>
+			<li>HTML: <code>data-icon="stop" data-icon-variant="64-filled"</code></li>
 		</ul>
 	</li>
 </ul>
@@ -11697,6 +12075,18 @@ var(--db-icon-pulse-color, #EC0016)
 			<div class="pl-js-pattern-example">
 			
 <ul class="DO-NOT-COPY-THIS-CLASS-example-icon-list">
+	<li data-icon="fast-backward" data-icon-variant="64-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-backward), 64, "outline")</code></li>
+			<li>HTML: <code>data-icon="fast-backward" data-icon-variant="64-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="fast-forward" data-icon-variant="64-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-forward), 64, "outline")</code></li>
+			<li>HTML: <code>data-icon="fast-forward" data-icon-variant="64-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="pause" data-icon-variant="64-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(pause), 64, "outline")</code></li>
@@ -11707,6 +12097,24 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(play), 64, "outline")</code></li>
 			<li>HTML: <code>data-icon="play" data-icon-variant="64-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="skip-backward" data-icon-variant="64-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(skip-backward), 64, "outline")</code></li>
+			<li>HTML: <code>data-icon="skip-backward" data-icon-variant="64-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="skip-forward" data-icon-variant="64-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(skip-forward), 64, "outline")</code></li>
+			<li>HTML: <code>data-icon="skip-forward" data-icon-variant="64-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="stop" data-icon-variant="64-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(stop), 64, "outline")</code></li>
+			<li>HTML: <code>data-icon="stop" data-icon-variant="64-outline"</code></li>
 		</ul>
 	</li>
 </ul>
@@ -12439,22 +12847,68 @@ var(--db-icon-pulse-color, #EC0016)
 			<ul>
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-regular">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
-							<use href="../../icons/illustrative/communication/db_ic_il_envelope_closed.svg#icon"></use>
+							<use href="../../icons/illustrative/communication/db_ic_il_envelope_check.svg#icon"></use>
 						</svg>
 					</li>
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-turquoise">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
-							<use href="../../icons/illustrative/communication/db_ic_il_envelope_closed.svg#icon"></use>
+							<use href="../../icons/illustrative/communication/db_ic_il_envelope_check.svg#icon"></use>
 						</svg>
 					</li>
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-red">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
-							<use href="../../icons/illustrative/communication/db_ic_il_envelope_closed.svg#icon"></use>
+							<use href="../../icons/illustrative/communication/db_ic_il_envelope_check.svg#icon"></use>
 						</svg>
 					</li>
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-cyan">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
-							<use href="../../icons/illustrative/communication/db_ic_il_envelope_closed.svg#icon"></use>
+							<use href="../../icons/illustrative/communication/db_ic_il_envelope_check.svg#icon"></use>
+						</svg>
+					</li>
+			</ul>
+		</li><li>
+			<ul>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-regular">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/communication/db_ic_il_envelope_closed_back.svg#icon"></use>
+						</svg>
+					</li>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-turquoise">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/communication/db_ic_il_envelope_closed_back.svg#icon"></use>
+						</svg>
+					</li>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-red">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/communication/db_ic_il_envelope_closed_back.svg#icon"></use>
+						</svg>
+					</li>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-cyan">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/communication/db_ic_il_envelope_closed_back.svg#icon"></use>
+						</svg>
+					</li>
+			</ul>
+		</li><li>
+			<ul>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-regular">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/communication/db_ic_il_envelope_closed_front.svg#icon"></use>
+						</svg>
+					</li>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-turquoise">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/communication/db_ic_il_envelope_closed_front.svg#icon"></use>
+						</svg>
+					</li>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-red">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/communication/db_ic_il_envelope_closed_front.svg#icon"></use>
+						</svg>
+					</li>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-cyan">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/communication/db_ic_il_envelope_closed_front.svg#icon"></use>
 						</svg>
 					</li>
 			</ul>
@@ -12524,6 +12978,29 @@ var(--db-icon-pulse-color, #EC0016)
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-cyan">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
 							<use href="../../icons/illustrative/communication/db_ic_il_hashtag.svg#icon"></use>
+						</svg>
+					</li>
+			</ul>
+		</li><li>
+			<ul>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-regular">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/communication/db_ic_il_telephone.svg#icon"></use>
+						</svg>
+					</li>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-turquoise">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/communication/db_ic_il_telephone.svg#icon"></use>
+						</svg>
+					</li>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-red">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/communication/db_ic_il_telephone.svg#icon"></use>
+						</svg>
+					</li>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-cyan">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/communication/db_ic_il_telephone.svg#icon"></use>
 						</svg>
 					</li>
 			</ul>
@@ -12840,6 +13317,29 @@ var(--db-icon-pulse-color, #EC0016)
 			<ul>
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-regular">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/devices/db_ic_il_computer.svg#icon"></use>
+						</svg>
+					</li>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-turquoise">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/devices/db_ic_il_computer.svg#icon"></use>
+						</svg>
+					</li>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-red">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/devices/db_ic_il_computer.svg#icon"></use>
+						</svg>
+					</li>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-cyan">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/devices/db_ic_il_computer.svg#icon"></use>
+						</svg>
+					</li>
+			</ul>
+		</li><li>
+			<ul>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-regular">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
 							<use href="../../icons/illustrative/devices/db_ic_il_laptop.svg#icon"></use>
 						</svg>
 					</li>
@@ -12856,6 +13356,29 @@ var(--db-icon-pulse-color, #EC0016)
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-cyan">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
 							<use href="../../icons/illustrative/devices/db_ic_il_laptop.svg#icon"></use>
+						</svg>
+					</li>
+			</ul>
+		</li><li>
+			<ul>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-regular">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/devices/db_ic_il_monitor.svg#icon"></use>
+						</svg>
+					</li>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-turquoise">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/devices/db_ic_il_monitor.svg#icon"></use>
+						</svg>
+					</li>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-red">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/devices/db_ic_il_monitor.svg#icon"></use>
+						</svg>
+					</li>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-cyan">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/devices/db_ic_il_monitor.svg#icon"></use>
 						</svg>
 					</li>
 			</ul>
@@ -13445,22 +13968,22 @@ var(--db-icon-pulse-color, #EC0016)
 			<ul>
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-regular">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
-							<use href="../../icons/illustrative/station/db_ic_il_db_trainstation_with_train.svg#icon"></use>
+							<use href="../../icons/illustrative/station/db_ic_il_db_train_station_with_train.svg#icon"></use>
 						</svg>
 					</li>
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-turquoise">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
-							<use href="../../icons/illustrative/station/db_ic_il_db_trainstation_with_train.svg#icon"></use>
+							<use href="../../icons/illustrative/station/db_ic_il_db_train_station_with_train.svg#icon"></use>
 						</svg>
 					</li>
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-red">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
-							<use href="../../icons/illustrative/station/db_ic_il_db_trainstation_with_train.svg#icon"></use>
+							<use href="../../icons/illustrative/station/db_ic_il_db_train_station_with_train.svg#icon"></use>
 						</svg>
 					</li>
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-cyan">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
-							<use href="../../icons/illustrative/station/db_ic_il_db_trainstation_with_train.svg#icon"></use>
+							<use href="../../icons/illustrative/station/db_ic_il_db_train_station_with_train.svg#icon"></use>
 						</svg>
 					</li>
 			</ul>
@@ -13468,22 +13991,22 @@ var(--db-icon-pulse-color, #EC0016)
 			<ul>
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-regular">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
-							<use href="../../icons/illustrative/station/db_ic_il_db_trainstation.svg#icon"></use>
+							<use href="../../icons/illustrative/station/db_ic_il_db_train_station.svg#icon"></use>
 						</svg>
 					</li>
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-turquoise">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
-							<use href="../../icons/illustrative/station/db_ic_il_db_trainstation.svg#icon"></use>
+							<use href="../../icons/illustrative/station/db_ic_il_db_train_station.svg#icon"></use>
 						</svg>
 					</li>
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-red">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
-							<use href="../../icons/illustrative/station/db_ic_il_db_trainstation.svg#icon"></use>
+							<use href="../../icons/illustrative/station/db_ic_il_db_train_station.svg#icon"></use>
 						</svg>
 					</li>
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-cyan">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
-							<use href="../../icons/illustrative/station/db_ic_il_db_trainstation.svg#icon"></use>
+							<use href="../../icons/illustrative/station/db_ic_il_db_train_station.svg#icon"></use>
 						</svg>
 					</li>
 			</ul>
@@ -15146,7 +15669,7 @@ var(--db-icon-pulse-color, #EC0016)
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-elements-button" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"components-language-switcher-spa","lineagePath":"../../patterns/components-language-switcher-language-switcher-spa/components-language-switcher-language-switcher-spa.rendered.html","lineageState":"inprogress"},{"lineagePattern":"components-overflow-menu-navigation-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation-opposite-position/components-overflow-menu-overflow-menu-navigation-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-navigation","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-opposite-position/components-overflow-menu-overflow-menu-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-button-brand-primary","lineagePath":"../../patterns/elements-buttons-01-button-brand-primary/elements-buttons-01-button-brand-primary.rendered.html"},{"lineagePattern":"elements-button-primary","lineagePath":"../../patterns/elements-buttons-03-button-primary/elements-buttons-03-button-primary.rendered.html"},{"lineagePattern":"elements-button-secondary-outline","lineagePath":"../../patterns/elements-buttons-04-button-secondary-outline/elements-buttons-04-button-secondary-outline.rendered.html"},{"lineagePattern":"elements-button-secondary-solid","lineagePath":"../../patterns/elements-buttons-05-button-secondary-solid/elements-buttons-05-button-secondary-solid.rendered.html"},{"lineagePattern":"elements-button-tertiary-plain","lineagePath":"../../patterns/elements-buttons-06-button-tertiary-plain/elements-buttons-06-button-tertiary-plain.rendered.html"},{"lineagePattern":"elements-button-sizes","lineagePath":"../../patterns/elements-buttons-09-button-sizes/elements-buttons-09-button-sizes.rendered.html"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-example-form","lineagePath":"../../patterns/components-form-example-form/components-form-example-form.rendered.html"},{"lineagePattern":"components-language-switcher","lineagePath":"../../patterns/components-language-switcher-language-switcher/components-language-switcher-language-switcher.rendered.html","lineageState":"inprogress"},{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"}],"lineageR":[{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"components-language-switcher-spa","lineagePath":"../../patterns/components-language-switcher-language-switcher-spa/components-language-switcher-language-switcher-spa.rendered.html","lineageState":"inprogress"},{"lineagePattern":"components-overflow-menu-navigation-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation-opposite-position/components-overflow-menu-overflow-menu-navigation-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-navigation","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-opposite-position/components-overflow-menu-overflow-menu-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-button-brand-primary","lineagePath":"../../patterns/elements-buttons-01-button-brand-primary/elements-buttons-01-button-brand-primary.rendered.html"},{"lineagePattern":"elements-button-primary","lineagePath":"../../patterns/elements-buttons-03-button-primary/elements-buttons-03-button-primary.rendered.html"},{"lineagePattern":"elements-button-secondary-outline","lineagePath":"../../patterns/elements-buttons-04-button-secondary-outline/elements-buttons-04-button-secondary-outline.rendered.html"},{"lineagePattern":"elements-button-secondary-solid","lineagePath":"../../patterns/elements-buttons-05-button-secondary-solid/elements-buttons-05-button-secondary-solid.rendered.html"},{"lineagePattern":"elements-button-tertiary-plain","lineagePath":"../../patterns/elements-buttons-06-button-tertiary-plain/elements-buttons-06-button-tertiary-plain.rendered.html"},{"lineagePattern":"elements-button-sizes","lineagePath":"../../patterns/elements-buttons-09-button-sizes/elements-buttons-09-button-sizes.rendered.html"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-example-form","lineagePath":"../../patterns/components-form-example-form/components-form-example-form.rendered.html"},{"lineagePattern":"components-language-switcher","lineagePath":"../../patterns/components-language-switcher-language-switcher/components-language-switcher-language-switcher.rendered.html","lineageState":"inprogress"},{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button","patternPartial":"elements-button","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"components-language-switcher-spa","lineagePath":"../../patterns/components-language-switcher-language-switcher-spa/components-language-switcher-language-switcher-spa.rendered.html","lineageState":"inprogress"},{"lineagePattern":"components-overflow-menu-navigation-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation-opposite-position/components-overflow-menu-overflow-menu-navigation-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-navigation","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-opposite-position/components-overflow-menu-overflow-menu-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-example-form","lineagePath":"../../patterns/components-form-example-form/components-form-example-form.rendered.html"},{"lineagePattern":"components-language-switcher","lineagePath":"../../patterns/components-language-switcher-language-switcher/components-language-switcher-language-switcher.rendered.html","lineageState":"inprogress"},{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"},{"lineagePattern":"elements-button-brand-primary","lineagePath":"../../patterns/elements-buttons-01-button-brand-primary/elements-buttons-01-button-brand-primary.rendered.html"},{"lineagePattern":"elements-button-primary","lineagePath":"../../patterns/elements-buttons-03-button-primary/elements-buttons-03-button-primary.rendered.html"},{"lineagePattern":"elements-button-secondary-outline","lineagePath":"../../patterns/elements-buttons-04-button-secondary-outline/elements-buttons-04-button-secondary-outline.rendered.html"},{"lineagePattern":"elements-button-secondary-solid","lineagePath":"../../patterns/elements-buttons-05-button-secondary-solid/elements-buttons-05-button-secondary-solid.rendered.html"},{"lineagePattern":"elements-button-tertiary-plain","lineagePath":"../../patterns/elements-buttons-06-button-tertiary-plain/elements-buttons-06-button-tertiary-plain.rendered.html"},{"lineagePattern":"elements-button-sizes","lineagePath":"../../patterns/elements-buttons-09-button-sizes/elements-buttons-09-button-sizes.rendered.html"}],"lineageR":[{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"components-language-switcher-spa","lineagePath":"../../patterns/components-language-switcher-language-switcher-spa/components-language-switcher-language-switcher-spa.rendered.html","lineageState":"inprogress"},{"lineagePattern":"components-overflow-menu-navigation-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation-opposite-position/components-overflow-menu-overflow-menu-navigation-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-navigation","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-opposite-position/components-overflow-menu-overflow-menu-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-example-form","lineagePath":"../../patterns/components-form-example-form/components-form-example-form.rendered.html"},{"lineagePattern":"components-language-switcher","lineagePath":"../../patterns/components-language-switcher-language-switcher/components-language-switcher-language-switcher.rendered.html","lineageState":"inprogress"},{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"},{"lineagePattern":"elements-button-brand-primary","lineagePath":"../../patterns/elements-buttons-01-button-brand-primary/elements-buttons-01-button-brand-primary.rendered.html"},{"lineagePattern":"elements-button-primary","lineagePath":"../../patterns/elements-buttons-03-button-primary/elements-buttons-03-button-primary.rendered.html"},{"lineagePattern":"elements-button-secondary-outline","lineagePath":"../../patterns/elements-buttons-04-button-secondary-outline/elements-buttons-04-button-secondary-outline.rendered.html"},{"lineagePattern":"elements-button-secondary-solid","lineagePath":"../../patterns/elements-buttons-05-button-secondary-solid/elements-buttons-05-button-secondary-solid.rendered.html"},{"lineagePattern":"elements-button-tertiary-plain","lineagePath":"../../patterns/elements-buttons-06-button-tertiary-plain/elements-buttons-06-button-tertiary-plain.rendered.html"},{"lineagePattern":"elements-button-sizes","lineagePath":"../../patterns/elements-buttons-09-button-sizes/elements-buttons-09-button-sizes.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button","patternPartial":"elements-button","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -17873,7 +18396,7 @@ var(--db-icon-pulse-color, #EC0016)
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-elements-headline" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"base-fonts-dark-background","lineagePath":"../../patterns/base-type-fonts-dark-background/base-type-fonts-dark-background.rendered.html"},{"lineagePattern":"base-fonts-light-font","lineagePath":"../../patterns/base-type-fonts-light-font/base-type-fonts-light-font.rendered.html"},{"lineagePattern":"elements-chips-disabled","lineagePath":"../../patterns/elements-chips-chips-disabled/elements-chips-chips-disabled.rendered.html"},{"lineagePattern":"elements-chips-linked","lineagePath":"../../patterns/elements-chips-chips-linked/elements-chips-chips-linked.rendered.html"},{"lineagePattern":"elements-chips-type-selection","lineagePath":"../../patterns/elements-chips-chips-type-selection/elements-chips-chips-type-selection.rendered.html"},{"lineagePattern":"elements-chips-with-icon","lineagePath":"../../patterns/elements-chips-chips-with-icon/elements-chips-chips-with-icon.rendered.html"},{"lineagePattern":"elements-tags-small","lineagePath":"../../patterns/elements-tags-tags-small/elements-tags-tags-small.rendered.html"},{"lineagePattern":"elements-tags-with-icon","lineagePath":"../../patterns/elements-tags-tags-with-icon/elements-tags-tags-with-icon.rendered.html"},{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"pages-intro","lineagePath":"../../patterns/pages-intro/pages-intro.rendered.html"},{"lineagePattern":"pages-sample-page","lineagePath":"../../patterns/pages-sample-page/pages-sample-page.rendered.html"},{"lineagePattern":"base-fonts","lineagePath":"../../patterns/base-type-fonts/base-type-fonts.rendered.html","lineageState":"complete"},{"lineagePattern":"elements-chips","lineagePath":"../../patterns/elements-chips-chips/elements-chips-chips.rendered.html"},{"lineagePattern":"elements-headline-pulse","lineagePath":"../../patterns/elements-headline-headline-pulse/elements-headline-headline-pulse.rendered.html"},{"lineagePattern":"elements-logo-with-following-headline","lineagePath":"../../patterns/elements-logo-logo-with-following-headline/elements-logo-logo-with-following-headline.rendered.html"},{"lineagePattern":"elements-tags","lineagePath":"../../patterns/elements-tags-tags/elements-tags-tags.rendered.html"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-pagination","lineagePath":"../../patterns/components-pagination-pagination/components-pagination-pagination.rendered.html","lineageState":"inreview"}],"lineageR":[{"lineagePattern":"base-fonts-dark-background","lineagePath":"../../patterns/base-type-fonts-dark-background/base-type-fonts-dark-background.rendered.html"},{"lineagePattern":"base-fonts-light-font","lineagePath":"../../patterns/base-type-fonts-light-font/base-type-fonts-light-font.rendered.html"},{"lineagePattern":"elements-chips-disabled","lineagePath":"../../patterns/elements-chips-chips-disabled/elements-chips-chips-disabled.rendered.html"},{"lineagePattern":"elements-chips-linked","lineagePath":"../../patterns/elements-chips-chips-linked/elements-chips-chips-linked.rendered.html"},{"lineagePattern":"elements-chips-type-selection","lineagePath":"../../patterns/elements-chips-chips-type-selection/elements-chips-chips-type-selection.rendered.html"},{"lineagePattern":"elements-chips-with-icon","lineagePath":"../../patterns/elements-chips-chips-with-icon/elements-chips-chips-with-icon.rendered.html"},{"lineagePattern":"elements-tags-small","lineagePath":"../../patterns/elements-tags-tags-small/elements-tags-tags-small.rendered.html"},{"lineagePattern":"elements-tags-with-icon","lineagePath":"../../patterns/elements-tags-tags-with-icon/elements-tags-tags-with-icon.rendered.html"},{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"pages-intro","lineagePath":"../../patterns/pages-intro/pages-intro.rendered.html"},{"lineagePattern":"pages-sample-page","lineagePath":"../../patterns/pages-sample-page/pages-sample-page.rendered.html"},{"lineagePattern":"base-fonts","lineagePath":"../../patterns/base-type-fonts/base-type-fonts.rendered.html","lineageState":"complete"},{"lineagePattern":"elements-chips","lineagePath":"../../patterns/elements-chips-chips/elements-chips-chips.rendered.html"},{"lineagePattern":"elements-headline-pulse","lineagePath":"../../patterns/elements-headline-headline-pulse/elements-headline-headline-pulse.rendered.html"},{"lineagePattern":"elements-logo-with-following-headline","lineagePath":"../../patterns/elements-logo-logo-with-following-headline/elements-logo-logo-with-following-headline.rendered.html"},{"lineagePattern":"elements-tags","lineagePath":"../../patterns/elements-tags-tags/elements-tags-tags.rendered.html"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-pagination","lineagePath":"../../patterns/components-pagination-pagination/components-pagination-pagination.rendered.html","lineageState":"inreview"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"headline"},"patternExtension":"hbs","patternName":"Headline","patternPartial":"elements-headline","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"base-fonts-dark-background","lineagePath":"../../patterns/base-type-fonts-dark-background/base-type-fonts-dark-background.rendered.html"},{"lineagePattern":"base-fonts-light-font","lineagePath":"../../patterns/base-type-fonts-light-font/base-type-fonts-light-font.rendered.html"},{"lineagePattern":"elements-chips-disabled","lineagePath":"../../patterns/elements-chips-chips-disabled/elements-chips-chips-disabled.rendered.html"},{"lineagePattern":"elements-chips-linked","lineagePath":"../../patterns/elements-chips-chips-linked/elements-chips-chips-linked.rendered.html"},{"lineagePattern":"elements-chips-type-selection","lineagePath":"../../patterns/elements-chips-chips-type-selection/elements-chips-chips-type-selection.rendered.html"},{"lineagePattern":"elements-chips-with-icon","lineagePath":"../../patterns/elements-chips-chips-with-icon/elements-chips-chips-with-icon.rendered.html"},{"lineagePattern":"elements-tags-small","lineagePath":"../../patterns/elements-tags-tags-small/elements-tags-tags-small.rendered.html"},{"lineagePattern":"elements-tags-with-icon","lineagePath":"../../patterns/elements-tags-tags-with-icon/elements-tags-tags-with-icon.rendered.html"},{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"pages-intro","lineagePath":"../../patterns/pages-intro/pages-intro.rendered.html"},{"lineagePattern":"pages-sample-page","lineagePath":"../../patterns/pages-sample-page/pages-sample-page.rendered.html"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-pagination","lineagePath":"../../patterns/components-pagination-pagination/components-pagination-pagination.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-headline-pulse","lineagePath":"../../patterns/elements-headline-headline-pulse/elements-headline-headline-pulse.rendered.html"},{"lineagePattern":"elements-chips","lineagePath":"../../patterns/elements-chips-chips/elements-chips-chips.rendered.html"},{"lineagePattern":"elements-logo-with-following-headline","lineagePath":"../../patterns/elements-logo-logo-with-following-headline/elements-logo-logo-with-following-headline.rendered.html"},{"lineagePattern":"elements-tags","lineagePath":"../../patterns/elements-tags-tags/elements-tags-tags.rendered.html"},{"lineagePattern":"base-fonts","lineagePath":"../../patterns/base-type-fonts/base-type-fonts.rendered.html","lineageState":"complete"}],"lineageR":[{"lineagePattern":"base-fonts-dark-background","lineagePath":"../../patterns/base-type-fonts-dark-background/base-type-fonts-dark-background.rendered.html"},{"lineagePattern":"base-fonts-light-font","lineagePath":"../../patterns/base-type-fonts-light-font/base-type-fonts-light-font.rendered.html"},{"lineagePattern":"elements-chips-disabled","lineagePath":"../../patterns/elements-chips-chips-disabled/elements-chips-chips-disabled.rendered.html"},{"lineagePattern":"elements-chips-linked","lineagePath":"../../patterns/elements-chips-chips-linked/elements-chips-chips-linked.rendered.html"},{"lineagePattern":"elements-chips-type-selection","lineagePath":"../../patterns/elements-chips-chips-type-selection/elements-chips-chips-type-selection.rendered.html"},{"lineagePattern":"elements-chips-with-icon","lineagePath":"../../patterns/elements-chips-chips-with-icon/elements-chips-chips-with-icon.rendered.html"},{"lineagePattern":"elements-tags-small","lineagePath":"../../patterns/elements-tags-tags-small/elements-tags-tags-small.rendered.html"},{"lineagePattern":"elements-tags-with-icon","lineagePath":"../../patterns/elements-tags-tags-with-icon/elements-tags-tags-with-icon.rendered.html"},{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"pages-intro","lineagePath":"../../patterns/pages-intro/pages-intro.rendered.html"},{"lineagePattern":"pages-sample-page","lineagePath":"../../patterns/pages-sample-page/pages-sample-page.rendered.html"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-pagination","lineagePath":"../../patterns/components-pagination-pagination/components-pagination-pagination.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-headline-pulse","lineagePath":"../../patterns/elements-headline-headline-pulse/elements-headline-headline-pulse.rendered.html"},{"lineagePattern":"elements-chips","lineagePath":"../../patterns/elements-chips-chips/elements-chips-chips.rendered.html"},{"lineagePattern":"elements-logo-with-following-headline","lineagePath":"../../patterns/elements-logo-logo-with-following-headline/elements-logo-logo-with-following-headline.rendered.html"},{"lineagePattern":"elements-tags","lineagePath":"../../patterns/elements-tags-tags/elements-tags-tags.rendered.html"},{"lineagePattern":"base-fonts","lineagePath":"../../patterns/base-type-fonts/base-type-fonts.rendered.html","lineageState":"complete"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"headline"},"patternExtension":"hbs","patternName":"Headline","patternPartial":"elements-headline","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -18571,7 +19094,7 @@ var(--db-icon-pulse-color, #EC0016)
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-elements-input" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"elements-input-variations","lineagePath":"../../patterns/elements-input-input-variations/elements-input-input-variations.rendered.html"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"}],"lineageR":[{"lineagePattern":"elements-input-variations","lineagePath":"../../patterns/elements-input-input-variations/elements-input-input-variations.rendered.html"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"input"},"patternExtension":"hbs","patternName":"Input","patternPartial":"elements-input","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":2}}
+			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"},{"lineagePattern":"elements-input-variations","lineagePath":"../../patterns/elements-input-input-variations/elements-input-input-variations.rendered.html"}],"lineageR":[{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"},{"lineagePattern":"elements-input-variations","lineagePath":"../../patterns/elements-input-input-variations/elements-input-input-variations.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"input"},"patternExtension":"hbs","patternName":"Input","patternPartial":"elements-input","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":2}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -20417,38 +20940,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radio"
-	id="id-73821ffc-7e97-4527-92cf-c157c706d2ef"
+	id="id-84b9c4cd-e647-4004-a10e-2ad184a60dbb"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-73821ffc-7e97-4527-92cf-c157c706d2ef">Radio 01</label>
+<label class="elm-label" for="id-84b9c4cd-e647-4004-a10e-2ad184a60dbb">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radio"
-	id="id-83b43015-4a74-45b1-bf59-039d72dc5107"
+	id="id-3a9c75eb-4940-439d-b7c4-b5057f30456b"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-83b43015-4a74-45b1-bf59-039d72dc5107">Radio 02</label>
+<label class="elm-label" for="id-3a9c75eb-4940-439d-b7c4-b5057f30456b">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radio"
-	id="id-4d732dbc-c1de-42a2-8f63-17b02f274ddf"
+	id="id-0cc29f29-1b1a-4af7-8272-9433b4574c93"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-4d732dbc-c1de-42a2-8f63-17b02f274ddf">Radio 03</label>
+<label class="elm-label" for="id-0cc29f29-1b1a-4af7-8272-9433b4574c93">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -20497,38 +21020,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radioChecked"
-	id="id-017dd1e2-263c-44d4-b81f-7799ecc64c94"
+	id="id-c2122cb9-307d-4189-a59e-75ac259ce639"
 	 checked
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-017dd1e2-263c-44d4-b81f-7799ecc64c94">Radio 01</label>
+<label class="elm-label" for="id-c2122cb9-307d-4189-a59e-75ac259ce639">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioChecked"
-	id="id-fa78bc8a-620a-4d17-bbc4-1441981c7f5d"
+	id="id-941e4539-276a-47ba-8ab1-7472acc3691a"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-fa78bc8a-620a-4d17-bbc4-1441981c7f5d">Radio 02</label>
+<label class="elm-label" for="id-941e4539-276a-47ba-8ab1-7472acc3691a">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioChecked"
-	id="id-69919467-063b-4d15-adb1-8316fd105977"
+	id="id-83998624-6c25-457a-a826-8e5c0c2f12a0"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-69919467-063b-4d15-adb1-8316fd105977">Radio 03</label>
+<label class="elm-label" for="id-83998624-6c25-457a-a826-8e5c0c2f12a0">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -20577,38 +21100,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radioDisabled"
-	id="id-2f1b48bc-c503-4595-91af-5780604c9633"
+	id="id-ea9ab869-fd52-486e-9c1a-2f77789a84b4"
 	
 	 disabled
 	
 	
 	
 	>
-<label class="elm-label" for="id-2f1b48bc-c503-4595-91af-5780604c9633">Radio 01</label>
+<label class="elm-label" for="id-ea9ab869-fd52-486e-9c1a-2f77789a84b4">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioDisabled"
-	id="id-9dcd5ded-8745-4ebc-98b2-88c2bbad5b63"
+	id="id-c8a37939-3829-4aff-9a3f-0635e4ee075b"
 	
 	 disabled
 	
 	
 	
 	>
-<label class="elm-label" for="id-9dcd5ded-8745-4ebc-98b2-88c2bbad5b63">Radio 02</label>
+<label class="elm-label" for="id-c8a37939-3829-4aff-9a3f-0635e4ee075b">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioDisabled"
-	id="id-219a2c0f-15a8-4906-aad8-d691fbdad531"
+	id="id-dedd848c-7fa4-4f0d-8c06-a56e7054c0a0"
 	
 	 disabled
 	
 	
 	
 	>
-<label class="elm-label" for="id-219a2c0f-15a8-4906-aad8-d691fbdad531">Radio 03</label>
+<label class="elm-label" for="id-dedd848c-7fa4-4f0d-8c06-a56e7054c0a0">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -20657,38 +21180,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radioDisabledChecked"
-	id="id-42816af1-dcda-4dd1-b0bf-5b344e89d61e"
+	id="id-a160ee78-b253-4ecf-935f-5cb69106c4d1"
 	 checked
 	 disabled
 	
 	
 	
 	>
-<label class="elm-label" for="id-42816af1-dcda-4dd1-b0bf-5b344e89d61e">Radio 01</label>
+<label class="elm-label" for="id-a160ee78-b253-4ecf-935f-5cb69106c4d1">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioDisabledChecked"
-	id="id-de5d1eae-912c-4048-8a93-a9e14d6b468b"
+	id="id-c106154a-91e2-4855-a092-8e376765b719"
 	
 	 disabled
 	
 	
 	
 	>
-<label class="elm-label" for="id-de5d1eae-912c-4048-8a93-a9e14d6b468b">Radio 02</label>
+<label class="elm-label" for="id-c106154a-91e2-4855-a092-8e376765b719">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioDisabledChecked"
-	id="id-af71b415-f9d1-4a6c-a645-503b93d5d514"
+	id="id-3a24af54-dd32-45c7-8a91-5c88f5565eaa"
 	
 	 disabled
 	
 	
 	
 	>
-<label class="elm-label" for="id-af71b415-f9d1-4a6c-a645-503b93d5d514">Radio 03</label>
+<label class="elm-label" for="id-3a24af54-dd32-45c7-8a91-5c88f5565eaa">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -20737,38 +21260,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radioInvalid"
-	id="id-67962285-05ae-415c-b315-e25d92274c16"
+	id="id-eeed6bb7-3014-4dac-be0c-911e6c3e945f"
 	
 	
 	
 	
 	 aria-invalid="true"
 	>
-<label class="elm-label" for="id-67962285-05ae-415c-b315-e25d92274c16">Radio 01</label>
+<label class="elm-label" for="id-eeed6bb7-3014-4dac-be0c-911e6c3e945f">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioInvalid"
-	id="id-ff6d6a47-1e0c-4577-b7f5-124f17cedbb8"
+	id="id-8264fd3f-4b59-4abd-988d-421d4cf75c15"
 	
 	
 	
 	
 	 aria-invalid="true"
 	>
-<label class="elm-label" for="id-ff6d6a47-1e0c-4577-b7f5-124f17cedbb8">Radio 02</label>
+<label class="elm-label" for="id-8264fd3f-4b59-4abd-988d-421d4cf75c15">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioInvalid"
-	id="id-f03baa3d-839b-4808-a95e-ccb603e52473"
+	id="id-e328b758-3cd1-431b-aeaf-75d7ec48d200"
 	
 	
 	
 	
 	 aria-invalid="true"
 	>
-<label class="elm-label" for="id-f03baa3d-839b-4808-a95e-ccb603e52473">Radio 03</label>
+<label class="elm-label" for="id-e328b758-3cd1-431b-aeaf-75d7ec48d200">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -20817,38 +21340,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radioRequired"
-	id="id-94476f68-8415-4841-90ea-88960c4e0359"
+	id="id-859c05d2-06c2-4934-ae39-64222b4f5adc"
 	
 	
 	
 	
 	
 	 required>
-<label class="elm-label" for="id-94476f68-8415-4841-90ea-88960c4e0359">Radio 01</label>
+<label class="elm-label" for="id-859c05d2-06c2-4934-ae39-64222b4f5adc">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioRequired"
-	id="id-3d108412-e2b5-4d5b-8068-48430f2a4a8e"
+	id="id-c0e636f9-9f9c-44ac-a07d-e6e6dacaa48e"
 	
 	
 	
 	
 	
 	 required>
-<label class="elm-label" for="id-3d108412-e2b5-4d5b-8068-48430f2a4a8e">Radio 02</label>
+<label class="elm-label" for="id-c0e636f9-9f9c-44ac-a07d-e6e6dacaa48e">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioRequired"
-	id="id-95da8e9f-5b79-43e5-8149-329ca23c3514"
+	id="id-67bd6b0c-e422-46e9-a9ee-cfd246b3304e"
 	
 	
 	
 	
 	
 	 required>
-<label class="elm-label" for="id-95da8e9f-5b79-43e5-8149-329ca23c3514">Radio 03</label>
+<label class="elm-label" for="id-67bd6b0c-e422-46e9-a9ee-cfd246b3304e">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -27919,7 +28442,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 		<h1 class="elm-headline ">DB UI Core</h1>
 
 		<img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTI0IiBoZWlnaHQ9IjIwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkxpY2Vuc2U6IEFwYWNoZSAyLjAiPjx0aXRsZT5MaWNlbnNlOiBBcGFjaGUgMi4wPC90aXRsZT48bGluZWFyR3JhZGllbnQgaWQ9InMiIHgyPSIwIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjYmJiIiBzdG9wLW9wYWNpdHk9Ii4xIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLW9wYWNpdHk9Ii4xIi8+PC9saW5lYXJHcmFkaWVudD48Y2xpcFBhdGggaWQ9InIiPjxyZWN0IHdpZHRoPSIxMjQiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjZmZmIi8+PC9jbGlwUGF0aD48ZyBjbGlwLXBhdGg9InVybCgjcikiPjxyZWN0IHdpZHRoPSI1MSIgaGVpZ2h0PSIyMCIgZmlsbD0iIzU1NSIvPjxyZWN0IHg9IjUxIiB3aWR0aD0iNzMiIGhlaWdodD0iMjAiIGZpbGw9IiMwMDdlYzYiLz48cmVjdCB3aWR0aD0iMTI0IiBoZWlnaHQ9IjIwIiBmaWxsPSJ1cmwoI3MpIi8+PC9nPjxnIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJWZXJkYW5hLEdlbmV2YSxEZWphVnUgU2FucyxzYW5zLXNlcmlmIiB0ZXh0LXJlbmRlcmluZz0iZ2VvbWV0cmljUHJlY2lzaW9uIiBmb250LXNpemU9IjExMCI+PHRleHQgYXJpYS1oaWRkZW49InRydWUiIHg9IjI2NSIgeT0iMTUwIiBmaWxsPSIjMDEwMTAxIiBmaWxsLW9wYWNpdHk9Ii4zIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgdGV4dExlbmd0aD0iNDEwIj5MaWNlbnNlPC90ZXh0Pjx0ZXh0IHg9IjI2NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iNDEwIj5MaWNlbnNlPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI4NjUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjYzMCI+QXBhY2hlIDIuMDwvdGV4dD48dGV4dCB4PSI4NjUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9IjYzMCI+QXBhY2hlIDIuMDwvdGV4dD48L2c+PC9zdmc+" width="124" height="20" alt="Apache 2.0 license badge">
-		<a href="https://npmjs.com/package/@db-ui/core" target="_blank" rel="noopener noreferrer"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iODgiIGhlaWdodD0iMjAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0ibnBtOiB2Mi4xMS42Ij48dGl0bGU+bnBtOiB2Mi4xMS42PC90aXRsZT48bGluZWFyR3JhZGllbnQgaWQ9InMiIHgyPSIwIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjYmJiIiBzdG9wLW9wYWNpdHk9Ii4xIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLW9wYWNpdHk9Ii4xIi8+PC9saW5lYXJHcmFkaWVudD48Y2xpcFBhdGggaWQ9InIiPjxyZWN0IHdpZHRoPSI4OCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiNmZmYiLz48L2NsaXBQYXRoPjxnIGNsaXAtcGF0aD0idXJsKCNyKSI+PHJlY3Qgd2lkdGg9IjM1IiBoZWlnaHQ9IjIwIiBmaWxsPSIjNTU1Ii8+PHJlY3QgeD0iMzUiIHdpZHRoPSI1MyIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiKDIzNywgMjgsIDM2KSIvPjxyZWN0IHdpZHRoPSI4OCIgaGVpZ2h0PSIyMCIgZmlsbD0idXJsKCNzKSIvPjwvZz48ZyBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iVmVyZGFuYSxHZW5ldmEsRGVqYVZ1IFNhbnMsc2Fucy1zZXJpZiIgdGV4dC1yZW5kZXJpbmc9Imdlb21ldHJpY1ByZWNpc2lvbiIgZm9udC1zaXplPSIxMTAiPjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSIxODUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjI1MCI+bnBtPC90ZXh0Pjx0ZXh0IHg9IjE4NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iMjUwIj5ucG08L3RleHQ+PHRleHQgYXJpYS1oaWRkZW49InRydWUiIHg9IjYwNSIgeT0iMTUwIiBmaWxsPSIjMDEwMTAxIiBmaWxsLW9wYWNpdHk9Ii4zIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgdGV4dExlbmd0aD0iNDMwIj52Mi4xMS42PC90ZXh0Pjx0ZXh0IHg9IjYwNSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iNDMwIj52Mi4xMS42PC90ZXh0PjwvZz48L3N2Zz4=" width="88" height="20" alt="npm version"></a>
+		<a href="https://npmjs.com/package/@db-ui/core" target="_blank" rel="noopener noreferrer"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iODgiIGhlaWdodD0iMjAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0ibnBtOiB2Mi4xNC4wIj48dGl0bGU+bnBtOiB2Mi4xNC4wPC90aXRsZT48bGluZWFyR3JhZGllbnQgaWQ9InMiIHgyPSIwIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjYmJiIiBzdG9wLW9wYWNpdHk9Ii4xIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLW9wYWNpdHk9Ii4xIi8+PC9saW5lYXJHcmFkaWVudD48Y2xpcFBhdGggaWQ9InIiPjxyZWN0IHdpZHRoPSI4OCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiNmZmYiLz48L2NsaXBQYXRoPjxnIGNsaXAtcGF0aD0idXJsKCNyKSI+PHJlY3Qgd2lkdGg9IjM1IiBoZWlnaHQ9IjIwIiBmaWxsPSIjNTU1Ii8+PHJlY3QgeD0iMzUiIHdpZHRoPSI1MyIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiKDIzNywgMjgsIDM2KSIvPjxyZWN0IHdpZHRoPSI4OCIgaGVpZ2h0PSIyMCIgZmlsbD0idXJsKCNzKSIvPjwvZz48ZyBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iVmVyZGFuYSxHZW5ldmEsRGVqYVZ1IFNhbnMsc2Fucy1zZXJpZiIgdGV4dC1yZW5kZXJpbmc9Imdlb21ldHJpY1ByZWNpc2lvbiIgZm9udC1zaXplPSIxMTAiPjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSIxODUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjI1MCI+bnBtPC90ZXh0Pjx0ZXh0IHg9IjE4NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iMjUwIj5ucG08L3RleHQ+PHRleHQgYXJpYS1oaWRkZW49InRydWUiIHg9IjYwNSIgeT0iMTUwIiBmaWxsPSIjMDEwMTAxIiBmaWxsLW9wYWNpdHk9Ii4zIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgdGV4dExlbmd0aD0iNDMwIj52Mi4xNC4wPC90ZXh0Pjx0ZXh0IHg9IjYwNSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iNDMwIj52Mi4xNC4wPC90ZXh0PjwvZz48L3N2Zz4=" width="88" height="20" alt="npm version"></a>
 		<img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzA4IiBoZWlnaHQ9IjIwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkJhc2VkIG9uOiBEQiBEZXNpZ24gU3lzdGVtIFVYIEd1aWRlcyArIFN0YW5kYXJkcyI+PHRpdGxlPkJhc2VkIG9uOiBEQiBEZXNpZ24gU3lzdGVtIFVYIEd1aWRlcyArIFN0YW5kYXJkczwvdGl0bGU+PGxpbmVhckdyYWRpZW50IGlkPSJzIiB4Mj0iMCIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2JiYiIgc3RvcC1vcGFjaXR5PSIuMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1vcGFjaXR5PSIuMSIvPjwvbGluZWFyR3JhZGllbnQ+PGNsaXBQYXRoIGlkPSJyIj48cmVjdCB3aWR0aD0iMzA4IiBoZWlnaHQ9IjIwIiByeD0iMyIgZmlsbD0iI2ZmZiIvPjwvY2xpcFBhdGg+PGcgY2xpcC1wYXRoPSJ1cmwoI3IpIj48cmVjdCB3aWR0aD0iNjEiIGhlaWdodD0iMjAiIGZpbGw9IiM1NTUiLz48cmVjdCB4PSI2MSIgd2lkdGg9IjI0NyIgaGVpZ2h0PSIyMCIgZmlsbD0iI2Q3ZGNlMSIvPjxyZWN0IHdpZHRoPSIzMDgiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMzE1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI1MTAiPkJhc2VkIG9uPC90ZXh0Pjx0ZXh0IHg9IjMxNSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iNTEwIj5CYXNlZCBvbjwvdGV4dD48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMTgzNSIgeT0iMTUwIiBmaWxsPSIjY2NjIiBmaWxsLW9wYWNpdHk9Ii4zIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgdGV4dExlbmd0aD0iMjM3MCI+REIgRGVzaWduIFN5c3RlbSBVWCBHdWlkZXMgKyBTdGFuZGFyZHM8L3RleHQ+PHRleHQgeD0iMTgzNSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iIzMzMyIgdGV4dExlbmd0aD0iMjM3MCI+REIgRGVzaWduIFN5c3RlbSBVWCBHdWlkZXMgKyBTdGFuZGFyZHM8L3RleHQ+PC9nPjwvc3ZnPg==" width="308" height="20" alt="Based on DB UX Design System guidelines">
 
 		<p lang="de">Personenverkehr und DB Systel führen ihre Design Systeme für Web in der Version 2.0 der Standard Web Components zusammen. Unser Ziel ist eine einheitliche Basis UX im Sinne der Modernen Ikone für Kunden und Mitarbeiteranwendungen. Um unser Design End 2 End von Konzeption über Design bis zur Implementierung konsistent zu halten, wird das DB UX Design System auch in Code von DB Systel und Reisendeninformation umgesetzt. Stay Tuned!</p>
@@ -28399,10 +28922,10 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1693397927356">
+<script id="pl-js-polyfill-insert-1700559408654">
   (function() {
     if (self != top) {
-      var cb = '1693397927356';
+      var cb = '1700559408654';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -28415,7 +28938,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1693397927356" nomodule>
+<script id="pl-js-insert-1700559408654" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 

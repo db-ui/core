@@ -15,17 +15,17 @@
 	<meta name="color-scheme" content="dark light">
 
 	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1693397927356" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1700559408654" media="all">
 
 	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1693397927356" media="all">
-	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1693397927356" media="all">
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1693397927356" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1700559408654" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1700559408654" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1700559408654" media="all">
 	<!-- dialog polyfill //-->
-	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1693397927356" media="all">
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1700559408654" media="all">
 
 	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1693397927356" media="all">
+	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1700559408654" media="all">
 	<!-- End Pattern Lab -->
 
 
@@ -38,7 +38,7 @@ documentation has useful tips on creating an effective description. //-->
 	<meta name="theme-color" content="#f01414">
 
 	<!-- iframe resizing script for pattern previews -->
-	<script src="../../js/iframeresizer.contentwindow.min.js"></script>
+	<script src="../../js/iframeResizer.contentWindow.js"></script>
 </head>
 
 <body class="styleguide">
@@ -2294,6 +2294,18 @@ var(--db-icon-pulse-color, #EC0016)
 			<div class="pl-js-pattern-example">
 			
 <ul class="DO-NOT-COPY-THIS-CLASS-example-icon-list">
+	<li data-icon="fast-backward" data-icon-variant="20-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-backward), 20, "filled")</code></li>
+			<li>HTML: <code>data-icon="fast-backward" data-icon-variant="20-filled"</code></li>
+		</ul>
+	</li>
+	<li data-icon="fast-forward" data-icon-variant="20-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-forward), 20, "filled")</code></li>
+			<li>HTML: <code>data-icon="fast-forward" data-icon-variant="20-filled"</code></li>
+		</ul>
+	</li>
 	<li data-icon="microphone" data-icon-variant="20-filled">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(microphone), 20, "filled")</code></li>
@@ -3369,6 +3381,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="document" data-icon-variant="20-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="document-check" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(document-check), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="document-check" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="done" data-icon-variant="20-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(done), 20, "outline")</code></li>
@@ -3391,6 +3409,18 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(edit), 20, "outline")</code></li>
 			<li>HTML: <code>data-icon="edit" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="face-delighted" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(face-delighted), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="face-delighted" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="face-disappointed" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(face-disappointed), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="face-disappointed" data-icon-variant="20-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="face-neutral" data-icon-variant="20-outline">
@@ -3531,6 +3561,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="minus" data-icon-variant="20-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="piggybank" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(piggybank), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="piggybank" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="pin" data-icon-variant="20-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(pin), 20, "outline")</code></li>
@@ -3543,6 +3579,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="print" data-icon-variant="20-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="push-button" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(push-button), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="push-button" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="remove" data-icon-variant="20-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(remove), 20, "outline")</code></li>
@@ -3553,6 +3595,12 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(resize), 20, "outline")</code></li>
 			<li>HTML: <code>data-icon="resize" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="resize-handle-corner" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(resize-handle-corner), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="resize-handle-corner" data-icon-variant="20-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="save" data-icon-variant="20-outline">
@@ -3770,6 +3818,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<div class="pl-js-pattern-example">
 			
 <ul class="DO-NOT-COPY-THIS-CLASS-example-icon-list">
+	<li data-icon="fast-backward" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-backward), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="fast-backward" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="fast-backward-10" data-icon-variant="20-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(fast-backward-10), 20, "outline")</code></li>
@@ -3786,6 +3840,12 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(fast-backward-empty), 20, "outline")</code></li>
 			<li>HTML: <code>data-icon="fast-backward-empty" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="fast-forward" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-forward), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="fast-forward" data-icon-variant="20-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="fast-forward-10" data-icon-variant="20-outline">
@@ -4281,6 +4341,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="day" data-icon-variant="20-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="dog" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(dog), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="dog" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="entry-aid" data-icon-variant="20-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(entry-aid), 20, "outline")</code></li>
@@ -4707,6 +4773,30 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(map), 20, "outline")</code></li>
 			<li>HTML: <code>data-icon="map" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="navigation-straight" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(navigation-straight), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="navigation-straight" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="navigation-to-left" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(navigation-to-left), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="navigation-to-left" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="navigation-to-right" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(navigation-to-right), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="navigation-to-right" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="navigation-u-turn" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(navigation-u-turn), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="navigation-u-turn" data-icon-variant="20-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="stop-sign" data-icon-variant="20-outline">
@@ -5221,6 +5311,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="qr-code" data-icon-variant="20-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="qr-code-scan" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(qr-code-scan), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="qr-code-scan" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="return-journey" data-icon-variant="20-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(return-journey), 20, "outline")</code></li>
@@ -5674,6 +5770,18 @@ var(--db-icon-pulse-color, #EC0016)
 			<div class="pl-js-pattern-example">
 			<p>Please keep in mind that it's optional to set the variant and size for the following ones, as this size (24) and style (filled) combination is defined as the default.<br>In case that you'll need another default in your project, you could overwrite the defaults by modifying the <code>$icon-size</code> and <code>$icon-style</code> SCSS variables.</p>
 <ul class="DO-NOT-COPY-THIS-CLASS-example-icon-list">
+	<li data-icon="fast-backward" data-icon-variant="24-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-backward))</code> or <code>@include icon(glyph(fast-backward), 24, "filled")</code></li>
+			<li>HTML: <code>data-icon="fast-backward"</code> or <code>data-icon="fast-backward" data-icon-variant="24-filled"</code></li>
+		</ul>
+	</li>
+	<li data-icon="fast-forward" data-icon-variant="24-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-forward))</code> or <code>@include icon(glyph(fast-forward), 24, "filled")</code></li>
+			<li>HTML: <code>data-icon="fast-forward"</code> or <code>data-icon="fast-forward" data-icon-variant="24-filled"</code></li>
+		</ul>
+	</li>
 	<li data-icon="microphone" data-icon-variant="24-filled">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(microphone))</code> or <code>@include icon(glyph(microphone), 24, "filled")</code></li>
@@ -6364,6 +6472,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="document"</code> or <code>data-icon="document" data-icon-variant="24-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="document-check" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(document-check))</code> or <code>@include icon(glyph(document-check), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="document-check"</code> or <code>data-icon="document-check" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="done" data-icon-variant="24-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(done))</code> or <code>@include icon(glyph(done), 24, "outline")</code></li>
@@ -6386,6 +6500,18 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(edit))</code> or <code>@include icon(glyph(edit), 24, "outline")</code></li>
 			<li>HTML: <code>data-icon="edit"</code> or <code>data-icon="edit" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="face-delighted" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(face-delighted))</code> or <code>@include icon(glyph(face-delighted), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="face-delighted"</code> or <code>data-icon="face-delighted" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="face-disappointed" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(face-disappointed))</code> or <code>@include icon(glyph(face-disappointed), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="face-disappointed"</code> or <code>data-icon="face-disappointed" data-icon-variant="24-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="face-neutral" data-icon-variant="24-outline">
@@ -6526,6 +6652,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="minus"</code> or <code>data-icon="minus" data-icon-variant="24-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="piggybank" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(piggybank))</code> or <code>@include icon(glyph(piggybank), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="piggybank"</code> or <code>data-icon="piggybank" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="pin" data-icon-variant="24-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(pin))</code> or <code>@include icon(glyph(pin), 24, "outline")</code></li>
@@ -6538,6 +6670,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="print"</code> or <code>data-icon="print" data-icon-variant="24-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="push-button" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(push-button))</code> or <code>@include icon(glyph(push-button), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="push-button"</code> or <code>data-icon="push-button" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="remove" data-icon-variant="24-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(remove))</code> or <code>@include icon(glyph(remove), 24, "outline")</code></li>
@@ -6548,6 +6686,12 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(resize))</code> or <code>@include icon(glyph(resize), 24, "outline")</code></li>
 			<li>HTML: <code>data-icon="resize"</code> or <code>data-icon="resize" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="resize-handle-corner" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(resize-handle-corner))</code> or <code>@include icon(glyph(resize-handle-corner), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="resize-handle-corner"</code> or <code>data-icon="resize-handle-corner" data-icon-variant="24-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="save" data-icon-variant="24-outline">
@@ -6765,6 +6909,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<div class="pl-js-pattern-example">
 			<p>Please keep in mind that it's optional to set the variant and size for the following ones, as this size (24) and style (outline) combination is defined as the default.<br>In case that you'll need another default in your project, you could overwrite the defaults by modifying the <code>$icon-size</code> and <code>$icon-style</code> SCSS variables.</p>
 <ul class="DO-NOT-COPY-THIS-CLASS-example-icon-list">
+	<li data-icon="fast-backward" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-backward))</code> or <code>@include icon(glyph(fast-backward), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="fast-backward"</code> or <code>data-icon="fast-backward" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="fast-backward-10" data-icon-variant="24-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(fast-backward-10))</code> or <code>@include icon(glyph(fast-backward-10), 24, "outline")</code></li>
@@ -6781,6 +6931,12 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(fast-backward-empty))</code> or <code>@include icon(glyph(fast-backward-empty), 24, "outline")</code></li>
 			<li>HTML: <code>data-icon="fast-backward-empty"</code> or <code>data-icon="fast-backward-empty" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="fast-forward" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-forward))</code> or <code>@include icon(glyph(fast-forward), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="fast-forward"</code> or <code>data-icon="fast-forward" data-icon-variant="24-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="fast-forward-10" data-icon-variant="24-outline">
@@ -7276,6 +7432,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="day"</code> or <code>data-icon="day" data-icon-variant="24-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="dog" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(dog))</code> or <code>@include icon(glyph(dog), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="dog"</code> or <code>data-icon="dog" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="entry-aid" data-icon-variant="24-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(entry-aid))</code> or <code>@include icon(glyph(entry-aid), 24, "outline")</code></li>
@@ -7702,6 +7864,30 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(map))</code> or <code>@include icon(glyph(map), 24, "outline")</code></li>
 			<li>HTML: <code>data-icon="map"</code> or <code>data-icon="map" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="navigation-straight" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(navigation-straight))</code> or <code>@include icon(glyph(navigation-straight), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="navigation-straight"</code> or <code>data-icon="navigation-straight" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="navigation-to-left" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(navigation-to-left))</code> or <code>@include icon(glyph(navigation-to-left), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="navigation-to-left"</code> or <code>data-icon="navigation-to-left" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="navigation-to-right" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(navigation-to-right))</code> or <code>@include icon(glyph(navigation-to-right), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="navigation-to-right"</code> or <code>data-icon="navigation-to-right" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="navigation-u-turn" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(navigation-u-turn))</code> or <code>@include icon(glyph(navigation-u-turn), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="navigation-u-turn"</code> or <code>data-icon="navigation-u-turn" data-icon-variant="24-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="stop-sign" data-icon-variant="24-outline">
@@ -8216,6 +8402,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="qr-code"</code> or <code>data-icon="qr-code" data-icon-variant="24-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="qr-code-scan" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(qr-code-scan))</code> or <code>@include icon(glyph(qr-code-scan), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="qr-code-scan"</code> or <code>data-icon="qr-code-scan" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="return-journey" data-icon-variant="24-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(return-journey))</code> or <code>@include icon(glyph(return-journey), 24, "outline")</code></li>
@@ -8669,6 +8861,18 @@ var(--db-icon-pulse-color, #EC0016)
 			<div class="pl-js-pattern-example">
 			
 <ul class="DO-NOT-COPY-THIS-CLASS-example-icon-list">
+	<li data-icon="fast-backward" data-icon-variant="32-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-backward), 32, "filled")</code></li>
+			<li>HTML: <code>data-icon="fast-backward" data-icon-variant="32-filled"</code></li>
+		</ul>
+	</li>
+	<li data-icon="fast-forward" data-icon-variant="32-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-forward), 32, "filled")</code></li>
+			<li>HTML: <code>data-icon="fast-forward" data-icon-variant="32-filled"</code></li>
+		</ul>
+	</li>
 	<li data-icon="microphone" data-icon-variant="32-filled">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(microphone), 32, "filled")</code></li>
@@ -9282,6 +9486,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="document" data-icon-variant="32-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="document-check" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(document-check), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="document-check" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="done" data-icon-variant="32-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(done), 32, "outline")</code></li>
@@ -9304,6 +9514,18 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(edit), 32, "outline")</code></li>
 			<li>HTML: <code>data-icon="edit" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="face-delighted" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(face-delighted), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="face-delighted" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="face-disappointed" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(face-disappointed), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="face-disappointed" data-icon-variant="32-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="face-neutral" data-icon-variant="32-outline">
@@ -9444,6 +9666,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="minus" data-icon-variant="32-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="piggybank" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(piggybank), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="piggybank" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="pin" data-icon-variant="32-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(pin), 32, "outline")</code></li>
@@ -9456,6 +9684,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="print" data-icon-variant="32-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="push-button" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(push-button), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="push-button" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="remove" data-icon-variant="32-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(remove), 32, "outline")</code></li>
@@ -9466,6 +9700,12 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(resize), 32, "outline")</code></li>
 			<li>HTML: <code>data-icon="resize" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="resize-handle-corner" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(resize-handle-corner), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="resize-handle-corner" data-icon-variant="32-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="save" data-icon-variant="32-outline">
@@ -9683,6 +9923,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<div class="pl-js-pattern-example">
 			
 <ul class="DO-NOT-COPY-THIS-CLASS-example-icon-list">
+	<li data-icon="fast-backward" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-backward), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="fast-backward" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="fast-backward-10" data-icon-variant="32-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(fast-backward-10), 32, "outline")</code></li>
@@ -9699,6 +9945,12 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(fast-backward-empty), 32, "outline")</code></li>
 			<li>HTML: <code>data-icon="fast-backward-empty" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="fast-forward" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-forward), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="fast-forward" data-icon-variant="32-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="fast-forward-10" data-icon-variant="32-outline">
@@ -10194,6 +10446,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="day" data-icon-variant="32-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="dog" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(dog), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="dog" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="entry-aid" data-icon-variant="32-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(entry-aid), 32, "outline")</code></li>
@@ -10620,6 +10878,30 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(map), 32, "outline")</code></li>
 			<li>HTML: <code>data-icon="map" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="navigation-straight" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(navigation-straight), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="navigation-straight" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="navigation-to-left" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(navigation-to-left), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="navigation-to-left" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="navigation-to-right" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(navigation-to-right), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="navigation-to-right" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="navigation-u-turn" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(navigation-u-turn), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="navigation-u-turn" data-icon-variant="32-outline"</code></li>
 		</ul>
 	</li>
 	<li data-icon="parking" data-icon-variant="32-outline">
@@ -11134,6 +11416,12 @@ var(--db-icon-pulse-color, #EC0016)
 			<li>HTML: <code>data-icon="qr-code" data-icon-variant="32-outline"</code></li>
 		</ul>
 	</li>
+	<li data-icon="qr-code-scan" data-icon-variant="32-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(qr-code-scan), 32, "outline")</code></li>
+			<li>HTML: <code>data-icon="qr-code-scan" data-icon-variant="32-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="return-journey" data-icon-variant="32-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(return-journey), 32, "outline")</code></li>
@@ -11468,10 +11756,40 @@ var(--db-icon-pulse-color, #EC0016)
 			<div class="pl-js-pattern-example">
 			
 <ul class="DO-NOT-COPY-THIS-CLASS-example-icon-list">
+	<li data-icon="fast-backward" data-icon-variant="48-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-backward), 48, "filled")</code></li>
+			<li>HTML: <code>data-icon="fast-backward" data-icon-variant="48-filled"</code></li>
+		</ul>
+	</li>
+	<li data-icon="fast-forward" data-icon-variant="48-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-forward), 48, "filled")</code></li>
+			<li>HTML: <code>data-icon="fast-forward" data-icon-variant="48-filled"</code></li>
+		</ul>
+	</li>
 	<li data-icon="play" data-icon-variant="48-filled">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(play), 48, "filled")</code></li>
 			<li>HTML: <code>data-icon="play" data-icon-variant="48-filled"</code></li>
+		</ul>
+	</li>
+	<li data-icon="skip-backward" data-icon-variant="48-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(skip-backward), 48, "filled")</code></li>
+			<li>HTML: <code>data-icon="skip-backward" data-icon-variant="48-filled"</code></li>
+		</ul>
+	</li>
+	<li data-icon="skip-forward" data-icon-variant="48-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(skip-forward), 48, "filled")</code></li>
+			<li>HTML: <code>data-icon="skip-forward" data-icon-variant="48-filled"</code></li>
+		</ul>
+	</li>
+	<li data-icon="stop" data-icon-variant="48-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(stop), 48, "filled")</code></li>
+			<li>HTML: <code>data-icon="stop" data-icon-variant="48-filled"</code></li>
 		</ul>
 	</li>
 </ul>
@@ -11521,6 +11839,18 @@ var(--db-icon-pulse-color, #EC0016)
 			<div class="pl-js-pattern-example">
 			
 <ul class="DO-NOT-COPY-THIS-CLASS-example-icon-list">
+	<li data-icon="fast-backward" data-icon-variant="48-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-backward), 48, "outline")</code></li>
+			<li>HTML: <code>data-icon="fast-backward" data-icon-variant="48-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="fast-forward" data-icon-variant="48-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-forward), 48, "outline")</code></li>
+			<li>HTML: <code>data-icon="fast-forward" data-icon-variant="48-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="pause" data-icon-variant="48-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(pause), 48, "outline")</code></li>
@@ -11531,6 +11861,24 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(play), 48, "outline")</code></li>
 			<li>HTML: <code>data-icon="play" data-icon-variant="48-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="skip-backward" data-icon-variant="48-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(skip-backward), 48, "outline")</code></li>
+			<li>HTML: <code>data-icon="skip-backward" data-icon-variant="48-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="skip-forward" data-icon-variant="48-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(skip-forward), 48, "outline")</code></li>
+			<li>HTML: <code>data-icon="skip-forward" data-icon-variant="48-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="stop" data-icon-variant="48-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(stop), 48, "outline")</code></li>
+			<li>HTML: <code>data-icon="stop" data-icon-variant="48-outline"</code></li>
 		</ul>
 	</li>
 </ul>
@@ -11633,10 +11981,40 @@ var(--db-icon-pulse-color, #EC0016)
 			<div class="pl-js-pattern-example">
 			
 <ul class="DO-NOT-COPY-THIS-CLASS-example-icon-list">
+	<li data-icon="fast-backward" data-icon-variant="64-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-backward), 64, "filled")</code></li>
+			<li>HTML: <code>data-icon="fast-backward" data-icon-variant="64-filled"</code></li>
+		</ul>
+	</li>
+	<li data-icon="fast-forward" data-icon-variant="64-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-forward), 64, "filled")</code></li>
+			<li>HTML: <code>data-icon="fast-forward" data-icon-variant="64-filled"</code></li>
+		</ul>
+	</li>
 	<li data-icon="play" data-icon-variant="64-filled">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(play), 64, "filled")</code></li>
 			<li>HTML: <code>data-icon="play" data-icon-variant="64-filled"</code></li>
+		</ul>
+	</li>
+	<li data-icon="skip-backward" data-icon-variant="64-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(skip-backward), 64, "filled")</code></li>
+			<li>HTML: <code>data-icon="skip-backward" data-icon-variant="64-filled"</code></li>
+		</ul>
+	</li>
+	<li data-icon="skip-forward" data-icon-variant="64-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(skip-forward), 64, "filled")</code></li>
+			<li>HTML: <code>data-icon="skip-forward" data-icon-variant="64-filled"</code></li>
+		</ul>
+	</li>
+	<li data-icon="stop" data-icon-variant="64-filled">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(stop), 64, "filled")</code></li>
+			<li>HTML: <code>data-icon="stop" data-icon-variant="64-filled"</code></li>
 		</ul>
 	</li>
 </ul>
@@ -11686,6 +12064,18 @@ var(--db-icon-pulse-color, #EC0016)
 			<div class="pl-js-pattern-example">
 			
 <ul class="DO-NOT-COPY-THIS-CLASS-example-icon-list">
+	<li data-icon="fast-backward" data-icon-variant="64-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-backward), 64, "outline")</code></li>
+			<li>HTML: <code>data-icon="fast-backward" data-icon-variant="64-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="fast-forward" data-icon-variant="64-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fast-forward), 64, "outline")</code></li>
+			<li>HTML: <code>data-icon="fast-forward" data-icon-variant="64-outline"</code></li>
+		</ul>
+	</li>
 	<li data-icon="pause" data-icon-variant="64-outline">
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(pause), 64, "outline")</code></li>
@@ -11696,6 +12086,24 @@ var(--db-icon-pulse-color, #EC0016)
 		<ul>
 			<li>SCSS: <code>@include icon(glyph(play), 64, "outline")</code></li>
 			<li>HTML: <code>data-icon="play" data-icon-variant="64-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="skip-backward" data-icon-variant="64-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(skip-backward), 64, "outline")</code></li>
+			<li>HTML: <code>data-icon="skip-backward" data-icon-variant="64-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="skip-forward" data-icon-variant="64-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(skip-forward), 64, "outline")</code></li>
+			<li>HTML: <code>data-icon="skip-forward" data-icon-variant="64-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="stop" data-icon-variant="64-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(stop), 64, "outline")</code></li>
+			<li>HTML: <code>data-icon="stop" data-icon-variant="64-outline"</code></li>
 		</ul>
 	</li>
 </ul>
@@ -12428,22 +12836,68 @@ var(--db-icon-pulse-color, #EC0016)
 			<ul>
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-regular">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
-							<use href="../../icons/illustrative/communication/db_ic_il_envelope_closed.svg#icon"></use>
+							<use href="../../icons/illustrative/communication/db_ic_il_envelope_check.svg#icon"></use>
 						</svg>
 					</li>
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-turquoise">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
-							<use href="../../icons/illustrative/communication/db_ic_il_envelope_closed.svg#icon"></use>
+							<use href="../../icons/illustrative/communication/db_ic_il_envelope_check.svg#icon"></use>
 						</svg>
 					</li>
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-red">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
-							<use href="../../icons/illustrative/communication/db_ic_il_envelope_closed.svg#icon"></use>
+							<use href="../../icons/illustrative/communication/db_ic_il_envelope_check.svg#icon"></use>
 						</svg>
 					</li>
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-cyan">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
-							<use href="../../icons/illustrative/communication/db_ic_il_envelope_closed.svg#icon"></use>
+							<use href="../../icons/illustrative/communication/db_ic_il_envelope_check.svg#icon"></use>
+						</svg>
+					</li>
+			</ul>
+		</li><li>
+			<ul>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-regular">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/communication/db_ic_il_envelope_closed_back.svg#icon"></use>
+						</svg>
+					</li>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-turquoise">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/communication/db_ic_il_envelope_closed_back.svg#icon"></use>
+						</svg>
+					</li>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-red">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/communication/db_ic_il_envelope_closed_back.svg#icon"></use>
+						</svg>
+					</li>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-cyan">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/communication/db_ic_il_envelope_closed_back.svg#icon"></use>
+						</svg>
+					</li>
+			</ul>
+		</li><li>
+			<ul>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-regular">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/communication/db_ic_il_envelope_closed_front.svg#icon"></use>
+						</svg>
+					</li>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-turquoise">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/communication/db_ic_il_envelope_closed_front.svg#icon"></use>
+						</svg>
+					</li>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-red">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/communication/db_ic_il_envelope_closed_front.svg#icon"></use>
+						</svg>
+					</li>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-cyan">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/communication/db_ic_il_envelope_closed_front.svg#icon"></use>
 						</svg>
 					</li>
 			</ul>
@@ -12513,6 +12967,29 @@ var(--db-icon-pulse-color, #EC0016)
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-cyan">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
 							<use href="../../icons/illustrative/communication/db_ic_il_hashtag.svg#icon"></use>
+						</svg>
+					</li>
+			</ul>
+		</li><li>
+			<ul>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-regular">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/communication/db_ic_il_telephone.svg#icon"></use>
+						</svg>
+					</li>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-turquoise">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/communication/db_ic_il_telephone.svg#icon"></use>
+						</svg>
+					</li>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-red">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/communication/db_ic_il_telephone.svg#icon"></use>
+						</svg>
+					</li>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-cyan">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/communication/db_ic_il_telephone.svg#icon"></use>
 						</svg>
 					</li>
 			</ul>
@@ -12829,6 +13306,29 @@ var(--db-icon-pulse-color, #EC0016)
 			<ul>
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-regular">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/devices/db_ic_il_computer.svg#icon"></use>
+						</svg>
+					</li>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-turquoise">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/devices/db_ic_il_computer.svg#icon"></use>
+						</svg>
+					</li>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-red">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/devices/db_ic_il_computer.svg#icon"></use>
+						</svg>
+					</li>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-cyan">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/devices/db_ic_il_computer.svg#icon"></use>
+						</svg>
+					</li>
+			</ul>
+		</li><li>
+			<ul>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-regular">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
 							<use href="../../icons/illustrative/devices/db_ic_il_laptop.svg#icon"></use>
 						</svg>
 					</li>
@@ -12845,6 +13345,29 @@ var(--db-icon-pulse-color, #EC0016)
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-cyan">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
 							<use href="../../icons/illustrative/devices/db_ic_il_laptop.svg#icon"></use>
+						</svg>
+					</li>
+			</ul>
+		</li><li>
+			<ul>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-regular">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/devices/db_ic_il_monitor.svg#icon"></use>
+						</svg>
+					</li>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-turquoise">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/devices/db_ic_il_monitor.svg#icon"></use>
+						</svg>
+					</li>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-red">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/devices/db_ic_il_monitor.svg#icon"></use>
+						</svg>
+					</li>
+					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-cyan">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+							<use href="../../icons/illustrative/devices/db_ic_il_monitor.svg#icon"></use>
 						</svg>
 					</li>
 			</ul>
@@ -13434,22 +13957,22 @@ var(--db-icon-pulse-color, #EC0016)
 			<ul>
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-regular">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
-							<use href="../../icons/illustrative/station/db_ic_il_db_trainstation_with_train.svg#icon"></use>
+							<use href="../../icons/illustrative/station/db_ic_il_db_train_station_with_train.svg#icon"></use>
 						</svg>
 					</li>
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-turquoise">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
-							<use href="../../icons/illustrative/station/db_ic_il_db_trainstation_with_train.svg#icon"></use>
+							<use href="../../icons/illustrative/station/db_ic_il_db_train_station_with_train.svg#icon"></use>
 						</svg>
 					</li>
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-red">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
-							<use href="../../icons/illustrative/station/db_ic_il_db_trainstation_with_train.svg#icon"></use>
+							<use href="../../icons/illustrative/station/db_ic_il_db_train_station_with_train.svg#icon"></use>
 						</svg>
 					</li>
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-cyan">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
-							<use href="../../icons/illustrative/station/db_ic_il_db_trainstation_with_train.svg#icon"></use>
+							<use href="../../icons/illustrative/station/db_ic_il_db_train_station_with_train.svg#icon"></use>
 						</svg>
 					</li>
 			</ul>
@@ -13457,22 +13980,22 @@ var(--db-icon-pulse-color, #EC0016)
 			<ul>
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-regular">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
-							<use href="../../icons/illustrative/station/db_ic_il_db_trainstation.svg#icon"></use>
+							<use href="../../icons/illustrative/station/db_ic_il_db_train_station.svg#icon"></use>
 						</svg>
 					</li>
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-turquoise">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
-							<use href="../../icons/illustrative/station/db_ic_il_db_trainstation.svg#icon"></use>
+							<use href="../../icons/illustrative/station/db_ic_il_db_train_station.svg#icon"></use>
 						</svg>
 					</li>
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-red">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
-							<use href="../../icons/illustrative/station/db_ic_il_db_trainstation.svg#icon"></use>
+							<use href="../../icons/illustrative/station/db_ic_il_db_train_station.svg#icon"></use>
 						</svg>
 					</li>
 					<li class="DO-NOT-COPY-THIS-CLASS-example-bg-variants-cyan">
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
-							<use href="../../icons/illustrative/station/db_ic_il_db_trainstation.svg#icon"></use>
+							<use href="../../icons/illustrative/station/db_ic_il_db_train_station.svg#icon"></use>
 						</svg>
 					</li>
 			</ul>
@@ -15056,10 +15579,10 @@ var(--db-icon-pulse-color, #EC0016)
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1693397927356">
+<script id="pl-js-polyfill-insert-1700559408654">
   (function() {
     if (self != top) {
-      var cb = '1693397927356';
+      var cb = '1700559408654';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -15072,7 +15595,7 @@ var(--db-icon-pulse-color, #EC0016)
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1693397927356" nomodule>
+<script id="pl-js-insert-1700559408654" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 
