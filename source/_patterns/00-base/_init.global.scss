@@ -57,9 +57,9 @@ a {
 	}
 
 	&:hover {
-		color: #5d616a; // TODO: Identify correct color variable
+		--db-text---color: #5d616a; // TODO: Identify correct color variable
 		@media (prefers-color-scheme: dark) {
-			color: #cdd4da; // TODO: Identify correct color variable
+			--db-text---color: #cdd4da; // TODO: Identify correct color variable
 		}
 	}
 }
