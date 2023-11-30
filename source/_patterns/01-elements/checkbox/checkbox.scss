@@ -2,6 +2,7 @@
 
 @import "../../../css/partials.meta";
 @import "checkbox.variables";
+@import "../form-elements";
 
 .elm-checkbox {
 	@include icon("\00A0", 24, "outline", $partial: $partial);
