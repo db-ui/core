@@ -88,6 +88,9 @@
 			"icon-glyph": "document"
 		},
 		{
+			"icon-glyph": "document-check"
+		},
+		{
 			"icon-glyph": "done"
 		},
 		{
@@ -98,6 +101,12 @@
 		},
 		{
 			"icon-glyph": "edit"
+		},
+		{
+			"icon-glyph": "face-delighted"
+		},
+		{
+			"icon-glyph": "face-disappointed"
 		},
 		{
 			"icon-glyph": "face-neutral"
@@ -169,16 +178,25 @@
 			"icon-glyph": "minus"
 		},
 		{
+			"icon-glyph": "piggybank"
+		},
+		{
 			"icon-glyph": "pin"
 		},
 		{
 			"icon-glyph": "print"
 		},
 		{
+			"icon-glyph": "push-button"
+		},
+		{
 			"icon-glyph": "remove"
 		},
 		{
 			"icon-glyph": "resize"
+		},
+		{
+			"icon-glyph": "resize-handle-corner"
 		},
 		{
 			"icon-glyph": "save"
