@@ -5,7 +5,7 @@
 	{{#if required}} required{{/if}}
 	{{#if invalid }} aria-invalid="{{ invalid }}" {{/if }}
 	{{#if variant}} data-variant="{{variant}}"{{/if }}>
-	{{#if optgroup}}<optgroup label="Devices">{{else}}{{#unless multiple}}<option></option>{{/unless}}{{/if }}
+	{{#if optgroup}}<optgroup label="Devices">{{else}}{{#unless multiple}}{{#unless labelHidden}}<option></option>{{/unless}}{{/unless}}{{/if }}
 		<option value="smartphone">Smartphone</option>
 		<option value="softphone">Softphone</option>
 		<option value="headset">Headset</option>
