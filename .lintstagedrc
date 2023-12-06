@@ -1,5 +1,4 @@
 {
-	"*.hbs": "npm run lint:html",
 	"*.md": "markdownlint -c .markdown-lint.yml",
 	"*.{css,scss}": "stylelint --fix",
 	"*.{js,ts,tsx,jsx,mjs,cjs}": "xo --fix",
