@@ -12,14 +12,13 @@
 		}
 	}
 
-	summary {
-		@include icon(
-			$cmp-overflow-menu-icon,
-			20,
-			"outline",
-			$partial: $partial
-		);
+	&[data-icon] {
+		&::before {
+			content: initial;
+		}
+	}
 
+	summary {
 		display: inline-block;
 
 		&::before {
@@ -41,6 +40,24 @@
 		// … and using some other declaration for mozilla firefox
 		&:first-of-type {
 			list-style-type: none;
+		}
+	}
+
+	// Possibility to define an individual icon
+	&[data-icon] {
+		summary {
+			@include icon("", 20, "outline", $partial: $partial);
+		}
+	}
+
+	&:not([data-icon]) {
+		summary {
+			@include icon(
+				$cmp-overflow-menu-icon,
+				20,
+				"outline",
+				$partial: $partial
+			);
 		}
 	}
 
