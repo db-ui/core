@@ -1,6 +1,6 @@
 {{#if linkEntries }}<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->{{/if }}
-<details{{#if icon}} data-icon="{{icon}}"{{/if }} class="{{#if patternName }}{{ patternName }}{{else}}cmp-overflow-menu{{/if }}{{ styleModifier }}"{{#if linkEntries }} role="navigation"{{/if }}{{#if oppositePosition}} data-horizontal-position="opposite"{{/if }}>
-	<summary>{{ summary }}</summary>
+<details class="{{#if patternName }}{{ patternName }}{{else}}cmp-overflow-menu{{/if }}{{ styleModifier }}"{{#if linkEntries }} role="navigation"{{/if }}{{#if oppositePosition}} data-horizontal-position="opposite"{{/if }}>
+	<summary{{#if icon}} data-icon="{{icon}}"{{/if }}>{{ summary }}</summary>
 	{{#if linkEntries }}<ul role="group">{{else}}<menu type="toolbar">{{/if }}
 		{{#if linkEntries }}
 		<li>{{> elements-link href="#" value=entry01 }}</li>
