@@ -1,58 +1,42 @@
-/* global dialogPolyfill */
+// from: https://gist.github.com/samthor/babe9fad4a65625b301ba482dad284d1
+/**
+ * Updates the passed dialog to retain focus and restore it when the dialog is closed. Won't
+ * upgrade a dialog more than once. Supports IE11+ and is a no-op otherwise.
+ * @param {!HTMLDialogElement} dialog to upgrade
+ */
+var registerFocusRestoreDialog = (function() {
+  if (!window.WeakMap || !window.MutationObserver) {
+    return function() {};
+  }
+  var registered = new WeakMap();
 
-(function () {
-	// Bind the click events for links (that we'll check for later on)
-	document.addEventListener('click', (event) => {
-		// Determine whether the target of the current link is a dialog
-		if (
-			event.target &&
-			event.target.tagName &&
-			event.target.tagName.toLowerCase() === 'a' &&
-			event.target.attributes.href.value.slice(0, 1) === '#'
-		) {
-			const link = event.target;
-			let type, dialog;
+  // store previous focused node centrally
+  var previousFocus = null;
+  document.addEventListener('focusout', function(ev) {
+    previousFocus = ev.target;
+  }, true);
 
-			// Determine whether the link is included within a dialog and is the close link
-			if (
-				link.attributes.href.value === '#' &&
-				link.closest('dialog') &&
-				link.matches('.elm-link.is-close')
-			) {
-				type = 'close';
-				dialog = link.closest('dialog');
-			} else if (
-				link.hash &&
-				document.querySelector(link.hash) &&
-				document.querySelector(link.hash).tagName.toLowerCase() ===
-					'dialog'
-			) {
-				type = 'dialog';
-				dialog = document.querySelector(link.hash);
-			} else {
-				return;
-			}
+  return function registerFocusRestoreDialog(dialog) {
+    if (dialog.localName !== 'dialog') {
+      throw new Error('Failed to upgrade focus on dialog: The element is not a dialog.');
+    }
+    if (registered.has(dialog)) { return; }
+    registered.set(dialog, null);
 
-			// Check for whether the dialog has been registered even already
-			if (type === 'dialog') {
-				if (!dialog.dataset.polyfilled) {
-					// Initially registering the dialog
-					dialogPolyfill.registerDialog(dialog);
+    // replace showModal method directly, to save focus
+    var realShowModal = dialog.showModal;
+    dialog.showModal = function() {
+      var savedFocus = document.activeElement;
+      if (savedFocus === document || savedFocus === document.body) {
+        // some browsers read activeElement as body
+        savedFocus = previousFocus;
+      }
+      registered.set(dialog, savedFocus);
+      realShowModal.call(this);
+    };
 
-					dialog.dataset.polyfilled = true;
-				}
-
-				dialog.showModal();
-			} else {
-				dialog.close();
-			}
-
-			// Prevent the default behaviour of the link
-			event.preventDefault();
-		}
-	});
-})();
-var mo = new MutationObserver(function() {
+    // watch for 'open' change and clear saved
+    var mo = new MutationObserver(function() {
       if (!dialog.hasAttribute('open')) {
         registered.set(dialog, null);
       } else {
