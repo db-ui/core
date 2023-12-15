@@ -12,17 +12,17 @@
 
 
 	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1702544143208" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1702627066802" media="all">
 
 	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1702544143208" media="all">
-	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1702544143208" media="all">
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1702544143208" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1702627066802" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1702627066802" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1702627066802" media="all">
 	<!-- dialog polyfill //-->
-	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1702544143208" media="all">
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1702627066802" media="all">
 
 	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1702544143208" media="all">
+	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1702627066802" media="all">
 	<!-- End Pattern Lab -->
 
 
@@ -549,6 +549,63 @@ documentation has useful tips on creating an effective description. //-->
 			</script>
 		
 		</div><!--end pl-c-pattern-->
+		<div id="elements-textarea-hidden-label" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/elements-textarea-textarea-hidden-label&#x2F;elements-textarea-textarea-hidden-label.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-textarea-hidden-label" title="Link to Pattern">
+						Textarea - Hidden label
+		
+						<span class="pl-c-pattern-state pl-c-pattern-state--complete" title="complete"></span>
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-textarea-hidden-label" data-patternpartial="elements-textarea-hidden-label" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-textarea-hidden-label">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			<label class="elm-label" for="textarea08" data-label-hidden="true">Textlabel</label>
+<textarea class="elm-textarea "
+	placeholder="Projekt Name"
+	id="textarea08"
+	
+	
+	
+	 maxlength="200"
+	
+	oninput="result_textarea08.value=this.value.length+'/'+this.attributes.maxlength.value"
+	>Input</textarea>
+<output for="textarea08" id="result_textarea08"></output>
+
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-elements-textarea-hidden-label" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<h2>Possibility to hide the label</h2>\n<blockquote>\n<p>A label for a form control helps everyone better understand its purpose. In some cases, the purpose may be clear enough from the context when the content is rendered visually. The label can be hidden visually, though it still needs to be provided within the code to support other forms of presentation and interaction, such as for screen reader and speech input users.</p>\n</blockquote>\n<p>source: <a href=\"https://www.w3.org/WAI/tutorials/forms/labels/#hiding-label-text\">https://www.w3.org/WAI/tutorials/forms/labels/#hiding-label-text</a></p>\n<p>You could set the attribute <code>data-label-hidden=&quot;true&quot;</code> for the rare case that you would want to visually hide the textual label for a textarea element.</p>\n","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"textarea"},"patternExtension":"hbs","patternName":"Textarea - Hidden label","patternPartial":"elements-textarea-hidden-label","patternState":"complete","patternEngineName":"handlebars","extraOutput":{"order":8}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
 
 	</div>
 	<!--end pl-c-pattern-index-->
@@ -596,10 +653,10 @@ documentation has useful tips on creating an effective description. //-->
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1702544143208">
+<script id="pl-js-polyfill-insert-1702627066802">
   (function() {
     if (self != top) {
-      var cb = '1702544143208';
+      var cb = '1702627066802';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -612,7 +669,7 @@ documentation has useful tips on creating an effective description. //-->
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1702544143208" nomodule>
+<script id="pl-js-insert-1702627066802" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 
