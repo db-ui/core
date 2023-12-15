@@ -1,3 +1,4 @@
+@import "../../../css/partials.meta";
 @import "select.variables";
 @import "../form-elements";
 @import "../../../css/db-ui-core.variables";
@@ -27,6 +28,10 @@
 		background-repeat: no-repeat;
 		height: to-rem($pxValue: 44);
 		padding: to-rem($pxValue: 20) to-rem($pxValue: 42) 0 $db-spacing-m;
+		// No need to reposition the included value on hidden label
+		&:has(+ label[data-label-hidden="true"]) {
+			padding-top: 0;
+		}
 
 		// Floating labels
 		& + .elm-label {
@@ -96,6 +101,8 @@
 
 	// Floating labels
 	& + .elm-label {
+		@extend %form-label;
+
 		display: block;
 		font-size: to-rem($pxValue: 12);
 		margin-bottom: -#{to-rem($pxValue: 18)};

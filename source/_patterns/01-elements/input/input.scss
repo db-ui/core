@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+@import "../../../css/partials.meta";
 @import "input.variables";
 @import "../form-elements";
 
@@ -13,9 +14,13 @@
 	line-height: to-rem($pxValue: 24);
 	max-width: 100%;
 
-	padding: $db-spacing-s $db-spacing-m;
-
 	width: 100%;
+
+	padding-inline: $db-spacing-m;
+	// No need to reposition the included value on hidden label
+	&:not(:has(+ label[data-label-hidden="true"])) {
+		padding-block: $db-spacing-s;
+	}
 
 	&[list] {
 		&::-webkit-calendar-picker-indicator {
@@ -25,7 +30,10 @@
 
 	&:not(:placeholder-shown) {
 		padding-bottom: 0;
-		padding-top: to-rem($pxValue: 16);
+		// No need to reposition the included value on hidden label
+		&:not(:has(+ label[data-label-hidden="true"])) {
+			padding-top: to-rem($pxValue: 16);
+		}
 	}
 
 	// * TODO: to get evaluated
@@ -89,6 +97,8 @@
 		}
 
 		& + .elm-label {
+			@extend %form-label;
+
 			color: $db-color-cool-gray-500;
 			display: block;
 			font-size: to-rem($pxValue: 12);
