@@ -1,5 +1,5 @@
 {{! TODO: the retrieval of the standard values doesn't work so far }}
-<label class="elm-label" for="{{ id }}">{{ label }}</label>
+<label class="elm-label" for="{{ id }}"{{#if labelHidden }} data-label-hidden="true"{{/if }}>{{ label }}</label>
 <textarea class="elm-textarea {{ styleModifier }}"
 	placeholder="{{ placeholder }}"
 	id="{{ id }}"
