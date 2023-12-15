@@ -4,7 +4,7 @@ title: Checkbox - indeterminate on dark background
 
 ## State: indeterminate
 
-Please keep in mind, that the special state of an indeterminate element is necessary to get set programatically with JavaScript:
+Please keep in mind, that the special state of an indeterminate element is necessary to get set programmatically with JavaScript:
 
 ```js
 inputInstance.indeterminate = true;
