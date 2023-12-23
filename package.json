@@ -69,7 +69,7 @@
     "@pattern-lab/cli": "^6.1.0",
     "@pattern-lab/core": "^6.0.1",
     "@pattern-lab/engine-handlebars": "^6.1.0",
-    "@pattern-lab/starterkit-handlebars-demo": "^6.0.0",
+    "@pattern-lab/starterkit-handlebars-demo": "^6.1.0",
     "@pattern-lab/uikit-workshop": "^6.1.0",
     "autoprefixer": "^10.4.16",
     "backstopjs": "^6.3.1",
