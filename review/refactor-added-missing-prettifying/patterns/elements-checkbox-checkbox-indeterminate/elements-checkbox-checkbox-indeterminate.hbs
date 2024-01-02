@@ -5,7 +5,7 @@
 	value="{{ value }}"
 	{{#if describedbyid }} aria-describedby="{{ describedbyid }}"{{/if }}
 	{{#if invalid }} aria-invalid="{{ invalid }}"{{/if }}>
-<label class="elm-label" for="{{ id }}">{{ label }}</label>
+<label class="elm-label" for="{{ id }}"{{#if labelHidden }} data-label-hidden="true"{{/if }}>{{ label }}</label>
 {{#if indeterminate}}
 <script>
 	document.querySelector('#{{ id }}').indeterminate = true;

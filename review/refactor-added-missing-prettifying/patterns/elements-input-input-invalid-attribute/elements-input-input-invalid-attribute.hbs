@@ -15,7 +15,8 @@
 <label class="elm-label"
 	for="{{ id }}"
 	aria-hidden="true"
-	id="{{ id }}-label">{{ label }}</label>
+	id="{{ id }}-label"
+	{{#if labelHidden }} data-label-hidden="true"{{/if }}>{{ label }}</label>
 {{#if description }}<p{{#if describedbyid }} id="{{ describedbyid }}"{{/if }} class="description">{{{ description }}}</p>{{/if }}
 {{#if datalist }}<datalist id="datalist{{ id }}">
 	{{#each datalistItems }}
