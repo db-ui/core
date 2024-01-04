@@ -1,6 +1,10 @@
 {
 	"variants": [
 		{
+			"label": "Light",
+			"variant": "light"
+		},
+		{
 			"label": "Warning",
 			"variant": "warning"
 		},

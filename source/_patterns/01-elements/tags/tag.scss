@@ -27,6 +27,12 @@
 	}
 
 	//*** Variants ***
+	&[data-variant="light"] {
+		background-color: $db-color-cool-gray-200;
+		color: $db-color-cool-gray-700;
+		border: 1px solid $db-color-cool-gray-400;
+	}
+
 	&[data-variant="warning"] {
 		background-color: $db-color-warning-small-font;
 	}
