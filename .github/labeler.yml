@@ -1,13 +1,15 @@
 ---
 # Add 'cicd' label to any file changes inside .github dir
 cicd:
-  - .github/*
-  - .github/**/*
+  - changed-files:
+      - any-glob-to-any-file: [".github/*", ".github/**/*"]
 
 # Add 'patterns' label to any file changes for the patterns
 patterns:
-  - source/_patterns/**
+  - changed-files:
+      - any-glob-to-any-file: "source/_patterns/**"
 
 # Add 'documentation' label to any file changes for the documentation files
 documentation:
-  - ./**/*.md
+  - changed-files:
+      - any-glob-to-any-file: "**/*.md"
