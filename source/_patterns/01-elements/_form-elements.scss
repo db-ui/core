@@ -33,6 +33,12 @@
 	}
 }
 
+%form-label {
+	&[data-label-hidden="true"] {
+		@include a11y-visually-hidden($partial: $partial);
+	}
+}
+
 // ### Style variations
 // Semitransparent
 %form-element-semitransparent {

@@ -1,6 +1,8 @@
 @charset "utf-8";
 
+@import "../../../css/partials.meta";
 @import "radio.variables";
+@import "../form-elements";
 
 .elm-radio {
 	appearance: none;
@@ -52,6 +54,8 @@
 	// }
 
 	& + label {
+		@extend %form-label;
+
 		margin-left: $db-spacing-xs;
 	}
 

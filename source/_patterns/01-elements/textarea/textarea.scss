@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+@import "../../../css/partials.meta";
 @import "textarea.variables";
 @import "../form-elements";
 
@@ -28,6 +29,10 @@
 	// display: inline-flex;
 	// align-items: center;
 	// justify-content: flex-start;
+
+	.elm-label:has(+ &) {
+		@extend %form-label;
+	}
 
 	&:not([rows]) {
 		max-height: to-rem($pxValue: 600);
