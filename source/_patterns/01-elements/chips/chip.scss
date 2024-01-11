@@ -6,6 +6,7 @@
 		border: solid 1px $db-color-cool-gray-400;
 		border-radius: $chip---radius;
 		display: inline-flex;
+		font-weight: 500;
 
 		// Link related styles
 		font-size: to-rem($pxValue: 14);
@@ -42,6 +43,12 @@
 			color: $chip-checked--color;
 
 			//*** Variants ***
+			&[data-variant="light"] {
+				background-color: $db-color-cool-gray-200;
+				color: $db-color-cool-gray-700;
+				border: 1px solid $db-color-cool-gray-400;
+			}
+
 			&[data-variant="warning"] {
 				background-color: $db-color-warning;
 			}
