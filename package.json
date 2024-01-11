@@ -80,7 +80,7 @@
     "dotenv": "^16.3.1",
     "find-versions-cli": "^4.0.0",
     "html-validate": "^8.8.0",
-    "html5-boilerplate": "^8.0.0",
+    "html5-boilerplate": "^9.0.0",
     "husky": "^8.0.3",
     "iframe-resizer": "^4.3.9",
     "lint-staged": "^15.2.0",
