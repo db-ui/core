@@ -1,5 +1,5 @@
 ---
-title: Side Navi
+title: Sidenavi
 state: inreview
 tags: [style-1.6]
 ---
