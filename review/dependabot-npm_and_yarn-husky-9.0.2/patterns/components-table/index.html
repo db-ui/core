@@ -1,0 +1,1797 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>DB UI Core - Pattern Lab</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+	<script>document.documentElement.className = 'js ' + document.documentElement.className.replace(/\bno-js\b/, '')</script>
+
+	<!-- see https://htmlhead.dev/ for a description of what could get listed within your pages HEAD section //-->
+
+
+	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1706182387363" media="all">
+
+	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1706182387363" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1706182387363" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1706182387363" media="all">
+	<!-- dialog polyfill //-->
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1706182387363" media="all">
+
+	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1706182387363" media="all">
+	<!-- End Pattern Lab -->
+
+
+	<!-- Google's "Create good meta descriptions" / https://support.google.com/webmasters/answer/35624?hl=en#meta-descriptions
+documentation has useful tips on creating an effective description. //-->
+	<meta name="Description" content="Put your description here.">
+
+	<!-- You can add the theme-color meta extension in the <head> of your pages to suggest the color that browsers and OSes should use if they customize the display of individual pages in their UIs with varying colors.
+			more information: https://html.spec.whatwg.org/multipage/semantics.html#meta-theme-color -->
+	<meta name="theme-color" content="#f01414">
+
+	<!-- iframe resizing script for pattern previews -->
+	<script src="../../js/iframeResizer.contentWindow.js"></script>
+</head>
+
+<body class="styleguide">
+<!-- View All Patterns in a Pattern Sub-Type -->
+<div class="pl-c-main">
+
+	<!-- Index of Patterns -->
+	<div class="pl-c-pattern-index">
+
+		<div id="viewall-components-table" class="pl-c-category">
+				
+			<h2 class="pl-c-category__title">
+				<a href="../../patterns/components-table&#x2F;index.html" class="pl-c-category__title-link patternLink" data-patternpartial="viewall-components-table">Table</a>
+			</h2><!--end pl-c-category__title-->
+		
+			<div class="pl-c-category__description pl-c-text-passage">
+				
+			</div><!--end pl-c-category__description-->
+			
+		</div><!--end pl-c-category-->
+					<div id="components-table" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/components-table-table&#x2F;components-table-table.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-table" title="Link to Pattern">
+						Table
+		
+						<span class="pl-c-pattern-state pl-c-pattern-state--inreview" title="inreview"></span>
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-table" data-patternpartial="components-table" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-table">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			
+<table class="cmp-table "
+	
+	
+	
+	
+	>
+	<caption>
+		Table title
+	</caption>
+	<thead>
+		<tr>
+			
+			<th scope="col">The table header 01</th>
+			<th scope="col">The table header 02</th>
+		</tr>
+	</thead>
+	<tbody>
+			<tr>
+				
+				<td>Value 01 - 01</td>
+				<td>Value 01 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 02 - 01</td>
+				<td>Value 02 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 03 - 01</td>
+				<td>Value 03 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 04 - 01</td>
+				<td>Value 04 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 05 - 01</td>
+				<td>Value 05 - 02</td>
+				
+			</tr>
+	</tbody>
+</table>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-components-table" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"}],"lineage":[{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"components-table-alignments","lineagePath":"../../patterns/components-table-table-alignments/components-table-table-alignments.rendered.html"},{"lineagePattern":"components-table-density","lineagePath":"../../patterns/components-table-table-density/components-table-table-density.rendered.html"}],"lineageR":[{"lineagePattern":"components-table-alignments","lineagePath":"../../patterns/components-table-table-alignments/components-table-table-alignments.rendered.html"},{"lineagePattern":"components-table-density","lineagePath":"../../patterns/components-table-table-density/components-table-table-density.rendered.html"}],"patternLineageEExists":true,"patternDesc":"<h2>Hiding columns and rows as responsive behaviour</h2>\n<p>To hide columns and/or rows depending on the viewport size, you could use a SCSS mixin that we provide or even also easily set up some CSS on your own to do so.\nWe've decided against providing classes that would need to get set onto the HTML elements, as you would have to do this for each and very <code>td</code> / <code>th</code> element repeatedly, and it would heavily complicate the configuration as well as harm the elementary concepts of dividing style from content.</p>\n<h3>Hiding columns</h3>\n<p>Using the following SCSS mixin, you could hide a specific column (first parameter), depending on a maximum viewport-width (second parameter), e.g. the following would hide the second column in the <code>thead</code> and <code>tbody</code> section on a viewport up to <code>1023px</code> width:</p>\n<pre><code class=\"language-SCSS\">@include cmp-table-hide-col(2, 1023px);\n</code></pre>\n<p>In case that you wouldn't want to / can't use SCSS, than you could as well easily develop this on your own in pure CSS:</p>\n<pre><code class=\"language-CSS\">@media screen and (max-width: 1023px) {\n\tthead th:nth-child(2),\n\ttbody td:nth-child(2) {\n\t\tdisplay: none;\n\t}\n}\n</code></pre>\n<h3>Hiding rows</h3>\n<p>Using the following SCSS mixin, you could hide a specific row (first parameter), depending on a maximum viewport-width (second parameter), e.g. the following would hide the second row in the <code>tbody</code> section on a viewport up to <code>1023px</code> width:</p>\n<pre><code class=\"language-SCSS\">@include cmp-table-hide-row(2, 1023px);\n</code></pre>\n<p>In case that you wouldn't want to / can't use SCSS, than you could as well easily develop this on your own in pure CSS:</p>\n<pre><code class=\"language-CSS\">@media screen and (max-width: 1023px) {\n\ttbody tr:nth-child(2) {\n\t\tdisplay: none;\n\t}\n}\n</code></pre>\n","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"table"},"patternExtension":"hbs","patternName":"Table","patternPartial":"components-table","patternState":"inreview","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="components-table-alignments" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/components-table-table-alignments&#x2F;components-table-table-alignments.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-table-alignments" title="Link to Pattern">
+						Table - alignment
+		
+						<span class="pl-c-pattern-state pl-c-pattern-state--inreview" title="inreview"></span>
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-table-alignments" data-patternpartial="components-table-alignments" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-table-alignments">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			<dl>
+	<dt>center / middle:</dt>
+	<dd>
+<table class="cmp-table "
+	
+	
+	
+	
+	>
+	<caption>
+		Table title
+	</caption>
+	<thead data-align="center" data-vertical-align="middle">
+		<tr>
+			
+			<th scope="col">The table header 01</th>
+			<th scope="col">The table header 02</th>
+		</tr>
+	</thead>
+	<tbody data-align="center" data-vertical-align="middle">
+			<tr>
+				
+				<td>Value 01 - 01<br>two lines</td>
+				<td>Value 01 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 02 - 01</td>
+				<td>Value 02 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 03 - 01 - longer content</td>
+				<td>Value 03 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 04 - 01</td>
+				<td>Value 04 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 05 - 01</td>
+				<td>Value 05 - 02 - longer content</td>
+				
+			</tr>
+	</tbody>
+</table>
+</dd>
+	<dt>right / bottom:</dt>
+	<dd>
+<table class="cmp-table "
+	
+	
+	
+	
+	>
+	<caption>
+		Table title
+	</caption>
+	<thead data-align="right" data-vertical-align="bottom">
+		<tr>
+			
+			<th scope="col">The table header 01</th>
+			<th scope="col">The table header 02</th>
+		</tr>
+	</thead>
+	<tbody data-align="right" data-vertical-align="bottom">
+			<tr>
+				
+				<td>Value 01 - 01<br>two lines</td>
+				<td>Value 01 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 02 - 01</td>
+				<td>Value 02 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 03 - 01 - longer content</td>
+				<td>Value 03 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 04 - 01</td>
+				<td>Value 04 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 05 - 01</td>
+				<td>Value 05 - 02 - longer content</td>
+				
+			</tr>
+	</tbody>
+</table>
+</dd>
+</dl>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-components-table-alignments" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-table","lineagePath":"../../patterns/components-table-table/components-table-table.rendered.html","lineageState":"inreview"}],"lineage":[{"lineagePattern":"components-table","lineagePath":"../../patterns/components-table-table/components-table-table.rendered.html","lineageState":"inreview"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"<p>You could set the positioning of the cells content on several different levels and on both axis, by setting the either using SCSS placeholders or setting <code>data-align</code> and <code>data-vertical-align</code> HTML attributes on the surrounding <code>thead</code> or <code>tbody</code>, each grouping <code>tr</code> element or the individual cells <code>th</code> and <code>td</code> elements to either one of these values:</p>\n<h2>Horizontal alignment</h2>\n<h3>SCSS (recommended)</h3>\n<p>Extend one of the variant placeholders: <code>%align-left</code>, <code>%align-center</code> or <code>%align-right</code></p>\n<h3>HTML attribute</h3>\n<p>You could set the different button variants via the <code>data-align</code> attribute:</p>\n<ul>\n<li><code>data-align=&quot;left&quot;</code> (default)</li>\n<li><code>data-align=&quot;center&quot;</code></li>\n<li><code>data-align=&quot;right&quot;</code></li>\n</ul>\n<h2>Vertical alignment</h2>\n<h3>SCSS (recommended)</h3>\n<p>Extend one of the variant placeholders: <code>%vertical-align-top</code>, <code>%vertical-align-middle</code> or <code>%vertical-align-bottom</code></p>\n<h3>HTML attribute</h3>\n<p>You could set the different button variants via the <code>data-vertical-align</code> attribute:</p>\n<ul>\n<li><code>data-vertical-align=&quot;top&quot;</code> (default)</li>\n<li><code>data-vertical-align=&quot;middle&quot;</code></li>\n<li><code>data-vertical-align=&quot;bottom&quot;</code></li>\n</ul>\n","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"table"},"patternExtension":"hbs","patternName":"Table - alignment","patternPartial":"components-table-alignments","patternState":"inreview","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="components-table-border-around" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/components-table-table-border-around&#x2F;components-table-table-border-around.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-table-border-around" title="Link to Pattern">
+						Table - border around cells
+		
+						<span class="pl-c-pattern-state pl-c-pattern-state--inreview" title="inreview"></span>
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-table-border-around" data-patternpartial="components-table-border-around" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-table-border-around">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			
+<table class="cmp-table "
+	 data-border="around"
+	
+	
+	
+	>
+	<caption>
+		Table title
+	</caption>
+	<thead>
+		<tr>
+			
+			<th scope="col">The table header 01</th>
+			<th scope="col">The table header 02</th>
+		</tr>
+	</thead>
+	<tbody>
+			<tr>
+				
+				<td>Value 01 - 01</td>
+				<td>Value 01 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 02 - 01</td>
+				<td>Value 02 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 03 - 01</td>
+				<td>Value 03 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 04 - 01</td>
+				<td>Value 04 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 05 - 01</td>
+				<td>Value 05 - 02</td>
+				
+			</tr>
+	</tbody>
+</table>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-components-table-border-around" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"}],"lineage":[{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"<p>To enable cell lines around the rows, define the class <code>data-border=&quot;around&quot;</code> on the table element.</p>\n","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"table"},"patternExtension":"hbs","patternName":"Table - border around cells","patternPartial":"components-table-border-around","patternState":"inreview","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="components-table-border-horizontal" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/components-table-table-border-horizontal&#x2F;components-table-table-border-horizontal.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-table-border-horizontal" title="Link to Pattern">
+						Table - border horizontal
+		
+						<span class="pl-c-pattern-state pl-c-pattern-state--inreview" title="inreview"></span>
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-table-border-horizontal" data-patternpartial="components-table-border-horizontal" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-table-border-horizontal">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			
+<table class="cmp-table "
+	 data-border="horizontal"
+	
+	
+	
+	>
+	<caption>
+		Table title
+	</caption>
+	<thead>
+		<tr>
+			
+			<th scope="col">The table header 01</th>
+			<th scope="col">The table header 02</th>
+		</tr>
+	</thead>
+	<tbody>
+			<tr>
+				
+				<td>Value 01 - 01</td>
+				<td>Value 01 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 02 - 01</td>
+				<td>Value 02 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 03 - 01</td>
+				<td>Value 03 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 04 - 01</td>
+				<td>Value 04 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 05 - 01</td>
+				<td>Value 05 - 02</td>
+				
+			</tr>
+	</tbody>
+</table>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-components-table-border-horizontal" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"}],"lineage":[{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"<p>To enable cell lines horizontally between the rows, define the class <code>data-border=&quot;horizontal&quot;</code> on the table element.</p>\n","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"table"},"patternExtension":"hbs","patternName":"Table - border horizontal","patternPartial":"components-table-border-horizontal","patternState":"inreview","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="components-table-density" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/components-table-table-density&#x2F;components-table-table-density.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-table-density" title="Link to Pattern">
+						Table - density
+		
+						<span class="pl-c-pattern-state pl-c-pattern-state--inreview" title="inreview"></span>
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-table-density" data-patternpartial="components-table-density" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-table-density">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			<dl>
+	<dt>small:</dt>
+	<dd>
+<table class="cmp-table "
+	
+	
+	 data-density="small"
+	
+	>
+	<caption>
+		Table title
+	</caption>
+	<thead>
+		<tr>
+			
+			<th scope="col">The table header 01</th>
+			<th scope="col">The table header 02</th>
+		</tr>
+	</thead>
+	<tbody>
+			<tr>
+				
+				<td>Value 01 - 01</td>
+				<td>Value 01 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 02 - 01</td>
+				<td>Value 02 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 03 - 01</td>
+				<td>Value 03 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 04 - 01</td>
+				<td>Value 04 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 05 - 01</td>
+				<td>Value 05 - 02</td>
+				
+			</tr>
+	</tbody>
+</table>
+</dd>
+	<dt>regular:</dt>
+	<dd>
+<table class="cmp-table "
+	
+	
+	 data-density="regular"
+	
+	>
+	<caption>
+		Table title
+	</caption>
+	<thead>
+		<tr>
+			
+			<th scope="col">The table header 01</th>
+			<th scope="col">The table header 02</th>
+		</tr>
+	</thead>
+	<tbody>
+			<tr>
+				
+				<td>Value 01 - 01</td>
+				<td>Value 01 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 02 - 01</td>
+				<td>Value 02 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 03 - 01</td>
+				<td>Value 03 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 04 - 01</td>
+				<td>Value 04 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 05 - 01</td>
+				<td>Value 05 - 02</td>
+				
+			</tr>
+	</tbody>
+</table>
+</dd>
+	<dt>large:</dt>
+	<dd>
+<table class="cmp-table "
+	
+	
+	 data-density="large"
+	
+	>
+	<caption>
+		Table title
+	</caption>
+	<thead>
+		<tr>
+			
+			<th scope="col">The table header 01</th>
+			<th scope="col">The table header 02</th>
+		</tr>
+	</thead>
+	<tbody>
+			<tr>
+				
+				<td>Value 01 - 01</td>
+				<td>Value 01 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 02 - 01</td>
+				<td>Value 02 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 03 - 01</td>
+				<td>Value 03 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 04 - 01</td>
+				<td>Value 04 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 05 - 01</td>
+				<td>Value 05 - 02</td>
+				
+			</tr>
+	</tbody>
+</table>
+</dd>
+</dl>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-components-table-density" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-table","lineagePath":"../../patterns/components-table-table/components-table-table.rendered.html","lineageState":"inreview"}],"lineage":[{"lineagePattern":"components-table","lineagePath":"../../patterns/components-table-table/components-table-table.rendered.html","lineageState":"inreview"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"<p>You could choose in between different types of cell density, by setting the <code>data-density</code> attribute on the <code>table</code> element to either one of these values:</p>\n<ul>\n<li><code>small</code></li>\n<li><code>regular</code> (default)</li>\n<li><code>large</code></li>\n</ul>\n","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"table"},"patternExtension":"hbs","patternName":"Table - density","patternPartial":"components-table-density","patternState":"inreview","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="components-table-font-size" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/components-table-table-font-size&#x2F;components-table-table-font-size.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-table-font-size" title="Link to Pattern">
+						Table - font size
+		
+						<span class="pl-c-pattern-state pl-c-pattern-state--inreview" title="inreview"></span>
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-table-font-size" data-patternpartial="components-table-font-size" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-table-font-size">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			<!-- [html-validate-disable-next no-inline-style -- we're doing inline-styling for simplification here] -->
+<table class="cmp-table "
+	
+	
+	
+	 style="--table---fontSize: 0.875rem"
+	>
+	<caption>
+		Table title
+	</caption>
+	<thead>
+		<tr>
+			
+			<th scope="col">The table header 01</th>
+			<th scope="col">The table header 02</th>
+		</tr>
+	</thead>
+	<tbody>
+			<tr>
+				
+				<td>Value 01 - 01</td>
+				<td>Value 01 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 02 - 01</td>
+				<td>Value 02 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 03 - 01</td>
+				<td>Value 03 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 04 - 01</td>
+				<td>Value 04 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 05 - 01</td>
+				<td>Value 05 - 02</td>
+				
+			</tr>
+	</tbody>
+</table>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-components-table-font-size" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"}],"lineage":[{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"<p>You could define a specific font-size in dp (density pixels), by setting the <code>--table---fontSize</code> CSS Variable on the <code>table</code> element to a specific font-size (the specification includes 14dp and 16dp, which equals to <code>0.875rem</code> or <code>1rem</code>).</p>\n<ul>\n<li><code>0.875rem</code></li>\n<li><code>1rem</code> (default)</li>\n</ul>\n","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"table"},"patternExtension":"hbs","patternName":"Table - font size","patternPartial":"components-table-font-size","patternState":"inreview","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="components-table-icons" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/components-table-table-icons&#x2F;components-table-table-icons.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-table-icons" title="Link to Pattern">
+						Table - icons
+		
+						<span class="pl-c-pattern-state pl-c-pattern-state--inreview" title="inreview"></span>
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-table-icons" data-patternpartial="components-table-icons" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-table-icons">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			
+<table class="cmp-table "
+	
+	
+	
+	
+	>
+	<caption>
+		Table title
+	</caption>
+	<thead>
+		<tr>
+			
+			<th scope="col">The table header 01</th>
+			<th scope="col">The table header 02</th>
+		</tr>
+	</thead>
+	<tbody>
+			<tr>
+				
+				<td data-icon="account">Value 01 - 01</td>
+				<td>Value 01 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 02 - 01</td>
+				<td>Value 02 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 03 - 01</td>
+				<td>Value 03 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 04 - 01</td>
+				<td>Value 04 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 05 - 01</td>
+				<td>Value 05 - 02</td>
+				
+			</tr>
+	</tbody>
+</table>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-components-table-icons" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"}],"lineage":[{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"<p>You could include icons within the cells like you would normally do to set one on an HTML tag: By setting the <code>data-icon</code> attribute on the specific cell, compare to the <a href=\"/patterns/base-icons/index.html\">icons description</a>.</p>\n","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"table"},"patternExtension":"hbs","patternName":"Table - icons","patternPartial":"components-table-icons","patternState":"inreview","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="components-table-overflow-menu" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/components-table-table-overflow-menu&#x2F;components-table-table-overflow-menu.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-table-overflow-menu" title="Link to Pattern">
+						Table Overflow Menu
+		
+						<span class="pl-c-pattern-state pl-c-pattern-state--inreview" title="inreview"></span>
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-table-overflow-menu" data-patternpartial="components-table-overflow-menu" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-table-overflow-menu">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			
+<table class="cmp-table "
+	
+	
+	
+	
+	>
+	<caption>
+		Table title
+	</caption>
+	<thead>
+		<tr>
+			
+			<th scope="col">The table header 01</th>
+			<th scope="col">The table header 02</th>
+		</tr>
+	</thead>
+	<tbody>
+			<tr>
+				
+				<td>Value 01 - 01</td>
+				<td>Value 01 - 02</td>
+				<td>
+<details class="cmp-overflow-menu">
+	<summary></summary>
+	<menu type="toolbar">
+		<li><button class="elm-button "
+	
+	
+	title=""
+	type="button"
+	
+	
+	
+	
+	>
+	Edit
+</button>
+</li>
+		<li><button class="elm-button "
+	
+	
+	title=""
+	type="button"
+	
+	
+	
+	
+	>
+	Delete
+</button>
+</li>
+	</menu>
+</details>
+</td>
+			</tr>
+			<tr>
+				
+				<td>Value 02 - 01</td>
+				<td>Value 02 - 02</td>
+				<td>
+<details class="cmp-overflow-menu">
+	<summary></summary>
+	<menu type="toolbar">
+		<li><button class="elm-button "
+	
+	
+	title=""
+	type="button"
+	
+	
+	
+	
+	>
+	Edit
+</button>
+</li>
+		<li><button class="elm-button "
+	
+	
+	title=""
+	type="button"
+	
+	
+	
+	
+	>
+	Delete
+</button>
+</li>
+	</menu>
+</details>
+</td>
+			</tr>
+			<tr>
+				
+				<td>Value 03 - 01</td>
+				<td>Value 03 - 02</td>
+				<td>
+<details class="cmp-overflow-menu">
+	<summary></summary>
+	<menu type="toolbar">
+		<li><button class="elm-button "
+	
+	
+	title=""
+	type="button"
+	
+	
+	
+	
+	>
+	Edit
+</button>
+</li>
+		<li><button class="elm-button "
+	
+	
+	title=""
+	type="button"
+	
+	
+	
+	
+	>
+	Delete
+</button>
+</li>
+	</menu>
+</details>
+</td>
+			</tr>
+			<tr>
+				
+				<td>Value 04 - 01</td>
+				<td>Value 04 - 02</td>
+				<td>
+<details class="cmp-overflow-menu">
+	<summary></summary>
+	<menu type="toolbar">
+		<li><button class="elm-button "
+	
+	
+	title=""
+	type="button"
+	
+	
+	
+	
+	>
+	Edit
+</button>
+</li>
+		<li><button class="elm-button "
+	
+	
+	title=""
+	type="button"
+	
+	
+	
+	
+	>
+	Delete
+</button>
+</li>
+	</menu>
+</details>
+</td>
+			</tr>
+			<tr>
+				
+				<td>Value 05 - 01</td>
+				<td>Value 05 - 02</td>
+				<td>
+<details class="cmp-overflow-menu">
+	<summary></summary>
+	<menu type="toolbar">
+		<li><button class="elm-button "
+	
+	
+	title=""
+	type="button"
+	
+	
+	
+	
+	>
+	Edit
+</button>
+</li>
+		<li><button class="elm-button "
+	
+	
+	title=""
+	type="button"
+	
+	
+	
+	
+	>
+	Delete
+</button>
+</li>
+	</menu>
+</details>
+</td>
+			</tr>
+	</tbody>
+</table>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-components-table-overflow-menu" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"}],"lineage":[{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"table"},"patternExtension":"hbs","patternName":"Table Overflow Menu","patternPartial":"components-table-overflow-menu","patternState":"inreview","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="components-table-row-title" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/components-table-table-row-title&#x2F;components-table-table-row-title.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-table-row-title" title="Link to Pattern">
+						Table Row Title
+		
+						<span class="pl-c-pattern-state pl-c-pattern-state--inreview" title="inreview"></span>
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-table-row-title" data-patternpartial="components-table-row-title" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-table-row-title">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			
+<table class="cmp-table "
+	
+	
+	
+	
+	>
+	<caption>
+		Table title
+	</caption>
+	<thead>
+		<tr>
+			<th scope="col">Column header</th>
+			<th scope="col">The table header 01</th>
+			<th scope="col">The table header 02</th>
+		</tr>
+	</thead>
+	<tbody>
+			<tr>
+				<th scope="row">table header</th>
+				<td>Value 01 - 01</td>
+				<td>Value 01 - 02</td>
+				
+			</tr>
+			<tr>
+				<th scope="row">table header</th>
+				<td>Value 02 - 01</td>
+				<td>Value 02 - 02</td>
+				
+			</tr>
+			<tr>
+				<th scope="row">table header</th>
+				<td>Value 03 - 01</td>
+				<td>Value 03 - 02</td>
+				
+			</tr>
+			<tr>
+				<th scope="row">table header</th>
+				<td>Value 04 - 01</td>
+				<td>Value 04 - 02</td>
+				
+			</tr>
+			<tr>
+				<th scope="row">table header</th>
+				<td>Value 05 - 01</td>
+				<td>Value 05 - 02</td>
+				
+			</tr>
+	</tbody>
+</table>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-components-table-row-title" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"}],"lineage":[{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"table"},"patternExtension":"hbs","patternName":"Table Row Title","patternPartial":"components-table-row-title","patternState":"inreview","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="components-table-rows-zebra" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/components-table-table-rows-zebra&#x2F;components-table-table-rows-zebra.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-table-rows-zebra" title="Link to Pattern">
+						Table - row zebra styling
+		
+						<span class="pl-c-pattern-state pl-c-pattern-state--inreview" title="inreview"></span>
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-table-rows-zebra" data-patternpartial="components-table-rows-zebra" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-table-rows-zebra">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			
+<table class="cmp-table "
+	
+	 data-rows="zebra"
+	
+	
+	>
+	<caption>
+		Table title
+	</caption>
+	<thead>
+		<tr>
+			
+			<th scope="col">The table header 01</th>
+			<th scope="col">The table header 02</th>
+		</tr>
+	</thead>
+	<tbody>
+			<tr>
+				
+				<td>Value 01 - 01</td>
+				<td>Value 01 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 02 - 01</td>
+				<td>Value 02 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 03 - 01</td>
+				<td>Value 03 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 04 - 01</td>
+				<td>Value 04 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 05 - 01</td>
+				<td>Value 05 - 02</td>
+				
+			</tr>
+	</tbody>
+</table>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-components-table-rows-zebra" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"}],"lineage":[{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"<p>To highlight every other table row, set <code>data-rows=&quot;zebra&quot;</code> on the table element.</p>\n","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"table"},"patternExtension":"hbs","patternName":"Table - row zebra styling","patternPartial":"components-table-rows-zebra","patternState":"inreview","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="components-table-sticky-header" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/components-table-table-sticky-header&#x2F;components-table-table-sticky-header.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-table-sticky-header" title="Link to Pattern">
+						Table - sticky header
+		
+						<span class="pl-c-pattern-state pl-c-pattern-state--inreview" title="inreview"></span>
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-table-sticky-header" data-patternpartial="components-table-sticky-header" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-table-sticky-header">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			
+<table class="cmp-table "
+	
+	
+	
+	
+	 data-sticky="header">
+	<caption>
+		Table title
+	</caption>
+	<thead>
+		<tr>
+			
+			<th scope="col">The table header 01</th>
+			<th scope="col">The table header 02</th>
+		</tr>
+	</thead>
+	<tbody>
+			<tr>
+				
+				<td>Value 01 - 01</td>
+				<td>Value 01 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 02 - 01</td>
+				<td>Value 02 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 03 - 01</td>
+				<td>Value 03 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 04 - 01</td>
+				<td>Value 04 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 05 - 01</td>
+				<td>Value 05 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 01 - 01</td>
+				<td>Value 01 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 02 - 01</td>
+				<td>Value 02 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 03 - 01</td>
+				<td>Value 03 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 04 - 01</td>
+				<td>Value 04 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 05 - 01</td>
+				<td>Value 05 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 01 - 01</td>
+				<td>Value 01 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 02 - 01</td>
+				<td>Value 02 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 03 - 01</td>
+				<td>Value 03 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 04 - 01</td>
+				<td>Value 04 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 05 - 01</td>
+				<td>Value 05 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 01 - 01</td>
+				<td>Value 01 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 02 - 01</td>
+				<td>Value 02 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 03 - 01</td>
+				<td>Value 03 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 04 - 01</td>
+				<td>Value 04 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 05 - 01</td>
+				<td>Value 05 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 01 - 01</td>
+				<td>Value 01 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 02 - 01</td>
+				<td>Value 02 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 03 - 01</td>
+				<td>Value 03 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 04 - 01</td>
+				<td>Value 04 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 05 - 01</td>
+				<td>Value 05 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 01 - 01</td>
+				<td>Value 01 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 02 - 01</td>
+				<td>Value 02 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 03 - 01</td>
+				<td>Value 03 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 04 - 01</td>
+				<td>Value 04 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 05 - 01</td>
+				<td>Value 05 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 01 - 01</td>
+				<td>Value 01 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 02 - 01</td>
+				<td>Value 02 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 03 - 01</td>
+				<td>Value 03 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 04 - 01</td>
+				<td>Value 04 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 05 - 01</td>
+				<td>Value 05 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 01 - 01</td>
+				<td>Value 01 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 02 - 01</td>
+				<td>Value 02 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 03 - 01</td>
+				<td>Value 03 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 04 - 01</td>
+				<td>Value 04 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 05 - 01</td>
+				<td>Value 05 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 01 - 01</td>
+				<td>Value 01 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 02 - 01</td>
+				<td>Value 02 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 03 - 01</td>
+				<td>Value 03 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 04 - 01</td>
+				<td>Value 04 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 05 - 01</td>
+				<td>Value 05 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 01 - 01</td>
+				<td>Value 01 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 02 - 01</td>
+				<td>Value 02 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 03 - 01</td>
+				<td>Value 03 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 04 - 01</td>
+				<td>Value 04 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 05 - 01</td>
+				<td>Value 05 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 01 - 01</td>
+				<td>Value 01 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 02 - 01</td>
+				<td>Value 02 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 03 - 01</td>
+				<td>Value 03 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 04 - 01</td>
+				<td>Value 04 - 02</td>
+				
+			</tr>
+			<tr>
+				
+				<td>Value 05 - 01</td>
+				<td>Value 05 - 02</td>
+				
+			</tr>
+	</tbody>
+</table>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-components-table-sticky-header" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"}],"lineage":[{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"<p>You could set the header cells to appear sticky on scrolling, which is especially useful on longer tables with a lot of rows, by setting the <code>data-sticky=&quot;header&quot;</code> attribute on the table.</p>\n","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"table"},"patternExtension":"hbs","patternName":"Table - sticky header","patternPartial":"components-table-sticky-header","patternState":"inreview","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+
+	</div>
+	<!--end pl-c-pattern-index-->
+
+</div>
+<!--end pl-c-main-->		<!--DO NOT REMOVE-->
+		<script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"patternPartial":"viewall-components-table"}
+</script>
+
+<script>
+  window.patternData = {"patternPartial":"viewall-components-table"};
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1706182387363">
+  (function() {
+    if (self != top) {
+      var cb = '1706182387363';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+
+<script type="module">
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  import('../../styleguide/js/patternlab-pattern.modern.js');
+</script>
+
+<script id="pl-js-insert-1706182387363" nomodule>
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  loadJS('../../styleguide/js/patternlab-pattern.js');
+</script>
+
+
+		<script src="../../js/plugins.min.js"></script>
+		<!-- details/summary polyfill //-->
+		<script src="../../js/details-element-polyfill.js"></script>
+		<!-- dialog polyfill //-->
+		<script src="../../js/dialog-polyfill.js"></script>
+		<script src="../../js/main.min.js"></script>
+	</body>
+
+</html>
