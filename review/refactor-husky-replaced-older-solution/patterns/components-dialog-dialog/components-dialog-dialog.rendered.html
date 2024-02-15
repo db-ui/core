@@ -1,0 +1,189 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>DB UI Core - Pattern Lab</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+	<script>document.documentElement.className = 'js ' + document.documentElement.className.replace(/\bno-js\b/, '')</script>
+
+	<!-- see https://htmlhead.dev/ for a description of what could get listed within your pages HEAD section //-->
+
+
+	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1707980019590" media="all">
+
+	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1707980019590" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1707980019590" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1707980019590" media="all">
+	<!-- dialog polyfill //-->
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1707980019590" media="all">
+
+	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+	
+	<!-- End Pattern Lab -->
+
+
+	<!-- Google's "Create good meta descriptions" / https://support.google.com/webmasters/answer/35624?hl=en#meta-descriptions
+documentation has useful tips on creating an effective description. //-->
+	<meta name="Description" content="Put your description here.">
+
+	<!-- You can add the theme-color meta extension in the <head> of your pages to suggest the color that browsers and OSes should use if they customize the display of individual pages in their UIs with varying colors.
+			more information: https://html.spec.whatwg.org/multipage/semantics.html#meta-theme-color -->
+	<meta name="theme-color" content="#f01414">
+
+	<!-- iframe resizing script for pattern previews -->
+	<script src="../../js/iframeResizer.contentWindow.js"></script>
+</head>
+
+<body class="styleguide">
+<a
+	href="#dialog01"
+	class="elm-link "
+	title="Title text"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	>Dialog öffnen
+</a>
+<dialog id="dialog01" class="cmp-dialog">
+	<header>
+		<!-- [html-validate-disable-next heading-level] -->
+		<!-- [html-validate-disable-next heading-level, no-unused-disable -- we're doing some simple demonstration simplification here] -->
+		<h2 class="elm-headline ">Modal</h2>
+		<a
+			href="#"
+			class="elm-link is-close"
+			title="Close the dialog"
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			>Close
+		</a>
+	</header>
+	<main>
+		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+	</main>
+	<footer>
+		<button class="elm-button "
+			data-variant="secondary"
+			
+			title="Title text"
+			type="button"
+			
+			
+			
+			
+			>
+			Secondary
+		</button>
+		<button class="elm-button "
+			data-variant="brand-primary"
+			
+			title="Title text"
+			type="button"
+			
+			
+			
+			
+			>
+			Primary
+		</button>
+	</footer>
+</dialog>
+		<!--DO NOT REMOVE-->
+		<script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-link","lineagePath":"../../patterns/elements-link-_link/elements-link-_link.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-headline","lineagePath":"../../patterns/elements-headline-headline/elements-headline-headline.rendered.html"},{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"lineage":[{"lineagePattern":"elements-link","lineagePath":"../../patterns/elements-link-_link/elements-link-_link.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-headline","lineagePath":"../../patterns/elements-headline-headline/elements-headline-headline.rendered.html"},{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"<h2>Usage notes</h2>\n<p>The <code>&lt;dialog&gt;</code> element is a native HTML element that provides a common JavaScript API with events, properties and methods: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement\">https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement</a></p>\n<blockquote>\n<p>The <code>::backdrop</code> CSS pseudo-element can be used to style behind a <code>&lt;dialog&gt;</code> element, for example to dim inaccessible content whilst a modal dialog is active. The backdrop is only drawn when the dialog element is displayed with <code>HTMLDialogElement.showModal()</code>.</p>\n</blockquote>\n<blockquote>\n<p><code>&lt;form&gt;</code> elements can be integrated within a dialog by specifying them with the attribute <code>method=&quot;dialog&quot;</code>. When such a form is submitted, the dialog is closed with its <code>returnValue</code> attribute set to the <code>value</code> of the form's submit button that was used.</p>\n</blockquote>\n<p>Source: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog#Usage_notes\">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog#Usage_notes</a></p>\n<h2>JavaScript dependencies</h2>\n<ul>\n<li>Dialog polyfill: As some <a href=\"https://caniuse.com/#feat=dialog\">older browsers don't fully support the native dialog HTML tag so far</a> we'll <a href=\"https://github.com/GoogleChrome/dialog-polyfill\">have to use a polyfill</a>, that is being included into the file <code>source/js/plugins.min.js</code> during build, as well as <a href=\"https://gist.github.com/samthor/babe9fad4a65625b301ba482dad284d1\">a snippet that enforces to return focus to the previously focused element on the page after closing the dialog</a>, which is included within <code>source/js/plugins.min.js</code> as well. Good news: With Safari 15.4 the last remaining of the modern browsers shipped the <code>dialog</code> elements support: <a href=\"https://webkit.org/blog/12209/introducing-the-dialog-element/\">https://webkit.org/blog/12209/introducing-the-dialog-element/</a></li>\n<li>The dialog polyfill itself is being initialized via our individually developed <a href=\"https://github.com/db-ui/core/blob/main/source/_patterns/02-components/dialog/dialog.script.js\"><code>dialog.script.js</code></a>, which is being included into <code>source/js/main.min.js</code>during build.</li>\n</ul>\n<p><strong>Please feel free to include and initialize all of those scripts according to your JavaScript ecosystem individually, and especially develop the logic out of <a href=\"https://github.com/db-ui/core/blob/main/source/_patterns/02-components/dialog/dialog.script.js\"><code>dialog.script.js</code></a> on your own for your specific context and techstack.</strong></p>\n<h2>Accessibility</h2>\n<p>This pattern has been tested and approved regarding accessibility.</p>\n","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"dialog"},"patternExtension":"hbs","patternName":"Dialog","patternPartial":"components-dialog","patternState":"inreview","patternEngineName":"handlebars","extraOutput":{}}
+</script>
+
+<script>
+  window.patternData = {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-link","lineagePath":"../../patterns/elements-link-_link/elements-link-_link.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-headline","lineagePath":"../../patterns/elements-headline-headline/elements-headline-headline.rendered.html"},{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"lineage":[{"lineagePattern":"elements-link","lineagePath":"../../patterns/elements-link-_link/elements-link-_link.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-headline","lineagePath":"../../patterns/elements-headline-headline/elements-headline-headline.rendered.html"},{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"<h2>Usage notes</h2>\n<p>The <code>&lt;dialog&gt;</code> element is a native HTML element that provides a common JavaScript API with events, properties and methods: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement\">https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement</a></p>\n<blockquote>\n<p>The <code>::backdrop</code> CSS pseudo-element can be used to style behind a <code>&lt;dialog&gt;</code> element, for example to dim inaccessible content whilst a modal dialog is active. The backdrop is only drawn when the dialog element is displayed with <code>HTMLDialogElement.showModal()</code>.</p>\n</blockquote>\n<blockquote>\n<p><code>&lt;form&gt;</code> elements can be integrated within a dialog by specifying them with the attribute <code>method=&quot;dialog&quot;</code>. When such a form is submitted, the dialog is closed with its <code>returnValue</code> attribute set to the <code>value</code> of the form's submit button that was used.</p>\n</blockquote>\n<p>Source: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog#Usage_notes\">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog#Usage_notes</a></p>\n<h2>JavaScript dependencies</h2>\n<ul>\n<li>Dialog polyfill: As some <a href=\"https://caniuse.com/#feat=dialog\">older browsers don't fully support the native dialog HTML tag so far</a> we'll <a href=\"https://github.com/GoogleChrome/dialog-polyfill\">have to use a polyfill</a>, that is being included into the file <code>source/js/plugins.min.js</code> during build, as well as <a href=\"https://gist.github.com/samthor/babe9fad4a65625b301ba482dad284d1\">a snippet that enforces to return focus to the previously focused element on the page after closing the dialog</a>, which is included within <code>source/js/plugins.min.js</code> as well. Good news: With Safari 15.4 the last remaining of the modern browsers shipped the <code>dialog</code> elements support: <a href=\"https://webkit.org/blog/12209/introducing-the-dialog-element/\">https://webkit.org/blog/12209/introducing-the-dialog-element/</a></li>\n<li>The dialog polyfill itself is being initialized via our individually developed <a href=\"https://github.com/db-ui/core/blob/main/source/_patterns/02-components/dialog/dialog.script.js\"><code>dialog.script.js</code></a>, which is being included into <code>source/js/main.min.js</code>during build.</li>\n</ul>\n<p><strong>Please feel free to include and initialize all of those scripts according to your JavaScript ecosystem individually, and especially develop the logic out of <a href=\"https://github.com/db-ui/core/blob/main/source/_patterns/02-components/dialog/dialog.script.js\"><code>dialog.script.js</code></a> on your own for your specific context and techstack.</strong></p>\n<h2>Accessibility</h2>\n<p>This pattern has been tested and approved regarding accessibility.</p>\n","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"dialog"},"patternExtension":"hbs","patternName":"Dialog","patternPartial":"components-dialog","patternState":"inreview","patternEngineName":"handlebars","extraOutput":{}};
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1707980019590">
+  (function() {
+    if (self != top) {
+      var cb = '1707980019590';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+
+<script type="module">
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  import('../../styleguide/js/patternlab-pattern.modern.js');
+</script>
+
+<script id="pl-js-insert-1707980019590" nomodule>
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  loadJS('../../styleguide/js/patternlab-pattern.js');
+</script>
+
+
+		<script src="../../js/plugins.min.js"></script>
+		<!-- details/summary polyfill //-->
+		<script src="../../js/details-element-polyfill.js"></script>
+		<!-- dialog polyfill //-->
+		<script src="../../js/dialog-polyfill.js"></script>
+		<script src="../../js/main.min.js"></script>
+	</body>
+
+</html>
