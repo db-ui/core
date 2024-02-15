@@ -64,7 +64,7 @@
     "@babel/cli": "^7.23.9",
     "@babel/preset-env": "^7.23.9",
     "@commitlint/cli": "^18.6.1",
-    "@commitlint/config-conventional": "^18.6.1",
+    "@commitlint/config-conventional": "^18.6.2",
     "@mfranzke/plugin-node-uiextension": "^1.0.0",
     "@pattern-lab/cli": "^6.1.0",
     "@pattern-lab/core": "^6.0.1",
