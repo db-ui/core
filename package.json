@@ -44,7 +44,7 @@
     "build": "rimraf dist && npm-run-all css-deploy js-deploy pl:build:* --parallel copy-assets copy-scss-sources",
     "start": "npm-run-all --parallel pl:serve:enterprise css-watch js-watch",
     "stylelint-check": "stylelint-config-prettier-check",
-    "prepare": "node -e \"try { require('husky').install() } catch (e) {}\""
+    "prepare": "husky"
   },
   "validate-branch-name": {
     "pattern": "((dependabot-)|^((test|feat|fix|chore|docs|refactor|style|ci|perf|[0-9]+)\\-[a-zA-Z0-9\\-]+)$)",
