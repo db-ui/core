@@ -72,7 +72,7 @@
     "@pattern-lab/starterkit-handlebars-demo": "^6.1.0",
     "@pattern-lab/uikit-workshop": "^6.1.0",
     "autoprefixer": "^10.4.17",
-    "backstopjs": "^6.3.6",
+    "backstopjs": "^6.3.7",
     "cpr": "^3.0.1",
     "cssnano": "^6.0.3",
     "details-element-polyfill": "^2.4.0",
