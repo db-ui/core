@@ -337,9 +337,19 @@
 			"onReadyScript": "puppet/clickAndHoverHelper.js"
 		},
 		{
+			"label": "Components – Sidenavi",
+			"url": "http://127.0.0.1:8080/patterns/components-sidenavi/index.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-sidenavi/index.html"
+		},
+		{
 			"label": "Components – Table",
 			"url": "http://127.0.0.1:8080/patterns/components-table/index.html",
 			"referenceUrl": "https://db-ui.github.io/core/patterns/components-table/index.html"
+		},
+		{
+			"label": "Components – Tab Bar",
+			"url": "http://127.0.0.1:8080/patterns/components-tab-bar/index.html",
+			"referenceUrl": "https://db-ui.github.io/core/patterns/components-tab-bar/index.html"
 		},
 		{
 			"label": "Areas - Header",
