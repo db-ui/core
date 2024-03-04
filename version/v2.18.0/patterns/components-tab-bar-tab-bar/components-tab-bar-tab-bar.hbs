@@ -1,0 +1,12 @@
+{{! TODO: evaluate on the correct role and aria-label in here }}
+<div class="cmp-tab-bar" role="tablist">
+	<!-- Pay attention to use a component wide, but component instance specific name to the following input[type="radio"] elements //-->
+	{{#each tabs }}
+		<input type="radio" name="cmp-tab-bar-tabs-01" id="radio_{{ @index }}" {{#if active }} checked{{/if }}{{#if disabled }}
+			disabled{{/if }}>
+		<label for="radio_{{ @index }}" role="tab">{{ @index }}</label>
+		<section id="content_{{ @index }}" role="tabpanel">
+			{{ content }}
+		</section>
+	{{/each }}
+</div>
