@@ -58,7 +58,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "@csstools/normalize.css": "^12.1.1",
-    "@db-ui/base": "^0.27.0"
+    "@db-ui/base": "^0.27.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.23.9",
