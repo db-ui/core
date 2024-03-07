@@ -320,7 +320,9 @@ $icon-glyphs-personenverkehr: (
 	"transportation-taxi": "\e90c",
 	"transportation-train-tram": "\e90d",
 	"transportation-underground": "\e90e",
-	"transportation-walking": "\e90f"
+	"transportation-walking": "\e90f",
+	"ev-bus": "\e928",
+	"ev-train": "\e929"
 ) !default;
 
 $icon-font-families-personenverkehr: (
@@ -380,7 +382,7 @@ $icon-font-families-personenverkehr: (
 				"U+1F907,U+2714,U+e1131-e1132,U+e1134,U+e1136-e1146,U+e1184-e1186,U+e1218,U+e1286-e1287,U+e1298"
 			),
 			"transportation": (
-				"U+e1147-e1148,U+e1151,U+e1159,U+e1190-e1210,U+e1216,U+e1219,U+e1239-e1241,U+e1288"
+				"U+e1147-e1148,U+e1151,U+e1159,U+e1190-e1210,U+e1216,U+e1219,U+e1239-e1241,U+e1288,U+e928-e929"
 			)
 		),
 		24: (
