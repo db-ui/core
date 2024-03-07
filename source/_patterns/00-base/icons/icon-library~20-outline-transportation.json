@@ -30,7 +30,13 @@
 			"icon-glyph": "electric-scooter"
 		},
 		{
+			"icon-glyph": "ev-bus"
+		},
+		{
 			"icon-glyph": "ev-car"
+		},
+		{
+			"icon-glyph": "ev-train"
 		},
 		{
 			"icon-glyph": "ferry"
