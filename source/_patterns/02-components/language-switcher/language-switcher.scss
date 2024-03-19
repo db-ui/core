@@ -22,7 +22,7 @@
 	}
 
 	li {
-		background-color: #fdfdfd; // TODO: This would need to get replaced by the correct (semantic) color
+		background-color: var(--db-element---backgroundColor);
 
 		position: absolute;
 

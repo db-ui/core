@@ -23,6 +23,12 @@
 				margin: to-rem($pxValue: 4);
 				padding: to-rem($pxValue: 32);
 
+				&.DO-NOT-COPY-THIS-CLASS-example-bg-variants-regular {
+					@media (prefers-color-scheme: dark) {
+						--db-icon-color: #fff;
+					}
+				}
+
 				&.DO-NOT-COPY-THIS-CLASS-example-bg-variants-turquoise {
 					background-color: $db-color-turquoise-400;
 				}

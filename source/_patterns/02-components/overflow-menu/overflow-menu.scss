@@ -2,7 +2,9 @@
 @import "overflow-menu.variables";
 
 .cmp-overflow-menu {
-	color: #2d333f; // TODO: replace by correct color
+	@media (prefers-color-scheme: light) {
+		color: #2d333f; // TODO: replace by correct color
+	}
 	display: inline-block;
 	position: relative;
 
@@ -31,7 +33,9 @@
 		&:hover,
 		&:focus {
 			&::before {
-				background-color: $db-color-cool-gray-200;
+				@media (prefers-color-scheme: light) {
+					background-color: $db-color-cool-gray-200;
+				}
 			}
 		}
 
