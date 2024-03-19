@@ -13,14 +13,20 @@
 	}
 
 	summary {
-		@include icon(
-			$cmp-overflow-menu-icon,
-			20,
-			"outline",
-			$partial: $partial
-		);
-
 		display: inline-block;
+
+		&:not([data-icon]) {
+			@include icon(
+				$cmp-overflow-menu-icon,
+				20,
+				"outline",
+				$partial: $partial
+			);
+		}
+		// Possibility to define an individual icon
+		&[data-icon] {
+			@include icon("", 20, "outline", $partial: $partial);
+		}
 
 		&::before {
 			display: inline-block;
