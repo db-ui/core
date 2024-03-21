@@ -71,7 +71,7 @@
     "@pattern-lab/engine-handlebars": "^6.1.0",
     "@pattern-lab/starterkit-handlebars-demo": "^6.1.0",
     "@pattern-lab/uikit-workshop": "^6.1.0",
-    "autoprefixer": "^10.4.18",
+    "autoprefixer": "^10.4.19",
     "backstopjs": "^6.3.23",
     "cpr": "^3.0.1",
     "cssnano": "^6.1.0",
