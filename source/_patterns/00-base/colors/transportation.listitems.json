@@ -27,8 +27,8 @@
 		},
 		{
 			"name": "S-Bahn",
-			"hex": "#2a7230",
-			"scssvariable": "$db-color-s-bahn: $db-color-green-600"
+			"hex": "#408335",
+			"scssvariable": "$db-color-s-bahn: $db-color-green-500"
 		},
 		{
 			"name": "U-Bahn",
