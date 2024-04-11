@@ -1,0 +1,24 @@
+<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+<input type="text"
+	class="elm-input "
+	placeholder="Projekt Name"
+	name="input16"
+	id="input16"
+	
+	value=""
+	
+	
+	
+	
+	aria-labelledby="input16-label"
+	
+	 maxlength="100"
+	oninput="result_input16.value=this.value.length+'/'+this.attributes.maxlength.value">
+<label class="elm-label"
+	for="input16"
+	aria-hidden="true"
+	id="input16-label"
+	>Textlabel</label>
+
+
+<output for="input16" id="result_input16"></output>

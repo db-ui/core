@@ -11,7 +11,9 @@
 	{{{ validation }}}
 	{{#if datalist }} list="datalist{{ id }}"{{/if }}
 	aria-labelledby="{{ id }}-label"
-	{{#if variant}} data-variant="{{variant}}"{{/if }}>
+	{{#if variant}} data-variant="{{variant}}"{{/if }}
+	{{#if maxlength }} maxlength="{{ maxlength }}"
+	oninput="result_{{ id }}.value=this.value.length+'/'+this.attributes.maxlength.value"{{/if }}>
 <label class="elm-label"
 	for="{{ id }}"
 	aria-hidden="true"
@@ -23,3 +25,4 @@
 		<option{{#if value }} value="{{ value }}"{{/if }}>{{ text }}</option>
 	{{/each }}
 </datalist>{{/if }}
+{{#if maxlength }}<output for="{{ id }}" id="result_{{ id }}"></output>{{/if }}
