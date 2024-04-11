@@ -61,21 +61,10 @@
 		}
 	}
 
-	// TODO: Evaluate whether those could get moved to ../_form-elements.scss
 	& + output {
-		// amount of signs output
+		@extend %form-element-counter;
+
 		float: right;
-
-		margin-top: to-rem($pxValue: 12);
-
-		// Description styles
-		// TODO: This probably still needs to get further changed to a general "hint" pattern or similar
-		&,
-		& + .description {
-			color: $db-color-cool-gray-500;
-			font-size: to-rem($pxValue: 14);
-			padding: to-rem($pxValue: 6) to-rem($pxValue: 10);
-		}
 	}
 
 	// ### Style variations

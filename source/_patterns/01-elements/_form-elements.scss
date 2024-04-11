@@ -110,3 +110,19 @@
 		--formElement---borderColor: #{$db-color-red-500};
 	}
 }
+
+// counter styling
+%form-element-counter {
+	margin-top: to-rem($pxValue: 12);
+
+	// TODO: add CSS anchor positioning
+
+	// Description styles
+	// TODO: This probably still needs to get further changed to a general "hint" pattern or similar
+	&,
+	& + .description {
+		color: $db-color-cool-gray-500;
+		font-size: to-rem($pxValue: 14);
+		padding: to-rem($pxValue: 6) to-rem($pxValue: 10);
+	}
+}
