@@ -19,10 +19,10 @@
 	aria-hidden="true"
 	id="{{ id }}-label"
 	{{#if labelHidden }} data-label-hidden="true"{{/if }}>{{ label }}</label>
+{{#if maxlength }}<output for="{{ id }}" id="result_{{ id }}" anchor="{{ id }}"></output>{{/if }}
 {{#if description }}<p{{#if describedbyid }} id="{{ describedbyid }}"{{/if }} class="description">{{{ description }}}</p>{{/if }}
 {{#if datalist }}<datalist id="datalist{{ id }}">
 	{{#each datalistItems }}
 		<option{{#if value }} value="{{ value }}"{{/if }}>{{ text }}</option>
 	{{/each }}
 </datalist>{{/if }}
-{{#if maxlength }}<output for="{{ id }}" id="result_{{ id }}"></output>{{/if }}
