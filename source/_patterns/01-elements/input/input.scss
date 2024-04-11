@@ -106,7 +106,8 @@
 			margin-bottom: -#{to-rem($pxValue: 18)};
 			transform: translate($db-spacing-m, -#{to-rem($pxValue: 41)});
 
-			& + .description {
+			& + output,
+			& ~ .description {
 				margin-top: 0;
 			}
 		}
