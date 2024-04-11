@@ -1,0 +1,7 @@
+{
+	"type": "text",
+	"placeholder": "Projekt Name",
+	"id": "input16",
+	"label": "Textlabel",
+	"maxlength": "100"
+}
