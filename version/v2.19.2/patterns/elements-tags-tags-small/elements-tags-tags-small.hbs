@@ -1,0 +1,14 @@
+{{! TODO: The following conditional construct should obviously get simplified in the future }}
+{{> elements-tag label="Default" }}
+{{#each variants }}
+	{{> elements-tag size=../size icon=../icon }}
+{{/each}}
+
+{{#unless icon}}
+	<!-- [html-validate-disable-next heading-level] -->
+	{{> elements-headline type="3" text="POIs" }}
+
+	{{#each pois }}
+		{{> elements-tag size=../size }}
+	{{/each}}
+{{/unless }}
