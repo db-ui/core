@@ -146,19 +146,19 @@
 		@extend %form-element-validation;
 		@extend %form-element-validation-programmatic;
 		/* stylelint-enable order/order */
+	}
 
-		&:is(
-				[type="email"],
-				[type="password"],
-				[type="search"],
-				[type="tel"],
-				[type="text"],
-				[type="url"]
-			)
-			+ label
-			+ output {
-			@extend %form-element-counter;
-		}
+	&:is(
+			[type="email"],
+			[type="password"],
+			[type="search"],
+			[type="tel"],
+			[type="text"],
+			[type="url"]
+		)
+		+ label
+		+ output {
+		@extend %form-element-counter;
 	}
 
 	&[type="search"] {
