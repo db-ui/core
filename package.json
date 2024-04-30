@@ -62,7 +62,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.24.5",
-    "@babel/preset-env": "^7.24.4",
+    "@babel/preset-env": "^7.24.5",
     "@commitlint/cli": "^19.2.2",
     "@commitlint/config-conventional": "^19.2.2",
     "@mfranzke/plugin-node-uiextension": "^1.0.0",
