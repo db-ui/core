@@ -5,6 +5,13 @@
 @import "../form-elements";
 
 .elm-checkbox {
+	--db-form-element-dimensions: var(
+		--db-checkbox-dimensions,
+		#{to-rem($pxValue: 24)}
+	);
+
+	@extend %form-element-enhanced-clickable-area;
+
 	@include icon("\00A0", 24, "outline", $partial: $partial);
 	align-content: center;
 
@@ -15,9 +22,9 @@
 	color: $checkbox---color;
 
 	display: inline-flex;
-	height: to-rem($pxValue: 24);
+	height: var(--db-form-element-dimensions);
 	justify-content: center;
-	width: to-rem($pxValue: 24);
+	width: var(--db-form-element-dimensions);
 
 	&[type="checkbox"] {
 		vertical-align: top;
@@ -67,6 +74,6 @@
 	& + label {
 		@extend %form-label;
 
-		margin-left: $db-spacing-xs;
+		padding-inline-start: $db-spacing-xs;
 	}
 }
