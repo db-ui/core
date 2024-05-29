@@ -140,7 +140,7 @@
 	&:has(+ label) {
 		&::after {
 			content: "";
-			width: calc(var(--db-form-element-dimensions) + 4px);
+			width: calc(var(--db-form-element-dimensions) + #{to-rem($pxValue: 4));
 			height: var(--db-form-element-dimensions);
 			transform: translateX(4px);
 			position: absolute;
