@@ -142,7 +142,7 @@
 			content: "";
 			width: calc(var(--db-form-element-dimensions) + #{to-rem($pxValue: 4));
 			height: var(--db-form-element-dimensions);
-			transform: translateX(4px);
+			transform: translateX(#{to-rem($pxValue: 4));
 			position: absolute;
 		}
 	}
