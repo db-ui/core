@@ -61,8 +61,8 @@
     "@db-ui/base": "^0.27.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.24.5",
-    "@babel/preset-env": "^7.24.5",
+    "@babel/cli": "^7.24.6",
+    "@babel/preset-env": "^7.24.6",
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@mfranzke/plugin-node-uiextension": "^1.0.0",
@@ -83,9 +83,9 @@
     "html5-boilerplate": "^9.0.1",
     "husky": "^9.0.11",
     "iframe-resizer": "^4.3.11",
-    "lint-staged": "^15.2.4",
+    "lint-staged": "^15.2.5",
     "markdownlint-cli": "^0.40.0",
-    "nodemon": "^3.1.0",
+    "nodemon": "^3.1.1",
     "npm-run-all": "^4.1.5",
     "pa11y-ci": "^3.1.0",
     "plugin-node-patternlab-inline-remote-assets": "^0.2.0",
