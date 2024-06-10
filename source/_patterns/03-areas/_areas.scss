@@ -23,7 +23,7 @@ body.has-fixed-header {
 		top: 0;
 	}
 
-	@media screen and (max-width: 1023px) {
+	@media screen and (max-width: $db-narrower-screen-max-width) {
 		padding-top: to-rem($pxValue: 80);
 	}
 }
@@ -36,7 +36,7 @@ body.has-fixed-footer {
 		bottom: 0;
 	}
 
-	@media screen and (max-width: 1023px) {
+	@media screen and (max-width: $db-narrower-screen-max-width) {
 		padding-bottom: to-rem($pxValue: 94);
 	}
 }

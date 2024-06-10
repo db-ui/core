@@ -60,7 +60,7 @@
 	}
 
 	// Displaying the main navigation as an top to bottom overlay on smaller viewports
-	@media screen and (max-width: 1023px) {
+	@media screen and (max-width: $db-narrower-screen-max-width) {
 		background-color: $db-color-cool-gray-600;
 		left: 0;
 		position: absolute;
@@ -97,7 +97,7 @@
 			z-index: $z-index-rea-header-cmp-mainnavigation-submenu;
 		}
 
-		@media screen and (max-width: 1023px) {
+		@media screen and (max-width: $db-narrower-screen-max-width) {
 			display: none;
 		}
 	}
@@ -158,7 +158,7 @@
 				& > * > li {
 					& > .elm-link,
 					& > * > .elm-link {
-						@media screen and (max-width: 1023px) {
+						@media screen and (max-width: $db-narrower-screen-max-width) {
 							padding-left: to-rem($pxValue: 34);
 						}
 					}
@@ -169,7 +169,7 @@
 						& > * > li {
 							& > .elm-link,
 							& > * > .elm-link {
-								@media screen and (max-width: 1023px) {
+								@media screen and (max-width: $db-narrower-screen-max-width) {
 									padding-left: to-rem($pxValue: 60);
 								}
 							}
@@ -207,13 +207,13 @@
 			& > ul,
 			& > * > ul {
 				visibility: visible;
-				@media screen and (max-width: 1023px) {
+				@media screen and (max-width: $db-narrower-screen-max-width) {
 					display: initial;
 				}
 			}
 		}
 
-		@media screen and (max-width: 1023px) {
+		@media screen and (max-width: $db-narrower-screen-max-width) {
 			background-color: $db-color-cool-gray-600;
 			color: #fdfdfd; // TODO: This would need to get replaced by the correct (semantic) color
 

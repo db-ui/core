@@ -27,7 +27,7 @@
 			}
 		}
 	}
-	@media screen and (max-width: 1023px) {
+	@media screen and (max-width: $db-narrower-screen-max-width) {
 		.cmp-mainnavigation ~ & {
 			.rea-header & {
 				.is-site-name {
