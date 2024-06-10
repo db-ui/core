@@ -59,8 +59,7 @@
 		}
 	}
 
-	// Displaying the main navigation as an top to bottom overlay on smaller viewports
-	@media screen and (max-width: $db-narrower-screen-max-width) {
+	@mixin db-cmp-mainnavigation {
 		background-color: $db-color-cool-gray-600;
 		left: 0;
 		position: absolute;
@@ -82,6 +81,13 @@
 			}
 		}
 	}
+	// Displaying the main navigation as an top to bottom overlay on smaller viewports
+	@media screen and (max-width: $db-narrower-screen-max-width) {
+		@include db-cmp-mainnavigation;
+	}
+	@container style(--db-narrower-screen: true) {
+		@include db-cmp-mainnavigation;
+	}
 
 	ul {
 		background-color: $header---backgroundColor;
@@ -97,8 +103,14 @@
 			z-index: $z-index-rea-header-cmp-mainnavigation-submenu;
 		}
 
-		@media screen and (max-width: $db-narrower-screen-max-width) {
+		@mixin db-cmp-mainnavigation-ul-ul {
 			display: none;
+		}
+		@media screen and (max-width: $db-narrower-screen-max-width) {
+			@include db-cmp-mainnavigation-ul-ul;
+		}
+		@container style(--db-narrower-screen: true) {
+			@include db-cmp-mainnavigation-ul-ul;
 		}
 	}
 
@@ -158,8 +170,14 @@
 				& > * > li {
 					& > .elm-link,
 					& > * > .elm-link {
-						@media screen and (max-width: $db-narrower-screen-max-width) {
+						@mixin db-cmp-mainnavigation-ul-ul-li {
 							padding-left: to-rem($pxValue: 34);
+						}
+						@media screen and (max-width: $db-narrower-screen-max-width) {
+							@include db-cmp-mainnavigation-ul-ul-li;
+						}
+						@container style(--db-narrower-screen: true) {
+							@include db-cmp-mainnavigation-ul-ul-li;
 						}
 					}
 
@@ -169,8 +187,14 @@
 						& > * > li {
 							& > .elm-link,
 							& > * > .elm-link {
-								@media screen and (max-width: $db-narrower-screen-max-width) {
+								@mixin db-cmp-mainnavigation-ul-ul-ul-li {
 									padding-left: to-rem($pxValue: 60);
+								}
+								@media screen and (max-width: $db-narrower-screen-max-width) {
+									@include db-cmp-mainnavigation-ul-ul-ul-li;
+								}
+								@container style(--db-narrower-screen: true) {
+									@include db-cmp-mainnavigation-ul-ul-ul-li;
 								}
 							}
 						}
@@ -207,13 +231,20 @@
 			& > ul,
 			& > * > ul {
 				visibility: visible;
-				@media screen and (max-width: $db-narrower-screen-max-width) {
+
+				@mixin db-cmp-mainnavigation-li-hover {
 					display: initial;
+				}
+				@media screen and (max-width: $db-narrower-screen-max-width) {
+					@include db-cmp-mainnavigation-li-hover;
+				}
+				@container style(--db-narrower-screen: true) {
+					@include db-cmp-mainnavigation-li-hover;
 				}
 			}
 		}
 
-		@media screen and (max-width: $db-narrower-screen-max-width) {
+		@mixin db-cmp-mainnavigation-li {
 			background-color: $db-color-cool-gray-600;
 			color: #fdfdfd; // TODO: This would need to get replaced by the correct (semantic) color
 
@@ -238,6 +269,13 @@
 				position: relative;
 			}
 		}
+		@media screen and (max-width: $db-narrower-screen-max-width) {
+			@include db-cmp-mainnavigation-li;
+		}
+		@container style(--db-narrower-screen: true) {
+			@include db-cmp-mainnavigation-li;
+		}
+
 		@media screen and (min-width: 1024px) {
 			// Do not show Icon for menu on bigger screens
 			&[aria-haspopup="true"] {

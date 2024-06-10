@@ -26,8 +26,14 @@
 	.elm-link {
 		display: inline-block;
 	}
-	@media screen and (max-width: $db-narrower-screen-max-width) {
+	@mixin db-cmp-header {
 		border-bottom: $header---borderBottom;
 		min-height: to-rem($pxValue: 64);
+	}
+	@media screen and (max-width: $db-narrower-screen-max-width) {
+		@include db-cmp-header;
+	}
+	@container style(--db-narrower-screen: true) {
+		@include db-cmp-header;
 	}
 }

@@ -27,7 +27,7 @@
 			}
 		}
 	}
-	@media screen and (max-width: $db-narrower-screen-max-width) {
+	@mixin db-cmp-brand-site-name {
 		.cmp-mainnavigation ~ & {
 			.rea-header & {
 				.is-site-name {
@@ -35,5 +35,11 @@
 				}
 			}
 		}
+	}
+	@media screen and (max-width: $db-narrower-screen-max-width) {
+		@include db-cmp-brand-site-name;
+	}
+	@container style(--db-narrower-screen: true) {
+		@include db-cmp-brand-site-name;
 	}
 }

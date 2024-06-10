@@ -22,8 +22,14 @@
 			padding-top: to-rem($pxValue: 9);
 		}
 
-		@media screen and (max-width: $db-narrower-screen-max-width) {
+		@mixin db-cmp-header-meta {
 			margin-top: to-rem($pxValue: 8);
+		}
+		@media screen and (max-width: $db-narrower-screen-max-width) {
+			@include db-cmp-header-meta;
+		}
+		@container style(--db-narrower-screen: true) {
+			@include db-cmp-header-meta;
 		}
 	}
 

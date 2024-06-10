@@ -23,8 +23,14 @@ body.has-fixed-header {
 		top: 0;
 	}
 
-	@media screen and (max-width: $db-narrower-screen-max-width) {
+	@mixin db-body-has-fixed-header {
 		padding-top: to-rem($pxValue: 80);
+	}
+	@media screen and (max-width: $db-narrower-screen-max-width) {
+		@include db-body-has-fixed-header;
+	}
+	@container style(--db-narrower-screen: true) {
+		@include db-body-has-fixed-header;
 	}
 }
 
@@ -36,7 +42,13 @@ body.has-fixed-footer {
 		bottom: 0;
 	}
 
-	@media screen and (max-width: $db-narrower-screen-max-width) {
+	@mixin db-body-has-fixed-footer {
 		padding-bottom: to-rem($pxValue: 94);
+	}
+	@media screen and (max-width: $db-narrower-screen-max-width) {
+		@include db-body-has-fixed-footer;
+	}
+	@container style(--db-narrower-screen: true) {
+		@include db-body-has-fixed-footer;
 	}
 }
