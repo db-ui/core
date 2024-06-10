@@ -59,6 +59,7 @@
 		}
 	}
 
+	// Displaying the main navigation as an top to bottom overlay on smaller viewports
 	@mixin db-cmp-mainnavigation {
 		background-color: $db-color-cool-gray-600;
 		left: 0;
@@ -81,7 +82,6 @@
 			}
 		}
 	}
-	// Displaying the main navigation as an top to bottom overlay on smaller viewports
 	@media screen and (max-width: $db-narrower-screen-max-width) {
 		@include db-cmp-mainnavigation;
 	}
