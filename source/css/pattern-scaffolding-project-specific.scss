@@ -35,6 +35,13 @@ pl-iframe {
 		// Splitted Intro Page
 		&:nth-of-type(2) {
 			background-color: $db-color-cool-gray-100;
+			@media (prefers-color-scheme: dark) {
+				background-color: color-mix(
+					in srgb,
+					transparent 95%,
+					currentColor
+				);
+			}
 			padding-bottom: 2.5rem;
 		}
 	}
