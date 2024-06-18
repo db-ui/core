@@ -168,7 +168,7 @@
 
 			// From second level
 			ul {
-				@mixin db-cmp-mainnavigation-ul-ul-above {
+				@mixin db-cmp-mainnavigation-ul-li-ul-above {
 					left: 0;
 					min-width: 100%;
 					top: to-rem($pxValue: 79);
@@ -190,10 +190,10 @@
 					}
 				}
 				@media screen and (width > $db-narrower-screen-max-width) {
-					@include db-cmp-mainnavigation-ul-ul-above;
+					@include db-cmp-mainnavigation-ul-li-ul-above;
 				}
 				@container not style(--db-narrower-screen: true) {
-					@include db-cmp-mainnavigation-ul-ul-above;
+					@include db-cmp-mainnavigation-ul-li-ul-above;
 				}
 
 				& > li,
