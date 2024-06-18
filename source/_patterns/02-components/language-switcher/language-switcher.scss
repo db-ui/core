@@ -62,8 +62,15 @@
 					}
 				}
 			}
-			@media screen and (min-width: 1024px) {
+			@mixin db-cmp-language-switcher-li-rea-header {
 				top: to-rem($pxValue: 56);
+			}
+
+			@media screen and (width > $db-narrower-screen-max-width) {
+				@include db-cmp-language-switcher-li-rea-header;
+			}
+			@container not style(--db-narrower-screen: true) {
+				@include db-cmp-language-switcher-li-rea-header;
 			}
 		}
 

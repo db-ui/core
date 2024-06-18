@@ -16,7 +16,7 @@
 
 	.rea-header & {
 		padding-top: to-rem($pxValue: 18);
-		@media screen and (min-width: 1024px) {
+		@mixin db-cmp-brand-rea-header {
 			padding-top: $rea-header-cmp-brand-padding-top; // * TODO: possibly rework variable naming
 
 			.is-site-name {
@@ -25,6 +25,12 @@
 					content: none !important;
 				}
 			}
+		}
+		@media screen and (width > $db-narrower-screen-max-width) {
+			@include db-cmp-brand-rea-header;
+		}
+		@container not style(--db-narrower-screen: true) {
+			@include db-cmp-brand-rea-header;
 		}
 	}
 	@mixin db-cmp-brand-site-name {

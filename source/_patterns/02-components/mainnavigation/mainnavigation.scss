@@ -28,12 +28,18 @@
 	& > input[type="checkbox"][id] {
 		@include a11y-visually-hidden($partial: $partial);
 
-		@media screen and (min-width: 1024px) {
+		@mixin cmp-mainnavigation-checkbox {
 			// Hiding the navigation toggle elements on huger viewports
 			&,
 			& + label[for] {
 				display: none;
 			}
+		}
+		@media screen and (width > $db-narrower-screen-max-width) {
+			@include cmp-mainnavigation-checkbox;
+		}
+		@container not style(--db-narrower-screen: true) {
+			@include cmp-mainnavigation-checkbox;
 		}
 	}
 
@@ -95,12 +101,18 @@
 
 	// Multiple level navigation
 	ul ul {
-		@media screen and (min-width: 1024px) {
+		@mixin db-cmp-mainnavigation-ul-ul-above {
 			box-shadow: $box-shadow-01, $box-shadow-02;
 			position: absolute;
 			visibility: hidden;
 
 			z-index: $z-index-rea-header-cmp-mainnavigation-submenu;
+		}
+		@media screen and (width > $db-narrower-screen-max-width) {
+			@include db-cmp-mainnavigation-ul-ul-above;
+		}
+		@container not style(--db-narrower-screen: true) {
+			@include db-cmp-mainnavigation-ul-ul-above;
 		}
 
 		@mixin db-cmp-mainnavigation-ul-ul {
@@ -116,15 +128,21 @@
 
 	// First Level
 	& > ul {
-		@media screen and (min-width: 1024px) {
+		@mixin db-cmp-mainnavigation-ul-above {
 			display: flex;
+		}
+		@media screen and (width > $db-narrower-screen-max-width) {
+			@include db-cmp-mainnavigation-ul-above;
+		}
+		@container not style(--db-narrower-screen: true) {
+			@include db-cmp-mainnavigation-ul-above;
 		}
 
 		& > li,
 		& > * > li {
 			& > .elm-link,
 			& > * > .elm-link {
-				@media screen and (min-width: 1024px) {
+				@mixin db-cmp-mainnavigation-ul-li-elm-link-above {
 					padding: $mainnavigation-link--paddingTop
 						to-rem($pxValue: 26) $mainnavigation-link--paddingBottom;
 
@@ -140,11 +158,17 @@
 						border-#{$mainnavigation-link--borderPosition}-color: $db-color-red-500;
 					}
 				}
+				@media screen and (width > $db-narrower-screen-max-width) {
+					@include db-cmp-mainnavigation-ul-li-elm-link-above;
+				}
+				@container not style(--db-narrower-screen: true) {
+					@include db-cmp-mainnavigation-ul-li-elm-link-above;
+				}
 			}
 
 			// From second level
 			ul {
-				@media screen and (min-width: 1024px) {
+				@mixin db-cmp-mainnavigation-ul-ul-above {
 					left: 0;
 					min-width: 100%;
 					top: to-rem($pxValue: 79);
@@ -164,6 +188,12 @@
 						padding-left: to-rem($pxValue: 18);
 						padding-right: to-rem($pxValue: 18);
 					}
+				}
+				@media screen and (width > $db-narrower-screen-max-width) {
+					@include db-cmp-mainnavigation-ul-ul-above;
+				}
+				@container not style(--db-narrower-screen: true) {
+					@include db-cmp-mainnavigation-ul-ul-above;
 				}
 
 				& > li,
@@ -276,7 +306,7 @@
 			@include db-cmp-mainnavigation-li;
 		}
 
-		@media screen and (min-width: 1024px) {
+		@mixin db-cmp-mainnavigation-li-above {
 			// Do not show Icon for menu on bigger screens
 			&[aria-haspopup="true"] {
 				&::after {
@@ -295,6 +325,12 @@
 					font-weight: 700;
 				}
 			}
+		}
+		@media screen and (width > $db-narrower-screen-max-width) {
+			@include db-cmp-mainnavigation-li-above;
+		}
+		@container not style(--db-narrower-screen: true) {
+			@include db-cmp-mainnavigation-li-above;
 		}
 	}
 }
