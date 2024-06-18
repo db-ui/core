@@ -24,13 +24,13 @@
 			"icon-glyph": "parent-child-compartment"
 		},
 		{
-			"icon-glyph": "priority"
-		},
-		{
 			"icon-glyph": "quiet-zone"
 		},
 		{
 			"icon-glyph": "table"
+		},
+		{
+			"icon-glyph": "traveler-with-reduced-mobility"
 		},
 		{
 			"icon-glyph": "window"
