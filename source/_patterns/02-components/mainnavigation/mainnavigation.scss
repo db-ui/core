@@ -35,11 +35,15 @@
 				display: none;
 			}
 		}
-		@media screen and (width > $db-break-the-header-max-width) {
-			@include cmp-mainnavigation-checkbox;
-		}
-		@container not style(--db-narrower-screen: true) {
-			@include cmp-mainnavigation-checkbox;
+		@if variable-exists(enterprise) {
+			// Based on the browser strategy, we could ignore Firefox for the moment
+			@container not style(--db-narrower-screen: true) {
+				@include cmp-mainnavigation-checkbox;
+			}
+		} @else {
+			@media screen and (width > $db-break-the-header-max-width) {
+				@include cmp-mainnavigation-checkbox;
+			}
 		}
 	}
 
@@ -88,11 +92,16 @@
 			}
 		}
 	}
-	@media screen and (max-width: $db-break-the-header-max-width) {
-		@include db-cmp-mainnavigation;
-	}
-	@container style(--db-narrower-screen: true) {
-		@include db-cmp-mainnavigation;
+
+	@if variable-exists(enterprise) {
+		// Based on the browser strategy, we could ignore Firefox for the moment
+		@container style(--db-narrower-screen: true) {
+			@include db-cmp-mainnavigation;
+		}
+	} @else {
+		@media screen and (max-width: $db-break-the-header-max-width) {
+			@include db-cmp-mainnavigation;
+		}
 	}
 
 	ul {
@@ -108,21 +117,29 @@
 
 			z-index: $z-index-rea-header-cmp-mainnavigation-submenu;
 		}
-		@media screen and (width > $db-break-the-header-max-width) {
-			@include db-cmp-mainnavigation-ul-ul-above;
-		}
-		@container not style(--db-narrower-screen: true) {
-			@include db-cmp-mainnavigation-ul-ul-above;
+		@if variable-exists(enterprise) {
+			// Based on the browser strategy, we could ignore Firefox for the moment
+			@container not style(--db-narrower-screen: true) {
+				@include db-cmp-mainnavigation-ul-ul-above;
+			}
+		} @else {
+			@media screen and (width > $db-break-the-header-max-width) {
+				@include db-cmp-mainnavigation-ul-ul-above;
+			}
 		}
 
 		@mixin db-cmp-mainnavigation-ul-ul {
 			display: none;
 		}
-		@media screen and (max-width: $db-break-the-header-max-width) {
-			@include db-cmp-mainnavigation-ul-ul;
-		}
-		@container style(--db-narrower-screen: true) {
-			@include db-cmp-mainnavigation-ul-ul;
+		@if variable-exists(enterprise) {
+			// Based on the browser strategy, we could ignore Firefox for the moment
+			@container style(--db-narrower-screen: true) {
+				@include db-cmp-mainnavigation-ul-ul;
+			}
+		} @else {
+			@media screen and (max-width: $db-break-the-header-max-width) {
+				@include db-cmp-mainnavigation-ul-ul;
+			}
 		}
 	}
 
@@ -131,11 +148,15 @@
 		@mixin db-cmp-mainnavigation-ul-above {
 			display: flex;
 		}
-		@media screen and (width > $db-break-the-header-max-width) {
-			@include db-cmp-mainnavigation-ul-above;
-		}
-		@container not style(--db-narrower-screen: true) {
-			@include db-cmp-mainnavigation-ul-above;
+		@if variable-exists(enterprise) {
+			// Based on the browser strategy, we could ignore Firefox for the moment
+			@container not style(--db-narrower-screen: true) {
+				@include db-cmp-mainnavigation-ul-above;
+			}
+		} @else {
+			@media screen and (width > $db-break-the-header-max-width) {
+				@include db-cmp-mainnavigation-ul-above;
+			}
 		}
 
 		& > li,
@@ -158,11 +179,15 @@
 						border-#{$mainnavigation-link--borderPosition}-color: $db-color-red-500;
 					}
 				}
-				@media screen and (width > $db-break-the-header-max-width) {
-					@include db-cmp-mainnavigation-ul-li-elm-link-above;
-				}
-				@container not style(--db-narrower-screen: true) {
-					@include db-cmp-mainnavigation-ul-li-elm-link-above;
+				@if variable-exists(enterprise) {
+					// Based on the browser strategy, we could ignore Firefox for the moment
+					@container not style(--db-narrower-screen: true) {
+						@include db-cmp-mainnavigation-ul-li-elm-link-above;
+					}
+				} @else {
+					@media screen and (width > $db-break-the-header-max-width) {
+						@include db-cmp-mainnavigation-ul-li-elm-link-above;
+					}
 				}
 			}
 
@@ -189,11 +214,15 @@
 						padding-right: to-rem($pxValue: 18);
 					}
 				}
-				@media screen and (width > $db-break-the-header-max-width) {
-					@include db-cmp-mainnavigation-ul-li-ul-above;
-				}
-				@container not style(--db-narrower-screen: true) {
-					@include db-cmp-mainnavigation-ul-li-ul-above;
+				@if variable-exists(enterprise) {
+					// Based on the browser strategy, we could ignore Firefox for the moment
+					@container not style(--db-narrower-screen: true) {
+						@include db-cmp-mainnavigation-ul-li-ul-above;
+					}
+				} @else {
+					@media screen and (width > $db-break-the-header-max-width) {
+						@include db-cmp-mainnavigation-ul-li-ul-above;
+					}
 				}
 
 				& > li,
@@ -203,11 +232,15 @@
 						@mixin db-cmp-mainnavigation-ul-ul-li {
 							padding-left: to-rem($pxValue: 34);
 						}
-						@media screen and (max-width: $db-break-the-header-max-width) {
-							@include db-cmp-mainnavigation-ul-ul-li;
-						}
-						@container style(--db-narrower-screen: true) {
-							@include db-cmp-mainnavigation-ul-ul-li;
+						@if variable-exists(enterprise) {
+							// Based on the browser strategy, we could ignore Firefox for the moment
+							@container style(--db-narrower-screen: true) {
+								@include db-cmp-mainnavigation-ul-ul-li;
+							}
+						} @else {
+							@media screen and (max-width: $db-break-the-header-max-width) {
+								@include db-cmp-mainnavigation-ul-ul-li;
+							}
 						}
 					}
 
@@ -220,11 +253,15 @@
 								@mixin db-cmp-mainnavigation-ul-ul-ul-li {
 									padding-left: to-rem($pxValue: 60);
 								}
-								@media screen and (max-width: $db-break-the-header-max-width) {
-									@include db-cmp-mainnavigation-ul-ul-ul-li;
-								}
-								@container style(--db-narrower-screen: true) {
-									@include db-cmp-mainnavigation-ul-ul-ul-li;
+								@if variable-exists(enterprise) {
+									// Based on the browser strategy, we could ignore Firefox for the moment
+									@container style(--db-narrower-screen: true) {
+										@include db-cmp-mainnavigation-ul-ul-ul-li;
+									}
+								} @else {
+									@media screen and (max-width: $db-break-the-header-max-width) {
+										@include db-cmp-mainnavigation-ul-ul-ul-li;
+									}
 								}
 							}
 						}
@@ -265,11 +302,15 @@
 				@mixin db-cmp-mainnavigation-li-hover {
 					display: initial;
 				}
-				@media screen and (max-width: $db-break-the-header-max-width) {
-					@include db-cmp-mainnavigation-li-hover;
-				}
-				@container style(--db-narrower-screen: true) {
-					@include db-cmp-mainnavigation-li-hover;
+				@if variable-exists(enterprise) {
+					// Based on the browser strategy, we could ignore Firefox for the moment
+					@container style(--db-narrower-screen: true) {
+						@include db-cmp-mainnavigation-li-hover;
+					}
+				} @else {
+					@media screen and (max-width: $db-break-the-header-max-width) {
+						@include db-cmp-mainnavigation-li-hover;
+					}
 				}
 			}
 		}
@@ -299,11 +340,15 @@
 				position: relative;
 			}
 		}
-		@media screen and (max-width: $db-break-the-header-max-width) {
-			@include db-cmp-mainnavigation-li;
-		}
-		@container style(--db-narrower-screen: true) {
-			@include db-cmp-mainnavigation-li;
+		@if variable-exists(enterprise) {
+			// Based on the browser strategy, we could ignore Firefox for the moment
+			@container style(--db-narrower-screen: true) {
+				@include db-cmp-mainnavigation-li;
+			}
+		} @else {
+			@media screen and (max-width: $db-break-the-header-max-width) {
+				@include db-cmp-mainnavigation-li;
+			}
 		}
 
 		@mixin db-cmp-mainnavigation-li-above {
@@ -326,11 +371,15 @@
 				}
 			}
 		}
-		@media screen and (width > $db-break-the-header-max-width) {
-			@include db-cmp-mainnavigation-li-above;
-		}
-		@container not style(--db-narrower-screen: true) {
-			@include db-cmp-mainnavigation-li-above;
+		@if variable-exists(enterprise) {
+			// Based on the browser strategy, we could ignore Firefox for the moment
+			@container not style(--db-narrower-screen: true) {
+				@include db-cmp-mainnavigation-li-above;
+			}
+		} @else {
+			@media screen and (width > $db-break-the-header-max-width) {
+				@include db-cmp-mainnavigation-li-above;
+			}
 		}
 	}
 }

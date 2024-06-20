@@ -66,11 +66,15 @@
 				top: to-rem($pxValue: 56);
 			}
 
-			@media screen and (width > $db-break-the-header-max-width) {
-				@include db-cmp-language-switcher-li-rea-header;
-			}
-			@container not style(--db-narrower-screen: true) {
-				@include db-cmp-language-switcher-li-rea-header;
+			@if variable-exists(enterprise) {
+				// Based on the browser strategy, we could ignore Firefox for the moment
+				@container not style(--db-narrower-screen: true) {
+					@include db-cmp-language-switcher-li-rea-header;
+				}
+			} @else {
+				@media screen and (width > $db-break-the-header-max-width) {
+					@include db-cmp-language-switcher-li-rea-header;
+				}
 			}
 		}
 

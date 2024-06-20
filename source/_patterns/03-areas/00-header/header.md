@@ -17,7 +17,7 @@ If you're using CSS only without SCSS, you could set the CSS Custom Property / C
 }
 ```
 
-Please keep in mind that the CSS Variable solution doesn't work in Mozilla Firefox at the time of writing, please have a look at <https://bugzilla.mozilla.org/show_bug.cgi?id=1795622> for upcoming support.
+Please keep in mind that the CSS Variable solution doesn't work in Mozilla Firefox at the time of writing (please have a look at <https://bugzilla.mozilla.org/show_bug.cgi?id=1795622> for upcoming support), and that for we've only enabled it within the `enterprise` themed stylings.
 
 ## Fixed positioned header
 

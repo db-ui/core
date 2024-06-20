@@ -26,11 +26,15 @@
 				}
 			}
 		}
-		@media screen and (width > $db-break-the-header-max-width) {
-			@include db-cmp-brand-rea-header;
-		}
-		@container not style(--db-narrower-screen: true) {
-			@include db-cmp-brand-rea-header;
+		@if variable-exists(enterprise) {
+			// Based on the browser strategy, we could ignore Firefox for the moment
+			@container not style(--db-narrower-screen: true) {
+				@include db-cmp-brand-rea-header;
+			}
+		} @else {
+			@media screen and (width > $db-break-the-header-max-width) {
+				@include db-cmp-brand-rea-header;
+			}
 		}
 	}
 	@mixin db-cmp-brand-site-name {
@@ -42,10 +46,14 @@
 			}
 		}
 	}
-	@media screen and (max-width: $db-break-the-header-max-width) {
-		@include db-cmp-brand-site-name;
-	}
-	@container style(--db-narrower-screen: true) {
-		@include db-cmp-brand-site-name;
+	@if variable-exists(enterprise) {
+		// Based on the browser strategy, we could ignore Firefox for the moment
+		@container style(--db-narrower-screen: true) {
+			@include db-cmp-brand-site-name;
+		}
+	} @else {
+		@media screen and (max-width: $db-break-the-header-max-width) {
+			@include db-cmp-brand-site-name;
+		}
 	}
 }

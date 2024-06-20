@@ -31,10 +31,14 @@
 		border-bottom: $header---borderBottom;
 		min-height: to-rem($pxValue: 64);
 	}
-	@media screen and (max-width: $db-break-the-header-max-width) {
-		@include db-cmp-header;
-	}
-	@container style(--db-narrower-screen: true) {
-		@include db-cmp-header;
+	@if variable-exists(enterprise) {
+		// Based on the browser strategy, we could ignore Firefox for the moment
+		@container style(--db-narrower-screen: true) {
+			@include db-cmp-header;
+		}
+	} @else {
+		@media screen and (max-width: $db-break-the-header-max-width) {
+			@include db-cmp-header;
+		}
 	}
 }

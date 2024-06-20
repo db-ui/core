@@ -25,11 +25,15 @@
 		@mixin db-cmp-header-meta {
 			margin-top: to-rem($pxValue: 8);
 		}
-		@media screen and (max-width: $db-break-the-header-max-width) {
-			@include db-cmp-header-meta;
-		}
-		@container style(--db-narrower-screen: true) {
-			@include db-cmp-header-meta;
+		@if variable-exists(enterprise) {
+			// Based on the browser strategy, we could ignore Firefox for the moment
+			@container style(--db-narrower-screen: true) {
+				@include db-cmp-header-meta;
+			}
+		} @else {
+			@media screen and (max-width: $db-break-the-header-max-width) {
+				@include db-cmp-header-meta;
+			}
 		}
 	}
 
