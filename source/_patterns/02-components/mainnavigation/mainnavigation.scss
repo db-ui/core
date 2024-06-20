@@ -28,7 +28,7 @@
 	& > input[type="checkbox"][id] {
 		@include a11y-visually-hidden($partial: $partial);
 
-		@media screen and (min-width: 1024px) {
+		@media screen and (width > $db-break-the-header-max-width) {
 			// Hiding the navigation toggle elements on huger viewports
 			&,
 			& + label[for] {
@@ -60,7 +60,7 @@
 	}
 
 	// Displaying the main navigation as an top to bottom overlay on smaller viewports
-	@media screen and (max-width: 1023px) {
+	@media screen and (max-width: $db-break-the-header-max-width) {
 		background-color: $db-color-cool-gray-600;
 		left: 0;
 		position: absolute;
@@ -89,7 +89,7 @@
 
 	// Multiple level navigation
 	ul ul {
-		@media screen and (min-width: 1024px) {
+		@media screen and (width > $db-break-the-header-max-width) {
 			box-shadow: $box-shadow-01, $box-shadow-02;
 			position: absolute;
 			visibility: hidden;
@@ -97,14 +97,14 @@
 			z-index: $z-index-rea-header-cmp-mainnavigation-submenu;
 		}
 
-		@media screen and (max-width: 1023px) {
+		@media screen and (max-width: $db-break-the-header-max-width) {
 			display: none;
 		}
 	}
 
 	// First Level
 	& > ul {
-		@media screen and (min-width: 1024px) {
+		@media screen and (width > $db-break-the-header-max-width) {
 			display: flex;
 		}
 
@@ -112,7 +112,7 @@
 		& > * > li {
 			& > .elm-link,
 			& > * > .elm-link {
-				@media screen and (min-width: 1024px) {
+				@media screen and (width > $db-break-the-header-max-width) {
 					padding: $mainnavigation-link--paddingTop
 						to-rem($pxValue: 26) $mainnavigation-link--paddingBottom;
 
@@ -132,7 +132,7 @@
 
 			// From second level
 			ul {
-				@media screen and (min-width: 1024px) {
+				@media screen and (width > $db-break-the-header-max-width) {
 					left: 0;
 					min-width: 100%;
 					top: to-rem($pxValue: 79);
@@ -158,7 +158,7 @@
 				& > * > li {
 					& > .elm-link,
 					& > * > .elm-link {
-						@media screen and (max-width: 1023px) {
+						@media screen and (max-width: $db-break-the-header-max-width) {
 							padding-left: to-rem($pxValue: 34);
 						}
 					}
@@ -169,7 +169,7 @@
 						& > * > li {
 							& > .elm-link,
 							& > * > .elm-link {
-								@media screen and (max-width: 1023px) {
+								@media screen and (max-width: $db-break-the-header-max-width) {
 									padding-left: to-rem($pxValue: 60);
 								}
 							}
@@ -207,13 +207,13 @@
 			& > ul,
 			& > * > ul {
 				visibility: visible;
-				@media screen and (max-width: 1023px) {
+				@media screen and (max-width: $db-break-the-header-max-width) {
 					display: initial;
 				}
 			}
 		}
 
-		@media screen and (max-width: 1023px) {
+		@media screen and (max-width: $db-break-the-header-max-width) {
 			background-color: $db-color-cool-gray-600;
 			color: #fdfdfd; // TODO: This would need to get replaced by the correct (semantic) color
 
@@ -238,7 +238,7 @@
 				position: relative;
 			}
 		}
-		@media screen and (min-width: 1024px) {
+		@media screen and (width > $db-break-the-header-max-width) {
 			// Do not show Icon for menu on bigger screens
 			&[aria-haspopup="true"] {
 				&::after {
