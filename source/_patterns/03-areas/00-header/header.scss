@@ -26,8 +26,19 @@
 	.elm-link {
 		display: inline-block;
 	}
-	@media screen and (max-width: $db-break-the-header-max-width) {
+
+	@mixin db-cmp-header {
 		border-bottom: $header---borderBottom;
 		min-height: to-rem($pxValue: 64);
+	}
+	@if variable-exists(enterprise) {
+		// Based on the browser strategy, we could ignore Firefox for the moment
+		@container style(--db-narrower-screen: true) {
+			@include db-cmp-header;
+		}
+	} @else {
+		@media screen and (max-width: $db-break-the-header-max-width) {
+			@include db-cmp-header;
+		}
 	}
 }
