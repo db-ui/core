@@ -26,7 +26,7 @@ body.has-fixed-header {
 	@mixin db-body-has-fixed-header {
 		padding-top: to-rem($pxValue: 80);
 	}
-	@media screen and (max-width: $db-narrower-screen-max-width) {
+	@media screen and (max-width: $db-break-the-header-max-width) {
 		@include db-body-has-fixed-header;
 	}
 	@container style(--db-narrower-screen: true) {
@@ -45,7 +45,7 @@ body.has-fixed-footer {
 	@mixin db-body-has-fixed-footer {
 		padding-bottom: to-rem($pxValue: 94);
 	}
-	@media screen and (max-width: $db-narrower-screen-max-width) {
+	@media screen and (max-width: $db-break-the-header-max-width) {
 		@include db-body-has-fixed-footer;
 	}
 	@container style(--db-narrower-screen: true) {

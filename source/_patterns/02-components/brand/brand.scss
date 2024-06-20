@@ -26,7 +26,7 @@
 				}
 			}
 		}
-		@media screen and (width > $db-narrower-screen-max-width) {
+		@media screen and (width > $db-break-the-header-max-width) {
 			@include db-cmp-brand-rea-header;
 		}
 		@container not style(--db-narrower-screen: true) {
@@ -42,7 +42,7 @@
 			}
 		}
 	}
-	@media screen and (max-width: $db-narrower-screen-max-width) {
+	@media screen and (max-width: $db-break-the-header-max-width) {
 		@include db-cmp-brand-site-name;
 	}
 	@container style(--db-narrower-screen: true) {

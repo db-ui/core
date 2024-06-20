@@ -25,7 +25,7 @@
 		@mixin db-cmp-header-meta {
 			margin-top: to-rem($pxValue: 8);
 		}
-		@media screen and (max-width: $db-narrower-screen-max-width) {
+		@media screen and (max-width: $db-break-the-header-max-width) {
 			@include db-cmp-header-meta;
 		}
 		@container style(--db-narrower-screen: true) {

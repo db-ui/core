@@ -30,7 +30,7 @@
 		border-bottom: $header---borderBottom;
 		min-height: to-rem($pxValue: 64);
 	}
-	@media screen and (max-width: $db-narrower-screen-max-width) {
+	@media screen and (max-width: $db-break-the-header-max-width) {
 		@include db-cmp-header;
 	}
 	@container style(--db-narrower-screen: true) {

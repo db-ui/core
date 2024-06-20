@@ -5,7 +5,7 @@ state: inprogress
 
 ## Breakpoint for the header
 
-If you'd like to control the breakpoint that we've set for the `header` parts especially to transform from a regular navigation to a burger navigation, you could overwrite the `SCSS` variable `$db-narrower-screen-max-width` with a new value that should get used within the CSS code for that breakpoint, like e.g. `1280px`.
+If you'd like to control the breakpoint that we've set for the `header` parts especially to transform from a regular navigation to a burger navigation, you could overwrite the `SCSS` variable `$db-break-the-header-max-width` with a new value that should get used within the CSS code for that breakpoint, like e.g. `1280px`.
 
 If you're using CSS only without SCSS, you could set the CSS Custom Property / CSS Variable via a `@media query` yourself:
 
