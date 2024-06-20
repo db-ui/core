@@ -26,6 +26,7 @@
 	.elm-link {
 		display: inline-block;
 	}
+
 	@mixin db-cmp-header {
 		border-bottom: $header---borderBottom;
 		min-height: to-rem($pxValue: 64);
