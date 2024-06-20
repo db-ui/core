@@ -34,3 +34,6 @@ $z-index-cmp-overflow-menu-menu: 60 !default;
 $z-index-cmp-overflow-menu-overlay: 50 !default;
 $z-index-rea-header-cmp-sitesearch-focus: 10 !default;
 $z-index-reas-fixed-header-footer: 10 !default;
+
+// Defined the max-width for a narrower screen to break the header, that e.g. let's the navigation break into a hamburger menu. Also defined the z-index for the header and footer.
+$db-break-the-header-max-width: 1023px !default;
