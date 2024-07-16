@@ -22,7 +22,7 @@
 			padding-top: to-rem($pxValue: 9);
 		}
 
-		@media screen and (max-width: 1023px) {
+		@media screen and (max-width: $db-break-the-header-max-width) {
 			margin-top: to-rem($pxValue: 8);
 		}
 	}

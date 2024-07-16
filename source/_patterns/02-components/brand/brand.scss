@@ -16,7 +16,7 @@
 
 	.rea-header & {
 		padding-top: to-rem($pxValue: 18);
-		@media screen and (min-width: 1024px) {
+		@media screen and (width > $db-break-the-header-max-width) {
 			padding-top: $rea-header-cmp-brand-padding-top; // * TODO: possibly rework variable naming
 
 			.is-site-name {
@@ -27,7 +27,7 @@
 			}
 		}
 	}
-	@media screen and (max-width: 1023px) {
+	@media screen and (max-width: $db-break-the-header-max-width) {
 		.cmp-mainnavigation ~ & {
 			.rea-header & {
 				.is-site-name {

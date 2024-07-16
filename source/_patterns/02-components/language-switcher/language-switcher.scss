@@ -62,7 +62,7 @@
 					}
 				}
 			}
-			@media screen and (min-width: 1024px) {
+			@media screen and (width > $db-break-the-header-max-width) {
 				top: to-rem($pxValue: 56);
 			}
 		}

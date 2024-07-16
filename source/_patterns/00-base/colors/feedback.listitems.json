@@ -9,6 +9,16 @@
 			"name": "DB Error",
 			"hex": "#EC0016",
 			"scssvariable": "$db-color-error: $db-color-red-500"
+		},
+		{
+			"name": "DB Informative",
+			"hex": "#0087b9",
+			"scssvariable": "$db-color-error: $db-color-cyan-600"
+		},
+		{
+			"name": "DB Warning",
+			"hex": "#f75f00",
+			"scssvariable": "$db-color-error: $db-color-yellow-900"
 		}
 	]
 }
