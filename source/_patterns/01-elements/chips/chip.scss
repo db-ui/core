@@ -2,6 +2,8 @@
 
 .elm-chip {
 	& + label {
+		--db-focus-outline-size: max(2px, 0.08em);
+
 		align-items: center;
 		border: solid 1px $db-color-cool-gray-400;
 		border-radius: $chip---radius;
@@ -116,8 +118,20 @@
 		}
 	}
 
+	&:focus-visible {
+		& + label {
+			outline: var(--db-focus-outline-size)
+				var(--db-focus-outline-style, solid)
+				var(--db-focus-outline-color, currentColor);
+			outline-offset: var(
+				--db-focus-outline-offset,
+				var(--db-focus-outline-size)
+			);
+		}
+	}
+
 	&[type="checkbox"],
 	&[type="radio"] {
-		display: none;
+		@include a11y-visually-hidden($partial: $partial);
 	}
 }
