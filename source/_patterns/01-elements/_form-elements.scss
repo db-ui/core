@@ -134,3 +134,18 @@
 		padding: to-rem($pxValue: 6) to-rem($pxValue: 10);
 	}
 }
+
+// enhance the clickable area for checkbox and radio elements
+%form-element-enhanced-clickable-area {
+	&:has(+ label) {
+		&::after {
+			content: "";
+			width: calc(
+				var(--db-form-element-dimensions) + #{to-rem($pxValue: 4)}
+			);
+			height: var(--db-form-element-dimensions);
+			transform: translateX(#{to-rem($pxValue: 4)});
+			position: absolute;
+		}
+	}
+}

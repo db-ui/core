@@ -5,6 +5,13 @@
 @import "../form-elements";
 
 .elm-radio {
+	--db-form-element-dimensions: var(
+		--db-radio-dimensions,
+		#{to-em($pxValue: 20)}
+	);
+
+	@extend %form-element-enhanced-clickable-area;
+
 	appearance: none;
 
 	background-color: rgba(255, 255, 255, 0.1);
@@ -15,11 +22,11 @@
 	display: inline-block;
 
 	font-size: to-rem($pxValue: 16);
-	height: to-em($pxValue: 20);
+	height: var(--db-form-element-dimensions);
 
 	transition: border-width 0.5s ease;
 
-	width: to-em($pxValue: 20);
+	width: var(--db-form-element-dimensions);
 
 	&[type="radio"] {
 		vertical-align: sub;
@@ -56,7 +63,7 @@
 	& + label {
 		@extend %form-label;
 
-		margin-left: $db-spacing-xs;
+		padding-inline-start: $db-spacing-xs;
 	}
 
 	&:disabled {
