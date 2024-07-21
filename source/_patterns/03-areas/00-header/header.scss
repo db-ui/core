@@ -3,7 +3,7 @@
 @import "../../../css/helpers/functions";
 
 .rea-header {
-	background-color: $header---backgroundColor;
+	background-color: var(--db-element---backgroundColor);
 	box-shadow: $header---boxShadow;
 	display: flex;
 	justify-content: space-between;

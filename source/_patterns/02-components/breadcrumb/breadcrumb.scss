@@ -2,7 +2,9 @@
 @import "breadcrumb.variables";
 
 .cmp-breadcrumb {
-	color: $db-color-cool-gray-500;
+	@media (prefers-color-scheme: light) {
+		color: $db-color-cool-gray-500;
+	}
 	font-size: to-rem($pxValue: 12);
 
 	a {
