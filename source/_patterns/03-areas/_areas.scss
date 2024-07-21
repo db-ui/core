@@ -23,8 +23,18 @@ body.has-fixed-header {
 		top: 0;
 	}
 
-	@media screen and (max-width: $db-break-the-header-max-width) {
+	@mixin db-body-has-fixed-header {
 		padding-top: to-rem($pxValue: 80);
+	}
+	@if variable-exists(enterprise) {
+		// Based on the browser strategy, we could ignore Firefox for the moment
+		@container style(--db-narrower-screen: true) {
+			@include db-body-has-fixed-header;
+		}
+	} @else {
+		@media screen and (max-width: $db-break-the-header-max-width) {
+			@include db-body-has-fixed-header;
+		}
 	}
 }
 
@@ -36,7 +46,17 @@ body.has-fixed-footer {
 		bottom: 0;
 	}
 
-	@media screen and (max-width: 1023px) {
+	@mixin db-body-has-fixed-footer {
 		padding-bottom: to-rem($pxValue: 94);
+	}
+	@if variable-exists(enterprise) {
+		// Based on the browser strategy, we could ignore Firefox for the moment
+		@container style(--db-narrower-screen: true) {
+			@include db-body-has-fixed-footer;
+		}
+	} @else {
+		@media screen and (max-width: $db-break-the-header-max-width) {
+			@include db-body-has-fixed-footer;
+		}
 	}
 }

@@ -16,7 +16,7 @@
 
 	.rea-header & {
 		padding-top: to-rem($pxValue: 18);
-		@media screen and (width > $db-break-the-header-max-width) {
+		@mixin db-cmp-brand-rea-header {
 			padding-top: $rea-header-cmp-brand-padding-top; // * TODO: possibly rework variable naming
 
 			.is-site-name {
@@ -26,14 +26,34 @@
 				}
 			}
 		}
+		@if variable-exists(enterprise) {
+			// Based on the browser strategy, we could ignore Firefox for the moment
+			@container not style(--db-narrower-screen: true) {
+				@include db-cmp-brand-rea-header;
+			}
+		} @else {
+			@media screen and (width > $db-break-the-header-max-width) {
+				@include db-cmp-brand-rea-header;
+			}
+		}
 	}
-	@media screen and (max-width: $db-break-the-header-max-width) {
+	@mixin db-cmp-brand-site-name {
 		.cmp-mainnavigation ~ & {
 			.rea-header & {
 				.is-site-name {
 					display: none;
 				}
 			}
+		}
+	}
+	@if variable-exists(enterprise) {
+		// Based on the browser strategy, we could ignore Firefox for the moment
+		@container style(--db-narrower-screen: true) {
+			@include db-cmp-brand-site-name;
+		}
+	} @else {
+		@media screen and (max-width: $db-break-the-header-max-width) {
+			@include db-cmp-brand-site-name;
 		}
 	}
 }
