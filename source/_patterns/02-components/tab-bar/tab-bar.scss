@@ -93,7 +93,7 @@
 	&[data-size="small"] {
 		@include tab() {
 			& + label[role="tab"] {
-				@include iconMeta(20);
+				@include iconMeta(20, "outline");
 				font-size: to-rem($pxValue: 14);
 				padding-block: 0.625rem;
 			}
