@@ -1,5 +1,6 @@
 @import "../../../css/partials.meta";
 @import "tab-bar.variables";
+@import "../../00-base/icons/icons.helpers";
 
 @mixin tab() {
 	& > input[type="radio"],
