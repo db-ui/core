@@ -1,28 +1,4 @@
 {
 	"identifier": "small-icon",
-	"icon": "account",
-	"tabs": [
-		{
-			"label": "Tab 01",
-			"content": "Content 01",
-			"active": true
-		},
-		{
-			"label": "Tab 02",
-			"content": "Content 02"
-		},
-		{
-			"label": "Tab 03",
-			"content": "Content 03"
-		},
-		{
-			"label": "Tab 04",
-			"content": "Content 04"
-		},
-		{
-			"label": "Tab 05",
-			"content": "Content 05",
-			"disabled": true
-		}
-	]
+	"icon": "account"
 }
