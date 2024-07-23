@@ -1,5 +1,6 @@
 {
-	"identifier": "regular",
+	"identifier": "icon",
+	"icon": "account",
 	"tabs": [
 		{
 			"label": "Tab 01",
