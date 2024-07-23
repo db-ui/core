@@ -1,4 +1,4 @@
-/* eslint unicorn/prefer-module: 0, eqeqeq: 0 */
+/* eslint-disable-next-line unicorn/prefer-module */
 module.exports = function (Handlebars) {
 	Handlebars.registerHelper('unique-id', function () {
 		const crypto = require('node:crypto');
