@@ -37,6 +37,10 @@
 				&:focus {
 					background-color: $tabBar-tab-hover-backgroundColor;
 				}
+
+				&:active {
+					background-color: $tabBar-tab-pressed-backgroundColor;
+				}
 			}
 		}
 
