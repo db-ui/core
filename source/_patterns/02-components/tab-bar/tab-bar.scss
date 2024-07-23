@@ -1,5 +1,6 @@
 @import "../../../css/partials.meta";
 @import "tab-bar.variables";
+@import "../../00-base/icons/icons.helpers";
 
 @mixin tab() {
 	& > input[type="radio"],
@@ -19,7 +20,7 @@
 
 		& + label[role="tab"] {
 			cursor: pointer;
-			display: inline-block;
+			display: inline-flex;
 			padding: $db-spacing-m;
 			position: relative;
 			z-index: 1;
@@ -88,6 +89,7 @@
 	&[data-size="small"] {
 		@include tab() {
 			& + label[role="tab"] {
+				@include iconMeta(20);
 				font-size: to-rem($pxValue: 14);
 				padding-block: 0.625rem;
 			}

@@ -1,6 +1,7 @@
 {
-	"identifier": "small-icon",
+	"identifier": "icon",
 	"icon": "account",
+	"size": "small",
 	"tabs": [
 		{
 			"label": "Tab 01",
