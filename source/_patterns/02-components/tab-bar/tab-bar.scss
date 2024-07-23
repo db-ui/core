@@ -1,19 +1,20 @@
 @import "../../../css/partials.meta";
 @import "tab-bar.variables";
 
+@mixin tab() {
+	& > input[type="radio"],
+	& > * > input[type="radio"] {
+		@content;
+	}
+}
+
 .cmp-tab-bar {
 	display: flex;
 	flex-wrap: wrap;
 
 	gap: 0.125rem;
 
-	label[role="tab"],
-	section[role="tabpanel"] {
-		background-color: $tabBar-tabSection--backgroundColor;
-	}
-
-	& > input[type="radio"],
-	& > * > input[type="radio"] {
+	@include tab() {
 		@include a11y-visually-hidden($partial: $partial);
 
 		& + label[role="tab"] {
@@ -72,10 +73,24 @@
 		}
 	}
 
+	label[role="tab"],
+	section[role="tabpanel"] {
+		background-color: $tabBar-tabSection--backgroundColor;
+	}
+
 	section[role="tabpanel"] {
 		display: none;
 		flex-basis: 100%;
 		order: 1;
 		margin-block-start: 0.125rem;
+	}
+
+	&[data-size="small"] {
+		@include tab() {
+			& + label[role="tab"] {
+				font-size: to-rem($pxValue: 14);
+				padding-block: 0.625rem;
+			}
+		}
 	}
 }
