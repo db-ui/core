@@ -15,14 +15,13 @@
 		@include a11y-visually-hidden($partial: $partial);
 
 		& + label[role="tab"] {
-			border-top-left-radius: 4px;
-			border-top-right-radius: 4px;
 			cursor: pointer;
 			display: inline-block;
 			margin-left: to-rem($pxValue: 8);
-			padding: #{to-rem($pxValue: 5)} #{to-rem($pxValue: 32)};
+			padding: $db-spacing-m;
 			position: relative;
 			z-index: 1;
+			border-radius: 4px;
 
 			&:first-of-type {
 				margin-left: to-rem($pxValue: 16);
@@ -55,25 +54,31 @@
 
 		&:checked {
 			& + label[role="tab"] {
-				border: $tabBar-tab-active-border;
-				border-bottom: none;
 				font-weight: 700;
-				padding-top: to-rem($pxValue: 3);
-				transform: translateY(to-rem($pxValue: 1));
 
 				& + section[role="tabpanel"] {
 					display: initial;
+				}
+
+				// Puls
+				&::after {
+					background-color: $db-color-red-500;
+					border-radius: 5px;
+					content: "";
+					display: block;
+					height: 0.25rem;
+					inset-block-end: 0;
+					inset-inline: 0;
+					position: absolute;
 				}
 			}
 		}
 	}
 
 	section[role="tabpanel"] {
-		border-top: $tabBar-tabpanel--borderTop;
-		box-shadow: $tabBar-tabpanel--boxShadow;
 		display: none;
 		flex-basis: 100%;
 		order: 1;
-		padding: to-rem($pxValue: 46) to-rem($pxValue: 50);
+		margin-block-start: 0.25rem;
 	}
 }
