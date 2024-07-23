@@ -20,7 +20,7 @@
 
 		& + label[role="tab"] {
 			cursor: pointer;
-			display: inline-flex;
+			display: flex;
 			padding: $db-spacing-m;
 			position: relative;
 			z-index: 1;
