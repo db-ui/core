@@ -5,6 +5,8 @@
 	display: flex;
 	flex-wrap: wrap;
 
+	gap: 0.125rem;
+
 	label[role="tab"],
 	section[role="tabpanel"] {
 		background-color: $tabBar-tabSection--backgroundColor;
@@ -17,15 +19,10 @@
 		& + label[role="tab"] {
 			cursor: pointer;
 			display: inline-block;
-			margin-left: to-rem($pxValue: 8);
 			padding: $db-spacing-m;
 			position: relative;
 			z-index: 1;
 			border-radius: 4px;
-
-			&:first-of-type {
-				margin-left: to-rem($pxValue: 16);
-			}
 		}
 
 		&:focus + label {
@@ -79,6 +76,6 @@
 		display: none;
 		flex-basis: 100%;
 		order: 1;
-		margin-block-start: 0.25rem;
+		margin-block-start: 0.125rem;
 	}
 }
