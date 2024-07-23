@@ -39,22 +39,42 @@ documentation has useful tips on creating an effective description. //-->
 </head>
 
 <body class="styleguide">
-<p>Please keep in mind that it's optional to set the variant and size for the following ones, as this size (24) and style (outline) combination is defined as the default.<br>In case that you'll need another default in your project, you could overwrite the defaults by modifying the <code>$icon-size</code> and <code>$icon-style</code> SCSS variables.</p>
-<ul class="DO-NOT-COPY-THIS-CLASS-example-icon-list">
-	<li data-icon="logo" data-icon-variant="24-outline">
-		<ul>
-			<li>SCSS: <code>@include icon(glyph(logo))</code> or <code>@include icon(glyph(logo), 24, "outline")</code></li>
-			<li>HTML: <code>data-icon="logo"</code> or <code>data-icon="logo" data-icon-variant="24-outline"</code></li>
-		</ul>
-	</li>
-</ul>
+<div class="cmp-tab-bar" role="tablist">
+	<!-- Pay attention to use a component wide, but component instance specific name to the following input[type="radio"] elements //-->
+		<input type="radio" name="cmp-tab-bar-tabs-icon" id="tab_icon_0"  checked>
+		<label for="tab_icon_0" role="tab" data-icon="account">Tab 01</label>
+		<section id="content_icon_0" role="tabpanel">
+			Content 01
+		</section>
+		<input type="radio" name="cmp-tab-bar-tabs-icon" id="tab_icon_1" >
+		<label for="tab_icon_1" role="tab" data-icon="account">Tab 02</label>
+		<section id="content_icon_1" role="tabpanel">
+			Content 02
+		</section>
+		<input type="radio" name="cmp-tab-bar-tabs-icon" id="tab_icon_2" >
+		<label for="tab_icon_2" role="tab" data-icon="account">Tab 03</label>
+		<section id="content_icon_2" role="tabpanel">
+			Content 03
+		</section>
+		<input type="radio" name="cmp-tab-bar-tabs-icon" id="tab_icon_3" >
+		<label for="tab_icon_3" role="tab" data-icon="account">Tab 04</label>
+		<section id="content_icon_3" role="tabpanel">
+			Content 04
+		</section>
+		<input type="radio" name="cmp-tab-bar-tabs-icon" id="tab_icon_4" 
+			disabled>
+		<label for="tab_icon_4" role="tab" data-icon="account">Tab 05</label>
+		<section id="content_icon_4" role="tabpanel">
+			Content 05
+		</section>
+</div>
 		<!--DO NOT REMOVE-->
 		<script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
-  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>[Insert description here]</p>\n","patternBreadcrumb":{"patternGroup":"base","patternSubgroup":"icons"},"patternExtension":"hbs","patternName":"DB Icons 24x24 - Outline - Brand","patternPartial":"base-icon-library-24-outline-brand","patternState":"complete","patternEngineName":"handlebars","extraOutput":{}}
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"tab-bar"},"patternExtension":"hbs","patternName":"Tab Bar Item Icon","patternPartial":"components-tab-bar-item-icon","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
 </script>
 
 <script>
-  window.patternData = {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>[Insert description here]</p>\n","patternBreadcrumb":{"patternGroup":"base","patternSubgroup":"icons"},"patternExtension":"hbs","patternName":"DB Icons 24x24 - Outline - Brand","patternPartial":"base-icon-library-24-outline-brand","patternState":"complete","patternEngineName":"handlebars","extraOutput":{}};
+  window.patternData = {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"tab-bar"},"patternExtension":"hbs","patternName":"Tab Bar Item Icon","patternPartial":"components-tab-bar-item-icon","patternState":"","patternEngineName":"handlebars","extraOutput":{}};
 </script>
 
 <script>
