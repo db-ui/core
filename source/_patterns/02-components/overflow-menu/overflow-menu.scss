@@ -13,14 +13,16 @@
 	}
 
 	summary {
-		@include icon(
-			$cmp-overflow-menu-icon,
-			20,
-			"outline",
-			$partial: $partial
-		);
-
 		display: inline-block;
+
+		& {
+			@include icon(
+				$cmp-overflow-menu-icon,
+				20,
+				"outline",
+				$partial: $partial
+			);
+		}
 
 		&::before {
 			display: inline-block;
