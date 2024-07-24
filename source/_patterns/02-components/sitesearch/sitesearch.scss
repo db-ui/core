@@ -78,6 +78,8 @@
 
 	.elm-label,
 	.elm-button {
+		background-color: rgba($db-color-cool-gray-700, 0);
+
 		&:hover {
 			background-color: rgba($db-color-cool-gray-700, 0.08);
 		}
@@ -89,19 +91,19 @@
 
 	@media screen and (max-width: #{$sitesearch-form-full-maxWidth}) {
 		// * TODO: possibly rework variable naming
-		&:focus-within,
+		&:focus,
 		&:has(.elm-input[type="search"]:not(:placeholder-shown)) {
 			left: to-rem($pxValue: 16);
 			position: absolute;
 			z-index: $z-index-rea-header-cmp-sitesearch-focus;
 
 			.elm-input[type="search"] {
-				width: calc(100vw - 5.5rem);
+				width: calc(100vw - 6.5rem);
 			}
 		}
 
 		.elm-button {
-			inset-inline-end: 1.75rem;
+			inset-inline-end: 2rem;
 		}
 	}
 }
