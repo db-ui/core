@@ -6,7 +6,6 @@
 
 .rea-footer {
 	@include clearfix($partial: $partial);
-
 	background-color: $footer---backgroundColor;
 	box-shadow: $footer---boxShadow;
 

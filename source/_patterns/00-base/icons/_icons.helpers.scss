@@ -37,32 +37,34 @@
 		}
 
 		@if $partial {
-			display: inline-block;
-			/*** icon - partial ***/
-			// * use !important to prevent issues with browser extensions that change fonts
-			font-family: var(--icon-font-family) !important;
-			font-style: normal;
-			font-variant: normal;
+			& {
+				display: inline-block;
+				/*** icon - partial ***/
+				// * use !important to prevent issues with browser extensions that change fonts
+				font-family: var(--icon-font-family) !important;
+				font-style: normal;
+				font-variant: normal;
 
-			font-weight: normal; // CSS variables fallback
-			font-weight: var(--icon-font-weight, normal);
-			line-height: 1;
-			text-transform: none;
-			vertical-align: middle;
+				font-weight: normal; // CSS variables fallback
+				font-weight: var(--icon-font-weight, normal);
+				line-height: 1;
+				text-transform: none;
+				vertical-align: middle;
 
-			/* stylelint-disable */
-			// * Better Font Rendering ===========
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-			/* stylelint-enable */
+				/* stylelint-disable */
+				// * Better Font Rendering ===========
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				/* stylelint-enable */
 
-			// Hiding icon from screenreaders
-			/* stylelint-disable */
-			-webkit-alt: "";
-			/* stylelint-enable */
-			alt: "";
-			speak: none; // Hiding icon from screenreaders, fallback by older notation
-			speak: never; // Hiding icon from screenreaders
+				// Hiding icon from screenreaders
+				/* stylelint-disable */
+				-webkit-alt: "";
+				/* stylelint-enable */
+				alt: "";
+				speak: none; // Hiding icon from screenreaders, fallback by older notation
+				speak: never; // Hiding icon from screenreaders
+			}
 			@media aural {
 				content: none;
 			}
@@ -77,7 +79,9 @@
 
 // SCSS mixin for elements that text should get hidden in favour of only displaying the included icon
 @mixin is-icon-text-replace($position: "before") {
-	font-size: 0;
+	& {
+		font-size: 0;
+	}
 
 	@if $position == "before" {
 		&::before {

@@ -30,7 +30,6 @@
 
 	.elm-label {
 		@include icon(glyph(search), 24, "outline", $partial: $partial);
-
 		display: inline-block;
 
 		&::before {
@@ -52,7 +51,6 @@
 
 	.elm-button {
 		@include icon(glyph(search), 24, "outline", $partial: $partial);
-
 		display: none;
 		left: 0;
 		position: absolute;
