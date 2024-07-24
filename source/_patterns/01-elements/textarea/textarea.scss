@@ -7,11 +7,6 @@
 .elm-textarea {
 	@extend %form-element;
 
-	// Semitransparent is the default style
-	@at-root :where(#{&}) {
-		@extend %form-element-semitransparent;
-	}
-
 	display: block;
 
 	font-size: to-rem($pxValue: 16);
@@ -24,6 +19,11 @@
 	resize: vertical;
 
 	width: 100%;
+
+	// Semitransparent is the default style
+	@at-root :where(#{&}) {
+		@extend %form-element-semitransparent;
+	}
 
 	// * to be evaluated
 	// display: inline-flex;

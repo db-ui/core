@@ -13,6 +13,7 @@
 	@extend %form-element-enhanced-clickable-area;
 
 	@include icon("\00A0", 24, "outline", $partial: $partial);
+
 	align-content: center;
 
 	appearance: none;
