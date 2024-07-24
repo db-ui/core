@@ -1,13 +1,5 @@
 @import "image.variables";
 
 .elm-image {
-	&.is-logo {
-		height: auto;
-		margin: 0.2rem #{to-rem($pxValue: 16)} 0.2rem 0;
-		max-width: $image-logo--maxwidth;
-
-		.cmp-brand & {
-			width: $brand-image--width; // * TODO: possibly rework variable naming
-		}
-	}
+	// We removed logo styles here
 }

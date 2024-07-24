@@ -2,32 +2,84 @@
 @import "header.variables";
 @import "../../../css/helpers/functions";
 
+%header-divider {
+	position: absolute;
+	content: "";
+	width: 1px;
+	height: 1.5rem;
+	background-color: rgba(40, 45, 55, 0.2);
+	inset-block-start: 50%;
+	transform: translateY(-50%);
+}
+
 .rea-header {
 	background-color: $header---backgroundColor;
 	box-shadow: $header---boxShadow;
-	display: flex;
-	justify-content: space-between;
+	align-items: center;
 	margin-bottom: $header---marginBottom;
 
-	// TODO: all of the header declarations need to get realigned and most likely need to get set up via flexbox for simplification
-	min-height: to-rem($pxValue: 79);
-	padding-left: to-rem($pxValue: 16);
-	padding-right: to-rem($pxValue: 16);
+	display: flex;
+	gap: 1.5rem;
 
-	// We'll need to keep this for legacy reasons, to position the navigation even within a metanavigation included in header
-	&:not(:has(.rea-meta)) {
-		&::after {
-			content: "";
-			display: inline-block;
-			order: 3;
+	min-block-size: $header---minHeight;
+	padding-inline: 1.5rem;
+	padding-block: 1rem;
+
+	// Divider only if there is a sitesearch and metanavigation
+	&:has(.cmp-sitesearch):has(.cmp-metanavigation) {
+		.cmp-sitesearch {
+			&::before {
+				@extend %header-divider;
+				inset-inline-end: 0;
+			}
 		}
 	}
 
-	.elm-link {
-		display: inline-block;
-	}
 	@media screen and (max-width: $db-break-the-header-max-width) {
 		border-bottom: $header---borderBottom;
-		min-height: to-rem($pxValue: 64);
+		position: relative;
+
+		&:has(.cmp-mainnavigation > input[type="checkbox"][id]:not(:checked)) {
+			.rea-meta {
+				position: absolute;
+				inset: 0;
+				margin: 0;
+
+				& > .elm-link,
+				.cmp-metanavigation,
+				.cmp-language-switcher,
+				.cmp-dropdown {
+					display: none;
+				}
+			}
+		}
+
+		&:has(.cmp-mainnavigation > input[type="checkbox"][id]:checked) {
+			.rea-meta {
+				--db-language-switcher---direction: -1;
+				background-color: #fff;
+				position: fixed;
+				inset-inline-end: 0;
+				inset-inline-start: 1.5rem;
+				inset-block-start: unset;
+				inset-block-end: 0;
+				block-size: 3.5rem;
+				z-index: $z-index-cmp-overflow-menu-overlay;
+				border-top: 1px solid rgba(40, 45, 55, 0.2);
+				border-bottom-left-radius: 4px;
+				padding-inline: 1rem;
+
+				.cmp-sitesearch {
+					display: none;
+				}
+
+				.cmp-dropdown {
+					& > menu {
+						bottom: 100%;
+						transform: translateY(-0.875rem);
+					}
+				}
+			}
+		}
 	}
 }
