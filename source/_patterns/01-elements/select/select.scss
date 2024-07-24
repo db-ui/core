@@ -15,11 +15,6 @@
 
 	// Style the regular (non-multiple) select elements
 	&:not([multiple]) {
-		// Semitransparent is the default style
-		@at-root :where(#{&}) {
-			@extend %form-element-semitransparent;
-		}
-
 		background-image: var(
 			--db-ic-expand-more-20,
 			url(#{$icons-path}functional/images/navigation/db_ic_expand_more_20.svg)
@@ -28,6 +23,12 @@
 		background-repeat: no-repeat;
 		height: to-rem($pxValue: 44);
 		padding: to-rem($pxValue: 20) to-rem($pxValue: 42) 0 $db-spacing-m;
+
+		// Semitransparent is the default style
+		@at-root :where(#{&}) {
+			@extend %form-element-semitransparent;
+		}
+
 		// No need to reposition the included value on hidden label
 		&:has(+ label[data-label-hidden="true"]) {
 			padding-top: 0;

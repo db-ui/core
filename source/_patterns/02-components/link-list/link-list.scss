@@ -8,10 +8,12 @@
 
 	li {
 		.elm-link {
-			@include icon(glyph(chevron-right), $partial: $partial);
-
 			font-weight: 700;
 			text-decoration: none;
+
+			& {
+				@include icon(glyph(chevron-right), $partial: $partial);
+			}
 
 			&:hover,
 			&:active {

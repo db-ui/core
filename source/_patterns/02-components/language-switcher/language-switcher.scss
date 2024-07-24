@@ -100,13 +100,15 @@
 
 			.elm-link,
 			.elm-button {
-				@include icon(
-					glyph(expand-more),
-					24,
-					"outline",
-					"after",
-					$partial: $partial
-				);
+				& {
+					@include icon(
+						glyph(expand-more),
+						24,
+						"outline",
+						"after",
+						$partial: $partial
+					);
+				}
 
 				&:hover {
 					color: $db-color-red-500;

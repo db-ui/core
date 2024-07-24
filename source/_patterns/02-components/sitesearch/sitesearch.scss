@@ -43,11 +43,14 @@
 	}
 
 	.elm-label {
-		@include icon(glyph(search), 24, "outline", $partial: $partial);
 		padding: 0.5rem;
 		border-radius: 4px;
 
 		display: inline-block;
+
+		& {
+			@include icon(glyph(search), 24, "outline", $partial: $partial);
+		}
 
 		&::before {
 			vertical-align: top;
@@ -61,13 +64,15 @@
 	.elm-button {
 		@extend %variant-tertiaryPlain;
 		@include is-icon-text-replace();
-		@include icon(glyph(search), 24, "outline", $partial: $partial);
 
 		display: none;
 		position: absolute;
 		padding: 0.5rem;
 		inset-inline-end: 0.75rem;
 		border: 0;
+		& {
+			@include icon(glyph(search), 24, "outline", $partial: $partial);
+		}
 	}
 
 	.elm-label {

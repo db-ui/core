@@ -47,15 +47,23 @@
 	}
 
 	& > label[for] {
-		@include icon(glyph(menu), 24, "outline", $partial: $partial);
-		@include icon(glyph(close), 24, "outline", "after", $partial: $partial);
-
 		background-color: $header---backgroundColor; // TODO: This would need to get replaced by the correct (semantic) color
 
 		border-bottom: 1px solid $db-color-warm-gray-100;
 
 		display: block;
 		padding: to-rem($pxValue: 8) to-rem($pxValue: 22) to-rem($pxValue: 10);
+
+		& {
+			@include icon(glyph(menu), 24, "outline", $partial: $partial);
+			@include icon(
+				glyph(close),
+				24,
+				"outline",
+				"after",
+				$partial: $partial
+			);
+		}
 
 		&::before {
 			margin-right: to-rem($pxValue: 16);
