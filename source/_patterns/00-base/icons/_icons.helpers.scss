@@ -8,7 +8,9 @@
 ) {
 	// We're setting this on the parent tag, so that it could get overwritten via data-icon=*
 	@if $glyph != "" {
-		--icon-glyph-#{$position}: "#{$glyph}";
+		& {
+			--icon-glyph-#{$position}: "#{$glyph}";
+		}
 	}
 
 	&::#{$position} {
