@@ -1,5 +1,6 @@
 @import "../../../css/partials.meta";
 @import "sitesearch.variables";
+@import "../../01-elements/form-elements";
 
 .cmp-sitesearch {
 	position: relative;
@@ -62,7 +63,6 @@
 	}
 
 	.elm-button {
-		@extend %variant-tertiaryPlain;
 		@include is-icon-text-replace();
 
 		display: none;
@@ -70,12 +70,14 @@
 		padding: 0.5rem;
 		inset-inline-end: 0.75rem;
 		border: 0;
+
 		& {
 			@include icon(glyph(search), 24, "outline", $partial: $partial);
 		}
 	}
 
-	.elm-label {
+	.elm-label,
+	.elm-button {
 		&:hover {
 			background-color: rgba($db-color-cool-gray-700, 0.08);
 		}

@@ -1,6 +1,7 @@
 @import "../../../css/partials.meta";
 // TODO: Replace magic numbers e.g. with flexbox implementations and extract variables as well for multi-brand
 @import "mainnavigation.variables";
+@import "../../../css/helpers/dividers";
 
 .cmp-mainnavigation {
 	top: $mainnavigation---position-top;
