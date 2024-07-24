@@ -1,6 +1,5 @@
 {{! TODO: This would need to get enhanced later on by the additional possible attributes }}
 {{#if selection}}
-	<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 	<input
 		class="elm-chip"
 		type="radio"
@@ -8,7 +7,6 @@
 		name="{{ name }}"
 		data-type="selection"
 		{{#if disabled }} disabled{{/if }}>
-	<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 	<label
 		for="chip-single-{{ variant }}{{ id-suffix }}"
 		{{#if variant }} data-variant="{{ variant }}"{{/if }}
@@ -16,14 +14,12 @@
 		{{#if iconAfter }} data-icon-after="{{ iconAfter }}"{{/if }}
 		>{{ label }}</label>
 {{else}}
-	<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 	<input
 		class="elm-chip"
 		type="checkbox"
 		id="chip-multiple{{#if disabled }}-disabled{{/if}}-{{ variant }}{{ id-suffix }}"
 		data-type="filter"
 		{{#if disabled }} disabled{{/if }}>
-	<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 	<label
 		for="chip-multiple{{#if disabled }}-disabled{{/if}}-{{ variant }}{{ id-suffix }}"
 		{{#if variant }} data-variant="{{ variant }}"{{/if }}
