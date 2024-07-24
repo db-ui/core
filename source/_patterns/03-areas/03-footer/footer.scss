@@ -5,13 +5,16 @@
 @import "footer.variables";
 
 .rea-footer {
-	@include clearfix($partial: $partial);
 	background-color: $footer---backgroundColor;
 	box-shadow: $footer---boxShadow;
 
 	color: $db-color-cool-gray-500;
 	margin-top: $footer---marginTop;
 	padding: #{to-rem($pxValue: 21)} #{to-rem($pxValue: 16)};
+
+	& {
+		@include clearfix($partial: $partial);
+	}
 
 	&.has-border {
 		border-top: $footer---borderTop;
