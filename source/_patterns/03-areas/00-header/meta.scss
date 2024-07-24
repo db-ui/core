@@ -29,8 +29,11 @@
 
 	& > .elm-link {
 		&[rel="account"] {
-			@include is-icon-text-replace();
 			margin-left: to-rem($pxValue: 4);
+
+			& {
+				@include is-icon-text-replace();
+			}
 
 			@media screen and (min-width: #{($header-srOnly-linkAccount-breakpoint + 1)}rem) {
 				margin-left: to-rem($pxValue: 8);

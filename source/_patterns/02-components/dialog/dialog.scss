@@ -70,11 +70,19 @@
 
 		.elm-link {
 			&.is-close {
-				@include icon(glyph(close), 24, "outline", $partial: $partial);
-				@include is-icon-text-replace();
 				position: absolute;
 				right: 0;
 				top: 0;
+
+				& {
+					@include icon(
+						glyph(close),
+						24,
+						"outline",
+						$partial: $partial
+					);
+					@include is-icon-text-replace();
+				}
 			}
 		}
 	}

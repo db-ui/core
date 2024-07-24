@@ -29,8 +29,11 @@
 	}
 
 	.elm-label {
-		@include icon(glyph(search), 24, "outline", $partial: $partial);
 		display: inline-block;
+
+		& {
+			@include icon(glyph(search), 24, "outline", $partial: $partial);
+		}
 
 		&::before {
 			// TODO: Evaluate on whether this declaration could get moved to the general icon declarations
@@ -50,12 +53,15 @@
 	}
 
 	.elm-button {
-		@include icon(glyph(search), 24, "outline", $partial: $partial);
 		display: none;
 		left: 0;
 		position: absolute;
 		top: to-em($pxValue: 8);
 		visibility: hidden;
+
+		& {
+			@include icon(glyph(search), 24, "outline", $partial: $partial);
+		}
 
 		&::before {
 			left: to-rem($pxValue: 4);

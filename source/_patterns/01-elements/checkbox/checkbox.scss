@@ -10,10 +10,6 @@
 		#{to-rem($pxValue: 24)}
 	);
 
-	@extend %form-element-enhanced-clickable-area;
-
-	@include icon("\00A0", 24, "outline", $partial: $partial);
-
 	align-content: center;
 
 	appearance: none;
@@ -26,6 +22,11 @@
 	height: var(--db-form-element-dimensions);
 	justify-content: center;
 	width: var(--db-form-element-dimensions);
+
+	& {
+		@extend %form-element-enhanced-clickable-area;
+		@include icon("\00A0", 24, "outline", $partial: $partial);
+	}
 
 	&[type="checkbox"] {
 		vertical-align: top;
