@@ -27,7 +27,7 @@ You could set the different button sizes via the `data-size` attribute, the defa
 
 ### Width
 
-Regularly, our button shouldn't increase to it's horizontally available space, but only the one determined by it's included textual content.
+Regularly, our buttons shouldn't increase to it's horizontally available space, but only the one determined by it's included textual content.
 
 #### SCSS (recommended)
 
