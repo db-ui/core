@@ -6,13 +6,15 @@
 	align-items: center;
 	gap: 1rem;
 
-	img {
+	a, img {
 		height: 1.5rem;
+	}
+	
+	img {
 		width: auto;
 	}
 
 	a {
-		height: 1.5rem;
 		color: inherit;
 		// Deactivate underline on site name being made clickable by added to the link as well
 		text-decoration: none;
