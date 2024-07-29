@@ -12,17 +12,17 @@
 
 
 	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1721796672878" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1722242757493" media="all">
 
 	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1721796672878" media="all">
-	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1721796672878" media="all">
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1721796672878" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1722242757493" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1722242757493" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1722242757493" media="all">
 	<!-- dialog polyfill //-->
-	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1721796672878" media="all">
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1722242757493" media="all">
 
 	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1721796672878" media="all">
+	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1722242757493" media="all">
 	<!-- End Pattern Lab -->
 
 
@@ -15599,6 +15599,12 @@ var(--db-icon-pulse-color, #EC0016)
 <p>Extend one of the size SCSS placeholders in case that you don't want the default (regular): <code>%size-Small</code> or <code>%size-Large</code></p>
 <h4>HTML attribute</h4>
 <p>You could set the different button sizes via the <code>data-size</code> attribute, the default is &quot;regular&quot; and in that case is optional.</p>
+<h3>Width</h3>
+<p>Regularly, our buttons shouldn't increase to it's horizontally available space, but only the one determined by it's included textual content.</p>
+<h4>SCSS (recommended)</h4>
+<p>Extend the width SCSS placeholders in case that you don't want the default (<code>auto</code>): <code>%width-Full</code></p>
+<h4>HTML attribute</h4>
+<p>You could set the button width to increase to it's full available space via the <code>data-width=&quot;full&quot;</code> attribute, the default is <code>auto</code> and in that case is optional.</p>
 <h2>Usability</h2>
 <blockquote>
 <p>Buttons should be used in situations where users might need to:</p>
@@ -15689,6 +15695,7 @@ var(--db-icon-pulse-color, #EC0016)
 	
 	
 	
+	
 	>
 	Red 500
 </button>
@@ -15696,7 +15703,7 @@ var(--db-icon-pulse-color, #EC0016)
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-elements-button" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"components-language-switcher-spa","lineagePath":"../../patterns/components-language-switcher-language-switcher-spa/components-language-switcher-language-switcher-spa.rendered.html","lineageState":"inprogress"},{"lineagePattern":"components-overflow-menu-navigation-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation-opposite-position/components-overflow-menu-overflow-menu-navigation-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-navigation","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-opposite-position/components-overflow-menu-overflow-menu-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-button-brand-primary","lineagePath":"../../patterns/elements-buttons-01-button-brand-primary/elements-buttons-01-button-brand-primary.rendered.html"},{"lineagePattern":"elements-button-primary","lineagePath":"../../patterns/elements-buttons-03-button-primary/elements-buttons-03-button-primary.rendered.html"},{"lineagePattern":"elements-button-secondary-outline","lineagePath":"../../patterns/elements-buttons-04-button-secondary-outline/elements-buttons-04-button-secondary-outline.rendered.html"},{"lineagePattern":"elements-button-secondary-solid","lineagePath":"../../patterns/elements-buttons-05-button-secondary-solid/elements-buttons-05-button-secondary-solid.rendered.html"},{"lineagePattern":"elements-button-tertiary-plain","lineagePath":"../../patterns/elements-buttons-06-button-tertiary-plain/elements-buttons-06-button-tertiary-plain.rendered.html"},{"lineagePattern":"elements-button-sizes","lineagePath":"../../patterns/elements-buttons-09-button-sizes/elements-buttons-09-button-sizes.rendered.html"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-example-form","lineagePath":"../../patterns/components-form-example-form/components-form-example-form.rendered.html"},{"lineagePattern":"components-language-switcher","lineagePath":"../../patterns/components-language-switcher-language-switcher/components-language-switcher-language-switcher.rendered.html","lineageState":"inprogress"},{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"}],"lineageR":[{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"components-language-switcher-spa","lineagePath":"../../patterns/components-language-switcher-language-switcher-spa/components-language-switcher-language-switcher-spa.rendered.html","lineageState":"inprogress"},{"lineagePattern":"components-overflow-menu-navigation-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation-opposite-position/components-overflow-menu-overflow-menu-navigation-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-navigation","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-opposite-position/components-overflow-menu-overflow-menu-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-button-brand-primary","lineagePath":"../../patterns/elements-buttons-01-button-brand-primary/elements-buttons-01-button-brand-primary.rendered.html"},{"lineagePattern":"elements-button-primary","lineagePath":"../../patterns/elements-buttons-03-button-primary/elements-buttons-03-button-primary.rendered.html"},{"lineagePattern":"elements-button-secondary-outline","lineagePath":"../../patterns/elements-buttons-04-button-secondary-outline/elements-buttons-04-button-secondary-outline.rendered.html"},{"lineagePattern":"elements-button-secondary-solid","lineagePath":"../../patterns/elements-buttons-05-button-secondary-solid/elements-buttons-05-button-secondary-solid.rendered.html"},{"lineagePattern":"elements-button-tertiary-plain","lineagePath":"../../patterns/elements-buttons-06-button-tertiary-plain/elements-buttons-06-button-tertiary-plain.rendered.html"},{"lineagePattern":"elements-button-sizes","lineagePath":"../../patterns/elements-buttons-09-button-sizes/elements-buttons-09-button-sizes.rendered.html"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-example-form","lineagePath":"../../patterns/components-form-example-form/components-form-example-form.rendered.html"},{"lineagePattern":"components-language-switcher","lineagePath":"../../patterns/components-language-switcher-language-switcher/components-language-switcher-language-switcher.rendered.html","lineageState":"inprogress"},{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button","patternPartial":"elements-button","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"components-language-switcher-spa","lineagePath":"../../patterns/components-language-switcher-language-switcher-spa/components-language-switcher-language-switcher-spa.rendered.html","lineageState":"inprogress"},{"lineagePattern":"components-overflow-menu-navigation-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation-opposite-position/components-overflow-menu-overflow-menu-navigation-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-navigation","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-opposite-position/components-overflow-menu-overflow-menu-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-example-form","lineagePath":"../../patterns/components-form-example-form/components-form-example-form.rendered.html"},{"lineagePattern":"components-language-switcher","lineagePath":"../../patterns/components-language-switcher-language-switcher/components-language-switcher-language-switcher.rendered.html","lineageState":"inprogress"},{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"},{"lineagePattern":"elements-button-brand-primary","lineagePath":"../../patterns/elements-buttons-01-button-brand-primary/elements-buttons-01-button-brand-primary.rendered.html"},{"lineagePattern":"elements-button-primary","lineagePath":"../../patterns/elements-buttons-03-button-primary/elements-buttons-03-button-primary.rendered.html"},{"lineagePattern":"elements-button-secondary-outline","lineagePath":"../../patterns/elements-buttons-04-button-secondary-outline/elements-buttons-04-button-secondary-outline.rendered.html"},{"lineagePattern":"elements-button-tertiary-plain","lineagePath":"../../patterns/elements-buttons-06-button-tertiary-plain/elements-buttons-06-button-tertiary-plain.rendered.html"},{"lineagePattern":"elements-button-sizes","lineagePath":"../../patterns/elements-buttons-09-button-sizes/elements-buttons-09-button-sizes.rendered.html"},{"lineagePattern":"elements-button-secondary-solid","lineagePath":"../../patterns/elements-buttons-05-button-secondary-solid/elements-buttons-05-button-secondary-solid.rendered.html"},{"lineagePattern":"elements-button-width","lineagePath":"../../patterns/elements-buttons-10-button-width/elements-buttons-10-button-width.rendered.html"}],"lineageR":[{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"components-language-switcher-spa","lineagePath":"../../patterns/components-language-switcher-language-switcher-spa/components-language-switcher-language-switcher-spa.rendered.html","lineageState":"inprogress"},{"lineagePattern":"components-overflow-menu-navigation-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation-opposite-position/components-overflow-menu-overflow-menu-navigation-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-navigation","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-opposite-position/components-overflow-menu-overflow-menu-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-example-form","lineagePath":"../../patterns/components-form-example-form/components-form-example-form.rendered.html"},{"lineagePattern":"components-language-switcher","lineagePath":"../../patterns/components-language-switcher-language-switcher/components-language-switcher-language-switcher.rendered.html","lineageState":"inprogress"},{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"},{"lineagePattern":"elements-button-brand-primary","lineagePath":"../../patterns/elements-buttons-01-button-brand-primary/elements-buttons-01-button-brand-primary.rendered.html"},{"lineagePattern":"elements-button-primary","lineagePath":"../../patterns/elements-buttons-03-button-primary/elements-buttons-03-button-primary.rendered.html"},{"lineagePattern":"elements-button-secondary-outline","lineagePath":"../../patterns/elements-buttons-04-button-secondary-outline/elements-buttons-04-button-secondary-outline.rendered.html"},{"lineagePattern":"elements-button-tertiary-plain","lineagePath":"../../patterns/elements-buttons-06-button-tertiary-plain/elements-buttons-06-button-tertiary-plain.rendered.html"},{"lineagePattern":"elements-button-sizes","lineagePath":"../../patterns/elements-buttons-09-button-sizes/elements-buttons-09-button-sizes.rendered.html"},{"lineagePattern":"elements-button-secondary-solid","lineagePath":"../../patterns/elements-buttons-05-button-secondary-solid/elements-buttons-05-button-secondary-solid.rendered.html"},{"lineagePattern":"elements-button-width","lineagePath":"../../patterns/elements-buttons-10-button-width/elements-buttons-10-button-width.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button","patternPartial":"elements-button","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -15745,6 +15752,7 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		 data-icon="add"
 		
+		
 		>
 		Brand Primary
 	</button>
@@ -15757,6 +15765,7 @@ var(--db-icon-pulse-color, #EC0016)
 		 disabled
 		 data-icon="add"
 		
+		
 		>
 		Brand Primary
 	</button>
@@ -15771,6 +15780,7 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		
 		 data-icon-after="add"
+		
 		>
 		Brand Primary with right icon
 	</button>
@@ -15783,6 +15793,7 @@ var(--db-icon-pulse-color, #EC0016)
 		 disabled
 		
 		 data-icon-after="add"
+		
 		>
 		Brand Primary with right icon(disabled)
 	</button>
@@ -15793,6 +15804,7 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		title="Title text"
 		type="button"
+		
 		
 		
 		
@@ -15809,6 +15821,7 @@ var(--db-icon-pulse-color, #EC0016)
 		 disabled
 		
 		
+		
 		>
 		Brand Primary without icon (disabled)
 	</button>
@@ -15823,6 +15836,7 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		 data-icon="done"
 		
+		
 		>
 		Brand Primary displaying only the icon
 	</button>
@@ -15834,6 +15848,7 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		 disabled
 		 data-icon="done"
+		
 		
 		>
 		Brand Primary displaying only the icon
@@ -15892,6 +15907,7 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		 data-icon="add"
 		
+		
 		>
 		Primary
 	</button>
@@ -15903,6 +15919,7 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		 disabled
 		 data-icon="add"
+		
 		
 		>
 		Primary (disabled)
@@ -15918,6 +15935,7 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		
 		 data-icon-after="add"
+		
 		>
 		Primary with icon
 	</button>
@@ -15930,6 +15948,7 @@ var(--db-icon-pulse-color, #EC0016)
 		 disabled
 		
 		 data-icon-after="add"
+		
 		>
 		Primary with icon (disabled)
 	</button>
@@ -15940,6 +15959,7 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		title="Title text"
 		type="button"
+		
 		
 		
 		
@@ -15956,6 +15976,7 @@ var(--db-icon-pulse-color, #EC0016)
 		 disabled
 		
 		
+		
 		>
 		Primary without icon (disabled)
 	</button>
@@ -15970,6 +15991,7 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		 data-icon="done"
 		
+		
 		>
 		Primary displaying only the icon
 	</button>
@@ -15981,6 +16003,7 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		 disabled
 		 data-icon="done"
+		
 		
 		>
 		Primary displaying only the icon
@@ -16039,6 +16062,7 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		 data-icon="add"
 		
+		
 		>
 		Secondary Outline
 	</button>
@@ -16050,6 +16074,7 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		 disabled
 		 data-icon="add"
+		
 		
 		>
 		Secondary Outline (disabled)
@@ -16065,6 +16090,7 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		
 		 data-icon-after="add"
+		
 		>
 		Secondary Outline with right icon
 	</button>
@@ -16077,6 +16103,7 @@ var(--db-icon-pulse-color, #EC0016)
 		 disabled
 		
 		 data-icon-after="add"
+		
 		>
 		Secondary Outline with right icon (disabled)
 	</button>
@@ -16087,6 +16114,7 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		title="Title text"
 		type="button"
+		
 		
 		
 		
@@ -16103,6 +16131,7 @@ var(--db-icon-pulse-color, #EC0016)
 		 disabled
 		
 		
+		
 		>
 		Secondary Outline without left icon (disabled)
 	</button>
@@ -16117,6 +16146,7 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		 data-icon="done"
 		
+		
 		>
 		Secondary Outline displaying only the icon
 	</button>
@@ -16128,6 +16158,7 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		 disabled
 		 data-icon="done"
+		
 		
 		>
 		Secondary Outline displaying only the icon
@@ -16186,6 +16217,7 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		 data-icon="add"
 		
+		
 		>
 		Secondary
 	</button>
@@ -16197,6 +16229,7 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		 disabled
 		 data-icon="add"
+		
 		
 		>
 		Secondary (disabled)
@@ -16212,6 +16245,7 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		
 		 data-icon-after="add"
+		
 		>
 		Secondary Solid with right icon
 	</button>
@@ -16224,6 +16258,7 @@ var(--db-icon-pulse-color, #EC0016)
 		 disabled
 		
 		 data-icon-after="add"
+		
 		>
 		Secondary Solid with right icon (disabled)
 	</button>
@@ -16234,6 +16269,7 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		title="Title text"
 		type="button"
+		
 		
 		
 		
@@ -16250,6 +16286,7 @@ var(--db-icon-pulse-color, #EC0016)
 		 disabled
 		
 		
+		
 		>
 		Secondary Solid without icon (disabled)
 	</button>
@@ -16264,6 +16301,7 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		 data-icon="done"
 		
+		
 		>
 		Secondary Solid displaying only the icon
 	</button>
@@ -16275,6 +16313,7 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		 disabled
 		 data-icon="done"
+		
 		
 		>
 		Secondary Solid displaying only the icon
@@ -16333,6 +16372,7 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		
 		
+		
 		>
 		Tertiary Plain
 	</button>
@@ -16343,6 +16383,7 @@ var(--db-icon-pulse-color, #EC0016)
 		type="button"
 		
 		 disabled
+		
 		
 		
 		>
@@ -16359,6 +16400,7 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		
 		 data-icon-after="add"
+		
 		>
 		Tertiary Plain with right icon
 	</button>
@@ -16371,6 +16413,7 @@ var(--db-icon-pulse-color, #EC0016)
 		 disabled
 		
 		 data-icon-after="add"
+		
 		>
 		Tertiary Plain with right icon(disabled)
 	</button>
@@ -16381,6 +16424,7 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		title="Title text"
 		type="button"
+		
 		
 		
 		
@@ -16397,6 +16441,7 @@ var(--db-icon-pulse-color, #EC0016)
 		 disabled
 		
 		
+		
 		>
 		Tertiary Plain without left icon (disabled)
 	</button>
@@ -16411,6 +16456,7 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		 data-icon="done"
 		
+		
 		>
 		Tertiary Plain displaying only the icon
 	</button>
@@ -16422,6 +16468,7 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		 disabled
 		 data-icon="done"
+		
 		
 		>
 		Tertiary Plain displaying only the icon
@@ -16482,7 +16529,8 @@ var(--db-icon-pulse-color, #EC0016)
 			
 			 data-icon="add"
 			
-			 aria-label="Small">
+			 aria-label="Small"
+			>
 			Brand Primary
 		</button>
 		<button class="elm-button "
@@ -16494,7 +16542,8 @@ var(--db-icon-pulse-color, #EC0016)
 			 disabled
 			 data-icon="add"
 			
-			 aria-label="Small">
+			 aria-label="Small"
+			>
 			Brand Primary (disabled)
 		</button>
 	</p>
@@ -16508,7 +16557,8 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		
 		 data-icon-after="add"
-		 aria-label="Small">
+		 aria-label="Small"
+		>
 		Brand Primary with right icon
 	</button>
 	<button class="elm-button "
@@ -16520,7 +16570,8 @@ var(--db-icon-pulse-color, #EC0016)
 		 disabled
 		
 		 data-icon-after="add"
-		 aria-label="Small">
+		 aria-label="Small"
+		>
 		Brand Primary with right icon(disabled)
 	</button>
 	</p>
@@ -16534,7 +16585,8 @@ var(--db-icon-pulse-color, #EC0016)
 			
 			
 			
-			 aria-label="Small">
+			 aria-label="Small"
+			>
 			Brand Primary without icon
 		</button>
 		<button class="elm-button "
@@ -16546,7 +16598,8 @@ var(--db-icon-pulse-color, #EC0016)
 			 disabled
 			
 			
-			 aria-label="Small">
+			 aria-label="Small"
+			>
 			Brand Primary without icon (disabled)
 		</button>
 	</p>
@@ -16560,7 +16613,8 @@ var(--db-icon-pulse-color, #EC0016)
 			
 			 data-icon="done"
 			
-			 aria-label="Small">
+			 aria-label="Small"
+			>
 			Brand Primary displaying only the icon
 		</button>
 		<button class="elm-button is-icon-text-replace"
@@ -16572,7 +16626,8 @@ var(--db-icon-pulse-color, #EC0016)
 			 disabled
 			 data-icon="done"
 			
-			 aria-label="Small">
+			 aria-label="Small"
+			>
 			Brand Primary displaying only the icon
 		</button>
 	</p>
@@ -16588,7 +16643,8 @@ var(--db-icon-pulse-color, #EC0016)
 			
 			 data-icon="add"
 			
-			 aria-label="Regular (default, data-size attribute is optional)">
+			 aria-label="Regular (default, data-size attribute is optional)"
+			>
 			Brand Primary
 		</button>
 		<button class="elm-button "
@@ -16600,7 +16656,8 @@ var(--db-icon-pulse-color, #EC0016)
 			 disabled
 			 data-icon="add"
 			
-			 aria-label="Regular (default, data-size attribute is optional)">
+			 aria-label="Regular (default, data-size attribute is optional)"
+			>
 			Brand Primary (disabled)
 		</button>
 	</p>
@@ -16614,7 +16671,8 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		
 		 data-icon-after="add"
-		 aria-label="Regular (default, data-size attribute is optional)">
+		 aria-label="Regular (default, data-size attribute is optional)"
+		>
 		Brand Primary with right icon
 	</button>
 	<button class="elm-button "
@@ -16626,7 +16684,8 @@ var(--db-icon-pulse-color, #EC0016)
 		 disabled
 		
 		 data-icon-after="add"
-		 aria-label="Regular (default, data-size attribute is optional)">
+		 aria-label="Regular (default, data-size attribute is optional)"
+		>
 		Brand Primary with right icon(disabled)
 	</button>
 	</p>
@@ -16640,7 +16699,8 @@ var(--db-icon-pulse-color, #EC0016)
 			
 			
 			
-			 aria-label="Regular (default, data-size attribute is optional)">
+			 aria-label="Regular (default, data-size attribute is optional)"
+			>
 			Brand Primary without icon
 		</button>
 		<button class="elm-button "
@@ -16652,7 +16712,8 @@ var(--db-icon-pulse-color, #EC0016)
 			 disabled
 			
 			
-			 aria-label="Regular (default, data-size attribute is optional)">
+			 aria-label="Regular (default, data-size attribute is optional)"
+			>
 			Brand Primary without icon (disabled)
 		</button>
 	</p>
@@ -16666,7 +16727,8 @@ var(--db-icon-pulse-color, #EC0016)
 			
 			 data-icon="done"
 			
-			 aria-label="Regular (default, data-size attribute is optional)">
+			 aria-label="Regular (default, data-size attribute is optional)"
+			>
 			Brand Primary displaying only the icon
 		</button>
 		<button class="elm-button is-icon-text-replace"
@@ -16678,7 +16740,8 @@ var(--db-icon-pulse-color, #EC0016)
 			 disabled
 			 data-icon="done"
 			
-			 aria-label="Regular (default, data-size attribute is optional)">
+			 aria-label="Regular (default, data-size attribute is optional)"
+			>
 			Brand Primary displaying only the icon
 		</button>
 	</p>
@@ -16694,7 +16757,8 @@ var(--db-icon-pulse-color, #EC0016)
 			
 			 data-icon="add"
 			
-			 aria-label="Large">
+			 aria-label="Large"
+			>
 			Brand Primary
 		</button>
 		<button class="elm-button "
@@ -16706,7 +16770,8 @@ var(--db-icon-pulse-color, #EC0016)
 			 disabled
 			 data-icon="add"
 			
-			 aria-label="Large">
+			 aria-label="Large"
+			>
 			Brand Primary (disabled)
 		</button>
 	</p>
@@ -16720,7 +16785,8 @@ var(--db-icon-pulse-color, #EC0016)
 		
 		
 		 data-icon-after="add"
-		 aria-label="Large">
+		 aria-label="Large"
+		>
 		Brand Primary with right icon
 	</button>
 	<button class="elm-button "
@@ -16732,7 +16798,8 @@ var(--db-icon-pulse-color, #EC0016)
 		 disabled
 		
 		 data-icon-after="add"
-		 aria-label="Large">
+		 aria-label="Large"
+		>
 		Brand Primary with right icon(disabled)
 	</button>
 	</p>
@@ -16746,7 +16813,8 @@ var(--db-icon-pulse-color, #EC0016)
 			
 			
 			
-			 aria-label="Large">
+			 aria-label="Large"
+			>
 			Brand Primary without icon
 		</button>
 		<button class="elm-button "
@@ -16758,7 +16826,8 @@ var(--db-icon-pulse-color, #EC0016)
 			 disabled
 			
 			
-			 aria-label="Large">
+			 aria-label="Large"
+			>
 			Brand Primary without icon (disabled)
 		</button>
 	</p>
@@ -16772,7 +16841,8 @@ var(--db-icon-pulse-color, #EC0016)
 			
 			 data-icon="done"
 			
-			 aria-label="Large">
+			 aria-label="Large"
+			>
 			Brand Primary displaying only the icon
 		</button>
 		<button class="elm-button is-icon-text-replace"
@@ -16784,7 +16854,8 @@ var(--db-icon-pulse-color, #EC0016)
 			 disabled
 			 data-icon="done"
 			
-			 aria-label="Large">
+			 aria-label="Large"
+			>
 			Brand Primary displaying only the icon
 		</button>
 	</p>
@@ -16793,6 +16864,79 @@ var(--db-icon-pulse-color, #EC0016)
 		
 			<script type="text/json" id="pl-pattern-data-elements-button-sizes" class="pl-js-pattern-data">
 			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"lineage":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button Sizes","patternPartial":"elements-button-sizes","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="elements-button-width" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/elements-buttons-10-button-width&#x2F;elements-buttons-10-button-width.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-button-width" title="Link to Pattern">
+						Button Width
+		
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-button-width" data-patternpartial="elements-button-width" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-button-width">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			<p>
+	<button class="elm-button "
+		data-variant="brand-primary"
+		
+		title="Title text"
+		type="button"
+		
+		
+		
+		
+		
+		>
+		(Default) Auto width
+	</button>
+	<!-- [html-validate-disable-next no-inline-style -- we're doing inline-styling for simplification here] -->
+	<span style="width: 500px;display:inline-block;"><button class="elm-button "
+	data-variant="brand-primary"
+	
+	title="Title text"
+	type="button"
+	
+	
+	
+	
+	
+	 data-width="full">
+	Width full
+</button>
+</span>
+</p>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-elements-button-width" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"lineage":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button Width","patternPartial":"elements-button-width","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -18527,7 +18671,7 @@ var(--db-icon-pulse-color, #EC0016)
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-elements-headline" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"base-fonts-dark-background","lineagePath":"../../patterns/base-type-fonts-dark-background/base-type-fonts-dark-background.rendered.html"},{"lineagePattern":"base-fonts-light-font","lineagePath":"../../patterns/base-type-fonts-light-font/base-type-fonts-light-font.rendered.html"},{"lineagePattern":"elements-chips-disabled","lineagePath":"../../patterns/elements-chips-chips-disabled/elements-chips-chips-disabled.rendered.html"},{"lineagePattern":"elements-chips-linked","lineagePath":"../../patterns/elements-chips-chips-linked/elements-chips-chips-linked.rendered.html"},{"lineagePattern":"elements-chips-type-selection","lineagePath":"../../patterns/elements-chips-chips-type-selection/elements-chips-chips-type-selection.rendered.html"},{"lineagePattern":"elements-chips-with-icon","lineagePath":"../../patterns/elements-chips-chips-with-icon/elements-chips-chips-with-icon.rendered.html"},{"lineagePattern":"elements-tags-small","lineagePath":"../../patterns/elements-tags-tags-small/elements-tags-tags-small.rendered.html"},{"lineagePattern":"elements-tags-with-icon","lineagePath":"../../patterns/elements-tags-tags-with-icon/elements-tags-tags-with-icon.rendered.html"},{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"pages-intro","lineagePath":"../../patterns/pages-intro/pages-intro.rendered.html"},{"lineagePattern":"pages-sample-page","lineagePath":"../../patterns/pages-sample-page/pages-sample-page.rendered.html"},{"lineagePattern":"base-fonts","lineagePath":"../../patterns/base-type-fonts/base-type-fonts.rendered.html","lineageState":"complete"},{"lineagePattern":"elements-chips","lineagePath":"../../patterns/elements-chips-chips/elements-chips-chips.rendered.html"},{"lineagePattern":"elements-headline-pulse","lineagePath":"../../patterns/elements-headline-headline-pulse/elements-headline-headline-pulse.rendered.html"},{"lineagePattern":"elements-logo-with-following-headline","lineagePath":"../../patterns/elements-logo-logo-with-following-headline/elements-logo-logo-with-following-headline.rendered.html"},{"lineagePattern":"elements-tags","lineagePath":"../../patterns/elements-tags-tags/elements-tags-tags.rendered.html"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-pagination","lineagePath":"../../patterns/components-pagination-pagination/components-pagination-pagination.rendered.html","lineageState":"inreview"}],"lineageR":[{"lineagePattern":"base-fonts-dark-background","lineagePath":"../../patterns/base-type-fonts-dark-background/base-type-fonts-dark-background.rendered.html"},{"lineagePattern":"base-fonts-light-font","lineagePath":"../../patterns/base-type-fonts-light-font/base-type-fonts-light-font.rendered.html"},{"lineagePattern":"elements-chips-disabled","lineagePath":"../../patterns/elements-chips-chips-disabled/elements-chips-chips-disabled.rendered.html"},{"lineagePattern":"elements-chips-linked","lineagePath":"../../patterns/elements-chips-chips-linked/elements-chips-chips-linked.rendered.html"},{"lineagePattern":"elements-chips-type-selection","lineagePath":"../../patterns/elements-chips-chips-type-selection/elements-chips-chips-type-selection.rendered.html"},{"lineagePattern":"elements-chips-with-icon","lineagePath":"../../patterns/elements-chips-chips-with-icon/elements-chips-chips-with-icon.rendered.html"},{"lineagePattern":"elements-tags-small","lineagePath":"../../patterns/elements-tags-tags-small/elements-tags-tags-small.rendered.html"},{"lineagePattern":"elements-tags-with-icon","lineagePath":"../../patterns/elements-tags-tags-with-icon/elements-tags-tags-with-icon.rendered.html"},{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"pages-intro","lineagePath":"../../patterns/pages-intro/pages-intro.rendered.html"},{"lineagePattern":"pages-sample-page","lineagePath":"../../patterns/pages-sample-page/pages-sample-page.rendered.html"},{"lineagePattern":"base-fonts","lineagePath":"../../patterns/base-type-fonts/base-type-fonts.rendered.html","lineageState":"complete"},{"lineagePattern":"elements-chips","lineagePath":"../../patterns/elements-chips-chips/elements-chips-chips.rendered.html"},{"lineagePattern":"elements-headline-pulse","lineagePath":"../../patterns/elements-headline-headline-pulse/elements-headline-headline-pulse.rendered.html"},{"lineagePattern":"elements-logo-with-following-headline","lineagePath":"../../patterns/elements-logo-logo-with-following-headline/elements-logo-logo-with-following-headline.rendered.html"},{"lineagePattern":"elements-tags","lineagePath":"../../patterns/elements-tags-tags/elements-tags-tags.rendered.html"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-pagination","lineagePath":"../../patterns/components-pagination-pagination/components-pagination-pagination.rendered.html","lineageState":"inreview"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"headline"},"patternExtension":"hbs","patternName":"Headline","patternPartial":"elements-headline","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"base-fonts-dark-background","lineagePath":"../../patterns/base-type-fonts-dark-background/base-type-fonts-dark-background.rendered.html"},{"lineagePattern":"base-fonts-light-font","lineagePath":"../../patterns/base-type-fonts-light-font/base-type-fonts-light-font.rendered.html"},{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"elements-chips-disabled","lineagePath":"../../patterns/elements-chips-chips-disabled/elements-chips-chips-disabled.rendered.html"},{"lineagePattern":"elements-chips-linked","lineagePath":"../../patterns/elements-chips-chips-linked/elements-chips-chips-linked.rendered.html"},{"lineagePattern":"elements-chips-type-selection","lineagePath":"../../patterns/elements-chips-chips-type-selection/elements-chips-chips-type-selection.rendered.html"},{"lineagePattern":"elements-chips-with-icon","lineagePath":"../../patterns/elements-chips-chips-with-icon/elements-chips-chips-with-icon.rendered.html"},{"lineagePattern":"elements-tags-small","lineagePath":"../../patterns/elements-tags-tags-small/elements-tags-tags-small.rendered.html"},{"lineagePattern":"elements-tags-with-icon","lineagePath":"../../patterns/elements-tags-tags-with-icon/elements-tags-tags-with-icon.rendered.html"},{"lineagePattern":"pages-intro","lineagePath":"../../patterns/pages-intro/pages-intro.rendered.html"},{"lineagePattern":"pages-sample-page","lineagePath":"../../patterns/pages-sample-page/pages-sample-page.rendered.html"},{"lineagePattern":"base-fonts","lineagePath":"../../patterns/base-type-fonts/base-type-fonts.rendered.html","lineageState":"complete"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-pagination","lineagePath":"../../patterns/components-pagination-pagination/components-pagination-pagination.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-headline-pulse","lineagePath":"../../patterns/elements-headline-headline-pulse/elements-headline-headline-pulse.rendered.html"},{"lineagePattern":"elements-chips","lineagePath":"../../patterns/elements-chips-chips/elements-chips-chips.rendered.html"},{"lineagePattern":"elements-logo-with-following-headline","lineagePath":"../../patterns/elements-logo-logo-with-following-headline/elements-logo-logo-with-following-headline.rendered.html"},{"lineagePattern":"elements-tags","lineagePath":"../../patterns/elements-tags-tags/elements-tags-tags.rendered.html"}],"lineageR":[{"lineagePattern":"base-fonts-dark-background","lineagePath":"../../patterns/base-type-fonts-dark-background/base-type-fonts-dark-background.rendered.html"},{"lineagePattern":"base-fonts-light-font","lineagePath":"../../patterns/base-type-fonts-light-font/base-type-fonts-light-font.rendered.html"},{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"elements-chips-disabled","lineagePath":"../../patterns/elements-chips-chips-disabled/elements-chips-chips-disabled.rendered.html"},{"lineagePattern":"elements-chips-linked","lineagePath":"../../patterns/elements-chips-chips-linked/elements-chips-chips-linked.rendered.html"},{"lineagePattern":"elements-chips-type-selection","lineagePath":"../../patterns/elements-chips-chips-type-selection/elements-chips-chips-type-selection.rendered.html"},{"lineagePattern":"elements-chips-with-icon","lineagePath":"../../patterns/elements-chips-chips-with-icon/elements-chips-chips-with-icon.rendered.html"},{"lineagePattern":"elements-tags-small","lineagePath":"../../patterns/elements-tags-tags-small/elements-tags-tags-small.rendered.html"},{"lineagePattern":"elements-tags-with-icon","lineagePath":"../../patterns/elements-tags-tags-with-icon/elements-tags-tags-with-icon.rendered.html"},{"lineagePattern":"pages-intro","lineagePath":"../../patterns/pages-intro/pages-intro.rendered.html"},{"lineagePattern":"pages-sample-page","lineagePath":"../../patterns/pages-sample-page/pages-sample-page.rendered.html"},{"lineagePattern":"base-fonts","lineagePath":"../../patterns/base-type-fonts/base-type-fonts.rendered.html","lineageState":"complete"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-pagination","lineagePath":"../../patterns/components-pagination-pagination/components-pagination-pagination.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-headline-pulse","lineagePath":"../../patterns/elements-headline-headline-pulse/elements-headline-headline-pulse.rendered.html"},{"lineagePattern":"elements-chips","lineagePath":"../../patterns/elements-chips-chips/elements-chips-chips.rendered.html"},{"lineagePattern":"elements-logo-with-following-headline","lineagePath":"../../patterns/elements-logo-logo-with-following-headline/elements-logo-logo-with-following-headline.rendered.html"},{"lineagePattern":"elements-tags","lineagePath":"../../patterns/elements-tags-tags/elements-tags-tags.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"headline"},"patternExtension":"hbs","patternName":"Headline","patternPartial":"elements-headline","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -19240,7 +19384,7 @@ var(--db-icon-pulse-color, #EC0016)
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-elements-input" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"elements-input-variations","lineagePath":"../../patterns/elements-input-input-variations/elements-input-input-variations.rendered.html"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"}],"lineageR":[{"lineagePattern":"elements-input-variations","lineagePath":"../../patterns/elements-input-input-variations/elements-input-input-variations.rendered.html"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"input"},"patternExtension":"hbs","patternName":"Input","patternPartial":"elements-input","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":2}}
+			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"},{"lineagePattern":"elements-input-variations","lineagePath":"../../patterns/elements-input-input-variations/elements-input-input-variations.rendered.html"}],"lineageR":[{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"},{"lineagePattern":"elements-input-variations","lineagePath":"../../patterns/elements-input-input-variations/elements-input-input-variations.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"input"},"patternExtension":"hbs","patternName":"Input","patternPartial":"elements-input","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":2}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -21180,38 +21324,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radio"
-	id="id-281867e7-e9b0-45cf-a733-d04bd2bf94c0"
+	id="id-c2eb4738-9f2d-4696-8f40-1a0e62fdc571"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-281867e7-e9b0-45cf-a733-d04bd2bf94c0">Radio 01</label>
+<label class="elm-label" for="id-c2eb4738-9f2d-4696-8f40-1a0e62fdc571">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radio"
-	id="id-8db36aa7-2a5a-4b61-ac4e-db8977c6d83e"
+	id="id-5b265e90-52c3-4d61-824d-a443809756ab"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-8db36aa7-2a5a-4b61-ac4e-db8977c6d83e">Radio 02</label>
+<label class="elm-label" for="id-5b265e90-52c3-4d61-824d-a443809756ab">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radio"
-	id="id-e25bae28-7e18-44b7-b145-79d1b9864f62"
+	id="id-2cbf8dfd-c608-4738-861b-41a0564a97ae"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-e25bae28-7e18-44b7-b145-79d1b9864f62">Radio 03</label>
+<label class="elm-label" for="id-2cbf8dfd-c608-4738-861b-41a0564a97ae">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -21260,38 +21404,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radioChecked"
-	id="id-46da2fdc-9460-446b-aef5-f021a93ca2d7"
+	id="id-5da3a9e9-9544-428b-ad35-55be04bb5c20"
 	 checked
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-46da2fdc-9460-446b-aef5-f021a93ca2d7">Radio 01</label>
+<label class="elm-label" for="id-5da3a9e9-9544-428b-ad35-55be04bb5c20">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioChecked"
-	id="id-3ca85489-c4c5-40ae-9a06-75b05f9a1c7b"
+	id="id-e148d486-af6a-4961-aa1a-68bcc1ce5b7e"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-3ca85489-c4c5-40ae-9a06-75b05f9a1c7b">Radio 02</label>
+<label class="elm-label" for="id-e148d486-af6a-4961-aa1a-68bcc1ce5b7e">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioChecked"
-	id="id-bf287034-84e3-436f-b09d-6fdbf391a2a9"
+	id="id-7440d93d-caba-4b98-8e29-89309f80aafb"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-bf287034-84e3-436f-b09d-6fdbf391a2a9">Radio 03</label>
+<label class="elm-label" for="id-7440d93d-caba-4b98-8e29-89309f80aafb">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -21340,38 +21484,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radioDisabled"
-	id="id-9aec6e1f-d390-4671-9015-2a5cb2b2b7e6"
+	id="id-0e599ee6-1082-4de7-b365-ca54a5b8f819"
 	
 	 disabled
 	
 	
 	
 	>
-<label class="elm-label" for="id-9aec6e1f-d390-4671-9015-2a5cb2b2b7e6">Radio 01</label>
+<label class="elm-label" for="id-0e599ee6-1082-4de7-b365-ca54a5b8f819">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioDisabled"
-	id="id-00884c64-f9ae-47b2-86e2-3f4491dc7452"
+	id="id-6532f911-fb3c-402a-805f-e36dc4757ed9"
 	
 	 disabled
 	
 	
 	
 	>
-<label class="elm-label" for="id-00884c64-f9ae-47b2-86e2-3f4491dc7452">Radio 02</label>
+<label class="elm-label" for="id-6532f911-fb3c-402a-805f-e36dc4757ed9">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioDisabled"
-	id="id-d1191262-0366-4291-9103-d9c4f10ebacd"
+	id="id-023aea1d-fef9-46f8-b330-a627e5f88088"
 	
 	 disabled
 	
 	
 	
 	>
-<label class="elm-label" for="id-d1191262-0366-4291-9103-d9c4f10ebacd">Radio 03</label>
+<label class="elm-label" for="id-023aea1d-fef9-46f8-b330-a627e5f88088">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -21420,38 +21564,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radioDisabledChecked"
-	id="id-c4b42322-91f3-48a6-89e9-5dc9b0177c43"
+	id="id-e0a3a8f5-ed78-4281-ab7a-e5bac704c368"
 	 checked
 	 disabled
 	
 	
 	
 	>
-<label class="elm-label" for="id-c4b42322-91f3-48a6-89e9-5dc9b0177c43">Radio 01</label>
+<label class="elm-label" for="id-e0a3a8f5-ed78-4281-ab7a-e5bac704c368">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioDisabledChecked"
-	id="id-e354173f-5767-4484-9498-f251e1d64d23"
+	id="id-cec16616-7d1c-4d31-adf4-cf424f8c2808"
 	
 	 disabled
 	
 	
 	
 	>
-<label class="elm-label" for="id-e354173f-5767-4484-9498-f251e1d64d23">Radio 02</label>
+<label class="elm-label" for="id-cec16616-7d1c-4d31-adf4-cf424f8c2808">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioDisabledChecked"
-	id="id-763b95b0-5f6a-4376-9e94-f368f3a737e4"
+	id="id-5789f0c2-65e6-4a8c-8c82-e431424e7a51"
 	
 	 disabled
 	
 	
 	
 	>
-<label class="elm-label" for="id-763b95b0-5f6a-4376-9e94-f368f3a737e4">Radio 03</label>
+<label class="elm-label" for="id-5789f0c2-65e6-4a8c-8c82-e431424e7a51">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -21500,38 +21644,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radioInvalid"
-	id="id-8db8e7c1-f240-4d90-80aa-365348d697e1"
+	id="id-3d9a3887-9c85-429a-9acb-4ab50f5c116c"
 	
 	
 	
 	
 	 aria-invalid="true"
 	>
-<label class="elm-label" for="id-8db8e7c1-f240-4d90-80aa-365348d697e1">Radio 01</label>
+<label class="elm-label" for="id-3d9a3887-9c85-429a-9acb-4ab50f5c116c">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioInvalid"
-	id="id-56f0d55e-941d-4f50-8ba4-2038ef98ef51"
+	id="id-0b36c8d0-5041-4b52-b23f-30314f163a99"
 	
 	
 	
 	
 	 aria-invalid="true"
 	>
-<label class="elm-label" for="id-56f0d55e-941d-4f50-8ba4-2038ef98ef51">Radio 02</label>
+<label class="elm-label" for="id-0b36c8d0-5041-4b52-b23f-30314f163a99">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioInvalid"
-	id="id-adc98d83-95b3-44c4-bf20-12203e6a7606"
+	id="id-2253ae6b-63b8-4797-a8b1-9f7cb0394581"
 	
 	
 	
 	
 	 aria-invalid="true"
 	>
-<label class="elm-label" for="id-adc98d83-95b3-44c4-bf20-12203e6a7606">Radio 03</label>
+<label class="elm-label" for="id-2253ae6b-63b8-4797-a8b1-9f7cb0394581">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -21580,38 +21724,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radioLabelHidden"
-	id="id-11c8134a-3f9b-410b-b751-4ef9d65f4c29"
+	id="id-941d5124-3c32-4620-ac06-c004138d0a10"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-11c8134a-3f9b-410b-b751-4ef9d65f4c29" data-label-hidden="true">Radio 01</label>
+<label class="elm-label" for="id-941d5124-3c32-4620-ac06-c004138d0a10" data-label-hidden="true">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioLabelHidden"
-	id="id-7d8cb4d2-e522-46ab-9678-79ff9361e633"
+	id="id-29285627-4448-4dbf-8f65-feed51a6b251"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-7d8cb4d2-e522-46ab-9678-79ff9361e633" data-label-hidden="true">Radio 02</label>
+<label class="elm-label" for="id-29285627-4448-4dbf-8f65-feed51a6b251" data-label-hidden="true">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioLabelHidden"
-	id="id-7cb860c5-361d-4bb1-a92e-4609cf5b3494"
+	id="id-b8ffa83b-43f2-44f5-b32b-e4ea1c8e5d22"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-7cb860c5-361d-4bb1-a92e-4609cf5b3494" data-label-hidden="true">Radio 03</label>
+<label class="elm-label" for="id-b8ffa83b-43f2-44f5-b32b-e4ea1c8e5d22" data-label-hidden="true">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -21660,38 +21804,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radioRequired"
-	id="id-8a29421f-2d20-460e-b69d-e1271a096716"
+	id="id-095f71df-f963-4d9c-b705-23def6c86b40"
 	
 	
 	
 	
 	
 	 required>
-<label class="elm-label" for="id-8a29421f-2d20-460e-b69d-e1271a096716">Radio 01</label>
+<label class="elm-label" for="id-095f71df-f963-4d9c-b705-23def6c86b40">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioRequired"
-	id="id-01b79d76-814f-42d5-8c2b-ef77e2e9c1b9"
+	id="id-ef8ac2f3-9e7b-4828-9651-f57a02e07b45"
 	
 	
 	
 	
 	
 	 required>
-<label class="elm-label" for="id-01b79d76-814f-42d5-8c2b-ef77e2e9c1b9">Radio 02</label>
+<label class="elm-label" for="id-ef8ac2f3-9e7b-4828-9651-f57a02e07b45">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioRequired"
-	id="id-0e1a567e-3750-4164-9f5f-596fcab12a78"
+	id="id-476b2ba6-a6f8-4f01-9e27-a30866cf6191"
 	
 	
 	
 	
 	
 	 required>
-<label class="elm-label" for="id-0e1a567e-3750-4164-9f5f-596fcab12a78">Radio 03</label>
+<label class="elm-label" for="id-476b2ba6-a6f8-4f01-9e27-a30866cf6191">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -23998,6 +24142,7 @@ If you would like to even also match those visual requirements, you would need t
 			
 			
 			
+			
 			>
 			Secondary
 		</button>
@@ -24006,6 +24151,7 @@ If you would like to even also match those visual requirements, you would need t
 			
 			title="Title text"
 			type="button"
+			
 			
 			
 			
@@ -24114,6 +24260,7 @@ If you would like to even also match those visual requirements, you would need t
 			
 			
 			
+			
 			>
 			Secondary
 		</button>
@@ -24122,6 +24269,7 @@ If you would like to even also match those visual requirements, you would need t
 			
 			title="Title text"
 			type="button"
+			
 			
 			
 			
@@ -24206,6 +24354,7 @@ If you would like to even also match those visual requirements, you would need t
 	
 	
 	
+	
 	>
 	Profileinstellungen
 </button>
@@ -24215,6 +24364,7 @@ If you would like to even also match those visual requirements, you would need t
 	
 	title="Title text"
 	type="button"
+	
 	
 	
 	
@@ -24282,6 +24432,7 @@ If you would like to even also match those visual requirements, you would need t
 	
 	
 	
+	
 	>
 	Profileinstellungen
 </button>
@@ -24291,6 +24442,7 @@ If you would like to even also match those visual requirements, you would need t
 	
 	title="Title text"
 	type="button"
+	
 	
 	
 	
@@ -24423,6 +24575,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 		
 		title="Title text"
 		type="submit"
+		
 		
 		
 		
@@ -24609,6 +24762,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 				
 				
 				
+				
 				>
 				EN
 			</button>
@@ -24623,6 +24777,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 				
 				
 				
+				
 				>
 				DE
 			</button>
@@ -24633,6 +24788,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 				
 				title="Langue française"
 				type="button"
+				
 				
 				
 				
@@ -25046,6 +25202,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 	
 	
 	
+	
 	>
 	Modify
 </button>
@@ -25055,6 +25212,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 	
 	title="Title text"
 	type="button"
+	
 	
 	
 	
@@ -25210,6 +25368,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 	
 	
 	
+	
 	>
 	Modify
 </button>
@@ -25219,6 +25378,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 	
 	title="Title text"
 	type="button"
+	
 	
 	
 	
@@ -26863,6 +27023,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 	
 	
 	
+	
 	>
 	Edit
 </button>
@@ -26872,6 +27033,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 	
 	title=""
 	type="button"
+	
 	
 	
 	
@@ -26901,6 +27063,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 	
 	
 	
+	
 	>
 	Edit
 </button>
@@ -26910,6 +27073,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 	
 	title=""
 	type="button"
+	
 	
 	
 	
@@ -26939,6 +27103,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 	
 	
 	
+	
 	>
 	Edit
 </button>
@@ -26948,6 +27113,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 	
 	title=""
 	type="button"
+	
 	
 	
 	
@@ -26977,6 +27143,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 	
 	
 	
+	
 	>
 	Edit
 </button>
@@ -26986,6 +27153,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 	
 	title=""
 	type="button"
+	
 	
 	
 	
@@ -27015,6 +27183,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 	
 	
 	
+	
 	>
 	Edit
 </button>
@@ -27024,6 +27193,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 	
 	title=""
 	type="button"
+	
 	
 	
 	
@@ -28505,6 +28675,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 				
 				
 				
+				
 				>
 				Suchen
 			</button>
@@ -28977,6 +29148,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 				
 				
 				
+				
 				>
 				Suchen
 			</button>
@@ -29099,6 +29271,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 				
 				
 				
+				
 				>
 				Profileinstellungen
 			</button>
@@ -29108,6 +29281,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 				
 				title="Title text"
 				type="button"
+				
 				
 				
 				
@@ -29194,6 +29368,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 			
 			title="Title text"
 			type="submit"
+			
 			
 			
 			
@@ -29382,7 +29557,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 		<h1 class="elm-headline ">DB UI Core</h1>
 
 		<img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTI0IiBoZWlnaHQ9IjIwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkxpY2Vuc2U6IEFwYWNoZSAyLjAiPjx0aXRsZT5MaWNlbnNlOiBBcGFjaGUgMi4wPC90aXRsZT48bGluZWFyR3JhZGllbnQgaWQ9InMiIHgyPSIwIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjYmJiIiBzdG9wLW9wYWNpdHk9Ii4xIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLW9wYWNpdHk9Ii4xIi8+PC9saW5lYXJHcmFkaWVudD48Y2xpcFBhdGggaWQ9InIiPjxyZWN0IHdpZHRoPSIxMjQiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjZmZmIi8+PC9jbGlwUGF0aD48ZyBjbGlwLXBhdGg9InVybCgjcikiPjxyZWN0IHdpZHRoPSI1MSIgaGVpZ2h0PSIyMCIgZmlsbD0iIzU1NSIvPjxyZWN0IHg9IjUxIiB3aWR0aD0iNzMiIGhlaWdodD0iMjAiIGZpbGw9IiMwMDdlYzYiLz48cmVjdCB3aWR0aD0iMTI0IiBoZWlnaHQ9IjIwIiBmaWxsPSJ1cmwoI3MpIi8+PC9nPjxnIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJWZXJkYW5hLEdlbmV2YSxEZWphVnUgU2FucyxzYW5zLXNlcmlmIiB0ZXh0LXJlbmRlcmluZz0iZ2VvbWV0cmljUHJlY2lzaW9uIiBmb250LXNpemU9IjExMCI+PHRleHQgYXJpYS1oaWRkZW49InRydWUiIHg9IjI2NSIgeT0iMTUwIiBmaWxsPSIjMDEwMTAxIiBmaWxsLW9wYWNpdHk9Ii4zIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgdGV4dExlbmd0aD0iNDEwIj5MaWNlbnNlPC90ZXh0Pjx0ZXh0IHg9IjI2NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iNDEwIj5MaWNlbnNlPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI4NjUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjYzMCI+QXBhY2hlIDIuMDwvdGV4dD48dGV4dCB4PSI4NjUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9IjYzMCI+QXBhY2hlIDIuMDwvdGV4dD48L2c+PC9zdmc+" width="124" height="20" alt="Apache 2.0 license badge">
-		<a href="https://npmjs.com/package/@db-ui/core" target="_blank" rel="noopener noreferrer"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iODgiIGhlaWdodD0iMjAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0ibnBtOiB2Mi4yMS4wIj48dGl0bGU+bnBtOiB2Mi4yMS4wPC90aXRsZT48bGluZWFyR3JhZGllbnQgaWQ9InMiIHgyPSIwIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjYmJiIiBzdG9wLW9wYWNpdHk9Ii4xIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLW9wYWNpdHk9Ii4xIi8+PC9saW5lYXJHcmFkaWVudD48Y2xpcFBhdGggaWQ9InIiPjxyZWN0IHdpZHRoPSI4OCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiNmZmYiLz48L2NsaXBQYXRoPjxnIGNsaXAtcGF0aD0idXJsKCNyKSI+PHJlY3Qgd2lkdGg9IjM1IiBoZWlnaHQ9IjIwIiBmaWxsPSIjNTU1Ii8+PHJlY3QgeD0iMzUiIHdpZHRoPSI1MyIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiKDIzNywgMjgsIDM2KSIvPjxyZWN0IHdpZHRoPSI4OCIgaGVpZ2h0PSIyMCIgZmlsbD0idXJsKCNzKSIvPjwvZz48ZyBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iVmVyZGFuYSxHZW5ldmEsRGVqYVZ1IFNhbnMsc2Fucy1zZXJpZiIgdGV4dC1yZW5kZXJpbmc9Imdlb21ldHJpY1ByZWNpc2lvbiIgZm9udC1zaXplPSIxMTAiPjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSIxODUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjI1MCI+bnBtPC90ZXh0Pjx0ZXh0IHg9IjE4NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iMjUwIj5ucG08L3RleHQ+PHRleHQgYXJpYS1oaWRkZW49InRydWUiIHg9IjYwNSIgeT0iMTUwIiBmaWxsPSIjMDEwMTAxIiBmaWxsLW9wYWNpdHk9Ii4zIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgdGV4dExlbmd0aD0iNDMwIj52Mi4yMS4wPC90ZXh0Pjx0ZXh0IHg9IjYwNSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iNDMwIj52Mi4yMS4wPC90ZXh0PjwvZz48L3N2Zz4=" width="88" height="20" alt="npm version"></a>
+		<a href="https://npmjs.com/package/@db-ui/core" target="_blank" rel="noopener noreferrer"><img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iODgiIGhlaWdodD0iMjAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0ibnBtOiB2Mi4yMi4wIj48dGl0bGU+bnBtOiB2Mi4yMi4wPC90aXRsZT48bGluZWFyR3JhZGllbnQgaWQ9InMiIHgyPSIwIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjYmJiIiBzdG9wLW9wYWNpdHk9Ii4xIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLW9wYWNpdHk9Ii4xIi8+PC9saW5lYXJHcmFkaWVudD48Y2xpcFBhdGggaWQ9InIiPjxyZWN0IHdpZHRoPSI4OCIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiNmZmYiLz48L2NsaXBQYXRoPjxnIGNsaXAtcGF0aD0idXJsKCNyKSI+PHJlY3Qgd2lkdGg9IjM1IiBoZWlnaHQ9IjIwIiBmaWxsPSIjNTU1Ii8+PHJlY3QgeD0iMzUiIHdpZHRoPSI1MyIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiKDIzNywgMjgsIDM2KSIvPjxyZWN0IHdpZHRoPSI4OCIgaGVpZ2h0PSIyMCIgZmlsbD0idXJsKCNzKSIvPjwvZz48ZyBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iVmVyZGFuYSxHZW5ldmEsRGVqYVZ1IFNhbnMsc2Fucy1zZXJpZiIgdGV4dC1yZW5kZXJpbmc9Imdlb21ldHJpY1ByZWNpc2lvbiIgZm9udC1zaXplPSIxMTAiPjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSIxODUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjI1MCI+bnBtPC90ZXh0Pjx0ZXh0IHg9IjE4NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iMjUwIj5ucG08L3RleHQ+PHRleHQgYXJpYS1oaWRkZW49InRydWUiIHg9IjYwNSIgeT0iMTUwIiBmaWxsPSIjMDEwMTAxIiBmaWxsLW9wYWNpdHk9Ii4zIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgdGV4dExlbmd0aD0iNDMwIj52Mi4yMi4wPC90ZXh0Pjx0ZXh0IHg9IjYwNSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iNDMwIj52Mi4yMi4wPC90ZXh0PjwvZz48L3N2Zz4=" width="88" height="20" alt="npm version"></a>
 		<img src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzA4IiBoZWlnaHQ9IjIwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkJhc2VkIG9uOiBEQiBEZXNpZ24gU3lzdGVtIFVYIEd1aWRlcyArIFN0YW5kYXJkcyI+PHRpdGxlPkJhc2VkIG9uOiBEQiBEZXNpZ24gU3lzdGVtIFVYIEd1aWRlcyArIFN0YW5kYXJkczwvdGl0bGU+PGxpbmVhckdyYWRpZW50IGlkPSJzIiB4Mj0iMCIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2JiYiIgc3RvcC1vcGFjaXR5PSIuMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1vcGFjaXR5PSIuMSIvPjwvbGluZWFyR3JhZGllbnQ+PGNsaXBQYXRoIGlkPSJyIj48cmVjdCB3aWR0aD0iMzA4IiBoZWlnaHQ9IjIwIiByeD0iMyIgZmlsbD0iI2ZmZiIvPjwvY2xpcFBhdGg+PGcgY2xpcC1wYXRoPSJ1cmwoI3IpIj48cmVjdCB3aWR0aD0iNjEiIGhlaWdodD0iMjAiIGZpbGw9IiM1NTUiLz48cmVjdCB4PSI2MSIgd2lkdGg9IjI0NyIgaGVpZ2h0PSIyMCIgZmlsbD0iI2Q3ZGNlMSIvPjxyZWN0IHdpZHRoPSIzMDgiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMzE1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI1MTAiPkJhc2VkIG9uPC90ZXh0Pjx0ZXh0IHg9IjMxNSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iNTEwIj5CYXNlZCBvbjwvdGV4dD48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMTgzNSIgeT0iMTUwIiBmaWxsPSIjY2NjIiBmaWxsLW9wYWNpdHk9Ii4zIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgdGV4dExlbmd0aD0iMjM3MCI+REIgRGVzaWduIFN5c3RlbSBVWCBHdWlkZXMgKyBTdGFuZGFyZHM8L3RleHQ+PHRleHQgeD0iMTgzNSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iIzMzMyIgdGV4dExlbmd0aD0iMjM3MCI+REIgRGVzaWduIFN5c3RlbSBVWCBHdWlkZXMgKyBTdGFuZGFyZHM8L3RleHQ+PC9nPjwvc3ZnPg==" width="308" height="20" alt="Based on DB UX Design System guidelines">
 
 		<p lang="de">Personenverkehr und DB Systel führen ihre Design Systeme für Web in der Version 2.0 der Standard Web Components zusammen. Unser Ziel ist eine einheitliche Basis UX im Sinne der Modernen Ikone für Kunden und Mitarbeiteranwendungen. Um unser Design End 2 End von Konzeption über Design bis zur Implementierung konsistent zu halten, wird das DB UX Design System auch in Code von DB Systel und Reisendeninformation umgesetzt. Stay Tuned!</p>
@@ -29862,10 +30037,10 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1721796672878">
+<script id="pl-js-polyfill-insert-1722242757493">
   (function() {
     if (self != top) {
-      var cb = '1721796672878';
+      var cb = '1722242757493';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -29878,7 +30053,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1721796672878" nomodule>
+<script id="pl-js-insert-1722242757493" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 
