@@ -216,4 +216,13 @@
 	&:disabled {
 		color: unquote($button---color + "80");
 	}
+
+	// width
+	&%width-Full {
+		inline-size: 100%;
+	}
+
+	&[data-width="full"] {
+		@extend %width-Full;
+	}
 }

@@ -8,13 +8,6 @@
 	padding-right: $accordion---paddingRight;
 
 	summary {
-		@include icon(
-			glyph(expand-more),
-			24,
-			"outline",
-			"after",
-			$partial: $partial
-		);
 		align-items: center;
 		display: flex;
 		justify-content: space-between;
@@ -25,6 +18,16 @@
 		width: calc(
 			100% + var(--db-accordion---paddingLeft) + #{$accordion---paddingRight}
 		);
+
+		& {
+			@include icon(
+				glyph(expand-more),
+				24,
+				"outline",
+				"after",
+				$partial: $partial
+			);
+		}
 
 		// Replace existing marker with an icon from the library
 		&::-webkit-details-marker {

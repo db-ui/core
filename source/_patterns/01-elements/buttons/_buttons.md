@@ -25,6 +25,18 @@ Extend one of the size SCSS placeholders in case that you don't want the default
 
 You could set the different button sizes via the `data-size` attribute, the default is "regular" and in that case is optional.
 
+### Width
+
+Regularly, our buttons shouldn't increase to it's horizontally available space, but only the one determined by it's included textual content.
+
+#### SCSS (recommended)
+
+Extend the width SCSS placeholders in case that you don't want the default (`auto`): `%width-Full`
+
+#### HTML attribute
+
+You could set the button width to increase to it's full available space via the `data-width="full"` attribute, the default is `auto` and in that case is optional.
+
 ## Usability
 
 > Buttons should be used in situations where users might need to:

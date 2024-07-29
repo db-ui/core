@@ -95,15 +95,17 @@
 
 			.elm-link,
 			.elm-button {
-				@include icon(
-					glyph(expand-more),
-					24,
-					"outline",
-					"after",
-					$partial: $partial
-				);
-
 				padding-bottom: to-rem($pxValue: 22);
+
+				& {
+					@include icon(
+						glyph(expand-more),
+						24,
+						"outline",
+						"after",
+						$partial: $partial
+					);
+				}
 
 				&:hover {
 					color: $db-color-red-500;
