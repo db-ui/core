@@ -1,0 +1,258 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>DB UI Core - Pattern Lab</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+	<script>document.documentElement.className = 'js ' + document.documentElement.className.replace(/\bno-js\b/, '')</script>
+
+	<!-- see https://htmlhead.dev/ for a description of what could get listed within your pages HEAD section //-->
+
+
+	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1722403211191" media="all">
+
+	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1722403211191" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1722403211191" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1722403211191" media="all">
+	<!-- dialog polyfill //-->
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1722403211191" media="all">
+
+	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+	
+	<!-- End Pattern Lab -->
+
+
+	<!-- Google's "Create good meta descriptions" / https://support.google.com/webmasters/answer/35624?hl=en#meta-descriptions
+documentation has useful tips on creating an effective description. //-->
+	<meta name="Description" content="Put your description here.">
+
+	<!-- You can add the theme-color meta extension in the <head> of your pages to suggest the color that browsers and OSes should use if they customize the display of individual pages in their UIs with varying colors.
+			more information: https://html.spec.whatwg.org/multipage/semantics.html#meta-theme-color -->
+	<meta name="theme-color" content="#f01414">
+
+	<!-- iframe resizing script for pattern previews -->
+	<script src="../../js/iframeResizer.contentWindow.js"></script>
+</head>
+
+<body class="styleguide">
+<p>Please keep in mind that it's optional to set the variant and size for the following ones, as this size (24) and style (outline) combination is defined as the default.<br>In case that you'll need another default in your project, you could overwrite the defaults by modifying the <code>$icon-size</code> and <code>$icon-style</code> SCSS variables.</p>
+<ul class="DO-NOT-COPY-THIS-CLASS-example-icon-list">
+	<li data-icon="bahnbonus" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(bahnbonus))</code> or <code>@include icon(glyph(bahnbonus), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="bahnbonus"</code> or <code>data-icon="bahnbonus" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="bahnbonus-card" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(bahnbonus-card))</code> or <code>@include icon(glyph(bahnbonus-card), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="bahnbonus-card"</code> or <code>data-icon="bahnbonus-card" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="bahncard" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(bahncard))</code> or <code>@include icon(glyph(bahncard), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="bahncard"</code> or <code>data-icon="bahncard" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="best-price" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(best-price))</code> or <code>@include icon(glyph(best-price), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="best-price"</code> or <code>data-icon="best-price" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="commuter-ticket" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(commuter-ticket))</code> or <code>@include icon(glyph(commuter-ticket), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="commuter-ticket"</code> or <code>data-icon="commuter-ticket" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="komfort-check-in" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(komfort-check-in))</code> or <code>@include icon(glyph(komfort-check-in), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="komfort-check-in"</code> or <code>data-icon="komfort-check-in" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="komfort-check-in-check" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(komfort-check-in-check))</code> or <code>@include icon(glyph(komfort-check-in-check), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="komfort-check-in-check"</code> or <code>data-icon="komfort-check-in-check" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="komfort-check-in-circle" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(komfort-check-in-circle))</code> or <code>@include icon(glyph(komfort-check-in-circle), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="komfort-check-in-circle"</code> or <code>data-icon="komfort-check-in-circle" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="multiple-cards" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(multiple-cards))</code> or <code>@include icon(glyph(multiple-cards), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="multiple-cards"</code> or <code>data-icon="multiple-cards" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="multiple-passenger" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(multiple-passenger))</code> or <code>@include icon(glyph(multiple-passenger), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="multiple-passenger"</code> or <code>data-icon="multiple-passenger" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="my-travel" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(my-travel))</code> or <code>@include icon(glyph(my-travel), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="my-travel"</code> or <code>data-icon="my-travel" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="outward-journey" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(outward-journey))</code> or <code>@include icon(glyph(outward-journey), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="outward-journey"</code> or <code>data-icon="outward-journey" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="qr-code" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(qr-code))</code> or <code>@include icon(glyph(qr-code), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="qr-code"</code> or <code>data-icon="qr-code" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="qr-code-scan" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(qr-code-scan))</code> or <code>@include icon(glyph(qr-code-scan), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="qr-code-scan"</code> or <code>data-icon="qr-code-scan" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="return-journey" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(return-journey))</code> or <code>@include icon(glyph(return-journey), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="return-journey"</code> or <code>data-icon="return-journey" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="ticket" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(ticket))</code> or <code>@include icon(glyph(ticket), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="ticket"</code> or <code>data-icon="ticket" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="ticket-discount" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(ticket-discount))</code> or <code>@include icon(glyph(ticket-discount), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="ticket-discount"</code> or <code>data-icon="ticket-discount" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="ticket-multiple" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(ticket-multiple))</code> or <code>@include icon(glyph(ticket-multiple), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="ticket-multiple"</code> or <code>data-icon="ticket-multiple" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="ticket-subscription" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(ticket-subscription))</code> or <code>@include icon(glyph(ticket-subscription), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="ticket-subscription"</code> or <code>data-icon="ticket-subscription" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="time-outward-journey" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(time-outward-journey))</code> or <code>@include icon(glyph(time-outward-journey), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="time-outward-journey"</code> or <code>data-icon="time-outward-journey" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="time-return-journey" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(time-return-journey))</code> or <code>@include icon(glyph(time-return-journey), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="time-return-journey"</code> or <code>data-icon="time-return-journey" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="timetable" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(timetable))</code> or <code>@include icon(glyph(timetable), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="timetable"</code> or <code>data-icon="timetable" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="travel-insurance" data-icon-variant="24-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(travel-insurance))</code> or <code>@include icon(glyph(travel-insurance), 24, "outline")</code></li>
+			<li>HTML: <code>data-icon="travel-insurance"</code> or <code>data-icon="travel-insurance" data-icon-variant="24-outline"</code></li>
+		</ul>
+	</li>
+</ul>
+		<!--DO NOT REMOVE-->
+		<script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>[Insert description here]</p>\n","patternBreadcrumb":{"patternGroup":"base","patternSubgroup":"icons"},"patternExtension":"hbs","patternName":"DB Icons 24x24 - Outline - Ticket","patternPartial":"base-icon-library-24-outline-ticket","patternState":"complete","patternEngineName":"handlebars","extraOutput":{}}
+</script>
+
+<script>
+  window.patternData = {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>[Insert description here]</p>\n","patternBreadcrumb":{"patternGroup":"base","patternSubgroup":"icons"},"patternExtension":"hbs","patternName":"DB Icons 24x24 - Outline - Ticket","patternPartial":"base-icon-library-24-outline-ticket","patternState":"complete","patternEngineName":"handlebars","extraOutput":{}};
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1722403211191">
+  (function() {
+    if (self != top) {
+      var cb = '1722403211191';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+
+<script type="module">
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  import('../../styleguide/js/patternlab-pattern.modern.js');
+</script>
+
+<script id="pl-js-insert-1722403211191" nomodule>
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  loadJS('../../styleguide/js/patternlab-pattern.js');
+</script>
+
+
+		<script src="../../js/plugins.min.js"></script>
+		<!-- details/summary polyfill //-->
+		<script src="../../js/details-element-polyfill.js"></script>
+		<!-- dialog polyfill //-->
+		<script src="../../js/dialog-polyfill.js"></script>
+		<script src="../../js/main.min.js"></script>
+	</body>
+
+</html>
