@@ -48,6 +48,10 @@ In case that non of the standarized attributes fit your needs for setting the st
 
 If none of the previous standard solutions fits your needs, think about whether it makes sense to provide the property for patterns via a `data-*` attribute, instead of a `class`, as this would adapt the way the regular HTML API works itself.
 
+Some further explanation on this topic can be found e.g. at these two short and long articles:
+- https://x.com/devongovett/status/1576635415024390144?t=WldtpekRA8l-RGx8gBCvNg
+- https://www.keithcirkel.co.uk/css-classes-considered-harmful/
+
 ### Structured Data & Microdata
 
 _tbd_
