@@ -197,7 +197,7 @@
 
 		@media screen and (width > $db-break-the-header-max-width) {
 			display: flex;
-			gap: to-rem(1);
+			gap: 0.75rem;
 		}
 
 		& > li,
@@ -351,10 +351,15 @@
 			}
 
 			.elm-link {
-				&:hover,
-				&:focus {
-					background-color: $db-color-cool-gray-200;
+				background-color: rgba($db-color-cool-gray-700, 0);
+
+				&:hover {
+					background-color: rgba($db-color-cool-gray-700, 0.08);
 					color: initial;
+				}
+
+				&:active {
+					background-color: rgba($db-color-cool-gray-700, 0.16);
 				}
 
 				&[aria-current="page"] {
