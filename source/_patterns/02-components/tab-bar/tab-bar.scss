@@ -21,11 +21,15 @@
 		& + label[role="tab"] {
 			cursor: pointer;
 			display: flex;
-			padding: $db-spacing-m;
+			padding: 0.875rem $db-spacing-m;
 			position: relative;
 			z-index: 1;
 			border-radius: 4px;
 			align-items: center;
+
+			&::before {
+				transform: translateX(-0.125rem);
+			}
 		}
 
 		&:focus + label {
@@ -94,9 +98,11 @@
 	&[data-size="small"] {
 		@include tab() {
 			& + label[role="tab"] {
-				@include iconMeta(20, "outline");
-				font-size: to-rem($pxValue: 14);
 				padding-block: 0.625rem;
+
+				&::before {
+					transform: translateX(-0.125rem);
+				}
 			}
 		}
 	}
