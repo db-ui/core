@@ -28,7 +28,7 @@
 			align-items: center;
 
 			&::before {
-				transform: translateX(-0.125rem);
+				margin-inline-start: -0.125rem;
 			}
 		}
 
@@ -99,10 +99,6 @@
 		@include tab() {
 			& + label[role="tab"] {
 				padding-block: 0.625rem;
-
-				&::before {
-					transform: translateX(-0.125rem);
-				}
 			}
 		}
 	}
