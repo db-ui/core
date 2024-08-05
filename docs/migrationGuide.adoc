@@ -13,7 +13,7 @@ remove `role="button"`, `tabindex="0"` and `aria-hidden="true"` from the `label`
 
 === Header and tabs
 
-We're updating the header area and its included components as well as the tabs component to the latest specification version.
+We've visually adapted the specification regarding header area and its included components as well as the tabs component. This leads to visually breaking changes.
 
 == DB UI Core 2.2.0 Migration Guide
 
