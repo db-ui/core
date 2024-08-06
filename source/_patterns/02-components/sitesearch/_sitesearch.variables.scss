@@ -6,3 +6,6 @@ $sitesearch-form-full-maxWidth: to-rem(
 	$pxValue: 500
 ) !default;
 $sitesearch-input--backgroundColor: #fdfdfd !default; // TODO: This would need to get replaced by the correct (semantic) color
+$sitesearch-width--open: to-rem(
+	$pxValue: 240
+);

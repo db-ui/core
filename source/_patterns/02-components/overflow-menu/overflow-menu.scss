@@ -13,7 +13,13 @@
 	}
 
 	summary {
-		display: inline-block;
+		display: inline-flex;
+		align-items: center;
+		padding: 0.5rem 0.75rem;
+		border-radius: 4px;
+		cursor: default;
+
+		background-color: rgba($db-color-cool-gray-700, 0);
 
 		& {
 			@include icon(
@@ -25,16 +31,15 @@
 		}
 
 		&::before {
-			display: inline-block;
-			padding: to-rem($pxValue: 9) to-rem($pxValue: 12);
 			transform: translateX(-#{to-rem($pxValue: 2)});
 		}
 
-		&:hover,
-		&:focus {
-			&::before {
-				background-color: $db-color-cool-gray-200;
-			}
+		&:hover {
+			background-color: rgba($db-color-cool-gray-700, 0.08);
+		}
+
+		&:active {
+			background-color: rgba($db-color-cool-gray-700, 0.16);
 		}
 
 		&::-webkit-details-marker {

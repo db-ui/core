@@ -1,34 +1,52 @@
 @import "../../../css/partials.meta";
 @import "sitesearch.variables";
+@import "../../01-elements/form-elements";
 
 .cmp-sitesearch {
 	position: relative;
+	display: flex;
+	align-items: center;
+	padding-inline-end: 0.75rem;
+
+	@media screen and (max-width: $db-break-the-header-max-width) {
+		margin-inline-start: auto;
+		margin-inline-end: 2.25rem;
+		padding-inline-end: 2rem;
+
+		&::before {
+			display: none;
+		}
+	}
 
 	.elm-input[type="search"] {
-		background-color: $sitesearch-input--backgroundColor; // * TODO: possibly rework variable naming
+		@extend %form-element-solid;
 		background-image: none;
 		opacity: 0;
-		padding-left: to-em($pxValue: 36);
 		width: 0;
+		padding: 0;
 
 		&:focus,
 		&:not(:placeholder-shown) {
 			opacity: 1;
-			width: to-rem($pxValue: 240);
+			width: calc(#{$sitesearch-width--open} + 1rem);
+			padding-inline-start: 1rem;
+			padding-inline-end: 3rem;
+			padding-top: 0;
 
 			& + .elm-label {
 				display: none;
 			}
 
 			& ~ .elm-button {
-				display: initial;
+				display: flex;
 			}
 		}
-
-		// transition: all 500ms;
 	}
 
 	.elm-label {
+		padding: 0.5rem;
+		border-radius: 4px;
+
 		display: inline-block;
 
 		& {
@@ -36,57 +54,55 @@
 		}
 
 		&::before {
-			// TODO: Evaluate on whether this declaration could get moved to the general icon declarations
-			font-size: to-rem($pxValue: 22);
 			vertical-align: top;
 		}
 
-		.rea-header & {
-			padding-top: to-rem($pxValue: 10);
-		}
-
 		.rea-meta & {
-			@media screen and (max-width: #{$metanavigation-iconOnly--maxWidth}) {
-				@include is-icon-text-replace();
-			}
+			@include is-icon-text-replace();
 		}
 	}
 
 	.elm-button {
+		@include is-icon-text-replace();
+
 		display: none;
-		left: 0;
 		position: absolute;
-		top: to-em($pxValue: 8);
-		visibility: hidden;
+		padding: 0.5rem;
+		inset-inline-end: 0.75rem;
+		border: 0;
 
 		& {
 			@include icon(glyph(search), 24, "outline", $partial: $partial);
 		}
+	}
 
-		&::before {
-			left: to-rem($pxValue: 4);
-			margin: -9px;
-			padding: 9px;
-			position: absolute;
-			top: -#{to-rem($pxValue: 2)};
-			visibility: visible;
+	.elm-label,
+	.elm-button {
+		background-color: rgba($db-color-cool-gray-700, 0);
+
+		&:hover {
+			background-color: rgba($db-color-cool-gray-700, 0.08);
+		}
+
+		&:active {
+			background-color: rgba($db-color-cool-gray-700, 0.16);
 		}
 	}
 
-	.rea-meta & {
-		margin-right: to-rem($pxValue: 8);
+	@media screen and (max-width: #{$sitesearch-form-full-maxWidth}) {
+		&:focus-within,
+		&:has(.elm-input[type="search"]:not(:placeholder-shown)) {
+			left: to-rem($pxValue: 16);
+			position: absolute;
+			z-index: $z-index-rea-header-cmp-sitesearch-focus;
 
-		@media screen and (max-width: #{$sitesearch-form-full-maxWidth}) {
-			// * TODO: possibly rework variable naming
-			&:focus-within {
-				left: to-rem($pxValue: 16);
-				position: absolute;
-				z-index: $z-index-rea-header-cmp-sitesearch-focus;
-
-				.elm-input[type="search"] {
-					width: calc(100vw - #{to-rem($pxValue: 32)});
-				}
+			.elm-input[type="search"] {
+				width: calc(100vw - 5.5rem);
 			}
+		}
+
+		.elm-button {
+			inset-inline-end: 2rem;
 		}
 	}
 }
