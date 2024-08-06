@@ -10,12 +10,6 @@
 		summary {
 			@include icon(glyph(account), 24, "outline", $partial: $partial);
 
-			&:hover {
-				&::before {
-					color: $db-color-red-500;
-				}
-			}
-
 			@media screen and (max-width: $metanavigation-iconOnly--maxWidth) {
 				// * TODO: possibly rework variable naming
 				@include is-icon-text-replace();

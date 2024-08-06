@@ -1,39 +1,23 @@
 @import "brand.variables";
 
 .cmp-brand {
-	.elm-image {
-		&.is-logo {
-			float: left;
-			margin-top: -#{to-rem($pxValue: 2)};
-		}
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+
+	a,
+	img {
+		height: 1.5rem;
+	}
+
+	img {
+		width: auto;
 	}
 
 	a {
 		color: inherit;
 		// Deactivate underline on site name being made clickable by added to the link as well
 		text-decoration: none;
-	}
-
-	.rea-header & {
-		padding-top: to-rem($pxValue: 18);
-		@media screen and (width > $db-break-the-header-max-width) {
-			padding-top: $rea-header-cmp-brand-padding-top; // * TODO: possibly rework variable naming
-
-			.is-site-name {
-				&::before {
-					// * TODO: introduce is-icon as a mixin and change the following declarations afterwards
-					content: none !important;
-				}
-			}
-		}
-	}
-	@media screen and (max-width: $db-break-the-header-max-width) {
-		.cmp-mainnavigation ~ & {
-			.rea-header & {
-				.is-site-name {
-					display: none;
-				}
-			}
-		}
 	}
 }
