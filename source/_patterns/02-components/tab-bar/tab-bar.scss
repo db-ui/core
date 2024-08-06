@@ -1,31 +1,34 @@
 @import "../../../css/partials.meta";
 @import "tab-bar.variables";
+@import "../../00-base/icons/icons.helpers";
+
+@mixin tab() {
+	& > input[type="radio"],
+	& > * > input[type="radio"] {
+		@content;
+	}
+}
 
 .cmp-tab-bar {
 	display: flex;
 	flex-wrap: wrap;
 
-	label[role="tab"],
-	section[role="tabpanel"] {
-		background-color: $tabBar-tabSection--backgroundColor;
-	}
+	gap: 0.25rem;
 
-	& > input[type="radio"],
-	& > * > input[type="radio"] {
+	@include tab() {
 		@include a11y-visually-hidden($partial: $partial);
 
 		& + label[role="tab"] {
-			border-top-left-radius: 4px;
-			border-top-right-radius: 4px;
 			cursor: pointer;
-			display: inline-block;
-			margin-left: to-rem($pxValue: 8);
-			padding: #{to-rem($pxValue: 5)} #{to-rem($pxValue: 32)};
+			display: flex;
+			padding: 0.875rem $db-spacing-m;
 			position: relative;
 			z-index: 1;
+			border-radius: 4px;
+			align-items: center;
 
-			&:first-of-type {
-				margin-left: to-rem($pxValue: 16);
+			&::before {
+				margin-inline-start: -0.125rem;
 			}
 		}
 
@@ -38,6 +41,10 @@
 				&:hover,
 				&:focus {
 					background-color: $tabBar-tab-hover-backgroundColor;
+				}
+
+				&:active {
+					background-color: $tabBar-tab-pressed-backgroundColor;
 				}
 			}
 		}
@@ -55,25 +62,44 @@
 
 		&:checked {
 			& + label[role="tab"] {
-				border: $tabBar-tab-active-border;
-				border-bottom: none;
 				font-weight: 700;
-				padding-top: to-rem($pxValue: 3);
-				transform: translateY(to-rem($pxValue: 1));
 
 				& + section[role="tabpanel"] {
 					display: initial;
+				}
+
+				// Puls
+				&::after {
+					background-color: $db-color-red-500;
+					border-radius: 5px;
+					content: "";
+					display: block;
+					height: 0.25rem;
+					inset-block-end: 0;
+					inset-inline: 0;
+					position: absolute;
 				}
 			}
 		}
 	}
 
+	label[role="tab"],
 	section[role="tabpanel"] {
-		border-top: $tabBar-tabpanel--borderTop;
-		box-shadow: $tabBar-tabpanel--boxShadow;
+		background-color: $tabBar-tabSection--backgroundColor;
+	}
+
+	section[role="tabpanel"] {
 		display: none;
 		flex-basis: 100%;
 		order: 1;
-		padding: to-rem($pxValue: 46) to-rem($pxValue: 50);
+		margin-block-start: 0.125rem;
+	}
+
+	&[data-size="small"] {
+		@include tab() {
+			& + label[role="tab"] {
+				padding-block: 0.625rem;
+			}
+		}
 	}
 }
