@@ -4,6 +4,17 @@ As with every release you're recommended to do a visual regression testing for y
 
 Especially the following aspects have changed through the various different releases and would need your review and probably adaptions within your code base.
 
+== DB UI Core 3.0.0 Migration Guide
+
+=== Chip
+
+We needed to modify the `chip` elements HTML slightly due to digital accessibility reasons, which results in the following changes you'll need to make in your HTML code:
+remove `role="button"`, `tabindex="0"` and `aria-hidden="true"` from the `label` HTML element
+
+=== Header and tabs
+
+We've visually adapted the specification regarding header area and its included components as well as the tabs component. This leads to visually breaking changes, which might result in necessary changes within your implementation for customization.
+
 == DB UI Core 2.2.0 Migration Guide
 
 === progress element
