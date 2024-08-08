@@ -2,6 +2,8 @@
 @import "headline.variables";
 
 .elm-headline {
+	text-wrap: balance;
+	
 	margin-bottom: to-rem($pxValue: 16);
 
 	// * TODO: These declarations make sense for the moment, but should get aligned with overall definitions of spacing around elements
