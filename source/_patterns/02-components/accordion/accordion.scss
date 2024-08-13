@@ -2,7 +2,7 @@
 @import "accordion.variables";
 
 .cmp-accordion {
-	--db-accordion---paddingLeft: #{to-rem($pxValue: $accordion---paddingLeft)};
+	--db-accordion---paddingLeft: #{$accordion---paddingLeft};
 	border-bottom: 1px solid $db-color-cool-gray-200;
 	padding-left: var(--db-accordion---paddingLeft);
 	padding-right: $accordion---paddingRight;
@@ -58,9 +58,7 @@
 	// Emphasis
 	&%emphasis-High {
 		// Calculate especially depending on the icons sizes difference
-		--db-accordion---paddingLeft: #{to-rem(
-				$pxValue: $accordion---paddingLeft + 8
-			)};
+		--db-accordion---paddingLeft: #{$accordion---paddingLeft + 0.5rem};
 
 		summary {
 			font-weight: 700;
@@ -79,9 +77,7 @@
 	// Sizes
 	&%size-Small {
 		// Calculate dependending on the icons sizes and margins difference
-		--db-accordion---paddingLeft: #{to-rem(
-				$pxValue: $accordion---paddingLeft - 12
-			)};
+		--db-accordion---paddingLeft: #{$accordion---paddingLeft - 0.75rem};
 
 		summary {
 			font-size: to-rem($pxValue: 14);
@@ -98,9 +94,7 @@
 
 	&%size-Large {
 		// Calculate especially depending on the icons sizes difference
-		--db-accordion---paddingLeft: #{to-rem(
-				$pxValue: $accordion---paddingLeft + 8
-			)};
+		--db-accordion---paddingLeft: #{$accordion---paddingLeft + 0.5rem};
 
 		summary {
 			font-size: to-rem($pxValue: 20);
