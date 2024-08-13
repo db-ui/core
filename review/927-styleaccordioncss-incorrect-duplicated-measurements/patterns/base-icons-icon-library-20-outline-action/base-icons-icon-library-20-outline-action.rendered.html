@@ -1,0 +1,678 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>DB UI Core - Pattern Lab</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+	<script>document.documentElement.className = 'js ' + document.documentElement.className.replace(/\bno-js\b/, '')</script>
+
+	<!-- see https://htmlhead.dev/ for a description of what could get listed within your pages HEAD section //-->
+
+
+	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1723544241520" media="all">
+
+	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1723544241520" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1723544241520" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1723544241520" media="all">
+	<!-- dialog polyfill //-->
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1723544241520" media="all">
+
+	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+	
+	<!-- End Pattern Lab -->
+
+
+	<!-- Google's "Create good meta descriptions" / https://support.google.com/webmasters/answer/35624?hl=en#meta-descriptions
+documentation has useful tips on creating an effective description. //-->
+	<meta name="Description" content="Put your description here.">
+
+	<!-- You can add the theme-color meta extension in the <head> of your pages to suggest the color that browsers and OSes should use if they customize the display of individual pages in their UIs with varying colors.
+			more information: https://html.spec.whatwg.org/multipage/semantics.html#meta-theme-color -->
+	<meta name="theme-color" content="#f01414">
+
+	<!-- iframe resizing script for pattern previews -->
+	<script src="../../js/iframeResizer.contentWindow.js"></script>
+</head>
+
+<body class="styleguide">
+
+<ul class="DO-NOT-COPY-THIS-CLASS-example-icon-list">
+	<li data-icon="account" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(account), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="account" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="add" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(add), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="add" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="add-circle" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(add-circle), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="add-circle" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="add-link" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(add-link), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="add-link" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="alarm" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(alarm), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="alarm" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="alarm-add" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(alarm-add), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="alarm-add" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="alert" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(alert), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="alert" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="alert-off" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(alert-off), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="alert-off" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="attachment" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(attachment), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="attachment" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="augmented-reality" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(augmented-reality), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="augmented-reality" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="block" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(block), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="block" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="bookmark" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(bookmark), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="bookmark" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="bug" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(bug), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="bug" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="build" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(build), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="build" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="calendar" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(calendar), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="calendar" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="camera" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(camera), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="camera" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="cash" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(cash), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="cash" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="check-circle" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(check-circle), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="check-circle" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="cloud" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(cloud), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="cloud" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="cloud-download" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(cloud-download), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="cloud-download" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="cloud-upload" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(cloud-upload), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="cloud-upload" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="compass" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(compass), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="compass" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="copy" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(copy), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="copy" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="credit-card" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(credit-card), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="credit-card" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="dashboard" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(dashboard), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="dashboard" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="delete" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(delete), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="delete" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="discount" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(discount), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="discount" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="document" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(document), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="document" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="document-check" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(document-check), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="document-check" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="done" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(done), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="done" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="download" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(download), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="download" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="drag-and-drop" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(drag-and-drop), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="drag-and-drop" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="edit" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(edit), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="edit" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="face-delighted" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(face-delighted), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="face-delighted" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="face-disappointed" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(face-disappointed), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="face-disappointed" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="face-neutral" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(face-neutral), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="face-neutral" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="face-sad" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(face-sad), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="face-sad" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="face-smiling" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(face-smiling), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="face-smiling" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="filter" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(filter), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="filter" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="fingerprint" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(fingerprint), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="fingerprint" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="folder" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(folder), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="folder" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="folder-open" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(folder-open), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="folder-open" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="generic-card" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(generic-card), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="generic-card" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="giftcard" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(giftcard), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="giftcard" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="hearing" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(hearing), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="hearing" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="hearing-disabled" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(hearing-disabled), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="hearing-disabled" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="heart" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(heart), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="heart" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="help" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(help), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="help" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="image" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(image), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="image" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="info" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(info), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="info" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="key" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(key), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="key" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="legal" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(legal), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="legal" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="lightbulb" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(lightbulb), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="lightbulb" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="lock-close" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(lock-close), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="lock-close" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="lock-open" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(lock-open), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="lock-open" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="log-out" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(log-out), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="log-out" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="logbook" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(logbook), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="logbook" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="minus" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(minus), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="minus" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="piggybank" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(piggybank), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="piggybank" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="pin" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(pin), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="pin" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="print" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(print), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="print" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="push-button" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(push-button), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="push-button" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="remove" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(remove), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="remove" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="resize" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(resize), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="resize" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="resize-handle-corner" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(resize-handle-corner), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="resize-handle-corner" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="save" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(save), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="save" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="schedule" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(schedule), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="schedule" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="search" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(search), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="search" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="send" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(send), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="send" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="sepa" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(sepa), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="sepa" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="settings" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(settings), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="settings" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="share" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(share), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="share" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="shopping-bag" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(shopping-bag), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="shopping-bag" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="shopping-basket" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(shopping-basket), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="shopping-basket" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="shopping-basket-disabled" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(shopping-basket-disabled), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="shopping-basket-disabled" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="shopping-cart" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(shopping-cart), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="shopping-cart" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="shopping-cart-disabled" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(shopping-cart-disabled), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="shopping-cart-disabled" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="sort-down" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(sort-down), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="sort-down" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="sort-up" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(sort-up), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="sort-up" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="star" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(star), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="star" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="swap-horizontal" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(swap-horizontal), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="swap-horizontal" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="swap-vertical" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(swap-vertical), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="swap-vertical" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="thumb-up" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(thumb-up), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="thumb-up" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="thumb-up-down" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(thumb-up-down), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="thumb-up-down" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="translation" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(translation), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="translation" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="undo" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(undo), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="undo" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="upload" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(upload), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="upload" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="visibility" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(visibility), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="visibility" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="visibility-off" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(visibility-off), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="visibility-off" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="voucher" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(voucher), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="voucher" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="website" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(website), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="website" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="zoom-in" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(zoom-in), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="zoom-in" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+	<li data-icon="zoom-out" data-icon-variant="20-outline">
+		<ul>
+			<li>SCSS: <code>@include icon(glyph(zoom-out), 20, "outline")</code></li>
+			<li>HTML: <code>data-icon="zoom-out" data-icon-variant="20-outline"</code></li>
+		</ul>
+	</li>
+</ul>
+		<!--DO NOT REMOVE-->
+		<script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>[Insert description here]</p>\n","patternBreadcrumb":{"patternGroup":"base","patternSubgroup":"icons"},"patternExtension":"hbs","patternName":"DB Icons 20x20 - Outline - Action","patternPartial":"base-icon-library-20-outline-action","patternState":"complete","patternEngineName":"handlebars","extraOutput":{}}
+</script>
+
+<script>
+  window.patternData = {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>[Insert description here]</p>\n","patternBreadcrumb":{"patternGroup":"base","patternSubgroup":"icons"},"patternExtension":"hbs","patternName":"DB Icons 20x20 - Outline - Action","patternPartial":"base-icon-library-20-outline-action","patternState":"complete","patternEngineName":"handlebars","extraOutput":{}};
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1723544241520">
+  (function() {
+    if (self != top) {
+      var cb = '1723544241520';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+
+<script type="module">
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  import('../../styleguide/js/patternlab-pattern.modern.js');
+</script>
+
+<script id="pl-js-insert-1723544241520" nomodule>
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  loadJS('../../styleguide/js/patternlab-pattern.js');
+</script>
+
+
+		<script src="../../js/plugins.min.js"></script>
+		<!-- details/summary polyfill //-->
+		<script src="../../js/details-element-polyfill.js"></script>
+		<!-- dialog polyfill //-->
+		<script src="../../js/dialog-polyfill.js"></script>
+		<script src="../../js/main.min.js"></script>
+	</body>
+
+</html>
