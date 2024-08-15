@@ -19,9 +19,7 @@
 
 <!-- ![Pipeline status](https://github.com/db-ui/core/badges/main/pipeline.svg?style=flat) -->
 
-DB Personenverkehr and DB Systel are merging their Design Systems for Web [with DB Design System](https://marketingportal.extranet.deutschebahn.com/marketingportal/Design-Anwendungen/db-ux-design-system/version-2/Components) as their successor. Our goal is to provide a common UX based on the [DB "Moderne Ikone"](https://marketingportal.extranet.deutschebahn.com/marketingportal/Marke-und-Design#) for customer and employee applications. To achieve an end 2 end consistence from conception to implementation, we'll provide this new version of DB UI Core (npm: `@db-ui/core`), that is being used within a Design System by T.R (Reisendeninformation) as well. Stay Tuned!
-
-You could still use the existing version of [DB UI Core that is based on version 1.6 of the guidelines (only hosted internally)](https://db.de/4cwtyn). For new projects we recommend to use this new version.
+DB Personenverkehr and DB Systel have merged their Design Systems for Web [with DB UX Design System v2](https://marketingportal.extranet.deutschebahn.com/marketingportal/Design-Anwendungen/db-ux-design-system/version-2/Components) as their successor. Our goal is to provide a common UX based on the [DB "Moderne Ikone"](https://marketingportal.extranet.deutschebahn.com/marketingportal/Marke-und-Design#) for customer and employee applications. To achieve an end 2 end consistence from conception to implementation, we bring you this new version of DB UI Core (npm: `@db-ui/core`), that is being used within a Design System by S.R (Reisendeninformation) as well.
 
 DB UI Core provides robust HTML UI components, reusable visual styles, and powerful tooling to help developers, designers, and content authors build, maintain, and scale best of class digital experiences.
 
