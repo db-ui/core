@@ -94,14 +94,12 @@
 // TODO: maybe we could totally restructure this, work with a :not(select) instead, differentiate in between user-invalid and provide a fallback (https://github.com/db-ui/mono/pull/893), etc.
 %form-element-validation {
 	&:not([aria-invalid]) {
-		&:not(:placeholder-shown) {
-			&:valid {
-				--formElement---borderColor: #{$db-color-green-600};
-			}
+		&:user-valid {
+			--formElement---borderColor: #{$db-color-green-600};
+		}
 
-			&:invalid {
-				--formElement---borderColor: #{$db-color-red-500};
-			}
+		&:user-invalid {
+			--formElement---borderColor: #{$db-color-red-500};
 		}
 	}
 }

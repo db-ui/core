@@ -47,7 +47,7 @@
 	&:checked {
 		border-width: to-em($pxValue: 6);
 	}
-	// * the invalid style using the :invalid pseudo class (and [aria-invalid="true"] equivalent, see #136 and #141)
+	// * the invalid style using the :user-invalid pseudo class (and [aria-invalid="true"] equivalent, see #136 and #141)
 	&:is(:user-invalid),
 	&[aria-invalid="true"] {
 		border-color: #c13e34;
