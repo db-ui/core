@@ -35,6 +35,7 @@
 		content: var(--icon-glyph-#{$position});
 		@supports (content: ""/"") {
 			// Hiding icon from screenreaders
+			// We couldn't just add the following code line and expect an forgiving behaviour of unsupporting browser to ignore this declaration, but need to wrap it into an @supports due to a bug in WebKit / older versions of  Safari: https://github.com/db-ui/core/pull/766
 			content: var(--icon-glyph-#{$position}) / ""; // https://www.w3.org/TR/css-content-3/#alt
 		}
 
