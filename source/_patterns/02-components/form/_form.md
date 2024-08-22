@@ -24,7 +24,7 @@ It's best to use the built-in and standard form validation, as these are standar
 
 Additionally this way you're following the principles of Progressive Enhancement - and in other words, any JavaScript only solution doesn't provide a graceful degradation and puts that whole functionality to the weakest layer in the stack even only.
 
-Nevertheless additionally to the browser built-in pseudo-selector `:invalid` we're providing styling for the [`aria-invalid="true"` attribute](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_attribute) on the elements `input`, `radio`, `select` and `textarea`.
+Nevertheless additionally to the browser built-in pseudo-selector `:user-invalid` we're providing styling for the [`aria-invalid="true"` attribute](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_attribute) on the elements `input`, `radio`, `select` and `textarea`.
 We can't toggle any given/static attribute in the DB UI Core product itself, as we don't want to use JavaScript in this basic product. As you'd also need to add individual error messages, please find some inspiration on the necessary HTML code implementation e.g. on <http://mars.dequecloud.com/demo/form-alert3.htm>
 
 Please find some more informations on the following pages:
