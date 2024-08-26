@@ -12,7 +12,7 @@
 	ol {
 		display: flex;
 
-		& > * {
+		& > li {
 			align-items: center;
 			display: inline-flex;
 			margin-right: to-rem($pxValue: 3);
@@ -20,7 +20,6 @@
 			[aria-current="location"],
 			[aria-current="page"] {
 				color: $db-color-cool-gray-700;
-				font-size: to-rem($pxValue: 14);
 			}
 
 			.elm-link {
