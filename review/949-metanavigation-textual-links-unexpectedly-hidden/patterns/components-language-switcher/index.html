@@ -1,0 +1,342 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>DB UI Core - Pattern Lab</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+	<script>document.documentElement.className = 'js ' + document.documentElement.className.replace(/\bno-js\b/, '')</script>
+
+	<!-- see https://htmlhead.dev/ for a description of what could get listed within your pages HEAD section //-->
+
+
+	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1725303973860" media="all">
+
+	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1725303973860" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1725303973860" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1725303973860" media="all">
+	<!-- dialog polyfill //-->
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1725303973860" media="all">
+
+	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1725303973860" media="all">
+	<!-- End Pattern Lab -->
+
+
+	<!-- Google's "Create good meta descriptions" / https://support.google.com/webmasters/answer/35624?hl=en#meta-descriptions
+documentation has useful tips on creating an effective description. //-->
+	<meta name="Description" content="Put your description here.">
+
+	<!-- You can add the theme-color meta extension in the <head> of your pages to suggest the color that browsers and OSes should use if they customize the display of individual pages in their UIs with varying colors.
+			more information: https://html.spec.whatwg.org/multipage/semantics.html#meta-theme-color -->
+	<meta name="theme-color" content="#f01414">
+
+	<!-- iframe resizing script for pattern previews -->
+	<script src="../../js/iframeResizer.contentWindow.js"></script>
+</head>
+
+<body class="styleguide">
+<!-- View All Patterns in a Pattern Sub-Type -->
+<div class="pl-c-main">
+
+	<!-- Index of Patterns -->
+	<div class="pl-c-pattern-index">
+
+		<div id="viewall-components-language-switcher" class="pl-c-category">
+				
+			<h2 class="pl-c-category__title">
+				<a href="../../patterns/components-language-switcher&#x2F;index.html" class="pl-c-category__title-link patternLink" data-patternpartial="viewall-components-language-switcher">Language Switcher</a>
+			</h2><!--end pl-c-category__title-->
+		
+			<div class="pl-c-category__description pl-c-text-passage">
+				<p>You could either use the language switcher component with hyperlinks, which would be the recommended way, to link to another language based page, which is addressable by a different URL.</p>
+<p>The other way (especially for Single Page Applications) would be to use <code>&lt;button type=&quot;button&quot;&gt;</code> elements, that have some JavaScript events attached to them to handle the switch directly. Please keep in mind to announce a change of contents e.g. to screenreaders in this case.</p>
+<p>In both cases there's a slightly different HTML approach that you could inspect within the different examples below.</p>
+<p>Please keep in mind that the styling is optimized to look good included within the header section of the page and doesn't &quot;shine&quot; included in here.</p>
+
+			</div><!--end pl-c-category__description-->
+			
+		</div><!--end pl-c-category-->
+					<div id="components-language-switcher" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/components-language-switcher-language-switcher&#x2F;components-language-switcher-language-switcher.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-language-switcher" title="Link to Pattern">
+						Language switcher
+		
+						<span class="pl-c-pattern-state pl-c-pattern-state--inprogress" title="inprogress"></span>
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-language-switcher" data-patternpartial="components-language-switcher" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-language-switcher">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			
+<ul class="cmp-language-switcher">
+	<li>
+			<a
+				href="#"
+				class="elm-link "
+				title="English language"
+				 rel="alternate"
+				
+				
+				
+				
+				
+				 hreflang="en"
+				
+				
+				
+				
+				
+				>EN
+			</a>
+	</li>
+	<li aria-current="page">
+			<a
+				href="#"
+				class="elm-link "
+				title="Deutsche Sprache"
+				 rel="bookmark"
+				
+				
+				
+				
+				
+				 hreflang="de"
+				
+				
+				
+				
+				
+				>DE
+			</a>
+	</li>
+	<li>
+			<a
+				href="#"
+				class="elm-link "
+				title="Langue française"
+				 rel="alternate"
+				
+				
+				
+				
+				
+				 hreflang="fr"
+				
+				
+				
+				
+				
+				>FR
+			</a>
+	</li>
+</ul>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-components-language-switcher" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-link","lineagePath":"../../patterns/elements-link-_link/elements-link-_link.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"lineage":[{"lineagePattern":"elements-link","lineagePath":"../../patterns/elements-link-_link/elements-link-_link.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"areas-meta","lineagePath":"../../patterns/areas-header-meta/areas-header-meta.rendered.html"}],"lineageR":[{"lineagePattern":"areas-meta","lineagePath":"../../patterns/areas-header-meta/areas-header-meta.rendered.html"}],"patternLineageEExists":true,"patternDesc":"<p>[Insert description here]</p>\n","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"language-switcher"},"patternExtension":"hbs","patternName":"Language switcher","patternPartial":"components-language-switcher","patternState":"inprogress","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="components-language-switcher-spa" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/components-language-switcher-language-switcher-spa&#x2F;components-language-switcher-language-switcher-spa.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-language-switcher-spa" title="Link to Pattern">
+						Language switcher with buttons
+		
+						<span class="pl-c-pattern-state pl-c-pattern-state--inprogress" title="inprogress"></span>
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-language-switcher-spa" data-patternpartial="components-language-switcher-spa" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-language-switcher-spa">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			<!-- [html-validate-disable-next prefer-native-element] -->
+<ul class="cmp-language-switcher" role="listbox">
+	<li role="option">
+			<button class="elm-button "
+				data-variant="tertiary-plain"
+				
+				title="English language"
+				type="button"
+				
+				
+				
+				
+				
+				>
+				EN
+			</button>
+	</li>
+	<li role="option" aria-selected="true">
+			<button class="elm-button "
+				data-variant="tertiary-plain"
+				
+				title="Deutsche Sprache"
+				type="button"
+				
+				
+				
+				
+				
+				>
+				DE
+			</button>
+	</li>
+	<li role="option">
+			<button class="elm-button "
+				data-variant="tertiary-plain"
+				
+				title="Langue française"
+				type="button"
+				
+				
+				
+				
+				
+				>
+				FR
+			</button>
+	</li>
+</ul>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-components-language-switcher-spa" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-link","lineagePath":"../../patterns/elements-link-_link/elements-link-_link.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"lineage":[{"lineagePattern":"elements-link","lineagePath":"../../patterns/elements-link-_link/elements-link-_link.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"<p>[Insert description here]</p>\n","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"language-switcher"},"patternExtension":"hbs","patternName":"Language switcher with buttons","patternPartial":"components-language-switcher-spa","patternState":"inprogress","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+
+	</div>
+	<!--end pl-c-pattern-index-->
+
+</div>
+<!--end pl-c-main-->		<!--DO NOT REMOVE-->
+		<script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"patternPartial":"viewall-components-language-switcher"}
+</script>
+
+<script>
+  window.patternData = {"patternPartial":"viewall-components-language-switcher"};
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1725303973860">
+  (function() {
+    if (self != top) {
+      var cb = '1725303973860';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+
+<script type="module">
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  import('../../styleguide/js/patternlab-pattern.modern.js');
+</script>
+
+<script id="pl-js-insert-1725303973860" nomodule>
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  loadJS('../../styleguide/js/patternlab-pattern.js');
+</script>
+
+
+		<script src="../../js/plugins.min.js"></script>
+		<!-- details/summary polyfill //-->
+		<script src="../../js/details-element-polyfill.js"></script>
+		<!-- dialog polyfill //-->
+		<script src="../../js/dialog-polyfill.js"></script>
+		<script src="../../js/main.min.js"></script>
+	</body>
+
+</html>
