@@ -18,8 +18,11 @@
 		}
 
 		.elm-link {
-			@include is-icon-text-replace();
 			text-decoration: none;
+
+			.rea-header & {
+				@include is-icon-text-replace();
+			}
 		}
 	}
 
