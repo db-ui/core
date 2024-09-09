@@ -96,7 +96,7 @@
     "prettier": "^3.3.3",
     "rimraf": "^6.0.1",
     "sass": "^1.77.8",
-    "start-server-and-test": "^2.0.5",
+    "start-server-and-test": "^2.0.6",
     "stylelint": "^14.16.1",
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-sass-guidelines": "^9.0.1",
