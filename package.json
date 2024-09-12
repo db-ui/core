@@ -81,7 +81,7 @@
     "find-versions-cli": "^5.0.0",
     "html-validate": "^8.22.0",
     "html5-boilerplate": "^9.0.1",
-    "husky": "^9.1.5",
+    "husky": "^9.1.6",
     "iframe-resizer": "^4.4.5",
     "lint-staged": "^15.2.10",
     "markdownlint-cli": "^0.41.0",
