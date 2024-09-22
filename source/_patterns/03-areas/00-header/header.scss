@@ -32,10 +32,6 @@
 
 		&:has(.cmp-mainnavigation > input[type="checkbox"][id]:not(:checked)) {
 			.rea-meta {
-				position: absolute;
-				inset: 0;
-				margin: 0;
-
 				& > .elm-link,
 				.cmp-metanavigation,
 				.cmp-language-switcher,
