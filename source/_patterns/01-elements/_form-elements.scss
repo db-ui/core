@@ -115,11 +115,11 @@
 		float: right;
 	}
 
-	@supports (inset-area: block-end span-inline-start) {
+	@supports (position-area: block-end span-inline-start) {
 		&:not(:has(+ .description)) {
 			position: absolute;
 			// stylelint-disable-next-line property-no-unknown
-			inset-area: block-end span-inline-start;
+			position-area: block-end span-inline-start;
 		}
 	}
 
