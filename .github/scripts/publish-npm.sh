@@ -41,5 +41,6 @@ do
     echo "Could not authenticate with $REGISTRY"
     exit 1
   fi
-  npm publish --tag "$TAG" db-ui-core-"$VALID_SEMVER_VERSION".tgz
+  # https://docs.npmjs.com/generating-provenance-statements#example-github-actions-workflow
+  npm publish --tag "$TAG" db-ui-core-"$VALID_SEMVER_VERSION".tgz --provenance
 done
