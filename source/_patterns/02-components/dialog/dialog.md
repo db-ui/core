@@ -15,10 +15,9 @@ Source: <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog#Usage_
 
 ## JavaScript dependencies
 
-- Dialog polyfill: As some [older browsers don't fully support the native dialog HTML tag so far](https://caniuse.com/#feat=dialog) we'll [have to use a polyfill](https://github.com/GoogleChrome/dialog-polyfill), that is being included into the file `source/js/plugins.min.js` during build, as well as [a snippet that enforces to return focus to the previously focused element on the page after closing the dialog](https://gist.github.com/samthor/babe9fad4a65625b301ba482dad284d1), which is included within `source/js/plugins.min.js` as well. Good news: With Safari 15.4 the last remaining of the modern browsers shipped the `dialog` elements support: <https://webkit.org/blog/12209/introducing-the-dialog-element/>
-- The dialog polyfill itself is being initialized via our individually developed [`dialog.script.js`](https://github.com/db-ui/core/blob/main/source/_patterns/02-components/dialog/dialog.script.js), which is being included into `source/js/main.min.js`during build.
+**Dialog polyfill**: As some [older browsers don't fully support the native dialog HTML tag so far](https://caniuse.com/#feat=dialog) we'll [have to use a polyfill](https://github.com/GoogleChrome/dialog-polyfill), that is being included into the file `source/js/plugins.min.js` during build, as well as [a snippet that enforces to return focus to the previously focused element on the page after closing the dialog](https://gist.github.com/samthor/babe9fad4a65625b301ba482dad284d1), which is included within `source/js/plugins.min.js` as well. Good news: With Safari 15.4 the last remaining of the modern browsers shipped the `dialog` elements support: <https://webkit.org/blog/12209/introducing-the-dialog-element/>
 
-**Please feel free to include and initialize all of those scripts according to your JavaScript ecosystem individually, and especially develop the logic out of [`dialog.script.js`](https://github.com/db-ui/core/blob/main/source/_patterns/02-components/dialog/dialog.script.js) on your own for your specific context and techstack.**
+**Please feel free to include and initialize this script according to your JavaScript ecosystem individually, and especially develop the logic out of [`invoker commands`](https://open-ui.org/components/invokers.explainer/) on your own for your specific context and techstack.**
 
 ## Accessibility
 
