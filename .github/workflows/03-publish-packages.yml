@@ -20,6 +20,8 @@ jobs:
   publish:
     name: Publish latest package versions to GitHub Packages
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
     steps:
       - name: ⬇ Checkout repo
         uses: actions/checkout@v4
