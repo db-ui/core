@@ -1,13 +1,14 @@
+@use "sass:map";
 @import "../../../css/db-ui-core.variables";
 @import "fonts.variables";
 
 @each $font-name, $font-meta in $font-families {
-	$font-family: map-get($font-meta, "font-family");
-	$font-filename: map-get($font-meta, "font-filename");
-	$font-weight: map-get($font-meta, "font-weight");
-	$font-style: map-get($font-meta, "font-style");
-	$font-local-name: map-get($font-meta, "font-local-name");
-	$font-local-name-short: map-get($font-meta, "font-local-name-short");
+	$font-family: map.get($font-meta, "font-family");
+	$font-filename: map.get($font-meta, "font-filename");
+	$font-weight: map.get($font-meta, "font-weight");
+	$font-style: map.get($font-meta, "font-style");
+	$font-local-name: map.get($font-meta, "font-local-name");
+	$font-local-name-short: map.get($font-meta, "font-local-name-short");
 
 	@font-face {
 		font-family: $font-family;
