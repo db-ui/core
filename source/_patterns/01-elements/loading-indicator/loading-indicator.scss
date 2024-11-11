@@ -1,4 +1,5 @@
 @charset "utf-8";
+@use "sass:map";
 @use "sass:math";
 
 @import "loading-indicator.variables";
@@ -17,12 +18,12 @@
 		&%size-#{$size} {
 			--loadingindicator--stroke-width: #{math.div(
 					44px,
-					map-get($db-spinner-sizes, $size)
+					map.get($db-spinner-sizes, $size)
 				) *
 				$stroke-width};
 			--loadingindicator--r: 19px;
-			height: map-get($db-spinner-sizes, $size);
-			width: map-get($db-spinner-sizes, $size);
+			height: map.get($db-spinner-sizes, $size);
+			width: map.get($db-spinner-sizes, $size);
 		}
 	}
 }
