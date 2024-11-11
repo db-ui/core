@@ -1,3 +1,4 @@
+@use "sass:map";
 @import "../../../../css/helpers/functions";
 @import "../icons.variables";
 
@@ -81,4 +82,4 @@ $icon-glyphs-enterprise: (
 	// "upload-cloud": "\e923",
 	// "watch": "\1f552"
 );
-$icon-glyphs: map-merge($icon-glyphs-enterprise, $icon-glyphs-personenverkehr);
+$icon-glyphs: map.merge($icon-glyphs-enterprise, $icon-glyphs-personenverkehr);
