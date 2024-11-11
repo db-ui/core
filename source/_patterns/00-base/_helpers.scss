@@ -1,3 +1,4 @@
+@use "sass:color";
 @mixin rgba2hex(
 	$cssProperty,
 	$hexValue,
@@ -6,10 +7,10 @@
 	$rgbBackground: #fdfdfd
 ) {
 	#{$cssProperty}: rgb(
-		(1 - $alphaValue) * red($rgbBackground) + $alphaValue * red($hexValue),
-		(1 - $alphaValue) * green($rgbBackground) + $alphaValue *
-			green($hexValue),
-		(1 - $alphaValue) * blue($rgbBackground) + $alphaValue * blue($hexValue)
+		(1 - $alphaValue) * color.red($rgbBackground) + $alphaValue * color.red($hexValue),
+		(1 - $alphaValue) * color.green($rgbBackground) + $alphaValue *
+			color.green($hexValue),
+		(1 - $alphaValue) * color.blue($rgbBackground) + $alphaValue * color.blue($hexValue)
 	);
 }
 

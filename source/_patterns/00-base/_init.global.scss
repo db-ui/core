@@ -1,3 +1,4 @@
+@use "sass:color";
 // *! this is an opionionated (especially based on "enhancing" normalize.css) version of minireset.css v0.0.4 | MIT License | github.com/jgthms/minireset.css
 html,
 body {
@@ -61,7 +62,7 @@ a {
 
 code {
 	background-color: #f5f5f5;
-	color: darken($db-color-red, 2%);
+	color: color.adjust($db-color-red, $lightness: -2%);
 	font-size: 0.875em;
 	font-weight: normal;
 	padding: 0.25em 0.5em;
