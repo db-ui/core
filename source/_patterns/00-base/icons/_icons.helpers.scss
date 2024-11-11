@@ -1,3 +1,4 @@
+@use "sass:map";
 // Icon SCSS mixin
 @mixin icon(
 	$glyph: "",
@@ -99,7 +100,7 @@
 
 // Icon glyph mixin
 @function glyph($glyph) {
-	@return map-get($icon-glyphs, $glyph);
+	@return map.get($icon-glyphs, $glyph);
 }
 
 // Icon meta data mixin
