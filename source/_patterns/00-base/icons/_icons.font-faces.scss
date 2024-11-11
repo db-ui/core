@@ -1,3 +1,4 @@
+@use "sass:string";
 @import "../../../css/db-ui-core.variables";
 
 @import "icons.variables";
@@ -32,7 +33,7 @@
 					url("#{$icons-path}functional/fonts/#{$icon-font-family+ "-" + $icon-category}.woff?4r2098")
 						format("woff");
 
-				unicode-range: unquote($icon-font-unicodes);
+				unicode-range: string.unquote($icon-font-unicodes);
 			}
 		}
 	}
