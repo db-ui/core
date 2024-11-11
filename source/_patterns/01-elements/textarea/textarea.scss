@@ -1,20 +1,22 @@
 @charset "utf-8";
 
-@import "../../../css/partials.meta";
-@import "textarea.variables";
-@import "../form-elements";
+@use "../../../css/partials.meta";
+@use "textarea.variables";
+@use "../form-elements";
+@use "@db-ui/base/build/scss/variables";
+@use "../../../css/helpers/functions";
 
 .elm-textarea {
 	@extend %form-element;
 
 	display: block;
 
-	font-size: to-rem($pxValue: 16);
-	height: to-rem($pxValue: 44);
-	line-height: to-rem($pxValue: 24);
+	font-size: functions.to-rem($pxValue: 16);
+	height: functions.to-rem($pxValue: 44);
+	line-height: functions.to-rem($pxValue: 24);
 	max-width: 100%;
 
-	padding: to-rem($pxValue: 6) to-rem($pxValue: 10);
+	padding: functions.to-rem($pxValue: 6) functions.to-rem($pxValue: 10);
 
 	resize: vertical;
 
@@ -35,8 +37,8 @@
 	}
 
 	&:not([rows]) {
-		max-height: to-rem($pxValue: 600);
-		min-height: to-rem($pxValue: 120);
+		max-height: functions.to-rem($pxValue: 600);
+		min-height: functions.to-rem($pxValue: 120);
 	}
 
 	&[rows] {
@@ -47,7 +49,7 @@
 	&:focus,
 	&:hover {
 		&:not(:disabled) {
-			--formElement---borderColor: #{$db-color-cool-gray-400};
+			--formElement---borderColor: #{variables.$db-color-cool-gray-400};
 		}
 	}
 

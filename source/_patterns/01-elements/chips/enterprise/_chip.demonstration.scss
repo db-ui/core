@@ -1,5 +1,5 @@
-@import "chip.variables";
-@import "../chip.variables";
+@use "chip.variables";
+@use "../chip.variables" as chip2;
 
 // .elm-chip {
 // }

@@ -1,2 +1,2 @@
-@import "toggle.variables";
-@import "../toggle";
+@use "toggle.variables";
+@use "../toggle" as toggle2;

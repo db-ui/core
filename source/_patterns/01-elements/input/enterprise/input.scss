@@ -1,2 +1,2 @@
-@import "input.variables";
-@import "../input";
+@use "input.variables";
+@use "../input" as input2;

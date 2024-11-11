@@ -1,12 +1,16 @@
-@import "../../../css/partials.meta";
+@use "../../../css/partials.meta";
 // TODO: Replace magic numbers e.g. with flexbox implementations and extract variables as well for multi-brand
-@import "mainnavigation.variables";
-@import "../../../css/helpers/dividers";
+@use "mainnavigation.variables";
+@use "../../../css/helpers/dividers";
+@use "@db-ui/base/build/scss/variables";
+@use "../../../css/db-ui-core.variables";
+@use "../../../css/helpers/functions";
+@use "../../00-base/icons/icons.helpers";
 
 .cmp-mainnavigation {
-	top: $mainnavigation---position-top;
+	top: mainnavigation.$mainnavigation---position-top;
 	padding-inline-start: 1.5rem;
-	position: $mainnavigation---position;
+	position: mainnavigation.$mainnavigation---position;
 
 	&::before {
 		@extend %header-divider;
@@ -38,7 +42,7 @@
 		block-size: 1.5rem;
 		aspect-ratio: 1 / 1;
 
-		@media screen and (width > $db-break-the-header-max-width) {
+		@media screen and (width > db-ui-core.$db-break-the-header-max-width) {
 			// Hiding the navigation toggle elements on huger viewports
 			&,
 			& + label[for] {
@@ -48,40 +52,40 @@
 	}
 
 	& > label[for] {
-		background-color: $header---backgroundColor; // TODO: This would need to get replaced by the correct (semantic) color
+		background-color: mainnavigation.$header---backgroundColor; // TODO: This would need to get replaced by the correct (semantic) color
 
-		border-bottom: 1px solid $db-color-warm-gray-100;
+		border-bottom: 1px solid variables.$db-color-warm-gray-100;
 
 		display: block;
-		padding: to-rem($pxValue: 8) to-rem($pxValue: 22) to-rem($pxValue: 10);
+		padding: functions.to-rem($pxValue: 8) functions.to-rem($pxValue: 22) functions.to-rem($pxValue: 10);
 
 		& {
-			@include icon(glyph(menu), 24, "outline", $partial: $partial);
-			@include icon(
-				glyph(close),
+			@include icons.icon(icons.glyph(menu), 24, "outline", $partial: partials.$partial);
+			@include icons.icon(
+				icons.glyph(close),
 				24,
 				"outline",
 				"after",
-				$partial: $partial
+				$partial: partials.$partial
 			);
 		}
 
 		&::before {
-			margin-right: to-rem($pxValue: 16);
+			margin-right: functions.to-rem($pxValue: 16);
 		}
 
 		&::after {
-			margin-right: to-rem($pxValue: 16);
+			margin-right: functions.to-rem($pxValue: 16);
 		}
 	}
 
 	// Displaying the main navigation as an top to bottom overlay on smaller viewports
-	@media screen and (max-width: $db-break-the-header-max-width) {
-		z-index: $z-index-cmp-mainnavigation-dropdown; // * TODO: possibly rework variable naming
+	@media screen and (max-width: db-ui-core.$db-break-the-header-max-width) {
+		z-index: db-ui-core.$z-index-cmp-mainnavigation-dropdown; // * TODO: possibly rework variable naming
 
 		& > input[type="checkbox"][id] {
 			& + label[for] {
-				@include is-icon-text-replace();
+				@include icons.is-icon-text-replace();
 				padding: 0;
 
 				&::before,
@@ -107,7 +111,7 @@
 				inset-inline-end: 1.5rem;
 				inset-block-start: 1rem;
 				position: absolute;
-				z-index: $z-index-cmp-overflow-menu-overlay;
+				z-index: db-ui-core.$z-index-cmp-overflow-menu-overlay;
 
 				& + label[for] {
 					background-color: #fff;
@@ -118,15 +122,15 @@
 						inset-inline-end: 1rem;
 						inset-block-start: 0.5rem;
 						position: absolute;
-						z-index: $z-index-cmp-overflow-menu-overlay;
+						z-index: db-ui-core.$z-index-cmp-overflow-menu-overlay;
 					}
 
 					&::before {
 						content: "";
 						position: fixed;
 						inset: 0;
-						z-index: $z-index-cmp-mainnavigation-dropdown;
-						background-color: $db-color-cool-gray-700;
+						z-index: db-ui-core.$z-index-cmp-mainnavigation-dropdown;
+						background-color: variables.$db-color-cool-gray-700;
 						opacity: 0.8;
 					}
 				}
@@ -155,7 +159,7 @@
 				background-color: #fff;
 				inset: 0;
 				position: absolute;
-				z-index: $z-index-cmp-mainnavigation-dropdown;
+				z-index: db-ui-core.$z-index-cmp-mainnavigation-dropdown;
 				border-bottom: 1px solid rgba(40, 45, 55, 0.2);
 				border-top-left-radius: 4px;
 			}
@@ -163,39 +167,39 @@
 	}
 
 	ul {
-		background-color: $header---backgroundColor;
+		background-color: mainnavigation.$header---backgroundColor;
 	}
 
 	// Multiple level navigation
 	ul ul {
-		@media screen and (width > $db-break-the-header-max-width) {
-			box-shadow: $box-shadow-01, $box-shadow-02;
+		@media screen and (width > db-ui-core.$db-break-the-header-max-width) {
+			box-shadow: db-ui-core.$box-shadow-01, db-ui-core.$box-shadow-02;
 			position: absolute;
 			visibility: hidden;
 
-			z-index: $z-index-rea-header-cmp-mainnavigation-submenu;
+			z-index: db-ui-core.$z-index-rea-header-cmp-mainnavigation-submenu;
 		}
 
-		@media screen and (max-width: $db-break-the-header-max-width) {
+		@media screen and (max-width: db-ui-core.$db-break-the-header-max-width) {
 			display: none;
 		}
 	}
 
 	// First Level
 	& > ul {
-		@media screen and (max-width: $db-break-the-header-max-width) {
+		@media screen and (max-width: db-ui-core.$db-break-the-header-max-width) {
 			background-color: #fff;
 			position: absolute;
 			inset-inline: 0;
 			inset-block-end: 0;
 			inset-block-start: 3.5rem;
-			z-index: $z-index-cmp-overflow-menu-overlay;
+			z-index: db-ui-core.$z-index-cmp-overflow-menu-overlay;
 			padding: 0.75rem;
 			margin-block-end: 3.5rem;
 			overflow: auto;
 		}
 
-		@media screen and (width > $db-break-the-header-max-width) {
+		@media screen and (width > db-ui-core.$db-break-the-header-max-width) {
 			display: flex;
 			gap: 0.75rem;
 		}
@@ -204,14 +208,14 @@
 		& > * > li {
 			& > .elm-link,
 			& > * > .elm-link {
-				@media screen and (width > $db-break-the-header-max-width) {
+				@media screen and (width > db-ui-core.$db-break-the-header-max-width) {
 					height: 2.5rem;
 					padding: 0.5rem 0.75rem;
 					border-radius: 4px;
 
 					&:hover,
 					&:focus {
-						border-#{$mainnavigation-link--borderPosition}-color: $db-color-cool-gray-200;
+						border-#{mainnavigation.$mainnavigation-link--borderPosition}-color: variables.$db-color-cool-gray-200;
 					}
 
 					&[aria-current="page"] {
@@ -219,7 +223,7 @@
 							height: 4px;
 							width: 100%;
 							content: "";
-							background-color: $db-color-red-500;
+							background-color: variables.$db-color-red-500;
 							border-radius: 2px;
 							position: absolute;
 							inset-block-start: calc(100% + 0.25rem);
@@ -231,7 +235,7 @@
 
 			// From second level
 			ul {
-				@media screen and (width > $db-break-the-header-max-width) {
+				@media screen and (width > db-ui-core.$db-break-the-header-max-width) {
 					inset-inline-start: 0;
 					min-width: 100%;
 					inset-block-start: calc(100% + 0.5rem);
@@ -255,9 +259,9 @@
 						align-items: center;
 						display: flex;
 
-						min-height: to-rem($pxValue: 53);
-						padding-left: to-rem($pxValue: 18);
-						padding-right: to-rem($pxValue: 18);
+						min-height: functions.to-rem($pxValue: 53);
+						padding-left: functions.to-rem($pxValue: 18);
+						padding-right: functions.to-rem($pxValue: 18);
 					}
 				}
 
@@ -265,8 +269,8 @@
 				& > * > li {
 					& > .elm-link,
 					& > * > .elm-link {
-						@media screen and (max-width: $db-break-the-header-max-width) {
-							padding-left: to-rem($pxValue: 34);
+						@media screen and (max-width: db-ui-core.$db-break-the-header-max-width) {
+							padding-left: functions.to-rem($pxValue: 34);
 						}
 					}
 
@@ -276,8 +280,8 @@
 						& > * > li {
 							& > .elm-link,
 							& > * > .elm-link {
-								@media screen and (max-width: $db-break-the-header-max-width) {
-									padding-left: to-rem($pxValue: 60);
+								@media screen and (max-width: db-ui-core.$db-break-the-header-max-width) {
+									padding-left: functions.to-rem($pxValue: 60);
 								}
 							}
 						}
@@ -295,18 +299,18 @@
 		// Icon for menu
 		// TODO: this could probably get simplified with a media query polyfill and moved back to the previous section
 		&[aria-haspopup="true"] {
-			@include icon(
-				glyph(chevron-right),
+			@include icons.icon(
+				icons.glyph(chevron-right),
 				24,
 				"outline",
 				"after",
-				$partial: $partial
+				$partial: partials.$partial
 			);
 
 			&::after {
 				position: absolute;
 				right: 1rem;
-				top: to-rem($pxValue: 9);
+				top: functions.to-rem($pxValue: 9);
 			}
 		}
 
@@ -314,13 +318,13 @@
 			& > ul,
 			& > * > ul {
 				visibility: visible;
-				@media screen and (max-width: $db-break-the-header-max-width) {
+				@media screen and (max-width: db-ui-core.$db-break-the-header-max-width) {
 					display: initial;
 				}
 			}
 		}
 
-		@media screen and (max-width: $db-break-the-header-max-width) {
+		@media screen and (max-width: db-ui-core.$db-break-the-header-max-width) {
 			&:hover {
 				& > a {
 					font-weight: 700;
@@ -342,7 +346,7 @@
 				position: relative;
 			}
 		}
-		@media screen and (width > $db-break-the-header-max-width) {
+		@media screen and (width > db-ui-core.$db-break-the-header-max-width) {
 			// Do not show Icon for menu on bigger screens
 			&[aria-haspopup="true"] {
 				&::after {
@@ -351,15 +355,15 @@
 			}
 
 			.elm-link {
-				background-color: rgba($db-color-cool-gray-700, 0);
+				background-color: rgba(variables.$db-color-cool-gray-700, 0);
 
 				&:hover {
-					background-color: rgba($db-color-cool-gray-700, 0.08);
+					background-color: rgba(variables.$db-color-cool-gray-700, 0.08);
 					color: initial;
 				}
 
 				&:active {
-					background-color: rgba($db-color-cool-gray-700, 0.16);
+					background-color: rgba(variables.$db-color-cool-gray-700, 0.16);
 				}
 
 				&[aria-current="page"] {

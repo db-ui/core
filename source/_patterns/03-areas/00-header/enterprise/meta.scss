@@ -1,2 +1,2 @@
-@import "meta.variables";
-@import "../meta";
+@use "meta.variables";
+@use "../meta" as meta2;

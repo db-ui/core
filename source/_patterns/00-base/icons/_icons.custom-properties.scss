@@ -1,4 +1,4 @@
-@import "icons.variables";
+@use "icons.variables";
 
 // TODO: The following construct was especially meant to enable a branch (EDS & FV) specific result - probably we could refactor this the sooner the later
 [data-icon]:not([data-icon-variant]),
@@ -15,18 +15,18 @@
 }
 
 // DB UX Icons
-@each $icon-style, $icon-sizes in $icon-font-families-personenverkehr {
+@each $icon-style, $icon-sizes in icons.$icon-font-families-personenverkehr {
 	@each $icon-size, $icon-categories in $icon-sizes {
-		[data-icon-variant="#{$icon-size}-#{$icon-style}"],
-		[data-icon-variant-before="#{$icon-size}-#{$icon-style}"] {
+		[data-icon-variant="#{icons.$icon-size}-#{icons.$icon-style}"],
+		[data-icon-variant-before="#{icons.$icon-size}-#{icons.$icon-style}"] {
 			&[data-icon],
 			&[data-icon-before] {
-				@include iconMeta($icon-size, $icon-style);
+				@include iconMeta(icons.$icon-size, icons.$icon-style);
 			}
 		}
-		[data-icon-variant-after="#{$icon-size}-#{$icon-style}"] {
+		[data-icon-variant-after="#{icons.$icon-size}-#{icons.$icon-style}"] {
 			&[data-icon-after] {
-				@include iconMeta($icon-size, $icon-style, "after");
+				@include iconMeta(icons.$icon-size, icons.$icon-style, "after");
 			}
 		}
 	}

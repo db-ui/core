@@ -1,2 +1,2 @@
-@import "grid.variables";
-@import "../grid";
+@use "grid.variables";
+@use "../grid" as grid2;

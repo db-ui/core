@@ -1,5 +1,5 @@
-@import "../../../css/helpers/functions";
-@import "../../00-base/icons/icons.variables";
-@import "../../00-base/icons/icons.helpers";
+@use "../../../css/helpers/functions";
+@use "../../00-base/icons/icons.variables";
+@use "../../00-base/icons/icons.helpers" as icons2;
 
 $dialog-backdrop--backgroundColor: rgba(0, 0, 0, 0.9) !default;

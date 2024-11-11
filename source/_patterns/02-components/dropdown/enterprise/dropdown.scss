@@ -1,2 +1,2 @@
-@import "dropdown.variables";
-@import "../dropdown";
+@use "dropdown.variables";
+@use "../dropdown" as dropdown2;

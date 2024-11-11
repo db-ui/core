@@ -1,6 +1,8 @@
-@import "../../../css/helpers/functions";
-@import "table.variables";
-@import "table.helpers";
+@use "../../../css/helpers/functions";
+@use "table.variables";
+@use "table.helpers" as table2;
+@use "@db-ui/base/build/scss/variables";
+@use "../../../css/db-ui-core.variables";
 
 .cmp-table {
 	border-collapse: collapse;
@@ -12,21 +14,21 @@
 	// the box-shadow should get displayed including the whole table / the caption as well
 	&,
 	& > caption {
-		box-shadow: $box-shadow-01, $box-shadow-02;
+		box-shadow: db-ui-core.$box-shadow-01, db-ui-core.$box-shadow-02;
 	}
 
 	caption {
 		font-weight: 700;
-		padding: #{to-rem($pxValue: 16)} #{to-rem($pxValue: 12)};
+		padding: #{functions.to-rem($pxValue: 16)} #{functions.to-rem($pxValue: 12)};
 		text-align: left;
 	}
 
 	thead {
-		border-bottom: to-rem($pxValue: 1) solid $db-color-cool-gray-700;
-		border-top: to-rem($pxValue: 1) solid $db-color-cool-gray-700;
+		border-bottom: functions.to-rem($pxValue: 1) solid variables.$db-color-cool-gray-700;
+		border-top: functions.to-rem($pxValue: 1) solid variables.$db-color-cool-gray-700;
 
 		th {
-			color: $db-color-cool-gray-500;
+			color: variables.$db-color-cool-gray-500;
 		}
 	}
 
@@ -36,7 +38,7 @@
 
 	th,
 	td {
-		padding: $table-densityRegular--padding;
+		padding: table.$table-densityRegular--padding;
 
 		// Default horizontal and vertical alignment should get inherited
 		text-align: inherit;
@@ -52,10 +54,10 @@
 	}
 
 	tbody {
-		border-bottom: to-rem($pxValue: 1) solid $db-color-cool-gray-700;
+		border-bottom: functions.to-rem($pxValue: 1) solid variables.$db-color-cool-gray-700;
 
 		th:first-child {
-			border-right: 1px solid $db-color-warm-gray-700;
+			border-right: 1px solid variables.$db-color-warm-gray-700;
 		}
 	}
 
@@ -121,7 +123,7 @@
 			tr:not(:last-child) {
 				th,
 				td {
-					border-bottom: 1px solid $table-line--borderColor; // * TODO: possibly rework variable naming
+					border-bottom: 1px solid table.$table-line--borderColor; // * TODO: possibly rework variable naming
 				}
 			}
 		}
@@ -132,7 +134,7 @@
 			th,
 			td {
 				&:not(:first-child) {
-					border-left: 1px solid $table-line--borderColor; // * TODO: possibly rework variable naming
+					border-left: 1px solid table.$table-line--borderColor; // * TODO: possibly rework variable naming
 				}
 			}
 		}
@@ -141,8 +143,8 @@
 	// Zebra cell styling
 	&[data-rows="zebra"] {
 		tbody {
-			@include cmp-table-zebra(
-				$table-row-zebra-color
+			@include table2.cmp-table-zebra(
+				table.$table-row-zebra-color
 			); // * TODO: possibly rework variable naming
 		}
 	}
@@ -151,14 +153,14 @@
 	&[data-density="small"] {
 		th,
 		td {
-			padding: $table-densitySmall--padding;
+			padding: table.$table-densitySmall--padding;
 		}
 	}
 
 	&[data-density="large"] {
 		th,
 		td {
-			padding: $table-densityLarge--padding;
+			padding: table.$table-densityLarge--padding;
 		}
 	}
 

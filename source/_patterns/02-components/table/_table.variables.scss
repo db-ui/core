@@ -1,4 +1,5 @@
-@import "../../../css/db-ui-core.variables";
+@use "../../../css/db-ui-core.variables";
+@use "@db-ui/base/build/scss/variables";
 
 $cmp-table-cell-height-36: to-rem(
 	$pxValue: 4
@@ -10,10 +11,10 @@ $table-cell-height68-paddingVertical: to-rem(
 	$pxValue: 22
 ) !default; // 68px cell height
 
-$table-line--borderColor: $db-color-cool-gray-200 !default;
+$table-line--borderColor: variables.$db-color-cool-gray-200 !default;
 
-$table-row-zebra-color: rgba($db-color-cool-gray-700, 0.07) !default;
+$table-row-zebra-color: rgba(variables.$db-color-cool-gray-700, 0.07) !default;
 
-$table-densitySmall--padding: $db-spacing-s !default;
-$table-densityRegular--padding: $db-spacing-sm !default;
-$table-densityLarge--padding: $db-spacing-m !default;
+$table-densitySmall--padding: variables.$db-spacing-s !default;
+$table-densityRegular--padding: variables.$db-spacing-sm !default;
+$table-densityLarge--padding: variables.$db-spacing-m !default;

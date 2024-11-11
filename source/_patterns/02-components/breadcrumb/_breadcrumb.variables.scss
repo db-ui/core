@@ -1,13 +1,14 @@
-@import "../../00-base/icons/icons.helpers";
-@import "../../00-base/icons/icons.variables";
-@import "../../00-base/colors/colors.variables";
+@use "../../00-base/icons/icons.helpers";
+@use "../../00-base/icons/icons.variables" as icons2;
+@use "../../00-base/colors/colors.variables";
+@use "@db-ui/base/build/scss/variables";
 
 $breadcrumb-divider--icon: "chevron-right" !default;
 $breadcrumb-link-hover-backgroundColor: rgba(
-	$db-color-cool-gray-700,
+	variables.$db-color-cool-gray-700,
 	0.03
 ) !default;
 $breadcrumb-link-active-backgroundColor: rgba(
-	$db-color-cool-gray-700,
+	variables.$db-color-cool-gray-700,
 	0.06
 ) !default;

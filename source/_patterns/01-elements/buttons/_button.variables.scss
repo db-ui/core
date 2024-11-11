@@ -1,33 +1,34 @@
-@import "../../../css/helpers/functions";
-@import "../../00-base/icons/icons.variables";
-@import "../../00-base/icons/icons.helpers";
+@use "../../../css/helpers/functions";
+@use "../../00-base/icons/icons.variables";
+@use "../../00-base/icons/icons.helpers" as icons2;
+@use "@db-ui/base/build/scss/variables";
 
 // We want to set the alpha value and that for need the long form hex code
 // stylelint-disable color-hex-length
 $button---color: #ffffff !default;
 // stylelint-enable color-hex-length
 
-$button---minHeight: to-rem(
+$button---minHeight: functions.to-rem(
 	$pxValue: 44
 ) !default;
 
 // Background colors
-$button-brand-primary--backgroundColor: $db-color-red-500 !default;
+$button-brand-primary--backgroundColor: variables.$db-color-red-500 !default;
 $button-brand-primary-hover-backgroundColor: #db0016;
 
-$button-primary--backgroundColor: $db-color-cool-gray-700 !default;
+$button-primary--backgroundColor: variables.$db-color-cool-gray-700 !default;
 $button-primary-hover-backgroundColor: #2f3541;
 
-$button-secondarySolid--backgroundColor: $db-color-cool-gray-200 !default;
+$button-secondarySolid--backgroundColor: variables.$db-color-cool-gray-200 !default;
 $button-secondarySolid-hover-backgroundColor: #cdd4da !default;
 $button-secondarySolid-active-backgroundColor: #c5ccd3 !default;
 
 $button-secondaryOutline-hover-backgroundColor: rgba(
-	$db-color-cool-gray-700,
+	variables.$db-color-cool-gray-700,
 	0.03
 ) !default;
 
 $button-secondaryOutline-active-backgroundColor: rgba(
-	$db-color-cool-gray-700,
+	variables.$db-color-cool-gray-700,
 	0.06
 ) !default;

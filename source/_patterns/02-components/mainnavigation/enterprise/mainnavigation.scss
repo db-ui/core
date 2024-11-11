@@ -1,2 +1,2 @@
-@import "mainnavigation.variables";
-@import "../mainnavigation";
+@use "mainnavigation.variables";
+@use "../mainnavigation" as mainnavigation2;

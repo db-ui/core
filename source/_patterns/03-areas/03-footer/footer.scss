@@ -1,23 +1,24 @@
 @charset "utf-8";
 
-@import "../../../css/partials.meta";
-@import "../../../css/helpers/functions";
-@import "footer.variables";
+@use "../../../css/partials.meta";
+@use "../../../css/helpers/functions";
+@use "footer.variables";
+@use "@db-ui/base/build/scss/variables";
 
 .rea-footer {
-	background-color: $footer---backgroundColor;
-	box-shadow: $footer---boxShadow;
+	background-color: footer.$footer---backgroundColor;
+	box-shadow: footer.$footer---boxShadow;
 
-	color: $db-color-cool-gray-500;
-	margin-top: $footer---marginTop;
-	padding: #{to-rem($pxValue: 21)} #{to-rem($pxValue: 16)};
+	color: variables.$db-color-cool-gray-500;
+	margin-top: footer.$footer---marginTop;
+	padding: #{functions.to-rem($pxValue: 21)} #{functions.to-rem($pxValue: 16)};
 
 	& {
-		@include clearfix($partial: $partial);
+		@include functions.clearfix($partial: partials.$partial);
 	}
 
 	&.has-border {
-		border-top: $footer---borderTop;
+		border-top: footer.$footer---borderTop;
 	}
 
 	@media screen and (max-width: 767px) {

@@ -1,4 +1,5 @@
-@import "../../../css/helpers/functions";
+@use "../../../css/helpers/functions";
+@use "@db-ui/base/build/scss/variables";
 
 // offset-x | offset-y | blur-radius | spread-radius | color
 $header---boxShadow:
@@ -7,11 +8,11 @@ $header---boxShadow:
 
 $header---backgroundColor: #fdfdfd !default; // TODO: This would need to get replaced by the correct (semantic) color
 
-$header---borderBottom: #{to-rem(
+$header---borderBottom: #{functions.to-rem(
 		$pxValue: 1
-	)} solid $db-color-warm-gray-400 !default;
+	)} solid variables.$db-color-warm-gray-400 !default;
 
-$header---marginBottom: to-rem(
+$header---marginBottom: functions.to-rem(
 	$pxValue: 16
 ) !default;
 

@@ -1,6 +1,6 @@
-@import "../../../css/helpers/functions";
+@use "../../../css/helpers/functions";
 
-$rea-header-cmp-brand-padding-top: to-rem(
+$rea-header-cmp-brand-padding-top: functions.to-rem(
 	$pxValue: 32
 ) !default;
 

@@ -1,12 +1,13 @@
-@import "../../../css/helpers/functions";
-@import "../../00-base/icons/icons.variables";
-@import "../../00-base/icons/icons.helpers";
+@use "../../../css/helpers/functions";
+@use "../../00-base/icons/icons.variables";
+@use "../../00-base/icons/icons.helpers" as icons2;
+@use "@db-ui/base/build/scss/variables";
 
-$chip---radius: to-rem(
+$chip---radius: functions.to-rem(
 	$pxValue: 4
 ) !default;
 
-$chip-hover--backgroundColor: rgba($db-color-cool-gray-700, 0.03) !default;
-$chip-selected--backgroundColor: $db-color-cool-gray-700 !default;
-$chip-checked--color: $db-color-white !default;
+$chip-hover--backgroundColor: rgba(variables.$db-color-cool-gray-700, 0.03) !default;
+$chip-selected--backgroundColor: variables.$db-color-cool-gray-700 !default;
+$chip-checked--color: variables.$db-color-white !default;
 // $chip---color: $db-color-white !default;

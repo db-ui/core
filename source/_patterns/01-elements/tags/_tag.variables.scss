@@ -1,10 +1,11 @@
-@import "../../../css/helpers/functions";
-@import "../../00-base/icons/icons.variables";
-@import "../../00-base/icons/icons.helpers";
+@use "../../../css/helpers/functions";
+@use "../../00-base/icons/icons.variables";
+@use "../../00-base/icons/icons.helpers" as icons2;
+@use "@db-ui/base/build/scss/variables";
 
-$tag---radius: to-rem(
+$tag---radius: functions.to-rem(
 	$pxValue: 4
 ) !default;
 
-$tag---backgroundColor: $db-color-cool-gray-700 !default;
-$tag---color: $db-color-white !default;
+$tag---backgroundColor: variables.$db-color-cool-gray-700 !default;
+$tag---color: variables.$db-color-white !default;

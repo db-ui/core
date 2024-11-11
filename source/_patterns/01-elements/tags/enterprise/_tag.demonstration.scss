@@ -1,5 +1,5 @@
-@import "tag.variables";
-@import "../tag.variables";
+@use "tag.variables";
+@use "../tag.variables" as tag2;
 
 .elm-tag {
 	// .DO-NOT-COPY-THIS-CLASS-example-tags-on-light & {

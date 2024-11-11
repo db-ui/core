@@ -1,9 +1,12 @@
-@import "../../../css/partials.meta";
-@import "pagination.variables";
+@use "../../../css/partials.meta";
+@use "pagination.variables";
+@use "@db-ui/base/build/scss/variables";
+@use "../../../css/helpers/functions";
+@use "../../00-base/icons/icons.helpers";
 
 .cmp-pagination {
-	color: $db-color-cool-gray-700;
-	font-size: to-rem($pxValue: 14);
+	color: variables.$db-color-cool-gray-700;
+	font-size: functions.to-rem($pxValue: 14);
 
 	user-select: none;
 
@@ -12,7 +15,7 @@
 	}
 
 	.elm-headline {
-		@include a11y-visually-hidden($partial: $partial);
+		@include functions.a11y-visually-hidden($partial: partials.$partial);
 	}
 
 	li,
@@ -23,8 +26,8 @@
 	}
 
 	li {
-		height: to-rem($pxValue: 36);
-		width: to-rem($pxValue: 36);
+		height: functions.to-rem($pxValue: 36);
+		width: functions.to-rem($pxValue: 36);
 	}
 
 	.elm-link {
@@ -40,21 +43,21 @@
 		}
 
 		&[rel="prev"]::before {
-			margin-left: to-rem($pxValue: 11);
+			margin-left: functions.to-rem($pxValue: 11);
 		}
 
 		&[rel="next"]::before {
-			margin-right: to-rem($pxValue: 11);
+			margin-right: functions.to-rem($pxValue: 11);
 		}
 
 		&[rel="prev"] {
-			@include icon(glyph(chevron-left), $partial: $partial);
-			@include is-icon-text-replace();
+			@include icons.icon(icons.glyph(chevron-left), $partial: partials.$partial);
+			@include icons.is-icon-text-replace();
 		}
 
 		&[rel="next"] {
-			@include icon(glyph(chevron-right), $partial: $partial);
-			@include is-icon-text-replace();
+			@include icons.icon(icons.glyph(chevron-right), $partial: partials.$partial);
+			@include icons.is-icon-text-replace();
 		}
 
 		&[aria-current="page"] {

@@ -1,6 +1,8 @@
-@import "../../../css/partials.meta";
-@import "tab-bar.variables";
-@import "../../00-base/icons/icons.helpers";
+@use "../../../css/partials.meta";
+@use "tab-bar.variables";
+@use "../../00-base/icons/icons.helpers";
+@use "@db-ui/base/build/scss/variables";
+@use "../../../css/helpers/functions";
 
 @mixin tab() {
 	& > input[type="radio"],
@@ -16,12 +18,12 @@
 	gap: 0.25rem;
 
 	@include tab() {
-		@include a11y-visually-hidden($partial: $partial);
+		@include functions.a11y-visually-hidden($partial: partials.$partial);
 
 		& + label[role="tab"] {
 			cursor: pointer;
 			display: flex;
-			padding: 0.875rem $db-spacing-m;
+			padding: 0.875rem variables.$db-spacing-m;
 			position: relative;
 			z-index: 1;
 			border-radius: 4px;
@@ -33,25 +35,25 @@
 		}
 
 		&:focus + label {
-			outline: $tabBar-tab-focus-outline;
+			outline: tab-bar.$tabBar-tab-focus-outline;
 		}
 
 		&:not(:checked) {
 			& + label[role="tab"] {
 				&:hover,
 				&:focus {
-					background-color: $tabBar-tab-hover-backgroundColor;
+					background-color: tab-bar.$tabBar-tab-hover-backgroundColor;
 				}
 
 				&:active {
-					background-color: $tabBar-tab-pressed-backgroundColor;
+					background-color: tab-bar.$tabBar-tab-pressed-backgroundColor;
 				}
 			}
 		}
 
 		&:disabled {
 			& + label[role="tab"] {
-				color: $db-color-cool-gray-400;
+				color: variables.$db-color-cool-gray-400;
 
 				&:hover,
 				&:focus {
@@ -70,7 +72,7 @@
 
 				// Puls
 				&::after {
-					background-color: $db-color-red-500;
+					background-color: variables.$db-color-red-500;
 					border-radius: 5px;
 					content: "";
 					display: block;
@@ -85,7 +87,7 @@
 
 	label[role="tab"],
 	section[role="tabpanel"] {
-		background-color: $tabBar-tabSection--backgroundColor;
+		background-color: tab-bar.$tabBar-tabSection--backgroundColor;
 	}
 
 	section[role="tabpanel"] {

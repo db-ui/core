@@ -1,18 +1,20 @@
-@import "../../../css/helpers/functions";
-@import "cards.variables";
+@use "../../../css/helpers/functions";
+@use "cards.variables";
+@use "@db-ui/base/build/scss/variables";
+@use "../../../css/db-ui-core.variables";
 
 .cmp-card {
 	background-color: #fff;
 
 	border-radius: 8px;
-	box-shadow: $box-shadow-01, $box-shadow-02;
+	box-shadow: db-ui-core.$box-shadow-01, db-ui-core.$box-shadow-02;
 
 	& > a {
 		text-decoration: none;
 	}
 
 	figure {
-		margin: $db-spacing-m $db-spacing-m $db-spacing-m $db-spacing-s;
+		margin: variables.$db-spacing-m variables.$db-spacing-m variables.$db-spacing-m variables.$db-spacing-s;
 	}
 
 	// Banner variant
@@ -30,7 +32,7 @@
 			h4,
 			h5,
 			h6 {
-				font-size: to-rem($pxValue: 18);
+				font-size: functions.to-rem($pxValue: 18);
 
 				&,
 				& ~ p {
@@ -39,9 +41,9 @@
 			}
 
 			p {
-				font-size: to-rem($pxValue: 14);
+				font-size: functions.to-rem($pxValue: 14);
 
-				max-width: to-rem(
+				max-width: functions.to-rem(
 					$pxValue: 290
 				); // TODO: This would need some rework
 			}

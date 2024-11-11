@@ -1,2 +1,2 @@
-@import "sidenavi.variables";
-@import "../sidenavi";
+@use "sidenavi.variables";
+@use "../sidenavi" as sidenavi2;

@@ -1,2 +1,2 @@
-@import "notification.variables";
-@import "../notification";
+@use "notification.variables";
+@use "../notification" as notification2;

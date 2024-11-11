@@ -1,2 +1,2 @@
-@import "metanavigation.variables";
-@import "../metanavigation";
+@use "metanavigation.variables";
+@use "../metanavigation" as metanavigation2;

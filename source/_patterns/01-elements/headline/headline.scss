@@ -1,28 +1,31 @@
 @use "sass:math";
-@import "headline.variables";
+@use "headline.variables";
+@use "@db-ui/base/build/scss/variables";
+@use "../../../css/db-ui-core.variables";
+@use "../../../css/helpers/functions";
 
 .elm-headline {
 	text-wrap: balance;
 
-	margin-bottom: to-rem($pxValue: 16);
+	margin-bottom: functions.to-rem($pxValue: 16);
 
 	// * TODO: These declarations make sense for the moment, but should get aligned with overall definitions of spacing around elements
-	margin-top: to-rem($pxValue: 24);
+	margin-top: functions.to-rem($pxValue: 24);
 
 	&[data-pulse] {
 		&::after {
 			background: var(--db-pulse-background, #ec0016);
 			border-radius: calc(
-				var(--db-logo-height, #{$db-logo-default-height}) / 7 * 0.5
+				var(--db-logo-height, #{db-ui-core.$db-logo-default-height}) / 7 * 0.5
 			);
 			content: "";
 			display: block;
 			margin-bottom: var(--db-pulse-margin-bottom, 14px);
 			margin-top: calc(
-				var(--db-logo-height, #{$db-logo-default-height}) * 0.5
+				var(--db-logo-height, #{db-ui-core.$db-logo-default-height}) * 0.5
 			);
-			width: var(--db-logo-width, #{$db-logo-default-width});
-			height: calc(var(--db-logo-height, #{$db-logo-default-height}) / 7);
+			width: var(--db-logo-width, #{db-ui-core.$db-logo-default-width});
+			height: calc(var(--db-logo-height, #{db-ui-core.$db-logo-default-height}) / 7);
 		}
 	}
 }
@@ -31,20 +34,20 @@ h1,
 h2,
 h3 {
 	&.elm-headline {
-		font-family: $db-font-family-headline;
+		font-family: variables.$db-font-family-headline;
 		font-weight: 900;
 	}
 }
 
 h1 {
 	&.elm-headline {
-		font-size: to-rem(
-			$pxValue: $rea-main-h1-font-size
+		font-size: functions.to-rem(
+			$pxValue: headline.$rea-main-h1-font-size
 		); // * TODO: possibly rework variable naming
-		line-height: math.div(40, $rea-main-h1-font-size);
+		line-height: math.div(40, headline.$rea-main-h1-font-size);
 		@media screen and (max-width: 767px) {
-			font-size: to-rem(
-				$pxValue: $rea-main-h1-font-size-small
+			font-size: functions.to-rem(
+				$pxValue: headline.$rea-main-h1-font-size-small
 			); // * TODO: possibly rework variable naming
 			line-height: 1.14;
 		}
@@ -53,13 +56,13 @@ h1 {
 
 h2 {
 	&.elm-headline {
-		font-size: to-rem(
-			$pxValue: $rea-main-h2-font-size
+		font-size: functions.to-rem(
+			$pxValue: headline.$rea-main-h2-font-size
 		); // * TODO: possibly rework variable naming
-		line-height: math.div(28, $rea-main-h2-font-size);
+		line-height: math.div(28, headline.$rea-main-h2-font-size);
 		@media screen and (max-width: 767px) {
-			font-size: to-rem(
-				$pxValue: $rea-main-h2-font-size-small
+			font-size: functions.to-rem(
+				$pxValue: headline.$rea-main-h2-font-size-small
 			); // * TODO: possibly rework variable naming
 			line-height: 1.2;
 		}
@@ -68,13 +71,13 @@ h2 {
 
 h3 {
 	&.elm-headline {
-		font-size: to-rem(
-			$pxValue: $rea-main-h3-font-size
+		font-size: functions.to-rem(
+			$pxValue: headline.$rea-main-h3-font-size
 		); // * TODO: possibly rework variable naming
-		line-height: math.div(24, $rea-main-h3-font-size);
+		line-height: math.div(24, headline.$rea-main-h3-font-size);
 		@media screen and (max-width: 767px) {
-			font-size: to-rem(
-				$pxValue: $rea-main-h3-font-size-small
+			font-size: functions.to-rem(
+				$pxValue: headline.$rea-main-h3-font-size-small
 			); // * TODO: possibly rework variable naming
 			line-height: 1.33;
 		}
@@ -83,14 +86,14 @@ h3 {
 
 h4 {
 	&.elm-headline {
-		font-size: to-rem(
-			$pxValue: $rea-main-h4-font-size
+		font-size: functions.to-rem(
+			$pxValue: headline.$rea-main-h4-font-size
 		); // * TODO: possibly rework variable naming
 		font-weight: 400;
-		line-height: math.div(24, $rea-main-h4-font-size);
+		line-height: math.div(24, headline.$rea-main-h4-font-size);
 		@media screen and (max-width: 767px) {
-			font-size: to-rem(
-				$pxValue: $rea-main-h4-font-size-small
+			font-size: functions.to-rem(
+				$pxValue: headline.$rea-main-h4-font-size-small
 			); // * TODO: possibly rework variable naming
 			line-height: 1.25;
 		}

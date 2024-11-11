@@ -1,2 +1,2 @@
-@import "tab-bar.variables";
-@import "../tab-bar";
+@use "tab-bar.variables";
+@use "../tab-bar" as tab-bar2;

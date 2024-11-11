@@ -1,2 +1,2 @@
-@import "select.variables";
-@import "../select";
+@use "select.variables";
+@use "../select" as select2;

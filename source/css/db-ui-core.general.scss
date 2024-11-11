@@ -2,10 +2,10 @@
 	This is mainly meant to get included within scoped components like e.g. within StencilJS Custom Components / DB UI Elements
 ***** */
 
-@import "db-ui-core.variables";
-@import "@csstools/normalize.css/normalize";
-@import "../_patterns/00-base/init";
-@import "fonts.general";
+@use "db-ui-core.variables";
+@use "@csstools/normalize.css/normalize";
+@use "../_patterns/00-base/init";
+@use "fonts.general";
 
 /* TODO: We most likely need to rework this */
 body,

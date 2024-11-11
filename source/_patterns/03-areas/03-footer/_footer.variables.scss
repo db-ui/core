@@ -1,10 +1,11 @@
-@import "../../../css/db-ui-core.variables";
+@use "../../../css/db-ui-core.variables";
+@use "@db-ui/base/build/scss/variables";
 
 $footer---borderTop: #{to-rem(
 		$pxValue: 6
-	)} solid $db-color-cool-gray-200 !default;
+	)} solid variables.$db-color-cool-gray-200 !default;
 
-$footer---boxShadow: $box-shadow-01, $box-shadow-02 !default;
+$footer---boxShadow: db-ui-core.$box-shadow-01, db-ui-core.$box-shadow-02 !default;
 
 $footer---marginTop: to-rem(
 	$pxValue: 16

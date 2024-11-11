@@ -1,4 +1,4 @@
-@import "../../../css/helpers/functions";
+@use "../../../css/helpers/functions";
 
 .cmp-cards {
 	list-style: none;
@@ -8,10 +8,10 @@
 
 	@supports (display: grid) {
 		display: grid;
-		grid-gap: to-rem($pxValue: 24);
+		grid-gap: functions.to-rem($pxValue: 24);
 		grid-template-columns: repeat(
 			auto-fill,
-			minmax(to-rem($pxValue: 340), 1fr)
+			minmax(functions.to-rem($pxValue: 340), 1fr)
 		);
 	}
 }

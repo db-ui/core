@@ -1,2 +1,2 @@
-@import "checkbox.variables";
-@import "../checkbox";
+@use "checkbox.variables";
+@use "../checkbox" as checkbox2;

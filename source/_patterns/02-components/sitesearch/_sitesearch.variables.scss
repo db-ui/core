@@ -1,11 +1,11 @@
-@import "../../../css/helpers/functions";
-@import "../../00-base/icons/icons.variables";
-@import "../../00-base/icons/icons.helpers";
+@use "../../../css/helpers/functions";
+@use "../../00-base/icons/icons.variables";
+@use "../../00-base/icons/icons.helpers" as icons2;
 
-$sitesearch-form-full-maxWidth: to-rem(
+$sitesearch-form-full-maxWidth: functions.to-rem(
 	$pxValue: 500
 ) !default;
 $sitesearch-input--backgroundColor: #fdfdfd !default; // TODO: This would need to get replaced by the correct (semantic) color
-$sitesearch-width--open: to-rem(
+$sitesearch-width--open: functions.to-rem(
 	$pxValue: 240
 );

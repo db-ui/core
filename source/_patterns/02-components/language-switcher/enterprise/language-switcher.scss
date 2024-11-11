@@ -1,2 +1,2 @@
-@import "language-switcher.variables";
-@import "../language-switcher";
+@use "language-switcher.variables";
+@use "../language-switcher" as language-switcher2;

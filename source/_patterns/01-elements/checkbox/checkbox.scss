@@ -1,22 +1,25 @@
 @charset "utf-8";
 
-@import "../../../css/partials.meta";
-@import "checkbox.variables";
-@import "../form-elements";
+@use "../../../css/partials.meta";
+@use "checkbox.variables";
+@use "../form-elements";
+@use "@db-ui/base/build/scss/variables";
+@use "../../../css/helpers/functions";
+@use "../../00-base/icons/icons.helpers";
 
 .elm-checkbox {
 	--db-form-element-dimensions: var(
 		--db-checkbox-dimensions,
-		#{to-rem($pxValue: 24)}
+		#{functions.to-rem($pxValue: 24)}
 	);
 
 	align-content: center;
 
 	appearance: none;
-	background-color: $checkbox---backgroundColor;
-	border: #{to-rem($pxValue: 1)} solid $checkbox---borderColor;
+	background-color: checkbox.$checkbox---backgroundColor;
+	border: #{functions.to-rem($pxValue: 1)} solid checkbox.$checkbox---borderColor;
 	border-radius: 4px;
-	color: $checkbox---color;
+	color: checkbox.$checkbox---color;
 
 	display: inline-flex;
 	height: var(--db-form-element-dimensions);
@@ -25,7 +28,7 @@
 
 	& {
 		@extend %form-element-enhanced-clickable-area;
-		@include icon("\00A0", 24, "outline", $partial: $partial);
+		@include icons.icon("\00A0", 24, "outline", $partial: partials.$partial);
 	}
 
 	&[type="checkbox"] {
@@ -38,11 +41,11 @@
 	}
 
 	&:checked {
-		background-color: $checkbox--checked-backgroundColor;
+		background-color: checkbox.$checkbox--checked-backgroundColor;
 
 		&::before {
-			color: $checkbox--checked-color;
-			content: glyph(done);
+			color: checkbox.$checkbox--checked-color;
+			content: icons.glyph(done);
 		}
 	}
 
@@ -51,7 +54,7 @@
 			background-color: rgba(40, 45, 55, 0.14);
 
 			&:checked {
-				background-color: $checkbox-hover-checked-backgroundColor;
+				background-color: checkbox.$checkbox-hover-checked-backgroundColor;
 			}
 		}
 
@@ -62,7 +65,7 @@
 
 	&:indeterminate {
 		&::before {
-			content: glyph(minus);
+			content: icons.glyph(minus);
 		}
 	}
 
@@ -76,6 +79,6 @@
 	& + label {
 		@extend %form-label;
 
-		padding-inline-start: $db-spacing-xs;
+		padding-inline-start: variables.$db-spacing-xs;
 	}
 }

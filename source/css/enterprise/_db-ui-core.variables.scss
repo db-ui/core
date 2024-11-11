@@ -1,4 +1,4 @@
 $domain: "enterprise";
 
-@import "../helpers/functions";
-@import "../../_patterns/00-base/colors/enterprise/colors.variables";
+@use "../helpers/functions";
+@use "../../_patterns/00-base/colors/enterprise/colors.variables";

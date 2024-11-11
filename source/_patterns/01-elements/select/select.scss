@@ -1,12 +1,14 @@
-@import "../../../css/partials.meta";
-@import "select.variables";
-@import "../form-elements";
-@import "../../../css/db-ui-core.variables";
+@use "../../../css/partials.meta";
+@use "select.variables";
+@use "../form-elements";
+@use "../../../css/db-ui-core.variables";
+@use "@db-ui/base/build/scss/variables";
+@use "../../../css/helpers/functions";
 
 .elm-select {
 	@extend %form-element;
 	appearance: none;
-	font-size: to-rem($pxValue: 16);
+	font-size: functions.to-rem($pxValue: 16);
 
 	// For IE
 	&::-ms-expand {
@@ -17,12 +19,12 @@
 	&:not([multiple]) {
 		background-image: var(
 			--db-ic-expand-more-20,
-			url(#{$icons-path}functional/images/navigation/db_ic_expand_more_20.svg)
+			url(#{db-ui-core.$icons-path}functional/images/navigation/db_ic_expand_more_20.svg)
 		);
-		background-position: right to-rem($pxValue: 11) center;
+		background-position: right functions.to-rem($pxValue: 11) center;
 		background-repeat: no-repeat;
-		height: to-rem($pxValue: 44);
-		padding: to-rem($pxValue: 20) to-rem($pxValue: 42) 0 $db-spacing-m;
+		height: functions.to-rem($pxValue: 44);
+		padding: functions.to-rem($pxValue: 20) functions.to-rem($pxValue: 42) 0 variables.$db-spacing-m;
 
 		// Semitransparent is the default style
 		@at-root :where(#{&}) {
@@ -49,9 +51,9 @@
 
 		&:has(option:checked:empty) {
 			& + .elm-label {
-				color: $select-floatingLabel--color;
-				font-size: to-rem($pxValue: 16);
-				transform: translate($db-spacing-m, -#{to-rem($pxValue: 35)});
+				color: select.$select-floatingLabel--color;
+				font-size: functions.to-rem($pxValue: 16);
+				transform: translate(variables.$db-spacing-m, -#{functions.to-rem($pxValue: 35)});
 			}
 		}
 
@@ -63,11 +65,11 @@
 		&[data-variant]  {
 			&:not([aria-invalid]) {
 				&:is(:user-valid) {
-					--formElement---borderColor: #{$db-color-green-600};
+					--formElement---borderColor: #{variables.$db-color-green-600};
 				}
 
 				&:is(:user-invalid) {
-					--formElement---borderColor: #{$db-color-red-500};
+					--formElement---borderColor: #{variables.$db-color-red-500};
 				}
 			}
 		}
@@ -105,9 +107,9 @@
 		@extend %form-label;
 
 		display: block;
-		font-size: to-rem($pxValue: 12);
-		margin-bottom: -#{to-rem($pxValue: 18)};
-		transform: translate($db-spacing-m, -#{to-rem($pxValue: 41)});
+		font-size: functions.to-rem($pxValue: 12);
+		margin-bottom: -#{functions.to-rem($pxValue: 18)};
+		transform: translate(variables.$db-spacing-m, -#{functions.to-rem($pxValue: 41)});
 		transition:
 			opacity,
 			transform 150ms;
@@ -118,10 +120,10 @@
 	}
 
 	&[multiple] {
-		margin-top: to-rem($pxValue: 16);
+		margin-top: functions.to-rem($pxValue: 16);
 
 		& + .elm-label {
-			transform: translate($db-spacing-m, -#{to-rem($pxValue: 100)});
+			transform: translate(variables.$db-spacing-m, -#{functions.to-rem($pxValue: 100)});
 		}
 	}
 
@@ -132,11 +134,11 @@
 
 	option {
 		&:not(:disabled):hover {
-			background-color: $db-color-cool-gray-200;
+			background-color: variables.$db-color-cool-gray-200;
 		}
 
 		&:checked {
-			background-color: $db-color-cool-gray-200;
+			background-color: variables.$db-color-cool-gray-200;
 		}
 	}
 }

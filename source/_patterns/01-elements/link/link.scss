@@ -1,12 +1,14 @@
-@import "../../../css/partials.meta";
-@import "link.variables";
+@use "../../../css/partials.meta";
+@use "link.variables";
+@use "../../../css/helpers/functions";
+@use "../../00-base/icons/icons.helpers";
 
 .elm-link {
-	border-radius: to-rem($pxValue: 4);
+	border-radius: functions.to-rem($pxValue: 4);
 	display: inline-block;
 
 	// Link underline
-	text-underline-offset: to-rem($pxValue: 3);
+	text-underline-offset: functions.to-rem($pxValue: 3);
 	text-underline-position: under;
 	@supports (text-underline-offset: 3px) {
 		text-underline-position: auto;
@@ -18,7 +20,7 @@
 
 	// "disabled" links
 	&[aria-disabled="true"] {
-		opacity: $link--disabled-opacity;
+		opacity: link.$link--disabled-opacity;
 
 		pointer-events: none;
 
@@ -30,17 +32,17 @@
 	// Sizes
 	&%size-Small {
 		&:not(.is-icon-text-replace) {
-			font-size: to-rem($pxValue: 14);
+			font-size: functions.to-rem($pxValue: 14);
 		}
 
 		&[rel],
 		&[data-icon],
 		&[data-icon-before] {
-			@include iconMeta(20);
+			@include icons.iconMeta(20);
 		}
 
 		&[data-icon-after]::after {
-			@include iconMeta($size: 20, $position: "after");
+			@include icons.iconMeta($size: 20, $position: "after");
 		}
 	}
 
@@ -50,15 +52,15 @@
 
 	// Define the available icons
 	&[rel="configuration"] {
-		@include icon(glyph(settings), 24, "outline", $partial: $partial);
+		@include icons.icon(icons.glyph(settings), 24, "outline", $partial: partials.$partial);
 	}
 
 	&[rel="messages"] {
-		@include icon(glyph(chat), 24, "outline", $partial: $partial);
+		@include icons.icon(icons.glyph(chat), 24, "outline", $partial: partials.$partial);
 	}
 
 	&[rel="account"] {
-		@include icon(glyph(account), 24, "outline", $partial: $partial);
+		@include icons.icon(icons.glyph(account), 24, "outline", $partial: partials.$partial);
 	}
 
 	&[rel="configuration"],

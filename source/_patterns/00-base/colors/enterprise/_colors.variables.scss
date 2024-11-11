@@ -1,20 +1,21 @@
 // DB colors
-@import "../colors.variables";
+@use "../colors.variables";
+@use "@db-ui/base/build/scss/variables";
 
 // EDS semantic colors (TODO: probably leftovers, those would most likely need to get replaced again as soon as the Enterprise extension is finalized)
 
-$DBdarkgray: $db-color-cool-gray-500; // DB Dunkelgrau/DB dark gray
-$DBblue: $db-color-cyan-600; // DB Blau/DB blue
-$DBwhitegray: $db-color-cool-gray-200; // DB Weißgrau/DB white-gray
-$DBlightgray: $db-color-cool-gray-300; // DB light-gray
-$DBgray: $db-color-cool-gray-400; // DB gray
+$DBdarkgray: variables.$db-color-cool-gray-500; // DB Dunkelgrau/DB dark gray
+$DBblue: variables.$db-color-cyan-600; // DB Blau/DB blue
+$DBwhitegray: variables.$db-color-cool-gray-200; // DB Weißgrau/DB white-gray
+$DBlightgray: variables.$db-color-cool-gray-300; // DB light-gray
+$DBgray: variables.$db-color-cool-gray-400; // DB gray
 
 // * General
-$black: $db-color-cool-gray-800;
-$black-bis: $db-color-cool-gray-700;
-$black-ter: $db-color-cool-gray-600;
+$black: variables.$db-color-cool-gray-800;
+$black-bis: variables.$db-color-cool-gray-700;
+$black-ter: variables.$db-color-cool-gray-600;
 
-$gray-darker: $db-color-cool-gray-600;
+$gray-darker: variables.$db-color-cool-gray-600;
 $gray-dark: $DBdarkgray;
 $gray: $DBgray;
 $gray-light: $DBlightgray;
@@ -24,32 +25,32 @@ $gray-lighter: $DBwhitegray;
 // $white-bis:
 // $white:
 
-$orange: $db-color-yellow-900;
+$orange: variables.$db-color-yellow-900;
 // $yellow:
-$green: $db-color-green-600;
+$green: variables.$db-color-green-600;
 // $turquoise:
 // $cyan:
-$blue: $db-color-cyan-600;
+$blue: variables.$db-color-cyan-600;
 // $purple:
-$red: $db-color-red;
+$red: variables.$db-color-red;
 $red-invert: #fff;
 
 // * Enterprise Design System
 
 // Enterprise Design System Colors
-$Text: $db-color-cool-gray-800; // Text
-$Background: $db-color-cool-gray-700; // Background, buttons
-$Buttons: $db-color-cool-gray-700; // Background, buttons
-$Icons: $db-color-cool-gray-600; // Icons, divider
-$divider01: $db-color-cool-gray-700; // Icons, divider
+$Text: variables.$db-color-cool-gray-800; // Text
+$Background: variables.$db-color-cool-gray-700; // Background, buttons
+$Buttons: variables.$db-color-cool-gray-700; // Background, buttons
+$Icons: variables.$db-color-cool-gray-600; // Icons, divider
+$divider01: variables.$db-color-cool-gray-700; // Icons, divider
 $inputfields: $DBdarkgray; // Input fields
-$selected: $db-color-cool-gray-400; // selected -> to be changed
-$divider02: $db-color-cool-gray-200; // Divider
-$hover: $db-color-cool-gray-200; // hover -> to be changed
+$selected: variables.$db-color-cool-gray-400; // selected -> to be changed
+$divider02: variables.$db-color-cool-gray-200; // Divider
+$hover: variables.$db-color-cool-gray-200; // hover -> to be changed
 $LightBG: #fdfdfd; // Background
-$highlight-color01: $db-color-red; // Highlight color
+$highlight-color01: variables.$db-color-red; // Highlight color
 $highlight-color02: $blue; // Highlight color
-$hover-buttons: $db-color-red-600; // hover Buttons
+$hover-buttons: variables.$db-color-red-600; // hover Buttons
 
 // Semantic color codes
 // * light background

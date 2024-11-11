@@ -1,2 +1,2 @@
-@import "footer.variables";
-@import "../footer";
+@use "footer.variables";
+@use "../footer" as footer2;

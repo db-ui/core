@@ -1,8 +1,8 @@
 @use "sass:map";
-@import "../../../css/db-ui-core.variables";
-@import "fonts.variables";
+@use "../../../css/db-ui-core.variables";
+@use "fonts.variables";
 
-@each $font-name, $font-meta in $font-families {
+@each $font-name, $font-meta in fonts.$font-families {
 	$font-family: map.get($font-meta, "font-family");
 	$font-filename: map.get($font-meta, "font-filename");
 	$font-weight: map.get($font-meta, "font-weight");
@@ -19,32 +19,32 @@
 				local("#{$font-name}"),
 				local("#{$font-local-name}"),
 				local("#{$font-local-name-short}"),
-				url("#{$fonts-path}#{$font-filename}.woff2?4r0080")
+				url("#{db-ui-core.$fonts-path}#{$font-filename}.woff2?4r0080")
 					format("woff2"),
-				url("#{$fonts-path}#{$font-filename}.woff?4r0080")
+				url("#{db-ui-core.$fonts-path}#{$font-filename}.woff?4r0080")
 					format("woff");
 		} @else if $font-local-name {
 			src:
 				local("#{$font-name}"),
 				local("#{$font-local-name}"),
-				url("#{$fonts-path}#{$font-filename}.woff2?4r0080")
+				url("#{db-ui-core.$fonts-path}#{$font-filename}.woff2?4r0080")
 					format("woff2"),
-				url("#{$fonts-path}#{$font-filename}.woff?4r0080")
+				url("#{db-ui-core.$fonts-path}#{$font-filename}.woff?4r0080")
 					format("woff");
 		} @else if $font-local-name-short {
 			src:
 				local("#{$font-name}"),
 				local("#{$font-local-name-short}"),
-				url("#{$fonts-path}#{$font-filename}.woff2?4r0080")
+				url("#{db-ui-core.$fonts-path}#{$font-filename}.woff2?4r0080")
 					format("woff2"),
-				url("#{$fonts-path}#{$font-filename}.woff?4r0080")
+				url("#{db-ui-core.$fonts-path}#{$font-filename}.woff?4r0080")
 					format("woff");
 		} @else {
 			src:
 				local("#{$font-name}"),
-				url("#{$fonts-path}#{$font-filename}.woff2?4r0080")
+				url("#{db-ui-core.$fonts-path}#{$font-filename}.woff2?4r0080")
 					format("woff2"),
-				url("#{$fonts-path}#{$font-filename}.woff?4r0080")
+				url("#{db-ui-core.$fonts-path}#{$font-filename}.woff?4r0080")
 					format("woff");
 		}
 	}

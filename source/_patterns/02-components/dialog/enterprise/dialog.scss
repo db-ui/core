@@ -1,2 +1,2 @@
-@import "dialog.variables";
-@import "../dialog";
+@use "dialog.variables";
+@use "../dialog" as dialog2;

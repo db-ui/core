@@ -1,18 +1,18 @@
-@import "helpers/functions";
-@import "db-ui-core.variables";
-@import "@db-ui/base/build/scss/variables";
-@import "../_patterns/01-elements/headline/headline";
-$fonts-path: "../fonts/";
-@import "../_patterns/00-base/type/fonts";
+@use "helpers/functions";
+@use "db-ui-core.variables";
+@use "@db-ui/base/build/scss/variables";
+@use "../_patterns/01-elements/headline/headline";
+db-ui-core.$fonts-path: "../fonts/";
+@use "../_patterns/00-base/type/fonts";
 
 /* project specific declarations */
 body,
 [class|="pl"] {
-	font-family: $db-font-family-base;
+	font-family: variables.$db-font-family-base;
 }
 
 pl-header {
-	font-size: to-rem($pxValue: 15.49191);
+	font-size: functions.to-rem($pxValue: 15.49191);
 }
 
 pl-logo {
@@ -21,7 +21,7 @@ pl-logo {
 
 .pl-c-viewport-modal-wrapper,
 pl-iframe {
-	background-color: $db-color-cool-gray-100 !important; // shame.css
+	background-color: variables.$db-color-cool-gray-100 !important; // shame.css
 }
 
 // Intro page
@@ -34,7 +34,7 @@ pl-iframe {
 
 		// Splitted Intro Page
 		&:nth-of-type(2) {
-			background-color: $db-color-cool-gray-100;
+			background-color: variables.$db-color-cool-gray-100;
 			padding-bottom: 2.5rem;
 		}
 	}
@@ -49,7 +49,7 @@ pl-iframe {
 		}
 
 		blockquote {
-			font-size: to-rem($pxValue: 24);
+			font-size: functions.to-rem($pxValue: 24);
 			font-weight: 700;
 
 			&::before {
@@ -75,8 +75,8 @@ pl-iframe {
 
 .tpl-intro [src^="../../images/db-ui-"] {
 	float: left;
-	margin-right: to-rem($pxValue: 4);
-	margin-top: to-rem($pxValue: 21);
+	margin-right: functions.to-rem($pxValue: 4);
+	margin-top: functions.to-rem($pxValue: 21);
 }
 
 .pl-c-typeahead__input {

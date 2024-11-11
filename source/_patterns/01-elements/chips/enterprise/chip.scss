@@ -1,2 +1,2 @@
-@import "chip.variables";
-@import "../chip";
+@use "chip.variables";
+@use "../chip" as chip2;

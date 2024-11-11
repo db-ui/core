@@ -1,11 +1,13 @@
-@import "progress.variables";
-@import "../progress.variables";
+@use "progress.variables" as progress2;
+@use "../progress.variables";
+@use "../../../../css/helpers/functions";
+@use "../../../00-base/colors/enterprise/colors.variables";
 
 .pl-js-pattern-example {
 	[id^="elements-progress-"][id*="-dark-background"] & {
-		background-color: $Background;
-		color: $LightBG;
-		padding: to-rem($pxValue: 16);
+		background-color: colors.$Background;
+		color: colors.$LightBG;
+		padding: functions.to-rem($pxValue: 16);
 	}
 }
 
@@ -15,15 +17,15 @@
 		& {
 		progress {
 			&::-webkit-progress-value {
-				--progress-value--backgroundColor: #{$progress-onDarkBackground-value-backgroundColor};
+				--progress-value--backgroundColor: #{progress.$progress-onDarkBackground-value-backgroundColor};
 			}
 
 			&::-moz-progress-bar {
-				--progress-value--backgroundColor: #{$progress-onDarkBackground-value-backgroundColor};
+				--progress-value--backgroundColor: #{progress.$progress-onDarkBackground-value-backgroundColor};
 			}
 
 			&::-ms-fill {
-				--progress-value--backgroundColor: #{$progress-onDarkBackground-value-backgroundColor};
+				--progress-value--backgroundColor: #{progress.$progress-onDarkBackground-value-backgroundColor};
 			}
 		}
 	}
@@ -33,10 +35,10 @@
 		& {
 		@supports (background: conic-gradient(#000, #fff)) {
 			progress {
-				--progress-value--backgroundColor: #{$progress-onDarkBackground-value-backgroundColor};
+				--progress-value--backgroundColor: #{progress.$progress-onDarkBackground-value-backgroundColor};
 
 				& + label {
-					background-color: $progress-onDarkBackground-conic-inner-backgroundColor; // * TODO: possibly rework variable naming
+					background-color: progress.$progress-onDarkBackground-conic-inner-backgroundColor; // * TODO: possibly rework variable naming
 				}
 			}
 		}

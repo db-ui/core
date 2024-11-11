@@ -1,19 +1,20 @@
-@import "../../../css/helpers/functions";
-@import "../../../css/db-ui-core.variables";
+@use "../../../css/helpers/functions";
+@use "../../../css/db-ui-core.variables";
+@use "@db-ui/base/build/scss/variables";
 
 $tabBar-tabSection--backgroundColor: #fdfdfd !default; // TODO: This would need to get replaced by the correct (semantic) color
 
-$tabBar-tab-focus-outline: 1px dotted $db-color-cool-gray-400 !default;
+$tabBar-tab-focus-outline: 1px dotted variables.$db-color-cool-gray-400 !default;
 
 // $db-color-cool-gray-100
-$tabBar-tab-hover-backgroundColor: #{$db-color-cool-gray-700} + "1F" !default;
-$tabBar-tab-pressed-backgroundColor: #{$db-color-cool-gray-700} + "3D" !default;
-$tabBar-tab-active-border: #{to-rem(
+$tabBar-tab-hover-backgroundColor: #{variables.$db-color-cool-gray-700} + "1F" !default;
+$tabBar-tab-pressed-backgroundColor: #{variables.$db-color-cool-gray-700} + "3D" !default;
+$tabBar-tab-active-border: #{functions.to-rem(
 		$pxValue: 1
-	)} solid $db-color-cool-gray-500 !default;
+	)} solid variables.$db-color-cool-gray-500 !default;
 
-$tabBar-tabpanel--borderTop: to-rem(
+$tabBar-tabpanel--borderTop: functions.to-rem(
 		$pxValue: 1
 	)
-	solid $db-color-cool-gray-500 !default;
-$tabBar-tabpanel--boxShadow: $box-shadow-01-bottom, $box-shadow-02-bottom !default;
+	solid variables.$db-color-cool-gray-500 !default;
+$tabBar-tabpanel--boxShadow: db-ui-core.$box-shadow-01-bottom, db-ui-core.$box-shadow-02-bottom !default;

@@ -1,10 +1,10 @@
-@import "../../../css/helpers/functions";
+@use "../../../css/helpers/functions";
 
 // Default parameters
 $icon-size: 24 !default;
 $icon-style: "outline" !default;
 $icons-font-family: '#{"icons-" + $icon-size + "-" + $icon-style}, "missing-icons"' !default;
-$icon-content-space: to-rem(
+$icon-content-space: functions.to-rem(
 	$pxValue: 6
 ) !default;
 

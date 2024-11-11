@@ -1,2 +1,2 @@
-@import "link-list.variables";
-@import "../link-list";
+@use "link-list.variables";
+@use "../link-list" as link-list2;

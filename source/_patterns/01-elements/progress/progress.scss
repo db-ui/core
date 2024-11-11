@@ -1,29 +1,30 @@
-@import "../../../css/helpers/functions";
-@import "progress.variables";
+@use "../../../css/helpers/functions";
+@use "progress.variables";
+@use "@db-ui/base/build/scss/variables";
 
 .elm-progress {
 	progress {
 		appearance: none;
-		background-color: $progress---backgroundColor;
+		background-color: progress.$progress---backgroundColor;
 		border: none;
-		height: $progress---height;
+		height: progress.$progress---height;
 		vertical-align: middle;
 
 		// Coloring the progress bar for the regular progress element
 		&::-webkit-progress-bar {
-			background-color: $progress---backgroundColor;
+			background-color: progress.$progress---backgroundColor;
 		}
 
 		&::-webkit-progress-value {
-			background-color: $progress-value--backgroundColor; // * TODO: possibly rework variable naming
+			background-color: progress.$progress-value--backgroundColor; // * TODO: possibly rework variable naming
 		}
 
 		&::-moz-progress-bar {
-			background-color: $progress-value--backgroundColor; // * TODO: possibly rework variable naming
+			background-color: progress.$progress-value--backgroundColor; // * TODO: possibly rework variable naming
 		}
 
 		&::-ms-fill {
-			background-color: $progress-value--backgroundColor; // * TODO: possibly rework variable naming
+			background-color: progress.$progress-value--backgroundColor; // * TODO: possibly rework variable naming
 			border: none;
 		}
 
@@ -48,11 +49,11 @@
 			animation-name: elmProgressMoveIndeterminate;
 			animation-timing-function: linear;
 			animation-timing-function: cubic-bezier(0.65, 0.815, 0.735, 0.395);
-			background-color: $progress---backgroundColor;
+			background-color: progress.$progress---backgroundColor;
 			background-image: linear-gradient(
 				to right,
-				$db-color-red 100%,
-				$progress---backgroundColor 100%
+				variables.$db-color-red 100%,
+				progress.$progress---backgroundColor 100%
 			);
 			background-position: top left;
 			background-repeat: no-repeat;
@@ -76,14 +77,14 @@
 				--fill: calc(var(--progress-conic) * 1%);
 
 				background: conic-gradient(
-					$progress-value--backgroundColor var(--fill),
-					$progress-conic--backgroundColor 0
+					progress.$progress-value--backgroundColor var(--fill),
+					progress.$progress-conic--backgroundColor 0
 				); // * TODO: possibly rework variable naming
 
 				border: 0;
 				border-radius: 50%;
-				height: #{$progress-conic--size}rem; // * TODO: possibly rework variable naming
-				width: #{$progress-conic--size}rem; // * TODO: possibly rework variable naming
+				height: #{progress.$progress-conic--size}rem; // * TODO: possibly rework variable naming
+				width: #{progress.$progress-conic--size}rem; // * TODO: possibly rework variable naming
 
 				// * hides all pseudo elements on Webkit
 				&::-webkit-progress-inner-element,
@@ -99,18 +100,18 @@
 				& + output, // legacy; TODO: remove with the next major release
 				& + label {
 					align-items: center;
-					background: $progress-conic-inner-backgroundColor; // * TODO: possibly rework variable naming
+					background: progress.$progress-conic-inner-backgroundColor; // * TODO: possibly rework variable naming
 					border-radius: 50%;
 					display: block;
 					display: flex;
-					height: #{$progress-conic-inner-size}rem;
+					height: #{progress.$progress-conic-inner-size}rem;
 					justify-content: center;
 					position: absolute;
 					transform: translate(
-						$progress-conic--translateX,
-						$progress-conic--translateY
+						progress.$progress-conic--translateX,
+						progress.$progress-conic--translateY
 					);
-					width: #{$progress-conic-inner-size}rem;
+					width: #{progress.$progress-conic-inner-size}rem;
 				}
 			}
 		}

@@ -1,2 +1,2 @@
-@import "textarea.variables";
-@import "../textarea";
+@use "textarea.variables";
+@use "../textarea" as textarea2;

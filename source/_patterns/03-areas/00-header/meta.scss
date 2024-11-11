@@ -1,4 +1,6 @@
-@import "meta.variables";
+@use "meta.variables";
+@use "../../../css/helpers/functions";
+@use "../../00-base/icons/icons.helpers";
 
 .rea-meta {
 	display: flex;
@@ -20,26 +22,26 @@
 		order: 2;
 
 		.elm-link {
-			padding-bottom: to-rem($pxValue: 9);
-			padding-top: to-rem($pxValue: 9);
+			padding-bottom: functions.to-rem($pxValue: 9);
+			padding-top: functions.to-rem($pxValue: 9);
 		}
 	}
 
 	& > .elm-link {
 		&[rel="account"] {
-			margin-left: to-rem($pxValue: 4);
+			margin-left: functions.to-rem($pxValue: 4);
 
 			& {
-				@include is-icon-text-replace();
+				@include icons.is-icon-text-replace();
 			}
 
-			@media screen and (min-width: #{($header-srOnly-linkAccount-breakpoint + 1)}rem) {
-				margin-left: to-rem($pxValue: 8);
+			@media screen and (min-width: #{(meta.$header-srOnly-linkAccount-breakpoint + 1)}rem) {
+				margin-left: functions.to-rem($pxValue: 8);
 			}
 		}
 	}
 
 	.cmp-sitesearch:focus-within ~ .elm-link[rel="account"] {
-		@include is-icon-text-replace();
+		@include icons.is-icon-text-replace();
 	}
 }

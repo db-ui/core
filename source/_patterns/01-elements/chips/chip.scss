@@ -1,22 +1,25 @@
-@import "../../../css/partials.meta";
-@import "chip.variables";
+@use "../../../css/partials.meta";
+@use "chip.variables";
+@use "@db-ui/base/build/scss/variables";
+@use "../../../css/helpers/functions";
+@use "../../00-base/icons/icons.helpers";
 
 .elm-chip {
 	& + label {
 		--db-focus-outline-size: max(2px, 0.08em);
 
 		align-items: center;
-		border: solid 1px $db-color-cool-gray-400;
-		border-radius: $chip---radius;
+		border: solid 1px variables.$db-color-cool-gray-400;
+		border-radius: chip.$chip---radius;
 		display: inline-flex;
 		font-weight: 500;
 
 		// Link related styles
-		font-size: to-rem($pxValue: 14);
-		height: to-rem($pxValue: 28);
+		font-size: functions.to-rem($pxValue: 14);
+		height: functions.to-rem($pxValue: 28);
 		justify-content: center;
-		padding-left: to-rem($pxValue: 7);
-		padding-right: to-rem($pxValue: 7);
+		padding-left: functions.to-rem($pxValue: 7);
+		padding-right: functions.to-rem($pxValue: 7);
 		text-decoration: none;
 		text-transform: capitalize;
 		white-space: nowrap;
@@ -24,91 +27,91 @@
 		// Icons
 		&[data-icon],
 		&[data-icon-before] {
-			@include iconMeta(20);
+			@include icons.iconMeta(20);
 		}
 
 		&[data-icon-after] {
-			@include iconMeta($size: 20, $position: "after");
+			@include icons.iconMeta($size: 20, $position: "after");
 		}
 	}
 
 	&:not(:disabled, :checked) {
 		// States
 		& + label:hover {
-			background-color: $chip-hover--backgroundColor;
+			background-color: chip.$chip-hover--backgroundColor;
 		}
 	}
 
 	&:checked {
 		& + label {
-			background-color: $chip-selected--backgroundColor;
+			background-color: chip.$chip-selected--backgroundColor;
 			border-color: transparent;
-			color: $chip-checked--color;
+			color: chip.$chip-checked--color;
 
 			//*** Variants ***
 			&[data-variant="light"] {
-				background-color: $db-color-cool-gray-200;
-				color: $db-color-cool-gray-700;
-				border: 1px solid $db-color-cool-gray-400;
+				background-color: variables.$db-color-cool-gray-200;
+				color: variables.$db-color-cool-gray-700;
+				border: 1px solid variables.$db-color-cool-gray-400;
 			}
 
 			&[data-variant="warning"] {
-				background-color: $db-color-warning;
+				background-color: variables.$db-color-warning;
 			}
 
 			&[data-variant="error"] {
-				background-color: $db-color-error;
+				background-color: variables.$db-color-error;
 			}
 
 			&[data-variant="informative"] {
-				background-color: $db-color-informative;
+				background-color: variables.$db-color-informative;
 			}
 
 			&[data-variant="success"] {
-				background-color: $db-color-success;
+				background-color: variables.$db-color-success;
 			}
 
 			// POIs
 			&[data-variant="poi-essen-trinken"] {
-				background-color: $db-color-food-drink;
-				color: $db-color-cool-gray-700;
+				background-color: variables.$db-color-food-drink;
+				color: variables.$db-color-cool-gray-700;
 			}
 
 			&[data-variant="poi-einkaufen"] {
-				background-color: $db-color-shopping;
+				background-color: variables.$db-color-shopping;
 			}
 
 			&[data-variant="poi-gesundheit"] {
-				background-color: $db-color-health;
+				background-color: variables.$db-color-health;
 			}
 
 			&[data-variant="poi-kunst-kultur"] {
-				background-color: $db-color-arts-culture;
+				background-color: variables.$db-color-arts-culture;
 			}
 
 			&[data-variant="poi-wissenswertes"] {
-				background-color: $db-color-things-to-know;
+				background-color: variables.$db-color-things-to-know;
 			}
 
 			&[data-variant="poi-freizeit"] {
-				background-color: $db-color-leisure;
+				background-color: variables.$db-color-leisure;
 			}
 
 			&[data-variant="poi-zivile-rel-einrichtungen"] {
-				background-color: $db-color-community-facilities;
+				background-color: variables.$db-color-community-facilities;
 			}
 
 			&[data-variant="poi-dienstleistungen"] {
-				background-color: $db-color-services;
-				color: $db-color-cool-gray-700;
+				background-color: variables.$db-color-services;
+				color: variables.$db-color-cool-gray-700;
 			}
 
 			&[data-variant="poi-db-services-einrichtung"] {
-				background-color: $db-color-db-services-facilities;
+				background-color: variables.$db-color-db-services-facilities;
 			}
 
 			&[data-variant="poi-wegeleitung"] {
-				background-color: $db-color-guidance;
+				background-color: variables.$db-color-guidance;
 			}
 		}
 	}
@@ -133,6 +136,6 @@
 
 	&[type="checkbox"],
 	&[type="radio"] {
-		@include a11y-visually-hidden($partial: $partial);
+		@include functions.a11y-visually-hidden($partial: partials.$partial);
 	}
 }

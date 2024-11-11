@@ -1,2 +1,2 @@
-@import "radio.variables";
-@import "../radio";
+@use "radio.variables";
+@use "../radio" as radio2;

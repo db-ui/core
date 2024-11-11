@@ -1,5 +1,8 @@
-@import "../../../css/partials.meta";
-@import "link-list.variables";
+@use "../../../css/partials.meta";
+@use "link-list.variables";
+@use "@db-ui/base/build/scss/variables";
+@use "../../../css/helpers/functions";
+@use "../../00-base/icons/icons.helpers";
 
 .cmp-link-list {
 	list-style: none;
@@ -12,7 +15,7 @@
 			text-decoration: none;
 
 			& {
-				@include icon(glyph(chevron-right), $partial: $partial);
+				@include icons.icon(icons.glyph(chevron-right), $partial: partials.$partial);
 			}
 
 			&:hover,
@@ -21,11 +24,11 @@
 			}
 
 			&::before {
-				color: $db-color-red;
+				color: variables.$db-color-red;
 				display: inline-block;
-				font-size: to-rem($pxValue: 12);
+				font-size: functions.to-rem($pxValue: 12);
 				font-weight: 700;
-				margin-top: -#{to-rem($pxValue: 2)};
+				margin-top: -#{functions.to-rem($pxValue: 2)};
 				vertical-align: middle;
 			}
 		}

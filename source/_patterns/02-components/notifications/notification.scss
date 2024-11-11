@@ -1,63 +1,64 @@
-@import "../../../css/partials.meta";
-@import "notification.variables";
+@use "../../../css/partials.meta";
+@use "notification.variables";
+@use "../../../css/helpers/functions";
 
 .cmp-notification {
 	// Default style
-	background-color: $notification---backgroundColor;
+	background-color: notification.$notification---backgroundColor;
 
 	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1); // Todo: This should most likely get generally setup
 
-	margin-bottom: #{to-rem($pxValue: 16)};
-	padding: #{to-rem($pxValue: 16)}; // TODO: replace by spacing-m variable
+	margin-bottom: #{functions.to-rem($pxValue: 16)};
+	padding: #{functions.to-rem($pxValue: 16)}; // TODO: replace by spacing-m variable
 	section[data-variant="hovering"] & {
 		background-color: #fff;
 	}
 
 	// Alert variant
 	section[data-variant="alert"] & {
-		color: $notification-alert--color;
+		color: notification.$notification-alert--color;
 	}
 
 	section[data-variant="hovering"] & {
 		border: 2px solid transparent;
-		border-radius: #{to-rem($pxValue: 8)};
-		padding: #{to-rem($pxValue: 14)} #{to-rem($pxValue: 16)}; // TODO: replace by spacing-m variable
+		border-radius: #{functions.to-rem($pxValue: 8)};
+		padding: #{functions.to-rem($pxValue: 14)} #{functions.to-rem($pxValue: 16)}; // TODO: replace by spacing-m variable
 	}
 
 	// Hide the textual labels regarding each state
 	& > em {
-		@include a11y-visually-hidden($partial: $partial);
+		@include functions.a11y-visually-hidden($partial: partials.$partial);
 	}
 
 	&[data-type="success"] {
-		background-color: $notification-success--backgroundColor;
+		background-color: notification.$notification-success--backgroundColor;
 
 		section[data-variant="hovering"] & {
-			border-color: $notification-success--backgroundColor;
+			border-color: notification.$notification-success--backgroundColor;
 		}
 	}
 
 	&[data-type="warning"] {
-		background-color: $notification-warning--backgroundColor;
+		background-color: notification.$notification-warning--backgroundColor;
 
 		section[data-variant="hovering"] & {
-			border-color: $notification-warning--backgroundColor;
+			border-color: notification.$notification-warning--backgroundColor;
 		}
 	}
 
 	&[data-type="error"] {
-		background-color: $notification-error--backgroundColor;
+		background-color: notification.$notification-error--backgroundColor;
 
 		section[data-variant="hovering"] & {
-			border-color: $notification-error--backgroundColor;
+			border-color: notification.$notification-error--backgroundColor;
 		}
 	}
 
 	&[data-type="informative"] {
-		background-color: $notification-informative--backgroundColor;
+		background-color: notification.$notification-informative--backgroundColor;
 
 		section[data-variant="hovering"] & {
-			border-color: $notification-informative--backgroundColor;
+			border-color: notification.$notification-informative--backgroundColor;
 		}
 	}
 
@@ -72,7 +73,7 @@
 	&[data-icon],
 	&[data-icon-before] {
 		&::before {
-			--icon-margin-after: #{to-rem($pxValue: 10)};
+			--icon-margin-after: #{functions.to-rem($pxValue: 10)};
 		}
 	}
 
@@ -80,7 +81,7 @@
 		justify-content: space-between;
 
 		&::after {
-			--icon-margin-before: #{to-rem($pxValue: 10)};
+			--icon-margin-before: #{functions.to-rem($pxValue: 10)};
 		}
 	}
 }

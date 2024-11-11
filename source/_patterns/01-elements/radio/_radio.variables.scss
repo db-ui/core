@@ -1,3 +1,4 @@
-@import "../../../css/helpers/functions";
+@use "../../../css/helpers/functions";
+@use "@db-ui/base/build/scss/variables";
 
-$radio---border: $db-color-cool-gray-700 !default;
+$radio---border: variables.$db-color-cool-gray-700 !default;
