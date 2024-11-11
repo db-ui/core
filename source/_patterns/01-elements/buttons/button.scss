@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+@use "sass:string";
 @import "button.variables";
 
 .elm-button {
@@ -46,7 +47,7 @@
 		background-color: $button-brand-primary--backgroundColor;
 
 		&:disabled {
-			background-color: unquote(
+			background-color: string.unquote(
 				$button-brand-primary--backgroundColor + "40"
 			);
 		}
@@ -67,7 +68,9 @@
 		background-color: $button-primary--backgroundColor;
 
 		&:disabled {
-			background-color: unquote($button-primary--backgroundColor + "40");
+			background-color: string.unquote(
+				$button-primary--backgroundColor + "40"
+			);
 		}
 
 		&:not(:disabled) {
@@ -90,8 +93,8 @@
 		color: $db-color-cool-gray-700;
 
 		&:disabled {
-			color: unquote($db-color-cool-gray-700 + "80");
-			border-color: unquote($db-color-cool-gray-700 + "40");
+			color: string.unquote($db-color-cool-gray-700 + "80");
+			border-color: string.unquote($db-color-cool-gray-700 + "40");
 		}
 
 		&:not(:disabled) {
@@ -111,8 +114,8 @@
 		color: $db-color-cool-gray-700;
 
 		&:disabled {
-			color: unquote($db-color-cool-gray-700 + "80");
-			background-color: unquote(
+			color: string.unquote($db-color-cool-gray-700 + "80");
+			background-color: string.unquote(
 				$button-secondarySolid--backgroundColor + "40"
 			);
 		}
@@ -135,7 +138,7 @@
 		color: $db-color-cool-gray-700;
 
 		&:disabled {
-			color: unquote($db-color-cool-gray-700 + "80");
+			color: string.unquote($db-color-cool-gray-700 + "80");
 		}
 
 		&:not(:disabled) {
@@ -214,7 +217,7 @@
 	}
 
 	&:disabled {
-		color: unquote($button---color + "80");
+		color: string.unquote($button---color + "80");
 	}
 
 	// width
