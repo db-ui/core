@@ -133,7 +133,7 @@ For Rollup based bundlers like Vite or Parcel we're providing the following SCSS
 );
 ----
 
-#### Webpack based bundlers (e.g. Angular or Vue CLI)
+#### Webpack based bundlers (e.g. older Angular or Vue CLI versions)
 
 [source,scss]
 ----
