@@ -119,7 +119,7 @@ You can use the overall scss file or pick the relevant parts.
 E.g. you can import the overall scss files to your `src/styles.scss` by adding the following imports based on your bundler in use.
 
 
-#### Rollup based bundlers (e.g. Vue with Vite)
+#### Rollup based bundlers (e.g. Parcel, Vite)
 
 For Rollup based bundlers like Vite or Parcel we're providing the following SCSS endpoint:
 
