@@ -423,9 +423,6 @@
 				"icon": "travel/db_ic_il_poi_berlin"
 			},
 			{
-				"icon": "travel/db_ic_il_senior_travelers"
-			},
-			{
 				"icon": "travel/db_ic_il_suitcase"
 			},
 			{
@@ -433,12 +430,6 @@
 			},
 			{
 				"icon": "travel/db_ic_il_transportation_advertising"
-			},
-			{
-				"icon": "travel/db_ic_il_travelers_with_reduced_mobility"
-			},
-			{
-				"icon": "travel/db_ic_il_travelers_with_support_needs"
 			},
 			{
 				"icon": "travel/db_ic_il_zuginformation"
