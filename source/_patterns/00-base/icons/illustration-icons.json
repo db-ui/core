@@ -85,9 +85,6 @@
 				"icon": "communication/db_ic_il_customer_feedback"
 			},
 			{
-				"icon": "communication/db_ic_il_customer_satisfaction"
-			},
-			{
 				"icon": "communication/db_ic_il_envelope_check"
 			},
 			{
@@ -98,9 +95,6 @@
 			},
 			{
 				"icon": "communication/db_ic_il_envelope_open"
-			},
-			{
-				"icon": "communication/db_ic_il_envelope_open_at_sign"
 			},
 			{
 				"icon": "communication/db_ic_il_error"
