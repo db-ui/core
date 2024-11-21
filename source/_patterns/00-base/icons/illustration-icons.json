@@ -399,9 +399,6 @@
 				"icon": "travel/db_ic_il_id_card"
 			},
 			{
-				"icon": "travel/db_ic_il_inexperienced_travelers"
-			},
-			{
 				"icon": "travel/db_ic_il_itinerary"
 			},
 			{
@@ -409,9 +406,6 @@
 			},
 			{
 				"icon": "travel/db_ic_il_luggage"
-			},
-			{
-				"icon": "travel/db_ic_il_luggage_service"
 			},
 			{
 				"icon": "travel/db_ic_il_passenger_rights"
