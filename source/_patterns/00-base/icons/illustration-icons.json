@@ -162,6 +162,15 @@
 			},
 			{
 				"icon": "devices/db_ic_il_tablet"
+			},
+			{
+				"icon": "devices/db_ic_il_usb_3.0"
+			},
+			{
+				"icon": "devices/db_ic_il_usb_c"
+			},
+			{
+				"icon": "devices/db_ic_il_widget"
 			}
 		],
 		"Entertainment": [
@@ -261,6 +270,12 @@
 			}
 		],
 		"Ticket": [
+			{
+				"icon": "ticket/db_ic_il_children_traveling_alone"
+			},
+			{
+				"icon": "ticket/db_ic_il_children_traveling_with"
+			},
 			{
 				"icon": "ticket/db_ic_il_classic_printout"
 			},
