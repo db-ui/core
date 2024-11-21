@@ -1,9 +1,9 @@
 echo "### validate branch name ###"
 validate-branch-name
 echo "### lint staged files ###"
-lint-staged
+lint-staged --config .config/.lintstagedrc.json
 echo "### prettify staged files ###"
-lint-staged --config .config/.lintstagedrc-prettier.js
+lint-staged --config .config/.lintstagedrc-prettier.json
 git update-index --again
 echo "### check for commit mail ###"
 node ./scripts/check-commit-mail.mjs
