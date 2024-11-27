@@ -2,7 +2,8 @@
 
 $footer---borderTop: #{to-rem(
 		$pxValue: 6
-	)} solid $db-color-cool-gray-200 !default;
+	)}
+	solid $db-color-cool-gray-200 !default;
 
 $footer---boxShadow: $box-shadow-01, $box-shadow-02 !default;
 
