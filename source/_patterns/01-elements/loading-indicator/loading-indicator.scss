@@ -2,7 +2,9 @@
 @use "sass:map";
 @use "sass:math";
 
-@import "loading-indicator.variables";
+@use "sass:map";
+@use "loading-indicator.variables";
+@use "@db-ui/base/build/scss/variables";
 
 .elm-loadingindicator {
 	display: block;
@@ -18,19 +20,19 @@
 		&%size-#{$size} {
 			--loadingindicator--stroke-width: #{math.div(
 					44px,
-					map.get($db-spinner-sizes, $size)
+					map.get(loading-indicator.$db-spinner-sizes, $size)
 				) *
 				$stroke-width};
 			--loadingindicator--r: 19px;
-			height: map.get($db-spinner-sizes, $size);
-			width: map.get($db-spinner-sizes, $size);
+			height: map.get(loading-indicator.$db-spinner-sizes, $size);
+			width: map.get(loading-indicator.$db-spinner-sizes, $size);
 		}
 	}
 }
 
 .elm-loadingindicator {
 	animation: loadingindicator-rotate 3s linear infinite;
-	color: $db-color-red-500;
+	color: variables.$db-color-red-500;
 	/* stylelint-disable */
 	@include loadingindicator--sizes("elm-");
 	@extend %size-m; // default

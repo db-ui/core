@@ -1,8 +1,9 @@
-@import "../../../css/helpers/functions";
-@import "../../00-base/icons/icons.variables";
-@import "../../00-base/icons/icons.helpers";
+@use "../../../css/helpers/functions";
+@use "../../00-base/icons/icons.variables";
+@use "../../00-base/icons/icons.helpers" as icons2;
+@use "@db-ui/base/build/scss/variables";
 
-$accordion---paddingLeft: $db-spacing-m !default;
-$accordion---paddingRight: to-rem(
+$accordion---paddingLeft: variables.$db-spacing-m !default;
+$accordion---paddingRight: functions.to-rem(
 	$pxValue: 16
 ) !default;

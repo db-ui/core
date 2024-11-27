@@ -1,2 +1,2 @@
-@import "db-ui-core.variables";
-@import "../db-ui-core.general";
+@use "db-ui-core.variables";
+@use "../db-ui-core.general" as db-ui-core2;

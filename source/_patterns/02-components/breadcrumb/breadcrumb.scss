@@ -1,9 +1,12 @@
-@import "../../../css/partials.meta";
-@import "breadcrumb.variables";
+@use "../../../css/partials.meta";
+@use "breadcrumb.variables";
+@use "@db-ui/base/build/scss/variables";
+@use "../../../css/helpers/functions";
+@use "../../00-base/icons/icons.helpers";
 
 .cmp-breadcrumb {
-	color: $db-color-cool-gray-500;
-	font-size: to-rem($pxValue: 12);
+	color: variables.$db-color-cool-gray-500;
+	font-size: functions.to-rem($pxValue: 12);
 
 	a {
 		color: inherit;
@@ -15,49 +18,49 @@
 		& > li {
 			align-items: center;
 			display: inline-flex;
-			margin-right: to-rem($pxValue: 3);
+			margin-right: functions.to-rem($pxValue: 3);
 
 			[aria-current="location"],
 			[aria-current="page"] {
-				color: $db-color-cool-gray-700;
+				color: variables.$db-color-cool-gray-700;
 			}
 
 			.elm-link {
-				border-radius: to-rem($pxValue: 4);
+				border-radius: functions.to-rem($pxValue: 4);
 
-				padding: to-rem($pxValue: 1) to-rem($pxValue: 3)
-					to-rem($pxValue: 1) to-rem($pxValue: 4);
+				padding: functions.to-rem($pxValue: 1) functions.to-rem($pxValue: 3)
+					functions.to-rem($pxValue: 1) functions.to-rem($pxValue: 4);
 				text-decoration: none;
 
 				&:hover {
-					background-color: $breadcrumb-link-hover-backgroundColor;
+					background-color: breadcrumb.$breadcrumb-link-hover-backgroundColor;
 				}
 
 				&:active {
-					background-color: $breadcrumb-link-active-backgroundColor;
+					background-color: breadcrumb.$breadcrumb-link-active-backgroundColor;
 				}
 			}
 
 			&:first-child {
-				@include icon(glyph(home), $size: 20, $partial: $partial);
+				@include icons.icon(icons.glyph(home), $size: 20, $partial: partials.$partial);
 
 				&::before {
-					--icon-margin-after: #{to-rem($pxValue: 3)};
+					--icon-margin-after: #{functions.to-rem($pxValue: 3)};
 				}
 			}
 
 			&:not(:first-child) {
-				@include icon(
-					glyph($breadcrumb-divider--icon),
+				@include icons.icon(
+					icons.glyph(breadcrumb.$breadcrumb-divider--icon),
 					$size: 20,
-					$partial: $partial
+					$partial: partials.$partial
 				);
 
 				&::before {
-					--icon-font-size: #{to-rem($pxValue: 14)};
+					--icon-font-size: #{functions.to-rem($pxValue: 14)};
 					--icon-margin-after: 0;
-					color: $db-color-cool-gray-400;
-					margin-left: -#{to-rem($pxValue: 2)};
+					color: variables.$db-color-cool-gray-400;
+					margin-left: -#{functions.to-rem($pxValue: 2)};
 				}
 			}
 		}

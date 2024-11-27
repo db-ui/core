@@ -1,21 +1,22 @@
 // @import "icons.variables";
 
-@import "icons.variables";
-@import "icons.attributes-mappings";
-@import "icons.helpers";
-@import "icons.custom-properties";
-@import "icons.font-faces";
-@import "icons.placeholder";
+@use "icons.variables";
+@use "icons.attributes-mappings" as icons3;
+@use "icons.helpers" as icons2;
+@use "icons.custom-properties" as icons4;
+@use "icons.font-faces" as icons5;
+@use "icons.placeholder" as icons6;
+@use "../../../css/helpers/functions";
 
 [data-icon],
 [data-icon-before] {
 	&::before {
 		@extend %icon;
 		content: var(--icon-glyph-before);
-		margin-inline-end: var(--icon-margin-after, #{$icon-content-space});
+		margin-inline-end: var(--icon-margin-after, #{icons.$icon-content-space});
 		font-size: var(
 			--icon-font-size-before,
-			var(--icon-font-size, #{to-rem($pxValue: $icon-size)})
+			var(--icon-font-size, #{functions.to-rem($pxValue: icons.$icon-size)})
 		);
 	}
 }
@@ -24,10 +25,10 @@
 	&::after {
 		@extend %icon;
 		content: var(--icon-glyph-after);
-		margin-inline-start: var(--icon-margin-before, #{$icon-content-space});
+		margin-inline-start: var(--icon-margin-before, #{icons.$icon-content-space});
 		font-size: var(
 			--icon-font-size-after,
-			var(--icon-font-size, #{to-rem($pxValue: $icon-size)})
+			var(--icon-font-size, #{functions.to-rem($pxValue: icons.$icon-size)})
 		);
 	}
 }
@@ -36,10 +37,10 @@
 .is-icon-text-replace {
 	&[data-icon],
 	&[data-icon-before] {
-		@include is-icon-text-replace();
+		@include icons2.is-icon-text-replace();
 	}
 
 	&[data-icon-after] {
-		@include is-icon-text-replace("after");
+		@include icons2.is-icon-text-replace("after");
 	}
 }

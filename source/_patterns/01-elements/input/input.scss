@@ -1,25 +1,28 @@
 @charset "utf-8";
 
-@import "../../../css/partials.meta";
-@import "input.variables";
-@import "../form-elements";
+@use "../../../css/partials.meta";
+@use "input.variables";
+@use "../form-elements";
+@use "@db-ui/base/build/scss/variables";
+@use "../../../css/db-ui-core.variables";
+@use "../../../css/helpers/functions";
 
 .elm-input {
 	@extend %form-element;
 
-	color: $input---color;
+	color: input.$input---color;
 
-	font-size: to-rem($pxValue: 16);
-	height: to-rem($pxValue: 44);
-	line-height: to-rem($pxValue: 24);
+	font-size: functions.to-rem($pxValue: 16);
+	height: functions.to-rem($pxValue: 44);
+	line-height: functions.to-rem($pxValue: 24);
 	max-width: 100%;
 
 	width: 100%;
 
-	padding-inline: $db-spacing-m;
+	padding-inline: variables.$db-spacing-m;
 	// No need to reposition the included value on hidden label
 	&:not(:has(+ label[data-label-hidden="true"])) {
-		padding-block: $db-spacing-s;
+		padding-block: variables.$db-spacing-s;
 	}
 
 	&[list] {
@@ -32,7 +35,7 @@
 		padding-bottom: 0;
 		// No need to reposition the included value on hidden label
 		&:not(:has(+ label[data-label-hidden="true"])) {
-			padding-top: to-rem($pxValue: 16);
+			padding-top: functions.to-rem($pxValue: 16);
 		}
 	}
 
@@ -46,7 +49,7 @@
 	&:focus,
 	&:hover {
 		&:not(:disabled) {
-			--formElement---borderColor: #{$db-color-cool-gray-400};
+			--formElement---borderColor: #{variables.$db-color-cool-gray-400};
 		}
 	}
 
@@ -99,12 +102,12 @@
 		& + .elm-label {
 			@extend %form-label;
 
-			color: $db-color-cool-gray-500;
+			color: variables.$db-color-cool-gray-500;
 			display: block;
-			font-size: to-rem($pxValue: 12);
+			font-size: functions.to-rem($pxValue: 12);
 
-			margin-bottom: -#{to-rem($pxValue: 18)};
-			transform: translate($db-spacing-m, -#{to-rem($pxValue: 41)});
+			margin-bottom: -#{functions.to-rem($pxValue: 18)};
+			transform: translate(variables.$db-spacing-m, -#{functions.to-rem($pxValue: 41)});
 
 			& + output,
 			& ~ .description {
@@ -121,7 +124,7 @@
 		}
 
 		&::placeholder {
-			color: $db-color-cool-gray-500;
+			color: variables.$db-color-cool-gray-500;
 		}
 
 		// ### Style variations
@@ -164,17 +167,17 @@
 	&[type="search"] {
 		background: var(
 				--db-ic-search-24,
-				url(#{$icons-path}functional/images/action/db_ic_search_24.svg)
+				url(#{db-ui-core.$icons-path}functional/images/action/db_ic_search_24.svg)
 			)
-			no-repeat to-rem($pxValue: 6) to-rem($pxValue: 12);
-		background-size: to-rem($pxValue: 19);
-		padding-left: to-rem($pxValue: 32);
+			no-repeat functions.to-rem($pxValue: 6) functions.to-rem($pxValue: 12);
+		background-size: functions.to-rem($pxValue: 19);
+		padding-left: functions.to-rem($pxValue: 32);
 
 		:not(.cmp-sitesearch) > & {
 			@extend %form-element-semitransparent;
 
 			& + .elm-label {
-				margin-left: to-rem($pxValue: 16);
+				margin-left: functions.to-rem($pxValue: 16);
 			}
 		}
 	}

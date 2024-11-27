@@ -1,2 +1,2 @@
-@import "overflow-menu.variables";
-@import "../overflow-menu";
+@use "overflow-menu.variables";
+@use "../overflow-menu" as overflow-menu2;

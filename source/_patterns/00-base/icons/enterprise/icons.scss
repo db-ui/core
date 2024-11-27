@@ -1,5 +1,5 @@
-@import "icons.variables";
+@use "icons.variables";
 
-@import "icons.custom-properties";
-@import "icons.font-faces";
-@import "../icons";
+@use "icons.custom-properties" as icons2;
+@use "icons.font-faces" as icons3;
+@use "../icons" as icons4;

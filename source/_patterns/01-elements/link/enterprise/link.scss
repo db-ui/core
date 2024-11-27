@@ -1,2 +1,2 @@
-@import "link.variables";
-@import "../link";
+@use "link.variables";
+@use "../link" as link2;

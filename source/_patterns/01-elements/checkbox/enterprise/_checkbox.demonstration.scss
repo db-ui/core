@@ -1,18 +1,19 @@
 @charset "utf-8";
 
-@import "checkbox.variables";
-@import "../checkbox.variables";
+@use "checkbox.variables" as checkbox2;
+@use "../checkbox.variables";
+@use "../../../../css/helpers/functions";
 
 .pl-js-pattern-example {
 	[id^="elements-checkbox-on-dark-background"] & {
 		background-color: $Background;
 		color: $LightBG;
-		padding: to-rem($pxValue: 16);
+		padding: functions.to-rem($pxValue: 16);
 
 		.elm-checkbox {
-			background-color: $checkbox-onDarkBackground--backgroundColor;
-			border-color: $checkbox-onDarkBackground--borderColor;
-			color: $checkbox-onDarkBackground--color;
+			background-color: checkbox.$checkbox-onDarkBackground--backgroundColor;
+			border-color: checkbox.$checkbox-onDarkBackground--borderColor;
+			color: checkbox.$checkbox-onDarkBackground--color;
 		}
 	}
 }

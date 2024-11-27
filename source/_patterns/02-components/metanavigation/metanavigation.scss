@@ -1,4 +1,6 @@
-@import "metanavigation.variables";
+@use "metanavigation.variables";
+@use "../../../css/helpers/functions";
+@use "../../00-base/icons/icons.helpers";
 
 .cmp-metanavigation {
 	display: flex;
@@ -9,19 +11,19 @@
 	gap: 0.5rem;
 
 	li {
-		padding-left: to-rem($pxValue: 8);
-		padding-right: to-rem($pxValue: 8);
+		padding-left: functions.to-rem($pxValue: 8);
+		padding-right: functions.to-rem($pxValue: 8);
 
 		.rea-footer & {
-			padding-left: to-rem($pxValue: 6);
-			padding-right: to-rem($pxValue: 6);
+			padding-left: functions.to-rem($pxValue: 6);
+			padding-right: functions.to-rem($pxValue: 6);
 		}
 
 		.elm-link {
 			text-decoration: none;
 
 			.rea-header & {
-				@include is-icon-text-replace();
+				@include icons.is-icon-text-replace();
 			}
 		}
 	}

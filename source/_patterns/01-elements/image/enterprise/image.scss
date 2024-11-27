@@ -1,2 +1,2 @@
-@import "image.variables";
-@import "../image";
+@use "image.variables";
+@use "../image" as image2;

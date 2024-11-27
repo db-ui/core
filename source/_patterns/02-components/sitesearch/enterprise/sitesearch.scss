@@ -1,2 +1,2 @@
-@import "sitesearch.variables";
-@import "../sitesearch";
+@use "sitesearch.variables";
+@use "../sitesearch" as sitesearch2;

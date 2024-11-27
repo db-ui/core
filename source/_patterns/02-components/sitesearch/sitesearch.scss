@@ -1,6 +1,10 @@
-@import "../../../css/partials.meta";
-@import "sitesearch.variables";
-@import "../../01-elements/form-elements";
+@use "../../../css/partials.meta";
+@use "sitesearch.variables";
+@use "../../01-elements/form-elements";
+@use "@db-ui/base/build/scss/variables";
+@use "../../../css/db-ui-core.variables";
+@use "../../../css/helpers/functions";
+@use "../../00-base/icons/icons.helpers";
 
 .cmp-sitesearch {
 	position: relative;
@@ -8,7 +12,7 @@
 	align-items: center;
 	padding-inline-end: 0.75rem;
 
-	@media screen and (max-width: $db-break-the-header-max-width) {
+	@media screen and (max-width: db-ui-core.$db-break-the-header-max-width) {
 		margin-inline-start: auto;
 		margin-inline-end: 2.25rem;
 
@@ -27,7 +31,7 @@
 		&:focus,
 		&:not(:placeholder-shown) {
 			opacity: 1;
-			width: calc(#{$sitesearch-width--open} + 1rem);
+			width: calc(#{sitesearch.$sitesearch-width--open} + 1rem);
 			padding-inline-start: 1rem;
 			padding-inline-end: 3rem;
 			padding-top: 0;
@@ -49,7 +53,7 @@
 		display: inline-block;
 
 		& {
-			@include icon(glyph(search), 24, "outline", $partial: $partial);
+			@include icons.icon(icons.glyph(search), 24, "outline", $partial: partials.$partial);
 		}
 
 		&::before {
@@ -57,12 +61,12 @@
 		}
 
 		.rea-meta & {
-			@include is-icon-text-replace();
+			@include icons.is-icon-text-replace();
 		}
 	}
 
 	.elm-button {
-		@include is-icon-text-replace();
+		@include icons.is-icon-text-replace();
 
 		display: none;
 		position: absolute;
@@ -71,29 +75,29 @@
 		border: 0;
 
 		& {
-			@include icon(glyph(search), 24, "outline", $partial: $partial);
+			@include icons.icon(icons.glyph(search), 24, "outline", $partial: partials.$partial);
 		}
 	}
 
 	.elm-label,
 	.elm-button {
-		background-color: rgba($db-color-cool-gray-700, 0);
+		background-color: rgba(variables.$db-color-cool-gray-700, 0);
 
 		&:hover {
-			background-color: rgba($db-color-cool-gray-700, 0.08);
+			background-color: rgba(variables.$db-color-cool-gray-700, 0.08);
 		}
 
 		&:active {
-			background-color: rgba($db-color-cool-gray-700, 0.16);
+			background-color: rgba(variables.$db-color-cool-gray-700, 0.16);
 		}
 	}
 
-	@media screen and (max-width: #{$sitesearch-form-full-maxWidth}) {
+	@media screen and (max-width: #{sitesearch.$sitesearch-form-full-maxWidth}) {
 		&:focus-within,
 		&:has(.elm-input[type="search"]:not(:placeholder-shown)) {
-			left: to-rem($pxValue: 16);
+			left: functions.to-rem($pxValue: 16);
 			position: absolute;
-			z-index: $z-index-rea-header-cmp-sitesearch-focus;
+			z-index: db-ui-core.$z-index-rea-header-cmp-sitesearch-focus;
 
 			.elm-input[type="search"] {
 				width: calc(100vw - 5.5rem);

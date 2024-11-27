@@ -3,10 +3,10 @@ $icons-path: "../../icons/" !default;
 $images-path: "../../images/" !default;
 $fonts-path: "../../fonts/" !default;
 
-@import "@db-ui/base/build/scss/variables";
+@use "@db-ui/base/build/scss/variables";
 
-@import "../../_patterns/00-base/colors/enterprise/colors";
-@import "../../_patterns/00-base/type/enterprise/fonts";
-@import "../../_patterns/00-base/icons/enterprise/icons.variables";
-@import "../../_patterns/00-base/icons/enterprise/icons.font-faces";
-@import "../db-ui-core.vars";
+@use "../../_patterns/00-base/colors/enterprise/colors";
+@use "../../_patterns/00-base/type/enterprise/fonts";
+@use "../../_patterns/00-base/icons/enterprise/icons.variables";
+@use "../../_patterns/00-base/icons/enterprise/icons.font-faces" as icons2;
+@use "../db-ui-core.vars";

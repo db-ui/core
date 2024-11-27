@@ -1,2 +1,2 @@
-@import "colors.variables";
-@import "../colors";
+@use "colors.variables";
+@use "../colors" as colors2;

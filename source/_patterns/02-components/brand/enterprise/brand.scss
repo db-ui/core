@@ -1,2 +1,2 @@
-@import "brand.variables";
-@import "../brand";
+@use "brand.variables";
+@use "../brand" as brand2;

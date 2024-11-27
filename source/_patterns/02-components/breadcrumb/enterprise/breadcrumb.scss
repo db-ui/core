@@ -1,2 +1,2 @@
-@import "breadcrumb.variables";
-@import "../breadcrumb";
+@use "breadcrumb.variables";
+@use "../breadcrumb" as breadcrumb2;

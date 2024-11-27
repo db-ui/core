@@ -6,100 +6,100 @@ $partial: false;
 // TODO: Let's include normalize e.g. via postcss-normalize
 @use "@csstools/normalize.css/normalize.css";
 
-@import "../helpers/functions";
-@import "../../_patterns/00-base/helpers";
+@use "../helpers/functions";
+@use "../../_patterns/00-base/helpers";
 
-@import "db-ui-core.variables";
+@use "db-ui-core.variables";
 
-@import "../../_patterns/00-base/init.global";
-@import "../../_patterns/00-base/init";
+@use "../../_patterns/00-base/init.global";
+@use "../../_patterns/00-base/init" as init2;
 
 // Importing helpers
-@import "../helpers/a11y";
-@import "../helpers/clearfix";
+@use "../helpers/a11y";
+@use "../helpers/clearfix";
 
 // GENERAL
-@import "../../_patterns/00-base/type/enterprise/fonts";
-@import "../../_patterns/00-base/icons/enterprise/icons";
+@use "../../_patterns/00-base/type/enterprise/fonts";
+@use "../../_patterns/00-base/icons/enterprise/icons";
 // @import "../../_patterns/00-base/03-body/background";
 
 // ELEMENTS
 /* button */
-@import "../../_patterns/01-elements/buttons/enterprise/button";
+@use "../../_patterns/01-elements/buttons/enterprise/button";
 /* headline */
-@import "../../_patterns/01-elements/headline/enterprise/headline";
+@use "../../_patterns/01-elements/headline/enterprise/headline";
 /* link */
-@import "../../_patterns/01-elements/link/enterprise/link";
+@use "../../_patterns/01-elements/link/enterprise/link";
 /* image */
-@import "../../_patterns/01-elements/image/enterprise/image";
+@use "../../_patterns/01-elements/image/enterprise/image";
 /* logo */
-@import "../../_patterns/01-elements/logo/logo"; // /enterprise/logo
+@use "../../_patterns/01-elements/logo/logo"; // /enterprise/logo
 
 /* checkbox */
-@import "../../_patterns/01-elements/checkbox/enterprise/checkbox";
+@use "../../_patterns/01-elements/checkbox/enterprise/checkbox";
 /* input */
-@import "../../_patterns/01-elements/input/enterprise/input";
+@use "../../_patterns/01-elements/input/enterprise/input";
 /* loading */
-@import "../../_patterns/01-elements/loading-indicator/loading-indicator";
+@use "../../_patterns/01-elements/loading-indicator/loading-indicator";
 /* progress */
-@import "../../_patterns/01-elements/progress/enterprise/progress";
+@use "../../_patterns/01-elements/progress/enterprise/progress";
 /* radio */
-@import "../../_patterns/01-elements/radio/enterprise/radio";
+@use "../../_patterns/01-elements/radio/enterprise/radio";
 /* textarea */
-@import "../../_patterns/01-elements/textarea/enterprise/textarea";
+@use "../../_patterns/01-elements/textarea/enterprise/textarea";
 /* select */
-@import "../../_patterns/01-elements/select/enterprise/select";
+@use "../../_patterns/01-elements/select/enterprise/select";
 /* chip */
-@import "../../_patterns/01-elements/chips/enterprise/chip";
+@use "../../_patterns/01-elements/chips/enterprise/chip";
 /* tag */
-@import "../../_patterns/01-elements/tags/enterprise/tag";
+@use "../../_patterns/01-elements/tags/enterprise/tag";
 /* toggle */
-@import "../../_patterns/01-elements/toggle/enterprise/toggle";
+@use "../../_patterns/01-elements/toggle/enterprise/toggle";
 
 /* youtube */
-@import "../../_patterns/01-elements/video/enterprise/youtube";
+@use "../../_patterns/01-elements/video/enterprise/youtube";
 
 // COMPONENTS
 /* breadcrumb */
-@import "../../_patterns/02-components/breadcrumb/enterprise/breadcrumb";
+@use "../../_patterns/02-components/breadcrumb/enterprise/breadcrumb";
 /* cards */
-@import "../../_patterns/02-components/cards/enterprise/cards";
+@use "../../_patterns/02-components/cards/enterprise/cards";
 /* accordion */
-@import "../../_patterns/02-components/accordion/enterprise/accordion";
+@use "../../_patterns/02-components/accordion/enterprise/accordion";
 /* overflow-menu */
 /* ### this one is already included through the dropdown component that it extends */
 // @import "../../_patterns/02-components/overflow-menu/enterprise/overflow-menu";
 /* mainnavigation */
-@import "../../_patterns/02-components/mainnavigation/enterprise/mainnavigation";
+@use "../../_patterns/02-components/mainnavigation/enterprise/mainnavigation";
 /* metanavigation */
-@import "../../_patterns/02-components/metanavigation/enterprise/metanavigation";
+@use "../../_patterns/02-components/metanavigation/enterprise/metanavigation";
 /* brand */
-@import "../../_patterns/02-components/brand/enterprise/brand";
+@use "../../_patterns/02-components/brand/enterprise/brand";
 /* sitesearch */
-@import "../../_patterns/02-components/sitesearch/enterprise/sitesearch";
+@use "../../_patterns/02-components/sitesearch/enterprise/sitesearch";
 /* notification */
-@import "../../_patterns/02-components/notifications/enterprise/notification";
+@use "../../_patterns/02-components/notifications/enterprise/notification";
 /* dialog */
-@import "../../_patterns/02-components/dialog/enterprise/dialog";
+@use "../../_patterns/02-components/dialog/enterprise/dialog";
 /* language-switcher */
-@import "../../_patterns/02-components/language-switcher/enterprise/language-switcher";
+@use "../../_patterns/02-components/language-switcher/enterprise/language-switcher";
 /* pagination */
-@import "../../_patterns/02-components/pagination/enterprise/pagination";
+@use "../../_patterns/02-components/pagination/enterprise/pagination";
 /* sidenavi */
-@import "../../_patterns/02-components/sidenavi/enterprise/sidenavi";
+@use "../../_patterns/02-components/sidenavi/enterprise/sidenavi";
 /* tab-bar */
-@import "../../_patterns/02-components/tab-bar/enterprise/tab-bar";
+@use "../../_patterns/02-components/tab-bar/enterprise/tab-bar";
 /* table */
-@import "../../_patterns/02-components/table/enterprise/table";
+@use "../../_patterns/02-components/table/enterprise/table";
 /* link-list */
-@import "../../_patterns/02-components/link-list/enterprise/link-list";
+@use "../../_patterns/02-components/link-list/enterprise/link-list";
 /* dropdown */
-@import "../../_patterns/02-components/dropdown/enterprise/dropdown";
+@use "../../_patterns/02-components/dropdown/enterprise/dropdown";
 
 // AREAS
-@import "../../_patterns/03-areas/enterprise/areas";
-@import "../../_patterns/03-areas/00-header/enterprise/header";
-@import "../../_patterns/03-areas/00-header/enterprise/meta";
-@import "../../_patterns/03-areas/01-main/enterprise/main";
-@import "../../_patterns/03-areas/02-grid/enterprise/grid";
-@import "../../_patterns/03-areas/03-footer/enterprise/footer";
+@use "../../_patterns/03-areas/enterprise/areas";
+@use "../../_patterns/03-areas/00-header/enterprise/header";
+@use "../../_patterns/03-areas/00-header/enterprise/meta";
+@use "../../_patterns/03-areas/01-main/enterprise/main";
+@use "../../_patterns/03-areas/02-grid/enterprise/grid";
+@use "../../_patterns/03-areas/03-footer/enterprise/footer";

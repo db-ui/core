@@ -4,6 +4,54 @@ As with every release you're recommended to do a visual regression testing for y
 
 Especially the following aspects have changed through the various different releases and would need your review and probably adaptions within your code base.
 
+== DB UI Core 4.0.0 Migration Guide
+
+=== SASS Migration
+
+We'd like to support the SASS feature `@use` and that for replace the deprecated `@import` feature. So you'll have to replace the `@import` declarations by `@use` within our consuming files.
+
+Especially the following general imports would need to get replaced:
+
+==== Webpack
+
+The following `@import` syntax …
+
+```scss
+@import "@db-ui/core/sources/css/webpack.assets-paths";
+@import "@db-ui/core/sources/css/enterprise/db-ui-core";
+```
+
+… would need to replaced by `@use` syntax:
+
+```scss
+@use "@db-ui/core/sources/css/webpack.assets-paths" as webpackAssetsPaths;
+@use "@db-ui/core/sources/css/enterprise/db-ui-core" with (
+  $icons-path: webpackAssetsPaths.$icons-path,
+  $images-path: webpackAssetsPaths.$images-path,
+  $fonts-path: webpackAssetsPaths.$fonts-path
+);
+```
+
+==== Rollup bundler based software
+
+The following `@import` syntax …
+
+```scss
+@import "@db-ui/core/sources/css/rollup.assets-paths";
+@import "@db-ui/core/sources/css/enterprise/db-ui-core";
+```
+
+… would need to replaced by `@use` syntax:
+
+```scss
+@use "@db-ui/core/sources/css/rollup.assets-paths" as rollupAssetsPaths;
+@use "@db-ui/core/sources/css/enterprise/db-ui-core" with (
+  $icons-path: rollupAssetsPaths.$icons-path,
+  $images-path: rollupAssetsPaths.$images-path,
+  $fonts-path: rollupAssetsPaths.$fonts-path
+);
+```
+
 == DB UI Core 3.0.0 Migration Guide
 
 === Chip

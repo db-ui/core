@@ -1,6 +1,9 @@
-@import "../../../css/partials.meta";
-@import "../overflow-menu/overflow-menu";
-@import "dropdown.variables";
+@use "../../../css/partials.meta";
+@use "../overflow-menu/overflow-menu" as overflow-menu2;
+@use "dropdown.variables";
+@use "../../../css/db-ui-core.variables";
+@use "../../00-base/icons/icons.helpers";
+@use "../overflow-menu/overflow-menu.variables";
 
 .cmp-dropdown {
 	@extend .cmp-overflow-menu;
@@ -8,18 +11,18 @@
 	// Usage within the account menu
 	&.is-account {
 		summary {
-			@include icon(glyph(account), 24, "outline", $partial: $partial);
+			@include icons.icon(icons.glyph(account), 24, "outline", $partial: partials.$partial);
 
-			@media screen and (max-width: $metanavigation-iconOnly--maxWidth) {
+			@media screen and (max-width: db-ui-core.$metanavigation-iconOnly--maxWidth) {
 				// * TODO: possibly rework variable naming
-				@include is-icon-text-replace();
+				@include icons.is-icon-text-replace();
 			}
 		}
 	}
 
 	menu,
 	ul {
-		background-color: $overflowMenu---backgroundColor;
+		background-color: overflow-menu.$overflowMenu---backgroundColor;
 		margin-block-start: initial;
 		right: 0;
 		transform: translateY(0.875rem);

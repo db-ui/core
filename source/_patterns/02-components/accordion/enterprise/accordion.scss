@@ -1,2 +1,2 @@
-@import "accordion.variables";
-@import "../accordion";
+@use "accordion.variables";
+@use "../accordion" as accordion2;

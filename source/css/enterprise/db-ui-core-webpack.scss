@@ -1,4 +1,4 @@
 // Deprecated: This file shouldn't get used / included anymore.
 // `@import` the file `@db-ui/core/sources/css/webpack.assets-paths`, previous to `@import`ing e.g. the file `@db-ui/core/sources/css/enterprise/db-ui-core` directly from now on.
-@import "../webpack.assets-paths";
-@import "db-ui-core";
+@use "../webpack.assets-paths";
+@use "db-ui-core";

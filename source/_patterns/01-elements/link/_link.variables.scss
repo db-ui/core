@@ -1,6 +1,7 @@
-@import "../../00-base/icons/icons.variables";
-@import "../../00-base/colors/colors.variables";
-@import "../../00-base/icons/icons.helpers";
+@use "../../00-base/icons/icons.variables";
+@use "../../00-base/colors/colors.variables";
+@use "../../00-base/icons/icons.helpers" as icons2;
+@use "@db-ui/base/build/scss/variables";
 
 $link--disabled-opacity: 0.4 !default;
-$link-reaMain--color: $db-color-cyan-600 !default;
+$link-reaMain--color: variables.$db-color-cyan-600 !default;

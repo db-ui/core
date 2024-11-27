@@ -1,13 +1,15 @@
 @charset "utf-8";
 
-@import "../../../css/partials.meta";
-@import "radio.variables";
-@import "../form-elements";
+@use "../../../css/partials.meta";
+@use "radio.variables";
+@use "../form-elements";
+@use "@db-ui/base/build/scss/variables";
+@use "../../../css/helpers/functions";
 
 .elm-radio {
 	--db-form-element-dimensions: var(
 		--db-radio-dimensions,
-		#{to-em($pxValue: 20)}
+		#{functions.to-em($pxValue: 20)}
 	);
 
 	@extend %form-element-enhanced-clickable-area;
@@ -15,13 +17,13 @@
 	appearance: none;
 
 	background-color: rgba(255, 255, 255, 0.1);
-	border: to-rem($pxValue: 1) solid $radio---border;
-	border-radius: to-em($pxValue: 16);
+	border: functions.to-rem($pxValue: 1) solid radio.$radio---border;
+	border-radius: functions.to-em($pxValue: 16);
 
 	// * the basic, unchecked style
 	display: inline-block;
 
-	font-size: to-rem($pxValue: 16);
+	font-size: functions.to-rem($pxValue: 16);
 	height: var(--db-form-element-dimensions);
 
 	transition: border-width 0.5s ease;
@@ -45,7 +47,7 @@
 	}
 
 	&:checked {
-		border-width: to-em($pxValue: 6);
+		border-width: functions.to-em($pxValue: 6);
 	}
 	// * the invalid style using the :user-invalid pseudo class (and [aria-invalid="true"] equivalent, see #136 and #141)
 	&:is(:user-invalid),
@@ -63,7 +65,7 @@
 	& + label {
 		@extend %form-label;
 
-		padding-inline-start: $db-spacing-xs;
+		padding-inline-start: variables.$db-spacing-xs;
 	}
 
 	&:disabled {

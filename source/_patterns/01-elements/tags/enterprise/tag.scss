@@ -1,2 +1,2 @@
-@import "tag.variables";
-@import "../tag";
+@use "tag.variables";
+@use "../tag" as tag2;

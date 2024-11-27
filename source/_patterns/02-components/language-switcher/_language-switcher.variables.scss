@@ -1,5 +1,5 @@
-@import "../../../css/helpers/functions";
-@import "../../00-base/icons/icons.helpers";
-@import "../../00-base/icons/icons.variables";
+@use "../../../css/helpers/functions";
+@use "../../00-base/icons/icons.helpers";
+@use "../../00-base/icons/icons.variables" as icons2;
 
 $db-language-switcher---direction: var(--db-language-switcher---direction, 1);

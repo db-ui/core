@@ -1,9 +1,10 @@
-@import "../../../css/helpers/functions";
-@import "../../00-base/icons/icons.variables";
-@import "../../00-base/icons/icons.helpers";
+@use "../../../css/helpers/functions";
+@use "../../00-base/icons/icons.variables";
+@use "../../00-base/icons/icons.helpers" as icons2;
+@use "@db-ui/base/build/scss/variables";
 
-$sidenavi-link--color: $db-color-cool-gray-200 !default;
-$sidenavi-linkCurrent-hover-color: $db-color-cool-gray-600 !default;
+$sidenavi-link--color: variables.$db-color-cool-gray-200 !default;
+$sidenavi-linkCurrent-hover-color: variables.$db-color-cool-gray-600 !default;
 
-$sidenavi-link-hover-backgroundColor: $db-color-cool-gray-300 !default;
-$sidenavi-linkcurrent--backgroundColor: $db-color-cool-gray-200 !default;
+$sidenavi-link-hover-backgroundColor: variables.$db-color-cool-gray-300 !default;
+$sidenavi-linkcurrent--backgroundColor: variables.$db-color-cool-gray-200 !default;

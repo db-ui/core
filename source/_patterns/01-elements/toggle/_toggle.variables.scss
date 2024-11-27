@@ -1,3 +1,4 @@
-@import "../../../css/helpers/functions";
+@use "../../../css/helpers/functions";
+@use "@db-ui/base/build/scss/variables";
 
-$toggle--checked-backgroundColor: $db-color-cool-gray-800 !default;
+$toggle--checked-backgroundColor: variables.$db-color-cool-gray-800 !default;

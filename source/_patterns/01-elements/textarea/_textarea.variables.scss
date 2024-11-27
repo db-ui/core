@@ -1,6 +1,7 @@
-@import "../../../css/helpers/functions";
+@use "../../../css/helpers/functions";
+@use "@db-ui/base/build/scss/variables";
 
-$textarea---color: $db-color-cool-gray-600 !default;
+$textarea---color: variables.$db-color-cool-gray-600 !default;
 
 // * Form styling 01
 $textarea---backgroundColor: transparent !default;

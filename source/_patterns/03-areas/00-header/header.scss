@@ -1,20 +1,21 @@
-@import "../../../css/partials.meta";
-@import "header.variables";
-@import "../../../css/helpers/functions";
-@import "../../../css/helpers/dividers";
+@use "../../../css/partials.meta";
+@use "header.variables";
+@use "../../../css/helpers/functions";
+@use "../../../css/helpers/dividers";
+@use "../../../css/db-ui-core.variables";
 
 .rea-header {
-	background-color: $header---backgroundColor;
-	box-shadow: $header---boxShadow;
+	background-color: header.$header---backgroundColor;
+	box-shadow: header.$header---boxShadow;
 	align-items: center;
-	margin-bottom: $header---marginBottom;
+	margin-bottom: header.$header---marginBottom;
 
 	display: flex;
 	gap: 1.5rem;
 
-	min-block-size: $header---minHeight;
+	min-block-size: header.$header---minHeight;
 	padding-inline: 1.5rem;
-	@media screen and (width > $db-break-the-header-max-width) {
+	@media screen and (width > db-ui-core.$db-break-the-header-max-width) {
 		padding-block: 0.875rem;
 	}
 
@@ -28,8 +29,8 @@
 		}
 	}
 
-	@media screen and (max-width: $db-break-the-header-max-width) {
-		border-bottom: $header---borderBottom;
+	@media screen and (max-width: db-ui-core.$db-break-the-header-max-width) {
+		border-bottom: header.$header---borderBottom;
 		position: relative;
 
 		&:has(.cmp-mainnavigation > input[type="checkbox"][id]:not(:checked)) {
@@ -53,7 +54,7 @@
 				inset-block-start: unset;
 				inset-block-end: 0;
 				block-size: 3.5rem;
-				z-index: $z-index-cmp-overflow-menu-overlay;
+				z-index: db-ui-core.$z-index-cmp-overflow-menu-overlay;
 				border-top: 1px solid rgba(40, 45, 55, 0.2);
 				border-bottom-left-radius: 4px;
 				padding-inline: 1rem;

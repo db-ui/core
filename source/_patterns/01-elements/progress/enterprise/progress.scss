@@ -1,2 +1,2 @@
-@import "progress.variables";
-@import "../progress";
+@use "progress.variables";
+@use "../progress" as progress2;

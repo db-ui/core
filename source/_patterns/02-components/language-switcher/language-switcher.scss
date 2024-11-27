@@ -1,16 +1,20 @@
-@import "../../../css/partials.meta";
-@import "language-switcher.variables";
+@use "../../../css/partials.meta";
+@use "language-switcher.variables";
+@use "@db-ui/base/build/scss/variables";
+@use "../../../css/db-ui-core.variables";
+@use "../../../css/helpers/functions";
+@use "../../00-base/icons/icons.helpers";
 
 @mixin set-top($step: 1) {
 	top: calc(
-		#{$db-language-switcher---direction} * (100% * #{$step} + 1rem - 2px)
+		#{language-switcher.$db-language-switcher---direction} * (100% * #{$step} + 1rem - 2px)
 	);
 }
 
 .cmp-language-switcher {
 	list-style: none;
 
-	margin-right: to-rem($pxValue: 16);
+	margin-right: functions.to-rem($pxValue: 16);
 	position: relative;
 
 	&:hover,
@@ -22,7 +26,7 @@
 
 			&[aria-current="page"],
 			&[aria-selected="true"] {
-				color: $db-color-red-500;
+				color: variables.$db-color-red-500;
 			}
 		}
 	}
@@ -32,12 +36,12 @@
 
 		position: absolute;
 
-		top: to-rem($pxValue: 26);
+		top: functions.to-rem($pxValue: 26);
 
 		.rea-header & {
 			@include set-top(1);
 
-			z-index: $z-index-rea-header-cmp-language-switcher-li; // * TODO: possibly rework variable naming
+			z-index: db-ui-core.$z-index-rea-header-cmp-language-switcher-li; // * TODO: possibly rework variable naming
 
 			// TODO: This is an enhancement for more languages, but obviously doesn't scale that nicely and would need some rework
 			&:not([aria-current="page"], [aria-selected="true"])
@@ -68,7 +72,7 @@
 					}
 				}
 			}
-			@media screen and (width > $db-break-the-header-max-width) {
+			@media screen and (width > db-ui-core.$db-break-the-header-max-width) {
 				top: 100%;
 			}
 		}
@@ -85,11 +89,11 @@
 			.elm-link,
 			.elm-button {
 				padding-block: 1rem;
-				padding-right: to-rem($pxValue: 34);
+				padding-right: functions.to-rem($pxValue: 34);
 
 				&:hover,
 				&:focus {
-					background-color: $db-color-cool-gray-200;
+					background-color: variables.$db-color-cool-gray-200;
 				}
 			}
 		}
@@ -101,23 +105,23 @@
 			.elm-link,
 			.elm-button {
 				& {
-					@include icon(
-						glyph(expand-more),
+					@include icons.icon(
+						icons.glyph(expand-more),
 						24,
 						"outline",
 						"after",
-						$partial: $partial
+						$partial: partials.$partial
 					);
 				}
 
 				&:hover {
-					color: $db-color-red-500;
+					color: variables.$db-color-red-500;
 				}
 
 				&::after {
 					float: right;
 
-					margin-left: to-rem($pxValue: 5);
+					margin-left: functions.to-rem($pxValue: 5);
 				}
 			}
 		}
@@ -126,7 +130,7 @@
 		.elm-button {
 			display: inline-block;
 
-			padding-left: to-rem($pxValue: 18);
+			padding-left: functions.to-rem($pxValue: 18);
 
 			&:hover,
 			&:focus {
@@ -138,7 +142,7 @@
 			line-height: 1.5;
 			padding-right: 0;
 			border-width: 0;
-			padding-top: to-rem($pxValue: 9);
+			padding-top: functions.to-rem($pxValue: 9);
 		}
 	}
 }

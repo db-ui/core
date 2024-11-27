@@ -1,2 +1,2 @@
-@import "areas.variables";
-@import "../areas";
+@use "areas.variables";
+@use "../areas" as areas2;

@@ -1,13 +1,14 @@
-@import "../../../css/helpers/functions";
-@import "../../00-base/icons/icons.variables";
-@import "../../00-base/icons/icons.helpers";
+@use "../../../css/helpers/functions";
+@use "../../00-base/icons/icons.variables" as icons2;
+@use "../../00-base/icons/icons.helpers";
+@use "@db-ui/base/build/scss/variables";
 
 $overflowMenu---borderRadius: 8px !default;
 $overflowMenu---backgroundColor: #fff !default;
-$overflowMenu-item-hover-backgroundColor: $db-color-cool-gray-200 !default;
-$cmp-overflow-menu-icon: glyph(
+$overflowMenu-item-hover-backgroundColor: variables.$db-color-cool-gray-200 !default;
+$cmp-overflow-menu-icon: icons.glyph(
 	more-vertical
 ) !default; // * TODO: possibly rework variable naming
-$overflowMenu-triangle--borderSize: to-rem(
+$overflowMenu-triangle--borderSize: functions.to-rem(
 	$pxValue: 13
 ) !default;

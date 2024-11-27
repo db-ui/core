@@ -118,12 +118,31 @@ It will copy on *npm build* the content of *core/dist* folder to *dist* folder i
 You can use the overall scss file or pick the relevant parts.
 E.g. you can import the overall scss files to your `src/styles.scss` by adding the following imports based on your bundler in use.
 
-#### Webpack based bundlers (e.g. Angular or Vue CLI)
+
+#### Rollup based bundlers (e.g. Parcel, Vite)
+
+For Rollup based bundlers like Vite or Parcel we're providing the following SCSS endpoint:
 
 [source,scss]
 ----
-@import "@db-ui/core/sources/css/webpack.assets-paths";
-@import "@db-ui/core/sources/css/enterprise/db-ui-core";
+@use "@db-ui/core/sources/css/rollup.assets-paths" as rollupAssetsPaths;
+@use "@db-ui/core/sources/css/enterprise/db-ui-core" with (
+  $icons-path: rollupAssetsPaths.$icons-path,
+  $images-path: rollupAssetsPaths.$images-path,
+  $fonts-path: rollupAssetsPaths.$fonts-path
+);
+----
+
+#### Webpack based bundlers (e.g. older Angular or Vue CLI versions)
+
+[source,scss]
+----
+@use "@db-ui/core/sources/css/webpack.assets-paths" as webpackAssetsPaths;
+@use "@db-ui/core/sources/css/enterprise/db-ui-core" with (
+  $icons-path: webpackAssetsPaths.$icons-path,
+  $images-path: webpackAssetsPaths.$images-path,
+  $fonts-path: webpackAssetsPaths.$fonts-path
+);
 ----
 
 Please keep in mind, that you would need to set your include path within the `angular.json` configuration file, like this:
@@ -153,16 +172,6 @@ module.exports = {
     },
   },
 };
-----
-
-#### Rollup based bundlers (e.g. Vue with Vite)
-
-For Rollup based bundlers like Vite or Parcel we're providing the following SCSS endpoint:
-
-[source,scss]
-----
-@import "@db-ui/core/sources/css/rollup.assets-paths";
-@import "@db-ui/core/sources/css/enterprise/db-ui-core";
 ----
 
 

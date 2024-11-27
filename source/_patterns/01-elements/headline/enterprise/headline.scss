@@ -1,2 +1,2 @@
-@import "headline.variables";
-@import "../headline";
+@use "headline.variables";
+@use "../headline" as headline2;

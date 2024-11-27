@@ -1,12 +1,13 @@
-@import "../../00-base/icons/icons.variables";
-@import "../../00-base/icons/icons.helpers";
-@import "../../00-base/colors/colors.variables";
+@use "../../00-base/icons/icons.variables";
+@use "../../00-base/icons/icons.helpers" as icons2;
+@use "../../00-base/colors/colors.variables";
+@use "@db-ui/base/build/scss/variables";
 
 $checkbox---backgroundColor: rgba(255, 255, 255, 0.1) !default;
-$checkbox---borderColor: $db-color-cool-gray-700 !default;
-$checkbox---color: $db-color-cool-gray-700 !default;
+$checkbox---borderColor: variables.$db-color-cool-gray-700 !default;
+$checkbox---color: variables.$db-color-cool-gray-700 !default;
 
-$checkbox--checked-backgroundColor: $db-color-cool-gray-700 !default;
+$checkbox--checked-backgroundColor: variables.$db-color-cool-gray-700 !default;
 $checkbox--checked-color: #fff !default;
 
 $checkbox-hover-checked-backgroundColor: #52575f !default;

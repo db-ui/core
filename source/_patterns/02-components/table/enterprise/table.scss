@@ -1,2 +1,2 @@
-@import "table.variables";
-@import "../table";
+@use "table.variables";
+@use "../table" as table2;

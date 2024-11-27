@@ -1,2 +1,2 @@
-@import "header.variables";
-@import "../header";
+@use "header.variables";
+@use "../header" as header2;

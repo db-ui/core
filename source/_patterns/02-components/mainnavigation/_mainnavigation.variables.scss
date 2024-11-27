@@ -1,13 +1,13 @@
-@import "../../../css/helpers/functions";
-@import "../../00-base/icons/icons.variables";
-@import "../../00-base/icons/icons.helpers";
+@use "../../../css/helpers/functions";
+@use "../../00-base/icons/icons.variables";
+@use "../../00-base/icons/icons.helpers" as icons2;
 
 $header-big-link-paddingTop: 32 * 0.0625 !default;
 $header---backgroundColor: #fdfdfd !default; // TODO: This would need to get replaced by the correct (semantic) color
 
 // * reduced height
 // $header-big-link-paddingTop: 19*0.0625 !default;
-$rea-header-elm-link-padding-bottom-big: to-rem(
+$rea-header-elm-link-padding-bottom-big: functions.to-rem(
 	$pxValue: 19
 ) !default;
 

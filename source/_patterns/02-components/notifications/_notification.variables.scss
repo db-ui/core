@@ -1,10 +1,11 @@
-@import "../../../css/helpers/functions";
+@use "../../../css/helpers/functions";
+@use "@db-ui/base/build/scss/variables";
 
 $notification-alert--color: #fff !default;
 
-$notification-success--backgroundColor: $db-color-success !default;
-$notification-warning--backgroundColor: $db-color-warning !default;
-$notification-error--backgroundColor: $db-color-error !default;
-$notification-informative--backgroundColor: $db-color-informative !default;
+$notification-success--backgroundColor: variables.$db-color-success !default;
+$notification-warning--backgroundColor: variables.$db-color-warning !default;
+$notification-error--backgroundColor: variables.$db-color-error !default;
+$notification-informative--backgroundColor: variables.$db-color-informative !default;
 
-$notification---backgroundColor: $db-color-cool-gray-700 !default;
+$notification---backgroundColor: variables.$db-color-cool-gray-700 !default;

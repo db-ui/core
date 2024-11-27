@@ -1,2 +1,2 @@
-@import "pagination.variables";
-@import "../pagination";
+@use "pagination.variables";
+@use "../pagination" as pagination2;

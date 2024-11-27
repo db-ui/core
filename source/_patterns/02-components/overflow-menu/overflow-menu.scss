@@ -1,5 +1,9 @@
-@import "../../../css/partials.meta";
-@import "overflow-menu.variables";
+@use "../../../css/partials.meta";
+@use "overflow-menu.variables";
+@use "@db-ui/base/build/scss/variables";
+@use "../../../css/db-ui-core.variables";
+@use "../../../css/helpers/functions";
+@use "../../00-base/icons/icons.helpers";
 
 .cmp-overflow-menu {
 	color: #2d333f; // TODO: replace by correct color
@@ -8,7 +12,7 @@
 
 	&:not(.is-account) {
 		summary {
-			@include is-icon-text-replace();
+			@include icons.is-icon-text-replace();
 		}
 	}
 
@@ -19,27 +23,27 @@
 		border-radius: 4px;
 		cursor: default;
 
-		background-color: rgba($db-color-cool-gray-700, 0);
+		background-color: rgba(variables.$db-color-cool-gray-700, 0);
 
 		& {
-			@include icon(
-				$cmp-overflow-menu-icon,
+			@include icons.icon(
+				overflow-menu.$cmp-overflow-menu-icon,
 				20,
 				"outline",
-				$partial: $partial
+				$partial: partials.$partial
 			);
 		}
 
 		&::before {
-			transform: translateX(-#{to-rem($pxValue: 2)});
+			transform: translateX(-#{functions.to-rem($pxValue: 2)});
 		}
 
 		&:hover {
-			background-color: rgba($db-color-cool-gray-700, 0.08);
+			background-color: rgba(variables.$db-color-cool-gray-700, 0.08);
 		}
 
 		&:active {
-			background-color: rgba($db-color-cool-gray-700, 0.16);
+			background-color: rgba(variables.$db-color-cool-gray-700, 0.16);
 		}
 
 		&::-webkit-details-marker {
@@ -54,28 +58,28 @@
 	// Menu list
 	menu,
 	ul {
-		background-color: $overflowMenu---backgroundColor;
+		background-color: overflow-menu.$overflowMenu---backgroundColor;
 
-		border-radius: $overflowMenu---borderRadius;
-		filter: drop-shadow($box-shadow);
+		border-radius: overflow-menu.$overflowMenu---borderRadius;
+		filter: drop-shadow(db-ui-core.$box-shadow);
 		margin-block-start: 1rem;
 		padding-left: 0;
 		position: absolute;
 		width: min-content;
-		z-index: $z-index-cmp-overflow-menu-menu;
+		z-index: db-ui-core.$z-index-cmp-overflow-menu-menu;
 
 		// Little triangle on the overlay
 		&::before {
-			border-bottom: $overflowMenu-triangle--borderSize solid
-				$overflowMenu---backgroundColor;
-			border-left: $overflowMenu-triangle--borderSize solid transparent;
-			border-right: $overflowMenu-triangle--borderSize solid transparent;
+			border-bottom: overflow-menu.$overflowMenu-triangle--borderSize solid
+				overflow-menu.$overflowMenu---backgroundColor;
+			border-left: overflow-menu.$overflowMenu-triangle--borderSize solid transparent;
+			border-right: overflow-menu.$overflowMenu-triangle--borderSize solid transparent;
 			content: "";
 			height: 0;
 			position: absolute;
 			transform: translate(
-				to-rem($pxValue: 12),
-				-#{to-rem($pxValue: 13)}
+				functions.to-rem($pxValue: 12),
+				-#{functions.to-rem($pxValue: 13)}
 			);
 			width: 0;
 		}
@@ -83,20 +87,20 @@
 		li {
 			button,
 			a {
-				background-color: $overflowMenu---backgroundColor;
+				background-color: overflow-menu.$overflowMenu---backgroundColor;
 
 				border-radius: unset;
 				display: block;
 
 				font-weight: 400;
-				padding: to-rem($pxValue: 16) to-rem($pxValue: 32)
-					to-rem($pxValue: 16) to-rem($pxValue: 16); // TODO: replace by correct spacings
+				padding: functions.to-rem($pxValue: 16) functions.to-rem($pxValue: 32)
+					functions.to-rem($pxValue: 16) functions.to-rem($pxValue: 16); // TODO: replace by correct spacings
 
 				text-decoration: none;
 
 				&:hover,
 				&:focus {
-					background-color: $overflowMenu-item-hover-backgroundColor;
+					background-color: overflow-menu.$overflowMenu-item-hover-backgroundColor;
 					color: inherit;
 				}
 			}
@@ -104,16 +108,16 @@
 			&:first-child {
 				button,
 				a {
-					border-top-left-radius: $overflowMenu---borderRadius;
-					border-top-right-radius: $overflowMenu---borderRadius;
+					border-top-left-radius: overflow-menu.$overflowMenu---borderRadius;
+					border-top-right-radius: overflow-menu.$overflowMenu---borderRadius;
 				}
 			}
 
 			&:last-child {
 				button,
 				a {
-					border-bottom-left-radius: $overflowMenu---borderRadius;
-					border-bottom-right-radius: $overflowMenu---borderRadius;
+					border-bottom-left-radius: overflow-menu.$overflowMenu---borderRadius;
+					border-bottom-right-radius: overflow-menu.$overflowMenu---borderRadius;
 				}
 			}
 		}
@@ -127,8 +131,8 @@
 			&::before {
 				right: 0;
 				transform: translate(
-					-#{to-rem($pxValue: 12)},
-					-#{to-rem($pxValue: 13)}
+					-#{functions.to-rem($pxValue: 12)},
+					-#{functions.to-rem($pxValue: 13)}
 				);
 			}
 		}
@@ -157,6 +161,6 @@
 		position: fixed;
 		top: 0;
 		width: 100vw;
-		z-index: $z-index-cmp-overflow-menu-overlay;
+		z-index: db-ui-core.$z-index-cmp-overflow-menu-overlay;
 	}
 }

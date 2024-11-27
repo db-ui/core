@@ -2,14 +2,14 @@
 // In case that you're building a web application you might want to have more freedom
 // and probably would want to not include it's contents into your SCSS build / references.
 
-@import "../../../css/helpers/clearfix";
+@use "../../../css/helpers/clearfix";
 
-@import "main.variables";
+@use "main.variables";
 
 .rea-main {
 	@include clearfix();
 
-	background-color: $main---backgroundColor;
+	background-color: main.$main---backgroundColor;
 	// adapted from https://github.com/jgthms/bulma/blob/0.7.5/sass/elements/container.sass
 	margin: 0 auto;
 

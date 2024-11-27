@@ -1,72 +1,76 @@
-@import "../../../css/partials.meta";
-@import "sidenavi.variables";
+@use "../../../css/partials.meta";
+@use "sidenavi.variables";
+@use "@db-ui/base/build/scss/variables";
+@use "../../../css/db-ui-core.variables";
+@use "../../../css/helpers/functions";
+@use "../../00-base/icons/icons.helpers";
 
 .cmp-sidenavi {
-	background-color: $db-color-cool-gray-600;
-	box-shadow: $box-shadow-01, $box-shadow-02;
+	background-color: variables.$db-color-cool-gray-600;
+	box-shadow: db-ui-core.$box-shadow-01, db-ui-core.$box-shadow-02;
 	display: inline-block;
 
 	.elm-link {
 		// We need to reset the general border-radius here
 		border-radius: initial;
 		// TODO: check for the correct color code
-		color: $sidenavi-link--color; // * TODO: possibly rework variable naming
+		color: sidenavi.$sidenavi-link--color; // * TODO: possibly rework variable naming
 		display: block;
-		padding: to-rem($pxValue: 20) to-rem($pxValue: 16);
+		padding: functions.to-rem($pxValue: 20) functions.to-rem($pxValue: 16);
 		text-decoration: none;
 
 		&:hover,
 		&:focus,
 		&[aria-current="page"] {
-			color: $sidenavi-linkCurrent-hover-color; // * TODO: possibly rework variable naming
+			color: sidenavi.$sidenavi-linkCurrent-hover-color; // * TODO: possibly rework variable naming
 		}
 
 		&:hover,
 		&:focus {
-			background-color: $sidenavi-link-hover-backgroundColor; // * TODO: possibly rework variable naming
+			background-color: sidenavi.$sidenavi-link-hover-backgroundColor; // * TODO: possibly rework variable naming
 		}
 
 		&[aria-current="page"] {
-			background-color: $sidenavi-linkcurrent--backgroundColor; // * TODO: possibly rework variable naming
+			background-color: sidenavi.$sidenavi-linkcurrent--backgroundColor; // * TODO: possibly rework variable naming
 			font-weight: 700;
 		}
 
 		&[rel] {
-			padding-left: to-rem($pxValue: 21);
+			padding-left: functions.to-rem($pxValue: 21);
 		}
 
 		&[rel="index"] {
-			@include icon(glyph(home), 32, "outline", $partial: $partial);
+			@include icons.icon(icons.glyph(home), 32, "outline", $partial: partials.$partial);
 		}
 
 		&[rel="documents"] {
-			@include icon(glyph(document), 32, "outline", $partial: $partial);
+			@include icons.icon(icons.glyph(document), 32, "outline", $partial: partials.$partial);
 		}
 		// TODO: This needs to get the icon from the new iconset
 		&[rel="dashboard"] {
-			@include icon(
-				glyph(dashboard),
+			@include icons.icon(
+				icons.glyph(dashboard),
 				32,
 				"enterprise-outline",
-				$partial: $partial
+				$partial: partials.$partial
 			);
 		}
 		// TODO: This needs to get the icon from the new iconset
 		&[rel="cloud"] {
-			@include icon(
-				glyph(cloud),
+			@include icons.icon(
+				icons.glyph(cloud),
 				32,
 				"enterprise-outline",
-				$partial: $partial
+				$partial: partials.$partial
 			);
 		}
 
 		&[rel="calendar"] {
-			@include icon(glyph(calendar), 32, "outline", $partial: $partial);
+			@include icons.icon(icons.glyph(calendar), 32, "outline", $partial: partials.$partial);
 		}
 
 		&[rel="help"] {
-			@include icon(glyph(help), 32, "outline", $partial: $partial);
+			@include icons.icon(icons.glyph(help), 32, "outline", $partial: partials.$partial);
 		}
 	}
 }

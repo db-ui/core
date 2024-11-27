@@ -1,6 +1,6 @@
 @use "sass:map";
-@import "../../../../css/helpers/functions";
-@import "../icons.variables";
+@use "../../../../css/helpers/functions";
+@use "../icons.variables";
 
 // Icon font files
 $icon-font-families: (
@@ -82,4 +82,7 @@ $icon-glyphs-enterprise: (
 	// "upload-cloud": "\e923",
 	// "watch": "\1f552"
 );
-$icon-glyphs: map.merge($icon-glyphs-enterprise, $icon-glyphs-personenverkehr);
+icons.$icon-glyphs: map.merge(
+	$icon-glyphs-enterprise,
+	icons.$icon-glyphs-personenverkehr
+);
