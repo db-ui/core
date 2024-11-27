@@ -113,15 +113,16 @@ Independently you need to add to `angular.json` a new line to assets like this:
 
 It will copy on *npm build* the content of *core/dist* folder to *dist* folder in the angular app, that is deployed on *ng serve* and will give you access to assets like images, icons, etc. exported by DB UI Core. Don't forget to add it to any necessary configuration part included, like e.g. `projects.PROJECTNAME.architect.build.options` as well as `projects.PROJECTNAME.architect.test.options`
 
-### Use scss files:
+### Use SCSS files:
 
 You can use the overall scss file or pick the relevant parts.
 E.g. you can import the overall scss files to your `src/styles.scss` by adding the following imports based on your bundler in use.
 
-
 #### Rollup based bundlers (e.g. Parcel, Vite)
 
 For Rollup based bundlers like Vite or Parcel we're providing the following SCSS endpoint:
+
+##### `@use` syntax
 
 [source,scss]
 ----
@@ -132,6 +133,15 @@ For Rollup based bundlers like Vite or Parcel we're providing the following SCSS
   $fonts-path: rollupAssetsPaths.$fonts-path
 );
 ----
+
+##### deprecated `@import` syntax
+
+[source,scss]
+----
+@import "@db-ui/core/sources/css/rollup.assets-paths";
+@import "@db-ui/core/sources/css/enterprise/db-ui-core";
+----
+
 
 #### Webpack based bundlers (e.g. older Angular or Vue CLI versions)
 
@@ -144,6 +154,16 @@ For Rollup based bundlers like Vite or Parcel we're providing the following SCSS
   $fonts-path: webpackAssetsPaths.$fonts-path
 );
 ----
+
+##### deprecated `@import` syntax
+
+[source,scss]
+----
+@import "@db-ui/core/sources/css/webpack.assets-paths";
+@import "@db-ui/core/sources/css/enterprise/db-ui-core";
+----
+
+#### General
 
 Please keep in mind, that you would need to set your include path within the `angular.json` configuration file, like this:
 
@@ -173,7 +193,6 @@ module.exports = {
   },
 };
 ----
-
 
 ### Use css files:
 
