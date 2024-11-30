@@ -12,14 +12,14 @@
 
 
 	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1706158764613" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1732970174934" media="all">
 
 	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1706158764613" media="all">
-	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1706158764613" media="all">
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1706158764613" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1732970174934" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1732970174934" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1732970174934" media="all">
 	<!-- dialog polyfill //-->
-	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1706158764613" media="all">
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1732970174934" media="all">
 
 	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
 	
@@ -36,35 +36,36 @@ documentation has useful tips on creating an effective description. //-->
 
 	<!-- iframe resizing script for pattern previews -->
 	<script src="../../js/iframeResizer.contentWindow.js"></script>
+	<script src="../../js/invoker.min.js"></script>
 </head>
 
 <body class="styleguide">
 <div class="cmp-tab-bar" role="tablist">
 	<!-- Pay attention to use a component wide, but component instance specific name to the following input[type="radio"] elements //-->
-		<input type="radio" name="cmp-tab-bar-tabs-01" id="radio_0"  checked>
-		<label for="radio_0" role="tab">0</label>
-		<section id="content_0" role="tabpanel">
+		<input type="radio" name="cmp-tab-bar-tabs-regular" id="tab_regular_0"  checked>
+		<label for="tab_regular_0" role="tab">Tab 01</label>
+		<section id="content_regular_0" role="tabpanel">
 			Content 01
 		</section>
-		<input type="radio" name="cmp-tab-bar-tabs-01" id="radio_1" >
-		<label for="radio_1" role="tab">1</label>
-		<section id="content_1" role="tabpanel">
+		<input type="radio" name="cmp-tab-bar-tabs-regular" id="tab_regular_1" >
+		<label for="tab_regular_1" role="tab">Tab 02</label>
+		<section id="content_regular_1" role="tabpanel">
 			Content 02
 		</section>
-		<input type="radio" name="cmp-tab-bar-tabs-01" id="radio_2" >
-		<label for="radio_2" role="tab">2</label>
-		<section id="content_2" role="tabpanel">
+		<input type="radio" name="cmp-tab-bar-tabs-regular" id="tab_regular_2" >
+		<label for="tab_regular_2" role="tab">Tab 03</label>
+		<section id="content_regular_2" role="tabpanel">
 			Content 03
 		</section>
-		<input type="radio" name="cmp-tab-bar-tabs-01" id="radio_3" >
-		<label for="radio_3" role="tab">3</label>
-		<section id="content_3" role="tabpanel">
+		<input type="radio" name="cmp-tab-bar-tabs-regular" id="tab_regular_3" >
+		<label for="tab_regular_3" role="tab">Tab 04</label>
+		<section id="content_regular_3" role="tabpanel">
 			Content 04
 		</section>
-		<input type="radio" name="cmp-tab-bar-tabs-01" id="radio_4" 
+		<input type="radio" name="cmp-tab-bar-tabs-regular" id="tab_regular_4" 
 			disabled>
-		<label for="radio_4" role="tab">4</label>
-		<section id="content_4" role="tabpanel">
+		<label for="tab_regular_4" role="tab">Tab 05</label>
+		<section id="content_regular_4" role="tabpanel">
 			Content 05
 		</section>
 </div>
@@ -110,10 +111,10 @@ documentation has useful tips on creating an effective description. //-->
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1706158764613">
+<script id="pl-js-polyfill-insert-1732970174934">
   (function() {
     if (self != top) {
-      var cb = '1706158764613';
+      var cb = '1732970174934';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -126,7 +127,7 @@ documentation has useful tips on creating an effective description. //-->
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1706158764613" nomodule>
+<script id="pl-js-insert-1732970174934" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 
@@ -140,7 +141,6 @@ documentation has useful tips on creating an effective description. //-->
 		<script src="../../js/details-element-polyfill.js"></script>
 		<!-- dialog polyfill //-->
 		<script src="../../js/dialog-polyfill.js"></script>
-		<script src="../../js/main.min.js"></script>
 	</body>
 
 </html>

@@ -1,44 +1,24 @@
-<a
-	href="#dialog01"
-	class="elm-link "
+<button class="elm-button "
+	data-variant="secondary-outline"
+	
 	title="Title text"
+	type="button"
 	
 	
 	
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	>Dialog öffnen
-</a>
+	 command="show-modal"
+	 commandfor="dialog01">
+	Dialog öffnen
+</button>
 <dialog id="dialog01" class="cmp-dialog">
 	<header>
 		<!-- [html-validate-disable-next heading-level] -->
 		<!-- [html-validate-disable-next heading-level, no-unused-disable -- we're doing some simple demonstration simplification here] -->
 		<h2 class="elm-headline ">Modal</h2>
-		<a
-			href="#"
-			class="elm-link is-close"
-			title="Close the dialog"
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			>Close
-		</a>
+		<button type="button" class="is-close" title="Close the dialog" command="close" commandfor="dialog01">Close</button>
 	</header>
 	<main>
 		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
@@ -53,6 +33,9 @@
 			
 			
 			
+			
+			
+			
 			>
 			Secondary
 		</button>
@@ -61,6 +44,9 @@
 			
 			title="Title text"
 			type="button"
+			
+			
+			
 			
 			
 			

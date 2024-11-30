@@ -12,17 +12,17 @@
 
 
 	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1706158764613" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1732970174934" media="all">
 
 	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1706158764613" media="all">
-	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1706158764613" media="all">
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1706158764613" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1732970174934" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1732970174934" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1732970174934" media="all">
 	<!-- dialog polyfill //-->
-	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1706158764613" media="all">
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1732970174934" media="all">
 
 	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1706158764613" media="all">
+	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1732970174934" media="all">
 	<!-- End Pattern Lab -->
 
 
@@ -36,6 +36,7 @@ documentation has useful tips on creating an effective description. //-->
 
 	<!-- iframe resizing script for pattern previews -->
 	<script src="../../js/iframeResizer.contentWindow.js"></script>
+	<script src="../../js/invoker.min.js"></script>
 </head>
 
 <body class="styleguide">
@@ -63,6 +64,12 @@ documentation has useful tips on creating an effective description. //-->
 <p>Extend one of the size SCSS placeholders in case that you don't want the default (regular): <code>%size-Small</code> or <code>%size-Large</code></p>
 <h4>HTML attribute</h4>
 <p>You could set the different button sizes via the <code>data-size</code> attribute, the default is &quot;regular&quot; and in that case is optional.</p>
+<h3>Width</h3>
+<p>Regularly, our buttons shouldn't increase to it's horizontally available space, but only the one determined by it's included textual content.</p>
+<h4>SCSS (recommended)</h4>
+<p>Extend the width SCSS placeholders in case that you don't want the default (<code>auto</code>): <code>%width-Full</code></p>
+<h4>HTML attribute</h4>
+<p>You could set the button width to increase to it's full available space via the <code>data-width=&quot;full&quot;</code> attribute, the default is <code>auto</code> and in that case is optional.</p>
 <h2>Usability</h2>
 <blockquote>
 <p>Buttons should be used in situations where users might need to:</p>
@@ -153,6 +160,9 @@ documentation has useful tips on creating an effective description. //-->
 	
 	
 	
+	
+	
+	
 	>
 	Red 500
 </button>
@@ -160,7 +170,7 @@ documentation has useful tips on creating an effective description. //-->
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-elements-button" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"components-language-switcher-spa","lineagePath":"../../patterns/components-language-switcher-language-switcher-spa/components-language-switcher-language-switcher-spa.rendered.html","lineageState":"inprogress"},{"lineagePattern":"components-overflow-menu-navigation-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation-opposite-position/components-overflow-menu-overflow-menu-navigation-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-navigation","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-opposite-position/components-overflow-menu-overflow-menu-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-button-primary","lineagePath":"../../patterns/elements-buttons-03-button-primary/elements-buttons-03-button-primary.rendered.html"},{"lineagePattern":"elements-button-brand-primary","lineagePath":"../../patterns/elements-buttons-01-button-brand-primary/elements-buttons-01-button-brand-primary.rendered.html"},{"lineagePattern":"elements-button-secondary-outline","lineagePath":"../../patterns/elements-buttons-04-button-secondary-outline/elements-buttons-04-button-secondary-outline.rendered.html"},{"lineagePattern":"elements-button-secondary-solid","lineagePath":"../../patterns/elements-buttons-05-button-secondary-solid/elements-buttons-05-button-secondary-solid.rendered.html"},{"lineagePattern":"elements-button-tertiary-plain","lineagePath":"../../patterns/elements-buttons-06-button-tertiary-plain/elements-buttons-06-button-tertiary-plain.rendered.html"},{"lineagePattern":"elements-button-sizes","lineagePath":"../../patterns/elements-buttons-09-button-sizes/elements-buttons-09-button-sizes.rendered.html"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-example-form","lineagePath":"../../patterns/components-form-example-form/components-form-example-form.rendered.html"},{"lineagePattern":"components-language-switcher","lineagePath":"../../patterns/components-language-switcher-language-switcher/components-language-switcher-language-switcher.rendered.html","lineageState":"inprogress"},{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"}],"lineageR":[{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"components-language-switcher-spa","lineagePath":"../../patterns/components-language-switcher-language-switcher-spa/components-language-switcher-language-switcher-spa.rendered.html","lineageState":"inprogress"},{"lineagePattern":"components-overflow-menu-navigation-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation-opposite-position/components-overflow-menu-overflow-menu-navigation-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-navigation","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-opposite-position/components-overflow-menu-overflow-menu-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-button-primary","lineagePath":"../../patterns/elements-buttons-03-button-primary/elements-buttons-03-button-primary.rendered.html"},{"lineagePattern":"elements-button-brand-primary","lineagePath":"../../patterns/elements-buttons-01-button-brand-primary/elements-buttons-01-button-brand-primary.rendered.html"},{"lineagePattern":"elements-button-secondary-outline","lineagePath":"../../patterns/elements-buttons-04-button-secondary-outline/elements-buttons-04-button-secondary-outline.rendered.html"},{"lineagePattern":"elements-button-secondary-solid","lineagePath":"../../patterns/elements-buttons-05-button-secondary-solid/elements-buttons-05-button-secondary-solid.rendered.html"},{"lineagePattern":"elements-button-tertiary-plain","lineagePath":"../../patterns/elements-buttons-06-button-tertiary-plain/elements-buttons-06-button-tertiary-plain.rendered.html"},{"lineagePattern":"elements-button-sizes","lineagePath":"../../patterns/elements-buttons-09-button-sizes/elements-buttons-09-button-sizes.rendered.html"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-example-form","lineagePath":"../../patterns/components-form-example-form/components-form-example-form.rendered.html"},{"lineagePattern":"components-language-switcher","lineagePath":"../../patterns/components-language-switcher-language-switcher/components-language-switcher-language-switcher.rendered.html","lineageState":"inprogress"},{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button","patternPartial":"elements-button","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"components-language-switcher-spa","lineagePath":"../../patterns/components-language-switcher-language-switcher-spa/components-language-switcher-language-switcher-spa.rendered.html","lineageState":"inprogress"},{"lineagePattern":"components-overflow-menu-navigation-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation-opposite-position/components-overflow-menu-overflow-menu-navigation-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-navigation","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-opposite-position/components-overflow-menu-overflow-menu-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-button-brand-primary","lineagePath":"../../patterns/elements-buttons-01-button-brand-primary/elements-buttons-01-button-brand-primary.rendered.html"},{"lineagePattern":"elements-button-primary","lineagePath":"../../patterns/elements-buttons-03-button-primary/elements-buttons-03-button-primary.rendered.html"},{"lineagePattern":"elements-button-secondary-outline","lineagePath":"../../patterns/elements-buttons-04-button-secondary-outline/elements-buttons-04-button-secondary-outline.rendered.html"},{"lineagePattern":"elements-button-secondary-solid","lineagePath":"../../patterns/elements-buttons-05-button-secondary-solid/elements-buttons-05-button-secondary-solid.rendered.html"},{"lineagePattern":"elements-button-tertiary-plain","lineagePath":"../../patterns/elements-buttons-06-button-tertiary-plain/elements-buttons-06-button-tertiary-plain.rendered.html"},{"lineagePattern":"elements-button-sizes","lineagePath":"../../patterns/elements-buttons-09-button-sizes/elements-buttons-09-button-sizes.rendered.html"},{"lineagePattern":"elements-button-width","lineagePath":"../../patterns/elements-buttons-10-button-width/elements-buttons-10-button-width.rendered.html"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-example-form","lineagePath":"../../patterns/components-form-example-form/components-form-example-form.rendered.html"},{"lineagePattern":"components-language-switcher","lineagePath":"../../patterns/components-language-switcher-language-switcher/components-language-switcher-language-switcher.rendered.html","lineageState":"inprogress"},{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"}],"lineageR":[{"lineagePattern":"components-dialog-button-alignment-end","lineagePath":"../../patterns/components-dialog-dialog-button-alignment-end/components-dialog-dialog-button-alignment-end.rendered.html"},{"lineagePattern":"components-language-switcher-spa","lineagePath":"../../patterns/components-language-switcher-language-switcher-spa/components-language-switcher-language-switcher-spa.rendered.html","lineageState":"inprogress"},{"lineagePattern":"components-overflow-menu-navigation-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation-opposite-position/components-overflow-menu-overflow-menu-navigation-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-navigation","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-navigation/components-overflow-menu-overflow-menu-navigation.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-overflow-menu-opposite-position","lineagePath":"../../patterns/components-overflow-menu-overflow-menu-opposite-position/components-overflow-menu-overflow-menu-opposite-position.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-button-brand-primary","lineagePath":"../../patterns/elements-buttons-01-button-brand-primary/elements-buttons-01-button-brand-primary.rendered.html"},{"lineagePattern":"elements-button-primary","lineagePath":"../../patterns/elements-buttons-03-button-primary/elements-buttons-03-button-primary.rendered.html"},{"lineagePattern":"elements-button-secondary-outline","lineagePath":"../../patterns/elements-buttons-04-button-secondary-outline/elements-buttons-04-button-secondary-outline.rendered.html"},{"lineagePattern":"elements-button-secondary-solid","lineagePath":"../../patterns/elements-buttons-05-button-secondary-solid/elements-buttons-05-button-secondary-solid.rendered.html"},{"lineagePattern":"elements-button-tertiary-plain","lineagePath":"../../patterns/elements-buttons-06-button-tertiary-plain/elements-buttons-06-button-tertiary-plain.rendered.html"},{"lineagePattern":"elements-button-sizes","lineagePath":"../../patterns/elements-buttons-09-button-sizes/elements-buttons-09-button-sizes.rendered.html"},{"lineagePattern":"elements-button-width","lineagePath":"../../patterns/elements-buttons-10-button-width/elements-buttons-10-button-width.rendered.html"},{"lineagePattern":"components-dialog","lineagePath":"../../patterns/components-dialog-dialog/components-dialog-dialog.rendered.html","lineageState":"complete"},{"lineagePattern":"components-example-form","lineagePath":"../../patterns/components-form-example-form/components-form-example-form.rendered.html"},{"lineagePattern":"components-language-switcher","lineagePath":"../../patterns/components-language-switcher-language-switcher/components-language-switcher-language-switcher.rendered.html","lineageState":"inprogress"},{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"},{"lineagePattern":"components-sitesearch","lineagePath":"../../patterns/components-sitesearch-_sitesearch/components-sitesearch-_sitesearch.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button","patternPartial":"elements-button","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -209,6 +219,9 @@ documentation has useful tips on creating an effective description. //-->
 		
 		 data-icon="add"
 		
+		
+		
+		
 		>
 		Brand Primary
 	</button>
@@ -221,6 +234,9 @@ documentation has useful tips on creating an effective description. //-->
 		 disabled
 		 data-icon="add"
 		
+		
+		
+		
 		>
 		Brand Primary
 	</button>
@@ -235,6 +251,9 @@ documentation has useful tips on creating an effective description. //-->
 		
 		
 		 data-icon-after="add"
+		
+		
+		
 		>
 		Brand Primary with right icon
 	</button>
@@ -247,6 +266,9 @@ documentation has useful tips on creating an effective description. //-->
 		 disabled
 		
 		 data-icon-after="add"
+		
+		
+		
 		>
 		Brand Primary with right icon(disabled)
 	</button>
@@ -257,6 +279,9 @@ documentation has useful tips on creating an effective description. //-->
 		
 		title="Title text"
 		type="button"
+		
+		
+		
 		
 		
 		
@@ -273,6 +298,9 @@ documentation has useful tips on creating an effective description. //-->
 		 disabled
 		
 		
+		
+		
+		
 		>
 		Brand Primary without icon (disabled)
 	</button>
@@ -287,6 +315,9 @@ documentation has useful tips on creating an effective description. //-->
 		
 		 data-icon="done"
 		
+		
+		
+		
 		>
 		Brand Primary displaying only the icon
 	</button>
@@ -298,6 +329,9 @@ documentation has useful tips on creating an effective description. //-->
 		
 		 disabled
 		 data-icon="done"
+		
+		
+		
 		
 		>
 		Brand Primary displaying only the icon
@@ -356,6 +390,9 @@ documentation has useful tips on creating an effective description. //-->
 		
 		 data-icon="add"
 		
+		
+		
+		
 		>
 		Primary
 	</button>
@@ -367,6 +404,9 @@ documentation has useful tips on creating an effective description. //-->
 		
 		 disabled
 		 data-icon="add"
+		
+		
+		
 		
 		>
 		Primary (disabled)
@@ -382,6 +422,9 @@ documentation has useful tips on creating an effective description. //-->
 		
 		
 		 data-icon-after="add"
+		
+		
+		
 		>
 		Primary with icon
 	</button>
@@ -394,6 +437,9 @@ documentation has useful tips on creating an effective description. //-->
 		 disabled
 		
 		 data-icon-after="add"
+		
+		
+		
 		>
 		Primary with icon (disabled)
 	</button>
@@ -404,6 +450,9 @@ documentation has useful tips on creating an effective description. //-->
 		
 		title="Title text"
 		type="button"
+		
+		
+		
 		
 		
 		
@@ -420,6 +469,9 @@ documentation has useful tips on creating an effective description. //-->
 		 disabled
 		
 		
+		
+		
+		
 		>
 		Primary without icon (disabled)
 	</button>
@@ -434,6 +486,9 @@ documentation has useful tips on creating an effective description. //-->
 		
 		 data-icon="done"
 		
+		
+		
+		
 		>
 		Primary displaying only the icon
 	</button>
@@ -445,6 +500,9 @@ documentation has useful tips on creating an effective description. //-->
 		
 		 disabled
 		 data-icon="done"
+		
+		
+		
 		
 		>
 		Primary displaying only the icon
@@ -503,6 +561,9 @@ documentation has useful tips on creating an effective description. //-->
 		
 		 data-icon="add"
 		
+		
+		
+		
 		>
 		Secondary Outline
 	</button>
@@ -514,6 +575,9 @@ documentation has useful tips on creating an effective description. //-->
 		
 		 disabled
 		 data-icon="add"
+		
+		
+		
 		
 		>
 		Secondary Outline (disabled)
@@ -529,6 +593,9 @@ documentation has useful tips on creating an effective description. //-->
 		
 		
 		 data-icon-after="add"
+		
+		
+		
 		>
 		Secondary Outline with right icon
 	</button>
@@ -541,6 +608,9 @@ documentation has useful tips on creating an effective description. //-->
 		 disabled
 		
 		 data-icon-after="add"
+		
+		
+		
 		>
 		Secondary Outline with right icon (disabled)
 	</button>
@@ -551,6 +621,9 @@ documentation has useful tips on creating an effective description. //-->
 		
 		title="Title text"
 		type="button"
+		
+		
+		
 		
 		
 		
@@ -567,6 +640,9 @@ documentation has useful tips on creating an effective description. //-->
 		 disabled
 		
 		
+		
+		
+		
 		>
 		Secondary Outline without left icon (disabled)
 	</button>
@@ -581,6 +657,9 @@ documentation has useful tips on creating an effective description. //-->
 		
 		 data-icon="done"
 		
+		
+		
+		
 		>
 		Secondary Outline displaying only the icon
 	</button>
@@ -592,6 +671,9 @@ documentation has useful tips on creating an effective description. //-->
 		
 		 disabled
 		 data-icon="done"
+		
+		
+		
 		
 		>
 		Secondary Outline displaying only the icon
@@ -650,6 +732,9 @@ documentation has useful tips on creating an effective description. //-->
 		
 		 data-icon="add"
 		
+		
+		
+		
 		>
 		Secondary
 	</button>
@@ -661,6 +746,9 @@ documentation has useful tips on creating an effective description. //-->
 		
 		 disabled
 		 data-icon="add"
+		
+		
+		
 		
 		>
 		Secondary (disabled)
@@ -676,6 +764,9 @@ documentation has useful tips on creating an effective description. //-->
 		
 		
 		 data-icon-after="add"
+		
+		
+		
 		>
 		Secondary Solid with right icon
 	</button>
@@ -688,6 +779,9 @@ documentation has useful tips on creating an effective description. //-->
 		 disabled
 		
 		 data-icon-after="add"
+		
+		
+		
 		>
 		Secondary Solid with right icon (disabled)
 	</button>
@@ -698,6 +792,9 @@ documentation has useful tips on creating an effective description. //-->
 		
 		title="Title text"
 		type="button"
+		
+		
+		
 		
 		
 		
@@ -714,6 +811,9 @@ documentation has useful tips on creating an effective description. //-->
 		 disabled
 		
 		
+		
+		
+		
 		>
 		Secondary Solid without icon (disabled)
 	</button>
@@ -728,6 +828,9 @@ documentation has useful tips on creating an effective description. //-->
 		
 		 data-icon="done"
 		
+		
+		
+		
 		>
 		Secondary Solid displaying only the icon
 	</button>
@@ -739,6 +842,9 @@ documentation has useful tips on creating an effective description. //-->
 		
 		 disabled
 		 data-icon="done"
+		
+		
+		
 		
 		>
 		Secondary Solid displaying only the icon
@@ -797,6 +903,9 @@ documentation has useful tips on creating an effective description. //-->
 		
 		
 		
+		
+		
+		
 		>
 		Tertiary Plain
 	</button>
@@ -807,6 +916,9 @@ documentation has useful tips on creating an effective description. //-->
 		type="button"
 		
 		 disabled
+		
+		
+		
 		
 		
 		>
@@ -823,6 +935,9 @@ documentation has useful tips on creating an effective description. //-->
 		
 		
 		 data-icon-after="add"
+		
+		
+		
 		>
 		Tertiary Plain with right icon
 	</button>
@@ -835,6 +950,9 @@ documentation has useful tips on creating an effective description. //-->
 		 disabled
 		
 		 data-icon-after="add"
+		
+		
+		
 		>
 		Tertiary Plain with right icon(disabled)
 	</button>
@@ -845,6 +963,9 @@ documentation has useful tips on creating an effective description. //-->
 		
 		title="Title text"
 		type="button"
+		
+		
+		
 		
 		
 		
@@ -861,6 +982,9 @@ documentation has useful tips on creating an effective description. //-->
 		 disabled
 		
 		
+		
+		
+		
 		>
 		Tertiary Plain without left icon (disabled)
 	</button>
@@ -875,6 +999,9 @@ documentation has useful tips on creating an effective description. //-->
 		
 		 data-icon="done"
 		
+		
+		
+		
 		>
 		Tertiary Plain displaying only the icon
 	</button>
@@ -886,6 +1013,9 @@ documentation has useful tips on creating an effective description. //-->
 		
 		 disabled
 		 data-icon="done"
+		
+		
+		
 		
 		>
 		Tertiary Plain displaying only the icon
@@ -946,7 +1076,10 @@ documentation has useful tips on creating an effective description. //-->
 			
 			 data-icon="add"
 			
-			 aria-label="Small">
+			 aria-label="Small"
+			
+			
+			>
 			Brand Primary
 		</button>
 		<button class="elm-button "
@@ -958,7 +1091,10 @@ documentation has useful tips on creating an effective description. //-->
 			 disabled
 			 data-icon="add"
 			
-			 aria-label="Small">
+			 aria-label="Small"
+			
+			
+			>
 			Brand Primary (disabled)
 		</button>
 	</p>
@@ -972,7 +1108,10 @@ documentation has useful tips on creating an effective description. //-->
 		
 		
 		 data-icon-after="add"
-		 aria-label="Small">
+		 aria-label="Small"
+		
+		
+		>
 		Brand Primary with right icon
 	</button>
 	<button class="elm-button "
@@ -984,7 +1123,10 @@ documentation has useful tips on creating an effective description. //-->
 		 disabled
 		
 		 data-icon-after="add"
-		 aria-label="Small">
+		 aria-label="Small"
+		
+		
+		>
 		Brand Primary with right icon(disabled)
 	</button>
 	</p>
@@ -998,7 +1140,10 @@ documentation has useful tips on creating an effective description. //-->
 			
 			
 			
-			 aria-label="Small">
+			 aria-label="Small"
+			
+			
+			>
 			Brand Primary without icon
 		</button>
 		<button class="elm-button "
@@ -1010,7 +1155,10 @@ documentation has useful tips on creating an effective description. //-->
 			 disabled
 			
 			
-			 aria-label="Small">
+			 aria-label="Small"
+			
+			
+			>
 			Brand Primary without icon (disabled)
 		</button>
 	</p>
@@ -1024,7 +1172,10 @@ documentation has useful tips on creating an effective description. //-->
 			
 			 data-icon="done"
 			
-			 aria-label="Small">
+			 aria-label="Small"
+			
+			
+			>
 			Brand Primary displaying only the icon
 		</button>
 		<button class="elm-button is-icon-text-replace"
@@ -1036,7 +1187,10 @@ documentation has useful tips on creating an effective description. //-->
 			 disabled
 			 data-icon="done"
 			
-			 aria-label="Small">
+			 aria-label="Small"
+			
+			
+			>
 			Brand Primary displaying only the icon
 		</button>
 	</p>
@@ -1052,7 +1206,10 @@ documentation has useful tips on creating an effective description. //-->
 			
 			 data-icon="add"
 			
-			 aria-label="Regular (default, data-size attribute is optional)">
+			 aria-label="Regular (default, data-size attribute is optional)"
+			
+			
+			>
 			Brand Primary
 		</button>
 		<button class="elm-button "
@@ -1064,7 +1221,10 @@ documentation has useful tips on creating an effective description. //-->
 			 disabled
 			 data-icon="add"
 			
-			 aria-label="Regular (default, data-size attribute is optional)">
+			 aria-label="Regular (default, data-size attribute is optional)"
+			
+			
+			>
 			Brand Primary (disabled)
 		</button>
 	</p>
@@ -1078,7 +1238,10 @@ documentation has useful tips on creating an effective description. //-->
 		
 		
 		 data-icon-after="add"
-		 aria-label="Regular (default, data-size attribute is optional)">
+		 aria-label="Regular (default, data-size attribute is optional)"
+		
+		
+		>
 		Brand Primary with right icon
 	</button>
 	<button class="elm-button "
@@ -1090,7 +1253,10 @@ documentation has useful tips on creating an effective description. //-->
 		 disabled
 		
 		 data-icon-after="add"
-		 aria-label="Regular (default, data-size attribute is optional)">
+		 aria-label="Regular (default, data-size attribute is optional)"
+		
+		
+		>
 		Brand Primary with right icon(disabled)
 	</button>
 	</p>
@@ -1104,7 +1270,10 @@ documentation has useful tips on creating an effective description. //-->
 			
 			
 			
-			 aria-label="Regular (default, data-size attribute is optional)">
+			 aria-label="Regular (default, data-size attribute is optional)"
+			
+			
+			>
 			Brand Primary without icon
 		</button>
 		<button class="elm-button "
@@ -1116,7 +1285,10 @@ documentation has useful tips on creating an effective description. //-->
 			 disabled
 			
 			
-			 aria-label="Regular (default, data-size attribute is optional)">
+			 aria-label="Regular (default, data-size attribute is optional)"
+			
+			
+			>
 			Brand Primary without icon (disabled)
 		</button>
 	</p>
@@ -1130,7 +1302,10 @@ documentation has useful tips on creating an effective description. //-->
 			
 			 data-icon="done"
 			
-			 aria-label="Regular (default, data-size attribute is optional)">
+			 aria-label="Regular (default, data-size attribute is optional)"
+			
+			
+			>
 			Brand Primary displaying only the icon
 		</button>
 		<button class="elm-button is-icon-text-replace"
@@ -1142,7 +1317,10 @@ documentation has useful tips on creating an effective description. //-->
 			 disabled
 			 data-icon="done"
 			
-			 aria-label="Regular (default, data-size attribute is optional)">
+			 aria-label="Regular (default, data-size attribute is optional)"
+			
+			
+			>
 			Brand Primary displaying only the icon
 		</button>
 	</p>
@@ -1158,7 +1336,10 @@ documentation has useful tips on creating an effective description. //-->
 			
 			 data-icon="add"
 			
-			 aria-label="Large">
+			 aria-label="Large"
+			
+			
+			>
 			Brand Primary
 		</button>
 		<button class="elm-button "
@@ -1170,7 +1351,10 @@ documentation has useful tips on creating an effective description. //-->
 			 disabled
 			 data-icon="add"
 			
-			 aria-label="Large">
+			 aria-label="Large"
+			
+			
+			>
 			Brand Primary (disabled)
 		</button>
 	</p>
@@ -1184,7 +1368,10 @@ documentation has useful tips on creating an effective description. //-->
 		
 		
 		 data-icon-after="add"
-		 aria-label="Large">
+		 aria-label="Large"
+		
+		
+		>
 		Brand Primary with right icon
 	</button>
 	<button class="elm-button "
@@ -1196,7 +1383,10 @@ documentation has useful tips on creating an effective description. //-->
 		 disabled
 		
 		 data-icon-after="add"
-		 aria-label="Large">
+		 aria-label="Large"
+		
+		
+		>
 		Brand Primary with right icon(disabled)
 	</button>
 	</p>
@@ -1210,7 +1400,10 @@ documentation has useful tips on creating an effective description. //-->
 			
 			
 			
-			 aria-label="Large">
+			 aria-label="Large"
+			
+			
+			>
 			Brand Primary without icon
 		</button>
 		<button class="elm-button "
@@ -1222,7 +1415,10 @@ documentation has useful tips on creating an effective description. //-->
 			 disabled
 			
 			
-			 aria-label="Large">
+			 aria-label="Large"
+			
+			
+			>
 			Brand Primary without icon (disabled)
 		</button>
 	</p>
@@ -1236,7 +1432,10 @@ documentation has useful tips on creating an effective description. //-->
 			
 			 data-icon="done"
 			
-			 aria-label="Large">
+			 aria-label="Large"
+			
+			
+			>
 			Brand Primary displaying only the icon
 		</button>
 		<button class="elm-button is-icon-text-replace"
@@ -1248,7 +1447,10 @@ documentation has useful tips on creating an effective description. //-->
 			 disabled
 			 data-icon="done"
 			
-			 aria-label="Large">
+			 aria-label="Large"
+			
+			
+			>
 			Brand Primary displaying only the icon
 		</button>
 	</p>
@@ -1257,6 +1459,83 @@ documentation has useful tips on creating an effective description. //-->
 		
 			<script type="text/json" id="pl-pattern-data-elements-button-sizes" class="pl-js-pattern-data">
 			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"lineage":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button Sizes","patternPartial":"elements-button-sizes","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="elements-button-width" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/elements-buttons-10-button-width&#x2F;elements-buttons-10-button-width.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-button-width" title="Link to Pattern">
+						Button Width
+		
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-button-width" data-patternpartial="elements-button-width" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-button-width">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			<p>
+	<button class="elm-button "
+		data-variant="brand-primary"
+		
+		title="Title text"
+		type="button"
+		
+		
+		
+		
+		
+		
+		
+		>
+		(Default) Auto width
+	</button>
+	<!-- [html-validate-disable-next no-inline-style -- we're doing inline-styling for simplification here] -->
+	<span style="width: 500px;display:inline-block;"><button class="elm-button "
+	data-variant="brand-primary"
+	
+	title="Title text"
+	type="button"
+	
+	
+	
+	
+	
+	 data-width="full"
+	
+	>
+	Width full
+</button>
+</span>
+</p>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-elements-button-width" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"lineage":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"buttons"},"patternExtension":"hbs","patternName":"Button Width","patternPartial":"elements-button-width","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -1899,282 +2178,202 @@ documentation has useful tips on creating an effective description. //-->
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-					<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-		<input
+					<input
 			class="elm-chip"
 			type="checkbox"
 			id="chip-multiple-chip01"
 			data-type="filter"
 			>
-		<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 		<label
 			for="chip-multiple-chip01"
-			role="button"
 			
 			
 			
-			tabindex="0"
-			aria-hidden="true"
 			>Title</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-light0"
 				data-type="filter"
 				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-light0"
-				role="button"
 				 data-variant="light"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Light</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-warning1"
 				data-type="filter"
 				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-warning1"
-				role="button"
 				 data-variant="warning"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Warning</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-error2"
 				data-type="filter"
 				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-error2"
-				role="button"
 				 data-variant="error"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Error</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-informative3"
 				data-type="filter"
 				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-informative3"
-				role="button"
 				 data-variant="informative"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Informative</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-success4"
 				data-type="filter"
 				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-success4"
-				role="button"
 				 data-variant="success"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Success</label>
 
 	<!-- [html-validate-disable-next heading-level] -->
 	<!-- [html-validate-disable-next heading-level, no-unused-disable -- we're doing some simple demonstration simplification here] -->
 	<h3 class="elm-headline ">POIs</h3>
 
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-poi-essen-trinken0"
 				data-type="filter"
 				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-poi-essen-trinken0"
-				role="button"
 				 data-variant="poi-essen-trinken"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Essen &amp; Trinken</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-poi-einkaufen1"
 				data-type="filter"
 				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-poi-einkaufen1"
-				role="button"
 				 data-variant="poi-einkaufen"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Einkaufen</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-poi-gesundheit2"
 				data-type="filter"
 				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-poi-gesundheit2"
-				role="button"
 				 data-variant="poi-gesundheit"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Gesundheit</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-poi-kunst-kultur3"
 				data-type="filter"
 				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-poi-kunst-kultur3"
-				role="button"
 				 data-variant="poi-kunst-kultur"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Kunst &amp; Kultur</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-poi-wissenswertes4"
 				data-type="filter"
 				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-poi-wissenswertes4"
-				role="button"
 				 data-variant="poi-wissenswertes"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Wissenswertes</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-poi-freizeit5"
 				data-type="filter"
 				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-poi-freizeit5"
-				role="button"
 				 data-variant="poi-freizeit"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Freizeit</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-poi-zivile-rel-einrichtungen6"
 				data-type="filter"
 				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-poi-zivile-rel-einrichtungen6"
-				role="button"
 				 data-variant="poi-zivile-rel-einrichtungen"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Zivile &amp; reli. Einrichtungen</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-poi-dienstleistungen7"
 				data-type="filter"
 				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-poi-dienstleistungen7"
-				role="button"
 				 data-variant="poi-dienstleistungen"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Dienstleistungen</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-poi-db-services-einrichtung8"
 				data-type="filter"
 				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-poi-db-services-einrichtung8"
-				role="button"
 				 data-variant="poi-db-services-einrichtung"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>DB Services &amp; Einrichtung</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
 				id="chip-multiple-poi-wegeleitung9"
 				data-type="filter"
 				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-multiple-poi-wegeleitung9"
-				role="button"
 				 data-variant="poi-wegeleitung"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Wegeleitung</label>
 
 			</div><!--end pl-js-pattern-example-->
@@ -2219,25 +2418,19 @@ documentation has useful tips on creating an effective description. //-->
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-					<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-		<input
+					<input
 			class="elm-chip"
 			type="radio"
 			id="chip-single-chip01"
 			name="selection"
 			data-type="selection"
 			>
-		<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 		<label
 			for="chip-single-chip01"
-			role="button"
 			
 			
 			
-			tabindex="0"
-			aria-hidden="true"
 			>Title</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="radio"
@@ -2245,17 +2438,12 @@ documentation has useful tips on creating an effective description. //-->
 				name="selection"
 				data-type="selection"
 				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-single-light0"
-				role="button"
 				 data-variant="light"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Light</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="radio"
@@ -2263,17 +2451,12 @@ documentation has useful tips on creating an effective description. //-->
 				name="selection"
 				data-type="selection"
 				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-single-warning1"
-				role="button"
 				 data-variant="warning"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Warning</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="radio"
@@ -2281,17 +2464,12 @@ documentation has useful tips on creating an effective description. //-->
 				name="selection"
 				data-type="selection"
 				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-single-error2"
-				role="button"
 				 data-variant="error"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Error</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="radio"
@@ -2299,17 +2477,12 @@ documentation has useful tips on creating an effective description. //-->
 				name="selection"
 				data-type="selection"
 				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-single-informative3"
-				role="button"
 				 data-variant="informative"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Informative</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="radio"
@@ -2317,22 +2490,17 @@ documentation has useful tips on creating an effective description. //-->
 				name="selection"
 				data-type="selection"
 				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-single-success4"
-				role="button"
 				 data-variant="success"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Success</label>
 
 	<!-- [html-validate-disable-next heading-level] -->
 	<!-- [html-validate-disable-next heading-level, no-unused-disable -- we're doing some simple demonstration simplification here] -->
 	<h3 class="elm-headline ">POIs</h3>
 
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="radio"
@@ -2340,17 +2508,12 @@ documentation has useful tips on creating an effective description. //-->
 				name="selection"
 				data-type="selection"
 				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-single-poi-essen-trinken0"
-				role="button"
 				 data-variant="poi-essen-trinken"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Essen &amp; Trinken</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="radio"
@@ -2358,17 +2521,12 @@ documentation has useful tips on creating an effective description. //-->
 				name="selection"
 				data-type="selection"
 				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-single-poi-einkaufen1"
-				role="button"
 				 data-variant="poi-einkaufen"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Einkaufen</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="radio"
@@ -2376,17 +2534,12 @@ documentation has useful tips on creating an effective description. //-->
 				name="selection"
 				data-type="selection"
 				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-single-poi-gesundheit2"
-				role="button"
 				 data-variant="poi-gesundheit"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Gesundheit</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="radio"
@@ -2394,17 +2547,12 @@ documentation has useful tips on creating an effective description. //-->
 				name="selection"
 				data-type="selection"
 				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-single-poi-kunst-kultur3"
-				role="button"
 				 data-variant="poi-kunst-kultur"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Kunst &amp; Kultur</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="radio"
@@ -2412,17 +2560,12 @@ documentation has useful tips on creating an effective description. //-->
 				name="selection"
 				data-type="selection"
 				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-single-poi-wissenswertes4"
-				role="button"
 				 data-variant="poi-wissenswertes"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Wissenswertes</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="radio"
@@ -2430,17 +2573,12 @@ documentation has useful tips on creating an effective description. //-->
 				name="selection"
 				data-type="selection"
 				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-single-poi-freizeit5"
-				role="button"
 				 data-variant="poi-freizeit"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Freizeit</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="radio"
@@ -2448,17 +2586,12 @@ documentation has useful tips on creating an effective description. //-->
 				name="selection"
 				data-type="selection"
 				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-single-poi-zivile-rel-einrichtungen6"
-				role="button"
 				 data-variant="poi-zivile-rel-einrichtungen"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Zivile &amp; reli. Einrichtungen</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="radio"
@@ -2466,17 +2599,12 @@ documentation has useful tips on creating an effective description. //-->
 				name="selection"
 				data-type="selection"
 				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-single-poi-dienstleistungen7"
-				role="button"
 				 data-variant="poi-dienstleistungen"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Dienstleistungen</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="radio"
@@ -2484,17 +2612,12 @@ documentation has useful tips on creating an effective description. //-->
 				name="selection"
 				data-type="selection"
 				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-single-poi-db-services-einrichtung8"
-				role="button"
 				 data-variant="poi-db-services-einrichtung"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>DB Services &amp; Einrichtung</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="radio"
@@ -2502,15 +2625,11 @@ documentation has useful tips on creating an effective description. //-->
 				name="selection"
 				data-type="selection"
 				>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
 				for="chip-single-poi-wegeleitung9"
-				role="button"
 				 data-variant="poi-wegeleitung"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Wegeleitung</label>
 
 			</div><!--end pl-js-pattern-example-->
@@ -2555,58 +2674,43 @@ documentation has useful tips on creating an effective description. //-->
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-					<p>	<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-	<input
+					<p>	<input
 		class="elm-chip"
 		type="checkbox"
 		id="chip-multiple-0"
 		data-type="filter"
 		>
-	<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 	<label
 		for="chip-multiple-0"
-		role="button"
 		
 		 data-icon="alert"
 		
-		tabindex="0"
-		aria-hidden="true"
 		>Title</label>
 </p>
-		<p>	<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-	<input
+		<p>	<input
 		class="elm-chip"
 		type="checkbox"
 		id="chip-multiple-1"
 		data-type="filter"
 		>
-	<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 	<label
 		for="chip-multiple-1"
-		role="button"
 		
 		
 		 data-icon-after="account"
-		tabindex="0"
-		aria-hidden="true"
 		>Title</label>
 </p>
-		<p>	<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-	<input
+		<p>	<input
 		class="elm-chip"
 		type="checkbox"
 		id="chip-multiple-2"
 		data-type="filter"
 		>
-	<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 	<label
 		for="chip-multiple-2"
-		role="button"
 		
 		 data-icon="alert"
 		 data-icon-after="account"
-		tabindex="0"
-		aria-hidden="true"
 		>Title</label>
 </p>
 
@@ -2652,282 +2756,202 @@ documentation has useful tips on creating an effective description. //-->
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-					<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
-		<input
+					<input
 			class="elm-chip"
 			type="checkbox"
-			id="chip-multiple-chip01"
+			id="chip-multiple-disabled-chip01"
 			data-type="filter"
 			 disabled>
-		<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 		<label
-			for="chip-multiple-chip01"
-			role="button"
+			for="chip-multiple-disabled-chip01"
 			
 			
 			
-			tabindex="0"
-			aria-hidden="true"
 			>Title</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
-				id="chip-multiple-light0"
+				id="chip-multiple-disabled-light0"
 				data-type="filter"
 				 disabled>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
-				for="chip-multiple-light0"
-				role="button"
+				for="chip-multiple-disabled-light0"
 				 data-variant="light"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Light</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
-				id="chip-multiple-warning1"
+				id="chip-multiple-disabled-warning1"
 				data-type="filter"
 				 disabled>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
-				for="chip-multiple-warning1"
-				role="button"
+				for="chip-multiple-disabled-warning1"
 				 data-variant="warning"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Warning</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
-				id="chip-multiple-error2"
+				id="chip-multiple-disabled-error2"
 				data-type="filter"
 				 disabled>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
-				for="chip-multiple-error2"
-				role="button"
+				for="chip-multiple-disabled-error2"
 				 data-variant="error"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Error</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
-				id="chip-multiple-informative3"
+				id="chip-multiple-disabled-informative3"
 				data-type="filter"
 				 disabled>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
-				for="chip-multiple-informative3"
-				role="button"
+				for="chip-multiple-disabled-informative3"
 				 data-variant="informative"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Informative</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
-				id="chip-multiple-success4"
+				id="chip-multiple-disabled-success4"
 				data-type="filter"
 				 disabled>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
-				for="chip-multiple-success4"
-				role="button"
+				for="chip-multiple-disabled-success4"
 				 data-variant="success"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Success</label>
 
 	<!-- [html-validate-disable-next heading-level] -->
 	<!-- [html-validate-disable-next heading-level, no-unused-disable -- we're doing some simple demonstration simplification here] -->
 	<h3 class="elm-headline ">POIs</h3>
 
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
-				id="chip-multiple-poi-essen-trinken0"
+				id="chip-multiple-disabled-poi-essen-trinken0"
 				data-type="filter"
 				 disabled>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
-				for="chip-multiple-poi-essen-trinken0"
-				role="button"
+				for="chip-multiple-disabled-poi-essen-trinken0"
 				 data-variant="poi-essen-trinken"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Essen &amp; Trinken</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
-				id="chip-multiple-poi-einkaufen1"
+				id="chip-multiple-disabled-poi-einkaufen1"
 				data-type="filter"
 				 disabled>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
-				for="chip-multiple-poi-einkaufen1"
-				role="button"
+				for="chip-multiple-disabled-poi-einkaufen1"
 				 data-variant="poi-einkaufen"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Einkaufen</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
-				id="chip-multiple-poi-gesundheit2"
+				id="chip-multiple-disabled-poi-gesundheit2"
 				data-type="filter"
 				 disabled>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
-				for="chip-multiple-poi-gesundheit2"
-				role="button"
+				for="chip-multiple-disabled-poi-gesundheit2"
 				 data-variant="poi-gesundheit"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Gesundheit</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
-				id="chip-multiple-poi-kunst-kultur3"
+				id="chip-multiple-disabled-poi-kunst-kultur3"
 				data-type="filter"
 				 disabled>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
-				for="chip-multiple-poi-kunst-kultur3"
-				role="button"
+				for="chip-multiple-disabled-poi-kunst-kultur3"
 				 data-variant="poi-kunst-kultur"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Kunst &amp; Kultur</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
-				id="chip-multiple-poi-wissenswertes4"
+				id="chip-multiple-disabled-poi-wissenswertes4"
 				data-type="filter"
 				 disabled>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
-				for="chip-multiple-poi-wissenswertes4"
-				role="button"
+				for="chip-multiple-disabled-poi-wissenswertes4"
 				 data-variant="poi-wissenswertes"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Wissenswertes</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
-				id="chip-multiple-poi-freizeit5"
+				id="chip-multiple-disabled-poi-freizeit5"
 				data-type="filter"
 				 disabled>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
-				for="chip-multiple-poi-freizeit5"
-				role="button"
+				for="chip-multiple-disabled-poi-freizeit5"
 				 data-variant="poi-freizeit"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Freizeit</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
-				id="chip-multiple-poi-zivile-rel-einrichtungen6"
+				id="chip-multiple-disabled-poi-zivile-rel-einrichtungen6"
 				data-type="filter"
 				 disabled>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
-				for="chip-multiple-poi-zivile-rel-einrichtungen6"
-				role="button"
+				for="chip-multiple-disabled-poi-zivile-rel-einrichtungen6"
 				 data-variant="poi-zivile-rel-einrichtungen"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Zivile &amp; reli. Einrichtungen</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
-				id="chip-multiple-poi-dienstleistungen7"
+				id="chip-multiple-disabled-poi-dienstleistungen7"
 				data-type="filter"
 				 disabled>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
-				for="chip-multiple-poi-dienstleistungen7"
-				role="button"
+				for="chip-multiple-disabled-poi-dienstleistungen7"
 				 data-variant="poi-dienstleistungen"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Dienstleistungen</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
-				id="chip-multiple-poi-db-services-einrichtung8"
+				id="chip-multiple-disabled-poi-db-services-einrichtung8"
 				data-type="filter"
 				 disabled>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
-				for="chip-multiple-poi-db-services-einrichtung8"
-				role="button"
+				for="chip-multiple-disabled-poi-db-services-einrichtung8"
 				 data-variant="poi-db-services-einrichtung"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>DB Services &amp; Einrichtung</label>
-			<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
 			<input
 				class="elm-chip"
 				type="checkbox"
-				id="chip-multiple-poi-wegeleitung9"
+				id="chip-multiple-disabled-poi-wegeleitung9"
 				data-type="filter"
 				 disabled>
-			<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
 			<label
-				for="chip-multiple-poi-wegeleitung9"
-				role="button"
+				for="chip-multiple-disabled-poi-wegeleitung9"
 				 data-variant="poi-wegeleitung"
 				
 				
-				tabindex="0"
-				aria-hidden="true"
 				>Wegeleitung</label>
 
 			</div><!--end pl-js-pattern-example-->
@@ -2945,7 +2969,7 @@ documentation has useful tips on creating an effective description. //-->
 		
 			<div class="pl-c-category__description pl-c-text-passage">
 				<h2>Pulse</h2>
-<p>You could add the DB Pulse to the headline element by adding the <code>data-pulse</code> attribute – we're taking care of sizing it accordingly to the DB logo if this one is also present on the same page, as defined by the rules on the Marketingportal regarding the <a href="https://marketingportal.extranet.deutschebahn.com/marketingportal/Design-Anwendungen/DB-UX-Design-System/Design-fuer-Apps-Web/Logo">logo</a> and the <a href="https://marketingportal.extranet.deutschebahn.com/marketingportal/Design-Anwendungen/DB-UX-Design-System/Design-fuer-Apps-Web/Puls">pulse</a>.</p>
+<p>You could add the DB Pulse to the headline element by adding the <code>data-pulse</code> attribute – we're taking care of sizing it accordingly to the DB logo if this one is also present on the same page, as defined by the rules on the Marketingportal regarding the <a href="https://marketingportal.extranet.deutschebahn.com/marketingportal/Design-Anwendungen/db-ux-design-system/version-2/foundation/Logo">logo</a> and the <a href="https://marketingportal.extranet.deutschebahn.com/marketingportal/Design-Anwendungen/db-ux-design-system/version-2/foundation/Puls">pulse</a>.</p>
 
 			</div><!--end pl-c-category__description-->
 			
@@ -3477,7 +3501,7 @@ documentation has useful tips on creating an effective description. //-->
 <p>The attribute doesn't even only take boolean values, but even also a list of specific field types, as described in the specification: <a href="https://html.spec.whatwg.org/multipage/forms.html#inappropriate-for-the-control">https://html.spec.whatwg.org/multipage/forms.html#inappropriate-for-the-control</a></p>
 <h2>Form validation</h2>
 <p>Please have a look especially at the section for form validation within the overall <a href="../components-form/index.html">components/forms</a> page.</p>
-<p>Additionally to the browser built-in pseudo-selector <code>:invalid</code> we're providing styling for the <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_attribute"><code>aria-invalid=&quot;true&quot;</code> attribute</a> as well.</p>
+<p>Additionally to the browser built-in pseudo-selector <code>:user-invalid</code> we're providing styling for the <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_attribute"><code>aria-invalid=&quot;true&quot;</code> attribute</a> as well.</p>
 <h2>Accessibility support</h2>
 <p>For our special construct (the order of the <code>label</code> and <code>input</code> HTML tags) we need to additionaly set some further attributes on those HTML tags to better support assistive tools (screenreaders like JAWS and VoiceOver); set the <code>aria-labelledby</code>-attribute on the <code>input</code> and related <code>id</code> on the <code>label</code> as well as <code>aria-hidden=&quot;true&quot;</code>, e.g. like this:</p>
 <pre><code class="language-html">&lt;input
@@ -3547,12 +3571,14 @@ documentation has useful tips on creating an effective description. //-->
 	
 	
 	aria-labelledby="input16-label"
-	 data-variant="semitransparent">
+	 data-variant="semitransparent"
+	>
 <label class="elm-label"
 	for="input16"
 	aria-hidden="true"
 	id="input16-label"
 	>Textlabel</label>
+
 
 
 </dd>
@@ -3570,12 +3596,14 @@ documentation has useful tips on creating an effective description. //-->
 	
 	
 	aria-labelledby="input17-label"
-	 data-variant="white">
+	 data-variant="white"
+	>
 <label class="elm-label"
 	for="input17"
 	aria-hidden="true"
 	id="input17-label"
 	>Textlabel</label>
+
 
 
 </dd>
@@ -3593,12 +3621,14 @@ documentation has useful tips on creating an effective description. //-->
 	
 	
 	aria-labelledby="input18-label"
-	 data-variant="solid">
+	 data-variant="solid"
+	>
 <label class="elm-label"
 	for="input18"
 	aria-hidden="true"
 	id="input18-label"
 	>Textlabel</label>
+
 
 
 </dd>
@@ -3616,12 +3646,14 @@ documentation has useful tips on creating an effective description. //-->
 	
 	
 	aria-labelledby="input19-label"
-	 data-variant="outline">
+	 data-variant="outline"
+	>
 <label class="elm-label"
 	for="input19"
 	aria-hidden="true"
 	id="input19-label"
 	>Textlabel</label>
+
 
 
 </dd>
@@ -3682,12 +3714,14 @@ documentation has useful tips on creating an effective description. //-->
 	
 	
 	aria-labelledby="input01-label"
+	
 	>
 <label class="elm-label"
 	for="input01"
 	aria-hidden="true"
 	id="input01-label"
 	>Textlabel</label>
+
 
 
 
@@ -3746,12 +3780,14 @@ documentation has useful tips on creating an effective description. //-->
 	
 	 list="datalistinput09"
 	aria-labelledby="input09-label"
+	
 	>
 <label class="elm-label"
 	for="input09"
 	aria-hidden="true"
 	id="input09-label"
 	>Textlabel</label>
+
 
 <datalist id="datalistinput09">
 		<option value="Apple Computers">Apple</option>
@@ -3814,12 +3850,14 @@ documentation has useful tips on creating an effective description. //-->
 	
 	
 	aria-labelledby="input02-label"
+	
 	>
 <label class="elm-label"
 	for="input02"
 	aria-hidden="true"
 	id="input02-label"
 	>Textlabel</label>
+
 <p id="input02hint" class="description">Optionale Beschreibung<br>Zeile zwei</p>
 
 
@@ -3878,12 +3916,14 @@ documentation has useful tips on creating an effective description. //-->
 	
 	
 	aria-labelledby="input03-label"
+	
 	>
 <label class="elm-label"
 	for="input03"
 	aria-hidden="true"
 	id="input03-label"
 	>Textlabel</label>
+
 <p id="input03hint" class="description">Optionale Beschreibung<br>Zeile zwei</p>
 
 
@@ -3942,12 +3982,14 @@ documentation has useful tips on creating an effective description. //-->
 	 minlength="3" required
 	
 	aria-labelledby="input04-label"
+	
 	>
 <label class="elm-label"
 	for="input04"
 	aria-hidden="true"
 	id="input04-label"
 	>Textlabel</label>
+
 
 
 
@@ -4006,12 +4048,14 @@ documentation has useful tips on creating an effective description. //-->
 	 minlength="5" required
 	
 	aria-labelledby="input06-label"
+	
 	>
 <label class="elm-label"
 	for="input06"
 	aria-hidden="true"
 	id="input06-label"
 	>Textlabel</label>
+
 <p id="input06hint" class="description">Optionale Beschreibung<br>Zeile zwei</p>
 
 
@@ -4071,19 +4115,21 @@ documentation has useful tips on creating an effective description. //-->
 	 minlength="5"
 	
 	aria-labelledby="input15-label"
+	
 	>
 <label class="elm-label"
 	for="input15"
 	aria-hidden="true"
 	id="input15-label"
 	>Textlabel</label>
+
 <p id="input15hint" class="description">Optionale Beschreibung<br>Zeile zwei</p>
 
 
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-elements-input-invalid-attribute" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<h2>Form validation</h2>\n<p>Please have a look especially at the section for form validation within the overall <a href=\"../components-form/index.html\">components/forms</a> page.</p>\n<p>Additionally to the browser built-in pseudo-selector <code>:invalid</code> we're providing styling for the <a href=\"https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_attribute\"><code>aria-invalid=&quot;true&quot;</code> attribute</a> as well.</p>\n","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"input"},"patternExtension":"hbs","patternName":"Input - Invalid state by HTML attribute","patternPartial":"elements-input-invalid-attribute","patternState":"complete","patternEngineName":"handlebars","extraOutput":{"order":7}}
+			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<h2>Form validation</h2>\n<p>Please have a look especially at the section for form validation within the overall <a href=\"../components-form/index.html\">components/forms</a> page.</p>\n<p>Additionally to the browser built-in pseudo-selector <code>:user-invalid</code> we're providing styling for the <a href=\"https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_attribute\"><code>aria-invalid=&quot;true&quot;</code> attribute</a> as well.</p>\n","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"input"},"patternExtension":"hbs","patternName":"Input - Invalid state by HTML attribute","patternPartial":"elements-input-invalid-attribute","patternState":"complete","patternEngineName":"handlebars","extraOutput":{"order":7}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -4135,12 +4181,14 @@ documentation has useful tips on creating an effective description. //-->
 	
 	
 	aria-labelledby="input05-label"
+	
 	>
 <label class="elm-label"
 	for="input05"
 	aria-hidden="true"
 	id="input05-label"
 	>Textlabel</label>
+
 
 
 
@@ -4199,12 +4247,14 @@ documentation has useful tips on creating an effective description. //-->
 	
 	
 	aria-labelledby="input07-label"
+	
 	>
 <label class="elm-label"
 	for="input07"
 	aria-hidden="true"
 	id="input07-label"
 	>Textlabel</label>
+
 
 
 
@@ -4263,12 +4313,14 @@ documentation has useful tips on creating an effective description. //-->
 	
 	
 	aria-labelledby="input08-label"
+	
 	>
 <label class="elm-label"
 	for="input08"
 	aria-hidden="true"
 	id="input08-label"
 	>Textlabel</label>
+
 
 
 
@@ -4328,12 +4380,14 @@ documentation has useful tips on creating an effective description. //-->
 	
 	
 	aria-labelledby="input20-label"
+	
 	>
 <label class="elm-label"
 	for="input20"
 	aria-hidden="true"
 	id="input20-label"
 	 data-label-hidden="true">Textlabel</label>
+
 
 
 
@@ -5108,7 +5162,7 @@ For optimal user experience, use the aria-description prop to let assistive tech
 			</h2><!--end pl-c-category__title-->
 		
 			<div class="pl-c-category__description pl-c-text-passage">
-				<p>Please find a lot of more information regarding our logo and how to use it within the <a href="https://marketingportal.extranet.deutschebahn.com/marketingportal/Design-Anwendungen/DB-UX-Design-System/Design-fuer-Apps-Web/Logo">Marketingportal</a>.</p>
+				<p>Please find a lot of more information regarding our logo and how to use it within the <a href="https://marketingportal.extranet.deutschebahn.com/marketingportal/Design-Anwendungen/db-ux-design-system/version-2/foundation/Logo">Marketingportal</a>.</p>
 <h2>Adapt logos colors (background and fill)</h2>
 <p>You could easily change the line-colors of the logo as well as the background color by defining different color values for both CSS variables:</p>
 <ul>
@@ -5570,7 +5624,7 @@ For optimal user experience, use the aria-description prop to let assistive tech
 			<div class="pl-c-category__description pl-c-text-passage">
 				<h2>Form validation</h2>
 <p>Please have a look especially at the section for form validation within the overall <a href="../components-form/index.html">components/forms</a> page.</p>
-<p>Additionally to the browser built-in pseudo-selector <code>:invalid</code> we're providing styling for the <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_attribute"><code>aria-invalid=&quot;true&quot;</code> attribute</a> as well.</p>
+<p>Additionally to the browser built-in pseudo-selector <code>:user-invalid</code> we're providing styling for the <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_attribute"><code>aria-invalid=&quot;true&quot;</code> attribute</a> as well.</p>
 
 			</div><!--end pl-c-category__description-->
 			
@@ -5614,38 +5668,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radio"
-	id="id-e8f337ff-b650-4838-ad78-e52c3ed7e61f"
+	id="id-ec087dc7-44f9-4c57-a837-04cbd7d95645"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-e8f337ff-b650-4838-ad78-e52c3ed7e61f">Radio 01</label>
+<label class="elm-label" for="id-ec087dc7-44f9-4c57-a837-04cbd7d95645">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radio"
-	id="id-fc9ea65d-679a-40c7-a0b9-2b27f9315a32"
+	id="id-e99d88e3-3ed9-4a27-b20b-354dd8678b23"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-fc9ea65d-679a-40c7-a0b9-2b27f9315a32">Radio 02</label>
+<label class="elm-label" for="id-e99d88e3-3ed9-4a27-b20b-354dd8678b23">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radio"
-	id="id-3b3169d0-fd95-473a-b583-e6d013181582"
+	id="id-0b5bf1fd-f0a0-45fe-8cd9-ddf01da0a039"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-3b3169d0-fd95-473a-b583-e6d013181582">Radio 03</label>
+<label class="elm-label" for="id-0b5bf1fd-f0a0-45fe-8cd9-ddf01da0a039">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -5694,38 +5748,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radioChecked"
-	id="id-0444cd00-5b6e-48da-8d1b-5181cf95a5ee"
+	id="id-a6500376-4725-422b-ad61-7fc679987fcf"
 	 checked
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-0444cd00-5b6e-48da-8d1b-5181cf95a5ee">Radio 01</label>
+<label class="elm-label" for="id-a6500376-4725-422b-ad61-7fc679987fcf">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioChecked"
-	id="id-2dc948d5-0771-4908-aedc-aa3979831de8"
+	id="id-fdc22956-d170-43fd-a626-e92727974dfa"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-2dc948d5-0771-4908-aedc-aa3979831de8">Radio 02</label>
+<label class="elm-label" for="id-fdc22956-d170-43fd-a626-e92727974dfa">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioChecked"
-	id="id-a0001a82-9473-452e-98f5-60a2fcb60582"
+	id="id-04494695-86de-4e36-b7c6-956ba1c05252"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-a0001a82-9473-452e-98f5-60a2fcb60582">Radio 03</label>
+<label class="elm-label" for="id-04494695-86de-4e36-b7c6-956ba1c05252">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -5774,38 +5828,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radioDisabled"
-	id="id-0aa6fa11-1562-4eca-9fb9-8ac80c31cc7d"
+	id="id-7adf2562-e707-490e-989a-ebcc06d5d157"
 	
 	 disabled
 	
 	
 	
 	>
-<label class="elm-label" for="id-0aa6fa11-1562-4eca-9fb9-8ac80c31cc7d">Radio 01</label>
+<label class="elm-label" for="id-7adf2562-e707-490e-989a-ebcc06d5d157">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioDisabled"
-	id="id-9a180703-ec60-42c3-909b-24f9c91805d0"
+	id="id-ae58362b-6733-4e5d-a092-ac0759e119af"
 	
 	 disabled
 	
 	
 	
 	>
-<label class="elm-label" for="id-9a180703-ec60-42c3-909b-24f9c91805d0">Radio 02</label>
+<label class="elm-label" for="id-ae58362b-6733-4e5d-a092-ac0759e119af">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioDisabled"
-	id="id-5c94606e-4956-4088-a380-adb0a51f2e97"
+	id="id-55f896e9-2de4-4749-8ade-6d5ae6ab43ef"
 	
 	 disabled
 	
 	
 	
 	>
-<label class="elm-label" for="id-5c94606e-4956-4088-a380-adb0a51f2e97">Radio 03</label>
+<label class="elm-label" for="id-55f896e9-2de4-4749-8ade-6d5ae6ab43ef">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -5854,38 +5908,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radioDisabledChecked"
-	id="id-3236090b-fa3d-4889-ad82-5a276e20b320"
+	id="id-50a0bfe9-4386-43c6-9588-36f5889c9bfe"
 	 checked
 	 disabled
 	
 	
 	
 	>
-<label class="elm-label" for="id-3236090b-fa3d-4889-ad82-5a276e20b320">Radio 01</label>
+<label class="elm-label" for="id-50a0bfe9-4386-43c6-9588-36f5889c9bfe">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioDisabledChecked"
-	id="id-e12e7afb-e82b-4475-a8e4-e0f222eff38f"
+	id="id-64bd33b3-89b3-47f7-aaac-850df5235bbb"
 	
 	 disabled
 	
 	
 	
 	>
-<label class="elm-label" for="id-e12e7afb-e82b-4475-a8e4-e0f222eff38f">Radio 02</label>
+<label class="elm-label" for="id-64bd33b3-89b3-47f7-aaac-850df5235bbb">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioDisabledChecked"
-	id="id-aaac683c-5dea-49c0-817f-090b2a0f4d84"
+	id="id-d6ff1a7e-db03-422e-8d8d-8d36869032d3"
 	
 	 disabled
 	
 	
 	
 	>
-<label class="elm-label" for="id-aaac683c-5dea-49c0-817f-090b2a0f4d84">Radio 03</label>
+<label class="elm-label" for="id-d6ff1a7e-db03-422e-8d8d-8d36869032d3">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -5934,38 +5988,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radioInvalid"
-	id="id-46bfad98-6f03-4eab-9da0-f8a689965214"
+	id="id-c0ee83cb-488b-42a0-96e3-7f596b263c30"
 	
 	
 	
 	
 	 aria-invalid="true"
 	>
-<label class="elm-label" for="id-46bfad98-6f03-4eab-9da0-f8a689965214">Radio 01</label>
+<label class="elm-label" for="id-c0ee83cb-488b-42a0-96e3-7f596b263c30">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioInvalid"
-	id="id-46b4a9b3-ef9b-4a35-8ffc-b80171c097ad"
+	id="id-612dbdd4-a168-45c5-b05b-e97974db013d"
 	
 	
 	
 	
 	 aria-invalid="true"
 	>
-<label class="elm-label" for="id-46b4a9b3-ef9b-4a35-8ffc-b80171c097ad">Radio 02</label>
+<label class="elm-label" for="id-612dbdd4-a168-45c5-b05b-e97974db013d">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioInvalid"
-	id="id-88803ec9-4851-4de3-8042-13d1232493b4"
+	id="id-ff6b2c77-7195-4e04-a8df-51994f1187e2"
 	
 	
 	
 	
 	 aria-invalid="true"
 	>
-<label class="elm-label" for="id-88803ec9-4851-4de3-8042-13d1232493b4">Radio 03</label>
+<label class="elm-label" for="id-ff6b2c77-7195-4e04-a8df-51994f1187e2">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -6014,38 +6068,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radioLabelHidden"
-	id="id-14039ec2-55a9-47d8-87cb-6380957d4e5f"
+	id="id-b3ff3161-9343-412b-b42d-67b96a2924a9"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-14039ec2-55a9-47d8-87cb-6380957d4e5f" data-label-hidden="true">Radio 01</label>
+<label class="elm-label" for="id-b3ff3161-9343-412b-b42d-67b96a2924a9" data-label-hidden="true">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioLabelHidden"
-	id="id-d116db35-1889-403e-bc03-fd7b1950ea7e"
+	id="id-85a9314a-fb44-48cd-81a1-a70dffe89784"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-d116db35-1889-403e-bc03-fd7b1950ea7e" data-label-hidden="true">Radio 02</label>
+<label class="elm-label" for="id-85a9314a-fb44-48cd-81a1-a70dffe89784" data-label-hidden="true">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioLabelHidden"
-	id="id-fb62b99b-21a7-4f5f-9f26-35d3b52f1a9c"
+	id="id-68733a10-c627-43e4-ae2e-1c0934a90dd7"
 	
 	
 	
 	
 	
 	>
-<label class="elm-label" for="id-fb62b99b-21a7-4f5f-9f26-35d3b52f1a9c" data-label-hidden="true">Radio 03</label>
+<label class="elm-label" for="id-68733a10-c627-43e4-ae2e-1c0934a90dd7" data-label-hidden="true">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -6094,38 +6148,38 @@ For optimal user experience, use the aria-description prop to let assistive tech
 				<input type="radio"
 	class="elm-radio "
 	name="radioRequired"
-	id="id-33856551-5ee7-41b5-a494-b2694259d123"
+	id="id-4e9a9b50-3397-450e-b704-4a1c01c16ca3"
 	
 	
 	
 	
 	
 	 required>
-<label class="elm-label" for="id-33856551-5ee7-41b5-a494-b2694259d123">Radio 01</label>
+<label class="elm-label" for="id-4e9a9b50-3397-450e-b704-4a1c01c16ca3">Radio 01</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioRequired"
-	id="id-fc2f5e9a-0d1d-4c73-a467-7961bec713a4"
+	id="id-16f6b94c-6ad7-4e6c-ba10-aee07a8279a1"
 	
 	
 	
 	
 	
 	 required>
-<label class="elm-label" for="id-fc2f5e9a-0d1d-4c73-a467-7961bec713a4">Radio 02</label>
+<label class="elm-label" for="id-16f6b94c-6ad7-4e6c-ba10-aee07a8279a1">Radio 02</label>
 <br>
 	<input type="radio"
 	class="elm-radio "
 	name="radioRequired"
-	id="id-14335bde-9635-45ce-93cf-60195a864a37"
+	id="id-d5b1576b-f653-4cee-8513-fdee61d5ca5f"
 	
 	
 	
 	
 	
 	 required>
-<label class="elm-label" for="id-14335bde-9635-45ce-93cf-60195a864a37">Radio 03</label>
+<label class="elm-label" for="id-d5b1576b-f653-4cee-8513-fdee61d5ca5f">Radio 03</label>
 <br>
 
 			</div><!--end pl-js-pattern-example-->
@@ -6146,7 +6200,7 @@ For optimal user experience, use the aria-description prop to let assistive tech
 If you would like to even also match those visual requirements, you would need to choose a progressive JavaScript solution on your own.</p>
 <h2>Form validation</h2>
 <p>Please have a look especially at the section for form validation within the overall <a href="../components-form/index.html">components/forms</a> page.</p>
-<p>Additionally to the browser built-in pseudo-selector <code>:invalid</code> we're providing styling for the <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_attribute"><code>aria-invalid=&quot;true&quot;</code> attribute</a> as well.</p>
+<p>Additionally to the browser built-in pseudo-selector <code>:user-invalid</code> we're providing styling for the <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_attribute"><code>aria-invalid=&quot;true&quot;</code> attribute</a> as well.</p>
 
 			</div><!--end pl-c-category__description-->
 			
@@ -6623,7 +6677,7 @@ If you would like to even also match those visual requirements, you would need t
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-elements-select-invalid-attribute" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<h2>Form validation</h2>\n<p>Please have a look especially at the section for form validation within the overall <a href=\"../components-form/index.html\">components/forms</a> page.</p>\n<p>Additionally to the browser built-in pseudo-selector <code>:invalid</code> we're providing styling for the <a href=\"https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_attribute\"><code>aria-invalid=&quot;true&quot;</code> attribute</a> as well.</p>\n","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"select"},"patternExtension":"hbs","patternName":"Select - Invalid state by HTML attribute","patternPartial":"elements-select-invalid-attribute","patternState":"complete","patternEngineName":"handlebars","extraOutput":{"order":7}}
+			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<h2>Form validation</h2>\n<p>Please have a look especially at the section for form validation within the overall <a href=\"../components-form/index.html\">components/forms</a> page.</p>\n<p>Additionally to the browser built-in pseudo-selector <code>:user-invalid</code> we're providing styling for the <a href=\"https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_attribute\"><code>aria-invalid=&quot;true&quot;</code> attribute</a> as well.</p>\n","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"select"},"patternExtension":"hbs","patternName":"Select - Invalid state by HTML attribute","patternPartial":"elements-select-invalid-attribute","patternState":"complete","patternEngineName":"handlebars","extraOutput":{"order":7}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -7060,7 +7114,7 @@ If you would like to even also match those visual requirements, you would need t
 			<div class="pl-c-category__description pl-c-text-passage">
 				<h2>Form validation</h2>
 <p>Please have a look especially at the section for form validation within the overall <a href="../components-form/index.html">components/forms</a> page.</p>
-<p>Additionally to the browser built-in pseudo-selector <code>:invalid</code> we're providing styling for the <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_attribute"><code>aria-invalid=&quot;true&quot;</code> attribute</a> as well.</p>
+<p>Additionally to the browser built-in pseudo-selector <code>:user-invalid</code> we're providing styling for the <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_attribute"><code>aria-invalid=&quot;true&quot;</code> attribute</a> as well.</p>
 
 			</div><!--end pl-c-category__description-->
 			
@@ -7110,6 +7164,7 @@ If you would like to even also match those visual requirements, you would need t
 	
 	
 	
+	
 	 data-variant="semitransparent"></textarea>
 
 
@@ -7119,6 +7174,7 @@ If you would like to even also match those visual requirements, you would need t
 <textarea class="elm-textarea "
 	placeholder="Projekt Name"
 	id="textarea17"
+	
 	
 	
 	
@@ -7136,6 +7192,7 @@ If you would like to even also match those visual requirements, you would need t
 	
 	
 	
+	
 	 data-variant="solid"></textarea>
 
 
@@ -7145,6 +7202,7 @@ If you would like to even also match those visual requirements, you would need t
 <textarea class="elm-textarea "
 	placeholder="Projekt Name"
 	id="textarea19"
+	
 	
 	
 	
@@ -7204,11 +7262,11 @@ If you would like to even also match those visual requirements, you would need t
 	
 	
 	
-	 maxlength="200"
 	
+	 maxlength="200"
 	oninput="result_textarea01.value=this.value.length+'/'+this.attributes.maxlength.value"
 	></textarea>
-<output for="textarea01" id="result_textarea01"></output>
+<output for="textarea01" id="result_textarea01" anchor="textarea01"></output>
 
 
 			</div><!--end pl-js-pattern-example-->
@@ -7260,11 +7318,11 @@ If you would like to even also match those visual requirements, you would need t
 	 disabled
 	
 	
-	 maxlength="200"
 	
+	 maxlength="200"
 	oninput="result_textarea07.value=this.value.length+'/'+this.attributes.maxlength.value"
 	></textarea>
-<output for="textarea07" id="result_textarea07"></output>
+<output for="textarea07" id="result_textarea07" anchor="textarea07"></output>
 
 
 			</div><!--end pl-js-pattern-example-->
@@ -7316,11 +7374,11 @@ If you would like to even also match those visual requirements, you would need t
 	
 	 aria-describedby="textarea02hint"
 	
-	 maxlength="200"
 	
+	 maxlength="200"
 	oninput="result_textarea02.value=this.value.length+'/'+this.attributes.maxlength.value"
 	></textarea>
-<output for="textarea02" id="result_textarea02"></output>
+<output for="textarea02" id="result_textarea02" anchor="textarea02"></output>
 <p id="textarea02hint" class="description">Optionale Beschreibung<br>Zeile zwei</p>
 
 			</div><!--end pl-js-pattern-example-->
@@ -7372,11 +7430,11 @@ If you would like to even also match those visual requirements, you would need t
 	
 	
 	
-	 maxlength="200"
 	
+	 maxlength="200"
 	oninput="result_textarea03.value=this.value.length+'/'+this.attributes.maxlength.value"
 	>Textarea</textarea>
-<output for="textarea03" id="result_textarea03"></output>
+<output for="textarea03" id="result_textarea03" anchor="textarea03"></output>
 
 
 			</div><!--end pl-js-pattern-example-->
@@ -7428,11 +7486,11 @@ If you would like to even also match those visual requirements, you would need t
 	
 	
 	 minlength="3" required
-	 maxlength="200"
 	
+	 maxlength="200"
 	oninput="result_textarea04.value=this.value.length+'/'+this.attributes.maxlength.value"
 	>Valid input</textarea>
-<output for="textarea04" id="result_textarea04"></output>
+<output for="textarea04" id="result_textarea04" anchor="textarea04"></output>
 
 
 			</div><!--end pl-js-pattern-example-->
@@ -7484,11 +7542,11 @@ If you would like to even also match those visual requirements, you would need t
 	
 	
 	 minlength="5" required
-	 maxlength="200"
 	
+	 maxlength="200"
 	oninput="result_textarea05.value=this.value.length+'/'+this.attributes.maxlength.value"
 	>Input</textarea>
-<output for="textarea05" id="result_textarea05"></output>
+<output for="textarea05" id="result_textarea05" anchor="textarea05"></output>
 
 
 			</div><!--end pl-js-pattern-example-->
@@ -7541,17 +7599,17 @@ If you would like to even also match those visual requirements, you would need t
 	
 	
 	 minlength="5"
-	 maxlength="200"
 	 aria-invalid="true"
+	 maxlength="200"
 	oninput="result_textarea06.value=this.value.length+'/'+this.attributes.maxlength.value"
 	>Input</textarea>
-<output for="textarea06" id="result_textarea06"></output>
+<output for="textarea06" id="result_textarea06" anchor="textarea06"></output>
 
 
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-elements-textarea-invalid-attribute" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<h2>Form validation</h2>\n<p>Please have a look especially at the section for form validation within the overall <a href=\"../components-form/index.html\">components/forms</a> page.</p>\n<p>Additionally to the browser built-in pseudo-selector <code>:invalid</code> we're providing styling for the <a href=\"https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_attribute\"><code>aria-invalid=&quot;true&quot;</code> attribute</a> as well.</p>\n","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"textarea"},"patternExtension":"hbs","patternName":"Textarea - Invalid state by HTML attribute","patternPartial":"elements-textarea-invalid-attribute","patternState":"complete","patternEngineName":"handlebars","extraOutput":{"order":7}}
+			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<h2>Form validation</h2>\n<p>Please have a look especially at the section for form validation within the overall <a href=\"../components-form/index.html\">components/forms</a> page.</p>\n<p>Additionally to the browser built-in pseudo-selector <code>:user-invalid</code> we're providing styling for the <a href=\"https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_attribute\"><code>aria-invalid=&quot;true&quot;</code> attribute</a> as well.</p>\n","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"textarea"},"patternExtension":"hbs","patternName":"Textarea - Invalid state by HTML attribute","patternPartial":"elements-textarea-invalid-attribute","patternState":"complete","patternEngineName":"handlebars","extraOutput":{"order":7}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -7598,11 +7656,11 @@ If you would like to even also match those visual requirements, you would need t
 	
 	
 	
-	 maxlength="200"
 	
+	 maxlength="200"
 	oninput="result_textarea08.value=this.value.length+'/'+this.attributes.maxlength.value"
 	>Input</textarea>
-<output for="textarea08" id="result_textarea08"></output>
+<output for="textarea08" id="result_textarea08" anchor="textarea08"></output>
 
 
 			</div><!--end pl-js-pattern-example-->
@@ -7886,10 +7944,10 @@ If you would like to even also match those visual requirements, you would need t
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1706158764613">
+<script id="pl-js-polyfill-insert-1732970174934">
   (function() {
     if (self != top) {
-      var cb = '1706158764613';
+      var cb = '1732970174934';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -7902,7 +7960,7 @@ If you would like to even also match those visual requirements, you would need t
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1706158764613" nomodule>
+<script id="pl-js-insert-1732970174934" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 
@@ -7916,7 +7974,6 @@ If you would like to even also match those visual requirements, you would need t
 		<script src="../../js/details-element-polyfill.js"></script>
 		<!-- dialog polyfill //-->
 		<script src="../../js/dialog-polyfill.js"></script>
-		<script src="../../js/main.min.js"></script>
 	</body>
 
 </html>

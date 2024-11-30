@@ -12,17 +12,17 @@
 
 
 	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1706158764613" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1732970174934" media="all">
 
 	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1706158764613" media="all">
-	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1706158764613" media="all">
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1706158764613" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1732970174934" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1732970174934" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1732970174934" media="all">
 	<!-- dialog polyfill //-->
-	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1706158764613" media="all">
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1732970174934" media="all">
 
 	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1706158764613" media="all">
+	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1732970174934" media="all">
 	<!-- End Pattern Lab -->
 
 
@@ -36,6 +36,7 @@ documentation has useful tips on creating an effective description. //-->
 
 	<!-- iframe resizing script for pattern previews -->
 	<script src="../../js/iframeResizer.contentWindow.js"></script>
+	<script src="../../js/invoker.min.js"></script>
 </head>
 
 <body class="styleguide">
@@ -541,7 +542,7 @@ documentation has useful tips on creating an effective description. //-->
 					<a href="../../patterns/components-dialog-dialog&#x2F;components-dialog-dialog.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-dialog" title="Link to Pattern">
 						Dialog
 		
-						<span class="pl-c-pattern-state pl-c-pattern-state--inreview" title="inreview"></span>
+						<span class="pl-c-pattern-state pl-c-pattern-state--complete" title="complete"></span>
 		
 					</a><!--end pl-c-pattern__title-link-->
 		
@@ -568,47 +569,27 @@ documentation has useful tips on creating an effective description. //-->
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			<a
-	href="#dialog01"
-	class="elm-link "
+			<button class="elm-button "
+	data-variant="secondary-outline"
+	
 	title="Title text"
+	type="button"
 	
 	
 	
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	>Dialog öffnen
-</a>
+	 command="show-modal"
+	 commandfor="dialog01">
+	Dialog öffnen
+</button>
 <dialog id="dialog01" class="cmp-dialog">
 	<header>
 		<!-- [html-validate-disable-next heading-level] -->
 		<!-- [html-validate-disable-next heading-level, no-unused-disable -- we're doing some simple demonstration simplification here] -->
 		<h2 class="elm-headline ">Modal</h2>
-		<a
-			href="#"
-			class="elm-link is-close"
-			title="Close the dialog"
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			>Close
-		</a>
+		<button type="button" class="is-close" title="Close the dialog" command="close" commandfor="dialog01">Close</button>
 	</header>
 	<main>
 		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
@@ -619,6 +600,9 @@ documentation has useful tips on creating an effective description. //-->
 			
 			title="Title text"
 			type="button"
+			
+			
+			
 			
 			
 			
@@ -635,6 +619,9 @@ documentation has useful tips on creating an effective description. //-->
 			
 			
 			
+			
+			
+			
 			>
 			Primary
 		</button>
@@ -644,7 +631,7 @@ documentation has useful tips on creating an effective description. //-->
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-components-dialog" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-link","lineagePath":"../../patterns/elements-link-_link/elements-link-_link.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-headline","lineagePath":"../../patterns/elements-headline-headline/elements-headline-headline.rendered.html"},{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"lineage":[{"lineagePattern":"elements-link","lineagePath":"../../patterns/elements-link-_link/elements-link-_link.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-headline","lineagePath":"../../patterns/elements-headline-headline/elements-headline-headline.rendered.html"},{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"<h2>Usage notes</h2>\n<p>The <code>&lt;dialog&gt;</code> element is a native HTML element that provides a common JavaScript API with events, properties and methods: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement\">https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement</a></p>\n<blockquote>\n<p>The <code>::backdrop</code> CSS pseudo-element can be used to style behind a <code>&lt;dialog&gt;</code> element, for example to dim inaccessible content whilst a modal dialog is active. The backdrop is only drawn when the dialog element is displayed with <code>HTMLDialogElement.showModal()</code>.</p>\n</blockquote>\n<blockquote>\n<p><code>&lt;form&gt;</code> elements can be integrated within a dialog by specifying them with the attribute <code>method=&quot;dialog&quot;</code>. When such a form is submitted, the dialog is closed with its <code>returnValue</code> attribute set to the <code>value</code> of the form's submit button that was used.</p>\n</blockquote>\n<p>Source: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog#Usage_notes\">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog#Usage_notes</a></p>\n<h2>JavaScript dependencies</h2>\n<ul>\n<li>Dialog polyfill: As some <a href=\"https://caniuse.com/#feat=dialog\">older browsers don't fully support the native dialog HTML tag so far</a> we'll <a href=\"https://github.com/GoogleChrome/dialog-polyfill\">have to use a polyfill</a>, that is being included into the file <code>source/js/plugins.min.js</code> during build, as well as <a href=\"https://gist.github.com/samthor/babe9fad4a65625b301ba482dad284d1\">a snippet that enforces to return focus to the previously focused element on the page after closing the dialog</a>, which is included within <code>source/js/plugins.min.js</code> as well. Good news: With Safari 15.4 the last remaining of the modern browsers shipped the <code>dialog</code> elements support: <a href=\"https://webkit.org/blog/12209/introducing-the-dialog-element/\">https://webkit.org/blog/12209/introducing-the-dialog-element/</a></li>\n<li>The dialog polyfill itself is being initialized via our individually developed <a href=\"https://github.com/db-ui/core/blob/main/source/_patterns/02-components/dialog/dialog.script.js\"><code>dialog.script.js</code></a>, which is being included into <code>source/js/main.min.js</code>during build.</li>\n</ul>\n<p><strong>Please feel free to include and initialize all of those scripts according to your JavaScript ecosystem individually, and especially develop the logic out of <a href=\"https://github.com/db-ui/core/blob/main/source/_patterns/02-components/dialog/dialog.script.js\"><code>dialog.script.js</code></a> on your own for your specific context and techstack.</strong></p>\n<h2>Accessibility</h2>\n<p>This pattern has been tested and approved regarding accessibility.</p>\n","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"dialog"},"patternExtension":"hbs","patternName":"Dialog","patternPartial":"components-dialog","patternState":"inreview","patternEngineName":"handlebars","extraOutput":{}}
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"},{"lineagePattern":"elements-headline","lineagePath":"../../patterns/elements-headline-headline/elements-headline-headline.rendered.html"}],"lineage":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"},{"lineagePattern":"elements-headline","lineagePath":"../../patterns/elements-headline-headline/elements-headline-headline.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"<h2>Usage notes</h2>\n<p>The <code>&lt;dialog&gt;</code> element is a native HTML element that provides a common JavaScript API with events, properties and methods: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement\">https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement</a></p>\n<blockquote>\n<p>The <code>::backdrop</code> CSS pseudo-element can be used to style behind a <code>&lt;dialog&gt;</code> element, for example to dim inaccessible content whilst a modal dialog is active. The backdrop is only drawn when the dialog element is displayed with <code>HTMLDialogElement.showModal()</code>.</p>\n</blockquote>\n<blockquote>\n<p><code>&lt;form&gt;</code> elements can be integrated within a dialog by specifying them with the attribute <code>method=&quot;dialog&quot;</code>. When such a form is submitted, the dialog is closed with its <code>returnValue</code> attribute set to the <code>value</code> of the form's submit button that was used.</p>\n</blockquote>\n<p>Source: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog#Usage_notes\">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog#Usage_notes</a></p>\n<h2>JavaScript dependencies</h2>\n<p><strong>Dialog polyfill</strong>: As some <a href=\"https://caniuse.com/#feat=dialog\">older browsers don't fully support the native dialog HTML tag so far</a> we'll <a href=\"https://github.com/GoogleChrome/dialog-polyfill\">have to use a polyfill</a>, that is being included into the file <code>source/js/plugins.min.js</code> during build, as well as <a href=\"https://gist.github.com/samthor/babe9fad4a65625b301ba482dad284d1\">a snippet that enforces to return focus to the previously focused element on the page after closing the dialog</a>, which is included within <code>source/js/plugins.min.js</code> as well. Good news: With Safari 15.4 the last remaining of the modern browsers shipped the <code>dialog</code> elements support: <a href=\"https://webkit.org/blog/12209/introducing-the-dialog-element/\">https://webkit.org/blog/12209/introducing-the-dialog-element/</a></p>\n<p><strong>Please feel free to include and initialize this script according to your JavaScript ecosystem individually, and especially develop the logic out of <a href=\"https://open-ui.org/components/invokers.explainer/\"><code>invoker commands</code></a> on your own for your specific context and techstack.</strong></p>\n<h2>Accessibility</h2>\n<p>This pattern has been tested and approved regarding accessibility.</p>\n","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"dialog"},"patternExtension":"hbs","patternName":"Dialog","patternPartial":"components-dialog","patternState":"complete","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -657,7 +644,7 @@ documentation has useful tips on creating an effective description. //-->
 					<a href="../../patterns/components-dialog-dialog-button-alignment-end&#x2F;components-dialog-dialog-button-alignment-end.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-dialog-button-alignment-end" title="Link to Pattern">
 						Dialog Button Alignment End
 		
-						<span class="pl-c-pattern-state pl-c-pattern-state--inreview" title="inreview"></span>
+						<span class="pl-c-pattern-state pl-c-pattern-state--complete" title="complete"></span>
 		
 					</a><!--end pl-c-pattern__title-link-->
 		
@@ -684,47 +671,27 @@ documentation has useful tips on creating an effective description. //-->
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			<a
-	href="#dialog02"
-	class="elm-link "
+			<button class="elm-button "
+	data-variant="secondary-outline"
+	
 	title="Title text"
+	type="button"
 	
 	
 	
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	>Dialog öffnen
-</a>
+	 command="show-modal"
+	 commandfor="dialog02">
+	Dialog öffnen
+</button>
 <dialog id="dialog02" class="cmp-dialog">
 	<header>
 		<!-- [html-validate-disable-next heading-level] -->
 		<!-- [html-validate-disable-next heading-level, no-unused-disable -- we're doing some simple demonstration simplification here] -->
 		<h2 class="elm-headline ">Modal</h2>
-		<a
-			href="#"
-			class="elm-link is-close"
-			title="Close the dialog"
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			>Close
-		</a>
+		<button type="button" class="is-close" title="Close the dialog" command="close" commandfor="dialog02">Close</button>
 	</header>
 	<main>
 		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
@@ -735,6 +702,9 @@ documentation has useful tips on creating an effective description. //-->
 			
 			title="Title text"
 			type="button"
+			
+			
+			
 			
 			
 			
@@ -751,6 +721,9 @@ documentation has useful tips on creating an effective description. //-->
 			
 			
 			
+			
+			
+			
 			>
 			Primary
 		</button>
@@ -760,7 +733,7 @@ documentation has useful tips on creating an effective description. //-->
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-components-dialog-button-alignment-end" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-link","lineagePath":"../../patterns/elements-link-_link/elements-link-_link.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-headline","lineagePath":"../../patterns/elements-headline-headline/elements-headline-headline.rendered.html"},{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"lineage":[{"lineagePattern":"elements-link","lineagePath":"../../patterns/elements-link-_link/elements-link-_link.rendered.html","lineageState":"inreview"},{"lineagePattern":"elements-headline","lineagePath":"../../patterns/elements-headline-headline/elements-headline-headline.rendered.html"},{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"dialog"},"patternExtension":"hbs","patternName":"Dialog Button Alignment End","patternPartial":"components-dialog-button-alignment-end","patternState":"inreview","patternEngineName":"handlebars","extraOutput":{}}
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"},{"lineagePattern":"elements-headline","lineagePath":"../../patterns/elements-headline-headline/elements-headline-headline.rendered.html"}],"lineage":[{"lineagePattern":"elements-button","lineagePath":"../../patterns/elements-buttons-button/elements-buttons-button.rendered.html"},{"lineagePattern":"elements-headline","lineagePath":"../../patterns/elements-headline-headline/elements-headline-headline.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"dialog"},"patternExtension":"hbs","patternName":"Dialog Button Alignment End","patternPartial":"components-dialog-button-alignment-end","patternState":"complete","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -831,6 +804,9 @@ documentation has useful tips on creating an effective description. //-->
 	
 	
 	
+	
+	
+	
 	>
 	Profileinstellungen
 </button>
@@ -840,6 +816,9 @@ documentation has useful tips on creating an effective description. //-->
 	
 	title="Title text"
 	type="button"
+	
+	
+	
 	
 	
 	
@@ -907,6 +886,9 @@ documentation has useful tips on creating an effective description. //-->
 	
 	
 	
+	
+	
+	
 	>
 	Profileinstellungen
 </button>
@@ -916,6 +898,9 @@ documentation has useful tips on creating an effective description. //-->
 	
 	title="Title text"
 	type="button"
+	
+	
+	
 	
 	
 	
@@ -955,7 +940,7 @@ documentation has useful tips on creating an effective description. //-->
 <li>Built-in localized validation messages</li>
 </ul>
 <p>Additionally this way you're following the principles of Progressive Enhancement - and in other words, any JavaScript only solution doesn't provide a graceful degradation and puts that whole functionality to the weakest layer in the stack even only.</p>
-<p>Nevertheless additionally to the browser built-in pseudo-selector <code>:invalid</code> we're providing styling for the <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_attribute"><code>aria-invalid=&quot;true&quot;</code> attribute</a> on the elements <code>input</code>, <code>radio</code>, <code>select</code> and <code>textarea</code>.
+<p>Nevertheless additionally to the browser built-in pseudo-selector <code>:user-invalid</code> we're providing styling for the <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_attribute"><code>aria-invalid=&quot;true&quot;</code> attribute</a> on the elements <code>input</code>, <code>radio</code>, <code>select</code> and <code>textarea</code>.
 We can't toggle any given/static attribute in the DB UI Core product itself, as we don't want to use JavaScript in this basic product. As you'd also need to add individual error messages, please find some inspiration on the necessary HTML code implementation e.g. on <a href="http://mars.dequecloud.com/demo/form-alert3.htm">http://mars.dequecloud.com/demo/form-alert3.htm</a></p>
 <p>Please find some more informations on the following pages:</p>
 <ul>
@@ -1048,6 +1033,9 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 		
 		title="Title text"
 		type="submit"
+		
+		
+		
 		
 		
 		
@@ -1234,6 +1222,9 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 				
 				
 				
+				
+				
+				
 				>
 				EN
 			</button>
@@ -1248,6 +1239,9 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 				
 				
 				
+				
+				
+				
 				>
 				DE
 			</button>
@@ -1258,6 +1252,9 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 				
 				title="Langue française"
 				type="button"
+				
+				
+				
 				
 				
 				
@@ -1671,6 +1668,9 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 	
 	
 	
+	
+	
+	
 	>
 	Modify
 </button>
@@ -1680,6 +1680,9 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 	
 	title="Title text"
 	type="button"
+	
+	
+	
 	
 	
 	
@@ -1835,6 +1838,9 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 	
 	
 	
+	
+	
+	
 	>
 	Modify
 </button>
@@ -1844,6 +1850,9 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 	
 	title="Title text"
 	type="button"
+	
+	
+	
 	
 	
 	
@@ -2290,7 +2299,9 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 			</h2><!--end pl-c-category__title-->
 		
 			<div class="pl-c-category__description pl-c-text-passage">
-				<h2>Accessibility</h2>
+				<h2>Multi-line</h2>
+<p>The multi-line tabs haven't been developed, but are only available in the Sketch library. If you really need this pattern even also in the development, please set it up yourself e.g. with a <code>&lt;br&gt;</code> or differentiated label texts e.g. by <code>&lt;span&gt;</code> elements.</p>
+<h2>Accessibility</h2>
 <p>This pattern has been tested and approved regarding accessibility.</p>
 
 			</div><!--end pl-c-category__description-->
@@ -2333,30 +2344,30 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 			<div class="pl-js-pattern-example">
 			<div class="cmp-tab-bar" role="tablist">
 	<!-- Pay attention to use a component wide, but component instance specific name to the following input[type="radio"] elements //-->
-		<input type="radio" name="cmp-tab-bar-tabs-01" id="radio_0"  checked>
-		<label for="radio_0" role="tab">0</label>
-		<section id="content_0" role="tabpanel">
+		<input type="radio" name="cmp-tab-bar-tabs-regular" id="tab_regular_0"  checked>
+		<label for="tab_regular_0" role="tab">Tab 01</label>
+		<section id="content_regular_0" role="tabpanel">
 			Content 01
 		</section>
-		<input type="radio" name="cmp-tab-bar-tabs-01" id="radio_1" >
-		<label for="radio_1" role="tab">1</label>
-		<section id="content_1" role="tabpanel">
+		<input type="radio" name="cmp-tab-bar-tabs-regular" id="tab_regular_1" >
+		<label for="tab_regular_1" role="tab">Tab 02</label>
+		<section id="content_regular_1" role="tabpanel">
 			Content 02
 		</section>
-		<input type="radio" name="cmp-tab-bar-tabs-01" id="radio_2" >
-		<label for="radio_2" role="tab">2</label>
-		<section id="content_2" role="tabpanel">
+		<input type="radio" name="cmp-tab-bar-tabs-regular" id="tab_regular_2" >
+		<label for="tab_regular_2" role="tab">Tab 03</label>
+		<section id="content_regular_2" role="tabpanel">
 			Content 03
 		</section>
-		<input type="radio" name="cmp-tab-bar-tabs-01" id="radio_3" >
-		<label for="radio_3" role="tab">3</label>
-		<section id="content_3" role="tabpanel">
+		<input type="radio" name="cmp-tab-bar-tabs-regular" id="tab_regular_3" >
+		<label for="tab_regular_3" role="tab">Tab 04</label>
+		<section id="content_regular_3" role="tabpanel">
 			Content 04
 		</section>
-		<input type="radio" name="cmp-tab-bar-tabs-01" id="radio_4" 
+		<input type="radio" name="cmp-tab-bar-tabs-regular" id="tab_regular_4" 
 			disabled>
-		<label for="radio_4" role="tab">4</label>
-		<section id="content_4" role="tabpanel">
+		<label for="tab_regular_4" role="tab">Tab 05</label>
+		<section id="content_regular_4" role="tabpanel">
 			Content 05
 		</section>
 </div>
@@ -2365,6 +2376,222 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 		
 			<script type="text/json" id="pl-pattern-data-components-tab-bar" class="pl-js-pattern-data">
 			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"tab-bar"},"patternExtension":"hbs","patternName":"Tab Bar","patternPartial":"components-tab-bar","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="components-tab-bar-item-icon" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/components-tab-bar-tab-bar-item-icon&#x2F;components-tab-bar-tab-bar-item-icon.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-tab-bar-item-icon" title="Link to Pattern">
+						Tab Bar Item Icon
+		
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-tab-bar-item-icon" data-patternpartial="components-tab-bar-item-icon" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-tab-bar-item-icon">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			<div class="cmp-tab-bar" role="tablist">
+	<!-- Pay attention to use a component wide, but component instance specific name to the following input[type="radio"] elements //-->
+		<input type="radio" name="cmp-tab-bar-tabs-small-icon" id="tab_small-icon_0"  checked>
+		<label for="tab_small-icon_0" role="tab" data-icon="account">Tab 01</label>
+		<section id="content_small-icon_0" role="tabpanel">
+			Content 01
+		</section>
+		<input type="radio" name="cmp-tab-bar-tabs-small-icon" id="tab_small-icon_1" >
+		<label for="tab_small-icon_1" role="tab" data-icon="account">Tab 02</label>
+		<section id="content_small-icon_1" role="tabpanel">
+			Content 02
+		</section>
+		<input type="radio" name="cmp-tab-bar-tabs-small-icon" id="tab_small-icon_2" >
+		<label for="tab_small-icon_2" role="tab" data-icon="account">Tab 03</label>
+		<section id="content_small-icon_2" role="tabpanel">
+			Content 03
+		</section>
+		<input type="radio" name="cmp-tab-bar-tabs-small-icon" id="tab_small-icon_3" >
+		<label for="tab_small-icon_3" role="tab" data-icon="account">Tab 04</label>
+		<section id="content_small-icon_3" role="tabpanel">
+			Content 04
+		</section>
+		<input type="radio" name="cmp-tab-bar-tabs-small-icon" id="tab_small-icon_4" 
+			disabled>
+		<label for="tab_small-icon_4" role="tab" data-icon="account">Tab 05</label>
+		<section id="content_small-icon_4" role="tabpanel">
+			Content 05
+		</section>
+</div>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-components-tab-bar-item-icon" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"tab-bar"},"patternExtension":"hbs","patternName":"Tab Bar Item Icon","patternPartial":"components-tab-bar-item-icon","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="components-tab-bar-small" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/components-tab-bar-tab-bar-small&#x2F;components-tab-bar-tab-bar-small.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-tab-bar-small" title="Link to Pattern">
+						Tab Bar Small
+		
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-tab-bar-small" data-patternpartial="components-tab-bar-small" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-tab-bar-small">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			<div class="cmp-tab-bar" role="tablist" data-size="small">
+	<!-- Pay attention to use a component wide, but component instance specific name to the following input[type="radio"] elements //-->
+		<input type="radio" name="cmp-tab-bar-tabs-small" id="tab_small_0"  checked>
+		<label for="tab_small_0" role="tab">Tab 01</label>
+		<section id="content_small_0" role="tabpanel">
+			Content 01
+		</section>
+		<input type="radio" name="cmp-tab-bar-tabs-small" id="tab_small_1" >
+		<label for="tab_small_1" role="tab">Tab 02</label>
+		<section id="content_small_1" role="tabpanel">
+			Content 02
+		</section>
+		<input type="radio" name="cmp-tab-bar-tabs-small" id="tab_small_2" >
+		<label for="tab_small_2" role="tab">Tab 03</label>
+		<section id="content_small_2" role="tabpanel">
+			Content 03
+		</section>
+		<input type="radio" name="cmp-tab-bar-tabs-small" id="tab_small_3" >
+		<label for="tab_small_3" role="tab">Tab 04</label>
+		<section id="content_small_3" role="tabpanel">
+			Content 04
+		</section>
+		<input type="radio" name="cmp-tab-bar-tabs-small" id="tab_small_4" 
+			disabled>
+		<label for="tab_small_4" role="tab">Tab 05</label>
+		<section id="content_small_4" role="tabpanel">
+			Content 05
+		</section>
+</div>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-components-tab-bar-small" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"tab-bar"},"patternExtension":"hbs","patternName":"Tab Bar Small","patternPartial":"components-tab-bar-small","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="components-tab-bar-small-item-icon" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/components-tab-bar-tab-bar-small-item-icon&#x2F;components-tab-bar-tab-bar-small-item-icon.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-tab-bar-small-item-icon" title="Link to Pattern">
+						Tab Bar Small Item Icon
+		
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-tab-bar-small-item-icon" data-patternpartial="components-tab-bar-small-item-icon" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-tab-bar-small-item-icon">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			<div class="cmp-tab-bar" role="tablist" data-size="small">
+	<!-- Pay attention to use a component wide, but component instance specific name to the following input[type="radio"] elements //-->
+		<input type="radio" name="cmp-tab-bar-tabs-icon" id="tab_icon_0"  checked>
+		<label for="tab_icon_0" role="tab" data-icon="account">Tab 01</label>
+		<section id="content_icon_0" role="tabpanel">
+			Content 01
+		</section>
+		<input type="radio" name="cmp-tab-bar-tabs-icon" id="tab_icon_1" >
+		<label for="tab_icon_1" role="tab" data-icon="account">Tab 02</label>
+		<section id="content_icon_1" role="tabpanel">
+			Content 02
+		</section>
+		<input type="radio" name="cmp-tab-bar-tabs-icon" id="tab_icon_2" >
+		<label for="tab_icon_2" role="tab" data-icon="account">Tab 03</label>
+		<section id="content_icon_2" role="tabpanel">
+			Content 03
+		</section>
+		<input type="radio" name="cmp-tab-bar-tabs-icon" id="tab_icon_3" >
+		<label for="tab_icon_3" role="tab" data-icon="account">Tab 04</label>
+		<section id="content_icon_3" role="tabpanel">
+			Content 04
+		</section>
+		<input type="radio" name="cmp-tab-bar-tabs-icon" id="tab_icon_4" 
+			disabled>
+		<label for="tab_icon_4" role="tab" data-icon="account">Tab 05</label>
+		<section id="content_icon_4" role="tabpanel">
+			Content 05
+		</section>
+</div>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-components-tab-bar-small-item-icon" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"tab-bar"},"patternExtension":"hbs","patternName":"Tab Bar Small Item Icon","patternPartial":"components-tab-bar-small-item-icon","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -2469,7 +2696,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-components-table" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"}],"lineage":[{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"components-table-density","lineagePath":"../../patterns/components-table-table-density/components-table-table-density.rendered.html"},{"lineagePattern":"components-table-alignments","lineagePath":"../../patterns/components-table-table-alignments/components-table-table-alignments.rendered.html"}],"lineageR":[{"lineagePattern":"components-table-density","lineagePath":"../../patterns/components-table-table-density/components-table-table-density.rendered.html"},{"lineagePattern":"components-table-alignments","lineagePath":"../../patterns/components-table-table-alignments/components-table-table-alignments.rendered.html"}],"patternLineageEExists":true,"patternDesc":"<h2>Hiding columns and rows as responsive behaviour</h2>\n<p>To hide columns and/or rows depending on the viewport size, you could use a SCSS mixin that we provide or even also easily set up some CSS on your own to do so.\nWe've decided against providing classes that would need to get set onto the HTML elements, as you would have to do this for each and very <code>td</code> / <code>th</code> element repeatedly, and it would heavily complicate the configuration as well as harm the elementary concepts of dividing style from content.</p>\n<h3>Hiding columns</h3>\n<p>Using the following SCSS mixin, you could hide a specific column (first parameter), depending on a maximum viewport-width (second parameter), e.g. the following would hide the second column in the <code>thead</code> and <code>tbody</code> section on a viewport up to <code>1023px</code> width:</p>\n<pre><code class=\"language-SCSS\">@include cmp-table-hide-col(2, 1023px);\n</code></pre>\n<p>In case that you wouldn't want to / can't use SCSS, than you could as well easily develop this on your own in pure CSS:</p>\n<pre><code class=\"language-CSS\">@media screen and (max-width: 1023px) {\n\tthead th:nth-child(2),\n\ttbody td:nth-child(2) {\n\t\tdisplay: none;\n\t}\n}\n</code></pre>\n<h3>Hiding rows</h3>\n<p>Using the following SCSS mixin, you could hide a specific row (first parameter), depending on a maximum viewport-width (second parameter), e.g. the following would hide the second row in the <code>tbody</code> section on a viewport up to <code>1023px</code> width:</p>\n<pre><code class=\"language-SCSS\">@include cmp-table-hide-row(2, 1023px);\n</code></pre>\n<p>In case that you wouldn't want to / can't use SCSS, than you could as well easily develop this on your own in pure CSS:</p>\n<pre><code class=\"language-CSS\">@media screen and (max-width: 1023px) {\n\ttbody tr:nth-child(2) {\n\t\tdisplay: none;\n\t}\n}\n</code></pre>\n","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"table"},"patternExtension":"hbs","patternName":"Table","patternPartial":"components-table","patternState":"inreview","patternEngineName":"handlebars","extraOutput":{}}
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"}],"lineage":[{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"components-table-alignments","lineagePath":"../../patterns/components-table-table-alignments/components-table-table-alignments.rendered.html"},{"lineagePattern":"components-table-density","lineagePath":"../../patterns/components-table-table-density/components-table-table-density.rendered.html"}],"lineageR":[{"lineagePattern":"components-table-alignments","lineagePath":"../../patterns/components-table-table-alignments/components-table-table-alignments.rendered.html"},{"lineagePattern":"components-table-density","lineagePath":"../../patterns/components-table-table-density/components-table-table-density.rendered.html"}],"patternLineageEExists":true,"patternDesc":"<h2>Hiding columns and rows as responsive behaviour</h2>\n<p>To hide columns and/or rows depending on the viewport size, you could use a SCSS mixin that we provide or even also easily set up some CSS on your own to do so.\nWe've decided against providing classes that would need to get set onto the HTML elements, as you would have to do this for each and very <code>td</code> / <code>th</code> element repeatedly, and it would heavily complicate the configuration as well as harm the elementary concepts of dividing style from content.</p>\n<h3>Hiding columns</h3>\n<p>Using the following SCSS mixin, you could hide a specific column (first parameter), depending on a maximum viewport-width (second parameter), e.g. the following would hide the second column in the <code>thead</code> and <code>tbody</code> section on a viewport up to <code>1023px</code> width:</p>\n<pre><code class=\"language-SCSS\">@include cmp-table-hide-col(2, 1023px);\n</code></pre>\n<p>In case that you wouldn't want to / can't use SCSS, than you could as well easily develop this on your own in pure CSS:</p>\n<pre><code class=\"language-CSS\">@media screen and (max-width: 1023px) {\n\tthead th:nth-child(2),\n\ttbody td:nth-child(2) {\n\t\tdisplay: none;\n\t}\n}\n</code></pre>\n<h3>Hiding rows</h3>\n<p>Using the following SCSS mixin, you could hide a specific row (first parameter), depending on a maximum viewport-width (second parameter), e.g. the following would hide the second row in the <code>tbody</code> section on a viewport up to <code>1023px</code> width:</p>\n<pre><code class=\"language-SCSS\">@include cmp-table-hide-row(2, 1023px);\n</code></pre>\n<p>In case that you wouldn't want to / can't use SCSS, than you could as well easily develop this on your own in pure CSS:</p>\n<pre><code class=\"language-CSS\">@media screen and (max-width: 1023px) {\n\ttbody tr:nth-child(2) {\n\t\tdisplay: none;\n\t}\n}\n</code></pre>\n","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"table"},"patternExtension":"hbs","patternName":"Table","patternPartial":"components-table","patternState":"inreview","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -3272,6 +3499,9 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 	
 	
 	
+	
+	
+	
 	>
 	Edit
 </button>
@@ -3281,6 +3511,9 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 	
 	title=""
 	type="button"
+	
+	
+	
 	
 	
 	
@@ -3310,6 +3543,9 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 	
 	
 	
+	
+	
+	
 	>
 	Edit
 </button>
@@ -3319,6 +3555,9 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 	
 	title=""
 	type="button"
+	
+	
+	
 	
 	
 	
@@ -3348,6 +3587,9 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 	
 	
 	
+	
+	
+	
 	>
 	Edit
 </button>
@@ -3357,6 +3599,9 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 	
 	title=""
 	type="button"
+	
+	
+	
 	
 	
 	
@@ -3386,6 +3631,9 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 	
 	
 	
+	
+	
+	
 	>
 	Edit
 </button>
@@ -3395,6 +3643,9 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 	
 	title=""
 	type="button"
+	
+	
+	
 	
 	
 	
@@ -3424,6 +3675,9 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 	
 	
 	
+	
+	
+	
 	>
 	Edit
 </button>
@@ -3433,6 +3687,9 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 	
 	title=""
 	type="button"
+	
+	
+	
 	
 	
 	
@@ -4084,10 +4341,10 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1706158764613">
+<script id="pl-js-polyfill-insert-1732970174934">
   (function() {
     if (self != top) {
-      var cb = '1706158764613';
+      var cb = '1732970174934';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -4100,7 +4357,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1706158764613" nomodule>
+<script id="pl-js-insert-1732970174934" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 
@@ -4114,7 +4371,6 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 		<script src="../../js/details-element-polyfill.js"></script>
 		<!-- dialog polyfill //-->
 		<script src="../../js/dialog-polyfill.js"></script>
-		<script src="../../js/main.min.js"></script>
 	</body>
 
 </html>

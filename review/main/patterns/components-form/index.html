@@ -12,17 +12,17 @@
 
 
 	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1706158764613" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1732970174934" media="all">
 
 	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1706158764613" media="all">
-	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1706158764613" media="all">
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1706158764613" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1732970174934" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1732970174934" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1732970174934" media="all">
 	<!-- dialog polyfill //-->
-	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1706158764613" media="all">
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1732970174934" media="all">
 
 	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1706158764613" media="all">
+	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1732970174934" media="all">
 	<!-- End Pattern Lab -->
 
 
@@ -36,6 +36,7 @@ documentation has useful tips on creating an effective description. //-->
 
 	<!-- iframe resizing script for pattern previews -->
 	<script src="../../js/iframeResizer.contentWindow.js"></script>
+	<script src="../../js/invoker.min.js"></script>
 </head>
 
 <body class="styleguide">
@@ -66,7 +67,7 @@ documentation has useful tips on creating an effective description. //-->
 <li>Built-in localized validation messages</li>
 </ul>
 <p>Additionally this way you're following the principles of Progressive Enhancement - and in other words, any JavaScript only solution doesn't provide a graceful degradation and puts that whole functionality to the weakest layer in the stack even only.</p>
-<p>Nevertheless additionally to the browser built-in pseudo-selector <code>:invalid</code> we're providing styling for the <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_attribute"><code>aria-invalid=&quot;true&quot;</code> attribute</a> on the elements <code>input</code>, <code>radio</code>, <code>select</code> and <code>textarea</code>.
+<p>Nevertheless additionally to the browser built-in pseudo-selector <code>:user-invalid</code> we're providing styling for the <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_attribute"><code>aria-invalid=&quot;true&quot;</code> attribute</a> on the elements <code>input</code>, <code>radio</code>, <code>select</code> and <code>textarea</code>.
 We can't toggle any given/static attribute in the DB UI Core product itself, as we don't want to use JavaScript in this basic product. As you'd also need to add individual error messages, please find some inspiration on the necessary HTML code implementation e.g. on <a href="http://mars.dequecloud.com/demo/form-alert3.htm">http://mars.dequecloud.com/demo/form-alert3.htm</a></p>
 <p>Please find some more informations on the following pages:</p>
 <ul>
@@ -163,6 +164,9 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 		
 		
 		
+		
+		
+		
 		>
 		Order your icecream
 	</button>
@@ -222,10 +226,10 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1706158764613">
+<script id="pl-js-polyfill-insert-1732970174934">
   (function() {
     if (self != top) {
-      var cb = '1706158764613';
+      var cb = '1732970174934';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -238,7 +242,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1706158764613" nomodule>
+<script id="pl-js-insert-1732970174934" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 
@@ -252,7 +256,6 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 		<script src="../../js/details-element-polyfill.js"></script>
 		<!-- dialog polyfill //-->
 		<script src="../../js/dialog-polyfill.js"></script>
-		<script src="../../js/main.min.js"></script>
 	</body>
 
 </html>
