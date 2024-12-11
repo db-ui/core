@@ -19,6 +19,10 @@
 
 <!-- ![Pipeline status](https://github.com/db-ui/core/badges/main/pipeline.svg?style=flat) -->
 
+> [!WARNING]
+> We've tried a [quick migration to newer SCSS syntax like e.g. `@use` instead of the nowadays deprecated `@import`](https://github.com/db-ui/core/issues/994), but this seems to be more complicated than expected.
+> You might face several warnings on the console when using SASS with our packages regarding `@import` usage. If you'd like to prevent those, you might as well want to evaluate migrating to our newer version of the DB UX Design System: <https://github.com/db-ui/mono>
+
 DB Personenverkehr and DB Systel have merged their Design Systems for Web [with DB UX Design System v2](https://marketingportal.extranet.deutschebahn.com/marketingportal/Design-Anwendungen/db-ux-design-system/version-2/Components) as their successor. Our goal is to provide a common UX based on the [DB "Moderne Ikone"](https://marketingportal.extranet.deutschebahn.com/marketingportal/Marke-und-Design#) for customer and employee applications. To achieve an end 2 end consistence from conception to implementation, we bring you this new version of DB UI Core (npm: `@db-ui/core`), that is being used within a Design System by S.R (Reisendeninformation) as well.
 
 DB UI Core provides robust HTML UI components, reusable visual styles, and powerful tooling to help developers, designers, and content authors build, maintain, and scale best of class digital experiences.
