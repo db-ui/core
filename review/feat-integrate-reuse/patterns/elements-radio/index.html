@@ -1,0 +1,702 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>DB UI Core - Pattern Lab</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+	<script>document.documentElement.className = 'js ' + document.documentElement.className.replace(/\bno-js\b/, '')</script>
+
+	<!-- see https://htmlhead.dev/ for a description of what could get listed within your pages HEAD section //-->
+
+
+	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1733894994198" media="all">
+
+	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1733894994198" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1733894994198" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1733894994198" media="all">
+	<!-- dialog polyfill //-->
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1733894994198" media="all">
+
+	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1733894994198" media="all">
+	<!-- End Pattern Lab -->
+
+
+	<!-- Google's "Create good meta descriptions" / https://support.google.com/webmasters/answer/35624?hl=en#meta-descriptions
+documentation has useful tips on creating an effective description. //-->
+	<meta name="Description" content="Put your description here.">
+
+	<!-- You can add the theme-color meta extension in the <head> of your pages to suggest the color that browsers and OSes should use if they customize the display of individual pages in their UIs with varying colors.
+			more information: https://html.spec.whatwg.org/multipage/semantics.html#meta-theme-color -->
+	<meta name="theme-color" content="#f01414">
+
+	<!-- iframe resizing script for pattern previews -->
+	<script src="../../js/iframeResizer.contentWindow.js"></script>
+	<script src="../../js/invoker.min.js"></script>
+</head>
+
+<body class="styleguide">
+<!-- View All Patterns in a Pattern Sub-Type -->
+<div class="pl-c-main">
+
+	<!-- Index of Patterns -->
+	<div class="pl-c-pattern-index">
+
+		<div id="viewall-elements-radio" class="pl-c-category">
+				
+			<h2 class="pl-c-category__title">
+				<a href="../../patterns/elements-radio&#x2F;index.html" class="pl-c-category__title-link patternLink" data-patternpartial="viewall-elements-radio">Radio</a>
+			</h2><!--end pl-c-category__title-->
+		
+			<div class="pl-c-category__description pl-c-text-passage">
+				<h2>Form validation</h2>
+<p>Please have a look especially at the section for form validation within the overall <a href="../components-form/index.html">components/forms</a> page.</p>
+<p>Additionally to the browser built-in pseudo-selector <code>:user-invalid</code> we're providing styling for the <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_attribute"><code>aria-invalid=&quot;true&quot;</code> attribute</a> as well.</p>
+
+			</div><!--end pl-c-category__description-->
+			
+		</div><!--end pl-c-category-->
+					<div id="elements-radios" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/elements-radio-radios&#x2F;elements-radio-radios.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-radios" title="Link to Pattern">
+						Radios
+		
+						<span class="pl-c-pattern-state pl-c-pattern-state--complete" title="complete"></span>
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-radios" data-patternpartial="elements-radios" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-radios">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+				<input type="radio"
+	class="elm-radio "
+	name="radio"
+	id="id-b3bbb675-492a-45df-9313-77b802446433"
+	
+	
+	
+	
+	
+	>
+<label class="elm-label" for="id-b3bbb675-492a-45df-9313-77b802446433">Radio 01</label>
+<br>
+	<input type="radio"
+	class="elm-radio "
+	name="radio"
+	id="id-2e404466-2131-47aa-88f3-66d6b93f55bb"
+	
+	
+	
+	
+	
+	>
+<label class="elm-label" for="id-2e404466-2131-47aa-88f3-66d6b93f55bb">Radio 02</label>
+<br>
+	<input type="radio"
+	class="elm-radio "
+	name="radio"
+	id="id-5d7964a3-526f-4eba-9a12-d098043d6d17"
+	
+	
+	
+	
+	
+	>
+<label class="elm-label" for="id-5d7964a3-526f-4eba-9a12-d098043d6d17">Radio 03</label>
+<br>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-elements-radios" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-radio","lineagePath":"../../patterns/elements-radio-_radio/elements-radio-_radio.rendered.html","lineageState":"complete"}],"lineage":[{"lineagePattern":"elements-radio","lineagePath":"../../patterns/elements-radio-_radio/elements-radio-_radio.rendered.html","lineageState":"complete"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"radio"},"patternExtension":"hbs","patternName":"Radios","patternPartial":"elements-radios","patternState":"complete","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="elements-radios-checked" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/elements-radio-radios-checked&#x2F;elements-radio-radios-checked.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-radios-checked" title="Link to Pattern">
+						Radios Checked
+		
+						<span class="pl-c-pattern-state pl-c-pattern-state--complete" title="complete"></span>
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-radios-checked" data-patternpartial="elements-radios-checked" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-radios-checked">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+				<input type="radio"
+	class="elm-radio "
+	name="radioChecked"
+	id="id-a3dcac61-646a-4322-a4f5-875b8b44a5bf"
+	 checked
+	
+	
+	
+	
+	>
+<label class="elm-label" for="id-a3dcac61-646a-4322-a4f5-875b8b44a5bf">Radio 01</label>
+<br>
+	<input type="radio"
+	class="elm-radio "
+	name="radioChecked"
+	id="id-408c8279-d61b-4604-8a2b-cc016c53e126"
+	
+	
+	
+	
+	
+	>
+<label class="elm-label" for="id-408c8279-d61b-4604-8a2b-cc016c53e126">Radio 02</label>
+<br>
+	<input type="radio"
+	class="elm-radio "
+	name="radioChecked"
+	id="id-7061a1e2-d783-444d-bac1-b78e703fa8e1"
+	
+	
+	
+	
+	
+	>
+<label class="elm-label" for="id-7061a1e2-d783-444d-bac1-b78e703fa8e1">Radio 03</label>
+<br>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-elements-radios-checked" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-radio","lineagePath":"../../patterns/elements-radio-_radio/elements-radio-_radio.rendered.html","lineageState":"complete"}],"lineage":[{"lineagePattern":"elements-radio","lineagePath":"../../patterns/elements-radio-_radio/elements-radio-_radio.rendered.html","lineageState":"complete"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"radio"},"patternExtension":"hbs","patternName":"Radios Checked","patternPartial":"elements-radios-checked","patternState":"complete","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="elements-radios-disabled" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/elements-radio-radios-disabled&#x2F;elements-radio-radios-disabled.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-radios-disabled" title="Link to Pattern">
+						Radios Disabled
+		
+						<span class="pl-c-pattern-state pl-c-pattern-state--complete" title="complete"></span>
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-radios-disabled" data-patternpartial="elements-radios-disabled" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-radios-disabled">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+				<input type="radio"
+	class="elm-radio "
+	name="radioDisabled"
+	id="id-19663551-f295-4b9c-a059-4702f1d981d5"
+	
+	 disabled
+	
+	
+	
+	>
+<label class="elm-label" for="id-19663551-f295-4b9c-a059-4702f1d981d5">Radio 01</label>
+<br>
+	<input type="radio"
+	class="elm-radio "
+	name="radioDisabled"
+	id="id-c867c968-6c94-4a05-b339-5ab7d9f47c35"
+	
+	 disabled
+	
+	
+	
+	>
+<label class="elm-label" for="id-c867c968-6c94-4a05-b339-5ab7d9f47c35">Radio 02</label>
+<br>
+	<input type="radio"
+	class="elm-radio "
+	name="radioDisabled"
+	id="id-6e497bbb-8a72-4dd9-a5bf-572e04786cea"
+	
+	 disabled
+	
+	
+	
+	>
+<label class="elm-label" for="id-6e497bbb-8a72-4dd9-a5bf-572e04786cea">Radio 03</label>
+<br>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-elements-radios-disabled" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-radio","lineagePath":"../../patterns/elements-radio-_radio/elements-radio-_radio.rendered.html","lineageState":"complete"}],"lineage":[{"lineagePattern":"elements-radio","lineagePath":"../../patterns/elements-radio-_radio/elements-radio-_radio.rendered.html","lineageState":"complete"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"radio"},"patternExtension":"hbs","patternName":"Radios Disabled","patternPartial":"elements-radios-disabled","patternState":"complete","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="elements-radios-disabled-checked" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/elements-radio-radios-disabled-checked&#x2F;elements-radio-radios-disabled-checked.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-radios-disabled-checked" title="Link to Pattern">
+						Radios Disabled Checked
+		
+						<span class="pl-c-pattern-state pl-c-pattern-state--complete" title="complete"></span>
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-radios-disabled-checked" data-patternpartial="elements-radios-disabled-checked" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-radios-disabled-checked">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+				<input type="radio"
+	class="elm-radio "
+	name="radioDisabledChecked"
+	id="id-759769a2-fcbb-4c3b-8da9-908eaa563f1f"
+	 checked
+	 disabled
+	
+	
+	
+	>
+<label class="elm-label" for="id-759769a2-fcbb-4c3b-8da9-908eaa563f1f">Radio 01</label>
+<br>
+	<input type="radio"
+	class="elm-radio "
+	name="radioDisabledChecked"
+	id="id-8941454d-89a1-427c-ad30-a4f3100ea029"
+	
+	 disabled
+	
+	
+	
+	>
+<label class="elm-label" for="id-8941454d-89a1-427c-ad30-a4f3100ea029">Radio 02</label>
+<br>
+	<input type="radio"
+	class="elm-radio "
+	name="radioDisabledChecked"
+	id="id-c45dbe64-f1fc-410f-bb2d-bd36c599aa33"
+	
+	 disabled
+	
+	
+	
+	>
+<label class="elm-label" for="id-c45dbe64-f1fc-410f-bb2d-bd36c599aa33">Radio 03</label>
+<br>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-elements-radios-disabled-checked" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-radio","lineagePath":"../../patterns/elements-radio-_radio/elements-radio-_radio.rendered.html","lineageState":"complete"}],"lineage":[{"lineagePattern":"elements-radio","lineagePath":"../../patterns/elements-radio-_radio/elements-radio-_radio.rendered.html","lineageState":"complete"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"radio"},"patternExtension":"hbs","patternName":"Radios Disabled Checked","patternPartial":"elements-radios-disabled-checked","patternState":"complete","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="elements-radios-invalid-attribute" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/elements-radio-radios-invalid-attribute&#x2F;elements-radio-radios-invalid-attribute.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-radios-invalid-attribute" title="Link to Pattern">
+						Radios Invalid Attribute
+		
+						<span class="pl-c-pattern-state pl-c-pattern-state--complete" title="complete"></span>
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-radios-invalid-attribute" data-patternpartial="elements-radios-invalid-attribute" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-radios-invalid-attribute">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+				<input type="radio"
+	class="elm-radio "
+	name="radioInvalid"
+	id="id-77f1e10a-0e24-4572-9d42-9cb9cece1e25"
+	
+	
+	
+	
+	 aria-invalid="true"
+	>
+<label class="elm-label" for="id-77f1e10a-0e24-4572-9d42-9cb9cece1e25">Radio 01</label>
+<br>
+	<input type="radio"
+	class="elm-radio "
+	name="radioInvalid"
+	id="id-48fc2f74-60d7-40f1-a5fe-00a7ee7284d8"
+	
+	
+	
+	
+	 aria-invalid="true"
+	>
+<label class="elm-label" for="id-48fc2f74-60d7-40f1-a5fe-00a7ee7284d8">Radio 02</label>
+<br>
+	<input type="radio"
+	class="elm-radio "
+	name="radioInvalid"
+	id="id-a7548444-6d56-4469-8e49-3cbc10cfd69a"
+	
+	
+	
+	
+	 aria-invalid="true"
+	>
+<label class="elm-label" for="id-a7548444-6d56-4469-8e49-3cbc10cfd69a">Radio 03</label>
+<br>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-elements-radios-invalid-attribute" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-radio","lineagePath":"../../patterns/elements-radio-_radio/elements-radio-_radio.rendered.html","lineageState":"complete"}],"lineage":[{"lineagePattern":"elements-radio","lineagePath":"../../patterns/elements-radio-_radio/elements-radio-_radio.rendered.html","lineageState":"complete"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"radio"},"patternExtension":"hbs","patternName":"Radios Invalid Attribute","patternPartial":"elements-radios-invalid-attribute","patternState":"complete","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="elements-radios-label-hidden" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/elements-radio-radios-label-hidden&#x2F;elements-radio-radios-label-hidden.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-radios-label-hidden" title="Link to Pattern">
+						Radio - Hidden label
+		
+						<span class="pl-c-pattern-state pl-c-pattern-state--complete" title="complete"></span>
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-radios-label-hidden" data-patternpartial="elements-radios-label-hidden" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-radios-label-hidden">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+				<input type="radio"
+	class="elm-radio "
+	name="radioLabelHidden"
+	id="id-506869ab-ee05-43a6-9eb7-0bf73ad1541f"
+	
+	
+	
+	
+	
+	>
+<label class="elm-label" for="id-506869ab-ee05-43a6-9eb7-0bf73ad1541f" data-label-hidden="true">Radio 01</label>
+<br>
+	<input type="radio"
+	class="elm-radio "
+	name="radioLabelHidden"
+	id="id-a9484ca2-8e51-4941-8b45-8b528cd61c8f"
+	
+	
+	
+	
+	
+	>
+<label class="elm-label" for="id-a9484ca2-8e51-4941-8b45-8b528cd61c8f" data-label-hidden="true">Radio 02</label>
+<br>
+	<input type="radio"
+	class="elm-radio "
+	name="radioLabelHidden"
+	id="id-39409a14-f171-4d8d-8967-9341fe3438b6"
+	
+	
+	
+	
+	
+	>
+<label class="elm-label" for="id-39409a14-f171-4d8d-8967-9341fe3438b6" data-label-hidden="true">Radio 03</label>
+<br>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-elements-radios-label-hidden" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-radio","lineagePath":"../../patterns/elements-radio-_radio/elements-radio-_radio.rendered.html","lineageState":"complete"}],"lineage":[{"lineagePattern":"elements-radio","lineagePath":"../../patterns/elements-radio-_radio/elements-radio-_radio.rendered.html","lineageState":"complete"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"<h2>Possibility to hide the label</h2>\n<blockquote>\n<p>A label for a form control helps everyone better understand its purpose. In some cases, the purpose may be clear enough from the context when the content is rendered visually. The label can be hidden visually, though it still needs to be provided within the code to support other forms of presentation and interaction, such as for screen reader and speech input users.</p>\n</blockquote>\n<p>source: <a href=\"https://www.w3.org/WAI/tutorials/forms/labels/#hiding-label-text\">https://www.w3.org/WAI/tutorials/forms/labels/#hiding-label-text</a></p>\n<p>You could set the attribute <code>data-label-hidden=&quot;true&quot;</code> for the rare case that you would want to visually hide the textual label for a radio element.</p>\n","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"radio"},"patternExtension":"hbs","patternName":"Radio - Hidden label","patternPartial":"elements-radios-label-hidden","patternState":"complete","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="elements-radios-required" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/elements-radio-radios-required&#x2F;elements-radio-radios-required.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-radios-required" title="Link to Pattern">
+						Radios Required
+		
+						<span class="pl-c-pattern-state pl-c-pattern-state--complete" title="complete"></span>
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-radios-required" data-patternpartial="elements-radios-required" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-radios-required">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+				<input type="radio"
+	class="elm-radio "
+	name="radioRequired"
+	id="id-048d1270-c71d-4500-a4ec-224d4fdbe9cb"
+	
+	
+	
+	
+	
+	 required>
+<label class="elm-label" for="id-048d1270-c71d-4500-a4ec-224d4fdbe9cb">Radio 01</label>
+<br>
+	<input type="radio"
+	class="elm-radio "
+	name="radioRequired"
+	id="id-f05e2730-4bb8-4119-8458-fc97fa6913fa"
+	
+	
+	
+	
+	
+	 required>
+<label class="elm-label" for="id-f05e2730-4bb8-4119-8458-fc97fa6913fa">Radio 02</label>
+<br>
+	<input type="radio"
+	class="elm-radio "
+	name="radioRequired"
+	id="id-1d5fa403-1b79-4017-92eb-5e4e4d353426"
+	
+	
+	
+	
+	
+	 required>
+<label class="elm-label" for="id-1d5fa403-1b79-4017-92eb-5e4e4d353426">Radio 03</label>
+<br>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-elements-radios-required" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-radio","lineagePath":"../../patterns/elements-radio-_radio/elements-radio-_radio.rendered.html","lineageState":"complete"}],"lineage":[{"lineagePattern":"elements-radio","lineagePath":"../../patterns/elements-radio-_radio/elements-radio-_radio.rendered.html","lineageState":"complete"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"radio"},"patternExtension":"hbs","patternName":"Radios Required","patternPartial":"elements-radios-required","patternState":"complete","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+
+	</div>
+	<!--end pl-c-pattern-index-->
+
+</div>
+<!--end pl-c-main-->		<!--DO NOT REMOVE-->
+		<script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"patternPartial":"viewall-elements-radio"}
+</script>
+
+<script>
+  window.patternData = {"patternPartial":"viewall-elements-radio"};
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1733894994198">
+  (function() {
+    if (self != top) {
+      var cb = '1733894994198';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+
+<script type="module">
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  import('../../styleguide/js/patternlab-pattern.modern.js');
+</script>
+
+<script id="pl-js-insert-1733894994198" nomodule>
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  loadJS('../../styleguide/js/patternlab-pattern.js');
+</script>
+
+
+		<script src="../../js/plugins.min.js"></script>
+		<!-- details/summary polyfill //-->
+		<script src="../../js/details-element-polyfill.js"></script>
+		<!-- dialog polyfill //-->
+		<script src="../../js/dialog-polyfill.js"></script>
+	</body>
+
+</html>
