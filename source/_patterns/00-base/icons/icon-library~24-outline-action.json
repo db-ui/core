@@ -28,6 +28,9 @@
 			"icon-glyph": "alert-off"
 		},
 		{
+			"icon-glyph": "artificial-intelligence"
+		},
+		{
 			"icon-glyph": "attachment"
 		},
 		{
@@ -91,6 +94,9 @@
 			"icon-glyph": "document-check"
 		},
 		{
+			"icon-glyph": "document-cross"
+		},
+		{
 			"icon-glyph": "done"
 		},
 		{
@@ -101,6 +107,9 @@
 		},
 		{
 			"icon-glyph": "edit"
+		},
+		{
+			"icon-glyph": "euro-sign"
 		},
 		{
 			"icon-glyph": "face-delighted"
@@ -148,6 +157,9 @@
 			"icon-glyph": "help"
 		},
 		{
+			"icon-glyph": "id-card"
+		},
+		{
 			"icon-glyph": "image"
 		},
 		{
@@ -185,6 +197,9 @@
 		},
 		{
 			"icon-glyph": "print"
+		},
+		{
+			"icon-glyph": "pulse-wave"
 		},
 		{
 			"icon-glyph": "push-button"
