@@ -27,6 +27,9 @@
 			"icon-glyph": "hydrogen"
 		},
 		{
+			"icon-glyph": "iceportal"
+		},
+		{
 			"icon-glyph": "luggage-compartment"
 		},
 		{
@@ -55,6 +58,9 @@
 		},
 		{
 			"icon-glyph": "power-outlet"
+		},
+		{
+			"icon-glyph": "regioguide"
 		},
 		{
 			"icon-glyph": "reservation"
