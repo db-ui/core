@@ -10,7 +10,8 @@ $tabBar-tab-hover-backgroundColor: #{$db-color-cool-gray-700} + "1F" !default;
 $tabBar-tab-pressed-backgroundColor: #{$db-color-cool-gray-700} + "3D" !default;
 $tabBar-tab-active-border: #{to-rem(
 		$pxValue: 1
-	)} solid $db-color-cool-gray-500 !default;
+	)}
+	solid $db-color-cool-gray-500 !default;
 
 $tabBar-tabpanel--borderTop: to-rem(
 		$pxValue: 1

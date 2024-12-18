@@ -19,7 +19,7 @@ $icon-font-families: (
 	// 	"db_transportation-solid": (
 	// 		40
 	// 	)
-	// )
+	 // )
 ) !default;
 $icon-glyphs-enterprise: (
 	// "attachment": "\e1245",
@@ -80,6 +80,6 @@ $icon-glyphs-enterprise: (
 	// "undo": "\e922",
 	// // TODO: would need to get replaced by non-out-of-range unicodes
 	// "upload-cloud": "\e923",
-	// "watch": "\1f552"
+	 // "watch": "\1f552"
 );
 $icon-glyphs: map.merge($icon-glyphs-enterprise, $icon-glyphs-personenverkehr);
