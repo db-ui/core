@@ -1,7 +1,10 @@
 {
 	"defaults": {
 		"timeout": 10000,
-		"wait": 2000
+		"wait": 2000,
+		"chromeLaunchConfig": {
+			"executablePath": "/usr/bin/google-chrome"
+		}
 	},
 	"urls": [
 		"http://127.0.0.1:8080/patterns/base-colors/index.html",
