@@ -79,15 +79,15 @@
     "dialog-polyfill": "^0.5.6",
     "dotenv": "^16.4.7",
     "find-versions-cli": "^5.0.0",
-    "html-validate": "^8.27.0",
+    "html-validate": "^8.28.0",
     "html5-boilerplate": "^9.0.1",
     "husky": "^9.1.7",
     "iframe-resizer": "^5.3.2",
     "invokers-polyfill": "^0.4.6",
-    "lint-staged": "^15.2.11",
+    "lint-staged": "^15.3.0",
     "markdownlint-cli": "^0.43.0",
     "nodemon": "^3.1.9",
-    "npm-run-all": "^4.1.5",
+    "npm-run-all2": "7.0.2",
     "pa11y-ci": "^3.1.0",
     "plugin-node-patternlab-inline-remote-assets": "^0.2.1",
     "postcss": "^8.4.49",
@@ -112,5 +112,8 @@
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
-  "homepage": "https://db-ui.github.io/core/"
+  "homepage": "https://db-ui.github.io/core/",
+  "overrides": {
+    "cross-spawn": "~7.0.5"
+  }
 }
