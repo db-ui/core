@@ -13,7 +13,7 @@
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 [![@db-ui/core on Npmjs](https://img.shields.io/npm/v/@db-ui/core.svg?color=rgb%28237%2C%2028%2C%2036%29 "npm version")](https://npmjs.com/package/@db-ui/core "DB UI Core – on NPM")
-![Based on DB UX Design System guidelines](https://img.shields.io/badge/Based%20on-DB%20Design%20System%20UX%20Guides%20%2B%20Standards-d7dce1.svg)
+![Part of DB UX Design System Version 2](https://img.shields.io/badge/Part%20of-DB%20Design%20System%20Version%202-d7dce1.svg)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](CODE-OF-CONDUCT.md)
 
@@ -47,7 +47,7 @@ DB UI Core provides robust HTML UI components, reusable visual styles, and power
 
 ### Consistent & Compliant
 
-DB UI Core is based on the [DB UX Design System](https://marketingportal.extranet.deutschebahn.com/marketingportal/Design-Anwendungen/db-ux-design-system/version-2/Components), that are the guidelines for any Personenverkehr Customer and Deutsche Bahn Enterprise website and web applications.
+DB UI Core is based on the [DB UX Design System Version 2](https://marketingportal.extranet.deutschebahn.com/marketingportal/Design-Anwendungen/db-ux-design-system/version-2/Components), that are the guidelines for any Personenverkehr Customer and Deutsche Bahn Enterprise website and web applications.
 
 ### Accessible
 
@@ -63,13 +63,13 @@ DB UI Core is decoupled from the JavaScript layer, to implement the patterns in 
 
 ### Evergreen
 
-As [DB UX Design System](https://marketingportal.extranet.deutschebahn.com/marketingportal/Design-Anwendungen/db-ux-design-system/version-2/Components) evolves, so does DB UI Core, meaning apps only need to keep their DB UI Core package updated to ensure the latest look and feel.
+As [DB UX Design System Version 2](https://marketingportal.extranet.deutschebahn.com/marketingportal/Design-Anwendungen/db-ux-design-system/version-2/Components) evolves, so does DB UI Core, meaning apps only need to keep their DB UI Core package updated to ensure the latest look and feel.
 
 ## More information
 
 Additionally we'll provide some more information over time regrading the whole ecosystem:
 
-- [DB UX Design System documentation within the DB Marketingportal (german)](https://marketingportal.extranet.deutschebahn.com/marketingportal/Design-Anwendungen/db-ux-design-system/version-2/Components)
+- [DB UX Design System Version 2 documentation within the DB Marketingportal (german)](https://marketingportal.extranet.deutschebahn.com/marketingportal/Design-Anwendungen/db-ux-design-system/version-2/Components)
 - [Confluence / Base Wiki - "Technische Umsetzung des Enterprise UI Design Systems" (german, only available internally)](https://db.de/pu8moh)
 - [Confluence - Web UI Component Library (only available internally)](https://db.de/1tyr73)
 - [Changelog](https://github.com/db-ui/core/blob/main/CHANGELOG.md)
