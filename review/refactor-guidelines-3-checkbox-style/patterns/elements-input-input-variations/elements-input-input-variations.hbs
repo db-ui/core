@@ -1,8 +1,0 @@
-<dl data-tonality="regular" class="variations">
-{{#each variations }}
-	{{#each ../tonality }}
-		<dt>{{ ../variant }}:</dt>
-		<dd data-tonality="{{ this }}">{{> elements-input variant=../variant message=../message description=../description type=../../type label=../../label placeholder=../../placeholder id=(unique-id) }}</dd>
-	{{/each }}
-{{/each }}
-</dl>
