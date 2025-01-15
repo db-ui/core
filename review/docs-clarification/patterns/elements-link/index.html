@@ -1,0 +1,505 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>DB UI Core - Pattern Lab</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+	<script>document.documentElement.className = 'js ' + document.documentElement.className.replace(/\bno-js\b/, '')</script>
+
+	<!-- see https://htmlhead.dev/ for a description of what could get listed within your pages HEAD section //-->
+
+
+	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1736958919153" media="all">
+
+	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1736958919153" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1736958919153" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1736958919153" media="all">
+	<!-- dialog polyfill //-->
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1736958919153" media="all">
+
+	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1736958919153" media="all">
+	<!-- End Pattern Lab -->
+
+
+	<!-- Google's "Create good meta descriptions" / https://support.google.com/webmasters/answer/35624?hl=en#meta-descriptions
+documentation has useful tips on creating an effective description. //-->
+	<meta name="Description" content="Put your description here.">
+
+	<!-- You can add the theme-color meta extension in the <head> of your pages to suggest the color that browsers and OSes should use if they customize the display of individual pages in their UIs with varying colors.
+			more information: https://html.spec.whatwg.org/multipage/semantics.html#meta-theme-color -->
+	<meta name="theme-color" content="#f01414">
+
+	<!-- iframe resizing script for pattern previews -->
+	<script src="../../js/iframeResizer.contentWindow.js"></script>
+	<script src="../../js/invoker.min.js"></script>
+</head>
+
+<body class="styleguide">
+<!-- View All Patterns in a Pattern Sub-Type -->
+<div class="pl-c-main">
+
+	<!-- Index of Patterns -->
+	<div class="pl-c-pattern-index">
+
+		<div id="viewall-elements-link" class="pl-c-category">
+				
+			<h2 class="pl-c-category__title">
+				<a href="../../patterns/elements-link&#x2F;index.html" class="pl-c-category__title-link patternLink" data-patternpartial="viewall-elements-link">Link</a>
+			</h2><!--end pl-c-category__title-->
+		
+			<div class="pl-c-category__description pl-c-text-passage">
+				<h2>Variations/configurability</h2>
+<h3>Size</h3>
+<h4>SCSS (recommended)</h4>
+<p>Extend one of the size SCSS placeholders in case that you don't want the default (regular): <code>%size-Small</code> or <code>%size-Large</code></p>
+<h4>HTML attribute</h4>
+<p>You could set the different button sizes via the <code>data-size</code> attribute, the default is &quot;regular&quot; and in that case is optional.</p>
+<h3>Icons</h3>
+<p>The following three <code>rel=*</code> annotated links even already include an icon by default - you could enhance those by your own declarations for further patterns of linked pages.</p>
+<pre><code class="language-css">[rel=&quot;configuration&quot;]
+[rel=&quot;messages&quot;]
+[rel=&quot;account&quot;]
+</code></pre>
+<h2>Title attribute</h2>
+<p>Advice: Don't provide title attributes to links with identical text nodes. Since the text node is already perfectly visible, this is completely redundant. It doesn't even add anything for screen readers except — in some cases — repetition.</p>
+<h2>Button vs. Link</h2>
+<blockquote>
+<p>The HTML elements for buttons and links describe a very specific type of action that is going to be taken when they are used. It is important you know when to use which, as the distinction matters:</p>
+<ul>
+<li>Use a link when you’re navigating to another place, such as: a &quot;view all&quot; page, &quot;Jane Chen&quot; profile, a page &quot;skip link&quot; etc.</li>
+<li>Use buttons when you are performing an action, such as: &quot;submit,&quot; &quot;merge,&quot; &quot;create new,&quot; &quot;upload,&quot; etc.</li>
+<li>An action is almost always on the same page</li>
+</ul>
+</blockquote>
+<p>Source: <a href="https://www.lightningdesignsystem.com/components/buttons/#About-Buttons">https://www.lightningdesignsystem.com/components/buttons/#About-Buttons</a></p>
+<p>Further argumentations:</p>
+<ul>
+<li><a href="https://medium.com/simple-human/but-sometimes-links-look-like-buttons-and-buttons-look-like-links-9b371c57b3d2">https://medium.com/simple-human/but-sometimes-links-look-like-buttons-and-buttons-look-like-links-9b371c57b3d2</a></li>
+<li><a href="https://uxmovement.com/buttons/when-to-use-a-button-or-link/">https://uxmovement.com/buttons/when-to-use-a-button-or-link/</a></li>
+</ul>
+<h3>JavaScript &quot;links&quot;</h3>
+<blockquote>
+<p>Never use <code>&quot;javascript:&quot; &quot;#&quot;</code> or similar as the value of an <code>href</code> attribute. The purpose of the <code>href</code> attribute is to specify a URL only. If you wish to run JavaScript on an element click, use a <code>button</code> instead.</p>
+</blockquote>
+<p>Source: <a href="https://ebay.gitbook.io/mindpatterns/antipatterns/javascript-href">https://ebay.gitbook.io/mindpatterns/antipatterns/javascript-href</a></p>
+<h2>Further relevant attributes</h2>
+<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a</a></p>
+<h3>hreflang</h3>
+<blockquote>
+<p>This attribute indicates the human language of the linked resource. It is purely advisory, with no built-in functionality. Allowed values are determined by <a href="https://www.ietf.org/rfc/bcp/bcp47.txt">BCP47</a>.</p>
+</blockquote>
+<h3>ping</h3>
+<blockquote>
+<p>Contains a space-separated list of URLs to which, when the hyperlink is followed, <code>POST</code> requests with the body <code>PING</code> will be sent by the browser (in the background). Typically used for tracking/analytics.</p>
+</blockquote>
+<h3>rel</h3>
+<blockquote>
+<p>Specifies the relationship of the target object to the link object. The value is a space-separated list of <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types">link types</a>.</p>
+</blockquote>
+<h3>target</h3>
+<blockquote>
+<p>Specifies where to display the linked URL. It is a name of, or keyword for, a browsing context: a tab, window, or <code>&lt;iframe&gt;</code></p>
+</blockquote>
+<blockquote>
+<p>Note: When using <code>target</code>, consider adding <code>rel=&quot;noreferrer&quot;</code> to avoid exploitation of the <code>window.opener API</code>. See <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#Security_and_privacy_concerns">Security concerns</a> section.</p>
+</blockquote>
+<blockquote>
+<p>Note: Linking to another page using <code>target=&quot;_blank&quot;</code> will run the new page on the same process as your page. If the new page is executing expensive JS, your page's performance may suffer. To avoid this use <code>rel=&quot;noopener&quot;</code>.</p>
+</blockquote>
+<h3><code>aria-disabled</code></h3>
+<p>Instead of the <code>disabled</code>-attribute we're using for the <code>button</code> pattern to define a disabled state, we couldn't use this attribute on the <code>link</code> pattern, as <code>disabled</code> isn't a valid attribute an <code>a</code> HTML element, compare to e.g. the <a href="https://w3c.github.io/html-aria/#att-disabled">W3C ARIA documentation</a> and the <a href="https://html.spec.whatwg.org/#the-a-element">W3C spec</a>:</p>
+<blockquote>
+<p>Use the disabled attribute on any element that is allowed the disabled attribute in HTML.</p>
+</blockquote>
+<blockquote>
+<p>Only use the aria-disabled attribute for elements that are not allowed to have a disabled attribute in HTML.</p>
+</blockquote>
+<p>Please keep in mind to only include a disabled link sparly, as it's not recommended at all, compare to e.g. <a href="https://css-tricks.com/how-to-disable-links/#aa-just-dont-do-it">https://css-tricks.com/how-to-disable-links/#aa-just-dont-do-it</a></p>
+<h2>Ambiguous labels</h2>
+<p>Please keep in mind to use unambiguous labels: <a href="https://ebay.gitbook.io/mindpatterns/antipatterns/ambiguous-label">https://ebay.gitbook.io/mindpatterns/antipatterns/ambiguous-label</a></p>
+<h2>Link functionality caveat</h2>
+<blockquote>
+<p>The <code>aria-disabled=&quot;true&quot;</code> uses <code>pointer-events: none</code> to try to disable the link functionality of <code>&lt;a&gt;</code>s, but that CSS property is not yet standardized. In addition, even in browsers that do support <code>pointer-events: none</code>, keyboard navigation remains unaffected, meaning that sighted keyboard users and users of assistive technologies will still be able to activate these links. So to be safe, add a <code>tabindex=&quot;-1&quot;</code> attribute on these links (to prevent them from receiving keyboard focus) and use custom JavaScript to disable their functionality.</p>
+</blockquote>
+<p>Adapted from: <a href="https://getbootstrap.com/docs/4.3/components/buttons/#link-functionality-caveat">https://getbootstrap.com/docs/4.3/components/buttons/#link-functionality-caveat</a></p>
+
+			</div><!--end pl-c-category__description-->
+			
+		</div><!--end pl-c-category-->
+					<div id="elements-links" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/elements-link-links&#x2F;elements-link-links.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-links" title="Link to Pattern">
+						Links
+		
+						<span class="pl-c-pattern-state pl-c-pattern-state--inreview" title="inreview"></span>
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-links" data-patternpartial="elements-links" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-links">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+				<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a
+	href="#"
+	class="elm-link "
+	title="Title text"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	>Text Link
+</a>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a
+	href="#"
+	class="elm-link "
+	title="Title text"
+	
+	
+	 aria-disabled="true" tabindex="-1"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	>Text Link (disabled)
+</a>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit
+	</p>
+
+<p class="">
+	<a
+		href="#"
+		class="elm-link "
+		title="Title text"
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		>Teaser link
+	</a>
+</p>
+<p class="">
+	<a
+		href="#"
+		class="elm-link "
+		title="Title text"
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		 data-icon="settings"
+		
+		>Teaser link
+	</a>
+</p>
+<p class="">
+	<a
+		href="#"
+		class="elm-link "
+		title="Title text"
+		
+		
+		 aria-disabled="true" tabindex="-1"
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		>Teaser link (disabled)
+	</a>
+</p>
+<p class="">
+	<a
+		href="#"
+		class="elm-link "
+		title="Title text"
+		
+		
+		 aria-disabled="true" tabindex="-1"
+		
+		
+		
+		
+		
+		
+		
+		
+		 data-icon-after="account"
+		>Teaser Link (disabled)
+	</a>
+</p>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-elements-links" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-link","lineagePath":"../../patterns/elements-link-_link/elements-link-_link.rendered.html","lineageState":"inreview"}],"lineage":[{"lineagePattern":"elements-link","lineagePath":"../../patterns/elements-link-_link/elements-link-_link.rendered.html","lineageState":"inreview"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"link"},"patternExtension":"hbs","patternName":"Links","patternPartial":"elements-links","patternState":"inreview","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+		<div id="elements-links-small" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/elements-link-links-small&#x2F;elements-link-links-small.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="elements-links-small" title="Link to Pattern">
+						Links Small
+		
+						<span class="pl-c-pattern-state pl-c-pattern-state--inreview" title="inreview"></span>
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-elements-links-small" data-patternpartial="elements-links-small" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-elements-links-small">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			
+<p class="">
+	<a
+		href="#"
+		class="elm-link "
+		title="Title text"
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		 data-size="small"
+		
+		
+		>Teaser link
+	</a>
+</p>
+<p class="">
+	<a
+		href="#"
+		class="elm-link "
+		title="Title text"
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		 data-size="small"
+		 data-icon="settings"
+		
+		>Teaser link
+	</a>
+</p>
+<p class="">
+	<a
+		href="#"
+		class="elm-link "
+		title="Title text"
+		
+		
+		 aria-disabled="true" tabindex="-1"
+		
+		
+		
+		
+		
+		
+		 data-size="small"
+		
+		
+		>Teaser link (disabled)
+	</a>
+</p>
+<p class="">
+	<a
+		href="#"
+		class="elm-link "
+		title="Title text"
+		
+		
+		 aria-disabled="true" tabindex="-1"
+		
+		
+		
+		
+		
+		
+		 data-size="small"
+		
+		 data-icon-after="account"
+		>Teaser Link (disabled)
+	</a>
+</p>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-elements-links-small" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-link","lineagePath":"../../patterns/elements-link-_link/elements-link-_link.rendered.html","lineageState":"inreview"}],"lineage":[{"lineagePattern":"elements-link","lineagePath":"../../patterns/elements-link-_link/elements-link-_link.rendered.html","lineageState":"inreview"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"link"},"patternExtension":"hbs","patternName":"Links Small","patternPartial":"elements-links-small","patternState":"inreview","patternEngineName":"handlebars","extraOutput":{}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
+
+	</div>
+	<!--end pl-c-pattern-index-->
+
+</div>
+<!--end pl-c-main-->		<!--DO NOT REMOVE-->
+		<script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"patternPartial":"viewall-elements-link"}
+</script>
+
+<script>
+  window.patternData = {"patternPartial":"viewall-elements-link"};
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1736958919153">
+  (function() {
+    if (self != top) {
+      var cb = '1736958919153';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+
+<script type="module">
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  import('../../styleguide/js/patternlab-pattern.modern.js');
+</script>
+
+<script id="pl-js-insert-1736958919153" nomodule>
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  loadJS('../../styleguide/js/patternlab-pattern.js');
+</script>
+
+
+		<script src="../../js/plugins.min.js"></script>
+		<!-- details/summary polyfill //-->
+		<script src="../../js/details-element-polyfill.js"></script>
+		<!-- dialog polyfill //-->
+		<script src="../../js/dialog-polyfill.js"></script>
+	</body>
+
+</html>
