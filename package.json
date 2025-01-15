@@ -90,14 +90,14 @@
     "npm-run-all2": "7.0.2",
     "pa11y-ci": "^3.1.0",
     "plugin-node-patternlab-inline-remote-assets": "^0.2.1",
-    "postcss": "^8.5.0",
+    "postcss": "^8.5.1",
     "postcss-cli": "^11.0.0",
     "postcss-focus": "^7.0.0",
     "postcss-list-style-safari-fix": "^1.0.0",
     "prettier": "^3.4.2",
     "rimraf": "^6.0.1",
-    "sass": "^1.83.3",
-    "start-server-and-test": "^2.0.9",
+    "sass": "^1.83.4",
+    "start-server-and-test": "^2.0.10",
     "stylelint": "^14.16.1",
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-sass-guidelines": "^9.0.1",
@@ -112,8 +112,5 @@
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
-  "homepage": "https://db-ui.github.io/core/",
-  "overrides": {
-    "cross-spawn": "~7.0.5"
-  }
+  "homepage": "https://db-ui.github.io/core/"
 }
