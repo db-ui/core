@@ -112,8 +112,5 @@
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
-  "homepage": "https://db-ui.github.io/core/",
-  "overrides": {
-    "cross-spawn": "~7.0.5"
-  }
+  "homepage": "https://db-ui.github.io/core/"
 }
