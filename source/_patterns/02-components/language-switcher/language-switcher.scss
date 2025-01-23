@@ -57,6 +57,38 @@
 									[aria-selected="true"]
 								) {
 								top: to-rem($pxValue: 54 * 6);
+
+								&
+									~ li:not(
+										[aria-current="page"],
+										[aria-selected="true"]
+									) {
+									top: to-rem($pxValue: 54 * 7);
+
+									&
+										~ li:not(
+											[aria-current="page"],
+											[aria-selected="true"]
+										) {
+										top: to-rem($pxValue: 54 * 8);
+
+										&
+											~ li:not(
+												[aria-current="page"],
+												[aria-selected="true"]
+											) {
+											top: to-rem($pxValue: 54 * 9);
+
+											&
+												~ li:not(
+													[aria-current="page"],
+													[aria-selected="true"]
+												) {
+												top: to-rem($pxValue: 54 * 10);
+											}
+										}
+									}
+								}
 							}
 						}
 					}
