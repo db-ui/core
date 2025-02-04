@@ -63,8 +63,8 @@
   "devDependencies": {
     "@babel/cli": "^7.26.4",
     "@babel/preset-env": "^7.26.7",
-    "@commitlint/cli": "^19.6.1",
-    "@commitlint/config-conventional": "^19.6.0",
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
     "@mfranzke/plugin-node-uiextension": "^1.0.0",
     "@pattern-lab/cli": "^6.1.0",
     "@pattern-lab/core": "^6.0.1",
