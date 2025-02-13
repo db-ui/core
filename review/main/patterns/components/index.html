@@ -12,17 +12,17 @@
 
 
 	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1738828914764" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1739422420853" media="all">
 
 	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
-	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1738828914764" media="all">
-	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1738828914764" media="all">
-	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1738828914764" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1739422420853" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1739422420853" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1739422420853" media="all">
 	<!-- dialog polyfill //-->
-	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1738828914764" media="all">
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1739422420853" media="all">
 
 	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1738828914764" media="all">
+	<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1739422420853" media="all">
 	<!-- End Pattern Lab -->
 
 
@@ -2696,7 +2696,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-components-table" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"}],"lineage":[{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"components-table-alignments","lineagePath":"../../patterns/components-table-table-alignments/components-table-table-alignments.rendered.html"},{"lineagePattern":"components-table-density","lineagePath":"../../patterns/components-table-table-density/components-table-table-density.rendered.html"}],"lineageR":[{"lineagePattern":"components-table-alignments","lineagePath":"../../patterns/components-table-table-alignments/components-table-table-alignments.rendered.html"},{"lineagePattern":"components-table-density","lineagePath":"../../patterns/components-table-table-density/components-table-table-density.rendered.html"}],"patternLineageEExists":true,"patternDesc":"<h2>Hiding columns and rows as responsive behaviour</h2>\n<p>To hide columns and/or rows depending on the viewport size, you could use a SCSS mixin that we provide or even also easily set up some CSS on your own to do so.\nWe've decided against providing classes that would need to get set onto the HTML elements, as you would have to do this for each and very <code>td</code> / <code>th</code> element repeatedly, and it would heavily complicate the configuration as well as harm the elementary concepts of dividing style from content.</p>\n<h3>Hiding columns</h3>\n<p>Using the following SCSS mixin, you could hide a specific column (first parameter), depending on a maximum viewport-width (second parameter), e.g. the following would hide the second column in the <code>thead</code> and <code>tbody</code> section on a viewport up to <code>1023px</code> width:</p>\n<pre><code class=\"language-SCSS\">@include cmp-table-hide-col(2, 1023px);\n</code></pre>\n<p>In case that you wouldn't want to / can't use SCSS, than you could as well easily develop this on your own in pure CSS:</p>\n<pre><code class=\"language-CSS\">@media screen and (max-width: 1023px) {\n\tthead th:nth-child(2),\n\ttbody td:nth-child(2) {\n\t\tdisplay: none;\n\t}\n}\n</code></pre>\n<h3>Hiding rows</h3>\n<p>Using the following SCSS mixin, you could hide a specific row (first parameter), depending on a maximum viewport-width (second parameter), e.g. the following would hide the second row in the <code>tbody</code> section on a viewport up to <code>1023px</code> width:</p>\n<pre><code class=\"language-SCSS\">@include cmp-table-hide-row(2, 1023px);\n</code></pre>\n<p>In case that you wouldn't want to / can't use SCSS, than you could as well easily develop this on your own in pure CSS:</p>\n<pre><code class=\"language-CSS\">@media screen and (max-width: 1023px) {\n\ttbody tr:nth-child(2) {\n\t\tdisplay: none;\n\t}\n}\n</code></pre>\n","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"table"},"patternExtension":"hbs","patternName":"Table","patternPartial":"components-table","patternState":"inreview","patternEngineName":"handlebars","extraOutput":{}}
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"}],"lineage":[{"lineagePattern":"components-overflow-menu","lineagePath":"../../patterns/components-overflow-menu-overflow-menu/components-overflow-menu-overflow-menu.rendered.html","lineageState":"inreview"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"components-sample-page-with-sticky-header-and-sticky-table-header","lineagePath":"../../patterns/components-table-sample-page-with-sticky-header-and-sticky-table-header/components-table-sample-page-with-sticky-header-and-sticky-table-header.rendered.html"},{"lineagePattern":"components-table-alignments","lineagePath":"../../patterns/components-table-table-alignments/components-table-table-alignments.rendered.html"},{"lineagePattern":"components-table-density","lineagePath":"../../patterns/components-table-table-density/components-table-table-density.rendered.html"}],"lineageR":[{"lineagePattern":"components-sample-page-with-sticky-header-and-sticky-table-header","lineagePath":"../../patterns/components-table-sample-page-with-sticky-header-and-sticky-table-header/components-table-sample-page-with-sticky-header-and-sticky-table-header.rendered.html"},{"lineagePattern":"components-table-alignments","lineagePath":"../../patterns/components-table-table-alignments/components-table-table-alignments.rendered.html"},{"lineagePattern":"components-table-density","lineagePath":"../../patterns/components-table-table-density/components-table-table-density.rendered.html"}],"patternLineageEExists":true,"patternDesc":"<h2>Hiding columns and rows as responsive behaviour</h2>\n<p>To hide columns and/or rows depending on the viewport size, you could use a SCSS mixin that we provide or even also easily set up some CSS on your own to do so.\nWe've decided against providing classes that would need to get set onto the HTML elements, as you would have to do this for each and very <code>td</code> / <code>th</code> element repeatedly, and it would heavily complicate the configuration as well as harm the elementary concepts of dividing style from content.</p>\n<h3>Hiding columns</h3>\n<p>Using the following SCSS mixin, you could hide a specific column (first parameter), depending on a maximum viewport-width (second parameter), e.g. the following would hide the second column in the <code>thead</code> and <code>tbody</code> section on a viewport up to <code>1023px</code> width:</p>\n<pre><code class=\"language-SCSS\">@include cmp-table-hide-col(2, 1023px);\n</code></pre>\n<p>In case that you wouldn't want to / can't use SCSS, than you could as well easily develop this on your own in pure CSS:</p>\n<pre><code class=\"language-CSS\">@media screen and (max-width: 1023px) {\n\tthead th:nth-child(2),\n\ttbody td:nth-child(2) {\n\t\tdisplay: none;\n\t}\n}\n</code></pre>\n<h3>Hiding rows</h3>\n<p>Using the following SCSS mixin, you could hide a specific row (first parameter), depending on a maximum viewport-width (second parameter), e.g. the following would hide the second row in the <code>tbody</code> section on a viewport up to <code>1023px</code> width:</p>\n<pre><code class=\"language-SCSS\">@include cmp-table-hide-row(2, 1023px);\n</code></pre>\n<p>In case that you wouldn't want to / can't use SCSS, than you could as well easily develop this on your own in pure CSS:</p>\n<pre><code class=\"language-CSS\">@media screen and (max-width: 1023px) {\n\ttbody tr:nth-child(2) {\n\t\tdisplay: none;\n\t}\n}\n</code></pre>\n","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"table"},"patternExtension":"hbs","patternName":"Table","patternPartial":"components-table","patternState":"inreview","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -4294,6 +4294,1037 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
 			</script>
 		
 		</div><!--end pl-c-pattern-->
+		<div id="components-sample-page-with-sticky-header-and-sticky-table-header" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/components-table-sample-page-with-sticky-header-and-sticky-table-header&#x2F;components-table-sample-page-with-sticky-header-and-sticky-table-header.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-sample-page-with-sticky-header-and-sticky-table-header" title="Link to Pattern">
+						Sample page with sticky header and sticky table header (open directly for demonstration purpose)
+		
+						<span class="pl-c-pattern-state pl-c-pattern-state--inprogress" title="inprogress"></span>
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-sample-page-with-sticky-header-and-sticky-table-header" data-patternpartial="components-sample-page-with-sticky-header-and-sticky-table-header" title="View Pattern Info" type="button">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-sample-page-with-sticky-header-and-sticky-table-header">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			<header class="rea-header">
+	<nav class="cmp-mainnavigation" id="mainnavigation">
+		<input type="checkbox" id="toggle_mainnavigation">
+		<label for="toggle_mainnavigation" title="Toggle main navigation" class="is-site-name">UI Core</label>
+		<ul>
+			<li aria-haspopup="true">
+				<a
+					href="#"
+					class="elm-link "
+					title=""
+					 rel="index"
+					
+					
+					
+					
+					
+					
+					
+					 aria-current="page"
+					
+					
+					
+					>Startseite
+				</a>
+	
+				<ul>
+						<li aria-haspopup="true">
+							<a
+								href="#"
+								class="elm-link "
+								title=""
+								 rel="index"
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								>Submenu 01
+							</a>
+	
+								<ul>
+										<li><a
+		href="#"
+		class="elm-link "
+		title=""
+		 rel="index"
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		>Sub 01 Sub 01
+	</a>
+	</li>
+										<li><a
+		href="#"
+		class="elm-link "
+		title=""
+		 rel="offers"
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		>Sub 01 Sub 02
+	</a>
+	</li>
+										<li><a
+		href="#"
+		class="elm-link "
+		title=""
+		 rel="news"
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		>Sub 01 Sub 03
+	</a>
+	</li>
+										<li><a
+		href="#"
+		class="elm-link "
+		title=""
+		 rel="index"
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		>Sub 01 Sub 04
+	</a>
+	</li>
+										<li><a
+		href="#"
+		class="elm-link "
+		title=""
+		 rel="offers"
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		>Sub 01 Sub 05
+	</a>
+	</li>
+										<li><a
+		href="#"
+		class="elm-link "
+		title=""
+		 rel="news"
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		>Sub 01 Sub 06
+	</a>
+	</li>
+										<li><a
+		href="#"
+		class="elm-link "
+		title=""
+		 rel="index"
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		>Sub 01 Sub 07
+	</a>
+	</li>
+										<li><a
+		href="#"
+		class="elm-link "
+		title=""
+		 rel="offers"
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		>Sub 01 Sub 08
+	</a>
+	</li>
+										<li><a
+		href="#"
+		class="elm-link "
+		title=""
+		 rel="news"
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		>Sub 01 Sub 09
+	</a>
+	</li>
+								</ul>
+						</li>
+						<li aria-haspopup="true">
+							<a
+								href="#"
+								class="elm-link "
+								title=""
+								 rel="offers"
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								>Submenu 02
+							</a>
+	
+								<ul>
+										<li><a
+		href="#"
+		class="elm-link "
+		title=""
+		 rel="index"
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		>Sub 02 Sub 01
+	</a>
+	</li>
+										<li><a
+		href="#"
+		class="elm-link "
+		title=""
+		 rel="offers"
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		>Sub 02 Sub 02
+	</a>
+	</li>
+										<li><a
+		href="#"
+		class="elm-link "
+		title=""
+		 rel="news"
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		>Sub 02 Sub 03
+	</a>
+	</li>
+								</ul>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="elm-link "
+								title=""
+								 rel="news"
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								>Submenu 03
+							</a>
+	
+						</li>
+				</ul>
+			</li>
+			<li>
+				<a
+					href="#"
+					class="elm-link "
+					title=""
+					 rel="offers"
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					>Aufträge
+				</a>
+	
+			</li>
+			<li>
+				<a
+					href="#"
+					class="elm-link "
+					title=""
+					 rel="news"
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					>News
+				</a>
+	
+			</li>
+		</ul>
+	</nav>
+
+	<div class="cmp-brand">
+		<a href="#" title="Home" rel="home">
+			
+					<img src="../../images/db_logo.svg" alt="Deutsche Bahn Logo" width="" height=""
+						class="elm-image is-logo"   elementtiming="logo" >
+			
+				
+		</a>
+		<span class="is-site-name">UI Core</span>
+	</div>
+
+	<div class="rea-meta">
+		<form class="cmp-sitesearch" action="#" method="post" role="search">
+			<!-- The aria-labelledby attribute on the input and related id on the label as well as aria-hidden="true" are being set for correct support within assistive tools like screenreaders //-->
+			<input type="search"
+				class="elm-input "
+				placeholder="Suchen …"
+				name="id-2dae004b-a695-4438-8bc5-43ab64b5fd85"
+				id="id-2dae004b-a695-4438-8bc5-43ab64b5fd85"
+				
+				value=""
+				
+				
+				
+				
+				aria-labelledby="id-2dae004b-a695-4438-8bc5-43ab64b5fd85-label"
+				
+				>
+			<label class="elm-label"
+				for="id-2dae004b-a695-4438-8bc5-43ab64b5fd85"
+				aria-hidden="true"
+				id="id-2dae004b-a695-4438-8bc5-43ab64b5fd85-label"
+				>Suche</label>
+			
+			
+			
+			<button class="elm-button "
+				
+				
+				title="Title text"
+				type="submit"
+				
+				
+				
+				
+				
+				
+				
+				>
+				Suchen
+			</button>
+		</form>
+		<ul class="cmp-metanavigation">
+			<li>
+				<a
+					href="#"
+					class="elm-link "
+					title="Title text"
+					 rel="configuration"
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					>Einstellungen
+				</a>
+			</li>
+			<li>
+				<a
+					href="#"
+					class="elm-link "
+					title="Title text"
+					 rel="messages"
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					>Nachrichten
+				</a>
+			</li>
+		</ul>
+		
+		<ul class="cmp-language-switcher">
+			<li>
+					<a
+						href="#"
+						class="elm-link "
+						title="English language"
+						 rel="alternate"
+						
+						
+						
+						
+						
+						 hreflang="en"
+						
+						
+						
+						
+						
+						>EN
+					</a>
+			</li>
+			<li aria-current="page">
+					<a
+						href="#"
+						class="elm-link "
+						title="Deutsche Sprache"
+						 rel="bookmark"
+						
+						
+						
+						
+						
+						 hreflang="de"
+						
+						
+						
+						
+						
+						>DE
+					</a>
+			</li>
+			<li>
+					<a
+						href="#"
+						class="elm-link "
+						title="Langue française"
+						 rel="alternate"
+						
+						
+						
+						
+						
+						 hreflang="fr"
+						
+						
+						
+						
+						
+						>FR
+					</a>
+			</li>
+		</ul>
+			<a
+				href="#"
+				class="elm-link "
+				title="Title text"
+				 rel="account"
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				>Login
+			</a>
+	</div>
+</header>
+<main class="rea-main">
+
+	<!-- [html-validate-disable-next heading-level, no-unused-disable -- we're doing some simple demonstration simplification here] -->
+	<h1 class="elm-headline ">Dies ist eine Headline</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	
+	<table class="cmp-table "
+		
+		
+		
+		
+		 data-sticky="header">
+		<caption>
+			Table title
+		</caption>
+		<thead>
+			<tr>
+				
+				<th scope="col">The table header 01</th>
+				<th scope="col">The table header 02</th>
+			</tr>
+		</thead>
+		<tbody>
+				<tr>
+					
+					<td>Value 01 - 01</td>
+					<td>Value 01 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 02 - 01</td>
+					<td>Value 02 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 03 - 01</td>
+					<td>Value 03 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 04 - 01</td>
+					<td>Value 04 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 05 - 01</td>
+					<td>Value 05 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 01 - 01</td>
+					<td>Value 01 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 02 - 01</td>
+					<td>Value 02 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 03 - 01</td>
+					<td>Value 03 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 04 - 01</td>
+					<td>Value 04 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 05 - 01</td>
+					<td>Value 05 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 01 - 01</td>
+					<td>Value 01 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 02 - 01</td>
+					<td>Value 02 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 03 - 01</td>
+					<td>Value 03 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 04 - 01</td>
+					<td>Value 04 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 05 - 01</td>
+					<td>Value 05 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 01 - 01</td>
+					<td>Value 01 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 02 - 01</td>
+					<td>Value 02 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 03 - 01</td>
+					<td>Value 03 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 04 - 01</td>
+					<td>Value 04 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 05 - 01</td>
+					<td>Value 05 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 01 - 01</td>
+					<td>Value 01 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 02 - 01</td>
+					<td>Value 02 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 03 - 01</td>
+					<td>Value 03 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 04 - 01</td>
+					<td>Value 04 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 05 - 01</td>
+					<td>Value 05 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 01 - 01</td>
+					<td>Value 01 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 02 - 01</td>
+					<td>Value 02 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 03 - 01</td>
+					<td>Value 03 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 04 - 01</td>
+					<td>Value 04 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 05 - 01</td>
+					<td>Value 05 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 01 - 01</td>
+					<td>Value 01 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 02 - 01</td>
+					<td>Value 02 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 03 - 01</td>
+					<td>Value 03 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 04 - 01</td>
+					<td>Value 04 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 05 - 01</td>
+					<td>Value 05 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 01 - 01</td>
+					<td>Value 01 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 02 - 01</td>
+					<td>Value 02 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 03 - 01</td>
+					<td>Value 03 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 04 - 01</td>
+					<td>Value 04 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 05 - 01</td>
+					<td>Value 05 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 01 - 01</td>
+					<td>Value 01 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 02 - 01</td>
+					<td>Value 02 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 03 - 01</td>
+					<td>Value 03 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 04 - 01</td>
+					<td>Value 04 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 05 - 01</td>
+					<td>Value 05 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 01 - 01</td>
+					<td>Value 01 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 02 - 01</td>
+					<td>Value 02 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 03 - 01</td>
+					<td>Value 03 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 04 - 01</td>
+					<td>Value 04 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 05 - 01</td>
+					<td>Value 05 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 01 - 01</td>
+					<td>Value 01 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 02 - 01</td>
+					<td>Value 02 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 03 - 01</td>
+					<td>Value 03 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 04 - 01</td>
+					<td>Value 04 - 02</td>
+					
+				</tr>
+				<tr>
+					
+					<td>Value 05 - 01</td>
+					<td>Value 05 - 02</td>
+					
+				</tr>
+		</tbody>
+	</table>
+</main>
+<footer class="rea-footer ">
+	<ul class="cmp-metanavigation">
+			<li>
+				<a
+					href="https://db-ui.github.io/datenschutzerklaerung.html"
+					class="elm-link "
+					title=""
+					 rel="noopener noreferrer"
+					
+					
+					
+					
+					 lang="de"
+					 hreflang="de"
+					 target="_blank"
+					
+					
+					
+					
+					>Datenschutzerklärung (Data privacy)
+				</a>
+			</li>
+			<li>
+				<a
+					href="https://www.dbsystel.de/dbsystel-en/legal-3715942"
+					class="elm-link "
+					title=""
+					 rel="noopener noreferrer"
+					
+					
+					
+					
+					
+					
+					 target="_blank"
+					
+					
+					
+					
+					>Imprint
+				</a>
+			</li>
+			<li>
+				<a
+					href="mailto:db-ux-designsystem@deutschebahn.com"
+					class="elm-link "
+					title=""
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					>Contact
+				</a>
+			</li>
+			<li>
+				<a
+					href="https://marketingportal.extranet.deutschebahn.com/marketingportal/Design-Anwendungen/db-ux-design-system/version-2/"
+					class="elm-link "
+					title=""
+					 rel="noopener noreferrer"
+					
+					
+					
+					
+					
+					
+					 target="_blank"
+					
+					
+					
+					
+					>About us
+				</a>
+			</li>
+	</ul>
+	Copyright 2024 DB Systel
+</footer>
+
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-components-sample-page-with-sticky-header-and-sticky-table-header" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"areas-header","lineagePath":"../../patterns/areas-header-header/areas-header-header.rendered.html","lineageState":"inprogress"},{"lineagePattern":"elements-headline","lineagePath":"../../patterns/elements-headline-headline/elements-headline-headline.rendered.html"},{"lineagePattern":"components-table","lineagePath":"../../patterns/components-table-table/components-table-table.rendered.html","lineageState":"inreview"},{"lineagePattern":"areas-footer","lineagePath":"../../patterns/areas-footer-footer/areas-footer-footer.rendered.html","lineageState":"inprogress"}],"lineage":[{"lineagePattern":"areas-header","lineagePath":"../../patterns/areas-header-header/areas-header-header.rendered.html","lineageState":"inprogress"},{"lineagePattern":"elements-headline","lineagePath":"../../patterns/elements-headline-headline/elements-headline-headline.rendered.html"},{"lineagePattern":"components-table","lineagePath":"../../patterns/components-table-table/components-table-table.rendered.html","lineageState":"inreview"},{"lineagePattern":"areas-footer","lineagePath":"../../patterns/areas-footer-footer/areas-footer-footer.rendered.html","lineageState":"inprogress"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"table"},"patternExtension":"hbs","patternName":"Sample page with sticky header and sticky table header (open directly for demonstration purpose)","patternPartial":"components-sample-page-with-sticky-header-and-sticky-table-header","patternState":"inprogress","patternEngineName":"handlebars","extraOutput":{"order":10}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->
 
 	</div>
 	<!--end pl-c-pattern-index-->
@@ -4341,10 +5372,10 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1738828914764">
+<script id="pl-js-polyfill-insert-1739422420853">
   (function() {
     if (self != top) {
-      var cb = '1738828914764';
+      var cb = '1739422420853';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -4357,7 +5388,7 @@ We can't toggle any given/static attribute in the DB UI Core product itself, as 
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1738828914764" nomodule>
+<script id="pl-js-insert-1739422420853" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 
