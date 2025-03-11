@@ -1,7 +1,7 @@
 {
 	"extends": [
-		"stylelint-config-sass-guidelines",
-		"stylelint-config-prettier"
+		"stylelint-config-standard",
+		"stylelint-config-sass-guidelines"
 	],
 	"rules": {
 		"order/properties-alphabetical-order": null,
