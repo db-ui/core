@@ -1,3 +1,4 @@
 source/fonts/**/sources
 sources/**
 source/pattern-template/_pattern-template.scss
+.stylelintrc.json
