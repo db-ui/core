@@ -82,7 +82,7 @@
     "html-validate": "^9.5.2",
     "html5-boilerplate": "^9.0.1",
     "husky": "^9.1.7",
-    "iframe-resizer": "^5.4.2",
+    "iframe-resizer": "^5.4.3",
     "invokers-polyfill": "^0.5.2",
     "lint-staged": "^15.5.0",
     "markdownlint-cli": "^0.44.0",
