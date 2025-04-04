@@ -19,9 +19,11 @@
 
 <!-- ![Pipeline status](https://github.com/db-ui/core/badges/main/pipeline.svg?style=flat) -->
 
+<!-- markdownlint-disable MD033 -->
+
 > [!IMPORTANT]
 > We've released the new stable version of the [DB UX Design System v3](https://github.com/db-ux-design-system/core-web), which is the successor to this generation of DB Design Systems.
-> Especially for new projects, we strongly recommend building on [DB UX Design System v3](https://github.com/db-ux-design-system/core-web).<!-- markdownlint-disable MD033 -->
+> Especially for new projects, we strongly recommend building on [DB UX Design System v3](https://github.com/db-ux-design-system/core-web).
 > The new version has some great benefits and optimisations, especially in terms of accessibility testing, further and better framework support and ongoing development.<br>
 
 <!-- markdownlint-enable MD033 -->
