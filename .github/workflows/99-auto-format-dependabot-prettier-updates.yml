@@ -51,5 +51,5 @@ jobs:
           git checkout ${{ github.head_ref }}  # This ensures we're on the PR branch
 
           git add .
-          git commit -m "Auto-format codebase with Prettier" || echo "No changes to commit"
+          git commit -a -m "Auto-format codebase with Prettier" || echo "No changes to commit"
           git push origin HEAD:${{ github.head_ref }}  # Push back to the same PR branch
