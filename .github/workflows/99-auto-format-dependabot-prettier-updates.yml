@@ -10,7 +10,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.ref }}
+          ref: ${{github.event.pull_request.head.ref}}
           fetch-depth: 0
 
       - name: Set up Node.js
@@ -44,9 +44,6 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-
-          # Checkout the PR branch (already done by actions/checkout)
-          git checkout ${{ github.head_ref }}  # This ensures we're on the PR branch
 
           git add .
           git commit --all -m "Auto-format codebase with Prettier" || echo "No changes to commit"
