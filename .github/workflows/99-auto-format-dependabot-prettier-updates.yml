@@ -13,9 +13,6 @@ jobs:
           ref: ${{ github.ref }}
           fetch-depth: 0
 
-      - name: Branch name
-        run: echo running on branch ${GITHUB_REF##*/}
-
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
@@ -40,7 +37,7 @@ jobs:
       - name: Run Prettier to format the code
         if: env.prettier_update == 'true'
         run: |
-          npx --no prettier --write .
+          npx --no prettier . --write
 
       - name: Commit changes if formatting is done
         if: env.prettier_update == 'true'
