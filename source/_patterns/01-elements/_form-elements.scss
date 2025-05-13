@@ -1,7 +1,6 @@
 @import "../../css/helpers/functions";
 @import "form-elements.variables";
 
-// stylelint-disable custom-property-pattern
 %form-element {
 	--formElement---borderTopColor: var(
 		--formElement---borderColor,
