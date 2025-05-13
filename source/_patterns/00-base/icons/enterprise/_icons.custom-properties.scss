@@ -8,7 +8,8 @@
 					&[data-icon],
 					&[data-icon-before] {
 						&::before {
-							--icon-font-family: "#{"icons-" + $icon-size + "-" + $icon-domain + "-" + $icon-style}",
+							--icon-font-family:
+								"#{"icons-" + $icon-size + "-" + $icon-domain + "-" + $icon-style}",
 								"missing-icons" !important;
 							--icon-font-size: #{to-rem($pxValue: $icon-size)};
 						}
@@ -17,7 +18,8 @@
 				[data-icon-variant-after="#{$icon-size}-#{$icon-domain}-#{$icon-style}"] {
 					&[data-icon-after] {
 						&::after {
-							--icon-font-family: "#{"icons-" + $icon-size + $icon-domain + "-" + "-" + $icon-style}",
+							--icon-font-family:
+								"#{"icons-" + $icon-size + $icon-domain + "-" + "-" + $icon-style}",
 								"missing-icons" !important;
 							--icon-font-size: #{to-rem($pxValue: $icon-size)};
 						}
@@ -30,7 +32,8 @@
 				&[data-icon],
 				&[data-icon-before] {
 					&::before {
-						--icon-font-family: "#{"icons-" + $icon-domain + "-" + $icon-style}",
+						--icon-font-family:
+							"#{"icons-" + $icon-domain + "-" + $icon-style}",
 							"missing-icons" !important;
 						--icon-font-size: #{to-rem($pxValue: 16)};
 					}
@@ -39,7 +42,8 @@
 			[data-icon-variant-after="#{$icon-domain}-#{$icon-style}"] {
 				&[data-icon-after] {
 					&::after {
-						--icon-font-family: "#{"icons-" + $icon-domain + "-" + $icon-style}",
+						--icon-font-family:
+							"#{"icons-" + $icon-domain + "-" + $icon-style}",
 							"missing-icons" !important;
 						--icon-font-size: #{to-rem($pxValue: 16)};
 					}
