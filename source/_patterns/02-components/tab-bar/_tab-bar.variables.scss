@@ -17,4 +17,5 @@ $tabBar-tabpanel--borderTop: to-rem(
 		$pxValue: 1
 	)
 	solid $db-color-cool-gray-500 !default;
-$tabBar-tabpanel--boxShadow: $box-shadow-01-bottom, $box-shadow-02-bottom !default;
+$tabBar-tabpanel--boxShadow:
+	$box-shadow-01-bottom, $box-shadow-02-bottom !default;
