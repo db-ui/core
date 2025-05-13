@@ -15,6 +15,9 @@ jobs:
   auto-merge:
     uses: ./.github/workflows/99-auto-merge.yml
 
+  dependabot-prettier-self-healing:
+    uses: ./.github/workflows/99-auto-format-dependabot-prettier-updates.yml
+
   codeql:
     uses: ./.github/workflows/99-codeql-analysis.yml
 

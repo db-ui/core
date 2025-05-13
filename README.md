@@ -19,10 +19,15 @@
 
 <!-- ![Pipeline status](https://github.com/db-ui/core/badges/main/pipeline.svg?style=flat) -->
 
+<!-- markdownlint-disable MD033 -->
+
 > [!IMPORTANT]
-> We've released the new stable version of the [DB UX Design System v3](https://github.com/db-ux-design-system/core-web), which is the successor of this generation of DB Design Systems.
+> We've released the new stable version of the [DB UX Design System v3](https://github.com/db-ux-design-system/core-web), which is the successor to this generation of DB Design Systems.
 > Especially for new projects, we strongly recommend building on [DB UX Design System v3](https://github.com/db-ux-design-system/core-web).
-> The new version has some great benefits and optimisations, especially in terms of accessibility testing, further and better framework support and ongoing development.
+> The new version has some great benefits and optimisations, especially in terms of accessibility testing, further and better framework support and ongoing development.<br>
+> Please note that we won't be providing any new features from now on, only bug fixes until EOL at the end of 2026.
+
+<!-- markdownlint-enable MD033 -->
 
 > [!WARNING]
 > We've tried a [quick migration to newer SCSS syntax like e.g. `@use` instead of the nowadays deprecated `@import`](https://github.com/db-ui/core/issues/994), but this seems to be more complicated than expected.
