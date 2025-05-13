@@ -2,6 +2,5 @@
 	"*.md": "markdownlint -c .markdown-lint.yml",
 	".stylelintrc.*": "stylelint --validate --allow-empty-input",
 	"stylelint.config.*": "stylelint --validate --allow-empty-input",
-	"*.{css,scss}": "stylelint --fix --no-validate",
 	"*.{js,ts,tsx,jsx,mjs,cjs}": "xo --fix"
 }
