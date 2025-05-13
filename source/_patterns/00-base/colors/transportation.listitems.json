@@ -17,8 +17,8 @@
 		},
 		{
 			"name": "RE",
-			"hex": "#878c96",
-			"scssvariable": "$db-color-re: $db-color-cool-gray-400"
+			"hex": "#afb4bb",
+			"scssvariable": "$db-color-re: $db-color-cool-gray-300"
 		},
 		{
 			"name": "RB",
