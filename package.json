@@ -85,7 +85,7 @@
     "iframe-resizer": "^5.4.6",
     "invokers-polyfill": "^0.5.4",
     "lint-staged": "^16.0.0",
-    "markdownlint-cli": "^0.44.0",
+    "markdownlint-cli": "^0.45.0",
     "nodemon": "^3.1.10",
     "npm-run-all2": "8.0.2",
     "pa11y-ci": "^3.1.0",
