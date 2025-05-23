@@ -15,8 +15,8 @@
 	}
 
 	&::#{$position} {
-		--icon-font-family: "#{"icons-" + $size + "-" + $style}",
-			"missing-icons" !important;
+		--icon-font-family:
+			"#{"icons-" + $size + "-" + $style}", "missing-icons" !important;
 
 		font-size: var(
 			--icon-font-size-#{$position},
@@ -106,8 +106,8 @@
 // Icon meta data mixin
 @mixin iconMeta($size: $icon-size, $style: $icon-style, $position: "before") {
 	&::#{$position} {
-		--icon-font-family: "#{"icons-" + $size + "-" + $style}",
-			"missing-icons" !important;
+		--icon-font-family:
+			"#{"icons-" + $size + "-" + $style}", "missing-icons" !important;
 		--icon-font-size: #{to-rem($pxValue: $size)};
 	}
 }
