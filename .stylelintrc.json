@@ -22,6 +22,7 @@
 					"/.+/": "/^to-[r]?em\\(\\$pxValue: \\d+\\)/"
 				}
 			}
-		]
+		],
+		"custom-property-pattern": null
 	}
 }
