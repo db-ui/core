@@ -15,6 +15,13 @@
 		"scss/at-mixin-pattern": null,
 		"scss/at-import-partial-extension": null,
 		"scss/dollar-variable-colon-space-after": "always-single-line",
-		"declaration-property-value-no-unknown": true
+		"declaration-property-value-no-unknown": [
+			true,
+			{
+				"ignoreProperties": {
+					"/.+/": "/^to-[r]?em\\(\\$pxValue: \\d+\\)/"
+				}
+			}
+		]
 	}
 }
