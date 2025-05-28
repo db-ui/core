@@ -1,7 +1,6 @@
 @charset "utf-8";
 @use "sass:map";
 @use "sass:math";
-
 @import "loading-indicator.variables";
 
 .elm-loadingindicator {
@@ -11,6 +10,7 @@
 @mixin loadingindicator--sizes($prefix) {
 	@each $size in (xl l m s xs) {
 		$stroke-width: 3px;
+
 		@if $size == s or $size == xs {
 			$stroke-width: 2px;
 		}

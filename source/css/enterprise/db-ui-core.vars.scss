@@ -4,7 +4,6 @@ $images-path: "../../images/" !default;
 $fonts-path: "../../fonts/" !default;
 
 @import "@db-ui/base/build/scss/variables";
-
 @import "../../_patterns/00-base/colors/enterprise/colors";
 @import "../../_patterns/00-base/type/enterprise/fonts";
 @import "../../_patterns/00-base/icons/enterprise/icons.variables";

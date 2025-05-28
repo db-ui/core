@@ -4,11 +4,8 @@ $footer---borderTop: #{to-rem(
 		$pxValue: 6
 	)}
 	solid $db-color-cool-gray-200 !default;
-
 $footer---boxShadow: $box-shadow-01, $box-shadow-02 !default;
-
 $footer---marginTop: to-rem(
 	$pxValue: 16
 ) !default;
-
 $footer---backgroundColor: #fdfdfd !default; // TODO: This would need to get replaced by the correct (semantic) color

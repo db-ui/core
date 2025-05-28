@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 @import "../../../css/partials.meta";
 @import "input.variables";
 @import "../form-elements";
@@ -17,6 +16,7 @@
 	width: 100%;
 
 	padding-inline: $db-spacing-m;
+
 	// No need to reposition the included value on hidden label
 	&:not(:has(+ label[data-label-hidden="true"])) {
 		padding-block: $db-spacing-s;
@@ -30,6 +30,7 @@
 
 	&:not(:placeholder-shown) {
 		padding-bottom: 0;
+
 		// No need to reposition the included value on hidden label
 		&:not(:has(+ label[data-label-hidden="true"])) {
 			padding-top: to-rem($pxValue: 16);
@@ -80,9 +81,13 @@
 		}
 
 		// Floating labels
-		&:not([type="date"]):not([type="datetime-local"]):not(
-				[type="month"]
-			):not([type="time"]):not([type="week"])
+		&:not(
+				[type="date"],
+				[type="datetime-local"],
+				[type="month"],
+				[type="time"],
+				[type="week"]
+			)
 			+ .elm-label {
 			// position: absolute;
 			// left: calc(#{to-em($pxValue: 10)} - 1px);
@@ -90,6 +95,7 @@
 			transition:
 				opacity,
 				transform 250ms;
+
 			// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
 			@media (prefers-reduced-motion: reduce) {
 				transition-duration: 0.01s !important;

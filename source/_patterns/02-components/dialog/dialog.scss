@@ -17,12 +17,14 @@
 	position: fixed;
 	top: 50%;
 	transform: translate(0, -50%);
-	@media screen and (min-width: 768px) {
+
+	@media screen and (width >= 768px) {
 		// TODO: replace by correct general breakpoint variables
 		padding: to-rem(
 			$pxValue: 24
 		); // TODO: replace by general spacing variables
 	}
+
 	// Defining the backdrop colors
 
 	// * native
@@ -55,11 +57,13 @@
 			); // TODO: Check whether this is a settting that should be more global
 			margin-bottom: to-rem($pxValue: 6);
 			margin-right: to-rem($pxValue: 24);
+
 			// Remove the headlines margin-top, as we're in a dialog that has a padding on it's own
 			margin-top: 0;
 
 			text-align: center;
-			@media screen and (min-width: 768px) {
+
+			@media screen and (width >= 768px) {
 				// TODO: replace by correct general breakpoint variables
 				font-size: to-rem($pxValue: 24);
 				line-height: to-rem(
@@ -84,7 +88,7 @@
 						"outline",
 						$partial: $partial
 					);
-					@include is-icon-text-replace();
+					@include is-icon-text-replace;
 				}
 			}
 		}

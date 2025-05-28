@@ -3,6 +3,7 @@
 	@if $icon-domain != "personenverkehr-legacy" {
 		$icons-path: $icons-path + $icon-domain + "/";
 	}
+
 	@each $icon-style, $icon-font-sizes in $icon-families {
 		@if $icon-font-sizes {
 			@each $icon-size in $icon-font-sizes {

@@ -2,7 +2,9 @@
 @import "db-ui-core.variables";
 @import "@db-ui/base/build/scss/variables";
 @import "../_patterns/01-elements/headline/headline";
+
 $fonts-path: "../fonts/";
+
 @import "../_patterns/00-base/type/fonts";
 
 /* project specific declarations */
@@ -28,7 +30,8 @@ pl-iframe {
 .tpl-intro {
 	main section {
 		padding: 1rem 3rem 0;
-		@media screen and (min-width: 1156px) {
+
+		@media screen and (width >= 1156px) {
 			padding: 1rem calc(50vw - 530px) 0;
 		}
 

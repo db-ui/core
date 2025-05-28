@@ -1,4 +1,5 @@
 @use "sass:color";
+
 // *! this is an opionionated (especially based on "enhancing" normalize.css) version of minireset.css v0.0.4 | MIT License | github.com/jgthms/minireset.css
 html,
 body {
@@ -18,10 +19,8 @@ html {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	min-width: 300px;
-	overflow-x: hidden;
-	overflow-y: scroll;
-	text-rendering: optimizeLegibility;
-	text-size-adjust: 100%;
+	overflow: hidden scroll;
+	text-rendering: optimizelegibility;
 	text-size-adjust: 100%;
 }
 
@@ -52,7 +51,7 @@ a {
 	color: $db-color-cool-gray-700;
 
 	strong {
-		color: currentColor;
+		color: currentcolor;
 	}
 
 	&:hover {
@@ -102,7 +101,7 @@ pre {
 
 	code {
 		background-color: transparent;
-		color: currentColor;
+		color: currentcolor;
 		font-size: 1em;
 		padding: 0;
 	}

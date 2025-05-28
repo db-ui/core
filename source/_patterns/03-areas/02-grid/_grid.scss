@@ -3,12 +3,13 @@
 .rea-grid {
 	// TODO: We would probably need to recheck on this declaration regarding compabitility
 	flex-wrap: wrap;
+
 	// adapted from https://github.com/jgthms/bulma/blob/0.7.5/sass/grid/columns.sass
 	margin-left: -0.625rem;
 	margin-right: -0.625rem;
 	margin-top: -0.625rem;
 
-	@media screen and (min-width: 769px), print {
+	@media screen and (width >= 769px), print {
 		display: flex;
 	}
 
@@ -17,9 +18,7 @@
 	& > section,
 	& > li {
 		display: block;
-		flex-basis: 0;
-		flex-grow: 1;
-		flex-shrink: 1;
+		flex: 1 1 0;
 		padding: 0.625rem;
 
 		@media screen and (max-width: #{$column-gap-max-width-smaller-breakpoint}) {

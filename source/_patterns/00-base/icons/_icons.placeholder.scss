@@ -4,6 +4,7 @@
 	alt: "";
 
 	display: inline-block;
+
 	/*** icon - placeholder ***/
 	// * use !important to prevent issues with browser extensions that change fonts
 	font-family: var(--icon-font-family) !important;
@@ -27,6 +28,7 @@
 	@media aural {
 		content: none;
 	}
+
 	@media speech {
 		content: none;
 	}

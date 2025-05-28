@@ -12,7 +12,7 @@
 
 			@media screen and (max-width: $metanavigation-iconOnly--maxWidth) {
 				// * TODO: possibly rework variable naming
-				@include is-icon-text-replace();
+				@include is-icon-text-replace;
 			}
 		}
 	}

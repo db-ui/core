@@ -41,6 +41,7 @@
 			transition:
 				opacity,
 				transform 250ms;
+
 			// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
 			@media (prefers-reduced-motion: reduce) {
 				transition-duration: 0.01s !important;
@@ -111,6 +112,7 @@
 		transition:
 			opacity,
 			transform 150ms;
+
 		// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
 		@media (prefers-reduced-motion: reduce) {
 			transition-duration: 0.01s !important;

@@ -26,7 +26,7 @@
 		@extend %size-Small;
 	}
 
-	//*** Variants ***
+	// *** Variants ***
 	&[data-variant="light"] {
 		background-color: $db-color-cool-gray-200;
 		color: $db-color-cool-gray-700;

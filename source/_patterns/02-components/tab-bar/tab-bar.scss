@@ -15,7 +15,7 @@
 
 	gap: 0.25rem;
 
-	@include tab() {
+	@include tab {
 		@include a11y-visually-hidden($partial: $partial);
 
 		& + label[role="tab"] {
@@ -96,7 +96,7 @@
 	}
 
 	&[data-size="small"] {
-		@include tab() {
+		@include tab {
 			& + label[role="tab"] {
 				padding-block: 0.625rem;
 			}

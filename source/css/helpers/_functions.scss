@@ -3,6 +3,7 @@
 @function to-rem($pxValue) {
 	@return #{$pxValue * $dbBaseFontSizeSass}rem;
 }
+
 @function to-em($pxValue) {
 	@return #{$pxValue * $dbBaseFontSizeSass}em;
 }
@@ -20,6 +21,7 @@
 		@extend %a11y-visually-hidden;
 	}
 }
+
 @mixin clearfix($partial: false) {
 	@if $partial {
 		&::after {

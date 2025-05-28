@@ -17,6 +17,7 @@ body.has-fixed-footer .rea-footer {
 
 body.has-fixed-header {
 	--db-has-fixed-header-height: #{to-rem($pxValue: 70)};
+
 	// TODO: using some outsourced global declarations for the headers dimensions (height, padding and margins)
 	padding-top: to-rem($pxValue: 95);
 
@@ -37,7 +38,7 @@ body.has-fixed-footer {
 		bottom: 0;
 	}
 
-	@media screen and (max-width: 1023px) {
+	@media screen and (width <= 1023px) {
 		padding-bottom: to-rem($pxValue: 94);
 	}
 }

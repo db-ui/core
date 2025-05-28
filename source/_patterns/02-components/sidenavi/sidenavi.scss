@@ -9,6 +9,7 @@
 	.elm-link {
 		// We need to reset the general border-radius here
 		border-radius: initial;
+
 		// TODO: check for the correct color code
 		color: $sidenavi-link--color; // * TODO: possibly rework variable naming
 		display: block;
@@ -42,6 +43,7 @@
 		&[rel="documents"] {
 			@include icon(glyph(document), 32, "outline", $partial: $partial);
 		}
+
 		// TODO: This needs to get the icon from the new iconset
 		&[rel="dashboard"] {
 			@include icon(
@@ -51,6 +53,7 @@
 				$partial: $partial
 			);
 		}
+
 		// TODO: This needs to get the icon from the new iconset
 		&[rel="cloud"] {
 			@include icon(

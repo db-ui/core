@@ -15,12 +15,17 @@ $rea-header-elm-link-padding-bottom-big: to-rem(
 // $rea-header-elm-link-padding-bottom-big: to-rem($pxValue: 11) !default;
 
 $mainnavigation---position: relative !default;
+
 // $mainnavigation---position: absolute !default; // underneath
 $mainnavigation---position-top: 0 !default;
+
 // $mainnavigation---position-top: to-rem($pxValue: 79) !default; // underneath
 $mainnavigation-link--borderPosition: "bottom" !default;
+
 // $mainnavigation-link--borderPosition: "top" !default; // underneath
 $mainnavigation-link--paddingTop: #{$header-big-link-paddingTop}rem !default;
+
 // $mainnavigation-link--paddingTop: to-rem($pxValue: 11) !default; // underneath
 $mainnavigation-link--paddingBottom: $rea-header-elm-link-padding-bottom-big !default;
+
 // $mainnavigation-link--paddingBottom: to-rem($pxValue: 11) !default; // underneath

@@ -18,6 +18,7 @@
 		}
 	}
 }
+
 @mixin cmp-table-hide-row($row, $max-width) {
 	tbody tr {
 		@media screen and (max-width: $max-width) {

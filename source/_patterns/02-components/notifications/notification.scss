@@ -5,7 +5,7 @@
 	// Default style
 	background-color: $notification---backgroundColor;
 
-	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1); // Todo: This should most likely get generally setup
+	box-shadow: 0 4px 10px 0 rgb(0 0 0 / 10%); // Todo: This should most likely get generally setup
 
 	margin-bottom: #{to-rem($pxValue: 16)};
 	padding: #{to-rem($pxValue: 16)}; // TODO: replace by spacing-m variable

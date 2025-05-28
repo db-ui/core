@@ -12,19 +12,17 @@ $fonts-path: "../../fonts/" !default;
 // General configurations
 $dbBaseFontSize: 16px;
 $dbBaseFontSizeSass: 0.0625 !default;
-
 $db-logo-default-width: 58px !default;
 $db-logo-default-height: 40px !default;
-
 $metanavigation-iconOnly--maxWidth: to-rem(656);
 
 // General box-shadow
 // * offset-x | offset-y | blur-radius | (spread-radius) | color
-$box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-$box-shadow-01: 0 0 5px rgba(0, 0, 0, 0.08);
-$box-shadow-02: 0 5px 30px rgba(0, 0, 0, 0.05);
-$box-shadow-01-bottom: 0 2px 5px rgba(0, 0, 0, 0.08);
-$box-shadow-02-bottom: 0 15px 30px rgba(0, 0, 0, 0.05);
+$box-shadow: 0 2px 8px rgb(0 0 0 / 30%);
+$box-shadow-01: 0 0 5px rgb(0 0 0 / 8%);
+$box-shadow-02: 0 5px 30px rgb(0 0 0 / 5%);
+$box-shadow-01-bottom: 0 2px 5px rgb(0 0 0 / 8%);
+$box-shadow-02-bottom: 0 15px 30px rgb(0 0 0 / 5%);
 
 // *** z-index ***
 $z-index-rea-header-cmp-mainnavigation-submenu: 70 !default;
