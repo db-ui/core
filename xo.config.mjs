@@ -8,7 +8,8 @@ const xoConfig = [
 			'tests/backstop_data/engine_scripts/',
 			'out/**/*',
 			'dist/**/*',
-			'**/*.min.js'
+			'**/*.min.js',
+			'source/_patterns/02-components/dialog/focus-restore.dialog.plugin.js'
 		],
 		prettier: true,
 		rules: {
