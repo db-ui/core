@@ -1,8 +1,5 @@
 {
-	"extends": [
-		"stylelint-config-standard",
-		"stylelint-config-sass-guidelines"
-	],
+	"extends": ["stylelint-config-standard-scss"],
 	"rules": {
 		"scss/operator-no-newline-after": null,
 		"declaration-empty-line-before": null,
