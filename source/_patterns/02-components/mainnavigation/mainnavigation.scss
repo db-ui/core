@@ -1,4 +1,5 @@
 @import "../../../css/partials.meta";
+
 // TODO: Replace magic numbers e.g. with flexbox implementations and extract variables as well for multi-brand
 @import "mainnavigation.variables";
 @import "../../../css/helpers/dividers";
@@ -81,7 +82,7 @@
 
 		& > input[type="checkbox"][id] {
 			& + label[for] {
-				@include is-icon-text-replace();
+				@include is-icon-text-replace;
 				padding: 0;
 
 				&::before,
@@ -97,6 +98,7 @@
 						content: none;
 					}
 				}
+
 				// Hiding the navigation
 				& ~ ul {
 					display: none;
@@ -156,7 +158,7 @@
 				inset: 0;
 				position: absolute;
 				z-index: $z-index-cmp-mainnavigation-dropdown;
-				border-bottom: 1px solid rgba(40, 45, 55, 0.2);
+				border-bottom: 1px solid rgb(40 45 55 / 20%);
 				border-top-left-radius: 4px;
 			}
 		}
@@ -187,8 +189,7 @@
 			background-color: #fff;
 			position: absolute;
 			inset-inline: 0;
-			inset-block-end: 0;
-			inset-block-start: 3.5rem;
+			inset-block: 3.5rem 0;
 			z-index: $z-index-cmp-overflow-menu-overlay;
 			padding: 0.75rem;
 			margin-block-end: 3.5rem;
@@ -292,6 +293,7 @@
 
 		// lower levels
 		position: relative;
+
 		// Icon for menu
 		// TODO: this could probably get simplified with a media query polyfill and moved back to the previous section
 		&[aria-haspopup="true"] {
@@ -314,6 +316,7 @@
 			& > ul,
 			& > * > ul {
 				visibility: visible;
+
 				@media screen and (max-width: $db-break-the-header-max-width) {
 					display: initial;
 				}
@@ -342,6 +345,7 @@
 				position: relative;
 			}
 		}
+
 		@media screen and (width > $db-break-the-header-max-width) {
 			// Do not show Icon for menu on bigger screens
 			&[aria-haspopup="true"] {

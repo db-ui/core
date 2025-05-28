@@ -1,13 +1,12 @@
 @use "sass:string";
 @import "../../../css/db-ui-core.variables";
-
 @import "icons.variables";
 
 // Potential TODO: usage of the standard filenames described by https://marketingportal.extranet.deutschebahn.com/marketingportal/Basiselemente/Icons/Funktionale-Icons-Architektur-und-Fahrzeuge
 
 @font-face {
 	font-display: block;
-	font-family: "missing-icons";
+	font-family: missing-icons;
 	src:
 		url("#{$icons-path}functional/fonts/icons-empty.woff2?4r2100")
 			format("woff2"),

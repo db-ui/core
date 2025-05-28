@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 @import "../../../css/partials.meta";
 @import "radio.variables";
 @import "../form-elements";
@@ -14,7 +13,7 @@
 
 	appearance: none;
 
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: rgb(255 255 255 / 10%);
 	border: to-rem($pxValue: 1) solid $radio---border;
 	border-radius: to-em($pxValue: 16);
 
@@ -35,23 +34,25 @@
 	&:enabled {
 		&:hover {
 			&:not(:checked) {
-				background-color: rgba(40, 45, 55, 0.14);
+				background-color: rgb(40 45 55 / 14%);
 			}
 		}
 
 		&:active {
-			background-color: rgba(40, 45, 55, 0.3);
+			background-color: rgb(40 45 55 / 30%);
 		}
 	}
 
 	&:checked {
 		border-width: to-em($pxValue: 6);
 	}
+
 	// * the invalid style using the :user-invalid pseudo class (and [aria-invalid="true"] equivalent, see #136 and #141)
 	&:is(:user-invalid),
 	&[aria-invalid="true"] {
 		border-color: #c13e34;
 	}
+
 	// * TODO: never forget focus styling
 	// &:focus::after {
 	// content: "\0020\2190";
@@ -72,6 +73,7 @@
 			opacity: 0.5;
 		}
 	}
+
 	// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
 	@media (prefers-reduced-motion: reduce) {
 		transition-duration: 0.01s !important;

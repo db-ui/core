@@ -19,12 +19,10 @@ $progress-onDarkBackground-value-backgroundColor: $db-color-cool-gray-400 !defau
 // Circle alternative
 $progress-conic--size: 75 * 0.0625 !default;
 $progress-conic-inner-size: $progress-conic--size - 1.25 !default;
-
 $progress-conic--backgroundColor: #fff !default;
 $progress-conic-inner-backgroundColor: #fdfdfd !default; // TODO: This would need to get replaced by the correct (semantic) color
 // Alternative - on dark background
 $progress-onDarkBackground-conic-inner-backgroundColor: $db-color-cool-gray-700 !default;
-
 $progress-conic--translateX: to-rem(
 	$pxValue: 10
 ) !default;

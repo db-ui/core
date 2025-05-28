@@ -98,9 +98,8 @@
     "rimraf": "^6.0.1",
     "sass": "^1.89.0",
     "start-server-and-test": "^2.0.12",
-    "stylelint": "^14.16.1",
-    "stylelint-config-prettier": "^9.0.5",
-    "stylelint-config-sass-guidelines": "^9.0.1",
+    "stylelint": "^16.19.1",
+    "stylelint-config-standard-scss": "^15.0.1",
     "validate-branch-name": "^1.3.2",
     "xo": "^0.60.0"
   },

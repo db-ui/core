@@ -8,7 +8,7 @@
 
 	&:not(.is-account) {
 		summary {
-			@include is-icon-text-replace();
+			@include is-icon-text-replace;
 		}
 	}
 
@@ -45,6 +45,7 @@
 		&::-webkit-details-marker {
 			display: none;
 		}
+
 		// … and using some other declaration for mozilla firefox
 		&:first-of-type {
 			list-style-type: none;

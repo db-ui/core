@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 @use "sass:string";
 @import "button.variables";
 
@@ -21,17 +20,19 @@
 	&[data-icon-after] {
 		padding-right: to-rem($pxValue: 14);
 	}
+
 	// Square icon only buttons
 	&.is-icon-text-replace {
 		width: $button---minHeight;
 	}
 
-	/*&:focus {
+	/* &:focus {
 		border-color: #fff;
-	}*/
+	} */
+
 	/*	&:active {
 		filter: brightness(75%);
-	}*/
+	} */
 
 	&%variant-brand-primary,
 	&%variant-primary {
@@ -169,6 +170,7 @@
 		&[data-icon-after] {
 			@include iconMeta($size: 20, $position: "after");
 		}
+
 		// Square icon only buttons
 		&.is-icon-text-replace {
 			width: to-rem($pxValue: 36);
@@ -181,6 +183,7 @@
 		&:not(.is-icon-text-replace) {
 			font-size: to-rem($pxValue: 20);
 		}
+
 		// Square icon only buttons
 		&.is-icon-text-replace {
 			width: to-rem($pxValue: 52);

@@ -5,12 +5,9 @@ $partial: false;
 
 // TODO: Let's include normalize e.g. via postcss-normalize
 @use "@csstools/normalize.css/normalize.css";
-
 @import "../helpers/functions";
 @import "../../_patterns/00-base/helpers";
-
 @import "db-ui-core.variables";
-
 @import "../../_patterns/00-base/init.global";
 @import "../../_patterns/00-base/init";
 
@@ -21,38 +18,53 @@ $partial: false;
 // GENERAL
 @import "../../_patterns/00-base/type/enterprise/fonts";
 @import "../../_patterns/00-base/icons/enterprise/icons";
+
 // @import "../../_patterns/00-base/03-body/background";
 
 // ELEMENTS
+
 /* button */
 @import "../../_patterns/01-elements/buttons/enterprise/button";
+
 /* headline */
 @import "../../_patterns/01-elements/headline/enterprise/headline";
+
 /* link */
 @import "../../_patterns/01-elements/link/enterprise/link";
+
 /* image */
 @import "../../_patterns/01-elements/image/enterprise/image";
+
 /* logo */
 @import "../../_patterns/01-elements/logo/logo"; // /enterprise/logo
 
 /* checkbox */
 @import "../../_patterns/01-elements/checkbox/enterprise/checkbox";
+
 /* input */
 @import "../../_patterns/01-elements/input/enterprise/input";
+
 /* loading */
 @import "../../_patterns/01-elements/loading-indicator/loading-indicator";
+
 /* progress */
 @import "../../_patterns/01-elements/progress/enterprise/progress";
+
 /* radio */
 @import "../../_patterns/01-elements/radio/enterprise/radio";
+
 /* textarea */
 @import "../../_patterns/01-elements/textarea/enterprise/textarea";
+
 /* select */
 @import "../../_patterns/01-elements/select/enterprise/select";
+
 /* chip */
 @import "../../_patterns/01-elements/chips/enterprise/chip";
+
 /* tag */
 @import "../../_patterns/01-elements/tags/enterprise/tag";
+
 /* toggle */
 @import "../../_patterns/01-elements/toggle/enterprise/toggle";
 
@@ -60,39 +72,57 @@ $partial: false;
 @import "../../_patterns/01-elements/video/enterprise/youtube";
 
 // COMPONENTS
+
 /* breadcrumb */
 @import "../../_patterns/02-components/breadcrumb/enterprise/breadcrumb";
+
 /* cards */
 @import "../../_patterns/02-components/cards/enterprise/cards";
+
 /* accordion */
 @import "../../_patterns/02-components/accordion/enterprise/accordion";
+
 /* overflow-menu */
+
 /* ### this one is already included through the dropdown component that it extends */
 // @import "../../_patterns/02-components/overflow-menu/enterprise/overflow-menu";
+
 /* mainnavigation */
 @import "../../_patterns/02-components/mainnavigation/enterprise/mainnavigation";
+
 /* metanavigation */
 @import "../../_patterns/02-components/metanavigation/enterprise/metanavigation";
+
 /* brand */
 @import "../../_patterns/02-components/brand/enterprise/brand";
+
 /* sitesearch */
 @import "../../_patterns/02-components/sitesearch/enterprise/sitesearch";
+
 /* notification */
 @import "../../_patterns/02-components/notifications/enterprise/notification";
+
 /* dialog */
 @import "../../_patterns/02-components/dialog/enterprise/dialog";
+
 /* language-switcher */
 @import "../../_patterns/02-components/language-switcher/enterprise/language-switcher";
+
 /* pagination */
 @import "../../_patterns/02-components/pagination/enterprise/pagination";
+
 /* sidenavi */
 @import "../../_patterns/02-components/sidenavi/enterprise/sidenavi";
+
 /* tab-bar */
 @import "../../_patterns/02-components/tab-bar/enterprise/tab-bar";
+
 /* table */
 @import "../../_patterns/02-components/table/enterprise/table";
+
 /* link-list */
 @import "../../_patterns/02-components/link-list/enterprise/link-list";
+
 /* dropdown */
 @import "../../_patterns/02-components/dropdown/enterprise/dropdown";
 

@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 @import "toggle.variables";
 
 // adapted by https://danklammer.com/articles/simple-css-toggle-switch/
@@ -14,6 +13,7 @@
 
 	display: inline-block;
 	height: to-rem($pxValue: 24);
+
 	// margin-right: $db-spacing-xs;
 
 	position: relative;
@@ -21,6 +21,7 @@
 	transition: background-color 0.3s ease;
 
 	width: to-rem($pxValue: 48);
+
 	// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
 	@media (prefers-reduced-motion: reduce) {
 		transition-duration: 0.01s !important;
@@ -37,8 +38,8 @@
 		border-radius: to-rem($pxValue: 10);
 
 		box-shadow:
-			0 5px 30px 0 rgba(0, 0, 0, 0.05),
-			0 1px 5px 0 rgba(0, 0, 0, 0.15);
+			0 5px 30px 0 rgb(0 0 0 / 5%),
+			0 1px 5px 0 rgb(0 0 0 / 15%);
 		content: ""; // we could even also add toggled textual content for the switch in the future
 
 		display: block;
@@ -53,6 +54,7 @@
 			left 0.3s cubic-bezier(0.3, 1.5, 0.7, 1);
 
 		width: to-rem($pxValue: 20);
+
 		// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
 		@media (prefers-reduced-motion: reduce) {
 			transition-duration: 0.01s !important;
@@ -69,6 +71,7 @@
 		&::before {
 			transition: width 0.3s cubic-bezier(0.3, 1.5, 0.7, 1);
 			width: to-rem($pxValue: 24);
+
 			// Adopted by https://www.heise.de/developer/artikel/a11y-Reduced-Motion-4356171.html
 			@media (prefers-reduced-motion: reduce) {
 				transition-duration: 0.01s !important;

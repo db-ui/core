@@ -21,7 +21,7 @@
 			text-decoration: none;
 
 			.rea-header & {
-				@include is-icon-text-replace();
+				@include is-icon-text-replace;
 			}
 		}
 	}
@@ -30,10 +30,11 @@
 		flex-wrap: wrap;
 		justify-content: center;
 
-		@media screen and (max-width: 767px) {
+		@media screen and (width <= 767px) {
 			margin-bottom: 1rem;
 		}
-		@media screen and (min-width: 768px) {
+
+		@media screen and (width >= 768px) {
 			float: right;
 		}
 	}

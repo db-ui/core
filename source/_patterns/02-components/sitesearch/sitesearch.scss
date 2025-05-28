@@ -9,8 +9,7 @@
 	padding-inline-end: 0.75rem;
 
 	@media screen and (max-width: $db-break-the-header-max-width) {
-		margin-inline-start: auto;
-		margin-inline-end: 2.25rem;
+		margin-inline: auto 2.25rem;
 
 		&::before {
 			display: none;
@@ -28,8 +27,7 @@
 		&:not(:placeholder-shown) {
 			opacity: 1;
 			width: calc(#{$sitesearch-width--open} + 1rem);
-			padding-inline-start: 1rem;
-			padding-inline-end: 3rem;
+			padding-inline: 1rem 3rem;
 			padding-top: 0;
 
 			& + .elm-label {
@@ -57,12 +55,12 @@
 		}
 
 		.rea-meta & {
-			@include is-icon-text-replace();
+			@include is-icon-text-replace;
 		}
 	}
 
 	.elm-button {
-		@include is-icon-text-replace();
+		@include is-icon-text-replace;
 
 		display: none;
 		position: absolute;

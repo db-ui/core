@@ -7,7 +7,6 @@ $icons-font-family: '#{"icons-" + $icon-size + "-" + $icon-style}, "missing-icon
 $icon-content-space: to-rem(
 	$pxValue: 6
 ) !default;
-
 $icon-glyphs-personenverkehr: (
 	"account": "\e1221",
 	"add": "\002B",
@@ -333,7 +332,6 @@ $icon-glyphs-personenverkehr: (
 	"iceportal": "\e1310",
 	"regioguide": "\e1311"
 ) !default;
-
 $icon-font-families-personenverkehr: (
 	"outline": (
 		16: (
@@ -616,5 +614,4 @@ $icon-font-families-personenverkehr: (
 		)
 	)
 ) !default;
-
 $icon-glyphs: $icon-glyphs-personenverkehr !default;

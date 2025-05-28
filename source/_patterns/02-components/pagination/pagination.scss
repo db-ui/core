@@ -49,12 +49,12 @@
 
 		&[rel="prev"] {
 			@include icon(glyph(chevron-left), $partial: $partial);
-			@include is-icon-text-replace();
+			@include is-icon-text-replace;
 		}
 
 		&[rel="next"] {
 			@include icon(glyph(chevron-right), $partial: $partial);
-			@include is-icon-text-replace();
+			@include is-icon-text-replace;
 		}
 
 		&[aria-current="page"] {

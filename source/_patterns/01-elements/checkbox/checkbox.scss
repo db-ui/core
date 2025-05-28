@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 @import "../../../css/partials.meta";
 @import "checkbox.variables";
 @import "../form-elements";
@@ -10,7 +9,7 @@
 		#{to-rem($pxValue: 24)}
 	);
 
-	align-content: center;
+	place-content: center center;
 
 	appearance: none;
 	background-color: $checkbox---backgroundColor;
@@ -20,7 +19,6 @@
 
 	display: inline-flex;
 	height: var(--db-form-element-dimensions);
-	justify-content: center;
 	width: var(--db-form-element-dimensions);
 
 	& {
@@ -48,7 +46,7 @@
 
 	&:enabled {
 		&:hover {
-			background-color: rgba(40, 45, 55, 0.14);
+			background-color: rgb(40 45 55 / 14%);
 
 			&:checked {
 				background-color: $checkbox-hover-checked-backgroundColor;
@@ -56,7 +54,7 @@
 		}
 
 		&:active {
-			background-color: rgba(40, 45, 55, 0.14);
+			background-color: rgb(40 45 55 / 14%);
 		}
 	}
 

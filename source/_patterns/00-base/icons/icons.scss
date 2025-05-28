@@ -36,7 +36,7 @@
 .is-icon-text-replace {
 	&[data-icon],
 	&[data-icon-before] {
-		@include is-icon-text-replace();
+		@include is-icon-text-replace;
 	}
 
 	&[data-icon-after] {

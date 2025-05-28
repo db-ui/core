@@ -42,7 +42,8 @@ h1 {
 			$pxValue: $rea-main-h1-font-size
 		); // * TODO: possibly rework variable naming
 		line-height: math.div(40, $rea-main-h1-font-size);
-		@media screen and (max-width: 767px) {
+
+		@media screen and (width <= 767px) {
 			font-size: to-rem(
 				$pxValue: $rea-main-h1-font-size-small
 			); // * TODO: possibly rework variable naming
@@ -57,7 +58,8 @@ h2 {
 			$pxValue: $rea-main-h2-font-size
 		); // * TODO: possibly rework variable naming
 		line-height: math.div(28, $rea-main-h2-font-size);
-		@media screen and (max-width: 767px) {
+
+		@media screen and (width <= 767px) {
 			font-size: to-rem(
 				$pxValue: $rea-main-h2-font-size-small
 			); // * TODO: possibly rework variable naming
@@ -72,7 +74,8 @@ h3 {
 			$pxValue: $rea-main-h3-font-size
 		); // * TODO: possibly rework variable naming
 		line-height: math.div(24, $rea-main-h3-font-size);
-		@media screen and (max-width: 767px) {
+
+		@media screen and (width <= 767px) {
 			font-size: to-rem(
 				$pxValue: $rea-main-h3-font-size-small
 			); // * TODO: possibly rework variable naming
@@ -88,7 +91,8 @@ h4 {
 		); // * TODO: possibly rework variable naming
 		font-weight: 400;
 		line-height: math.div(24, $rea-main-h4-font-size);
-		@media screen and (max-width: 767px) {
+
+		@media screen and (width <= 767px) {
 			font-size: to-rem(
 				$pxValue: $rea-main-h4-font-size-small
 			); // * TODO: possibly rework variable naming

@@ -24,10 +24,12 @@
 			"height": 40px
 		)
 	);
+
 	// aspect-ratio: 10 / 7;
 
 	width: var(--db-logo-width, #{$db-logo-default-width});
 	height: var(--db-logo-height, #{$db-logo-default-height});
+
 	// Logo safe zone
 	// margin: calc(var(--db-logo-height, #{$db-logo-default-height}) * 0.5);
 
