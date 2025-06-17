@@ -6,8 +6,10 @@ import * as dotenv from 'dotenv';
 dotenv.config();
 
 const checkCommitMail = () => {
+	// eslint-disable-next-line no-console
 	console.log(`Check COMMIT_MAIL`);
 	if (!process.env.COMMIT_MAIL) {
+		// eslint-disable-next-line no-console
 		console.error(
 			`No COMMIT_MAIL set in .env, please look at the file '.env.template'`
 		);
@@ -20,9 +22,11 @@ const checkCommitMail = () => {
 		.toLowerCase();
 	const commitMail = process.env.COMMIT_MAIL.trim().toLowerCase();
 	if (currentMail !== commitMail) {
+		// eslint-disable-next-line no-console
 		console.error(
 			`currentMail: ${currentMail} !== initialMail: ${commitMail}`
 		);
+		// eslint-disable-next-line no-console
 		console.error(
 			`Please set your commit user mail for this project like: 'git config user.email "${commitMail}"'`
 		);
