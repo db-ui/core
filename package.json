@@ -77,7 +77,7 @@
     "cssnano": "^7.0.7",
     "details-element-polyfill": "^2.4.0",
     "dialog-polyfill": "^0.5.6",
-    "dotenv": "^16.5.0",
+    "dotenv": "^16.6.0",
     "find-versions-cli": "^5.0.0",
     "html-validate": "^9.7.0",
     "html5-boilerplate": "^9.0.1",
