@@ -1,3 +1,3 @@
 // Deprecated: This file shouldn't get used / included anymore.
-// Either `@import` the file `@db-ui/core/sources/css/rollup.assets-paths` or `@db-ui/core/sources/css/webpack.assets-paths` depending on your bundler, previous to `@import`ing e.g. the file `@db-ui/core/sources/css/enterprise/db-ui-core` directly from now on.
+// Either `@import` the file `@db-ui/core/sources/css/rollup.assets-paths` or `@db-ui/core/sources/css/webpack.assets-paths` (Webpack <5 or old sass-loader) depending on your bundler, previous to `@import`ing e.g. the file `@db-ui/core/sources/css/enterprise/db-ui-core` directly from now on.
 @import "db-ui-core-webpack";
