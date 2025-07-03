@@ -1,14 +1,17 @@
+// eslint-disable-next-line unicorn/prefer-module, unicorn/no-anonymous-default-export
 module.exports = async (page, scenario) => {
 	const hoverSelector = scenario.hoverSelectors || scenario.hoverSelector;
 	const clickSelector = scenario.clickSelectors || scenario.clickSelector;
 	const keyPressSelector =
 		scenario.keyPressSelectors || scenario.keyPressSelector;
-	const scrollToSelector = scenario.scrollToSelector;
-	const postInteractionWait = scenario.postInteractionWait; // selector [str] | ms [int]
+	const {scrollToSelector} = scenario;
+	const {postInteractionWait} = scenario; // Selector [str] | ms [int]
 
 	if (keyPressSelector) {
-		for (const keyPressSelectorItem of [].concat(keyPressSelector)) {
+		for (const keyPressSelectorItem of [keyPressSelector].flat()) {
+			// eslint-disable-next-line no-await-in-loop
 			await page.waitForSelector(keyPressSelectorItem.selector);
+			// eslint-disable-next-line no-await-in-loop
 			await page.type(
 				keyPressSelectorItem.selector,
 				keyPressSelectorItem.keyPress
@@ -17,15 +20,19 @@ module.exports = async (page, scenario) => {
 	}
 
 	if (hoverSelector) {
-		for (const hoverSelectorIndex of [].concat(hoverSelector)) {
+		for (const hoverSelectorIndex of [hoverSelector].flat()) {
+			// eslint-disable-next-line no-await-in-loop
 			await page.waitForSelector(hoverSelectorIndex);
+			// eslint-disable-next-line no-await-in-loop
 			await page.hover(hoverSelectorIndex);
 		}
 	}
 
 	if (clickSelector) {
-		for (const clickSelectorIndex of [].concat(clickSelector)) {
+		for (const clickSelectorIndex of [clickSelector].flat()) {
+			// eslint-disable-next-line no-await-in-loop
 			await page.waitForSelector(clickSelectorIndex);
+			// eslint-disable-next-line no-await-in-loop
 			await page.click(clickSelectorIndex);
 		}
 	}
@@ -37,7 +44,7 @@ module.exports = async (page, scenario) => {
 	if (scrollToSelector) {
 		await page.waitForSelector(scrollToSelector);
 		await page.evaluate((scrollToSelector) => {
-			document.querySelector(scrollToSelector).scrollIntoView();
+			globalThis.querySelector(scrollToSelector).scrollIntoView();
 		}, scrollToSelector);
 	}
 };
