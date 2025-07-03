@@ -23,7 +23,7 @@ link:https://patternlab.io/[pattern lab] system structure files and folders are 
 ** `_css_`: Skeleton SCSS files that are including the SCSS files within the __patterns_ subfolders
 *** `helpers`: Providing some global SCSS helpers that are supporting common use cases
 *** `_db-ui-core.variables.scss`: Including global variables for DB UI Core that is only being handled as a SCSS partial
-*** `_rollup.assets-paths.scss` & `_webpack.assets-paths.scss`: Include either one of those in your SCSS file depending if and which bundler you're using in your setup before you `@import "db-ui-core";`; we're adapting the paths to assets in here differentiated by the different bundlers formats
+*** `_rollup.assets-paths.scss` & `_webpack.assets-paths.scss`: Include either one of those in your SCSS file depending if and which bundler you're using in your setup before you `@import "db-ui-core";`; we're adapting the paths to assets in here differentiated by the different bundlers formats. Import `_webpack.assets-paths.scss` for Webpack <5 or old `sass-loader`. With Webpack >= version 5 or newer `sass-loader`, please import file `_rollup.assets-paths.scss` instead.
 *** `db-ui-core.general.scss`: Providing some general global styles (especially) for DB UI Elements to be included in every Web Component and thatfor is actually meant to get exported during build as `db-ui-core.general.css`
 *** `db-ui-core.vars.scss`: Providing global variables (especially) for DB UI Elements that is actually meant to get exported during build as `db-ui-core.vars.css`
 *** `_pattern-scaffolding.css_`: _patternlab_ system related file for styling the _pattern lab_ UI
