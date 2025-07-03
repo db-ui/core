@@ -1,4 +1,5 @@
 // If this library is used as an npm dependency, and the source files should be included rather than css, this corrects the paths.
+// Import this file for Webpack <5 or old sass-loader. With Webpack >= version 5 or newer sass-loader, please import file _rollup.assets-paths.scss instead.
 $icons-path: "~@db-ui/core/dist/icons/";
 $images-path: "~@db-ui/core/dist/images/";
 $fonts-path: "~@db-ui/core/dist/fonts/";

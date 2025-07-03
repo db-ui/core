@@ -145,6 +145,8 @@ For Rollup based bundlers like Vite or Parcel we're providing the following SCSS
 
 #### Webpack based bundlers (e.g. older Angular or Vue CLI versions)
 
+This is meant for ecosystems in which Webpack <5 or old `sass-loader` are interated. With Webpack >= version 5 or newer `sass-loader`, please import file `_rollup.assets-paths.scss` instead.
+
 [source,scss]
 ----
 @use "@db-ui/core/sources/css/webpack.assets-paths" as webpackAssetsPaths;
