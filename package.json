@@ -61,7 +61,7 @@
     "@db-ui/base": "^0.29.2"
   },
   "devDependencies": {
-    "@babel/cli": "^7.27.2",
+    "@babel/cli": "^7.28.0",
     "@babel/preset-env": "^7.27.2",
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
