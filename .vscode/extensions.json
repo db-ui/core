@@ -7,6 +7,6 @@
 		"deque-systems.vscode-axe-linter",
 		"esbenp.prettier-vscode",
 		"stylelint.vscode-stylelint",
-    		"kravets.vscode-publint"
+		"kravets.vscode-publint"
 	]
 }
