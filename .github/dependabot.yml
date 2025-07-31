@@ -29,3 +29,6 @@ updates:
       commitlint:
         patterns:
           - "@commitlint*"
+      babel:
+        patterns:
+          - '@babel*'
