@@ -31,4 +31,4 @@ updates:
           - "@commitlint*"
       babel:
         patterns:
-          - '@babel*'
+          - "@babel*"
