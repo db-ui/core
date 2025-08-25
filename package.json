@@ -74,7 +74,7 @@
     "autoprefixer": "^10.4.21",
     "backstopjs": "^6.3.25",
     "cpr": "^3.0.1",
-    "cssnano": "^7.1.0",
+    "cssnano": "^7.1.1",
     "details-element-polyfill": "^2.4.0",
     "dialog-polyfill": "^0.5.6",
     "dotenv": "^17.2.1",
