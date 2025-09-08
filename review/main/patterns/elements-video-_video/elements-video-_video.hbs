@@ -1,0 +1,12 @@
+<video class="elm-video"{{#unless preventControls }} controls{{/unless }}{{#if autoplay}} autoplay{{/if }}{{#if preload}} preload{{/if }}{{#if poster}} poster="{{poster}}"{{/if }}{{#if width}} width="{{ width }}"{{/if }}{{#if height}} height="{{ height }}"{{/if }}>
+	{{#each sources }}
+		<source src="{{ src }}" type="{{ type }}">
+	{{/each }}
+	{{#each subtitles }}
+		<track src="{{ src }}" kind="subtitles" srclang="{{ srclang }}" label="{{ label }}">
+	{{/each }}
+
+	{{#if fallback }}
+		{{{ fallback }}}
+	{{/if }}
+</video>
