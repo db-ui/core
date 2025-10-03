@@ -1,0 +1,130 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>DB UI Core - Pattern Lab</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+	<script>document.documentElement.className = 'js ' + document.documentElement.className.replace(/\bno-js\b/, '')</script>
+
+	<!-- see https://htmlhead.dev/ for a description of what could get listed within your pages HEAD section //-->
+
+
+	<!-- If you're adapting the HTML out of this document, only include the following CSS file, as the other below are related to pattern lab styling and presenting our patterns in this context even only //-->
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.css?1759491299438" media="all">
+
+	<!-- Do not include the following CSS, as these are related to pattern lab styling and presenting our patterns in this context even only //-->
+	<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1759491299438" media="all">
+	<link rel="stylesheet" href="../../css/pattern-scaffolding-project-specific.css?1759491299438" media="all">
+	<link rel="stylesheet" href="../../css/enterprise/db-ui-core.demonstration.css?1759491299438" media="all">
+	<!-- dialog polyfill //-->
+	<link rel="stylesheet" href="../../css/dialog-polyfill.css?1759491299438" media="all">
+
+	<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+	
+	<!-- End Pattern Lab -->
+
+
+	<!-- Google's "Create good meta descriptions" / https://support.google.com/webmasters/answer/35624?hl=en#meta-descriptions
+documentation has useful tips on creating an effective description. //-->
+	<meta name="Description" content="Put your description here.">
+
+	<!-- You can add the theme-color meta extension in the <head> of your pages to suggest the color that browsers and OSes should use if they customize the display of individual pages in their UIs with varying colors.
+			more information: https://html.spec.whatwg.org/multipage/semantics.html#meta-theme-color -->
+	<meta name="theme-color" content="#f01414">
+
+	<!-- iframe resizing script for pattern previews -->
+	<script src="../../js/iframeResizer.contentWindow.js"></script>
+	<script src="../../js/invoker.min.js"></script>
+</head>
+
+<body class="styleguide">
+<label class="elm-label" for="textarea06">Textlabel</label>
+<textarea class="elm-textarea "
+	placeholder="Projekt Name"
+	id="textarea06"
+	
+	
+	 minlength="5"
+	 aria-invalid="true"
+	 maxlength="200"
+	oninput="result_textarea06.value=this.value.length+'/'+this.attributes.maxlength.value"
+	>Input</textarea>
+<output for="textarea06" id="result_textarea06" anchor="textarea06"></output>
+
+		<!--DO NOT REMOVE-->
+		<script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<h2>Form validation</h2>\n<p>Please have a look especially at the section for form validation within the overall <a href=\"../components-form/index.html\">components/forms</a> page.</p>\n<p>Additionally to the browser built-in pseudo-selector <code>:user-invalid</code> we're providing styling for the <a href=\"https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_attribute\"><code>aria-invalid=&quot;true&quot;</code> attribute</a> as well.</p>\n","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"textarea"},"patternExtension":"hbs","patternName":"Textarea - Invalid state by HTML attribute","patternPartial":"elements-textarea-invalid-attribute","patternState":"complete","patternEngineName":"handlebars","extraOutput":{"order":7}}
+</script>
+
+<script>
+  window.patternData = {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<h2>Form validation</h2>\n<p>Please have a look especially at the section for form validation within the overall <a href=\"../components-form/index.html\">components/forms</a> page.</p>\n<p>Additionally to the browser built-in pseudo-selector <code>:user-invalid</code> we're providing styling for the <a href=\"https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_attribute\"><code>aria-invalid=&quot;true&quot;</code> attribute</a> as well.</p>\n","patternBreadcrumb":{"patternGroup":"elements","patternSubgroup":"textarea"},"patternExtension":"hbs","patternName":"Textarea - Invalid state by HTML attribute","patternPartial":"elements-textarea-invalid-attribute","patternState":"complete","patternEngineName":"handlebars","extraOutput":{"order":7}};
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1759491299438">
+  (function() {
+    if (self != top) {
+      var cb = '1759491299438';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+
+<script type="module">
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  import('../../styleguide/js/patternlab-pattern.modern.js');
+</script>
+
+<script id="pl-js-insert-1759491299438" nomodule>
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  loadJS('../../styleguide/js/patternlab-pattern.js');
+</script>
+
+
+		<script src="../../js/plugins.min.js"></script>
+		<!-- details/summary polyfill //-->
+		<script src="../../js/details-element-polyfill.js"></script>
+		<!-- dialog polyfill //-->
+		<script src="../../js/dialog-polyfill.js"></script>
+	</body>
+
+</html>
