@@ -9,6 +9,8 @@ updates:
       timezone: "Europe/Berlin"
     pull-request-branch-name:
       separator: "-"
+    cooldown:
+      default-days: 3
 
   # Daily: Check minor and patch updates
   - package-ecosystem: "npm"
@@ -22,6 +24,8 @@ updates:
       separator: "-"
     # https://github.com/dependabot/dependabot-core/issues/5226#issuecomment-1179434437
     versioning-strategy: increase
+    cooldown:
+      default-days: 3
     groups:
       patch-dependencies:
         update-types:
