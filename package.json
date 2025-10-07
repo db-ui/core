@@ -79,7 +79,7 @@
     "dialog-polyfill": "^0.5.6",
     "dotenv": "^17.2.3",
     "find-versions-cli": "^5.0.0",
-    "html-validate": "^10.0.0",
+    "html-validate": "^10.1.1",
     "html5-boilerplate": "^9.0.1",
     "husky": "^9.1.7",
     "iframe-resizer": "^5.4.7",
