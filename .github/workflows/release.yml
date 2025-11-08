@@ -36,7 +36,7 @@ jobs:
     needs: [lint, test, build, get-publish-version]
     secrets: inherit
     permissions:
-      id-token: write  # Required for OIDC
+      id-token: write # Required for OIDC
     with:
       release: ${{ needs.get-publish-version.outputs.release }}
       preRelease: ${{ needs.get-publish-version.outputs.preRelease }}
