@@ -21,7 +21,7 @@ jobs:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - name: ⬇ Checkout repo
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: 🔄 Init Cache
         uses: ./.github/actions/npm-cache
