@@ -8,7 +8,7 @@ Especially the following aspects have changed through the various different rele
 
 === Removed brand fonts
 
-We needed to remove the brand fonts from our link:https://www.npmjs.com/package/@db-ui/base[`@db-ui/base`] node package. Please follow the guidelines within link:https://marketingportal.extranet.deutschebahn.com/marketingportal/Design-Anwendungen/db-ux-design-system/resources/db-theme[DB Marketingportal] (DB internal) on how to retrieve it as an Inner Source package or download the package with the font files from there (DB external).
+We needed to remove the brand fonts from our link:https://www.npmjs.com/package/@db-ui/base[`@db-ui/base`] node package. In case that you're building a website or application for Deutsche Bahn, you'll additionally have to install the DB Theme via the [`@db-ux/db-theme` node package](https://www.npmjs.com/package/@db-ux/db-theme) (even also available as an inner source node package, as described within that packages README).
 
 == DB UI Core 3.0.0 Migration Guide
 
