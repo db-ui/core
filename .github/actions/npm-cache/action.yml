@@ -8,7 +8,7 @@ runs:
       # https://github.com/actions/setup-node
       uses: actions/setup-node@v4
       with:
-        node-version: 20
+        node-version-file: ".nvmrc"
 
     - name: Display node and npm version
       shell: bash
@@ -16,7 +16,7 @@ runs:
         node --version
         npm --version
 
-    - uses: actions/cache@v3
+    - uses: actions/cache@v4
       id: "npm-cache" # use this to check for `cache-hit` ==> if: steps.npm-cache.outputs.cache-hit != 'true'
       with:
         path: "./node_modules"

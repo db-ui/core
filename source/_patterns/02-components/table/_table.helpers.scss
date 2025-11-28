@@ -1,7 +1,8 @@
 @mixin cmp-table-zebra($zebra-color) {
+	// TODO: This might get replaced by another effect
+	backdrop-filter: blur(4px);
+
 	tr:nth-child(odd) {
-		// TODO: This might get replaced by another effect
-		backdrop-filter: blur(4px);
 		background-color: $zebra-color;
 	}
 }

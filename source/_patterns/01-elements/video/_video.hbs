@@ -1,4 +1,4 @@
-<video class="elm-video"{{#unless preventControls }} controls{{/unless }}{{#if autoplay}} autoplay{{/if }}{{#if preload}} preload{{/if }}{{#if poster}} poster="{{poster}}"{{/if }} width="{{ width }}" height="{{ height }}">
+<video class="elm-video"{{#unless preventControls }} controls{{/unless }}{{#if autoplay}} autoplay{{/if }}{{#if preload}} preload{{/if }}{{#if poster}} poster="{{poster}}"{{/if }}{{#if width}} width="{{ width }}"{{/if }}{{#if height}} height="{{ height }}"{{/if }}>
 	{{#each sources }}
 		<source src="{{ src }}" type="{{ type }}">
 	{{/each }}

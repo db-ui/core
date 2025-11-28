@@ -168,7 +168,10 @@
 		tbody th {
 			background-color: #fff;
 			position: sticky;
-			top: -1px;
+			top: var(
+				--db-table-top-safe-space,
+				var(--db-has-fixed-header-height, -1px)
+			);
 		}
 	}
 }

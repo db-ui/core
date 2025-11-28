@@ -3,6 +3,9 @@
 	"icon-style": "outline",
 	"icons": [
 		{
+			"icon-glyph": "clapperboard"
+		},
+		{
 			"icon-glyph": "fast-backward"
 		},
 		{
