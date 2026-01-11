@@ -1,10 +1,10 @@
 @import "../db-ui-core.variables";
 
 @function to-rem($pxValue) {
-	@return #{$pxValue * $dbBaseFontSizeSass}rem;
+	@return ($pxValue * $dbBaseFontSizeSass) * 1rem;
 }
 @function to-em($pxValue) {
-	@return #{$pxValue * $dbBaseFontSizeSass}em;
+	@return ($pxValue * $dbBaseFontSizeSass) * 1rem;
 }
 
 // Mixin wrappers around the SCSS placeholders
