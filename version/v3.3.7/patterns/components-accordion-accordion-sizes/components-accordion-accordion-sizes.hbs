@@ -1,0 +1,5 @@
+{{#each sizes }}
+	{{#if @first }}<!-- [html-validate-disable-next heading-level] -->{{/if }}
+	<h2>{{ label }}</h2>
+	{{> components-accordion size=size summary=@root.summary details=@root.details }}
+{{/each }}
