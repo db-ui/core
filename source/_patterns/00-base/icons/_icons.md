@@ -2,6 +2,10 @@
 title: Icon-Library Enterprise
 ---
 
+## Icons out of the previous DB UX Design System generation
+
+Please keep in mind, that these icons are included in the node packages `@db-ui/base` and `@db-ui/core`. If you are looking for the icons out of the new DB UX Design System generation, please have a look at that [new versions icon overview page](https://design-system.deutschebahn.com/core-web/review/main/foundations/icons/overview).
+
 ## New iconset
 
 The included iconset has been developed in cooperation with the Center of Excellence @ Personenverkehr and replaces the previous enterprise only icons. More information: <https://marketingportal.extranet.deutschebahn.com/marketingportal/Basiselemente/Icons/Funktionale-Icons-Architektur-und-Fahrzeuge>
