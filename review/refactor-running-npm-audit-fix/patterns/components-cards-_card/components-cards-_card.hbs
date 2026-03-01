@@ -1,0 +1,18 @@
+<li class="cmp-card" data-variant="{{ variant }}">
+	{{#if link }}<a href="#">{{/if }}
+		<figure>
+			{{#if_eq variant "banner" }}
+				<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" aria-hidden="true">
+					<use href="../../icons/illustrative/{{ icon }}.svg#icon"></use>
+				</svg>
+			{{else}}
+				{{> elements-image src="../../icons/functional/images/navigation/db_ic_list_20.svg" alt="" width="20" height="20" }}
+			{{/if_eq }}
+			<figcaption>
+				<!-- [html-validate-disable-next heading-level, no-unused-disable] -->
+				<h3 class="elm-headline">{{ title }}</h3>
+				{{#if text }}<p>{{{ text }}}</p>{{/if }}
+			</figcaption>
+		</figure>
+	{{#if link }}</a>{{/if }}
+</li>

@@ -1,0 +1,6 @@
+{{!-- TODO: let's not use those modifier classes, but inherit their meaning via CSS correctly and introduce sample classes for the styleguide --}}
+<p>
+	{{> elements-button variant='brand-primary' value='(Default) Auto width'}}
+	<!-- [html-validate-disable-next no-inline-style -- we're doing inline-styling for simplification here] -->
+	<span style="width: 500px;display:inline-block;">{{> elements-button variant='brand-primary' value='Width full' width='full' }}</span>
+</p>
