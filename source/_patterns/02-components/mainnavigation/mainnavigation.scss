@@ -4,368 +4,368 @@
 @import "../../../css/helpers/dividers";
 
 .cmp-mainnavigation {
-	top: $mainnavigation---position-top;
-	padding-inline-start: 1.5rem;
-	position: $mainnavigation---position;
+        top: $mainnavigation---position-top;
+        padding-inline-start: 1.5rem;
+        position: $mainnavigation---position;
 
-	&::before {
-		@extend %header-divider;
-		inset-inline-start: 0;
-	}
+        &::before {
+                @extend %header-divider;
+                inset-inline-start: 0;
+        }
 
-	.rea-header & {
-		order: 1;
-	}
+        .rea-header & {
+                order: 1;
+        }
 
-	// Header Components positioning, :has non-supporting browsers fallback
-	@supports not selector(:has(db)) {
-		margin: auto;
-	}
+        // Header Components positioning, :has non-supporting browsers fallback
+        @supports not selector(:has(db)) {
+                margin: auto;
+        }
 
-	// The links shouldn't get an underline as text-decoration
-	.elm-link {
-		// We need to reset the general border-radius here
-		border-radius: initial;
-		color: inherit;
-		display: inline-block;
-		text-decoration: none;
-	}
+        // The links shouldn't get an underline as text-decoration
+        .elm-link {
+                // We need to reset the general border-radius here
+                border-radius: initial;
+                color: inherit;
+                display: inline-block;
+                text-decoration: none;
+        }
 
-	// Navigation toggle elements
-	& > input[type="checkbox"][id] {
-		appearance: none;
-		position: absolute;
-		block-size: 1.5rem;
-		aspect-ratio: 1 / 1;
+        // Navigation toggle elements
+        & > input[type="checkbox"][id] {
+                appearance: none;
+                position: absolute;
+                block-size: 1.5rem;
+                aspect-ratio: 1 / 1;
 
-		@media screen and (width > $db-break-the-header-max-width) {
-			// Hiding the navigation toggle elements on huger viewports
-			&,
-			& + label[for] {
-				display: none;
-			}
-		}
-	}
+                @media screen and (width > $db-break-the-header-max-width) {
+                        // Hiding the navigation toggle elements on huger viewports
+                        &,
+                        & + label[for] {
+                                display: none;
+                        }
+                }
+        }
 
-	& > label[for] {
-		background-color: $header---backgroundColor; // TODO: This would need to get replaced by the correct (semantic) color
+        & > label[for] {
+                background-color: $header---backgroundColor; // TODO: This would need to get replaced by the correct (semantic) color
 
-		border-bottom: 1px solid $db-color-warm-gray-100;
+                border-bottom: 1px solid $db-color-warm-gray-100;
 
-		display: block;
-		padding: to-rem($pxValue: 8) to-rem($pxValue: 22) to-rem($pxValue: 10);
+                display: block;
+                padding: to-rem($pxValue: 8) to-rem($pxValue: 22) to-rem($pxValue: 10);
 
-		& {
-			@include icon(glyph(menu), 24, "outline", $partial: $partial);
-			@include icon(
-				glyph(close),
-				24,
-				"outline",
-				"after",
-				$partial: $partial
-			);
-		}
+                & {
+                        @include icon(glyph(menu), 24, "outline", $partial: $partial);
+                        @include icon(
+                                glyph(close),
+                                24,
+                                "outline",
+                                "after",
+                                $partial: $partial
+                        );
+                }
 
-		&::before {
-			margin-right: to-rem($pxValue: 16);
-		}
+                &::before {
+                        margin-right: to-rem($pxValue: 16);
+                }
 
-		&::after {
-			margin-right: to-rem($pxValue: 16);
-		}
-	}
+                &::after {
+                        margin-right: to-rem($pxValue: 16);
+                }
+        }
 
-	// Displaying the main navigation as an top to bottom overlay on smaller viewports
-	@media screen and (max-width: $db-break-the-header-max-width) {
-		z-index: $z-index-cmp-mainnavigation-dropdown; // * TODO: possibly rework variable naming
+        // Displaying the main navigation as an top to bottom overlay on smaller viewports
+        @media screen and (max-width: $db-break-the-header-max-width) {
+                z-index: $z-index-cmp-mainnavigation-dropdown; // * TODO: possibly rework variable naming
 
-		& > input[type="checkbox"][id] {
-			& + label[for] {
-				@include is-icon-text-replace();
-				padding: 0;
+                & > input[type="checkbox"][id] {
+                        & + label[for] {
+                                @include is-icon-text-replace();
+                                padding: 0;
 
-				&::before,
-				&::after {
-					margin: 0;
-				}
-			}
+                                &::before,
+                                &::after {
+                                        margin: 0;
+                                }
+                        }
 
-			&:not(:checked) {
-				// Hiding the cross on collapsed navigation
-				& + label[for] {
-					&::after {
-						content: none;
-					}
-				}
-				// Hiding the navigation
-				& ~ ul {
-					display: none;
-				}
-			}
+                        &:not(:checked) {
+                                // Hiding the cross on collapsed navigation
+                                & + label[for] {
+                                        &::after {
+                                                content: none;
+                                        }
+                                }
+                                // Hiding the navigation
+                                & ~ ul {
+                                        display: none;
+                                }
+                        }
 
-			&:checked {
-				inset-inline-end: 1.5rem;
-				inset-block-start: 1rem;
-				position: absolute;
-				z-index: $z-index-cmp-overflow-menu-overlay;
+                        &:checked {
+                                inset-inline-end: 1.5rem;
+                                inset-block-start: 1rem;
+                                position: absolute;
+                                z-index: $z-index-cmp-overflow-menu-overlay;
 
-				& + label[for] {
-					background-color: #fff;
-					block-size: 3.5rem;
+                                & + label[for] {
+                                        background-color: #fff;
+                                        block-size: 3.5rem;
 
-					&::after {
-						padding: 0.5rem;
-						inset-inline-end: 1rem;
-						inset-block-start: 0.5rem;
-						position: absolute;
-						z-index: $z-index-cmp-overflow-menu-overlay;
-					}
+                                        &::after {
+                                                padding: 0.5rem;
+                                                inset-inline-end: 1rem;
+                                                inset-block-start: 0.5rem;
+                                                position: absolute;
+                                                z-index: $z-index-cmp-overflow-menu-overlay;
+                                        }
 
-					&::before {
-						content: "";
-						position: fixed;
-						inset: 0;
-						z-index: $z-index-cmp-mainnavigation-dropdown;
-						background-color: $db-color-cool-gray-700;
-						opacity: 0.8;
-					}
-				}
-			}
-		}
+                                        &::before {
+                                                content: "";
+                                                position: fixed;
+                                                inset: 0;
+                                                z-index: $z-index-cmp-mainnavigation-dropdown;
+                                                background-color: $db-color-cool-gray-700;
+                                                opacity: 0.8;
+                                        }
+                                }
+                        }
+                }
 
-		&:has(> input[type="checkbox"][id]:not(:checked)) {
-			// Only for burger menu
-			position: absolute;
-			inset-inline-end: 1.5rem;
-			inset-block-start: 50%;
-			transform: translateY(-50%);
-			padding-inline-start: 1rem;
-		}
+                &:has(> input[type="checkbox"][id]:not(:checked)) {
+                        // Only for burger menu
+                        position: absolute;
+                        inset-inline-end: 1.5rem;
+                        inset-block-start: 50%;
+                        transform: translateY(-50%);
+                        padding-inline-start: 1rem;
+                }
 
-		&:has(> input[type="checkbox"][id]:checked) {
-			position: fixed;
-			inset: 0;
-			padding: 0;
-			margin-inline-start: 1.5rem;
+                &:has(> input[type="checkbox"][id]:checked) {
+                        position: fixed;
+                        inset: 0;
+                        padding: 0;
+                        margin-inline-start: 1.5rem;
 
-			&::after {
-				content: "";
-				width: 100%;
-				block-size: 3.5rem;
-				background-color: #fff;
-				inset: 0;
-				position: absolute;
-				z-index: $z-index-cmp-mainnavigation-dropdown;
-				border-bottom: 1px solid rgba(40, 45, 55, 0.2);
-				border-top-left-radius: 4px;
-			}
-		}
-	}
+                        &::after {
+                                content: "";
+                                width: 100%;
+                                block-size: 3.5rem;
+                                background-color: #fff;
+                                inset: 0;
+                                position: absolute;
+                                z-index: $z-index-cmp-mainnavigation-dropdown;
+                                border-bottom: 1px solid rgba(40, 45, 55, 0.2);
+                                border-top-left-radius: 4px;
+                        }
+                }
+        }
 
-	ul {
-		background-color: $header---backgroundColor;
-	}
+        ul {
+                background-color: $header---backgroundColor;
+        }
 
-	// Multiple level navigation
-	ul ul {
-		@media screen and (width > $db-break-the-header-max-width) {
-			box-shadow: $box-shadow-01, $box-shadow-02;
-			position: absolute;
-			visibility: hidden;
+        // Multiple level navigation
+        ul ul {
+                @media screen and (width > $db-break-the-header-max-width) {
+                        box-shadow: $box-shadow-01, $box-shadow-02;
+                        position: absolute;
+                        visibility: hidden;
 
-			z-index: $z-index-rea-header-cmp-mainnavigation-submenu;
-		}
+                        z-index: $z-index-rea-header-cmp-mainnavigation-submenu;
+                }
 
-		@media screen and (max-width: $db-break-the-header-max-width) {
-			display: none;
-		}
-	}
+                @media screen and (max-width: $db-break-the-header-max-width) {
+                        display: none;
+                }
+        }
 
-	// First Level
-	& > ul {
-		@media screen and (max-width: $db-break-the-header-max-width) {
-			background-color: #fff;
-			position: absolute;
-			inset-inline: 0;
-			inset-block-end: 0;
-			inset-block-start: 3.5rem;
-			z-index: $z-index-cmp-overflow-menu-overlay;
-			padding: 0.75rem;
-			margin-block-end: 3.5rem;
-			overflow: auto;
-		}
+        // First Level
+        & > ul {
+                @media screen and (max-width: $db-break-the-header-max-width) {
+                        background-color: #fff;
+                        position: absolute;
+                        inset-inline: 0;
+                        inset-block-end: 0;
+                        inset-block-start: 3.5rem;
+                        z-index: $z-index-cmp-overflow-menu-overlay;
+                        padding: 0.75rem;
+                        margin-block-end: 3.5rem;
+                        overflow: auto;
+                }
 
-		@media screen and (width > $db-break-the-header-max-width) {
-			display: flex;
-			gap: 0.75rem;
-		}
+                @media screen and (width > $db-break-the-header-max-width) {
+                        display: flex;
+                        gap: 0.75rem;
+                }
 
-		& > li,
-		& > * > li {
-			& > .elm-link,
-			& > * > .elm-link {
-				@media screen and (width > $db-break-the-header-max-width) {
-					height: 2.5rem;
-					padding: 0.5rem 0.75rem;
-					border-radius: 4px;
+                & > li,
+                & > * > li {
+                        & > .elm-link,
+                        & > * > .elm-link {
+                                @media screen and (width > $db-break-the-header-max-width) {
+                                        min-height: 2.5rem;
+                                        padding: 0.5rem 0.75rem;
+                                        border-radius: 4px;
 
-					&:hover,
-					&:focus {
-						border-#{$mainnavigation-link--borderPosition}-color: $db-color-cool-gray-200;
-					}
+                                        &:hover,
+                                        &:focus {
+                                                border-#{$mainnavigation-link--borderPosition}-color: $db-color-cool-gray-200;
+                                        }
 
-					&[aria-current="page"] {
-						&::after {
-							height: 4px;
-							width: 100%;
-							content: "";
-							background-color: $db-color-red-500;
-							border-radius: 2px;
-							position: absolute;
-							inset-block-start: calc(100% + 0.25rem);
-							inset-inline: 0;
-						}
-					}
-				}
-			}
+                                        &[aria-current="page"] {
+                                                &::after {
+                                                        height: 4px;
+                                                        width: 100%;
+                                                        content: "";
+                                                        background-color: $db-color-red-500;
+                                                        border-radius: 2px;
+                                                        position: absolute;
+                                                        inset-block-start: calc(100% + 0.25rem);
+                                                        inset-inline: 0;
+                                                }
+                                        }
+                                }
+                        }
 
-			// From second level
-			ul {
-				@media screen and (width > $db-break-the-header-max-width) {
-					inset-inline-start: 0;
-					min-width: 100%;
-					inset-block-start: calc(100% + 0.5rem);
+                        // From second level
+                        ul {
+                                @media screen and (width > $db-break-the-header-max-width) {
+                                        inset-inline-start: 0;
+                                        min-width: 100%;
+                                        inset-block-start: calc(100% + 0.5rem);
 
-					&::before {
-						content: "";
-						height: 0.5rem;
-						width: 100%;
-						position: absolute;
-						inset-block-end: 100%;
-					}
+                                        &::before {
+                                                content: "";
+                                                height: 0.5rem;
+                                                width: 100%;
+                                                position: absolute;
+                                                inset-block-end: 100%;
+                                        }
 
-					// From third level
-					ul {
-						inset-inline-start: 100%;
-						top: auto;
-						inset-block-start: 0.25rem;
-					}
+                                        // From third level
+                                        ul {
+                                                inset-inline-start: 100%;
+                                                top: auto;
+                                                inset-block-start: 0.25rem;
+                                        }
 
-					.elm-link {
-						align-items: center;
-						display: flex;
+                                        .elm-link {
+                                                align-items: center;
+                                                display: flex;
 
-						min-height: to-rem($pxValue: 53);
-						padding-left: to-rem($pxValue: 18);
-						padding-right: to-rem($pxValue: 18);
-					}
-				}
+                                                min-height: to-rem($pxValue: 53);
+                                                padding-left: to-rem($pxValue: 18);
+                                                padding-right: to-rem($pxValue: 18);
+                                        }
+                                }
 
-				& > li,
-				& > * > li {
-					& > .elm-link,
-					& > * > .elm-link {
-						@media screen and (max-width: $db-break-the-header-max-width) {
-							padding-left: to-rem($pxValue: 34);
-						}
-					}
+                                & > li,
+                                & > * > li {
+                                        & > .elm-link,
+                                        & > * > .elm-link {
+                                                @media screen and (max-width: $db-break-the-header-max-width) {
+                                                        padding-left: to-rem($pxValue: 34);
+                                                }
+                                        }
 
-					// Third level
-					ul {
-						& > li,
-						& > * > li {
-							& > .elm-link,
-							& > * > .elm-link {
-								@media screen and (max-width: $db-break-the-header-max-width) {
-									padding-left: to-rem($pxValue: 60);
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+                                        // Third level
+                                        ul {
+                                                & > li,
+                                                & > * > li {
+                                                        & > .elm-link,
+                                                        & > * > .elm-link {
+                                                                @media screen and (max-width: $db-break-the-header-max-width) {
+                                                                        padding-left: to-rem($pxValue: 60);
+                                                                }
+                                                        }
+                                                }
+                                        }
+                                }
+                        }
+                }
+        }
 
-	li {
-		display: block;
+        li {
+                display: block;
 
-		// lower levels
-		position: relative;
-		// Icon for menu
-		// TODO: this could probably get simplified with a media query polyfill and moved back to the previous section
-		&[aria-haspopup="true"] {
-			@include icon(
-				glyph(chevron-right),
-				24,
-				"outline",
-				"after",
-				$partial: $partial
-			);
+                // lower levels
+                position: relative;
+                // Icon for menu
+                // TODO: this could probably get simplified with a media query polyfill and moved back to the previous section
+                &[aria-haspopup="true"] {
+                        @include icon(
+                                glyph(chevron-right),
+                                24,
+                                "outline",
+                                "after",
+                                $partial: $partial
+                        );
 
-			&::after {
-				position: absolute;
-				right: 1rem;
-				top: to-rem($pxValue: 9);
-			}
-		}
+                        &::after {
+                                position: absolute;
+                                right: 1rem;
+                                top: to-rem($pxValue: 9);
+                        }
+                }
 
-		&:is(:hover, :focus-within) {
-			& > ul,
-			& > * > ul {
-				visibility: visible;
-				@media screen and (max-width: $db-break-the-header-max-width) {
-					display: initial;
-				}
-			}
-		}
+                &:is(:hover, :focus-within) {
+                        & > ul,
+                        & > * > ul {
+                                visibility: visible;
+                                @media screen and (max-width: $db-break-the-header-max-width) {
+                                        display: initial;
+                                }
+                        }
+                }
 
-		@media screen and (max-width: $db-break-the-header-max-width) {
-			&:hover {
-				& > a {
-					font-weight: 700;
-				}
+                @media screen and (max-width: $db-break-the-header-max-width) {
+                        &:hover {
+                                & > a {
+                                        font-weight: 700;
+                                }
 
-				&[aria-haspopup="true"] {
-					--icon-glyph-after: "⌄";
-				}
-			}
+                                &[aria-haspopup="true"] {
+                                        --icon-glyph-after: "⌄";
+                                }
+                        }
 
-			.elm-link {
-				color: inherit;
-				padding-block: 0.5rem;
-				padding-inline-start: 0.75rem;
-				width: calc(100% - 4rem);
-			}
+                        .elm-link {
+                                color: inherit;
+                                padding-block: 0.5rem;
+                                padding-inline-start: 0.75rem;
+                                width: calc(100% - 4rem);
+                        }
 
-			&[aria-haspopup="true"] {
-				position: relative;
-			}
-		}
-		@media screen and (width > $db-break-the-header-max-width) {
-			// Do not show Icon for menu on bigger screens
-			&[aria-haspopup="true"] {
-				&::after {
-					content: none;
-				}
-			}
+                        &[aria-haspopup="true"] {
+                                position: relative;
+                        }
+                }
+                @media screen and (width > $db-break-the-header-max-width) {
+                        // Do not show Icon for menu on bigger screens
+                        &[aria-haspopup="true"] {
+                                &::after {
+                                        content: none;
+                                }
+                        }
 
-			.elm-link {
-				background-color: rgba($db-color-cool-gray-700, 0);
+                        .elm-link {
+                                background-color: rgba($db-color-cool-gray-700, 0);
 
-				&:hover {
-					background-color: rgba($db-color-cool-gray-700, 0.08);
-					color: initial;
-				}
+                                &:hover {
+                                        background-color: rgba($db-color-cool-gray-700, 0.08);
+                                        color: initial;
+                                }
 
-				&:active {
-					background-color: rgba($db-color-cool-gray-700, 0.16);
-				}
+                                &:active {
+                                        background-color: rgba($db-color-cool-gray-700, 0.16);
+                                }
 
-				&[aria-current="page"] {
-					font-weight: 700;
-				}
-			}
-		}
-	}
+                                &[aria-current="page"] {
+                                        font-weight: 700;
+                                }
+                        }
+                }
+        }
 }
