@@ -4,6 +4,12 @@ As with every release you're recommended to do a visual regression testing for y
 
 Especially the following aspects have changed through the various different releases and would need your review and probably adaptions within your code base.
 
+== DB UI Core 4.0.0 Migration Guide
+
+=== Removed brand fonts
+
+We needed to remove the brand fonts from our link:https://www.npmjs.com/package/@db-ui/base[`@db-ui/base`] node package. In case that you're building a website or application for Deutsche Bahn, you'll additionally have to install the DB Theme via the [`@db-ux/db-theme` node package](https://www.npmjs.com/package/@db-ux/db-theme) (even also available as an inner source node package, as described within that packages README).
+
 == DB UI Core 3.0.0 Migration Guide
 
 === Chip
